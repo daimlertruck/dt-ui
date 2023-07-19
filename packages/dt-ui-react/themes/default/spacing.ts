@@ -1,0 +1,15 @@
+export const spacing = {
+  none: 0,
+  xxxsmall: '1.5px',
+  xxsmall: '4px',
+  xsmall: '8px',
+  small: '12px',
+  xmedium: '16px',
+  medium: '24px',
+  gutter: '28px',
+  large: '32px',
+  xlarge: '48px',
+  xxlarge: '96px',
+  xxxlarge: '118px',
+  xxxxlarge: '290px',
+};

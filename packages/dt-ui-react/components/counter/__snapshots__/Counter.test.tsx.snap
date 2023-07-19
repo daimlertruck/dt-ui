@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Counter /> component should render a span html element with the given content 1`] = `
+.emotion-0 {
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #FFFFFF;
+  border: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #0078D6;
+}
+
+<div>
+  <span
+    class="emotion-0 emotion-1"
+    color="info"
+    data-testid="counter"
+  >
+    Active
+  </span>
+</div>
+`;
+
+exports[`<Counter /> component should render outlined counter with neutral color 1`] = `
+.emotion-0 {
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #FFFFFF;
+  border: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #8B8C8C;
+  border: 2px solid #8B8C8C;
+  color: #8B8C8C;
+  background-color: #FFFFFF;
+}
+
+<div>
+  <span
+    class="emotion-0 emotion-1"
+    color="neutral"
+    data-testid="counter"
+  >
+    Active
+  </span>
+</div>
+`;

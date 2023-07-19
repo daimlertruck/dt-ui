@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List renders list correctly 1`] = `
+.emotion-0 {
+  padding: 0;
+  padding-left: 50px;
+  list-style-type: disc;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #151617;
+}
+
+.emotion-4 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 12px;
+  color: #151617;
+}
+
+.emotion-4:last-of-type {
+  margin-bottom: 0;
+}
+
+<div>
+  <ul
+    class="emotion-0 emotion-1"
+    data-testid="list"
+  >
+    <h2
+      class="emotion-2 emotion-3"
+      color="gray_300"
+      data-testid="typography"
+      style="margin-top: 16px; margin-bottom: 16px; font-weight: 700;"
+    >
+      Title
+    </h2>
+    <li>
+      Item 1
+    </li>
+    <li>
+      Item 2
+    </li>
+    <li
+      class="emotion-4 emotion-5"
+    >
+      Counter Item 1
+    </li>
+  </ul>
+</div>
+`;

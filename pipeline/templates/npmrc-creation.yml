@@ -1,0 +1,7 @@
+steps:
+  - script: |
+      echo '@dt-ui:registry=https://artifacts.i.mercedes-benz.com/artifactory/api/npm/tdh-main-npm-releases/' >> .npmrc
+      echo '//artifacts.i.mercedes-benz.com/artifactory/api/npm/tdh-main-npm-releases/:always-auth=true' >> .npmrc
+      echo '//artifacts.i.mercedes-benz.com/artifactory/api/npm/tdh-main-npm-releases/:_password=$(npm-artifactory-token)' >> .npmrc
+      echo '//artifacts.i.mercedes-benz.com/artifactory/api/npm/tdh-main-npm-releases/:username=$(npm-artifactory-username)' >> .npmrc
+    displayName: Create .npmrc

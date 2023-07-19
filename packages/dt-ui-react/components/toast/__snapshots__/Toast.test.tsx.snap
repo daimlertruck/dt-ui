@@ -1,0 +1,310 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Toast /> component when the toast type is success should render a toast with title & message 1`] = `
+@keyframes animation-0 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 335px;
+  -webkit-animation: animation-0 0.25s ease-in;
+  animation: animation-0 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: #FFFFFF;
+  opacity: 1;
+  color: #151617;
+}
+
+.emotion-2 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #5fa50b;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 12px 0;
+  margin: 0 24px 0 16px;
+}
+
+.emotion-6 {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.23;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.emotion-8 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.34;
+  margin: 0;
+}
+
+.emotion-10 {
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  margin-right: 12px;
+  margin-top: 12px;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.emotion-10:hover {
+  background-color: #F4F4F4;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="toast-myId"
+    type="success"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      type="success"
+    >
+      <svg
+        fill="currentColor"
+        height="20"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0Zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8Zm4.59-12.42L8 12.17 5.41 9.59 4 11l4 4 8-8-1.41-1.42Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      class="emotion-4 emotion-5"
+    >
+      <div
+        class="emotion-6 emotion-7"
+      >
+        my title text
+      </div>
+      <div
+        class="emotion-8 emotion-9"
+      >
+        my message text
+      </div>
+    </div>
+    <button
+      class="emotion-10 emotion-11"
+    >
+      <svg
+        fill="none"
+        height="12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m6.94 6 4.2-4.193a.67.67 0 0 0-.947-.947l-4.194 4.2L1.806.86a.67.67 0 1 0-.947.947L5.06 6l-4.2 4.194a.666.666 0 0 0 0 .946.667.667 0 0 0 .947 0l4.193-4.2 4.194 4.2a.668.668 0 1 0 .946-.947L6.94 6Z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Toast /> component when the toast type is success should render a toast with title, message & children 1`] = `
+@keyframes animation-0 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 335px;
+  -webkit-animation: animation-0 0.25s ease-in;
+  animation: animation-0 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: #FFFFFF;
+  opacity: 1;
+  color: #151617;
+}
+
+.emotion-2 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #5fa50b;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 12px 0;
+  margin: 0 24px 0 16px;
+}
+
+.emotion-6 {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.23;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.emotion-8 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.34;
+  margin: 0;
+}
+
+.emotion-10 {
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  margin-right: 12px;
+  margin-top: 12px;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.emotion-10:hover {
+  background-color: #F4F4F4;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="toast-myId"
+    type="success"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      type="success"
+    >
+      <svg
+        fill="currentColor"
+        height="20"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0Zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8Zm4.59-12.42L8 12.17 5.41 9.59 4 11l4 4 8-8-1.41-1.42Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      class="emotion-4 emotion-5"
+    >
+      <div
+        class="emotion-6 emotion-7"
+      >
+        my title text
+      </div>
+      <div
+        class="emotion-8 emotion-9"
+      >
+        my message text
+      </div>
+      Some children
+    </div>
+    <button
+      class="emotion-10 emotion-11"
+    >
+      <svg
+        fill="none"
+        height="12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m6.94 6 4.2-4.193a.67.67 0 0 0-.947-.947l-4.194 4.2L1.806.86a.67.67 0 1 0-.947.947L5.06 6l-4.2 4.194a.666.666 0 0 0 0 .946.667.667 0 0 0 .947 0l4.193-4.2 4.194 4.2a.668.668 0 1 0 .946-.947L6.94 6Z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;

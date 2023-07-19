@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Divider /> component renders divider component 1`] = `
+.emotion-0 {
+  border: 0px;
+  border-top: 1px #CCCCCC solid;
+  margin-block: 12px;
+  width: 100%;
+}
+
+<div>
+  <hr
+    class="emotion-0 emotion-1"
+  />
+</div>
+`;

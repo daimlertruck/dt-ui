@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LabelField /> component it renders a disabled label field 1`] = `
+.emotion-0 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #CCCCCC;
+  cursor: inherit;
+  font-size: 1rem;
+  left: 15px;
+  top: 15px;
+  position: absolute;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
+  transition: transform 150ms ease-out,font-size 150ms ease-out;
+}
+
+<div>
+  <label
+    class="emotion-0 emotion-1"
+    data-testid="label-field"
+    disabled=""
+    for="input-id"
+  >
+    My Awesome Input
+  </label>
+  <input
+    id="input-id"
+  />
+</div>
+`;
+
+exports[`<LabelField /> component when the LabelField is active it should render a small font-size and -45º translation 1`] = `
+.emotion-0 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #8B8C8C;
+  cursor: inherit;
+  font-size: .75rem;
+  left: 15px;
+  top: 15px;
+  position: absolute;
+  -webkit-transform: translateY(-45%);
+  -moz-transform: translateY(-45%);
+  -ms-transform: translateY(-45%);
+  transform: translateY(-45%);
+  -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
+  transition: transform 150ms ease-out,font-size 150ms ease-out;
+}
+
+<div>
+  <label
+    class="emotion-0 emotion-1"
+    data-testid="label-field"
+    for="input-id"
+  >
+    My Awesome Input
+  </label>
+  <input
+    id="input-id"
+  />
+</div>
+`;
+
+exports[`<LabelField /> component when the LabelField is inactive it should render a bigger font-size and 0 translation 1`] = `
+.emotion-0 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #8B8C8C;
+  cursor: inherit;
+  font-size: 1rem;
+  left: 15px;
+  top: 15px;
+  position: absolute;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
+  transition: transform 150ms ease-out,font-size 150ms ease-out;
+}
+
+<div>
+  <label
+    class="emotion-0 emotion-1"
+    data-testid="label-field"
+    for="input-id"
+  >
+    My Awesome Input
+  </label>
+  <input
+    id="input-id"
+  />
+</div>
+`;

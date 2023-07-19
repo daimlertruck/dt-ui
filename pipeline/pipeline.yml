@@ -1,0 +1,179 @@
+name: $(Build.DefinitionName)-$(Build.BuildId)
+
+resources:
+  repositories:
+    - repository: templates
+      type: GitHubEnterprise
+      name: tblx/azure-pipeline-templates
+      ref: v52
+      endpoint: GitHubTBLX
+
+trigger:
+  batch: true
+  paths:
+    include:
+      - pipeline/*
+      - packages/dt-ui-react/*
+    exclude:
+      - \*
+
+pr: none
+
+stages:
+  - stage: Prepare
+    displayName: Prepare environment variables
+    pool:
+      vmImage: ubuntu-latest
+    jobs:
+      - job: Environment
+        displayName: Prepare Environment variables
+        workspace:
+          clean: all
+        steps:
+          - checkout: self
+            clean: true
+          - template: Utils/job-prepare-node.yml@templates
+            parameters:
+              commit-id: $(Build.SourceVersion)
+          - script: |
+              echo "##vso[build.updatebuildnumber]v$(setvars.VERSION)-b$(Build.BuildId)"
+            displayName: "Overriding BuildNumber"
+
+  - stage: ContinuousIntegration
+    displayName: Continuous Integration
+    dependsOn: Prepare
+    pool:
+      vmImage: "ubuntu-latest"
+    jobs:
+      - job: Lint
+        displayName: Run Lint
+        steps:
+          - script: |
+              yarn install
+              yarn lint
+            displayName: "Run lint"
+
+      - job: UnitTests
+        displayName: Run Unit Tests
+        dependsOn: Lint
+        steps:
+          - script: |
+              yarn install
+              yarn test
+            displayName: Run Unit Tests
+          - task: PublishTestResults@2
+            inputs:
+              testResultsFormat: JUnit
+              testResultsFiles: "**/jest-coverage/report.xml"
+              mergeTestResults: true
+              failTaskOnFailedTests: true
+
+  - stage: BuildAndPublish
+    displayName: Build DT-UI
+    condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
+    dependsOn: ContinuousIntegration
+    pool:
+      vmImage: "ubuntu-latest"
+    variables:
+      - group: common-var-group
+    jobs:
+      - job: BuildAndPublish
+        displayName: Run Build and Publish
+        steps:
+          - template: templates/npmrc-creation.yml
+          - script: |
+              latest_published_version=$(npm show @dt-ui/react version)
+              current_version=$(node -pe "require('./packages/dt-ui-react/package.json').version")
+              if [[ $current_version == $latest_published_version ]]; then
+                echo "Version is already published: $current_version"
+                exit 1
+              else
+                echo "Publishing the new version: $current_version"
+              fi
+            displayName: "Compare package versions"
+          - script: |
+              yarn install
+              yarn build
+            displayName: "Run build"
+            workingDirectory: packages/dt-ui-react
+
+          - task: ArtifactoryNpm@2
+            displayName: "Run Publish"
+            inputs:
+              command: "pack and publish"
+              artifactoryService: "Artifactory New MBAG"
+              targetRepo: "tdh-main-npm-releases"
+              workingFolder: "packages/dt-ui-react"
+
+  - stage: BuildAndDeployStorybook
+    displayName: Build and Deploy Storybook
+    condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
+    dependsOn: ContinuousIntegration
+    pool:
+      vmImage: "ubuntu-latest"
+    jobs:
+      - job: BuildStorybook
+        displayName: Build Storybook
+        workspace:
+          clean: all
+        steps:
+          - task: NodeTool@0
+            displayName: Node install
+            inputs:
+              versionSpec: '16.x'
+          - task: Yarn@3
+            inputs:
+              arguments: "install"
+              cwd: "packages/dt-ui-react"
+            displayName: Install Packages
+
+          - task: Yarn@3
+            inputs:
+              projectDirectory: "$(Build.SourcesDirectory)/packages/dt-ui-react"
+              arguments: "build-storybook"
+            displayName: Build Storybook
+
+          - publish: $(Build.SourcesDirectory)/packages/dt-ui-react/storybook-static
+            artifact: storybook-static
+
+      - job: DeployStorybook
+        displayName: Deploy Storybook
+        dependsOn: BuildStorybook
+        workspace:
+          clean: all
+        steps:
+          - script: |
+              git config --global user.email "dt-ui@daimlertruck.com"
+              git config --global user.name "dt-ui"
+            displayName: "Setup fake credentials"
+
+          - checkout: self
+            persistCredentials: true
+            clean: true
+
+          - script: |
+              git pull
+              git checkout -b gh-pages-$(Build.BuildId) origin/gh-pages
+            displayName: "Create new branch"
+
+          - task: DownloadPipelineArtifact@2
+            inputs:
+              artifact: storybook-static
+              targetPath: $(Build.SourcesDirectory)
+            displayName: Download storybook files
+
+          - script: |
+              git add . --all
+
+              echo -e "\n\033[34m==>\033[0;1m" "Checking for Changes\033[0m"
+              if [[ -z $(git status -s) ]]; then
+                echo -e "\033[33;1m==>\033[0m" "No Changes found."
+                exit 0
+              else
+                echo -e "\n\033[34m==>\033[0;1m" "Changes found.\033[0m"
+                git commit -m "chore: update and publish Storybook"
+                git checkout gh-pages
+                git merge gh-pages-$(Build.BuildId)
+                git push origin gh-pages
+              fi
+            displayName: "Deploy storybook"

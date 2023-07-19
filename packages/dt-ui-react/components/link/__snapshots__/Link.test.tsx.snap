@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Link /> component Should render a disabled html link element 1`] = `
+.emotion-0 {
+  color: #0078D6;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  opacity: 0.4;
+  pointer-events: none;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+}
+
+<div>
+  <a
+    class="emotion-0 emotion-1"
+    data-testid="link"
+    disabled=""
+    href="/"
+  >
+    Redirect To
+  </a>
+</div>
+`;
+
+exports[`<Link /> component Should render a html link element with the correct title 1`] = `
+.emotion-0 {
+  color: #0078D6;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+}
+
+<div>
+  <a
+    class="emotion-0 emotion-1"
+    data-testid="link"
+    href="/"
+  >
+    Redirect To
+  </a>
+</div>
+`;
+
+exports[`<Link /> component Should render a html underlined link element with the correct title 1`] = `
+.emotion-0 {
+  color: #0078D6;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+}
+
+<div>
+  <a
+    class="emotion-0 emotion-1"
+    data-testid="link"
+    href="/"
+  >
+    Redirect To
+  </a>
+</div>
+`;
+
+exports[`<Link /> component Should render an anchor element with button styles 1`] = `
+.emotion-0 {
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  font-weight: 700;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  white-space: nowrap;
+  cursor: pointer;
+  max-width: 20vw;
+  padding: 0px 15px;
+  height: 32px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #FFFFFF;
+  background-color: #0078D6;
+}
+
+.emotion-0:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.emotion-0:disabled {
+  pointer-events: none;
+}
+
+.emotion-0:hover {
+  color: #FFFFFF;
+  background-color: #01508E;
+}
+
+<div>
+  <a
+    class="emotion-0 emotion-1"
+    color="primary"
+    data-testid="link-button"
+    href="/"
+  >
+    Redirect To
+  </a>
+</div>
+`;

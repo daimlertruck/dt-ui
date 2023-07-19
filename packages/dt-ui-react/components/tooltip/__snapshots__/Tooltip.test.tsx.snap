@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tooltip /> component renders a tooltip correctly 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.emotion-0:hover div[role='tooltip'] {
+  display: block;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.34;
+  margin: 0;
+  display: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 160px;
+  overflow-wrap: break-word;
+  padding: 8px;
+  background-color: #000A25;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+  color: #FFFFFF;
+  border-radius: 3px;
+  text-align: left;
+  white-space: initial;
+  position: absolute;
+  z-index: 2;
+  bottom: 150%;
+  right: 0px;
+}
+
+.emotion-2:after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.emotion-2:after {
+  top: 100%;
+  left: 85%;
+  border-top-color: #000A25;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    Hover me
+    <div
+      class="emotion-2 emotion-3"
+      direction="top"
+      role="tooltip"
+    >
+      Some content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Tooltip /> component renders a tooltip on the bottom side of the content 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.emotion-0:hover div[role='tooltip'] {
+  display: block;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.34;
+  margin: 0;
+  display: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 160px;
+  overflow-wrap: break-word;
+  padding: 8px;
+  background-color: #000A25;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+  color: #FFFFFF;
+  border-radius: 3px;
+  text-align: left;
+  white-space: initial;
+  position: absolute;
+  z-index: 2;
+  top: 150%;
+  right: 0px;
+}
+
+.emotion-2:after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.emotion-2:after {
+  bottom: 100%;
+  left: 85%;
+  border-bottom-color: #000A25;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    Hover me
+    <div
+      class="emotion-2 emotion-3"
+      direction="bottom"
+      role="tooltip"
+    >
+      Some content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Tooltip /> component renders a tooltip on the left side of the content 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.emotion-0:hover div[role='tooltip'] {
+  display: block;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.34;
+  margin: 0;
+  display: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 160px;
+  overflow-wrap: break-word;
+  padding: 8px;
+  background-color: #000A25;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+  color: #FFFFFF;
+  border-radius: 3px;
+  text-align: left;
+  white-space: initial;
+  position: absolute;
+  z-index: 2;
+  top: 0%;
+  right: calc(100% + 10px);
+}
+
+.emotion-2:after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.emotion-2:after {
+  top: 8px;
+  left: 100%;
+  border-left-color: #000A25;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    Hover me
+    <div
+      class="emotion-2 emotion-3"
+      direction="left"
+      role="tooltip"
+    >
+      Some content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Tooltip /> component renders a tooltip on the right side of the content 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.emotion-0:hover div[role='tooltip'] {
+  display: block;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.34;
+  margin: 0;
+  display: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 160px;
+  overflow-wrap: break-word;
+  padding: 8px;
+  background-color: #000A25;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+  color: #FFFFFF;
+  border-radius: 3px;
+  text-align: left;
+  white-space: initial;
+  position: absolute;
+  z-index: 2;
+  top: 0%;
+  left: calc(100% + 10px);
+}
+
+.emotion-2:after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.emotion-2:after {
+  top: 8px;
+  right: 100%;
+  border-right-color: #000A25;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    Hover me
+    <div
+      class="emotion-2 emotion-3"
+      direction="right"
+      role="tooltip"
+    >
+      Some content
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar /> component renders span html element with the correct content 1`] = `
+.emotion-0 {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 0;
+  border-radius: 32px;
+  width: 32px;
+  height: 32px;
+  background: #FFFFFF;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #0078D6;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="avatar"
+    type="profile"
+  >
+    <span
+      class="emotion-2 emotion-3"
+      color="blue_100"
+      data-testid="typography"
+      style="font-weight: 700;"
+    >
+      UN
+    </span>
+  </div>
+</div>
+`;

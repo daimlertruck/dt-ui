@@ -1,0 +1,633 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextField /> component onBlur event should have error state with error message 1`] = `
+.emotion-0 {
+  display: block;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #8B8C8C;
+  cursor: inherit;
+  font-size: 1rem;
+  left: 15px;
+  top: 15px;
+  position: absolute;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
+  transition: transform 150ms ease-out,font-size 150ms ease-out;
+}
+
+.emotion-4 {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  color: #D21C1C;
+}
+
+.emotion-6 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-bottom: 2px solid #D21C1C;
+  color: #151617;
+  min-width: 198px;
+  padding: 20px 15px 5px 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 53px;
+}
+
+.emotion-8 {
+  padding-left: 15px;
+}
+
+.emotion-10 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #D21C1C;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <label
+      class="emotion-2 emotion-3"
+      data-testid="label-field"
+      for="Some-text"
+    >
+      Some text
+       
+      *
+    </label>
+    <span
+      class="emotion-4 emotion-5"
+    >
+      <svg
+        color="#D21C1C"
+        fill="none"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19.0711 19.0711C17.1957 20.9464 14.6522 22 12 22C9.34784 22 6.8043 20.9464 4.92893 19.0711C3.05357 17.1957 2 14.6522 2 12C2 9.34784 3.05357 6.8043 4.92893 4.92893C6.8043 3.05357 9.34784 2 12 2C14.6522 2 17.1957 3.05357 19.0711 4.92893C20.9464 6.8043 22 9.34784 22 12C22 14.6522 20.9464 17.1957 19.0711 19.0711Z"
+          fill="currentColor"
+        />
+        <path
+          d="M12.8797 13.6863L13.1157 6.48828H10.8997L11.0997 13.6863H12.8797ZM11.9907 17.5123C12.1621 17.5181 12.333 17.4894 12.4932 17.4281C12.6534 17.3667 12.7997 17.2739 12.9234 17.1551C13.0471 17.0362 13.1458 16.8938 13.2136 16.7362C13.2813 16.5786 13.3168 16.4091 13.318 16.2375C13.3191 16.066 13.2859 15.8959 13.2202 15.7375C13.1545 15.579 13.0577 15.4353 12.9356 15.3148C12.8135 15.1944 12.6684 15.0996 12.5091 15.0361C12.3497 14.9727 12.1792 14.9418 12.0077 14.9453C11.6733 14.9521 11.3547 15.0892 11.1198 15.3274C10.8849 15.5656 10.7522 15.886 10.75 16.2205C10.7478 16.555 10.8762 16.8772 11.1079 17.1184C11.3397 17.3597 11.6564 17.501 11.9907 17.5123Z"
+          fill="white"
+        />
+      </svg>
+    </span>
+    <input
+      class="emotion-6 emotion-7"
+      id="Some-text"
+      name="Some-text"
+      required=""
+      type="text"
+      value=""
+    />
+    <div
+      class="emotion-8 emotion-9"
+    >
+      <span
+        class="emotion-10 emotion-11"
+        color="red_100"
+        data-testid="typography"
+      >
+        This field is required.
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField /> component renders Loading input 1`] = `
+@keyframes animation-0 {
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.emotion-0 {
+  display: block;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #8B8C8C;
+  cursor: inherit;
+  font-size: 1rem;
+  left: 15px;
+  top: 15px;
+  position: absolute;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
+  transition: transform 150ms ease-out,font-size 150ms ease-out;
+}
+
+.emotion-4 {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  color: #D21C1C;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-8 {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #CCCCCC;
+  border-radius: 50%;
+  border-top: 2px solid #0078D6;
+  -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
+  animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
+}
+
+.emotion-10 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  color: #151617;
+  min-width: 198px;
+  padding: 20px 15px 5px 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 53px;
+}
+
+.emotion-10:focus {
+  border-bottom: 2px solid #0078D6;
+  outline: none;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <label
+      class="emotion-2 emotion-3"
+      data-testid="label-field"
+      for="My-disabled-input"
+    >
+      My disabled input
+       
+    </label>
+    <span
+      class="emotion-4 emotion-5"
+    >
+      <div
+        class="emotion-6 emotion-7"
+        style="margin: auto;"
+      >
+        <div
+          class="emotion-8 emotion-9"
+        />
+      </div>
+    </span>
+    <input
+      class="emotion-10 emotion-11"
+      id="My-disabled-input"
+      name="My-disabled-input"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`<TextField /> component renders disabled input 1`] = `
+.emotion-0 {
+  display: block;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #CCCCCC;
+  cursor: inherit;
+  font-size: 1rem;
+  left: 15px;
+  top: 15px;
+  position: absolute;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
+  transition: transform 150ms ease-out,font-size 150ms ease-out;
+}
+
+.emotion-4 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  background-color: #F4F4F4;
+  border: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  color: #8B8C8C;
+  min-width: 198px;
+  padding: 20px 15px 5px 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 53px;
+}
+
+.emotion-4:focus {
+  border-bottom: 2px solid #0078D6;
+  outline: none;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <label
+      class="emotion-2 emotion-3"
+      data-testid="label-field"
+      disabled=""
+      for="My-disabled-input"
+    >
+      My disabled input
+       
+    </label>
+    <input
+      class="emotion-4 emotion-5"
+      disabled=""
+      id="My-disabled-input"
+      name="My-disabled-input"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`<TextField /> component renders input with side button 1`] = `
+.emotion-0 {
+  display: block;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #8B8C8C;
+  cursor: inherit;
+  font-size: 1rem;
+  left: 15px;
+  top: 15px;
+  position: absolute;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
+  transition: transform 150ms ease-out,font-size 150ms ease-out;
+}
+
+.emotion-4 {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  color: #D21C1C;
+}
+
+.emotion-6 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  color: #151617;
+  min-width: 198px;
+  padding: 20px 15px 5px 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 53px;
+}
+
+.emotion-6:focus {
+  border-bottom: 2px solid #0078D6;
+  outline: none;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <label
+      class="emotion-2 emotion-3"
+      data-testid="label-field"
+      for="My-input"
+    >
+      My input
+       
+    </label>
+    <span
+      class="emotion-4 emotion-5"
+    >
+      <button>
+        My button
+      </button>
+    </span>
+    <input
+      class="emotion-6 emotion-7"
+      id="My-input"
+      name="My-input"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`<TextField /> component should render the TextField with error styles and message 1`] = `
+.emotion-0 {
+  display: block;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #8B8C8C;
+  cursor: inherit;
+  font-size: .75rem;
+  left: 15px;
+  top: 15px;
+  position: absolute;
+  -webkit-transform: translateY(-45%);
+  -moz-transform: translateY(-45%);
+  -ms-transform: translateY(-45%);
+  transform: translateY(-45%);
+  -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
+  transition: transform 150ms ease-out,font-size 150ms ease-out;
+}
+
+.emotion-4 {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  color: #D21C1C;
+}
+
+.emotion-6 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-bottom: 2px solid #D21C1C;
+  color: #151617;
+  min-width: 198px;
+  padding: 20px 15px 5px 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 53px;
+}
+
+.emotion-8 {
+  padding-left: 15px;
+}
+
+.emotion-10 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #D21C1C;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <label
+      class="emotion-2 emotion-3"
+      data-testid="label-field"
+      for="My-Input-with-Error-Message"
+    >
+      My Input with Error Message
+       
+    </label>
+    <span
+      class="emotion-4 emotion-5"
+    >
+      <svg
+        color="#D21C1C"
+        fill="none"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19.0711 19.0711C17.1957 20.9464 14.6522 22 12 22C9.34784 22 6.8043 20.9464 4.92893 19.0711C3.05357 17.1957 2 14.6522 2 12C2 9.34784 3.05357 6.8043 4.92893 4.92893C6.8043 3.05357 9.34784 2 12 2C14.6522 2 17.1957 3.05357 19.0711 4.92893C20.9464 6.8043 22 9.34784 22 12C22 14.6522 20.9464 17.1957 19.0711 19.0711Z"
+          fill="currentColor"
+        />
+        <path
+          d="M12.8797 13.6863L13.1157 6.48828H10.8997L11.0997 13.6863H12.8797ZM11.9907 17.5123C12.1621 17.5181 12.333 17.4894 12.4932 17.4281C12.6534 17.3667 12.7997 17.2739 12.9234 17.1551C13.0471 17.0362 13.1458 16.8938 13.2136 16.7362C13.2813 16.5786 13.3168 16.4091 13.318 16.2375C13.3191 16.066 13.2859 15.8959 13.2202 15.7375C13.1545 15.579 13.0577 15.4353 12.9356 15.3148C12.8135 15.1944 12.6684 15.0996 12.5091 15.0361C12.3497 14.9727 12.1792 14.9418 12.0077 14.9453C11.6733 14.9521 11.3547 15.0892 11.1198 15.3274C10.8849 15.5656 10.7522 15.886 10.75 16.2205C10.7478 16.555 10.8762 16.8772 11.1079 17.1184C11.3397 17.3597 11.6564 17.501 11.9907 17.5123Z"
+          fill="white"
+        />
+      </svg>
+    </span>
+    <input
+      class="emotion-6 emotion-7"
+      id="My-Input-with-Error-Message"
+      name="My-Input-with-Error-Message"
+      type="text"
+      value="Initial Value"
+    />
+    <div
+      class="emotion-8 emotion-9"
+    >
+      <span
+        class="emotion-10 emotion-11"
+        color="red_100"
+        data-testid="typography"
+      >
+        My Error Message
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField /> component should render the TextField with info message 1`] = `
+.emotion-0 {
+  display: block;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #8B8C8C;
+  cursor: inherit;
+  font-size: 1rem;
+  left: 15px;
+  top: 15px;
+  position: absolute;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
+  transition: transform 150ms ease-out,font-size 150ms ease-out;
+}
+
+.emotion-4 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  color: #151617;
+  min-width: 198px;
+  padding: 20px 15px 5px 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 53px;
+}
+
+.emotion-4:focus {
+  border-bottom: 2px solid #0078D6;
+  outline: none;
+}
+
+.emotion-6 {
+  padding-left: 15px;
+}
+
+.emotion-8 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #8B8C8C;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <label
+      class="emotion-2 emotion-3"
+      data-testid="label-field"
+      for="My-Input-with-info-message"
+    >
+      My Input with info message
+       
+    </label>
+    <input
+      class="emotion-4 emotion-5"
+      id="My-Input-with-info-message"
+      name="My-Input-with-info-message"
+      type="text"
+      value=""
+    />
+    <div
+      class="emotion-6 emotion-7"
+    >
+      <span
+        class="emotion-8 emotion-9"
+        color="gray_100"
+        data-testid="typography"
+      >
+        My Infor Message
+      </span>
+    </div>
+  </div>
+</div>
+`;
