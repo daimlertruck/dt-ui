@@ -16,7 +16,9 @@ New branches should follow the name pattern `{type}/{ticket}/{description-in-keb
 
 **Note:** The rule should be to always have a JIRA ticket created for each task.
 
-## 2. Commit Messages
+## 2. Commits
+
+### 2.1. Message Convention
 
 All commit messages should follow [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) specification.  
 The message should be structured as follows:
@@ -27,9 +29,20 @@ The message should be structured as follows:
 [optional body]
 ```
 
-Even though the **body** is optional, the developer should always consider adding one so that the project has a more clear and detailed commit history for anyone to follow. For more information on how to write a good commit message, read the following documentation and blog posts:
+The commit title has a limit of 50 characters. **Description** should be written in the present tense (**change**, not **changed** or **changes**), to be consistent with generated messages from commands like git merge.
 
-- [Write a good commit message](https://gsep.daimler.com/confluence/display/TDH/Write+a+good+commit+message)
+Even though the **body** is optional, the developer should always consider adding one so that the project has a more clear and detailed commit history for anyone to follow. Each line of **body** should be wrapped at 72 characters.
+
+### 2.2 Strategy 
+
+- Avoid mixing concerns, commits should be “atomic”. For example, creating two different components should produce two separate commits. 
+- Commits should never crash the application. For example, a refactor that changed a payload of a request, needs to be applied to all places in the same commit. It's the same for tests, should be added in the same commit of the feature/fix, etc.
+
+### 2.3 References
+
+For more information on how to commit, read the following documentation and blog posts:
+
+- [Write a good commit message](https://con.t3.daimlertruck.com/display/TDH/Write+a+good+commit+message)
 - [How to Write a Git Commit Message](https://cbea.ms/git-commit/)
 - [Git Commit Best Practices](https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60)
 - [Help him!! Help your code reviewer.](https://leidsoncruz.github.io/post/help-him-help-your-code-reviewer/)
