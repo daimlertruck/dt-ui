@@ -111,3 +111,33 @@ turbo run build --filter=docs^... && changeset publish
 ```
 
 ⚠️ All flagged 🚧 information on this file needs further review since might not be working as expected.
+
+## Support
+
+### Contributing
+
+See the [contributing guidelines](CONTRIBUTING.md).
+
+### Bug Reports
+
+If you've encountered a bug in our project, please follow these steps to report it:
+
+1. **Search Existing Issues:** Before creating a new issue, please search the [existing issues](https://git.t3.daimlertruck.com/DT-Design-System/dt-ui/issues) to check if the bug has already been reported. If you find a similar issue, you can add a comment to provide additional details.
+
+2. **Create a New Issue:** If you couldn't find an existing issue, [create a new issue](https://git.t3.daimlertruck.com/DT-Design-System/dt-ui/issues/new/choose) and use the "Bug Report" template. Provide as much detail as possible, including steps to reproduce, expected behavior, and actual behavior. Screenshots, error messages, and relevant code snippets are highly appreciated.
+
+### Feature Requests
+
+To propose a new feature:
+
+1. **Search Existing Requests:** First, search the [existing issues](https://git.t3.daimlertruck.com/DT-Design-System/dt-ui/issues) to see if the feature has already been suggested. You can upvote and add your insights to existing feature requests.
+
+2. **Create a New Issue:** If your feature idea hasn't been proposed yet, [create a new issue](https://git.t3.daimlertruck.com/DT-Design-System/dt-ui/issues/new/choose) and use the "Feature request" template.
+
+### Issue Etiquette
+
+- Be respectful and considerate when commenting on issues.
+- Please **do not** post comments consisting solely of "+1" or ":thumbsup:".
+  Use [GitHub's "reactions" feature](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/)
+  instead.
+- Provide additional information promptly if requested by maintainers.
