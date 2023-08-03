@@ -141,3 +141,9 @@ To propose a new feature:
   Use [GitHub's "reactions" feature](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/)
   instead.
 - Provide additional information promptly if requested by maintainers.
+
+## ©️ License
+
+Licensed under [Daimler Inner Source License (ISL)](LICENSE.md)
+
+For more info, see [Daimler FOSS](https://git.t3.daimlertruck.com/tbf/daimler-inner-source-license)
