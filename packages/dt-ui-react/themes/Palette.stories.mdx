@@ -3,23 +3,26 @@ import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs';
 import { themes, ThemeProvider, convert, ensure } from '@storybook/theming';
 import { theme } from './default';
 
-<Meta title='Palette' />
+<Meta title='Foundations/Palette' />
 
 # Default
 
-export const colors = Object.entries(theme.palette).reduce((acc, [key, value]) => {
-  const groupedKey = key.split(/(?=[A-Z])/g)[0];
-  const group = acc[groupedKey] ?? [];
-  return {
-    ...acc,
-    [groupedKey]: [
-      ...group,
-      {
-        [key]: value,
-      },
-    ],
-  };
-},{});
+export const colors = Object.entries(theme.palette).reduce(
+  (acc, [key, value]) => {
+    const groupedKey = key.split(/(?=[A-Z])/g)[0];
+    const group = acc[groupedKey] ?? [];
+    return {
+      ...acc,
+      [groupedKey]: [
+        ...group,
+        {
+          [key]: value,
+        },
+      ],
+    };
+  },
+  {}
+);
 
 <div style={{ background: '#eeeeee', padding: '20px' }}>
   <ThemeProvider theme={theme}>
