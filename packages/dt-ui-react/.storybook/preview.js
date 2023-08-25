@@ -10,6 +10,7 @@ export const parameters = {
     'storybook/docs/panel': {
       index: -1,
     },
+    canvas: { title: 'Sandbox' },
   },
   options: {
     storySort: {
