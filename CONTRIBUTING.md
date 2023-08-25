@@ -2,13 +2,17 @@
 
 This guide is intended to support the developers by providing a set of programming conventions, style and best practices to follow on API Portal.
 
-1. [Branch Naming Convention](#1-branch-naming-convention)
-2. [Commit Messages](#2-commit-messages)
-3. [Pull Requests](#3-pull-requests)  
-   3.1. [Name Convention](#31-name-convention)  
-   3.2. [Work in Progress](#32-work-in-progress)  
-   3.3. [Code Reviews](#33-code-reviews)
-4. [Versioning](#4-versioning)
+- [Coding Standards and Guidelines](#coding-standards-and-guidelines)
+  - [1. Branch Naming Convention](#1-branch-naming-convention)
+  - [2. Commits](#2-commits)
+    - [2.1. Message Convention](#21-message-convention)
+    - [2.2 Strategy](#22-strategy)
+    - [2.3 References](#23-references)
+  - [3. Pull Requests](#3-pull-requests)
+    - [3.1. Name Convention](#31-name-convention)
+    - [3.2. Work in Progress](#32-work-in-progress)
+    - [3.3. Code Reviews](#33-code-reviews)
+    - [4. Versioning](#4-versioning)
 
 ## 1. Branch Naming Convention
 
