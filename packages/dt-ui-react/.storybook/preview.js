@@ -5,11 +5,16 @@ import { theme } from '../themes/default';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
+  options: {
+    storySort: {
+      order: ['Contribution Guidelines', '*'],
+    },
+  },
 };
 
 const themes = {
   Default: theme,
-}
+};
 
 export const globalTypes = {
   theme: {
@@ -23,6 +28,8 @@ export const globalTypes = {
       dynamicTitle: true,
     },
   },
-}
+};
 
-addDecorator((story, context) => <Provider theme={themes[context.globals.theme]}>{story()}</Provider>);
+addDecorator((story, context) => (
+  <Provider theme={themes[context.globals.theme]}>{story()}</Provider>
+));
