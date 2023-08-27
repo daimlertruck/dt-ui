@@ -16,7 +16,7 @@ DT-UI component library is headless and can be used to serve multiple brands.
 
 #### **Documentation via:**
 
-- [Storybook](https://git.t3.daimlertruck.com/pages/DT-Design-System/dt-ui/)
+- [Storybook/Developer documentation](https://git.t3.daimlertruck.com/pages/DT-Design-System/dt-ui/)
 - [Figma](https://www.figma.com/file/RdxGI4OUcKDRfBRPmBJXbW/DT_UI-Design-System)
 - [Confluence](https://con.t3.daimlertruck.com/display/DTUI/DT+Design+System+Home)
 
@@ -94,6 +94,40 @@ When adding a new component, ensure the component is also exported from the root
 export * from './components/buttons';
 // Add new component exports here
 ```
+
+## Developer Documentation
+
+DT UI developer documentation is built with Storybook. Storybook documentation is composed by:
+
+- Documentation pages
+- Component stories
+
+Both supports [MDX](https://github.com/mdx-js/mdx), which allows you to use Markdown syntax and JSX for more advanced components.
+
+For more information on Storybook and Docs, read the following documentation and blog posts:
+
+- https://storybook.js.org/addons/@storybook/addon-docs
+- https://storybook.js.org/docs/6.5/react/writing-docs/introduction
+- https://medium.com/storybookjs/storybook-docs-sneak-peak-5be78445094a
+- https://storybook.js.org/tutorials/design-systems-for-developers/react/en/document/
+- https://storybook.js.org/blog/structuring-your-storybook/
+
+#### How to add documentation pages?
+
+Add a file with `.stories.mdx` extension inside `packages/dt-ui-react/docs` directory, following the instructions on https://storybook.js.org/docs/6.5/react/writing-docs/mdx#documentation-only-mdx.
+Afterwards, the page is included automatically in the documentation.
+
+If you created custom components to import in the page, we recommend to create a sub-directory for all the files related to the page, including the MDX file. The page will still be included automatically.
+
+Note: On Storybook v6, documentation pages still use the `.stories.mdx` extension (otherwise they are not included). On v7 these pages can use `.mdx` extension.
+
+#### How to add component stories?
+
+In case you want to add documentation more complex than the usual component stories, add a `.stories.mdx` file alongside with the component, or convert the current story in Component Story Format (CSF) to MDX format (see an example of the conversion on https://storybook.js.org/docs/6.5/react/writing-docs/mdx#mdx-flavored-csf).
+
+For more information on how to write MDX stories see https://storybook.js.org/docs/6.5/react/writing-docs/mdx#writing-stories.
+
+Note: MDX and CSF stories can't coexist in the same directory.
 
 ## 🚧 Versioning & Publishing Packages
 
