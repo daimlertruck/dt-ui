@@ -70,7 +70,7 @@ stages:
 
   - stage: BuildAndPublish
     displayName: Build DT-UI
-    condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
+    condition: and(contains(variables['build.sourceBranch'], 'refs/heads/alpha'), succeeded())
     dependsOn: ContinuousIntegration
     pool:
       vmImage: "ubuntu-latest"
