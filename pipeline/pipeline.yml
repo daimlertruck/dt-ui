@@ -10,10 +10,14 @@ resources:
 
 trigger:
   batch: true
+  branches:
+    include:
+      - alpha
   paths:
     include:
       - pipeline/*
       - packages/dt-ui-react/*
+      - apps/docs/*
     exclude:
       - \*
 
@@ -166,7 +170,6 @@ stages:
 
   - stage: BuildAndDeployStorybook
     displayName: Build and Deploy Storybook
-    condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
     dependsOn: ContinuousIntegration
     pool: DEVAgentPool
     jobs:
@@ -216,6 +219,14 @@ stages:
               artifact: storybook-static
               targetPath: $(Build.SourcesDirectory)
             displayName: Download storybook files
+            condition: eq(variables['Build.SourceBranch'], 'refs/heads/alpha')
+
+          - task: DownloadPipelineArtifact@2
+            inputs:
+              artifact: storybook-static
+              targetPath: $(Build.SourcesDirectory)/$(PR_NAME)
+            displayName: Download storybook files
+            condition: eq(variables['Build.Reason'], 'PullRequest')
 
           - script: |
               git add . --all
@@ -262,13 +273,15 @@ stages:
             displayName: Add Live Preview url to PR description
             env:
               GH_ENTERPRISE_TOKEN: $(gh-token)
+              GH_HOST: $(GH_HOST)
 
   - stage: DeletePreviews
     displayName: Delete Preview Environments
-    pool: DEVAgentPool
+    pool:
+      vmImage: DEVAgentPool
     variables:
       - group: common-var-group
-    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/alpha')
     dependsOn: []
     jobs:
       - job: DeletePreview
@@ -288,17 +301,18 @@ stages:
           - script: |
               git pull
               COMMIT_HASH=$(git rev-parse HEAD)
-              FOUND_PR_NUMBER=$(curl --request GET --url "https://$(GH_HOST)/api/v3/repos/$(REPO_OWNER)/$(REPO_NAME)/commits/$COMMIT_HASH/pulls?state=closed" --header "Authorization: Bearer $GH_ENTERPRISE_TOKEN" | jq -r ".[].number")
+              FOUND_PR_NUMBER=$(gh search prs $COMMIT_HASH --json "number" --jq ".[].number" --state "closed")
               echo "Will delete preview environment for: PR-$FOUND_PR_NUMBER"
-
+              
               git checkout -b gh-pages-$(Build.BuildId) origin/gh-pages
               rm -rf PR-$FOUND_PR_NUMBER
               git add . --all
-
+              
               git commit -m "chore: delete PR preview"
               git checkout gh-pages
               git merge gh-pages-$(Build.BuildId)
               git push origin gh-pages
-            displayName: "Delete preview folder on Github Pages"
+            displayName: 'Delete preview folder on Github Pages'
             env:
               GH_ENTERPRISE_TOKEN: $(gh-token)
+              GH_HOST: $(GH_HOST)
