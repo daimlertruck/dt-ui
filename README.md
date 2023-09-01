@@ -20,6 +20,11 @@ DT-UI component library is headless and can be used to serve multiple brands.
 - [Figma](https://www.figma.com/file/RdxGI4OUcKDRfBRPmBJXbW/DT_UI-Design-System)
 - [Confluence](https://con.t3.daimlertruck.com/display/DTUI/DT+Design+System+Home)
 
+## Prerequisites
+
+- Node.js >= v16.13.0 < v17.0.0
+- Yarn
+
 ## ⚙️ DT-UI current stack
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
