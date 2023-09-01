@@ -18,9 +18,7 @@
     "lint": "eslint --cache .",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "test": "jest",
-    "test:report": "open ./jest-coverage/lcov-report/index.html",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "test:report": "open ./jest-coverage/lcov-report/index.html"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
@@ -31,12 +29,6 @@
     "@emotion/jest": "^11.10.0",
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
-    "@storybook/addon-actions": "^6.5.16",
-    "@storybook/addon-essentials": "^6.5.16",
-    "@storybook/addon-interactions": "^6.5.16",
-    "@storybook/addon-links": "^6.5.16",
-    "@storybook/react": "^6.5.16",
-    "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "babel-loader": "^8.3.0",

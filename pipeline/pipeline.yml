@@ -124,16 +124,16 @@ stages:
           - task: Yarn@3
             inputs:
               arguments: "install"
-              cwd: "packages/dt-ui-react"
+              cwd: "apps/docs"
             displayName: Install Packages
 
           - task: Yarn@3
             inputs:
-              projectDirectory: "$(Build.SourcesDirectory)/packages/dt-ui-react"
-              arguments: "build-storybook"
+              projectDirectory: "$(Build.SourcesDirectory)/apps/docs"
+              arguments: "build"
             displayName: Build Storybook
 
-          - publish: $(Build.SourcesDirectory)/packages/dt-ui-react/storybook-static
+          - publish: $(Build.SourcesDirectory)/apps/docs/storybook-static
             artifact: storybook-static
 
       - job: DeployStorybook

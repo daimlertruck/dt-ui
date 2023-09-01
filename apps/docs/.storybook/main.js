@@ -1,8 +1,7 @@
 module.exports = {
   stories: [
-    '../components/**/*.stories.@(js|jsx|ts|tsx|mdx)',
-    '../themes/*.stories.mdx',
-    '../docs/**/*.stories.mdx',
+    '../../../packages/dt-ui-react/**/*.stories.@(js|jsx|ts|tsx|mdx)',
+    '../**/*.stories.mdx',
   ],
   addons: [
     '@storybook/addon-links',

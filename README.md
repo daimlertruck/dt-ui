@@ -60,7 +60,7 @@ DT-UI component library is headless and can be used to serve multiple brands.
 
 This Turborepo includes the following packages and applications:
 
-- 🚧 `apps/docs`: Component documentation site
+- `apps/docs`: Developer documentation site, built with Storybook
 - `packages/dt-ui-react`: Core React components
 - `packages/tsconfig`: Shared `tsconfig.json`s used throughout the Turborepo
 - `packages/eslint-config-custom`: ESLint preset
@@ -114,16 +114,16 @@ For more information on Storybook and Docs, read the following documentation and
 
 #### How to add documentation pages?
 
-Add a file with `.stories.mdx` extension inside `packages/dt-ui-react/docs` directory, following the instructions on https://storybook.js.org/docs/6.5/react/writing-docs/mdx#documentation-only-mdx.
+Add a file with `.stories.mdx` extension inside `apps/docs` directory, following the instructions on https://storybook.js.org/docs/6.5/react/writing-docs/mdx#documentation-only-mdx.
 Afterwards, the page is included automatically in the documentation.
 
-If you created custom components to import in the page, we recommend to create a sub-directory for all the files related to the page, including the MDX file. The page will still be included automatically.
+If you created custom components to import in the page or a lot of subpages, we recommend to create a sub-directory for all the files related to the page and subpages, including the MDX file(s). The page(s) will still be included automatically.
 
 Note: On Storybook v6, documentation pages still use the `.stories.mdx` extension (otherwise they are not included). On v7 these pages can use `.mdx` extension.
 
 #### How to add component stories?
 
-In case you want to add documentation more complex than the usual component stories, add a `.stories.mdx` file alongside with the component, or convert the current story in Component Story Format (CSF) to MDX format (see an example of the conversion on https://storybook.js.org/docs/6.5/react/writing-docs/mdx#mdx-flavored-csf).
+In case you want to add documentation more complex than the usual component stories, add a `.stories.mdx` file alongside with the component inside `packages/dt-ui-react/components`, or convert the current story in Component Story Format (CSF) to MDX format (see an example of the conversion on https://storybook.js.org/docs/6.5/react/writing-docs/mdx#mdx-flavored-csf).
 
 For more information on how to write MDX stories see https://storybook.js.org/docs/6.5/react/writing-docs/mdx#writing-stories.
 

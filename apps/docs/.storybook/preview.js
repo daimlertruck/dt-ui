@@ -1,7 +1,6 @@
 import { addDecorator } from '@storybook/react';
 
-import { Provider } from '../components/Provider';
-import { theme } from '../themes/default';
+import { Provider, theme } from '@dt-ui/react';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

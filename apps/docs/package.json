@@ -3,14 +3,35 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "dev": "start-storybook -p 6006",
+    "lint": "eslint --cache .",
+    "build": "build-storybook --docs",
+    "preview-storybook": "serve storybook-static",
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
     "@dt-ui/react": ">=0.1.0-beta",
+    "@emotion/css": "^11.7.1",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@emotion/babel-plugin": "^11.11.0",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.3.0",
+    "eslint-config-custom": "*",
+    "eslint-plugin-storybook": "^0.6.12",
+    "serve": "^14.2.1",
     "tsconfig": "*",
     "typescript": "^4.9.3"
   }
