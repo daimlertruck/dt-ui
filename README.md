@@ -25,6 +25,11 @@ DT-UI component library is headless and can be used to serve multiple brands.
 - Node.js >= v16.13.0 < v17.0.0
 - Yarn
 
+## 📓 Installation
+
+- Clone the repo
+- `yarn` for package install
+
 ## ⚙️ DT-UI current stack
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
