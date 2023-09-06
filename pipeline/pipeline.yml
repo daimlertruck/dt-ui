@@ -82,9 +82,9 @@ stages:
         steps:
           - template: templates/npmrc-creation.yml
           - script: |
-              latest_published_version=$(npm show @dt-ui/react version)
+              published_versions=$(npm show @dt-ui/react versions)
               current_version=$(node -pe "require('./packages/dt-ui-react/package.json').version")
-              if [[ $current_version == $latest_published_version ]]; then
+              if [[ $published_versions == *"$current_version"* ]]; then
                 echo "Version is already published: $current_version"
                 exit 1
               else
