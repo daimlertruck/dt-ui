@@ -68,6 +68,28 @@ yarn add @dt-ui/react
 npm install @dt-ui/react
 ```
 
+## 🔨 Usage
+
+Import the DT UI global styles in the root component.
+
+```tsx
+import '@dt-ui/react/index.css';
+```
+
+And wrap your code in a `ThemeProvider` component to make it available to all components.
+
+```tsx
+import { Provider as ThemeProvider, theme } from '@dt-ui/react';
+
+function App() {
+  return <ThemeProvider theme={theme}>
+    ...
+  <ThemeProvider/>
+}
+```
+
+For now, there is only available one theme (the default one).
+
 ## ⌨️ Development
 
 ### Prerequisites
