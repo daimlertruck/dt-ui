@@ -20,17 +20,67 @@ DT-UI component library is headless and can be used to serve multiple brands.
 - [Figma](https://www.figma.com/file/RdxGI4OUcKDRfBRPmBJXbW/DT_UI-Design-System)
 - [Confluence](https://con.t3.daimlertruck.com/display/DTUI/DT+Design+System+Home)
 
-## Prerequisites
+## 📦 Installation
+
+At the moment, DT UI is available as an npm package, `@dt-ui/react`, for React and frameworks using React, like NextJS (compatible with Server-side rendering).
+
+### Setup
+
+#### Get your API key from Artifactory
+
+Go to **Edit Profile** page in [Artifactory](https://artifacts.i.mercedes-benz.com/). You can find an **API key** field in the **Authentication Settings** section.
+
+If the API key field is empty, you can click on the button to generate the key.
+
+#### Create `.npmrc` file
+
+Inside your project root folder create a file
+
+```bash
+touch .npmrc
+```
+
+#### **Configuring the npm Client for a Scope Registry**
+
+Scopes can be associated with a separate registry. This allows you to seamlessly use a mix of packages from the public npm registry and one or more private registries. You need to paste the following into the .npmrc file instead:
+
+```
+@dt-ui:registry=https://artifacts.i.mercedes-benz.com/artifactory/api/npm/tdh-main-npm-releases/
+//artifacts.i.mercedes-benz.com/artifactory/api/npm/tdh-main-npm-releases/:_password=<BASE64_PASSWORD>
+//artifacts.i.mercedes-benz.com/artifactory/api/npm/tdh-main-npm-releases/:username=<USERNAME>
+//artifacts.i.mercedes-benz.com/artifactory/api/npm/tdh-main-npm-releases/:email=youremail@daimlertruck.com
+//artifacts.i.mercedes-benz.com/artifactory/api/npm/tdh-main-npm-releases/:always-auth=true
+```
+
+Encode your `<apiKey>` to `<BASE64_PASSWORD>` using an appropriate [encoding tool like this one](https://www.base64encode.org).
+
+### Install DT UI package
+
+**yarn:**
+
+```bash
+yarn add @dt-ui/react
+```
+
+**npm:**
+
+```bash
+npm install @dt-ui/react
+```
+
+## ⌨️ Development
+
+### Prerequisites
 
 - Node.js >= v16.13.0 < v17.0.0
 - Yarn
 
-## 📓 Installation
+### 📓 Installation
 
 - Clone the repo
 - `yarn` for package install
 
-## ⚙️ DT-UI current stack
+### ⚙️ DT-UI current stack
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [React](https://reactjs.org/) — JavaScript library for user interfaces
@@ -44,7 +94,7 @@ DT-UI component library is headless and can be used to serve multiple brands.
 - [Tsup](https://github.com/egoist/tsup) — TypeScript bundler powered by esbuild
 - [Yarn](https://yarnpkg.com/) from managing packages
 
-### Useful Commands
+#### Useful Commands
 
 - `yarn build` - Build all packages, including the Storybook site
 - `yarn dev` - Run all packages locally
@@ -56,7 +106,7 @@ DT-UI component library is headless and can be used to serve multiple brands.
 - 🚧 `yarn version-packages` - consumes all changesets, and updates to the most appropriate semver version based on those changesets. It also writes changelog entries for each consumed changeset
 - 🚧 `yarn release` - Build all packages and run npm publish in each package that is of a later version than the one currently listed on npm
 
-## Apps & Packages
+### Apps & Packages
 
 This Turborepo includes the following packages and applications:
 
@@ -66,7 +116,7 @@ This Turborepo includes the following packages and applications:
 - `packages/eslint-config-custom`: ESLint preset
 - `packages/jest-config`: Shared jest configuration file
 
-### Compilation
+#### Compilation
 
 To make the core library code work across all browsers, we need to compile the raw TypeScript and React code to plain JavaScript. We can accomplish this with `tsup`, which uses `esbuild` to greatly improve performance.
 
@@ -84,7 +134,7 @@ dt-ui-react
     ...
 ```
 
-## Components
+### Components
 
 Each file inside of `dt-ui-react/components` is a component inside our design system.
 
@@ -95,7 +145,7 @@ export * from './components/buttons';
 // Add new component exports here
 ```
 
-## Developer Documentation
+### Developer Documentation
 
 DT UI developer documentation is built with Storybook. Storybook documentation is composed by:
 
@@ -129,13 +179,13 @@ For more information on how to write MDX stories see https://storybook.js.org/do
 
 Note: MDX and CSF stories can't coexist in the same directory.
 
-## 🚧 Versioning & Publishing Packages
+### 🚧 Versioning & Publishing Packages
 
 This example uses [Changesets](https://github.com/changesets/changesets) to manage versions, create changelogs, and publish to npm. It's preconfigured so you can start publishing packages immediately.
 
 You'll need to create an `NPM_TOKEN` and `GITHUB_TOKEN` and add it to your GitHub repository settings to enable access to npm. It's also worth installing the [Changesets bot](https://github.com/apps/changeset-bot) on your repository.
 
-### 🚧 Generating the Changelog
+#### 🚧 Generating the Changelog
 
 To generate your changelog, run `pnpm changeset` locally:
 
@@ -146,7 +196,7 @@ To generate your changelog, run `pnpm changeset` locally:
 1. Confirm the changeset looks as expected.
 1. A new Markdown file will be created in the `changeset` folder with the summary and a list of the packages included.
 
-### 🚧 Releasing
+#### 🚧 Releasing
 
 When you push your code to GitHub, the [GitHub Action](https://github.com/changesets/action) will run the `release` script defined in the root `package.json`:
 
