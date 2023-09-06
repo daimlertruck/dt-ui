@@ -1,6 +1,6 @@
 # DT-UI - Design System Library
 
-This is DT-UI component library repository. It contains UI components, brand themes, examples and documentation for the Daimler Truck multi-brand desing system.
+This is DT-UI component library repository. It contains UI components, brand themes, examples and documentation for the Daimler Truck multi-brand design system.
 DT-UI component library is headless and can be used to serve multiple brands.
 
 #### **DT-UI provides:**
