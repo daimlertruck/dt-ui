@@ -36,3 +36,4 @@ export { default as NotFound } from './NotFound';
 export { default as NoDataIcon } from './NoData';
 export { default as RemoveCircleOutline } from './RemoveCircleOutline';
 export { default as MoreHorizontalIcon } from './MoreHorizontal';
+export { default as PauseCircleOutline } from './PauseCircleOutline';
