@@ -41,7 +41,6 @@ export * from './components/typography';
 export * from './components/box';
 export * from './components/tabs';
 export * from './components/spinner';
-export * from './components/hidden-text';
 export * from './components/stepper';
 export * from './components/checkbox';
 export * from './components/radio';
