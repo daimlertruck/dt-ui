@@ -40,9 +40,9 @@ const Form = ({
   );
 };
 
-Form.Group = ({ children, isDisabled, title, tooltip }: GroupProps) => {
+Form.Group = ({ children, isDisabled, title, tooltip, style }: GroupProps) => {
   return (
-    <GroupStyled>
+    <GroupStyled style={style}>
       {title && (
         <LabelStyled>
           <Typography
@@ -56,7 +56,7 @@ Form.Group = ({ children, isDisabled, title, tooltip }: GroupProps) => {
             <Tooltip
               content={tooltip}
               direction={TooltipDirection.Right}
-              style={{ maxWidth: '250px' }}
+              style={{ maxWidth: 250 }}
             >
               <InfoIcon width='16' height='16' />
             </Tooltip>
