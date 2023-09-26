@@ -45,8 +45,7 @@ variables:
 stages:
   - stage: Prepare
     displayName: Prepare environment variables
-    pool:
-      vmImage: ubuntu-latest
+    pool: DEVAgentPool
     jobs:
       - job: Environment
         displayName: Prepare Environment variables
@@ -65,12 +64,12 @@ stages:
   - stage: ContinuousIntegration
     displayName: Continuous Integration
     dependsOn: Prepare
-    pool:
-      vmImage: "ubuntu-latest"
+    pool: DEVAgentPool
     jobs:
       - job: Lint
         displayName: Run Lint
         steps:
+          - template: templates/yarn-node-install.yml
           - script: |
               yarn install
               yarn lint
@@ -80,6 +79,7 @@ stages:
         displayName: Run Unit Tests
         dependsOn: Lint
         steps:
+          - template: templates/yarn-node-install.yml
           - script: |
               yarn install
               yarn test
@@ -95,8 +95,7 @@ stages:
     displayName: Build DT-UI
     condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
     dependsOn: ContinuousIntegration
-    pool:
-      vmImage: "ubuntu-latest"
+    pool: DEVAgentPool
     variables:
       - group: common-var-group
     jobs:
@@ -114,6 +113,8 @@ stages:
                 echo "Publishing the new version: $current_version"
               fi
             displayName: "Compare package versions"
+
+          - template: templates/yarn-node-install.yml
           - script: |
               yarn install
               yarn build
@@ -131,18 +132,14 @@ stages:
   - stage: BuildAndDeployStorybook
     displayName: Build and Deploy Storybook
     dependsOn: ContinuousIntegration
-    pool:
-      vmImage: "ubuntu-latest"
+    pool: DEVAgentPool
     jobs:
       - job: BuildStorybook
         displayName: Build Storybook
         workspace:
           clean: all
         steps:
-          - task: NodeTool@0
-            displayName: Node install
-            inputs:
-              versionSpec: '16.x'
+          - template: templates/yarn-node-install.yml
           - task: Yarn@3
             inputs:
               arguments: "install"
@@ -210,8 +207,7 @@ stages:
 
   - stage: ChangePRDescription
     displayName: Change PR Description
-    pool:
-      vmImage: ubuntu-latest
+    pool: DEVAgentPool
     variables:
       - group: common-var-group
     dependsOn: BuildAndDeployStorybook
@@ -238,8 +234,7 @@ stages:
 
   - stage: DeletePreviews
     displayName: Delete Preview Environments
-    pool:
-      vmImage: ubuntu-latest
+    pool: DEVAgentPool
     variables:
       - group: common-var-group
     condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
