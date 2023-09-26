@@ -6,7 +6,7 @@ resources:
       type: GitHubEnterprise
       name: tblx/azure-pipeline-templates
       ref: v52
-      endpoint: GitHubTBLX
+      endpoint: GitHubDTUI
 
 trigger:
   batch: true
