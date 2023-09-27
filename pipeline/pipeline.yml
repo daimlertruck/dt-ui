@@ -79,9 +79,10 @@ stages:
       - job: BuildAndPublish
         displayName: Run Build and Publish
         steps:
+          - template: templates/yarn-node-install.yml
           - template: templates/npmrc-creation.yml
           - script: |
-              published_versions=$(npm show @dt-ui/react versions)
+              published_versions=$(yarn info @dt-ui/react versions)
               current_version=$(node -pe "require('./packages/dt-ui-react/package.json').version")
               if [[ $published_versions == *"$current_version"* ]]; then
                 echo "Version is already published: $current_version"
@@ -90,8 +91,6 @@ stages:
                 echo "Publishing the new version: $current_version"
               fi
             displayName: "Compare package versions"
-
-          - template: templates/yarn-node-install.yml
           - script: |
               yarn install
               yarn build
