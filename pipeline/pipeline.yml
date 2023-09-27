@@ -225,7 +225,7 @@ stages:
                 echo "Preview Link is already in the description."
                 exit 0
               else
-                gh pr edit $(PR_NUMBER) --body "$PR_VIEW_OUTPUT https://git.t3.daimlertruck.com/pages/DT-Design-System/documentation-deploy-test/$(PR_NAME)"
+                gh pr edit $(PR_NUMBER) --body "$PR_VIEW_OUTPUT https://git.t3.daimlertruck.com/pages/DT-Design-System/dt-ui/$(PR_NAME)"
               fi
             displayName: Add Live Preview url to PR description
             env:
