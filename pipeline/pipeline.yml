@@ -24,7 +24,7 @@ trigger:
 pr:
   branches:
     include:
-      - '*'
+      - "*"
   paths:
     include:
       - packages/dt-ui-react/*
@@ -89,7 +89,7 @@ stages:
         displayName: Run Unit Tests
         dependsOn: Lint
         steps:
-          - template: templates/yarn-node-install.yml           
+          - template: templates/yarn-node-install.yml
           - script: |
               yarn install
               yarn test
@@ -130,7 +130,7 @@ stages:
               git push origin $(Build.SourceBranchName)
               git push origin --tags
             displayName: "Bump affected packages version and tag"
-            
+
   - stage: BuildAndPublish
     displayName: Build DT-UI
     condition: and(contains(variables['build.sourceBranch'], 'refs/heads/alpha'), succeeded())
@@ -273,7 +273,6 @@ stages:
             displayName: Add Live Preview url to PR description
             env:
               GH_ENTERPRISE_TOKEN: $(gh-token)
-              GH_HOST: $(GH_HOST)
 
   - stage: DeletePreviews
     displayName: Delete Preview Environments
@@ -300,18 +299,17 @@ stages:
           - script: |
               git pull
               COMMIT_HASH=$(git rev-parse HEAD)
-              FOUND_PR_NUMBER=$(gh search prs $COMMIT_HASH --json "number" --jq ".[].number" --state "closed")
+              FOUND_PR_NUMBER=$(curl --request GET --url "https://$(GH_HOST)/api/v3/repos/$(REPO_OWNER)/$(REPO_NAME)/commits/$COMMIT_HASH/pulls?state=closed" --header "Authorization: Bearer $GH_ENTERPRISE_TOKEN" | jq -r ".[].number")
               echo "Will delete preview environment for: PR-$FOUND_PR_NUMBER"
-              
+
               git checkout -b gh-pages-$(Build.BuildId) origin/gh-pages
               rm -rf PR-$FOUND_PR_NUMBER
               git add . --all
-              
+
               git commit -m "chore: delete PR preview"
               git checkout gh-pages
               git merge gh-pages-$(Build.BuildId)
               git push origin gh-pages
-            displayName: 'Delete preview folder on Github Pages'
+            displayName: "Delete preview folder on Github Pages"
             env:
               GH_ENTERPRISE_TOKEN: $(gh-token)
-              GH_HOST: $(GH_HOST)
