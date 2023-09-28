@@ -1,9 +1,13 @@
 import styled from '@emotion/styled';
 
-export const SearchFieldIconStyled = styled.span`
+interface SearchFieldIconStyledProps {
+  isLoading?: boolean;
+}
+
+export const SearchFieldIconStyled = styled.span<SearchFieldIconStyledProps>`
   align-items: center;
   background-color: ${({ theme }) => theme.colors.white};
-  cursor: pointer;
+  cursor: ${({ isLoading }) => (isLoading ? 'default' : 'pointer')};
   display: flex;
   flex-flow: column nowrap;
   height: 35px;
