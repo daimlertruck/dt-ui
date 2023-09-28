@@ -41,6 +41,12 @@ variables:
       value: $[format('PR-{0}', variables['System.PullRequest.PullRequestNumber'])]
     ${{ else }}:
       value: ""
+  - name: REPO_OWNER
+    value: DT-Design-System
+  - name: REPO_NAME
+    value: dt-ui
+  - name: GH_HOST
+    value: git.t3.daimlertruck.com
 
 stages:
   - stage: Prepare
@@ -218,18 +224,21 @@ stages:
           clean: all
         steps:
           - script: |
-              PR_VIEW_OUTPUT=$(gh pr view $(PR_NUMBER) --json "body" --jq ".body")
+              PR_VIEW_OUTPUT=$(curl --request GET --url "https://$(GH_HOST)/api/v3/repos/$(REPO_OWNER)/$(REPO_NAME)/pulls/$(PR_NUMBER)" --header "Authorization: Bearer $GH_ENTERPRISE_TOKEN" | jq -r '.body')
 
               if echo "$PR_VIEW_OUTPUT" | grep -q "/pages/.*\/$(PR_NAME)"; then
                 echo "Preview Link is already in the description."
                 exit 0
               else
-                gh pr edit $(PR_NUMBER) --body "$PR_VIEW_OUTPUT https://git.t3.daimlertruck.com/pages/DT-Design-System/dt-ui/$(PR_NAME)"
+                NEW_BODY=$(jq -n --arg string "$PR_VIEW_OUTPUT" '($string + "\n\nhttps://$(GH_HOST)/pages/$(REPO_OWNER)/$(REPO_NAME)/$(PR_NAME)")')
+                curl --request PATCH \
+                  --url "https://$(GH_HOST)/api/v3/repos/$(REPO_OWNER)/$(REPO_NAME)/pulls/$(PR_NUMBER)" \
+                  --header "Authorization: Bearer $GH_ENTERPRISE_TOKEN" \
+                  --data-raw '{ "body":'"$NEW_BODY"' }'
               fi
             displayName: Add Live Preview url to PR description
             env:
               GH_ENTERPRISE_TOKEN: $(gh-token)
-              GH_HOST: git.t3.daimlertruck.com
 
   - stage: DeletePreviews
     displayName: Delete Preview Environments
@@ -256,18 +265,17 @@ stages:
           - script: |
               git pull
               COMMIT_HASH=$(git rev-parse HEAD)
-              FOUND_PR_NUMBER=$(gh search prs $COMMIT_HASH --json "number" --jq ".[].number" --state "closed")
+              FOUND_PR_NUMBER=$(curl --request GET --url "https://$(GH_HOST)/api/v3/repos/$(REPO_OWNER)/$(REPO_NAME)/commits/$COMMIT_HASH/pulls?state=closed" --header "Authorization: Bearer $GH_ENTERPRISE_TOKEN" | jq -r ".[].number")
               echo "Will delete preview environment for: PR-$FOUND_PR_NUMBER"
-              
+
               git checkout -b gh-pages-$(Build.BuildId) origin/gh-pages
               rm -rf PR-$FOUND_PR_NUMBER
               git add . --all
-              
+
               git commit -m "chore: delete PR preview"
               git checkout gh-pages
               git merge gh-pages-$(Build.BuildId)
               git push origin gh-pages
-            displayName: 'Delete preview folder on Github Pages'
+            displayName: "Delete preview folder on Github Pages"
             env:
               GH_ENTERPRISE_TOKEN: $(gh-token)
-              GH_HOST: git.t3.daimlertruck.com
