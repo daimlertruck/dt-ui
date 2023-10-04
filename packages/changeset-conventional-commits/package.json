@@ -1,0 +1,41 @@
+{
+  "name": "changeset-conventional-commits",
+  "version": "0.0.0",
+  "description": "Generate Changesets from conventional commits",
+  "main": "bin/index.js",
+  "files": [
+    "/bin"
+  ],
+  "bin": {
+    "changeset-conventional": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamchathu/changeset-conventional-commits.git"
+  },
+  "author": {
+    "name": "Chathu Vishawjith",
+    "url": "https://chathu.me/"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
+    "@changesets/read": "^0.5.9",
+    "@changesets/types": "^5.2.1",
+    "@changesets/write": "^0.2.3",
+    "@manypkg/get-packages": "^2.2.0",
+    "chalk": "^5.3.0",
+    "figlet": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.10",
+    "ts-node-dev": "^2.0.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.1.6"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
