@@ -2,6 +2,7 @@
   "name": "changeset-conventional-commits",
   "version": "0.0.0",
   "description": "Generate Changesets from conventional commits",
+  "private": true,
   "main": "bin/index.js",
   "files": [
     "/bin"
