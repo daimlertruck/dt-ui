@@ -1,0 +1,13 @@
+{
+  "mode": "pre",
+  "tag": "alpha",
+  "initialVersions": {
+    "@dt-ui/docs": "0.0.0",
+    "changeset-conventional-commits": "0.0.0",
+    "@dt-ui/react": "0.1.0-alpha.15",
+    "eslint-config-custom": "0.0.0",
+    "jest-config": "0.0.0",
+    "tsconfig": "0.0.0"
+  },
+  "changesets": []
+}
