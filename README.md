@@ -28,7 +28,7 @@ At the moment, DT UI is available as an npm package, `@dt-ui/react`, for React a
 
 #### Get your API key from Artifactory
 
-Go to **Edit Profile** page in [Artifactory](https://artifacts.i.mercedes-benz.com/). You can find an **API key** field in the **Authentication Settings** section.
+Go to **Edit Profile** page in [Artifactory](https://art.t3.daimlertruck.com/). You can find an **API key** field in the **Authentication Settings** section.
 
 If the API key field is empty, you can click on the button to generate the key.
 
@@ -45,14 +45,16 @@ touch .npmrc
 Scopes can be associated with a separate registry. This allows you to seamlessly use a mix of packages from the public npm registry and one or more private registries. You need to paste the following into the .npmrc file instead:
 
 ```
-@dt-ui:registry=https://artifacts.i.mercedes-benz.com/artifactory/api/npm/tdh-main-npm-releases/
-//artifacts.i.mercedes-benz.com/artifactory/api/npm/tdh-main-npm-releases/:_password=<BASE64_PASSWORD>
-//artifacts.i.mercedes-benz.com/artifactory/api/npm/tdh-main-npm-releases/:username=<USERNAME>
-//artifacts.i.mercedes-benz.com/artifactory/api/npm/tdh-main-npm-releases/:email=youremail@daimlertruck.com
-//artifacts.i.mercedes-benz.com/artifactory/api/npm/tdh-main-npm-releases/:always-auth=true
+@dt-ui:registry=https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/
+//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:_password=<BASE64_PASSWORD>
+//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:username=<USERNAME>
+//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:email=youremail@daimlertruck.com
+//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:always-auth=true
 ```
 
 Encode your `<apiKey>` to `<BASE64_PASSWORD>` using an appropriate [encoding tool like this one](https://www.base64encode.org).
+
+Your `<USERNAME>` should include "_user_@tbdir.net". 
 
 ### Install DT UI package
 
