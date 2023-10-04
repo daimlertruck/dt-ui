@@ -21,6 +21,7 @@ yarn-error.log*
 
 # tsup
 dist
+bin
 
 # eslint
 **/.eslintcache
