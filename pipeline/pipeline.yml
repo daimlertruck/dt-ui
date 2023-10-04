@@ -101,8 +101,8 @@ stages:
             displayName: "Run Publish"
             inputs:
               command: "pack and publish"
-              artifactoryService: "Artifactory New MBAG"
-              targetRepo: "tdh-main-npm-releases"
+              artifactoryService: "Artifactory DT"
+              targetRepo: "DTUI_NPM_LOCAL"
               workingFolder: "packages/dt-ui-react"
 
   - stage: BuildAndDeployStorybook
