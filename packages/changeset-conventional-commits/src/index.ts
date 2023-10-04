@@ -25,7 +25,10 @@ const conventionalCommitChangeset = async (
   const { baseBranch = 'main', ignore } = changesetConfig;
 
   const packages = getPackagesSync(cwd).packages.filter(
-    (pkg) => !pkg.packageJson.private && Boolean(pkg.packageJson.version)
+    (pkg) =>
+      !pkg.packageJson.private &&
+      Boolean(pkg.packageJson.version) &&
+      !ignore.includes(pkg.packageJson.name)
   );
 
   const commitsSinceBase = getCommitsSinceRef(baseBranch);
