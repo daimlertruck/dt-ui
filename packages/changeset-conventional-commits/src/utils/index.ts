@@ -126,14 +126,21 @@ export const conventionalMessagesWithCommitsToChangesets = (
         );
       });
       const packagesChanged = packages.filter((pkg) => {
-        return filesChanged.some((file) =>
-          file.match(pkg.dir.replace(`${getRepoRoot()}/`, ''))
+        return filesChanged.some(
+          (file) =>
+            file.match(pkg.dir.replace(`${getRepoRoot()}/`, '')) ||
+            isBreakingChange(entry.changelogMessage)
         );
       });
 
-      if (packagesChanged.length === 0) return null;
+      const packagesChangedWithDependencies = getDependencyPackages(
+        packagesChanged,
+        packages
+      );
+
+      if (packagesChangedWithDependencies.length === 0) return null;
       return {
-        releases: packagesChanged.map((pkg) => {
+        releases: packagesChangedWithDependencies.map((pkg) => {
           return {
             name: pkg.packageJson.name,
             type: isBreakingChange(entry.changelogMessage)
@@ -145,7 +152,7 @@ export const conventionalMessagesWithCommitsToChangesets = (
         }),
         commit: entry.commitHashes[0],
         summary: entry.changelogMessage,
-        packagesChanged,
+        packagesChanged: packagesChangedWithDependencies,
       };
     })
     .filter(Boolean) as Changeset[];
@@ -188,6 +195,33 @@ const compareChangeSet = (a: Changeset, b: Changeset): boolean => {
     a.summary === b.summary &&
     JSON.stringify(a.releases) == JSON.stringify(b.releases)
   );
+};
+
+const getDependencyPackages = (
+  packagesChanged: ManyPkgPackage[],
+  packages: ManyPkgPackage[]
+) => {
+  const isPackageChanged = (packageName: string = '') => {
+    return packagesChanged.some((pkg) => pkg.packageJson.name === packageName);
+  };
+
+  const addDependents = (packageName: string = '') => {
+    for (const pkg of packages) {
+      if (
+        pkg.packageJson.dependencies?.[packageName] &&
+        !isPackageChanged(pkg.packageJson.name)
+      ) {
+        packagesChanged.push(pkg);
+        addDependents(pkg.packageJson.name);
+      }
+    }
+  };
+
+  for (const packageChanged of packagesChanged) {
+    addDependents(packageChanged.packageJson.name);
+  }
+
+  return packagesChanged;
 };
 
 export const difference = (a: Changeset[], b: Changeset[]): Changeset[] => {
