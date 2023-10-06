@@ -11,5 +11,5 @@ export default defineConfig({
   bundle: false,
   target: 'node16',
   format: 'cjs',
-  tsconfig: 'tsconfig.build.json',
+  tsconfig: 'tsconfig.json',
 });
