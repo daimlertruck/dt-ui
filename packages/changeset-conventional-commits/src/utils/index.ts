@@ -125,13 +125,18 @@ export const conventionalMessagesWithCommitsToChangesets = (
           (ignoredPattern) => !file.match(ignoredPattern)
         );
       });
-      const packagesChanged = packages.filter((pkg) => {
+
+      let packagesChanged = packages.filter((pkg) => {
         return filesChanged.some(
           (file) =>
             file.match(pkg.dir.replace(`${getRepoRoot()}/`, '')) ||
             isBreakingChange(entry.changelogMessage)
         );
       });
+
+      if (!packagesChanged.length) {
+        packagesChanged = [...packages];
+      }
 
       const packagesChangedWithDependencies = getDependencyPackages(
         packagesChanged,
