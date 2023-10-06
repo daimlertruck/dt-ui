@@ -6,5 +6,6 @@
   "linked": [],
   "access": "public",
   "updateInternalDependencies": "patch",
+  "baseBranch": "alpha",
   "ignore": ["@dt-ui/docs"]
 }
