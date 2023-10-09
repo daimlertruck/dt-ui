@@ -136,10 +136,6 @@ export const conventionalMessagesWithCommitsToChangesets = (
         );
       });
 
-      if (!packagesChanged.length) {
-        packagesChanged = [...packages];
-      }
-
       const packagesChangedWithDependencies = getDependencyPackages(
         packagesChanged,
         packages
