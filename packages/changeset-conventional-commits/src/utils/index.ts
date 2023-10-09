@@ -1,6 +1,8 @@
 import type { Changeset } from '@changesets/types';
 import { execSync } from 'child_process';
+import fs from 'fs';
 import type { ManyPkgPackage } from '../types';
+import { CHANGESET_TAGS_FILE_LOCATION } from './constants';
 
 interface Commit {
   commitHash: string;
@@ -232,5 +234,13 @@ const getDependencyPackages = (
 export const difference = (a: Changeset[], b: Changeset[]): Changeset[] => {
   return a.filter(
     (changeA) => !b.some((changeB) => compareChangeSet(changeA, changeB))
+  );
+};
+
+export const writePackageNamesToBeTagged = (packageNames: string[]) => {
+  const packagesToBeTagged = [...new Set(packageNames)];
+  fs.writeFileSync(
+    CHANGESET_TAGS_FILE_LOCATION,
+    JSON.stringify(packagesToBeTagged)
   );
 };

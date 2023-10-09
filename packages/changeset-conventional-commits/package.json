@@ -8,7 +8,8 @@
     "/bin"
   ],
   "bin": {
-    "changeset-conventional": "./bin/index.js"
+    "changeset-conventional": "./bin/index.js",
+    "changeset-conventional-tag": "./bin/add-tag.js"
   },
   "repository": {
     "type": "git",

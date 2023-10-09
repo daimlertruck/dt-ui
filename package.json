@@ -7,9 +7,9 @@
     "test": "turbo run test",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "generate-changesets": "changeset-conventional",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
+    "changesets:add": "changeset-conventional",
+    "changesets:version": "changeset version",
+    "changesets:tag": "changeset-conventional-tag",
     "release": "turbo run build --filter=docs^... && changeset publish"
   },
   "devDependencies": {
