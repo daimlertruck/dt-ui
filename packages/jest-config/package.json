@@ -2,7 +2,7 @@
   "name": "jest-config",
   "version": "0.0.0",
   "main": "jest.config.js",
-  "private": "true",
+  "private": true,
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^14.0.0",

@@ -4,22 +4,21 @@ import writeChangeset from '@changesets/write';
 import { getPackagesSync } from '@manypkg/get-packages';
 import { execSync } from 'child_process';
 import fs from 'fs';
-import path from 'path';
 import {
   associateCommitsToConventionalCommitMessages,
   conventionalMessagesWithCommitsToChangesets,
   difference,
   getCommitsSinceRef,
+  writePackageNamesToBeTagged,
 } from './utils';
-
-const CHANGESET_CONFIG_LOCATION = path.join('.changeset', 'config.json');
+import { CHANGESET_CONFIG_FILE_LOCATION } from './utils/constants';
 
 const conventionalCommitChangeset = async (
   cwd: string = process.cwd(),
   options: { ignoredFiles: (string | RegExp)[] } = { ignoredFiles: [] }
 ) => {
   const changesetConfig = JSON.parse(
-    fs.readFileSync(path.join(cwd, CHANGESET_CONFIG_LOCATION)).toString()
+    fs.readFileSync(CHANGESET_CONFIG_FILE_LOCATION).toString()
   );
 
   const { baseBranch = 'main', ignore } = changesetConfig;
@@ -57,6 +56,10 @@ const conventionalCommitChangeset = async (
     currentChangesets.length === 0
       ? changesets
       : difference(changesets, currentChangesets);
+
+  writePackageNamesToBeTagged(
+    newChangesets.map(({ releases: [release] }) => release.name)
+  );
 
   newChangesets.forEach((changeset) => writeChangeset(changeset, cwd));
 };
