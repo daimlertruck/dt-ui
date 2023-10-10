@@ -23,7 +23,6 @@ export * from './components/tag';
 export * from './components/form';
 export * from './components/footer';
 export * from './components/link';
-export * from './components/section';
 export * from './components/divider';
 export * from './components/breadcrumb';
 export * from './components/toast';
