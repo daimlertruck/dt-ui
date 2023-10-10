@@ -9,7 +9,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changesets:add": "changeset-conventional",
     "changesets:version": "changeset version",
-    "changesets:tag": "changeset-conventional-tag",
+    "changesets:release": "changeset-conventional-tag",
+    "changesets:ci": "yarn changesets:add && yarn changesets:version && yarn changesets:release",
     "release": "turbo run build --filter=docs^... && changeset publish"
   },
   "devDependencies": {
