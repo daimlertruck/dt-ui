@@ -1,7 +1,10 @@
-import type { Changeset } from '@changesets/types';
 import { execSync } from 'child_process';
 import fs from 'fs';
+
+import type { Changeset } from '@changesets/types';
+
 import type { ManyPkgPackage } from '../types';
+
 import { CHANGESET_TAGS_FILE_LOCATION } from './constants';
 
 interface Commit {
@@ -128,7 +131,7 @@ export const conventionalMessagesWithCommitsToChangesets = (
         );
       });
 
-      let packagesChanged = packages.filter((pkg) => {
+      const packagesChanged = packages.filter((pkg) => {
         return filesChanged.some(
           (file) =>
             file.match(pkg.dir.replace(`${getRepoRoot()}/`, '')) ||
