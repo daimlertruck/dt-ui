@@ -30,7 +30,8 @@ DT-UI component library is headless and can be used to serve multiple brands.
 - [React Testing Library](https://testing-library.com/) - to test UI components in a user-centric way
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
-- 🚧 [Changesets](https://github.com/changesets/changesets) for managing versioning and changelogs
+- [Changesets](https://github.com/changesets/changesets) for managing versioning and changelogs
+  - [changeset-conventional-commits (forked - custom package)](https://github.com/iamchathu/changeset-conventional-commits) for automatically generating changesets based on conventional commits
 - [Tsup](https://github.com/egoist/tsup) — TypeScript bundler powered by esbuild
 - [Yarn](https://yarnpkg.com/) from managing packages
 
@@ -42,11 +43,14 @@ DT-UI component library is headless and can be used to serve multiple brands.
 - `yarn clean` - Clean up all `node_modules` and `dist` folders (runs each package's clean script)
 - `yarn format` - Format all TypeScript, TypeScript with JSX, and Markdown files based on prettier
 - `yarn test` - Run tests for all packages
-- 🚧 `yarn changeset` - Generate a changeset
-- 🚧 `yarn version-packages` - consumes all changesets, and updates to the most appropriate semver version based on those changesets. It also writes changelog entries for each consumed changeset
+- `yarn changesets:add` - Generates changesets based on conventional commits
+- `yarn changesets:version` - Consumes all changesets, and updates to the most appropriate semver version based on those changesets. It also writes changelog entries for each consumed changeset
+- `yarn changesets:tag` - Commits the newly created changelogs with the latest packages version and adds the git-tag as `<package-name>@<package-version>`
+- `yarn changesets:ci` - Runs the whole changesets flow, useful for pipelines to generate changesets, versioning and tags
 - 🚧 `yarn release` - Build all packages and run npm publish in each package that is of a later version than the one currently listed on npm
 
-## Apps & Packages
+
+### Apps & Packages
 
 This Turborepo includes the following packages and applications:
 
@@ -55,6 +59,7 @@ This Turborepo includes the following packages and applications:
 - `packages/tsconfig`: Shared `tsconfig.json`s used throughout the Turborepo
 - `packages/eslint-config-custom`: ESLint preset
 - `packages/jest-config`: Shared jest configuration file
+- `packages/changeset-conventional-commits`: Changeset plugin used to automatically generate changesets and tagging versions
 
 ### Compilation
 
@@ -85,32 +90,112 @@ export * from './components/buttons';
 // Add new component exports here
 ```
 
-## 🚧 Versioning & Publishing Packages
+### Developer Documentation
 
-This example uses [Changesets](https://github.com/changesets/changesets) to manage versions, create changelogs, and publish to npm. It's preconfigured so you can start publishing packages immediately.
+DT UI developer documentation is built with Storybook. Storybook documentation is composed by:
 
-You'll need to create an `NPM_TOKEN` and `GITHUB_TOKEN` and add it to your GitHub repository settings to enable access to npm. It's also worth installing the [Changesets bot](https://github.com/apps/changeset-bot) on your repository.
+- Documentation pages
+- Component stories
 
-### 🚧 Generating the Changelog
+Both supports [MDX](https://github.com/mdx-js/mdx), which allows you to use Markdown syntax and JSX for more advanced components.
 
-To generate your changelog, run `pnpm changeset` locally:
+For more information on Storybook and Docs, read the following documentation and blog posts:
 
-1. **Which packages would you like to include?** – This shows which packages and changed and which have remained the same. By default, no packages are included. Press `space` to select the packages you want to include in the `changeset`.
-1. **Which packages should have a major bump?** – Press `space` to select the packages you want to bump versions for.
-1. If doing the first major version, confirm you want to release.
-1. Write a summary for the changes.
-1. Confirm the changeset looks as expected.
-1. A new Markdown file will be created in the `changeset` folder with the summary and a list of the packages included.
+- https://storybook.js.org/addons/@storybook/addon-docs
+- https://storybook.js.org/docs/6.5/react/writing-docs/introduction
+- https://medium.com/storybookjs/storybook-docs-sneak-peak-5be78445094a
+- https://storybook.js.org/tutorials/design-systems-for-developers/react/en/document/
+- https://storybook.js.org/blog/structuring-your-storybook/
 
-### 🚧 Releasing
+#### How to add documentation pages?
 
-When you push your code to GitHub, the [GitHub Action](https://github.com/changesets/action) will run the `release` script defined in the root `package.json`:
+If you created custom components to import in the page or a lot of subpages, we recommend to create a sub-directory for all the files related to the page and subpages, including the MDX file(s). The page(s) will still be included automatically.
 
-```bash
-turbo run build --filter=docs^... && changeset publish
+Note: On Storybook v6, documentation pages still use the `.stories.mdx` extension (otherwise they are not included). On v7 these pages can use `.mdx` extension.
+
+#### How to add component stories?
+
+In case you want to add documentation more complex than the usual component stories, add a `.stories.mdx` file alongside with the component inside `packages/dt-ui-react/components`, or convert the current story in Component Story Format (CSF) to MDX format (see an example of the conversion on https://storybook.js.org/docs/6.5/react/writing-docs/mdx#mdx-flavored-csf).
+
+For more information on how to write MDX stories see https://storybook.js.org/docs/6.5/react/writing-docs/mdx#writing-stories.
+
+Note: MDX and CSF stories can't coexist in the same directory.
+
+### Versioning & Publishing Packages
+
+This project uses [Changesets](https://github.com/changesets/changesets) and [changeset-conventional-commits (forked - custom package)](packages/changeset-conventional-commits/README.md) to manage versions and create changelogs. 
+
+#### Workflow
+
+- `changeset-conventional-commits`: Generates changesets based on conventional commits
+- `Changesets`: Consumes the changesets in order to bump the packages version and it's dependencies
+- `changeset-conventional-commits`: At last, commits the new packages version and changelogs with summary: `Version Packages` and tag it using the format: `<package-name>@<package-version>`  
+
+#### Generating the Changelog
+
+To generate your changelog, run `yarn changeset:add` followed by `yarn changeset:version` locally, you'll have the changelogs generated from the conventional commits as follows:
+
+```markdown
+# @package/example
+
+## 1.0.0
+
+### Major Changes
+
+- fix(container)!: remove ability to specify the container background
+
+### Minor Changes
+
+- feat(button): add new property to enable different shadows
+
+### Patch Changes
+
+- docs: move Storybook to docs application
+- docs: add support section in README
+- docs: add Usage section on README
+- fix: remove page components
 ```
 
-⚠️ All flagged 🚧 information on this file needs further review since might not be working as expected.
+ 🛠 This is the default format provided by changesets, it's not so flexible to customize, however we have some room for improvement, check it out: [modifying the changelog formats](https://github.com/changesets/changesets/blob/main/docs/modifying-changelog-format.md)
+
+#### Releasing
+
+When you merge your code to the `alpha` branch, the pipeline will run the `VersionAndTag` step with `yarn changeset:ci` script defined in the root `package.json`:
+
+```bash 
+yarn changesets:add && yarn changesets:version && yarn changesets:tag 
+```
+Respectively runs:
+
+```bash 
+node scripts/changeset-plugin --add-changesets
+```
+
+```bash 
+changeset version
+```
+
+```bash 
+node scripts/changeset-plugin --add-tag
+```
+
+Those commands will be responsible to:
+ - Generates changeset based on the lasts conventional commits since the last tagged version
+ - Bump packages with semver based on changeset files
+ - Commit generated `CHANGELOG.md` files and updated `package.json` files, adding the summary: `Version Packages`
+   - Adds git-tag for the new packages version and push changes.
+
+🛠 Finally after versioning and tagging, the pack and publish is done in the pipeline in the step `BuildAndPublish` by running the following commands for the `@dt-ui/react` package:
+ 
+ - `yarn install`
+ - `yarn build`
+ - `yarn pack`
+ - `yarn publish`
+
+ The `BuildAndPublish` step only runs if the previous `VersionAndTag` step has been run successfully
+
+⚠️ All flagged 🚧 information on this file needs further review since might not be working as expected.\
+⚠️ All flagged 🛠 information on this file represents the current state but not the final, it needs to be improved.
 
 ## Support
 
