@@ -97,10 +97,38 @@ stages:
               mergeTestResults: true
               failTaskOnFailedTests: true
 
+  - stage: VersionAndTag
+    displayName: Version and Tag DT-UI
+    pool: DEVAgentPool
+    dependsOn: ContinuousIntegration
+    condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
+    jobs:
+      - job: VersionAndTag
+        displayName: Run changesets versioning and tagging
+        steps:
+          - template: templates/yarn-node-install.yml
+          - script: |
+              git config --global user.email "dt-ui@daimlertruck.com"
+              git config --global user.name "dt-ui"
+            displayName: "Setup fake credentials"
+          - checkout: self
+            persistCredentials: true
+
+          - script: |
+              yarn install
+              yarn build
+            displayName: "Run build for changeset plugin"
+            workingDirectory: packages/changeset-conventional-commits
+
+          - script: |
+              yarn changesets:ci
+              git push
+            displayName: "Bump affected packages version and tag"
+            
   - stage: BuildAndPublish
     displayName: Build DT-UI
     condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
-    dependsOn: ContinuousIntegration
+    dependsOn: VersionAndTag
     pool: DEVAgentPool
     variables:
       - group: common-var-group
