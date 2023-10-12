@@ -7,10 +7,10 @@
     "test": "turbo run test",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "changesets:add": "changeset-conventional",
+    "changesets:add": "node scripts/changeset-plugin --add-changesets",
     "changesets:version": "changeset version",
-    "changesets:release": "changeset-conventional-tag",
-    "changesets:ci": "yarn changesets:add && yarn changesets:version && yarn changesets:release",
+    "changesets:tag": "node scripts/changeset-plugin --add-tag",
+    "changesets:ci": "yarn changesets:add && yarn changesets:version && yarn changesets:tag",
     "release": "turbo run build --filter=docs^... && changeset publish"
   },
   "devDependencies": {
