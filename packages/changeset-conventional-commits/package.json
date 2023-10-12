@@ -17,6 +17,8 @@
   },
   "license": "MIT",
   "scripts": {
+    "lint": "eslint --cache .",
+    "test": "jest",
     "build": "tsup"
   },
   "dependencies": {

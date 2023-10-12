@@ -1,6 +1,8 @@
-import fs from 'fs';
 import { execSync } from 'child_process';
+import fs from 'fs';
+
 import { getPackagesSync } from '@manypkg/get-packages';
+
 import { CHANGESET_TAGS_FILE_LOCATION } from './utils/constants';
 
 export const addTag = () => {

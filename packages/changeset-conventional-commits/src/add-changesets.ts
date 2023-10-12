@@ -1,8 +1,10 @@
+import { execSync } from 'child_process';
+import fs from 'fs';
+
 import readChangeset from '@changesets/read';
 import writeChangeset from '@changesets/write';
 import { getPackagesSync } from '@manypkg/get-packages';
-import { execSync } from 'child_process';
-import fs from 'fs';
+
 import {
   associateCommitsToConventionalCommitMessages,
   conventionalMessagesWithCommitsToChangesets,
