@@ -1,10 +1,9 @@
-#! /usr/bin/env node
 import fs from 'fs';
 import { execSync } from 'child_process';
 import { getPackagesSync } from '@manypkg/get-packages';
 import { CHANGESET_TAGS_FILE_LOCATION } from './utils/constants';
 
-const addTag = () => {
+export const addTag = () => {
   try {
     const tagPackagesNames: string[] = fs.existsSync(
       CHANGESET_TAGS_FILE_LOCATION
@@ -37,5 +36,3 @@ const addTag = () => {
     console.log(`\u001b[31m ${error} \x1b[0m`);
   }
 };
-
-addTag();
