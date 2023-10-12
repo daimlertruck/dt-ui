@@ -129,7 +129,7 @@ This project uses [Changesets](https://github.com/changesets/changesets) and [ch
 
 - `changeset-conventional-commits`: Generates changesets based on conventional commits
 - `Changesets`: Consumes the changesets in order to bump the packages version and it's dependencies
-- `changeset-conventional-commits`: At last, commits the new packages version and changelogs with summary: `Version Packages` and tag it using the format: `<package-name>@<package-version>`  
+- `changeset-conventional-commits`: At last, commits the new packages version and changelogs with summary: `release: version packages` and tag it using the format: `<package-name>@<package-version>`  
 
 #### Generating the Changelog
 
@@ -180,9 +180,9 @@ node scripts/changeset-plugin --add-tag
 ```
 
 Those commands will be responsible to:
- - Generates changeset based on the lasts conventional commits since the last tagged version
+ - Generate changeset based on the last conventional commits since the last tagged version
  - Bump packages with semver based on changeset files
- - Commit generated `CHANGELOG.md` files and updated `package.json` files, adding the summary: `Version Packages`
+ - Commit generated `CHANGELOG.md` files and updated `package.json` files, adding the summary: `release: version packages`
    - Adds git-tag for the new packages version and push changes.
 
 🛠 Finally after versioning and tagging, the pack and publish is done in the pipeline in the step `BuildAndPublish` by running the following commands for the `@dt-ui/react` package:
