@@ -3,14 +3,10 @@
   "version": "0.0.0",
   "description": "Generate Changesets from conventional commits",
   "private": true,
-  "main": "bin/index.js",
+  "main": "dist/index.js",
   "files": [
-    "/bin"
+    "/dist"
   ],
-  "bin": {
-    "changeset-conventional": "./bin/index.js",
-    "changeset-conventional-tag": "./bin/add-tag.js"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/iamchathu/changeset-conventional-commits.git"

@@ -2,7 +2,7 @@ import { defineConfig } from 'tsup';
 
 export default defineConfig({
   entry: ['src', '!src/**/*.spec.*'],
-  outDir: 'bin',
+  outDir: 'dist',
   platform: 'node',
   treeshake: true,
   splitting: false,
