@@ -1,4 +1,5 @@
 import { describe, expect, it } from '@jest/globals';
+
 import {
   associateCommitsToConventionalCommitMessages,
   getRepoRoot,
@@ -73,7 +74,7 @@ describe('associate-commits-to-conventional-commit-messages', () => {
           commitHash: 'hash2',
           commitMessage: 'feat: a change',
         },
-      ]),
+      ])
     ).toEqual([
       {
         changelogMessage: 'feat: a change',
@@ -92,7 +93,7 @@ describe('associate-commits-to-conventional-commit-messages', () => {
           commitHash: 'hash2',
           commitMessage: 'a change',
         },
-      ]),
+      ])
     ).toEqual([
       {
         changelogMessage: 'feat: a change',
@@ -115,7 +116,7 @@ describe('associate-commits-to-conventional-commit-messages', () => {
           commitHash: 'hash3',
           commitMessage: 'a change',
         },
-      ]),
+      ])
     ).toEqual([
       {
         changelogMessage: 'feat: a change',
@@ -146,7 +147,7 @@ describe('associate-commits-to-conventional-commit-messages', () => {
           commitHash: 'hash5',
           commitMessage: 'a change',
         },
-      ]),
+      ])
     ).toEqual([
       {
         changelogMessage: 'feat: first change',
@@ -162,12 +163,12 @@ describe('associate-commits-to-conventional-commit-messages', () => {
 
 describe('get-repo-root', () => {
   it('correctly gets the repo root', () => {
-    expect(getRepoRoot().endsWith('changeset-conventional-commits')).toBe(true);
+    expect(getRepoRoot().endsWith('dt-ui')).toBe(true);
   });
 });
 
 describe('git-fetch', () => {
   it('correctly fetches', () => {
-    expect(() => gitFetch('master')).not.toThrow();
+    expect(() => gitFetch('main')).not.toThrow();
   });
 });
