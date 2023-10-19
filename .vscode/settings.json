@@ -1,0 +1,12 @@
+{
+  "editor.tabSize": 2,
+  "css.lint.unknownAtRules": "ignore",
+  "css.validate": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.workingDirectories": [
+    "./packages/dt-ui-react",
+  ]
+}
