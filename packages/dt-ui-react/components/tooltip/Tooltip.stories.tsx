@@ -1,8 +1,13 @@
 import styled from '@emotion/styled';
 import { Story } from '@storybook/react';
 
+import { DeleteIcon } from '../../core';
+import { IconButton } from '../buttons';
+
+import { TooltipContainerProps } from './components/container';
+import { TooltipContentProps } from './components/content';
 import { TooltipDirection } from './constants';
-import { Tooltip, TooltipProps } from './Tooltip';
+import Tooltip from './Tooltip';
 
 export default {
   title: 'Data Display/Tooltip',
@@ -23,10 +28,21 @@ const StyledContainer = styled.div`
   margin-top: 100px;
 `;
 
-const Template: Story<TooltipProps> = ({ ...props }) => {
+const Template: Story<{
+  container: TooltipContainerProps;
+  content: TooltipContentProps;
+}> = ({
+  container: { children, hideDelay },
+  content: { children: contentChildren, direction },
+}) => {
   return (
     <StyledContainer>
-      <Tooltip {...props}>Hover over me</Tooltip>
+      <Tooltip hideDelay={hideDelay}>
+        {children}
+        <Tooltip.Content direction={direction}>
+          {contentChildren}
+        </Tooltip.Content>
+      </Tooltip>
     </StyledContainer>
   );
 };
@@ -34,6 +50,18 @@ const Template: Story<TooltipProps> = ({ ...props }) => {
 export const Default = Template.bind({});
 
 Default.args = {
-  content: 'Some content here',
-  direction: TooltipDirection.Bottom,
+  container: {
+    hideDelay: 0,
+    children: (
+      <IconButton
+        color='error'
+        dataTestId={'delete-access-id-button-'}
+        onClick={() => console.log('hey')}
+        isDisabled={false}
+      >
+        <DeleteIcon />
+      </IconButton>
+    ),
+  },
+  content: { direction: TooltipDirection.Top, children: 'Delete' },
 };

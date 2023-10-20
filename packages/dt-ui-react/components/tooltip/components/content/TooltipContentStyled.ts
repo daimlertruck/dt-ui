@@ -1,25 +1,17 @@
 import styled from '@emotion/styled';
 
-import { TooltipDirection } from './constants';
+import { TOOLTIP_Z_INDEX } from '../../../../constants';
+import { TooltipDirection } from '../../constants';
 
-interface ContentStyledProps {
+interface TooltipContentStyledProps {
   direction: TooltipDirection;
+  top: number;
+  left: number;
 }
 
-export const TooltipStyled = styled.div`
-  position: relative;
-  display: inline-flex;
-  width: fit-content;
-
-  &:hover div[role='tooltip'] {
-    display: block;
-  }
-`;
-
-export const ContentStyled = styled.div<ContentStyledProps>`
-  ${({ theme, direction }) => `
+export const TooltipContentStyled = styled.div<TooltipContentStyledProps>`
+  ${({ theme, direction, top, left }) => `
     ${theme.fontStyles.pXXSmall};
-    display: none;
     width: max-content;
     max-width: 160px;
     overflow-wrap: break-word;
@@ -27,14 +19,13 @@ export const ContentStyled = styled.div<ContentStyledProps>`
     background-color: ${theme.palette.primaryDark_400};
     box-shadow: ${theme.shadows[5]};
     color: ${theme.colors.white};
-    border-radius: 3px;
+    border-radius: 4px;
     text-align: left;
     white-space: initial;
-
-    /* Position the tooltip */
     position: absolute;
-    z-index: 2;
-    
+    z-index: ${TOOLTIP_Z_INDEX}; 
+    top: ${top}px;
+    left: ${left}px;
 
     &:after {
       content: "";
@@ -47,12 +38,12 @@ export const ContentStyled = styled.div<ContentStyledProps>`
     ${
       direction === TooltipDirection.Bottom &&
       `
-        top: 150%;
-        right: 0px;
+        transform: translateX(-50%);
 
         &:after {
           bottom: 100%;
-          left: 85%;
+          left: 50%;
+          margin-left: -5px;
           border-bottom-color:${theme.palette.primaryDark_400};
         }
       `
@@ -61,12 +52,12 @@ export const ContentStyled = styled.div<ContentStyledProps>`
     ${
       direction === TooltipDirection.Top &&
       `
-        bottom: 150%;
-        right: 0px;
+        transform: translate(-50%, -100%);
 
         &:after {
-          top: 100%;
-          left: 85%;
+          top: 100%; 
+          left: 50%;
+          margin-left: -5px;
           border-top-color: ${theme.palette.primaryDark_400};
         }
       `
@@ -75,12 +66,12 @@ export const ContentStyled = styled.div<ContentStyledProps>`
     ${
       direction === TooltipDirection.Right &&
       `
-        top: 0%;
-        left: calc(100% + 10px);
-        
+        transform: translateY(-50%);
+
         &:after {
-          top: 8px;
+          top: 50%;
           right: 100%;
+          margin-top: -5px;
           border-right-color: ${theme.palette.primaryDark_400};
         }
       `
@@ -88,13 +79,13 @@ export const ContentStyled = styled.div<ContentStyledProps>`
 
     ${
       direction === TooltipDirection.Left &&
-      `
-        top: 0%;
-        right: calc(100% + 10px);
-        
+      `        
+        transform: translate(-100%, -50%);
+
         &:after {
-          top: 8px;
+          top: 50%;
           left: 100%;
+          margin-top: -5px;
           border-left-color: ${theme.palette.primaryDark_400};
         }
       `

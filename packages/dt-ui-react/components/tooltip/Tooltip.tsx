@@ -1,31 +1,27 @@
-import { ReactNode } from 'react';
+import {
+  TooltipContainerProps,
+  TooltipContainer,
+  TooltipContent,
+} from './components';
+import { TooltipContextProvider } from './context';
 
-import { BaseProps } from '../../types';
-
-import { TooltipDirection } from './constants';
-import { ContentStyled, TooltipStyled } from './Tooltip.styled';
-
-export interface TooltipProps extends BaseProps {
-  content: ReactNode;
-  direction?: TooltipDirection;
-  styleContainer?: React.CSSProperties;
-}
-
-export const Tooltip = ({
+const Tooltip = ({
   children,
-  content,
-  direction = TooltipDirection.Top,
   style,
-  styleContainer,
-}: TooltipProps) => {
-  return (
-    <TooltipStyled style={styleContainer}>
+  dataTestId,
+  hideDelay,
+}: TooltipContainerProps) => (
+  <TooltipContextProvider>
+    <TooltipContainer
+      hideDelay={hideDelay}
+      style={style}
+      dataTestId={dataTestId}
+    >
       {children}
-      {content && (
-        <ContentStyled direction={direction} role='tooltip' style={style}>
-          {content}
-        </ContentStyled>
-      )}
-    </TooltipStyled>
-  );
-};
+    </TooltipContainer>
+  </TooltipContextProvider>
+);
+
+Tooltip.Content = TooltipContent;
+
+export default Tooltip;

@@ -1,22 +1,20 @@
 # Tooltip
 
-This component displays information when the user moves the mouse pointer over an element.
+This component displays information when the user moves the mouse pointer over an trigger element.
 
 ## Usage
 
 ```jsx
-import { useState } from 'react';
-
 import { TooltipDirection } from './constants';
 import { Tooltip } from './Tooltip';
 
 export const App = () => {
   return (
-    <Tooltip
-      content='Tooltip will appear below the element'
-      direction={TooltipDirection.Bottom}
-    >
+    <Tooltip>
       Hover over me
+      <Tooltip.Content direction={TooltipDirection.Top}>
+        Some content
+      </Tooltip.Content>
     </Tooltip>
   );
 };
@@ -26,12 +24,18 @@ export const App = () => {
 
 ### Tooltip
 
-Component that after hover will open the tooltip's content.
+| Property     | Type                  | Default             | Description                                                 |
+| ------------ | --------------------- | ------------------- | ----------------------------------------------------------- |
+| `children`   | `ReactNode`           | -                   | Child components to be rendered                             |
+| `style`      | `React.CSSProperties` | -                   | Gives the Tooltip containter css properties                 |
+| `dataTestId` | `string`              | `tooltip-container` | Customizable test identifier                                |
+| `hideDelay`  | `number`              | `0ms`               | Delay to hide tooltip when mouse leaving the target element |
 
-| Property         | Type                     | Default              | Description                                                                                                        |
-| ---------------- | ------------------------ | -------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| `children`       | `ReactNode`              | -                    | Component that after hovered will open the Tooltip                                                                 |
-| `content`        | `ReactNode`              | -                    | Text showed on the Tooltip. When string is empty, the tooltip will not be showed.                                  |
-| `direction`      | `enum<TooltipDirection>` | TooltipDirection.Top | Determines the direction of the tooltip (e.g. TooltipDirection.Bottom means the tooltip is below the main element) |
-| `style`          | `React.CSSProperties`    | -                    | Customizable styles applied to the tooltip                                                                         |
-| `styleContainer` | `React.CSSProperties`    | -                    | Customizable styles applied to the container                                                                       |
+### Tooltip.Content
+
+| Property     | Type                     | Default              | Description                                                                           |
+| ------------ | ------------------------ | -------------------- | ------------------------------------------------------------------------------------- |
+| `children`   | `ReactNode`              | -                    | Content showed on the Tooltip. When content is empty, the tooltip will not be showed. |
+| `direction`  | `enum<TooltipDirection>` | TooltipDirection.Top | Determines the direction of the tooltip                                               |
+| `style`      | `React.CSSProperties`    | -                    | Gives the Tooltip Content css properties                                              |
+| `dataTestId` | `string`                 | `tooltip-content`    | Customizable test identifier                                                          |

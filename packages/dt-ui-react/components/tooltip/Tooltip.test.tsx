@@ -1,55 +1,104 @@
-import { render } from '@testing-library/react';
+import {
+  render,
+  fireEvent,
+  waitFor,
+  waitForElementToBeRemoved,
+} from '@testing-library/react';
 import React from 'react';
 
-import { withProviders } from '../../utils';
+import { withProviders, withTooltipProvider } from '../../utils';
 
 import { TooltipDirection } from './constants';
-import { Tooltip } from './Tooltip';
+import Tooltip from './Tooltip';
 
 describe('<Tooltip /> component', () => {
-  const ProvidedTooltip = withProviders(Tooltip);
+  const ProvidedTooltip = withProviders(withTooltipProvider(Tooltip));
 
-  it('renders a tooltip correctly', () => {
-    const { container } = render(
-      <ProvidedTooltip content='Some content'>Hover me</ProvidedTooltip>
-    );
-
-    expect(container).toMatchSnapshot();
-  });
-
-  it('renders a tooltip on the right side of the content', () => {
-    const { container } = render(
-      <ProvidedTooltip
-        content='Some content'
-        direction={TooltipDirection.Right}
-      >
+  it('renders a tooltip correctly', async () => {
+    const { getByTestId } = render(
+      <ProvidedTooltip>
         Hover me
+        <Tooltip.Content direction={TooltipDirection.Top}>
+          Some content
+        </Tooltip.Content>
       </ProvidedTooltip>
     );
 
-    expect(container).toMatchSnapshot();
+    fireEvent.mouseEnter(getByTestId('tooltip-container'));
+
+    await waitFor(() => getByTestId('tooltip-content'));
+
+    expect(getByTestId('tooltip-content')).toMatchSnapshot();
   });
 
-  it('renders a tooltip on the left side of the content', () => {
-    const { container } = render(
-      <ProvidedTooltip content='Some content' direction={TooltipDirection.Left}>
+  it('renders a tooltip on the right side of the content', async () => {
+    const { getByTestId } = render(
+      <ProvidedTooltip>
         Hover me
+        <Tooltip.Content direction={TooltipDirection.Right}>
+          Some content
+        </Tooltip.Content>
       </ProvidedTooltip>
     );
 
-    expect(container).toMatchSnapshot();
+    fireEvent.mouseEnter(getByTestId('tooltip-container'));
+
+    await waitFor(() => getByTestId('tooltip-content'));
+
+    expect(getByTestId('tooltip-content')).toMatchSnapshot();
   });
 
-  it('renders a tooltip on the bottom side of the content', () => {
-    const { container } = render(
-      <ProvidedTooltip
-        content='Some content'
-        direction={TooltipDirection.Bottom}
-      >
+  it('renders a tooltip on the left side of the content', async () => {
+    const { getByTestId } = render(
+      <ProvidedTooltip>
         Hover me
+        <Tooltip.Content direction={TooltipDirection.Left}>
+          Some content
+        </Tooltip.Content>
       </ProvidedTooltip>
     );
 
-    expect(container).toMatchSnapshot();
+    fireEvent.mouseEnter(getByTestId('tooltip-container'));
+
+    await waitFor(() => getByTestId('tooltip-content'));
+
+    expect(getByTestId('tooltip-content')).toMatchSnapshot();
+  });
+
+  it('renders a tooltip on the bottom side of the content', async () => {
+    const { getByTestId } = render(
+      <ProvidedTooltip>
+        Hover me
+        <Tooltip.Content direction={TooltipDirection.Bottom}>
+          Some content
+        </Tooltip.Content>
+      </ProvidedTooltip>
+    );
+
+    fireEvent.mouseEnter(getByTestId('tooltip-container'));
+
+    await waitFor(() => getByTestId('tooltip-content'));
+
+    expect(getByTestId('tooltip-content')).toMatchSnapshot();
+  });
+  it('should hide tooltip after the hide delay', async () => {
+    jest.useFakeTimers();
+
+    const { getByTestId, queryByTestId } = render(
+      <ProvidedTooltip hideDelay={1000}>
+        Hover me
+        <Tooltip.Content>Some content</Tooltip.Content>
+      </ProvidedTooltip>
+    );
+
+    fireEvent.mouseEnter(getByTestId('tooltip-container'));
+
+    fireEvent.mouseLeave(getByTestId('tooltip-container'));
+
+    jest.advanceTimersByTime(1000);
+
+    await waitForElementToBeRemoved(() => getByTestId('tooltip-content'));
+
+    expect(queryByTestId('tooltip-content')).not.toBeInTheDocument();
   });
 });
