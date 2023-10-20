@@ -2,7 +2,8 @@ import { FormEvent, ReactNode } from 'react';
 
 import { InfoIcon } from '../../../core';
 import { BaseProps } from '../../../types';
-import { Tooltip, TooltipDirection } from '../../tooltip';
+import { TooltipDirection } from '../../tooltip';
+import Tooltip from '../../tooltip/Tooltip';
 import { Typography } from '../../typography';
 
 import {
@@ -53,12 +54,14 @@ Form.Group = ({ children, isDisabled, title, tooltip }: GroupProps) => {
             {title}
           </Typography>
           {tooltip && (
-            <Tooltip
-              content={tooltip}
-              direction={TooltipDirection.Right}
-              style={{ maxWidth: '250px' }}
-            >
+            <Tooltip>
               <InfoIcon width='16' height='16' />
+              <Tooltip.Content
+                style={{ maxWidth: 250 }}
+                direction={TooltipDirection.Right}
+              >
+                {tooltip}
+              </Tooltip.Content>
             </Tooltip>
           )}
         </LabelStyled>

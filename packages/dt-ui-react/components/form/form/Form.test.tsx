@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, fireEvent, waitFor } from '@testing-library/react';
 import React from 'react';
 
 import { withProviders } from '../../../utils';
@@ -59,8 +59,8 @@ describe('<Form /> component', () => {
       expect(container).toMatchSnapshot();
     });
 
-    it('should render the info svg and a tooltip', () => {
-      const { container } = render(
+    it('should render the tooltip after hover', async () => {
+      const { getByTestId } = render(
         <ProvidedForm>
           <Form.Group title='Title' tooltip='Testing tooltip'>
             <TextField label='label 1' />
@@ -68,7 +68,11 @@ describe('<Form /> component', () => {
         </ProvidedForm>
       );
 
-      expect(container).toMatchSnapshot();
+      fireEvent.mouseEnter(getByTestId('tooltip-container'));
+
+      await waitFor(() => getByTestId('tooltip-content'));
+
+      expect(getByTestId('tooltip-content')).toBeInTheDocument();
     });
   });
 });
