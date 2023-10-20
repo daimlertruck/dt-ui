@@ -129,4 +129,32 @@ describe('<MultiSelect /> component', () => {
     fireEvent.click(closeOption);
     expect(closeTag).not.toBeInTheDocument();
   });
+
+  it('renders multi-select without tag close-button', () => {
+    render(
+      <ProvidedMultiSelect name='test-multi-select'>
+        <MultiSelect.Select label='Label' isRemovableTag={false}>
+          {OPTIONS.map((option, idx) => (
+            <MultiSelect.Option
+              key={idx}
+              option={option}
+              onClick={mockedFunction}
+            >
+              {option.text ?? option.value}
+            </MultiSelect.Option>
+          ))}
+        </MultiSelect.Select>
+      </ProvidedMultiSelect>
+    );
+
+    const select = screen.getByTestId('multi-select-item');
+    fireEvent.click(select);
+
+    const option1 = screen.getByText('Option 1');
+    fireEvent.click(option1);
+
+    const tag = screen.getByTestId('multi-select-tag');
+    const tagCloseButton = tag.querySelector('button');
+    expect(tag).not.toContainElement(tagCloseButton);
+  });
 });

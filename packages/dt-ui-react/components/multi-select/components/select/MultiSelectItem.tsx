@@ -19,6 +19,7 @@ export type MultiSelectProps = {
   label?: string;
   placeholder?: string;
   isDisabled?: boolean;
+  isRemovableTag?: boolean;
   hasError?: boolean;
   onChange?: (options: string[], name?: string) => void;
 } & BaseProps;
@@ -29,6 +30,7 @@ export const MultiSelectItem = ({
   placeholder,
   dataTestId = 'multi-select-item',
   isDisabled = false,
+  isRemovableTag = true,
   hasError = false,
   onChange,
 }: MultiSelectProps) => {
@@ -82,7 +84,9 @@ export const MultiSelectItem = ({
                 <Tag
                   variant='basic'
                   dataTestId='multi-select-tag'
-                  onClose={(e) => handleRemoveItem(e, option)}
+                  {...(isRemovableTag && {
+                    onClose: (e) => handleRemoveItem(e, option),
+                  })}
                   key={`${option.value}--${index}`}
                 >
                   {option.text}
