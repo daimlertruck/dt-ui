@@ -19,6 +19,8 @@ interface MultiSelectStoryProps {
   defaultValue?: MultiSelectOptionValue[];
   message?: string;
   hasError?: boolean;
+  isDisabled?: boolean;
+  isRemovableTag?: boolean;
 }
 
 export const Default = ({
@@ -48,4 +50,6 @@ export const Default = ({
 Default.args = {
   options: OPTIONS,
   hasError: false,
+  isDisabled: false,
+  isRemovableTag: true,
 };

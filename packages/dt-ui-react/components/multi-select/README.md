@@ -50,6 +50,7 @@ export const App = () => {
 | `style`      | `React.CSSProperties` | -                   | Gives the MultiSelect Box css properties                       |
 | `dataTestId` | `string`              | `multi-select-item` | Customizable test identifier                                   |
 | `isDisabled` | `boolean`             | `false`             | Set the multi-select disabled.                                 |
+| `isRemovableTag` | `boolean`         | `false`             | Set the multi-select tag(s) disabled.                          |
 | `hasError`   | `boolean`             | `false`             | Set error state for multi-select                               |
 
 ### MultiSelect.Option
