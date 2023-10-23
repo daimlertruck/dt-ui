@@ -3,7 +3,27 @@ import fs from 'fs';
 
 import { getPackagesSync } from '@manypkg/get-packages';
 
-import { CHANGESET_TAGS_FILE_LOCATION } from './utils/constants';
+import {
+  CHANGESET_PRERELEASE_FILE_LOCATION,
+  CHANGESET_TAGS_FILE_LOCATION,
+} from './utils/constants';
+
+const removePrereleaseChangesets = () => {
+  const preReleaseFile = fs.existsSync(CHANGESET_PRERELEASE_FILE_LOCATION)
+    ? JSON.parse(fs.readFileSync(CHANGESET_PRERELEASE_FILE_LOCATION).toString())
+    : null;
+
+  if (!preReleaseFile) return;
+
+  preReleaseFile.changesets = [];
+
+  fs.writeFileSync(
+    CHANGESET_PRERELEASE_FILE_LOCATION,
+    JSON.stringify(preReleaseFile)
+  );
+
+  execSync('git clean -f -q -- .changeset/*.md');
+};
 
 export const addTag = () => {
   try {
@@ -18,6 +38,7 @@ export const addTag = () => {
       return;
     }
 
+    removePrereleaseChangesets();
     execSync('git add -A && git commit -m "release: version packages"');
 
     const tagPackages = getPackagesSync(process.cwd()).packages.filter((pkg) =>

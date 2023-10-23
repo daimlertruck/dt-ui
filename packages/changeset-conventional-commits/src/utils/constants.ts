@@ -9,3 +9,5 @@ const resolvePath = (fileName: string) => {
 export const CHANGESET_CONFIG_FILE_LOCATION = resolvePath('config.json');
 
 export const CHANGESET_TAGS_FILE_LOCATION = resolvePath('tag-packages.json');
+
+export const CHANGESET_PRERELEASE_FILE_LOCATION = resolvePath('pre.json');
