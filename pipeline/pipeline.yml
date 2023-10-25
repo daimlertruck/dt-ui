@@ -47,6 +47,10 @@ variables:
     value: dt-ui
   - name: GH_HOST
     value: git.t3.daimlertruck.com
+  - name: GIT_FAKE_EMAIL
+    value: dt-ui@daimlertruck.com
+  - name: GIT_FAKE_USER
+    value: dt-ui
 
 stages:
   - stage: Prepare
@@ -85,7 +89,7 @@ stages:
         displayName: Run Unit Tests
         dependsOn: Lint
         steps:
-          - template: templates/yarn-node-install.yml
+          - template: templates/yarn-node-install.yml           
           - script: |
               yarn install
               yarn test
@@ -108,8 +112,8 @@ stages:
         steps:
           - template: templates/yarn-node-install.yml
           - script: |
-              git config --global user.email "dt-ui@daimlertruck.com"
-              git config --global user.name "dt-ui"
+              git config --global user.email $(GIT_FAKE_EMAIL)
+              git config --global user.name ${GIT_FAKE_USER}
             displayName: "Setup fake credentials"
           - checkout: self
             persistCredentials: true
@@ -195,8 +199,8 @@ stages:
           clean: all
         steps:
           - script: |
-              git config --global user.email "dt-ui@daimlertruck.com"
-              git config --global user.name "dt-ui"
+              git config --global user.email $(GIT_FAKE_EMAIL)
+              git config --global user.name ${GIT_FAKE_USER}
             displayName: "Setup fake credentials"
 
           - checkout: self
@@ -282,8 +286,8 @@ stages:
           clean: all
         steps:
           - script: |
-              git config --global user.email "dt-ui@daimlertruck.com"
-              git config --global user.name "dt-ui"
+              git config --global user.email $(GIT_FAKE_EMAIL)
+              git config --global user.name ${GIT_FAKE_USER}
             displayName: "Setup fake credentials"
 
           - checkout: self
