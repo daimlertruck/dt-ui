@@ -1,3 +1,5 @@
+import { execSync } from 'child_process';
+
 import { describe, expect, it } from '@jest/globals';
 
 import {
@@ -7,6 +9,8 @@ import {
   isBreakingChange,
   isConventionalCommit,
 } from '../utils';
+
+jest.mock('child_process');
 
 describe('is-breaking', () => {
   it('correctly identifies a breaking change', () => {
@@ -163,12 +167,15 @@ describe('associate-commits-to-conventional-commit-messages', () => {
 
 describe('get-repo-root', () => {
   it('correctly gets the repo root', () => {
-    expect(getRepoRoot().endsWith('dt-ui')).toBe(true);
+    execSync.mockReturnValueOnce('/project-root-path/dt-ui');
+    expect(getRepoRoot().endsWith('dt-ui')).toBeTruthy();
+    expect(execSync).toBeCalledWith('git rev-parse --show-toplevel');
   });
 });
 
 describe('git-fetch', () => {
-  it('correctly fetches', () => {
-    expect(() => gitFetch('main')).not.toThrow();
+  it('correctly  fetches', () => {
+    gitFetch('main');
+    expect(execSync).toBeCalledWith('git fetch origin main');
   });
 });
