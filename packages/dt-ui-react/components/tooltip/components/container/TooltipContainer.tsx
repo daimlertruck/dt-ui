@@ -8,9 +8,6 @@ import { TooltipContainerStyled } from './TooltipContainerStyled';
 export interface TooltipContainerProps extends BaseProps {
   hideDelay?: number;
 }
-
-let hideTooltipTimeout: NodeJS.Timeout;
-
 export const TooltipContainer = ({
   children,
   style,
@@ -18,6 +15,8 @@ export const TooltipContainer = ({
   hideDelay = 0,
 }: TooltipContainerProps) => {
   const { setIsVisible, setContainerRectProperties } = useTooltipContext();
+
+  let hideTooltipTimeout: NodeJS.Timeout;
 
   const showTooltip = (e: MouseEvent<HTMLDivElement>) => {
     clearTimeout(hideTooltipTimeout);
