@@ -3,6 +3,7 @@ import { ReducerActionProps } from '../reducer';
 export type MultiSelectOptionValue = {
   text?: string;
   value: string;
+  isRemovable?: boolean;
 };
 
 export interface MultiSelectContextState {

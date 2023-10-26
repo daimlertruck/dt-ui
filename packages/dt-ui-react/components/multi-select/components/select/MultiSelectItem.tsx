@@ -1,5 +1,5 @@
 import { useTheme } from '@emotion/react';
-import { useEffect } from 'react';
+import { useMemo, Children, ReactElement, cloneElement } from 'react';
 
 import {
   OutlinedArrowDropDown,
@@ -19,9 +19,8 @@ export type MultiSelectProps = {
   label?: string;
   placeholder?: string;
   isDisabled?: boolean;
-  isRemovableTag?: boolean;
   hasError?: boolean;
-  onChange?: (options: string[], name?: string) => void;
+  onClose?: (options: MultiSelectOptionValue) => void;
 } & BaseProps;
 
 export const MultiSelectItem = ({
@@ -30,11 +29,10 @@ export const MultiSelectItem = ({
   placeholder,
   dataTestId = 'multi-select-item',
   isDisabled = false,
-  isRemovableTag = true,
   hasError = false,
-  onChange,
+  onClose,
 }: MultiSelectProps) => {
-  const { state, dispatch, isOpen, setIsOpen, name } = useMultiSelectContext();
+  const { state, dispatch, isOpen, setIsOpen } = useMultiSelectContext();
   const theme = useTheme();
 
   const handleOpenMultiSelect = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -48,15 +46,22 @@ export const MultiSelectItem = ({
   ) => {
     event.stopPropagation();
     dispatch({ type: Actions.REMOVE, payload: option });
+    onClose && onClose(option);
   };
 
-  useEffect(() => {
-    onChange &&
-      onChange(
-        state.map((options) => options.value),
-        name
-      );
-  }, [state]);
+  const clonedChildren = useMemo(
+    () =>
+      Children.map(children as ReactElement<MultiSelectProps>, (child) => {
+        return (
+          child &&
+          cloneElement(child, {
+            ...child.props,
+            onClose,
+          } as MultiSelectProps)
+        );
+      }),
+    [children, onClose]
+  );
 
   return (
     <>
@@ -84,9 +89,10 @@ export const MultiSelectItem = ({
                 <Tag
                   variant='basic'
                   dataTestId='multi-select-tag'
-                  {...(isRemovableTag && {
+                  {...(option.isRemovable && {
                     onClose: (e) => handleRemoveItem(e, option),
                   })}
+                  isClickable={option.isRemovable}
                   key={`${option.value}--${index}`}
                 >
                   {option.text}
@@ -104,7 +110,7 @@ export const MultiSelectItem = ({
         )}
       </MultiSelectStyled>
       {isOpen && (
-        <DropdownMenu dataTestId={dataTestId}>{children}</DropdownMenu>
+        <DropdownMenu dataTestId={dataTestId}>{clonedChildren}</DropdownMenu>
       )}
     </>
   );
