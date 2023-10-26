@@ -125,8 +125,10 @@ stages:
             workingDirectory: packages/changeset-conventional-commits
 
           - script: |
+              git checkout $(Build.SourceBranchName)
               yarn changesets:ci
-              git push
+              git push origin $(Build.SourceBranchName)
+              git push origin --tags
             displayName: "Bump affected packages version and tag"
             
   - stage: BuildAndPublish
