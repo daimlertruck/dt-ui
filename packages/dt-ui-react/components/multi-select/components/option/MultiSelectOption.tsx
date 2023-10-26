@@ -13,6 +13,7 @@ import {
 export type MultiSelectOptionProps = {
   option: MultiSelectOptionValue;
   onClick?: (option: string, name?: string) => void;
+  onClose?: (options: MultiSelectOptionValue) => void;
   isDisabled?: boolean;
 } & BaseProps;
 
@@ -22,6 +23,7 @@ export const MultiSelectOption = ({
   children,
   isDisabled,
   onClick,
+  onClose,
 }: MultiSelectOptionProps) => {
   const { state, dispatch, name } = useMultiSelectContext();
 
@@ -37,11 +39,14 @@ export const MultiSelectOption = ({
 
   const handleRemoveOption = () => {
     dispatch({ type: Actions.REMOVE, payload: value });
+    onClose && onClose(option);
   };
 
-  const disabled =
-    isDisabled ||
-    !!state.find((stateValue) => stateValue.value === option.value);
+  const isSelected = !!state.find(
+    (stateValue) => stateValue.value === option.value
+  );
+
+  const disabled = isDisabled || isSelected;
 
   const testId = dataTestId ?? `multi-select-option-${option.value}`;
 
@@ -56,7 +61,7 @@ export const MultiSelectOption = ({
       >
         {children}
       </MultiSelectOptionStyled>
-      {disabled && (
+      {option.isRemovable && disabled && (
         <CloseButtonStyled onClick={handleRemoveOption}>
           <CloseIcon />
         </CloseButtonStyled>

@@ -11,9 +11,9 @@ describe('<MultiSelect /> component', () => {
   );
 
   const OPTIONS = [
-    { text: 'Option 1', value: '1' },
-    { text: 'Option 2', value: '2' },
-    { text: 'Option 3', value: '3' },
+    { text: 'Option 1', value: '1', isRemovable: true },
+    { text: 'Option 2', value: '2', isRemovable: true },
+    { text: 'Option 3', value: '3', isRemovable: true },
     { text: 'Option 4', value: '4' },
   ];
 
@@ -130,10 +130,10 @@ describe('<MultiSelect /> component', () => {
     expect(closeTag).not.toBeInTheDocument();
   });
 
-  it('renders multi-select without tag close-button', () => {
+  it('renders multi-select with not removable option', () => {
     render(
-      <ProvidedMultiSelect name='test-multi-select'>
-        <MultiSelect.Select label='Label' isRemovableTag={false}>
+      <ProvidedMultiSelect defaultValue={[OPTIONS[3]]} name='test-multi-select'>
+        <MultiSelect.Select label='Label'>
           {OPTIONS.map((option, idx) => (
             <MultiSelect.Option
               key={idx}
@@ -146,12 +146,6 @@ describe('<MultiSelect /> component', () => {
         </MultiSelect.Select>
       </ProvidedMultiSelect>
     );
-
-    const select = screen.getByTestId('multi-select-item');
-    fireEvent.click(select);
-
-    const option1 = screen.getByText('Option 1');
-    fireEvent.click(option1);
 
     const tag = screen.getByTestId('multi-select-tag');
     const tagCloseButton = tag.querySelector('button');

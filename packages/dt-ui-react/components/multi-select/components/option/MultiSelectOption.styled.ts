@@ -37,7 +37,6 @@ export const CloseButtonStyled = styled.button`
     padding-right: 12px;
     padding-top: 12px;
     color: ${theme.colors.gray_90};
-
     &:hover {
       color: currentColor;
       cursor: pointer;
