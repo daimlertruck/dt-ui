@@ -27,6 +27,7 @@ export const App = () => {
 | `dataTestId` | `string`    | tag     | Customizable test identifier                   |
 | `variant`    | `string`    | colored | Determines the variant of the tag              |
 | `isDisabled` | `boolean`   | false   | Specifies if the element should be disabled    |
+| `isClickable`| `boolean`   | false   | Specifies if the element can be clicked        |
 | `onClick`    | `function`  | -       | The triggered function when clicked on the tag |
 | `onClose`    | `function`  | -       | The triggered function when closing the tag    |
 

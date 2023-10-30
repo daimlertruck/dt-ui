@@ -61,5 +61,22 @@ describe('<Tag /> component', () => {
 
       expect(onClose).toBeCalledTimes(1);
     });
+
+    describe('when the tag is clickable', () => {
+      it('should trigger the onClick function', () => {
+        const onClick = jest.fn();
+
+        render(
+          <ProvidedTag variant='basic' onClick={onClick} isClickable={true}>
+            Click me
+          </ProvidedTag>
+        );
+
+        const tag = screen.getByTestId('tag');
+        fireEvent.click(tag);
+
+        expect(onClick).toBeCalledTimes(1);
+      });
+    });
   });
 });
