@@ -11,6 +11,7 @@ export interface TagProps extends BaseProps {
   onClose?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   variant?: TagVariant;
   isDisabled?: boolean;
+  isClickable?: boolean;
 }
 
 export const Tag = ({
@@ -20,18 +21,19 @@ export const Tag = ({
   onClose,
   variant = 'colored',
   isDisabled = false,
+  isClickable = false,
 }: TagProps) => {
   const theme = useTheme();
 
   return (
     <TagStyled
       data-testid={dataTestId ?? 'tag'}
-      isClickable={!!onClick}
+      isClickable={isClickable || !!onClick}
       onClick={onClick}
       variant={variant}
     >
       {children}
-      {onClose && (
+      {onClose && !isDisabled && (
         <TagButtonCloseStyled
           onClick={onClose}
           data-testid={`${dataTestId}-close-button`}

@@ -33,5 +33,6 @@ DefaultGroup.args = {
   children: 'active',
   variant: 'colored',
   isDisabled: false,
+  isClickable: false,
   onClose: () => null,
 };
