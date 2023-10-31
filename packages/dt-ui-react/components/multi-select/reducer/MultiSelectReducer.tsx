@@ -18,7 +18,12 @@ export const MultiSelectReducer: Reducer<
         (stateValue) => stateValue.value === action.payload.value
       );
 
-      if (isDuplicated) return state;
+      if (isDuplicated) {
+        return state.map((item) =>
+          item.value === action.payload.value ? action.payload : item
+        );
+      }
+
       return [...state, action.payload];
     case Actions.REMOVE:
       return state.filter((opt) => opt.value !== action.payload.value);
