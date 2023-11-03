@@ -2,11 +2,14 @@ import { TooltipDirection } from '../constants';
 import { useTooltipContext } from '../context';
 
 const ARROW_OFFSET = 10;
+const DEFAULT_POSITION = { top: -1, left: -1 };
 
 export const useTooltipPosition = (direction: TooltipDirection) => {
   const {
     containerRectProperties: { top, left, height, width },
   } = useTooltipContext();
+
+  if (typeof window === 'undefined') return DEFAULT_POSITION;
 
   return {
     [TooltipDirection.Bottom]: {
