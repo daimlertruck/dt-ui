@@ -21,7 +21,7 @@ exports[`<CheckBox /> component renders checkbox checked 1`] = `
   -ms-appearance: none;
   appearance: none;
   margin: 0;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #323232;
   background-color: #FFFFFF;
   -webkit-transform: translateY(-0.075em);
   -moz-transform: translateY(-0.075em);
@@ -56,7 +56,7 @@ exports[`<CheckBox /> component renders checkbox checked 1`] = `
 }
 
 .emotion-2:checked {
-  background: #0078D6;
+  background: #002441;
   border: none;
 }
 
@@ -65,11 +65,11 @@ exports[`<CheckBox /> component renders checkbox checked 1`] = `
 }
 
 .emotion-2:disabled:checked {
-  background-color: #CCCCCC;
+  background-color: #323232;
 }
 
 .emotion-2:disabled:not(checked) {
-  background-color: #F4F4F4;
+  background-color: #636464;
 }
 
 .emotion-2:disabled:not(checked)~label {
@@ -94,9 +94,9 @@ exports[`<CheckBox /> component renders checkbox checked 1`] = `
   align-items: center;
   padding-left: 8px;
   font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 18px;
+  line-height: 24.12px;
+  letter-spacing:normal margin: 0;
   color: #4F4F4F;
 }
 
@@ -141,7 +141,7 @@ exports[`<CheckBox /> component renders checkbox disabled 1`] = `
   -ms-appearance: none;
   appearance: none;
   margin: 0;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #323232;
   background-color: #FFFFFF;
   -webkit-transform: translateY(-0.075em);
   -moz-transform: translateY(-0.075em);
@@ -176,7 +176,7 @@ exports[`<CheckBox /> component renders checkbox disabled 1`] = `
 }
 
 .emotion-2:checked {
-  background: #0078D6;
+  background: #002441;
   border: none;
 }
 
@@ -185,11 +185,11 @@ exports[`<CheckBox /> component renders checkbox disabled 1`] = `
 }
 
 .emotion-2:disabled:checked {
-  background-color: #CCCCCC;
+  background-color: #323232;
 }
 
 .emotion-2:disabled:not(checked) {
-  background-color: #F4F4F4;
+  background-color: #636464;
 }
 
 .emotion-2:disabled:not(checked)~label {
@@ -214,9 +214,9 @@ exports[`<CheckBox /> component renders checkbox disabled 1`] = `
   align-items: center;
   padding-left: 8px;
   font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 18px;
+  line-height: 24.12px;
+  letter-spacing:normal margin: 0;
   color: #4F4F4F;
 }
 
@@ -261,7 +261,7 @@ exports[`<CheckBox /> component renders checkbox with label 1`] = `
   -ms-appearance: none;
   appearance: none;
   margin: 0;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #323232;
   background-color: #FFFFFF;
   -webkit-transform: translateY(-0.075em);
   -moz-transform: translateY(-0.075em);
@@ -296,7 +296,7 @@ exports[`<CheckBox /> component renders checkbox with label 1`] = `
 }
 
 .emotion-2:checked {
-  background: #0078D6;
+  background: #002441;
   border: none;
 }
 
@@ -305,11 +305,11 @@ exports[`<CheckBox /> component renders checkbox with label 1`] = `
 }
 
 .emotion-2:disabled:checked {
-  background-color: #CCCCCC;
+  background-color: #323232;
 }
 
 .emotion-2:disabled:not(checked) {
-  background-color: #F4F4F4;
+  background-color: #636464;
 }
 
 .emotion-2:disabled:not(checked)~label {
@@ -334,9 +334,9 @@ exports[`<CheckBox /> component renders checkbox with label 1`] = `
   align-items: center;
   padding-left: 8px;
   font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 18px;
+  line-height: 24.12px;
+  letter-spacing:normal margin: 0;
   color: #4F4F4F;
 }
 
@@ -382,7 +382,7 @@ exports[`<CheckBox /> component renders checkbox without label 1`] = `
   -ms-appearance: none;
   appearance: none;
   margin: 0;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #323232;
   background-color: #FFFFFF;
   -webkit-transform: translateY(-0.075em);
   -moz-transform: translateY(-0.075em);
@@ -417,7 +417,7 @@ exports[`<CheckBox /> component renders checkbox without label 1`] = `
 }
 
 .emotion-2:checked {
-  background: #0078D6;
+  background: #002441;
   border: none;
 }
 
@@ -426,11 +426,11 @@ exports[`<CheckBox /> component renders checkbox without label 1`] = `
 }
 
 .emotion-2:disabled:checked {
-  background-color: #CCCCCC;
+  background-color: #323232;
 }
 
 .emotion-2:disabled:not(checked) {
-  background-color: #F4F4F4;
+  background-color: #636464;
 }
 
 .emotion-2:disabled:not(checked)~label {
@@ -455,9 +455,9 @@ exports[`<CheckBox /> component renders checkbox without label 1`] = `
   align-items: center;
   padding-left: 8px;
   font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 18px;
+  line-height: 24.12px;
+  letter-spacing:normal margin: 0;
   color: #4F4F4F;
 }
 

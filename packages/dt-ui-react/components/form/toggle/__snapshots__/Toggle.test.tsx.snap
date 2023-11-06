@@ -47,7 +47,7 @@ exports[`<Toggle /> component when the toggle is disabled and is checked should 
 }
 
 .emotion-2:not(:checked)+label {
-  background: #CCCCCC;
+  background: #323232;
 }
 
 .emotion-4 {
@@ -73,9 +73,9 @@ exports[`<Toggle /> component when the toggle is disabled and is checked should 
 
 .emotion-6 {
   font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing:normal margin: 0;
   color: #4F4F4F;
 }
 
@@ -154,7 +154,7 @@ exports[`<Toggle /> component when the toggle is disabled and isn't checked shou
 }
 
 .emotion-2:not(:checked)+label {
-  background: #CCCCCC;
+  background: #323232;
 }
 
 .emotion-4 {
@@ -180,9 +180,9 @@ exports[`<Toggle /> component when the toggle is disabled and isn't checked shou
 
 .emotion-6 {
   font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing:normal margin: 0;
   color: #4F4F4F;
 }
 

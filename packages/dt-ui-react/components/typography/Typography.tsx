@@ -24,7 +24,7 @@ const Typography = forwardRef<HTMLParagraphElement, TypographyProps>(
     ref
   ) => {
     const el = element as keyof Theme['fontStyles'];
-    const fonts = fontStyles ?? (theme.fontStyles[el] ? el : 'p');
+    const fonts = fontStyles ?? (theme.fontStyles[el] ? el : 'body1');
 
     return (
       <TypographyStyled

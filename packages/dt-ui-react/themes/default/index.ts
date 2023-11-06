@@ -2,7 +2,7 @@ import { breakpoints } from './breakpoints';
 import { palette, colors } from './palette';
 import { shadows } from './shadows';
 import { spacing } from './spacing';
-import { fontFamily, fontStyles } from './typography';
+import { fontFamily, fontStyles, responsiveFontStyles } from './typography';
 
 export const theme = {
   fontFamily,
@@ -12,4 +12,5 @@ export const theme = {
   shadows,
   spacing,
   breakpoints,
+  responsiveFontStyles,
 };

@@ -16,5 +16,6 @@ export const TypographyStyled = styled.p<TypographyStyledProps>`
         : theme.colors[color as keyof Theme['colors']] ||
           theme.palette[color as keyof Theme['palette']]
     };
+   ${theme.responsiveFontStyles[fontStyles]}
   `};
 `;

@@ -10,9 +10,9 @@ exports[`<TextField /> component onBlur event should have error state with error
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -38,11 +38,11 @@ exports[`<TextField /> component onBlur event should have error state with error
 
 .emotion-6 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #323232;
   border-bottom: 2px solid #D21C1C;
   color: #151617;
   min-width: 198px;
@@ -59,9 +59,9 @@ exports[`<TextField /> component onBlur event should have error state with error
 
 .emotion-10 {
   font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing:normal margin: 0;
   color: #D21C1C;
 }
 
@@ -148,9 +148,9 @@ exports[`<TextField /> component renders Loading input 1`] = `
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -191,21 +191,21 @@ exports[`<TextField /> component renders Loading input 1`] = `
 .emotion-8 {
   width: 20px;
   height: 20px;
-  border: 2px solid #CCCCCC;
+  border: 2px solid #323232;
   border-radius: 50%;
-  border-top: 2px solid #0078D6;
+  border-top: 2px solid #002441;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
 
 .emotion-10 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  border-bottom: 1px solid #CCCCCC;
+  border: 1px solid #323232;
+  border-bottom: 1px solid #323232;
   color: #151617;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -216,7 +216,7 @@ exports[`<TextField /> component renders Loading input 1`] = `
 }
 
 .emotion-10:focus {
-  border-bottom: 2px solid #0078D6;
+  border-bottom: 2px solid #002441;
   outline: none;
 }
 
@@ -265,10 +265,10 @@ exports[`<TextField /> component renders disabled input 1`] = `
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
-  color: #CCCCCC;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
+  color: #323232;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -284,12 +284,12 @@ exports[`<TextField /> component renders disabled input 1`] = `
 
 .emotion-4 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
-  background-color: #F4F4F4;
-  border: 1px solid #CCCCCC;
-  border-bottom: 1px solid #CCCCCC;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
+  background-color: #636464;
+  border: 1px solid #323232;
+  border-bottom: 1px solid #323232;
   color: #8B8C8C;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -300,7 +300,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
 }
 
 .emotion-4:focus {
-  border-bottom: 2px solid #0078D6;
+  border-bottom: 2px solid #002441;
   outline: none;
 }
 
@@ -339,9 +339,9 @@ exports[`<TextField /> component renders input with side button 1`] = `
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -367,12 +367,12 @@ exports[`<TextField /> component renders input with side button 1`] = `
 
 .emotion-6 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  border-bottom: 1px solid #CCCCCC;
+  border: 1px solid #323232;
+  border-bottom: 1px solid #323232;
   color: #151617;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -383,7 +383,7 @@ exports[`<TextField /> component renders input with side button 1`] = `
 }
 
 .emotion-6:focus {
-  border-bottom: 2px solid #0078D6;
+  border-bottom: 2px solid #002441;
   outline: none;
 }
 
@@ -427,9 +427,9 @@ exports[`<TextField /> component should render the TextField with error styles a
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: .75rem;
@@ -455,11 +455,11 @@ exports[`<TextField /> component should render the TextField with error styles a
 
 .emotion-6 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #323232;
   border-bottom: 2px solid #D21C1C;
   color: #151617;
   min-width: 198px;
@@ -476,9 +476,9 @@ exports[`<TextField /> component should render the TextField with error styles a
 
 .emotion-10 {
   font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing:normal margin: 0;
   color: #D21C1C;
 }
 
@@ -547,9 +547,9 @@ exports[`<TextField /> component should render the TextField with info message 1
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -566,12 +566,12 @@ exports[`<TextField /> component should render the TextField with info message 1
 
 .emotion-4 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  border-bottom: 1px solid #CCCCCC;
+  border: 1px solid #323232;
+  border-bottom: 1px solid #323232;
   color: #151617;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -582,7 +582,7 @@ exports[`<TextField /> component should render the TextField with info message 1
 }
 
 .emotion-4:focus {
-  border-bottom: 2px solid #0078D6;
+  border-bottom: 2px solid #002441;
   outline: none;
 }
 
@@ -592,9 +592,9 @@ exports[`<TextField /> component should render the TextField with info message 1
 
 .emotion-8 {
   font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing:normal margin: 0;
   color: #8B8C8C;
 }
 

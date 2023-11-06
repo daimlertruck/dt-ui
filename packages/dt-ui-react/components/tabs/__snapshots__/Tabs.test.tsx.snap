@@ -25,7 +25,7 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   align-items: center;
   cursor: default;
   background-color: #FFFFFF;
-  color: #0078D6;
+  color: #002441;
   border-radius: 3px;
   padding: 16px 32px;
 }
@@ -41,7 +41,7 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  background-color: #E5E5E5;
+  background-color: #4A4A4B;
   color: #4F4F4F;
   border-radius: 3px;
   padding: 16px 32px;
@@ -60,7 +60,7 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   cursor: default;
   pointer-events: none;
   opacity: 0.4;
-  background-color: #E5E5E5;
+  background-color: #4A4A4B;
   color: #4F4F4F;
   border-radius: 3px;
   padding: 16px 32px;
@@ -198,8 +198,8 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   cursor: default;
   padding: 16px 14px;
   background-color: #FFFFFF;
-  box-shadow: inset 2px 0px 0px 0px #0078D6;
-  color: #0078D6;
+  box-shadow: inset 2px 0px 0px 0px #002441;
+  color: #002441;
   max-width: 300px;
   overflow: hidden;
   text-align: start;
@@ -226,7 +226,7 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
 }
 
 .emotion-4:hover {
-  background: #F4F4F4;
+  background: #636464;
 }
 
 .emotion-8 {
@@ -252,7 +252,7 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
 }
 
 .emotion-8:hover {
-  background: #F4F4F4;
+  background: #636464;
 }
 
 .emotion-10 {

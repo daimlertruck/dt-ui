@@ -3,9 +3,9 @@
 exports[`<Tooltip /> component renders a tooltip correctly 1`] = `
 .emotion-0 {
   font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing:normal margin: 0;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -56,9 +56,9 @@ exports[`<Tooltip /> component renders a tooltip correctly 1`] = `
 exports[`<Tooltip /> component renders a tooltip on the bottom side of the content 1`] = `
 .emotion-0 {
   font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing:normal margin: 0;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -109,9 +109,9 @@ exports[`<Tooltip /> component renders a tooltip on the bottom side of the conte
 exports[`<Tooltip /> component renders a tooltip on the left side of the content 1`] = `
 .emotion-0 {
   font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing:normal margin: 0;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -162,9 +162,9 @@ exports[`<Tooltip /> component renders a tooltip on the left side of the content
 exports[`<Tooltip /> component renders a tooltip on the right side of the content 1`] = `
 .emotion-0 {
   font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing:normal margin: 0;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;

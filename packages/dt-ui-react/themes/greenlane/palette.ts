@@ -1,0 +1,23 @@
+import { colors } from '../default/palette';
+
+export const palette = {
+  primary: colors.greenPastel_40,
+  primaryLight_100: colors.greenPastel_30,
+  primaryLight_300: colors.greenPastel_10,
+  primaryLight_400: colors.greenPastel_10,
+  primaryDark_200: colors.greenPastel_60,
+  primaryDark_300: colors.greenPastel_70,
+  primaryDark_400: colors.greenPastel_70,
+  success: colors.greenPastel_40,
+  successDark_300: colors.greenPastel_70,
+  error: colors.red_60,
+  errorDark_300: colors.red_90,
+  errorLight_300: colors.red_70,
+  warning: colors.yellow_50,
+  warningDark_300: colors.yellow_80,
+  info: colors.blue_60,
+  neutral: colors.gray_20,
+  neutralDark_100: colors.gray_30,
+  neutralLight_100: colors.gray_10,
+  neutralLight_300: colors.gray_10,
+};

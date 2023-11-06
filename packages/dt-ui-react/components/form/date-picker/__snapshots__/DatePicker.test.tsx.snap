@@ -10,9 +10,9 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: .75rem;
@@ -29,11 +29,11 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 .emotion-4 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #323232;
   border-bottom: 2px solid #D21C1C;
   color: #151617;
   min-width: 198px;
@@ -50,9 +50,9 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 .emotion-8 {
   font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing:normal margin: 0;
   color: #D21C1C;
 }
 
@@ -101,9 +101,9 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: .75rem;
@@ -120,11 +120,11 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 .emotion-4 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #323232;
   border-bottom: 2px solid #D21C1C;
   color: #151617;
   min-width: 198px;
@@ -141,9 +141,9 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 .emotion-8 {
   font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing:normal margin: 0;
   color: #D21C1C;
 }
 
@@ -192,9 +192,9 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: .75rem;
@@ -211,12 +211,12 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
 
 .emotion-4 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  border-bottom: 1px solid #CCCCCC;
+  border: 1px solid #323232;
+  border-bottom: 1px solid #323232;
   color: #151617;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -227,7 +227,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
 }
 
 .emotion-4:focus {
-  border-bottom: 2px solid #0078D6;
+  border-bottom: 2px solid #002441;
   outline: none;
 }
 

@@ -1,6 +1,6 @@
 import { addDecorator } from '@storybook/react';
 
-import { Provider, theme } from '@dt-ui/react';
+import { Provider, theme, greenlaneTheme } from '@dt-ui/react';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -20,6 +20,7 @@ export const parameters = {
 
 const themes = {
   Default: theme,
+  Greenlane: greenlaneTheme,
 };
 
 export const globalTypes = {

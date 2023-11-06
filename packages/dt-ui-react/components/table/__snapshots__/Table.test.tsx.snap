@@ -3,9 +3,9 @@
 exports[`<Table /> component renders a Basic Table 1`] = `
 .emotion-0 {
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing:normal margin: 0;
   border-collapse: separate;
   border-spacing: 0 8px;
   width: 100%;
@@ -14,7 +14,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   border-collapse: collapse;
   border-radius: 3px;
   border-style: hidden;
-  box-shadow: 0 0 0 1px #CCCCCC;
+  box-shadow: 0 0 0 1px #323232;
 }
 
 .emotion-0 tr:last-of-type td:last-child {
@@ -27,7 +27,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
 
 .emotion-2 {
   border-bottom: none;
-  background-color: #F4F4F4;
+  background-color: #636464;
 }
 
 .emotion-2 tr:first-of-type {
@@ -60,15 +60,15 @@ exports[`<Table /> component renders a Basic Table 1`] = `
 }
 
 .emotion-6 {
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.23;
-  margin: 0;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing:normal margin: 0;
   padding: 16px 16px 8px;
   text-align: left;
   text-transform: uppercase;
   text-transform: none;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #323232;
   white-space: normal;
 }
 
@@ -87,14 +87,14 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   padding: 12px 16px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #323232;
   text-overflow: unset;
   white-space: normal;
   max-width: unset;
 }
 
 .emotion-16:first-of-type {
-  border-left: 6px solid #0078D6;
+  border-left: 6px solid #002441;
 }
 
 .emotion-16:nth-of-type(1) {
@@ -113,7 +113,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
 }
 
 .emotion-16:first-of-type {
-  border-left: 1px solid #CCCCCC;
+  border-left: 1px solid #323232;
 }
 
 .emotion-16:nth-of-type(1) {

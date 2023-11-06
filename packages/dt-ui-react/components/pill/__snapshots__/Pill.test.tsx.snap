@@ -3,9 +3,9 @@
 exports[`<Pill /> component Should render a span html element with the given content 1`] = `
 .emotion-0 {
   font-weight: 700;
-  font-size: 0.625rem;
-  line-height: 1.34;
-  margin: 0;
+  font-size: 10px;
+  line-height: 13.4px;
+  letter-spacing:normal margin: 0;
   padding: 2px 8px;
   color: #FFFFFF;
   border: 0;
