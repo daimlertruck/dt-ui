@@ -1,5 +1,4 @@
 import { BaseProps } from '../../types';
-import { Provider } from '../Provider';
 
 import {
   MultiSelectItem,
@@ -21,13 +20,11 @@ const MultiSelect = ({
   name,
   dataTestId = 'multi-select',
 }: MultiSelectProps) => (
-  <Provider>
-    <MultiSelectContextProvider name={name} defaultValue={defaultValue}>
-      <BaseMultiSelectStyled role='menu' data-testid={dataTestId}>
-        {children}
-      </BaseMultiSelectStyled>
-    </MultiSelectContextProvider>
-  </Provider>
+  <MultiSelectContextProvider name={name} defaultValue={defaultValue}>
+    <BaseMultiSelectStyled role='menu' data-testid={dataTestId}>
+      {children}
+    </BaseMultiSelectStyled>
+  </MultiSelectContextProvider>
 );
 
 MultiSelect.Container = MultiSelectContainer;
