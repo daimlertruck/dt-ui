@@ -19,6 +19,9 @@ export type CustomTheme = {
     neutralDark_100: string;
     neutralLight_100: string;
     neutralLight_300: string;
+    textTertiary: string;
+    textSecondary: string;
+    textPrimary: string;
   };
   colors: {
     black: string;

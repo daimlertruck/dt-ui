@@ -20,4 +20,7 @@ export const palette = {
   neutralDark_100: colors.gray_30,
   neutralLight_100: colors.gray_10,
   neutralLight_300: colors.gray_10,
+  textTertiary: colors.gray_40,
+  textSecondary: colors.gray_60,
+  textPrimary: colors.gray_90,
 };
