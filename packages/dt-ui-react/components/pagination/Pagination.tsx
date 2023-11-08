@@ -95,23 +95,22 @@ export const PaginationInput = ({
     }
   }, [value]);
 
-  useEffect(() => {
-    if (inputValue && inputValue <= totalPages) {
-      debouncedFn(() => {
-        onChange(inputValue);
-      });
-    }
-  }, [debouncedFn, inputValue, onChange, totalPages]);
-
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = Number(event.target.value);
     setInputValue(value);
 
-    if (value > totalPages || value === 0) {
+    const valueHasError = value > totalPages || value === 0;
+
+    if (valueHasError) {
       setHasError(true);
     } else {
       setHasError(false);
     }
+
+    debouncedFn(() => {
+      if (valueHasError) return;
+      onChange(value);
+    });
   };
 
   return (
