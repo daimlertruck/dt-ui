@@ -1,5 +1,18 @@
 # @dt-ui/react
 
+## 0.1.0-beta.5
+
+### Minor Changes
+
+- feat: add useTooltipPosition hook
+- feat: add tooltip provider
+- feat: improve tooltip
+
+### Patch Changes
+
+- fix: tooltip leave timeout
+- fix: check window existence
+
 ## 0.1.0-beta.4
 
 ### Patch Changes
