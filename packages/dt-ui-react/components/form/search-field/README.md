@@ -29,10 +29,11 @@ const MyComponent = () => {
 
 ### SearchField
 
-| Property    | Type       | Default | Description                                                   |
-| ----------- | :--------- | :------ | :------------------------------------------------------------ |
-| `label`     | `string`   | -       | A label to help users understand the scope of the search.     |
-| `onChange`  | `function` | -       | The triggered function after <delay>ms when the input change. |
-| `onClick`   | `function` | -       | The triggered function when clicked on the search icon.       |
-| `delay`     | `number`   | 1000ms  | The wait time for execute the onChange function               |
-| `isLoading` | `boolean`  | -       | If set to true, the search icon is replaced by the spinner    |
+| Property       | Type       | Default | Description                                                   |
+| -------------- | :--------- | :------ | :------------------------------------------------------------ |
+| `label`        | `string`   | -       | A label to help users understand the scope of the search.     |
+| `onChange`     | `function` | -       | The triggered function after <delay>ms when the input change. |
+| `onClick`      | `function` | -       | The triggered function when clicked on the search icon.       |
+| `delay`        | `number`   | 1000ms  | The wait time for execute the onChange function               |
+| `isLoading`    | `boolean`  | -       | If set to true, the search icon is replaced by the spinner    |
+| `initialValue` | `string`   | -       | Sets the initial value of the search field.                   |

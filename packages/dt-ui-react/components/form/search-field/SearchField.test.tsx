@@ -18,6 +18,18 @@ describe('<SearchField /> component', () => {
     expect(container).toMatchSnapshot();
   });
 
+  it('fills Search input correctly with initial value', () => {
+    const { getByLabelText } = render(
+      <ProvidedSearchField
+        label='Search for anything'
+        initialValue='Initial Value'
+      />
+    );
+    const input = getByLabelText('Search for anything');
+
+    expect(input).toHaveValue('Initial Value');
+  });
+
   it('fills Search input correctly with new value on change Event', () => {
     const { getByLabelText } = render(
       <ProvidedSearchField label='Search for anything' />

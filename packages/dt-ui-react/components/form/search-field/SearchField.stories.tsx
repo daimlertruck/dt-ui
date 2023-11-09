@@ -16,4 +16,5 @@ export const Default = Template.bind({});
 Default.args = {
   isLoading: false,
   label: 'Search for anything',
+  initialValue: 'Initial Value',
 };

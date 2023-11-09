@@ -9,6 +9,7 @@ import { SearchFieldIconStyled } from './SearchField.styled';
 
 export interface SearchFieldProps {
   label: string;
+  initialValue?: string;
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
   onClick?: () => void;
   delay?: number;
@@ -17,6 +18,7 @@ export interface SearchFieldProps {
 
 export const SearchField = ({
   label,
+  initialValue,
   onChange = () => null,
   onClick = () => null,
   delay = 1000,
@@ -26,6 +28,7 @@ export const SearchField = ({
 
   return (
     <TextField
+      initialValue={initialValue}
       label={label}
       style={{
         width: '350px',
