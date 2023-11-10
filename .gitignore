@@ -31,3 +31,6 @@ storybook-static
 
 # changesets
 tag-packages.json
+
+# Idea
+.idea
