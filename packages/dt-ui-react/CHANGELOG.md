@@ -1,5 +1,12 @@
 # @dt-ui/react
 
+## 0.1.0-beta.6
+
+### Minor Changes
+
+- feat: add greenlane theme
+- feat: add text variations to palette
+
 ## 0.1.0-beta.5
 
 ### Minor Changes
