@@ -1,5 +1,18 @@
 # @dt-ui/react
 
+## 0.1.0-beta.7
+
+### Minor Changes
+
+- feat: add disabled-tag prop to multiselect
+- feat: add isClickable prop to tag component
+
+### Patch Changes
+
+- fix: remove provider from multiselect
+- fix: multiselect reducer state
+- fix: multiselect removable option
+
 ## 0.1.0-beta.6
 
 ### Minor Changes
