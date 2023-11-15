@@ -1,6 +1,5 @@
 import { css, Theme } from '@emotion/react';
 import emotionNormalize from 'emotion-normalize';
-import './webFonts.css';
 
 // Pass theme as argument
 export const globalStyles = (theme: Theme) => css`

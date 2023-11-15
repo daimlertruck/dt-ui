@@ -2,6 +2,8 @@ import { addDecorator } from '@storybook/react';
 
 import { Provider, theme, greenlaneTheme } from '@dt-ui/react';
 
+import { webFonts } from './webFonts';
+
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   viewMode: 'docs',
@@ -38,5 +40,7 @@ export const globalTypes = {
 };
 
 addDecorator((story, context) => (
-  <Provider theme={themes[context.globals.theme]}>{story()}</Provider>
+  <Provider theme={themes[context.globals.theme]} webFonts={webFonts}>
+    {story()}
+  </Provider>
 ));

@@ -13,6 +13,7 @@ module.exports = {
     },
   ],
   framework: '@storybook/react',
+  staticDirs: ['../static'],
   features: {
     emotionAlias: false,
   },

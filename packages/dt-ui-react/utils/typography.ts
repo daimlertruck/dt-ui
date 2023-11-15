@@ -7,6 +7,6 @@ export const getTextStyles = (
     font-weight: ${fontWeight};
     font-size: ${fontSize};
     line-height: ${lineHeight};
-    letter-spacing: ${letterSpacing}
+    letter-spacing: ${letterSpacing};
     margin: 0;
   `;
