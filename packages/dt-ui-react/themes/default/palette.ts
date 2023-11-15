@@ -105,6 +105,7 @@ export const palette = {
   info: colors.blue_100,
   neutral: colors.gray_100,
   neutralDark_100: colors.gray_200,
+  neutralDark_300: colors.gray_300,
   neutralLight_100: colors.gray_90,
   neutralLight_300: colors.gray_70,
   textTertiary: colors.gray_40,

@@ -17,6 +17,7 @@ export type CustomTheme = {
     warningDark_300: string;
     neutral: string;
     neutralDark_100: string;
+    neutralDark_300: string;
     neutralLight_100: string;
     neutralLight_300: string;
     textTertiary: string;
