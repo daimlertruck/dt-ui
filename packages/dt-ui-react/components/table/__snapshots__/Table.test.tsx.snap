@@ -2,132 +2,43 @@
 
 exports[`<Table /> component renders a Basic Table 1`] = `
 .emotion-0 {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
-  letter-spacing:normal margin: 0;
-  border-collapse: separate;
-  border-spacing: 0 8px;
-  width: 100%;
   table-layout: auto;
-  border-spacing: unset;
-  border-collapse: collapse;
-  border-radius: 3px;
-  border-style: hidden;
-  box-shadow: 0 0 0 1px #323232;
-}
-
-.emotion-0 tr:last-of-type td:last-child {
-  border-bottom-right-radius: 3px;
-}
-
-.emotion-0 tr:last-of-type td:first-child {
-  border-bottom-left-radius: 3px;
+  width: 100%;
+  border-spacing: 0;
+  background: #FFFFFF;
 }
 
 .emotion-2 {
-  border-bottom: none;
-  background-color: #636464;
-}
-
-.emotion-2 tr:first-of-type {
-  background-color: transparent;
-  letter-spacing: 1.5px;
-}
-
-.emotion-2 tr:first-of-type:hover {
-  box-shadow: none;
+  display: table-row;
+  cursor: auto;
+  color: #7C7C7D;
 }
 
 .emotion-4 {
-  background-color: #FFFFFF;
-  color: #151617;
-  cursor: auto;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.emotion-4 td:first-of-type {
-  border-radius: 3px 0 0 3px;
-}
-
-.emotion-4 td:last-of-type {
-  border-radius: 0 3px 3px 0;
-}
-
-.emotion-4:hover {
-  box-shadow: none;
-}
-
-.emotion-6 {
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  letter-spacing:normal margin: 0;
-  padding: 16px 16px 8px;
-  text-align: left;
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  letter-spacing: normal;
+  margin: 0;
   text-transform: uppercase;
-  text-transform: none;
-  border: 1px solid #323232;
-  white-space: normal;
+  text-align: left;
+  color: #323232;
+  padding: 0 16px 16px;
 }
 
-.emotion-6:last-child {
-  border-top-right-radius: 3px;
-}
-
-.emotion-6:first-child {
-  border-top-left-radius: 3px;
-}
-
-.emotion-16 {
-  height: 50px;
-  max-width: calc(100vw / 10);
-  overflow: hidden;
-  padding: 12px 16px;
-  text-overflow: ellipsis;
+.emotion-14 {
+  display: table-cell;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  border-top: 1px solid #8B8C8C;
+  padding: 16px;
+  max-width: 0;
   white-space: nowrap;
-  border: 1px solid #323232;
-  text-overflow: unset;
-  white-space: normal;
-  max-width: unset;
-}
-
-.emotion-16:first-of-type {
-  border-left: 6px solid #002441;
-}
-
-.emotion-16:nth-of-type(1) {
-  max-width: 20vw;
-}
-
-.emotion-16:nth-of-type(2) {
-  max-width: 20vw;
-}
-
-.emotion-16:last-child {
-  text-overflow: clip;
-  max-width: 50vw;
-  width: 1px;
-  overflow: visible;
-}
-
-.emotion-16:first-of-type {
-  border-left: 1px solid #323232;
-}
-
-.emotion-16:nth-of-type(1) {
-  max-width: unset;
-}
-
-.emotion-16:nth-of-type(2) {
-  max-width: unset;
-}
-
-.emotion-16:last-child {
-  text-overflow: unset;
-  max-width: unset;
-  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 <div>
@@ -135,29 +46,27 @@ exports[`<Table /> component renders a Basic Table 1`] = `
     class="emotion-0 emotion-1"
     data-testid="table"
   >
-    <thead
-      class="emotion-2 emotion-3"
-    >
+    <thead>
       <tr
-        class="emotion-4 emotion-5"
+        class="emotion-2 emotion-3"
       >
         <th
-          class="emotion-6 emotion-7"
+          class="emotion-4 emotion-5"
         >
           Column 1
         </th>
         <th
-          class="emotion-6 emotion-7"
+          class="emotion-4 emotion-5"
         >
           Column 2
         </th>
         <th
-          class="emotion-6 emotion-7"
+          class="emotion-4 emotion-5"
         >
           Column 3
         </th>
         <th
-          class="emotion-6 emotion-7"
+          class="emotion-4 emotion-5"
         >
           Column 4
         </th>
@@ -165,73 +74,73 @@ exports[`<Table /> component renders a Basic Table 1`] = `
     </thead>
     <tbody>
       <tr
-        class="emotion-4 emotion-5"
+        class="emotion-2 emotion-3"
       >
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-14 emotion-15"
         >
           Row 1 - content 1
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-14 emotion-15"
         >
           Row 1 - content 2
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-14 emotion-15"
         >
           Row 1 - content 3
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-14 emotion-15"
         >
           Row 1 - content 4
         </td>
       </tr>
       <tr
-        class="emotion-4 emotion-5"
+        class="emotion-2 emotion-3"
       >
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-14 emotion-15"
         >
           Row 2 - content 1
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-14 emotion-15"
         >
           Row 2 - content 2
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-14 emotion-15"
         >
           Row 2 - content 3
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-14 emotion-15"
         >
           Row 2 - content 4
         </td>
       </tr>
       <tr
-        class="emotion-4 emotion-5"
+        class="emotion-2 emotion-3"
       >
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-14 emotion-15"
         >
           Row 3 - content 1
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-14 emotion-15"
         >
           Row 3 - content 2
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-14 emotion-15"
         >
           Row 3 - content 3
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-14 emotion-15"
         >
           Row 3 - content 4
         </td>

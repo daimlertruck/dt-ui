@@ -1,10 +1,8 @@
 import { render, screen, within } from '@testing-library/react';
-import React from 'react';
 
 import { theme } from '../../themes/default';
 import { Provider } from '../Provider';
 
-import { TableVariant } from './constants';
 import {
   Table,
   TableHead,
@@ -61,7 +59,7 @@ describe('<Table /> component', () => {
       </Provider>
     );
 
-    // Test head columns are endered
+    // Test head columns are rendered
     COLUMNS.forEach((column: string) => {
       const cell = screen.getByText(column).closest('th');
       const utils = within(cell!);
@@ -83,13 +81,11 @@ describe('<Table /> component', () => {
   it('renders a Basic Table', () => {
     const { container } = render(
       <Provider theme={theme}>
-        <Table variant={TableVariant.Basic}>
-          <TableHead variant={TableVariant.Basic}>
+        <Table>
+          <TableHead>
             <TableRow>
               {COLUMNS.map((column: string, i: number) => (
-                <ColumnHeader key={i.toString()} variant={TableVariant.Basic}>
-                  {column}
-                </ColumnHeader>
+                <ColumnHeader key={i.toString()}>{column}</ColumnHeader>
               ))}
             </TableRow>
           </TableHead>
@@ -97,9 +93,7 @@ describe('<Table /> component', () => {
             {ROWS.map((row: string[], i: number) => (
               <TableRow key={i.toString()}>
                 {row.map((content: string, i: number) => (
-                  <DataCell key={i.toString()} variant={TableVariant.Basic}>
-                    {content}
-                  </DataCell>
+                  <DataCell key={i.toString()}>{content}</DataCell>
                 ))}
               </TableRow>
             ))}

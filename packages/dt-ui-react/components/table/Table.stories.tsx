@@ -1,6 +1,9 @@
 import { Story } from '@storybook/react';
 
-import { TableVariant } from './constants';
+import { Colors } from '../../types';
+import { Avatar, AvatarType } from '../avatar';
+import { Pill } from '../pill';
+
 import {
   Table,
   TableHead,
@@ -13,59 +16,71 @@ import {
 export default {
   title: 'Data Display/Table',
   component: Table,
-  argTypes: {
-    variant: {
-      mapping: TableVariant,
-      options: [...Object.values(TableVariant), 'none'].filter(
-        (x) => typeof x === 'string'
-      ),
-      control: { type: 'radio' },
-    },
-  },
 };
 
-// Allows for different data structures
-const columns = ['Column 1', 'Column 2', 'Column 3', 'Column 4'];
+const columns = ['Name', 'Email', 'Role', 'Status'];
 
 const rows = [
   [
-    'Row 1 - content 1',
-    'Row 1 - content 2',
-    'Row 1 - content 3',
-    'Row 1 - Some more content 4',
+    'Thomas Morse',
+    'thomas.morse@myhugecompanynamem.com',
+    'Operator',
+    'warning',
   ],
-  [
-    'Row 2 - content 1',
-    'Row 2 - content 2',
-    'Row 2 - content 3',
-    'Row 2 - content 4',
-  ],
-  [
-    'Row 3 - content 1',
-    'Row 3 - content 2',
-    'Row 3 - content 3',
-    'Row 3 - content 4',
-  ],
+  ['Hanna Apple', 'hanna.apple@companysample.com', 'Admin', 'success'],
+  ['Marcus Klein', 'marcus.klein@companysample.com', 'Operator', 'success'],
+  ['Rick Thor', 'rick.thor@companysample.com', 'Admin', 'neutralLight_100'],
 ];
 
-const Template: Story = ({ isFixed, variant }) => {
+const columnSizes: { [key: string]: string } = {
+  Name: '200px',
+  Status: '120px',
+};
+
+const renderAvatarWithTitle = (title: string) => (
+  <div style={{ display: 'flex' }}>
+    <Avatar title={title} type={AvatarType.TeamMember}></Avatar>
+    {title}
+  </div>
+);
+
+const renderPill = (content: string) => (
+  <Pill color={content as Colors}>
+    {
+      {
+        success: 'ACTIVE',
+        warning: 'PENDING',
+        neutralLight_100: 'DEACTIVATED',
+      }[content]
+    }
+  </Pill>
+);
+
+const renderContent = (colIndex: number, content: string) => {
+  return {
+    Name: renderAvatarWithTitle(content),
+    Status: renderPill(content),
+    Email: content,
+    Role: content,
+  }[columns[colIndex]];
+};
+
+const Template: Story = ({ isFixed }) => {
   return (
-    <Table isFixed={isFixed} variant={variant}>
-      <TableHead variant={variant}>
+    <Table isFixed={isFixed}>
+      <TableHead>
         <TableRow>
           {columns.map((column: string, i: number) => (
-            <ColumnHeader key={i.toString()} variant={variant}>
-              {column}
-            </ColumnHeader>
+            <ColumnHeader key={i.toString()}>{column}</ColumnHeader>
           ))}
         </TableRow>
       </TableHead>
       <TableBody>
         {rows.map((row: string[], i: number) => (
-          <TableRow key={i.toString()}>
+          <TableRow key={i}>
             {row.map((content: string, i: number) => (
-              <DataCell key={i.toString()} variant={variant}>
-                {content}
+              <DataCell key={i} columnWidth={columnSizes[columns[i]]}>
+                {renderContent(i, content)}
               </DataCell>
             ))}
           </TableRow>
@@ -78,6 +93,5 @@ const Template: Story = ({ isFixed, variant }) => {
 export const Default = Template.bind({});
 
 Default.args = {
-  variant: TableVariant.Basic,
   isFixed: false,
 };
