@@ -24,7 +24,8 @@ exports[`<Form /> component renders simple form 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -43,7 +44,8 @@ exports[`<Form /> component renders simple form 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 1px solid #323232;
@@ -164,7 +166,8 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -183,7 +186,8 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 1px solid #323232;
@@ -292,7 +296,8 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -311,7 +316,8 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 1px solid #323232;
@@ -430,7 +436,8 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #002441;
 }
 
@@ -462,7 +469,8 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -481,7 +489,8 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 1px solid #323232;

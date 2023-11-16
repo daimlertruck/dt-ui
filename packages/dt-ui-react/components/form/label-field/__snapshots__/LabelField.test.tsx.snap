@@ -5,7 +5,8 @@ exports[`<LabelField /> component it renders a disabled label field 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #323232;
   cursor: inherit;
   font-size: 1rem;
@@ -40,7 +41,8 @@ exports[`<LabelField /> component when the LabelField is active it should render
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: .75rem;
@@ -74,7 +76,8 @@ exports[`<LabelField /> component when the LabelField is inactive it should rend
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;

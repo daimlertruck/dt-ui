@@ -32,7 +32,8 @@ exports[`<Pagination /> component should render the pagination content 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 18.76px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   text-align: center;
   padding: 6px 8px;
   margin: 0px;
@@ -52,7 +53,8 @@ exports[`<Pagination /> component should render the pagination content 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 18.76px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #151617;
 }
 

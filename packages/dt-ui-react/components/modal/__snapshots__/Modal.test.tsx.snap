@@ -29,7 +29,8 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.25rem;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   font-weight: 700;
   color: #151617;
   display: -webkit-box;
@@ -81,7 +82,8 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #151617;
 }
 
@@ -106,7 +108,8 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   font-weight: 700;
   border-radius: 3px;
   display: -webkit-box;
@@ -154,7 +157,8 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   font-weight: 700;
   border-radius: 3px;
   display: -webkit-box;

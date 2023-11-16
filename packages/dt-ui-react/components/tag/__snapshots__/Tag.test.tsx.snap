@@ -8,7 +8,8 @@ exports[`<Tag /> component Basic tag veriant should render a span html element w
   font-weight: 700;
   font-size: 10px;
   line-height: 13.4px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.5px;
@@ -34,7 +35,8 @@ exports[`<Tag /> component should render a span html element with the given cont
   font-weight: 700;
   font-size: 10px;
   line-height: 13.4px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.5px;
@@ -72,7 +74,8 @@ exports[`<Tag /> component should render a wrapper for a group of tags 1`] = `
   font-weight: 700;
   font-size: 10px;
   line-height: 13.4px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.5px;

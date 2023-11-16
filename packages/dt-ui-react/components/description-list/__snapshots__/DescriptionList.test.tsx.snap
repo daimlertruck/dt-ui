@@ -12,7 +12,8 @@ exports[`DescriptionList renders DescriptionList correctly 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   font-weight: 700;
   margin-bottom: 10px;
   display: -webkit-box;

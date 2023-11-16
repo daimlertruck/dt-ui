@@ -26,7 +26,11 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   padding: 0 16px 16px;
 }
 
-.emotion-14 {
+.emotion-12 tr:hover {
+  background-color: #323232;
+}
+
+.emotion-16 {
   display: table-cell;
   font-weight: 400;
   font-size: 0.875rem;
@@ -72,27 +76,29 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         </th>
       </tr>
     </thead>
-    <tbody>
+    <tbody
+      class="emotion-12 emotion-13"
+    >
       <tr
         class="emotion-2 emotion-3"
       >
         <td
-          class="emotion-14 emotion-15"
+          class="emotion-16 emotion-17"
         >
           Row 1 - content 1
         </td>
         <td
-          class="emotion-14 emotion-15"
+          class="emotion-16 emotion-17"
         >
           Row 1 - content 2
         </td>
         <td
-          class="emotion-14 emotion-15"
+          class="emotion-16 emotion-17"
         >
           Row 1 - content 3
         </td>
         <td
-          class="emotion-14 emotion-15"
+          class="emotion-16 emotion-17"
         >
           Row 1 - content 4
         </td>
@@ -101,22 +107,22 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         class="emotion-2 emotion-3"
       >
         <td
-          class="emotion-14 emotion-15"
+          class="emotion-16 emotion-17"
         >
           Row 2 - content 1
         </td>
         <td
-          class="emotion-14 emotion-15"
+          class="emotion-16 emotion-17"
         >
           Row 2 - content 2
         </td>
         <td
-          class="emotion-14 emotion-15"
+          class="emotion-16 emotion-17"
         >
           Row 2 - content 3
         </td>
         <td
-          class="emotion-14 emotion-15"
+          class="emotion-16 emotion-17"
         >
           Row 2 - content 4
         </td>
@@ -125,22 +131,22 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         class="emotion-2 emotion-3"
       >
         <td
-          class="emotion-14 emotion-15"
+          class="emotion-16 emotion-17"
         >
           Row 3 - content 1
         </td>
         <td
-          class="emotion-14 emotion-15"
+          class="emotion-16 emotion-17"
         >
           Row 3 - content 2
         </td>
         <td
-          class="emotion-14 emotion-15"
+          class="emotion-16 emotion-17"
         >
           Row 3 - content 3
         </td>
         <td
-          class="emotion-14 emotion-15"
+          class="emotion-16 emotion-17"
         >
           Row 3 - content 4
         </td>

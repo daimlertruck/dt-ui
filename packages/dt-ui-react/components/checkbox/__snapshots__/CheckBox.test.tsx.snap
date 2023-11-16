@@ -96,7 +96,8 @@ exports[`<CheckBox /> component renders checkbox checked 1`] = `
   font-weight: 400;
   font-size: 18px;
   line-height: 24.12px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #4F4F4F;
 }
 
@@ -216,7 +217,8 @@ exports[`<CheckBox /> component renders checkbox disabled 1`] = `
   font-weight: 400;
   font-size: 18px;
   line-height: 24.12px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #4F4F4F;
 }
 
@@ -336,7 +338,8 @@ exports[`<CheckBox /> component renders checkbox with label 1`] = `
   font-weight: 400;
   font-size: 18px;
   line-height: 24.12px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #4F4F4F;
 }
 
@@ -457,7 +460,8 @@ exports[`<CheckBox /> component renders checkbox without label 1`] = `
   font-weight: 400;
   font-size: 18px;
   line-height: 24.12px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #4F4F4F;
 }
 

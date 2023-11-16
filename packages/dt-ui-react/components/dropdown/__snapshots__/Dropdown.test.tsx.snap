@@ -40,7 +40,8 @@ exports[`<Dropdown /> component renders a dropdown without border 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 16.08px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
 }
 
@@ -48,7 +49,8 @@ exports[`<Dropdown /> component renders a dropdown without border 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #151617;
 }
 

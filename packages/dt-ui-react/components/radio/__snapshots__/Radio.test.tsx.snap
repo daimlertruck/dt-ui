@@ -72,7 +72,8 @@ exports[`<Radio /> component renders Radio group with Radio 1 checked and Radio 
   font-weight: 400;
   font-size: 18px;
   line-height: 24.12px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #4F4F4F;
   cursor: inherit;
 }

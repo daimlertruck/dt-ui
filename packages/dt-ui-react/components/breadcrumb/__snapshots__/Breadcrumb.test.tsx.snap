@@ -5,7 +5,8 @@ exports[`<Breadcrumb /> component renders nav element with the correct breadcrum
   font-weight: 400;
   font-size: 14px;
   line-height: 18.76px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
   margin-bottom: 15px;
 }

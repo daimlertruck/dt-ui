@@ -5,7 +5,8 @@ exports[`<Tooltip /> component renders a tooltip correctly 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 16.08px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -58,7 +59,8 @@ exports[`<Tooltip /> component renders a tooltip on the bottom side of the conte
   font-weight: 400;
   font-size: 12px;
   line-height: 16.08px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -111,7 +113,8 @@ exports[`<Tooltip /> component renders a tooltip on the left side of the content
   font-weight: 400;
   font-size: 12px;
   line-height: 16.08px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -164,7 +167,8 @@ exports[`<Tooltip /> component renders a tooltip on the right side of the conten
   font-weight: 400;
   font-size: 12px;
   line-height: 16.08px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;

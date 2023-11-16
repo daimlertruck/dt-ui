@@ -5,7 +5,8 @@ exports[`<Step /> component <Step.Counter /> component should render active beha
   font-weight: 700;
   font-size: 10px;
   line-height: 13.4px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -33,7 +34,8 @@ exports[`<Step /> component <Step.Counter /> component should render active beha
   font-weight: 400;
   font-size: 12px;
   line-height: 16.08px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #002441;
 }
 
@@ -61,7 +63,8 @@ exports[`<Step /> component <Step.Counter /> component should render completed b
   font-weight: 700;
   font-size: 10px;
   line-height: 13.4px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -113,7 +116,8 @@ exports[`<Step /> component <Step.Counter /> component should render default beh
   font-weight: 700;
   font-size: 10px;
   line-height: 13.4px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -141,7 +145,8 @@ exports[`<Step /> component <Step.Counter /> component should render default beh
   font-weight: 400;
   font-size: 12px;
   line-height: 16.08px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #002441;
 }
 
@@ -169,7 +174,8 @@ exports[`<Step /> component <Step.Label /> component should render active behavi
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #002441;
 }
 
@@ -188,7 +194,8 @@ exports[`<Step /> component <Step.Label /> component should render completed beh
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #002441;
 }
 
@@ -207,7 +214,8 @@ exports[`<Step /> component <Step.Label /> component should render default behav
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
 }
 
@@ -238,7 +246,8 @@ exports[`<Step /> component render active step 1`] = `
   font-weight: 700;
   font-size: 10px;
   line-height: 13.4px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -266,7 +275,8 @@ exports[`<Step /> component render active step 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 16.08px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #002441;
 }
 
@@ -274,7 +284,8 @@ exports[`<Step /> component render active step 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #002441;
 }
 
@@ -324,7 +335,8 @@ exports[`<Step /> component render default step 1`] = `
   font-weight: 700;
   font-size: 10px;
   line-height: 13.4px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -352,7 +364,8 @@ exports[`<Step /> component render default step 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 16.08px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #002441;
 }
 
@@ -360,7 +373,8 @@ exports[`<Step /> component render default step 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
 }
 
@@ -410,7 +424,8 @@ exports[`<Step /> component render disabled step 1`] = `
   font-weight: 700;
   font-size: 10px;
   line-height: 13.4px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -438,7 +453,8 @@ exports[`<Step /> component render disabled step 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 16.08px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #323232;
 }
 
@@ -446,7 +462,8 @@ exports[`<Step /> component render disabled step 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #323232;
 }
 
@@ -496,7 +513,8 @@ exports[`<Step /> component render error step 1`] = `
   font-weight: 700;
   font-size: 10px;
   line-height: 13.4px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -524,7 +542,8 @@ exports[`<Step /> component render error step 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 16.08px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #D21C1C;
 }
 
@@ -532,7 +551,8 @@ exports[`<Step /> component render error step 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #D21C1C;
 }
 

@@ -12,7 +12,8 @@ exports[`<SearchField /> component renders SearchField input element with the co
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -31,7 +32,8 @@ exports[`<SearchField /> component renders SearchField input element with the co
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 1px solid #323232;

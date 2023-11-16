@@ -12,7 +12,8 @@ exports[`<TextField /> component onBlur event should have error state with error
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -40,7 +41,8 @@ exports[`<TextField /> component onBlur event should have error state with error
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 2px solid #D21C1C;
@@ -61,7 +63,8 @@ exports[`<TextField /> component onBlur event should have error state with error
   font-weight: 400;
   font-size: 12px;
   line-height: 16.08px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #D21C1C;
 }
 
@@ -150,7 +153,8 @@ exports[`<TextField /> component renders Loading input 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -202,7 +206,8 @@ exports[`<TextField /> component renders Loading input 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 1px solid #323232;
@@ -267,7 +272,8 @@ exports[`<TextField /> component renders disabled input 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #323232;
   cursor: inherit;
   font-size: 1rem;
@@ -286,7 +292,8 @@ exports[`<TextField /> component renders disabled input 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   background-color: #636464;
   border: 1px solid #323232;
   border-bottom: 1px solid #323232;
@@ -341,7 +348,8 @@ exports[`<TextField /> component renders input with side button 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -369,7 +377,8 @@ exports[`<TextField /> component renders input with side button 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 1px solid #323232;
@@ -429,7 +438,8 @@ exports[`<TextField /> component should render the TextField with error styles a
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: .75rem;
@@ -457,7 +467,8 @@ exports[`<TextField /> component should render the TextField with error styles a
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 2px solid #D21C1C;
@@ -478,7 +489,8 @@ exports[`<TextField /> component should render the TextField with error styles a
   font-weight: 400;
   font-size: 12px;
   line-height: 16.08px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #D21C1C;
 }
 
@@ -549,7 +561,8 @@ exports[`<TextField /> component should render the TextField with info message 1
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -568,7 +581,8 @@ exports[`<TextField /> component should render the TextField with info message 1
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 1px solid #323232;
@@ -594,7 +608,8 @@ exports[`<TextField /> component should render the TextField with info message 1
   font-weight: 400;
   font-size: 12px;
   line-height: 16.08px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   color: #8B8C8C;
 }
 

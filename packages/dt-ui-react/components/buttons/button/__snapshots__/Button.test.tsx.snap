@@ -7,7 +7,8 @@ exports[`<Button /> component renders button html element with the correct title
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   font-weight: 700;
   border-radius: 3px;
   display: -webkit-box;
@@ -97,7 +98,8 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   font-weight: 700;
   border-radius: 3px;
   display: -webkit-box;
@@ -207,7 +209,8 @@ exports[`<Button /> component when loading is true renders a spinner light theme
   font-weight: 400;
   font-size: 16px;
   line-height: 21.44px;
-  letter-spacing:normal margin: 0;
+  letter-spacing: normal;
+  margin: 0;
   font-weight: 700;
   border-radius: 3px;
   display: -webkit-box;
