@@ -100,7 +100,7 @@ export const App = () => {
 
 ### DataCell
 
-| Property     | Type        | Default  | Description                                |
-| ------------ | ----------- | -------- | ------------------------------------------ |
-| `children`   | `ReactNode` | -        | Child components to be rendered            |
-| `visibility` | `boolean`   | `hidden` | Change the overflow visibility of the cell |
+| Property     | Type        | Default  | Description                                   |
+| ------------ | ----------- | -------- | ----------------------------------------------|
+| `children`   | `ReactNode` | -        | Child components to be rendered               |
+| `columnSize` | `string`    | -        | Sets a fixed width value for the table column |
