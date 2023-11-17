@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EmptyState /> component should render Empty State 1`] = `
+.emotion-0 {
+  padding: 48px 32px;
+  background-color: #F8F9FA;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px dashed #D3D4D5;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .emotion-0 {
+    padding: 64px 128px;
+  }
+}
+
+.emotion-2 {
+  text-align: center;
+}
+
+.emotion-4 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.23;
+  margin: 0;
+  color: #CCCCCC;
+}
+
+.emotion-6 {
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .emotion-6 {
+    padding-top: 12px;
+  }
+}
+
+.emotion-8 {
+  font-weight: 400;
+  font-size: 0.0625rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #7C7C7D;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="empty-state"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <h2
+        class="emotion-4 emotion-5"
+        color="textPrimary"
+        data-testid="typography"
+      >
+        Title here
+      </h2>
+    </div>
+    <div
+      class="emotion-6 emotion-7"
+    >
+      <p
+        class="emotion-8 emotion-5"
+        color="textSecondary"
+        data-testid="typography"
+      >
+        Some description here.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<EmptyState /> component should render Empty State with a Button as a children 1`] = `
+.emotion-0 {
+  padding: 48px 32px;
+  background-color: #F8F9FA;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px dashed #D3D4D5;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .emotion-0 {
+    padding: 64px 128px;
+  }
+}
+
+.emotion-2 {
+  text-align: center;
+}
+
+.emotion-4 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.23;
+  margin: 0;
+  color: #CCCCCC;
+}
+
+.emotion-6 {
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+
+@media only screen and (min-width: 600px) {
+  .emotion-6 {
+    padding-top: 12px;
+  }
+}
+
+.emotion-8 {
+  font-weight: 400;
+  font-size: 0.0625rem;
+  line-height: 1.34;
+  margin: 0;
+  color: #7C7C7D;
+}
+
+.emotion-10 {
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.34;
+  margin: 0;
+  font-weight: 700;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  white-space: nowrap;
+  cursor: pointer;
+  max-width: 20vw;
+  padding: 0px 15px;
+  height: 32px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #FFFFFF;
+  background-color: #0078D6;
+}
+
+.emotion-10:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.emotion-10:disabled {
+  pointer-events: none;
+}
+
+.emotion-10:hover {
+  color: #FFFFFF;
+  background-color: #01508E;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="empty-state"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <h2
+        class="emotion-4 emotion-5"
+        color="textPrimary"
+        data-testid="typography"
+      >
+        Title here
+      </h2>
+    </div>
+    <div
+      class="emotion-6 emotion-7"
+    >
+      <p
+        class="emotion-8 emotion-5"
+        color="textSecondary"
+        data-testid="typography"
+      >
+        Some description here.
+      </p>
+    </div>
+    <button
+      class="emotion-10 emotion-11"
+      color="primary"
+      data-testid="empty-state-button"
+    >
+      Button
+    </button>
+  </div>
+</div>
+`;
