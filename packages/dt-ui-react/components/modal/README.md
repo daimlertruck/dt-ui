@@ -54,10 +54,11 @@ export const App = () => {
 
 Component that determines the main display as well as sets the background.
 
-| Property   | Type        | Default | Description                                  |
-| ---------- | ----------- | ------- | -------------------------------------------- |
-| `children` | `ReactNode` | -       | Child components to be rendered              |
-| `isOpen`   | `boolean`   | false   | Determines if the component is open or close |
+| Property   | Type        | Default | Description                                                   |
+| ---------- | ----------- | ------- | ------------------------------------------------------------- |
+| `children` | `ReactNode` | -       | Child components to be rendered                               |
+| `isOpen`   | `boolean`   | false   | Determines if the component is open or close                  |
+| `ref`      | `RefObject` | -       | Provides a way to access DOM node or React element reference. |
 
 ### Modal
 

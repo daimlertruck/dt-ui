@@ -1,4 +1,4 @@
-import { RefObject, useRef } from 'react';
+import { forwardRef, RefObject, useRef } from 'react';
 
 import { CloseIcon } from '../../core/assets';
 import { BaseProps } from '../../types';
@@ -35,15 +35,17 @@ export interface FooterProps {
   handleClose: () => void;
 }
 
-export const Overlay = ({ children, dataTestId, isOpen }: OverlayProps) => {
-  return (
-    <Portal isOpen={isOpen}>
-      <OverlayStyled data-testid={dataTestId ?? 'modal'}>
-        {children}
-      </OverlayStyled>
-    </Portal>
-  );
-};
+export const Overlay = forwardRef<HTMLDivElement, OverlayProps>(
+  ({ children, dataTestId, isOpen }, ref) => {
+    return (
+      <Portal isOpen={isOpen}>
+        <OverlayStyled data-testid={dataTestId ?? 'modal'} ref={ref}>
+          {children}
+        </OverlayStyled>
+      </Portal>
+    );
+  }
+);
 
 export const Modal = ({
   children,
