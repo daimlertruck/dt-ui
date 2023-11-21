@@ -217,7 +217,7 @@ stages:
           - task: DownloadPipelineArtifact@2
             inputs:
               artifact: storybook-static
-              targetPath: $(Build.SourcesDirectory)
+              targetPath: $(Build.SourcesDirectory)/alpha
             displayName: Download storybook files
             condition: eq(variables['Build.SourceBranch'], 'refs/heads/alpha')
 
