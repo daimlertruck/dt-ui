@@ -277,8 +277,7 @@ stages:
 
   - stage: DeletePreviews
     displayName: Delete Preview Environments
-    pool:
-      vmImage: DEVAgentPool
+    pool: DEVAgentPool
     variables:
       - group: common-var-group
     condition: eq(variables['Build.SourceBranch'], 'refs/heads/alpha')
