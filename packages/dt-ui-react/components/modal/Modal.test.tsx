@@ -3,6 +3,7 @@ import React from 'react';
 
 import { withProviders } from '../../utils';
 import { Button } from '../buttons';
+import { Provider } from '../Provider';
 
 import { Modal, Overlay } from './Modal';
 
@@ -115,6 +116,19 @@ describe('<Modal/> Component', () => {
 
       expect(handleClick).toBeCalledTimes(0);
     });
+  });
+
+  it('forwards ref correctly', () => {
+    const modalRef = React.createRef<HTMLDivElement>();
+    render(
+      <Provider>
+        <Overlay isOpen={true} ref={modalRef}>
+          <Modal handleClose={handleClick}>Content</Modal>
+        </Overlay>
+      </Provider>
+    );
+
+    expect(modalRef.current).not.toBeNull();
   });
 
   describe('handle disabled prop', () => {
