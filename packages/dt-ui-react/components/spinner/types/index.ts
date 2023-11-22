@@ -1,3 +1,3 @@
-export type Size = 'small' | 'large';
+export type SpinnerSize = 'small' | 'medium' | 'large' | 'extra-large';
 
-export type SpinnerTheme = 'light' | 'dark';
+export type SpinnerColorScheme = 'positive' | 'negative';

@@ -14,5 +14,6 @@ const Template: Story<SpinnerProps> = ({ ...props }) => {
 export const Default = Template.bind({});
 
 Default.args = {
-  size: 'large',
+  size: 'medium',
+  colorScheme: 'positive',
 };

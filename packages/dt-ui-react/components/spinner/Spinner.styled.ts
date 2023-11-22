@@ -1,13 +1,11 @@
 import { keyframes, Theme } from '@emotion/react';
 import styled from '@emotion/styled';
 
-import { hexToRgba } from '../../utils';
-
-import { SpinnerTheme, Size } from './types';
+import { SpinnerColorScheme, SpinnerSize } from './types';
 
 interface StyledSpinnerProps {
-  size: Size;
-  spinnerTheme: SpinnerTheme;
+  size: SpinnerSize;
+  colorScheme: SpinnerColorScheme;
 }
 
 interface SpinnerColors {
@@ -24,29 +22,33 @@ const spinnerAnimation = keyframes`
   }
 `;
 
-const spinnerSizes: Record<Size, string> = {
-  small: '20px',
-  large: '74px',
+const spinnerSizes: Record<SpinnerSize, string> = {
+  small: '32px',
+  medium: '48px',
+  large: '56px',
+  'extra-large': '64px',
 };
 
-const spinnerColors = (theme: Theme): Record<SpinnerTheme, SpinnerColors> => ({
-  dark: {
+const spinnerColors = (
+  theme: Theme
+): Record<SpinnerColorScheme, SpinnerColors> => ({
+  positive: {
     main: theme.palette.primary,
-    background: theme.palette.neutralLight_100,
+    background: theme.palette.neutral,
   },
-  light: {
-    main: theme.colors.white,
-    background: hexToRgba(theme.colors.white, 0.4),
+  negative: {
+    main: theme.palette.primary,
+    background: theme.colors.white,
   },
 });
 
 export const SpinnerStyled = styled.div<StyledSpinnerProps>`
-  ${({ theme, size, spinnerTheme }) => `
+  ${({ theme, size, colorScheme }) => `
     width: ${spinnerSizes[size]};
     height: ${spinnerSizes[size]};
-    border: 2px solid ${spinnerColors(theme)[spinnerTheme].background};
+    border: 2px solid ${spinnerColors(theme)[colorScheme].background};
     border-radius: 50%;
-    border-top: 2px solid ${spinnerColors(theme)[spinnerTheme].main};
+    border-top: 2px solid ${spinnerColors(theme)[colorScheme].main};
   `};
   animation: ${spinnerAnimation} 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s
     infinite normal none;

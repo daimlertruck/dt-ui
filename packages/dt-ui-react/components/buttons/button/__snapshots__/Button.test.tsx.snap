@@ -76,22 +76,6 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   }
 }
 
-@keyframes animation-0 {
-  from {
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    -ms-transform: rotate(0);
-    transform: rotate(0);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
 .emotion-0 {
   border: 1px solid;
   text-transform: uppercase;
@@ -158,9 +142,9 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
 }
 
 .emotion-4 {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #323232;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #8B8C8C;
   border-radius: 50%;
   border-top: 2px solid #002441;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
@@ -267,11 +251,11 @@ exports[`<Button /> component when loading is true renders a spinner light theme
 }
 
 .emotion-4 {
-  width: 20px;
-  height: 20px;
-  border: 2px solid rgba(255,255,255,0.4);
+  width: 32px;
+  height: 32px;
+  border: 2px solid #8B8C8C;
   border-radius: 50%;
-  border-top: 2px solid #FFFFFF;
+  border-top: 2px solid #002441;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
