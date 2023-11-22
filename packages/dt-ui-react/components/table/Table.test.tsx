@@ -42,15 +42,17 @@ describe('<Table /> component', () => {
           <TableHead>
             <TableRow>
               {COLUMNS.map((column: string, i: number) => (
-                <ColumnHeader key={i.toString()}>{column}</ColumnHeader>
+                <ColumnHeader key={i}>{column}</ColumnHeader>
               ))}
             </TableRow>
           </TableHead>
           <TableBody>
-            {ROWS.map((row: string[], i: number) => (
-              <TableRow key={i.toString()}>
+            {ROWS.map((row: string[], rowIndex: number) => (
+              <TableRow key={rowIndex}>
                 {row.map((content: string, i: number) => (
-                  <DataCell key={i.toString()}>{content}</DataCell>
+                  <DataCell dataLabel={COLUMNS[rowIndex]} key={i}>
+                    {content}
+                  </DataCell>
                 ))}
               </TableRow>
             ))}
@@ -84,16 +86,23 @@ describe('<Table /> component', () => {
         <Table>
           <TableHead>
             <TableRow>
-              {COLUMNS.map((column: string, i: number) => (
-                <ColumnHeader key={i.toString()}>{column}</ColumnHeader>
+              {COLUMNS.map((column: string) => (
+                <ColumnHeader key={`column-header-${column}`}>
+                  {column}
+                </ColumnHeader>
               ))}
             </TableRow>
           </TableHead>
           <TableBody>
-            {ROWS.map((row: string[], i: number) => (
-              <TableRow key={i.toString()}>
+            {ROWS.map((row: string[]) => (
+              <TableRow key={row.toString()}>
                 {row.map((content: string, i: number) => (
-                  <DataCell key={i.toString()}>{content}</DataCell>
+                  <DataCell
+                    dataLabel={COLUMNS[i]}
+                    key={`column-${COLUMNS[i]}-${content}`}
+                  >
+                    {content}
+                  </DataCell>
                 ))}
               </TableRow>
             ))}

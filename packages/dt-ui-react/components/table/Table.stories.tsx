@@ -70,16 +70,22 @@ const Template: Story = ({ isFixed }) => {
     <Table isFixed={isFixed}>
       <TableHead>
         <TableRow>
-          {columns.map((column: string, i: number) => (
-            <ColumnHeader key={i.toString()}>{column}</ColumnHeader>
+          {columns.map((column: string) => (
+            <ColumnHeader key={`column-header-${column}`}>
+              {column}
+            </ColumnHeader>
           ))}
         </TableRow>
       </TableHead>
       <TableBody>
-        {rows.map((row: string[], i: number) => (
-          <TableRow key={i}>
+        {rows.map((row: string[]) => (
+          <TableRow key={row.toString()}>
             {row.map((content: string, i: number) => (
-              <DataCell key={i} columnWidth={columnSizes[columns[i]]}>
+              <DataCell
+                dataLabel={columns[i]}
+                key={`column-${columns[i]}-${content}`}
+                columnWidth={columnSizes[columns[i]]}
+              >
                 {renderContent(i, content)}
               </DataCell>
             ))}

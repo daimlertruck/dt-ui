@@ -43,16 +43,16 @@ export const App = () => {
       <Table>
         <TableHead>
           <TableRow>
-            {columns.map((column: string, i: number) => (
-              <ColumnHeader key={i.toString()}>{column}</ColumnHeader>
+            {columns.map((column: string) => (
+              <ColumnHeader key={`column-header-${column}`}>{column}</ColumnHeader>
             ))}
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row: string[], i: number) => (
-            <TableRow key={i.toString()}>
+            <TableRow key={row.toString()}>
               {row.map((content: string, i: number) => (
-                <DataCell key={i.toString()}>{content}</DataCell>
+                <DataCell key={`column-${columns[i]}-${content}`}>{content}</DataCell>
               ))}
             </TableRow>
           ))}
@@ -75,21 +75,22 @@ export const App = () => {
 
 ### TableHead
 
-| Property   | Type        | Default | Description                     |
-| ---------- | ----------- | ------- | ------------------------------- |
-| `children` | `ReactNode` | -       | Child components to be rendered |
+| Property           | Type        | Default | Description                     |
+| ------------------ | ----------- | ------- | ------------------------------- |
+| `children`         | `ReactNode` | -       | Child components to be rendered |
 
 ### ColumnHeader
 
-| Property   | Type        | Default | Description                     |
-| ---------- | ----------- | ------- | ------------------------------- |
-| `children` | `ReactNode` | -       | Child components to be rendered |
+| Property    | Type        | Default | Description                                     |
+| ----------- | ----------- | ------- | ----------------------------------------------- |
+| `children`  | `ReactNode` | -       | Child components to be rendered                 |
+| `textAlign` | `TextAlign` | `left`  | Defines the text align within the column header |
 
 ### TableBody
 
-| Property   | Type        | Default | Description                     |
-| ---------- | ----------- | ------- | ------------------------------- |
-| `children` | `ReactNode` | -       | Child components to be rendered |
+| Property           | Type        | Default | Description                     |
+| ------------------ | ----------- | ------- | --------------------------------|
+| `children`         | `ReactNode` | -       | Child components to be rendered |
 
 ### TableRow
 
@@ -100,7 +101,10 @@ export const App = () => {
 
 ### DataCell
 
-| Property     | Type        | Default  | Description                                   |
-| ------------ | ----------- | -------- | ----------------------------------------------|
-| `children`   | `ReactNode` | -        | Child components to be rendered               |
-| `columnSize` | `string`    | -        | Sets a fixed width value for the table column |
+| Property      | Type              | Default  | Description                                                                      |
+| ------------- | ----------------- | -------- | -------------------------------------------------------------------------------- |
+| `children`    | `ReactNode`       | -        | Child components to be rendered                                                  |
+| `columnWidth` | `string`          | -        | Sets a fixed width value for the table column, applies only for desktop screens  |
+| `textAlign`   | `TextAlign`       | `left`   | Defines the text align within the column                                         |
+| `dataLabel`   | `string`          | -        | Column name to be shown in the gallery mode (applied in tablet/mobile screens)   |
+ 

@@ -6,6 +6,8 @@ import {
   ColumnHeaderStyled,
   CellStyled,
   TableBodyStyled,
+  TableHeadStyled,
+  TextAlign,
 } from './Table.styled';
 
 export interface TableProps extends BaseProps {
@@ -16,8 +18,14 @@ interface TableRowProps extends BaseProps {
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 }
 
+interface ColumnHeaderProps extends BaseProps {
+  textAlign?: TextAlign;
+}
+
 interface DataCellProps extends BaseProps {
   columnWidth?: string;
+  textAlign?: TextAlign;
+  dataLabel: string;
 }
 
 export const Table = ({ children, dataTestId, isFixed }: TableProps) => (
@@ -26,7 +34,9 @@ export const Table = ({ children, dataTestId, isFixed }: TableProps) => (
   </TableStyled>
 );
 
-export const TableHead = ({ children }: BaseProps) => <thead>{children}</thead>;
+export const TableHead = ({ children }: BaseProps) => (
+  <TableHeadStyled>{children}</TableHeadStyled>
+);
 
 export const TableBody = ({ children }: BaseProps) => {
   return <TableBodyStyled>{children}</TableBodyStyled>;
@@ -41,10 +51,25 @@ export const TableRow = ({ children, onClick }: TableRowProps) => {
     </RowStyled>
   );
 };
-export const ColumnHeader = ({ children }: BaseProps) => (
-  <ColumnHeaderStyled>{children}</ColumnHeaderStyled>
+
+export const ColumnHeader = ({
+  children,
+  textAlign = 'left',
+}: ColumnHeaderProps) => (
+  <ColumnHeaderStyled textAlign={textAlign}>{children}</ColumnHeaderStyled>
 );
 
-export const DataCell = ({ children, columnWidth }: DataCellProps) => (
-  <CellStyled columnWidth={columnWidth}>{children}</CellStyled>
+export const DataCell = ({
+  children,
+  columnWidth,
+  dataLabel,
+  textAlign = 'left',
+}: DataCellProps) => (
+  <CellStyled
+    data-label={dataLabel}
+    columnWidth={columnWidth}
+    textAlign={textAlign}
+  >
+    {children}
+  </CellStyled>
 );

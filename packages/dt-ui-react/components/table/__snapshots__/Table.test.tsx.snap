@@ -5,44 +5,153 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   table-layout: auto;
   width: 100%;
   border-spacing: 0;
-  background: #FFFFFF;
 }
 
 .emotion-2 {
-  display: table-row;
-  cursor: auto;
-  color: #7C7C7D;
+  display: none;
+}
+
+.emotion-2 tr {
+  background: transparent;
+}
+
+@media (min-width: 900px) {
+  .emotion-2 {
+    display: table-header-group;
+  }
 }
 
 .emotion-4 {
-  font-weight: 700;
-  font-size: 0.625rem;
-  line-height: 0.875rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: uppercase;
+  display: block;
+  padding: 24px;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  cursor: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media (min-width: 900px) {
+  .emotion-4 {
+    display: table-row;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+.emotion-6 {
   text-align: left;
   color: #323232;
   padding: 0 16px 16px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
 }
 
-.emotion-12 tr:hover {
+.emotion-14 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.emotion-14 tr:hover {
   background-color: #323232;
 }
 
-.emotion-16 {
-  display: table-cell;
+@media (min-width: 600px) {
+  .emotion-14 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .emotion-14 {
+    display: table-header-group;
+  }
+}
+
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  word-break: break-word;
+  text-align: left;
+  color: #7C7C7D;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
-  border-top: 1px solid #8B8C8C;
-  padding: 16px;
-  max-width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+}
+
+.emotion-18:not(:first-of-type):before {
+  content: attr(data-label);
+  color: #323232;
+  word-break: keep-all;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+.emotion-18:first-of-type {
+  color: #323232;
+  border-bottom: 1px solid #8B8C8C;
+  padding-top: 0;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+@media (min-width: 900px) {
+  .emotion-18 {
+    display: table-cell;
+    border-top: 1px solid #8B8C8C;
+    padding: 16px;
+    max-width: 0;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: normal;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .emotion-18:first-of-type {
+    color: #7C7C7D;
+    padding-top: 16px;
+    border-bottom: none;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: normal;
+    margin: 0;
+  }
+
+  .emotion-18:before {
+    display: none;
+  }
 }
 
 <div>
@@ -50,103 +159,117 @@ exports[`<Table /> component renders a Basic Table 1`] = `
     class="emotion-0 emotion-1"
     data-testid="table"
   >
-    <thead>
+    <thead
+      class="emotion-2 emotion-3"
+    >
       <tr
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
       >
         <th
-          class="emotion-4 emotion-5"
+          class="emotion-6 emotion-7"
         >
           Column 1
         </th>
         <th
-          class="emotion-4 emotion-5"
+          class="emotion-6 emotion-7"
         >
           Column 2
         </th>
         <th
-          class="emotion-4 emotion-5"
+          class="emotion-6 emotion-7"
         >
           Column 3
         </th>
         <th
-          class="emotion-4 emotion-5"
+          class="emotion-6 emotion-7"
         >
           Column 4
         </th>
       </tr>
     </thead>
     <tbody
-      class="emotion-12 emotion-13"
+      class="emotion-14 emotion-15"
     >
       <tr
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
       >
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-18 emotion-19"
+          data-label="Column 1"
         >
           Row 1 - content 1
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-18 emotion-19"
+          data-label="Column 2"
         >
           Row 1 - content 2
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-18 emotion-19"
+          data-label="Column 3"
         >
           Row 1 - content 3
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-18 emotion-19"
+          data-label="Column 4"
         >
           Row 1 - content 4
         </td>
       </tr>
       <tr
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
       >
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-18 emotion-19"
+          data-label="Column 1"
         >
           Row 2 - content 1
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-18 emotion-19"
+          data-label="Column 2"
         >
           Row 2 - content 2
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-18 emotion-19"
+          data-label="Column 3"
         >
           Row 2 - content 3
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-18 emotion-19"
+          data-label="Column 4"
         >
           Row 2 - content 4
         </td>
       </tr>
       <tr
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
       >
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-18 emotion-19"
+          data-label="Column 1"
         >
           Row 3 - content 1
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-18 emotion-19"
+          data-label="Column 2"
         >
           Row 3 - content 2
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-18 emotion-19"
+          data-label="Column 3"
         >
           Row 3 - content 3
         </td>
         <td
-          class="emotion-16 emotion-17"
+          class="emotion-18 emotion-19"
+          data-label="Column 4"
         >
           Row 3 - content 4
         </td>
