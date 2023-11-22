@@ -5,6 +5,9 @@ node_modules
 coverage
 **/jest-coverage
 
+# misc
+.DS_Store
+
 # debug
 yarn-debug.log*
 yarn-error.log*
