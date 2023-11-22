@@ -113,6 +113,7 @@ export type CustomTheme = {
     green_400: string;
   };
   shadows: {
+    none: string;
     0: string;
     0.5: string;
     1: string;
@@ -198,6 +199,18 @@ export type CustomTheme = {
     md: string;
     lg: string;
     xxl: string;
+  };
+  radius: {
+    none: string;
+    '5xs': string;
+    '4xs': string;
+    '3xs': string;
+    '2xs': string;
+    xs: string;
+    s: string;
+    m: string;
+    l: string;
+    xl: string;
   };
   fontFamily: {
     default: string;

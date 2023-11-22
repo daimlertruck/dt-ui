@@ -1,5 +1,6 @@
 import { breakpoints } from '../default/breakpoints';
 import { colors } from '../default/palette';
+import { radius } from '../default/radius';
 import { shadows } from '../default/shadows';
 import { spacing } from '../default/spacing';
 import { responsiveFontStyles } from '../default/typography';
@@ -16,4 +17,5 @@ export const greenlaneTheme = {
   spacing,
   breakpoints,
   responsiveFontStyles,
+  radius,
 };
