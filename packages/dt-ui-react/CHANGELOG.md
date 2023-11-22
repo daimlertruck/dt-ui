@@ -1,5 +1,18 @@
 # @dt-ui/react
 
+## 0.1.0-beta.8
+
+### Minor Changes
+
+- feat: add neutralDark_300 to the theme palette
+- feat: add font poppins
+
+### Patch Changes
+
+- refactor: re-define table styles
+- docs: update table README
+- test: update test snapshots due to bad theme style
+
 ## 0.1.0-beta.7
 
 ### Minor Changes
