@@ -25,6 +25,10 @@ export interface EmitToastProps extends ToastOptions {
   dismissible?: boolean;
 }
 
+export const dismissToast = (id: string) => {
+  toast.dismiss(id);
+};
+
 export const emitToast = ({
   type,
   title,

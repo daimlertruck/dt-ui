@@ -1,11 +1,12 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import React from 'react';
+import { toast } from 'react-hot-toast';
 
 import { withProviders } from '../../utils';
 import { Button } from '../buttons';
 
 import { ToastType } from './constants';
 import Toast from './Toast';
+import { dismissToast } from './Toaster';
 
 describe('<Toast /> component', () => {
   const TOAST_ID = 'myId';
@@ -133,5 +134,13 @@ describe('<Toast /> component', () => {
         expect(closeBtn).toBeNull();
       }
     );
+  });
+
+  it('dismisses the toast with the specified ID when dismissToast function is called', () => {
+    toast.dismiss = jest.fn();
+
+    dismissToast('testToastId');
+
+    expect(toast.dismiss).toHaveBeenCalledWith('testToastId');
   });
 });

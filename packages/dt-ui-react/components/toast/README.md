@@ -146,6 +146,12 @@ You can check all ToastOptions [here](https://react-hot-toast.com/docs/toast).
 The Toast position is fixed, on small screens it will be on the bottom center and on large screens it will be on the bottom right.
 The default duration for any type of toast is 4000ms. For the error type, the duration is infinite.
 
+### dismissToast
+
+| Property  | Type     | Default | Description                |
+| --------- | :------- | :------ | :------------------------- |
+| `toastId` | `string` | -       | ID of the toast to dismiss |
+
 ### Toast
 
 | Property      | Type              | Default | Description                                                                                                   |
