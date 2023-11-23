@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.18
+
+### Minor Changes
+
+- feat: update modal and toast z-index
+
 ## 0.1.0-alpha.17
 
 ### Minor Changes
