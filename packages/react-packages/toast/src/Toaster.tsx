@@ -1,5 +1,5 @@
 import { useTheme } from '@emotion/react';
-import { ReactNode } from 'react';
+import { Children, cloneElement, ReactElement, ReactNode } from 'react';
 import {
   toast,
   ToastOptions,
@@ -41,6 +41,16 @@ export const emitToast = ({
     type === ToastType.Error ? TOAST_ERROR_DURATION : TOAST_DEFAULT_DURATION;
   toast.custom(
     (t) => {
+      const clonedChildren = Children.map(children as ReactElement, (child) => {
+        return (
+          child &&
+          cloneElement(child, {
+            toastId: t.id,
+            ...child.props,
+          })
+        );
+      });
+
       return (
         <Toast
           dismissible={dismissible}
@@ -51,7 +61,7 @@ export const emitToast = ({
           title={title}
           type={type}
         >
-          {children}
+          {clonedChildren}
         </Toast>
       );
     },
