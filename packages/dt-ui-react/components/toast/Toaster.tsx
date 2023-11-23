@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { Children, cloneElement, ReactElement, ReactNode } from 'react';
 import {
   toast,
   ToastOptions,
@@ -39,6 +39,16 @@ export const emitToast = ({
 }: EmitToastProps) => {
   toast.custom(
     (t) => {
+      const clonedChildren = Children.map(children as ReactElement, (child) => {
+        return (
+          child &&
+          cloneElement(child, {
+            toastId: t.id,
+            ...child.props,
+          })
+        );
+      });
+
       return (
         <Toast
           id={t.id}
@@ -48,7 +58,7 @@ export const emitToast = ({
           onClose={() => toast.dismiss(t.id)}
           isVisible={t.visible}
         >
-          {children}
+          {clonedChildren}
         </Toast>
       );
     },
