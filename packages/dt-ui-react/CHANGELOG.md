@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.9
+
+### Minor Changes
+
+- feat: allow modal to receive a ref
+
 ## 0.1.0-beta.8
 
 ### Minor Changes
