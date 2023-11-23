@@ -6,6 +6,7 @@ import {
   ToasterProps as ToasterProviderProps,
 } from 'react-hot-toast';
 
+import { TOAST_Z_INDEX } from '../../constants';
 import useMedia from '../../hooks/useMedia';
 
 import { ToastPosition, ToastType } from './constants';
@@ -79,6 +80,7 @@ const Toaster = ({
           right: margin,
           top: margin,
           left: margin,
+          zIndex: TOAST_Z_INDEX,
           ...props.containerStyle,
         }}
       />

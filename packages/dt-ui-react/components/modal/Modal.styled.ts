@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 
+import { MODAL_Z_INDEX, OVERLAY_Z_INDEX } from '../../constants';
 import { hexToRgba } from '../../utils';
 
 export const OverlayStyled = styled.div`
@@ -8,7 +9,7 @@ export const OverlayStyled = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 5;
+  z-index: ${OVERLAY_Z_INDEX};
   background: ${({ theme }) => hexToRgba(theme.colors.gray_300, 0.6)};
 `;
 
@@ -16,7 +17,7 @@ export const ModalStyled = styled.div`
   width: 50%;
   max-width: 825px;
   position: fixed;
-  z-index: 10;
+  z-index: ${MODAL_Z_INDEX};
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
