@@ -27,6 +27,10 @@ export interface ToasterProps extends ToasterProviderProps {
   defaultPosition?: ToastPosition;
 }
 
+export const dismissToast = (id: string) => {
+  toast.dismiss(id);
+};
+
 export const emitToast = ({
   type,
   title,

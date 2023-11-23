@@ -147,6 +147,12 @@ The emitToast extends from ToastOptions. They will overwrite all options receive
 
 You can check all ToastOptions [here](https://react-hot-toast.com/docs/toast).
 
+### dismissToast
+
+| Property  | Type     | Default | Description                |
+| --------- | :------- | :------ | :------------------------- |
+| `toastId` | `string` | -       | ID of the toast to dismiss |
+
 ### Toast
 
 | Property    | Type              | Default | Description                                                       |
