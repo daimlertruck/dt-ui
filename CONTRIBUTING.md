@@ -65,9 +65,9 @@ When creating a PR that is not ready to be reviewed, create it as a [Draft Pull 
 
 ### 3.3. Code Reviews
 
-Every PR should be reviewed by at least two reviewers before being merged to the main branch.   
+Every PR should be reviewed and approved by at least two reviewers before being merged to the main branch.
 
-After each review, and every time the developer need to perform a fix on the branch, it should create a new [fixup commit](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---fixupamendrewordltcommitgt). This allows the reviewers keep a track on what was changed and can easily continue their review process.  
+After each review, and every time the developer need to perform a fix on a branch, fixes related to a commit should reference the same commit using [fixup commit](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---fixupamendrewordltcommitgt). This allows the reviewers to track the changes easier and keeps clean and clear commit history.
 
 After the review process is completed and before merging the branch, all discussions should be resolved by the one that opened them. This way, everyone is aware if the discussion is finished or if there is something pending. Besides that, and after merging the branch, the developer should also rebase the branch with the main/develop branch using the `autosquash` commit, so that all fixups' commits are squashed with its respective parent commit.
 
