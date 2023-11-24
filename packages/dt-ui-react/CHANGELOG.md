@@ -1,5 +1,12 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.19
+
+### Minor Changes
+
+- feat: create dismiss toast function
+- feat: share toast id with toast children component
+
 ## 0.1.0-alpha.18
 
 ### Minor Changes
