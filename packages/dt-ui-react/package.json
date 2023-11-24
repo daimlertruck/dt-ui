@@ -18,6 +18,7 @@
     "lint": "eslint --cache .",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "test": "jest",
+    "test:update:snapshot": "jest -u",
     "test:report": "open ./jest-coverage/lcov-report/index.html"
   },
   "devDependencies": {
