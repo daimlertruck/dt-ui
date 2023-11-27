@@ -38,3 +38,4 @@ export { default as RemoveCircleOutline } from './RemoveCircleOutline';
 export { default as MoreHorizontalIcon } from './MoreHorizontal';
 export { default as PauseCircleOutline } from './PauseCircleOutline';
 export { default as SearchIcon } from './Search';
+export { default as LeaveIcon } from './Leave';
