@@ -1,5 +1,15 @@
 # @dt-ui/react
 
+## 0.1.0-beta.10
+
+### Minor Changes
+
+- feat(spinner): add changes to spinner according to design
+
+### Patch Changes
+
+- chore: add script to update test snapshots
+
 ## 0.1.0-beta.9
 
 ### Minor Changes
