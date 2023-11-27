@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.20
+
+### Minor Changes
+
+- feat: add leave icon
+
 ## 0.1.0-alpha.19
 
 ### Minor Changes
