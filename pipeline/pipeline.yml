@@ -70,6 +70,19 @@ stages:
           - script: |
               echo "##vso[build.updatebuildnumber]v$(setvars.VERSION)-b$(Build.BuildId)"
             displayName: "Overriding BuildNumber"
+          - task: Bash@3
+            displayName: Check fixups commits
+            inputs:
+              targetType: inline
+              script: |
+                fixups=$(git log --oneline origin/develop..HEAD -- | grep -e "fixup! ")
+                if [ -z "$fixups" ]; then
+                  exit 0
+                fi
+                RED='\033[0;31m'
+                NC='\033[0m' # No Color
+                echo -e "${RED}$fixups${NC}"
+                exit 1
 
   - stage: ContinuousIntegration
     displayName: Continuous Integration
