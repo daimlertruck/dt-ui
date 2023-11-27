@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.11
+
+### Patch Changes
+
+- fix(spinner): fix spinner dependant components
+
 ## 0.1.0-beta.10
 
 ### Minor Changes
