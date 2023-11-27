@@ -38,7 +38,7 @@ export const Button = ({
       {children}
       {isLoading && (
         <Spinner
-          spinnerTheme={variant !== 'contained' ? 'dark' : 'light'}
+          colorScheme={variant !== 'contained' ? 'positive' : 'negative'}
           size='small'
         />
       )}

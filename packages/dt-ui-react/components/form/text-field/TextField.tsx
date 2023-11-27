@@ -116,7 +116,7 @@ export const TextField = ({
       {(hasError || isLoading || !!icon) && (
         <InputFieldIconStyled>
           {hasError && <ErrorIcon />}
-          {isLoading && <Spinner spinnerTheme='dark' size='small' />}
+          {isLoading && <Spinner colorScheme='negative' size='small' />}
           {!isLoading && !!icon && icon}
         </InputFieldIconStyled>
       )}
