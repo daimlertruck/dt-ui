@@ -24,7 +24,7 @@ trigger:
 pr:
   branches:
     include:
-      - '*'
+      - "*"
   paths:
     include:
       - packages/dt-ui-react/*
@@ -89,7 +89,7 @@ stages:
         displayName: Run Unit Tests
         dependsOn: Lint
         steps:
-          - template: templates/yarn-node-install.yml           
+          - template: templates/yarn-node-install.yml
           - script: |
               yarn install
               yarn test
@@ -100,6 +100,20 @@ stages:
               testResultsFiles: "**/jest-coverage/report.xml"
               mergeTestResults: true
               failTaskOnFailedTests: true
+
+      - job: Build
+        displayName: Run Build
+        steps:
+          - template: templates/yarn-node-install.yml
+          - template: templates/npmrc-creation.yml
+          - script: |
+              yarn install
+              yarn build
+            displayName: "Run build"
+            workingDirectory: packages/dt-ui-react
+
+          - publish: $(Build.SourcesDirectory)/packages/dt-ui-react/dist
+            artifact: build-react
 
   - stage: VersionAndTag
     displayName: Version and Tag DT-UI
@@ -130,20 +144,18 @@ stages:
               git push origin $(Build.SourceBranchName)
               git push origin --tags
             displayName: "Bump affected packages version and tag"
-            
-  - stage: BuildAndPublish
-    displayName: Build DT-UI
+
+  - stage: Publish
+    displayName: Publish DT-UI
+    pool: DEVAgentPool
     condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
     dependsOn: VersionAndTag
-    pool: DEVAgentPool
     variables:
       - group: common-var-group
     jobs:
-      - job: BuildAndPublish
-        displayName: Run Build and Publish
+      - job: Publish
+        displayName: Run Publish to Artifactory
         steps:
-          - template: templates/yarn-node-install.yml
-          - template: templates/npmrc-creation.yml
           - script: |
               published_versions=$(yarn info @dt-ui/react versions)
               current_version=$(node -pe "require('./packages/dt-ui-react/package.json').version")
@@ -154,11 +166,13 @@ stages:
                 echo "Publishing the new version: $current_version"
               fi
             displayName: "Compare package versions"
-          - script: |
-              yarn install
-              yarn build
-            displayName: "Run build"
-            workingDirectory: packages/dt-ui-react
+          - template: templates/yarn-node-install.yml
+
+          - task: DownloadPipelineArtifact@2
+            inputs:
+              artifact: build-react
+              targetPath: $(Build.SourcesDirectory)/packages/dt-ui-react/dist
+            displayName: Download build
 
           - task: ArtifactoryNpm@2
             displayName: "Run Publish"
