@@ -1,1 +1,2 @@
-export { TooltipDirection } from './enums';
+export * from './TooltipDirection';
+export * from './TooltipBackground';

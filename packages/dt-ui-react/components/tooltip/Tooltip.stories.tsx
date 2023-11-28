@@ -6,21 +6,12 @@ import { IconButton } from '../buttons';
 
 import { TooltipContainerProps } from './components/container';
 import { TooltipContentProps } from './components/content';
-import { TooltipDirection } from './constants';
+import { OTooltipBackground, OTooltipDirection } from './constants';
 import Tooltip from './Tooltip';
 
 export default {
   title: 'Data Display/Tooltip',
   component: Tooltip,
-  argTypes: {
-    direction: {
-      mapping: TooltipDirection,
-      options: Object.values(TooltipDirection).filter(
-        (x) => typeof x === 'string'
-      ),
-      control: { type: 'select' },
-    },
-  },
 };
 
 const StyledContainer = styled.div`
@@ -33,13 +24,13 @@ const Template: Story<{
   content: TooltipContentProps;
 }> = ({
   container: { children, hideDelay },
-  content: { children: contentChildren, direction },
+  content: { children: contentChildren, direction, background },
 }) => {
   return (
     <StyledContainer>
       <Tooltip hideDelay={hideDelay}>
         {children}
-        <Tooltip.Content direction={direction}>
+        <Tooltip.Content direction={direction} background={background}>
           {contentChildren}
         </Tooltip.Content>
       </Tooltip>
@@ -63,5 +54,9 @@ Default.args = {
       </IconButton>
     ),
   },
-  content: { direction: TooltipDirection.Top, children: 'Delete' },
+  content: {
+    direction: OTooltipDirection.Top,
+    background: OTooltipBackground.Full,
+    children: 'Delete',
+  },
 };

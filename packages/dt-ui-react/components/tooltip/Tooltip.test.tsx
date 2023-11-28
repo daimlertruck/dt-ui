@@ -1,86 +1,40 @@
 import {
   render,
   fireEvent,
-  waitFor,
   waitForElementToBeRemoved,
 } from '@testing-library/react';
-import React from 'react';
 
 import { withProviders, withTooltipProvider } from '../../utils';
 
-import { TooltipDirection } from './constants';
+import { TooltipContentProps } from './components';
 import Tooltip from './Tooltip';
 
 describe('<Tooltip /> component', () => {
   const ProvidedTooltip = withProviders(withTooltipProvider(Tooltip));
+  it.each`
+    direction   | background
+    ${'right'}  | ${'opacity'}
+    ${'left'}   | ${'opacity'}
+    ${'bottom'} | ${'full'}
+    ${'top'}    | ${'full'}
+  `(
+    'renders a tooltip with the direction as $direction and background as $background',
+    async ({ direction, background }: TooltipContentProps) => {
+      const { getByTestId, findByTestId } = render(
+        <ProvidedTooltip>
+          Hover me
+          <Tooltip.Content direction={direction} background={background}>
+            Some content
+          </Tooltip.Content>
+        </ProvidedTooltip>
+      );
 
-  it('renders a tooltip correctly', async () => {
-    const { getByTestId } = render(
-      <ProvidedTooltip>
-        Hover me
-        <Tooltip.Content direction={TooltipDirection.Top}>
-          Some content
-        </Tooltip.Content>
-      </ProvidedTooltip>
-    );
+      fireEvent.mouseEnter(getByTestId('tooltip-container'));
 
-    fireEvent.mouseEnter(getByTestId('tooltip-container'));
+      expect(await findByTestId('tooltip-content')).toMatchSnapshot();
+    }
+  );
 
-    await waitFor(() => getByTestId('tooltip-content'));
-
-    expect(getByTestId('tooltip-content')).toMatchSnapshot();
-  });
-
-  it('renders a tooltip on the right side of the content', async () => {
-    const { getByTestId } = render(
-      <ProvidedTooltip>
-        Hover me
-        <Tooltip.Content direction={TooltipDirection.Right}>
-          Some content
-        </Tooltip.Content>
-      </ProvidedTooltip>
-    );
-
-    fireEvent.mouseEnter(getByTestId('tooltip-container'));
-
-    await waitFor(() => getByTestId('tooltip-content'));
-
-    expect(getByTestId('tooltip-content')).toMatchSnapshot();
-  });
-
-  it('renders a tooltip on the left side of the content', async () => {
-    const { getByTestId } = render(
-      <ProvidedTooltip>
-        Hover me
-        <Tooltip.Content direction={TooltipDirection.Left}>
-          Some content
-        </Tooltip.Content>
-      </ProvidedTooltip>
-    );
-
-    fireEvent.mouseEnter(getByTestId('tooltip-container'));
-
-    await waitFor(() => getByTestId('tooltip-content'));
-
-    expect(getByTestId('tooltip-content')).toMatchSnapshot();
-  });
-
-  it('renders a tooltip on the bottom side of the content', async () => {
-    const { getByTestId } = render(
-      <ProvidedTooltip>
-        Hover me
-        <Tooltip.Content direction={TooltipDirection.Bottom}>
-          Some content
-        </Tooltip.Content>
-      </ProvidedTooltip>
-    );
-
-    fireEvent.mouseEnter(getByTestId('tooltip-container'));
-
-    await waitFor(() => getByTestId('tooltip-content'));
-
-    expect(getByTestId('tooltip-content')).toMatchSnapshot();
-  });
   it('should hide tooltip after the hide delay', async () => {
     jest.useFakeTimers();
 

@@ -2,7 +2,7 @@ import { FormEvent, ReactNode } from 'react';
 
 import { InfoIcon } from '../../../core';
 import { BaseProps } from '../../../types';
-import { TooltipDirection } from '../../tooltip';
+import { OTooltipDirection } from '../../tooltip';
 import Tooltip from '../../tooltip/Tooltip';
 import { Typography } from '../../typography';
 
@@ -58,7 +58,7 @@ Form.Group = ({ children, isDisabled, title, tooltip }: GroupProps) => {
               <InfoIcon width='16' height='16' />
               <Tooltip.Content
                 style={{ maxWidth: 250 }}
-                direction={TooltipDirection.Right}
+                direction={OTooltipDirection.Right}
               >
                 {tooltip}
               </Tooltip.Content>

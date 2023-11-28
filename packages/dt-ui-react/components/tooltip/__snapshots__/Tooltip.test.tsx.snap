@@ -1,81 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Tooltip /> component renders a tooltip correctly 1`] = `
+exports[`<Tooltip /> component renders a tooltip with the direction as bottom and background as full 1`] = `
 .emotion-0 {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  max-width: 160px;
+  max-width: calc(200px + 2 * 8px);
   overflow-wrap: break-word;
   padding: 8px;
-  background-color: #000A25;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+  background-color: #323232;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
   color: #FFFFFF;
   border-radius: 4px;
   text-align: left;
   white-space: initial;
   position: absolute;
   z-index: 6;
-  top: -10px;
-  left: 0px;
-  -webkit-transform: translate(-50%, -100%);
-  -moz-transform: translate(-50%, -100%);
-  -ms-transform: translate(-50%, -100%);
-  transform: translate(-50%, -100%);
-}
-
-.emotion-0:after {
-  content: "";
-  position: absolute;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent;
-}
-
-.emotion-0:after {
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-top-color: #000A25;
-}
-
-<div
-  class="emotion-0 emotion-1"
-  data-testid="tooltip-content"
-  direction="top"
-  role="tooltip"
->
-  Some content
-</div>
-`;
-
-exports[`<Tooltip /> component renders a tooltip on the bottom side of the content 1`] = `
-.emotion-0 {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
-  letter-spacing: normal;
-  margin: 0;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  max-width: 160px;
-  overflow-wrap: break-word;
-  padding: 8px;
-  background-color: #000A25;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
-  color: #FFFFFF;
-  border-radius: 4px;
-  text-align: left;
-  white-space: initial;
-  position: absolute;
-  z-index: 6;
-  top: 10px;
+  top: 12px;
   left: 0px;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -86,16 +32,15 @@ exports[`<Tooltip /> component renders a tooltip on the bottom side of the conte
 .emotion-0:after {
   content: "";
   position: absolute;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent;
+  border: 0px solid transparent;
 }
 
 .emotion-0:after {
   bottom: 100%;
   left: 50%;
-  margin-left: -5px;
-  border-bottom-color: #000A25;
+  margin-left: -7px;
+  border-width: 0px 7px 8px 7px;
+  border-bottom-color: #323232;
 }
 
 <div
@@ -108,21 +53,21 @@ exports[`<Tooltip /> component renders a tooltip on the bottom side of the conte
 </div>
 `;
 
-exports[`<Tooltip /> component renders a tooltip on the left side of the content 1`] = `
+exports[`<Tooltip /> component renders a tooltip with the direction as left and background as opacity 1`] = `
 .emotion-0 {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  max-width: 160px;
+  max-width: calc(200px + 2 * 8px);
   overflow-wrap: break-word;
   padding: 8px;
-  background-color: #000A25;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+  background-color: #323232;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
   color: #FFFFFF;
   border-radius: 4px;
   text-align: left;
@@ -130,7 +75,8 @@ exports[`<Tooltip /> component renders a tooltip on the left side of the content
   position: absolute;
   z-index: 6;
   top: 0px;
-  left: -10px;
+  left: -12px;
+  opacity: 80%;
   -webkit-transform: translate(-100%, -50%);
   -moz-transform: translate(-100%, -50%);
   -ms-transform: translate(-100%, -50%);
@@ -140,16 +86,15 @@ exports[`<Tooltip /> component renders a tooltip on the left side of the content
 .emotion-0:after {
   content: "";
   position: absolute;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent;
+  border: 0px solid transparent;
 }
 
 .emotion-0:after {
   top: 50%;
   left: 100%;
-  margin-top: -5px;
-  border-left-color: #000A25;
+  margin-top: -7px;
+  border-width: 7px 0px 7px 8px;
+  border-left-color: #323232;
 }
 
 <div
@@ -162,21 +107,21 @@ exports[`<Tooltip /> component renders a tooltip on the left side of the content
 </div>
 `;
 
-exports[`<Tooltip /> component renders a tooltip on the right side of the content 1`] = `
+exports[`<Tooltip /> component renders a tooltip with the direction as right and background as opacity 1`] = `
 .emotion-0 {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  max-width: 160px;
+  max-width: calc(200px + 2 * 8px);
   overflow-wrap: break-word;
   padding: 8px;
-  background-color: #000A25;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+  background-color: #323232;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
   color: #FFFFFF;
   border-radius: 4px;
   text-align: left;
@@ -184,7 +129,8 @@ exports[`<Tooltip /> component renders a tooltip on the right side of the conten
   position: absolute;
   z-index: 6;
   top: 0px;
-  left: 10px;
+  left: 12px;
+  opacity: 80%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -194,22 +140,74 @@ exports[`<Tooltip /> component renders a tooltip on the right side of the conten
 .emotion-0:after {
   content: "";
   position: absolute;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent;
+  border: 0px solid transparent;
 }
 
 .emotion-0:after {
   top: 50%;
   right: 100%;
-  margin-top: -5px;
-  border-right-color: #000A25;
+  margin-top: -7px;
+  border-width: 7px 8px 7px 0px;
+  border-right-color: #323232;
 }
 
 <div
   class="emotion-0 emotion-1"
   data-testid="tooltip-content"
   direction="right"
+  role="tooltip"
+>
+  Some content
+</div>
+`;
+
+exports[`<Tooltip /> component renders a tooltip with the direction as top and background as full 1`] = `
+.emotion-0 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: normal;
+  margin: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: calc(200px + 2 * 8px);
+  overflow-wrap: break-word;
+  padding: 8px;
+  background-color: #323232;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  color: #FFFFFF;
+  border-radius: 4px;
+  text-align: left;
+  white-space: initial;
+  position: absolute;
+  z-index: 6;
+  top: -12px;
+  left: 0px;
+  -webkit-transform: translate(-50%, -100%);
+  -moz-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+}
+
+.emotion-0:after {
+  content: "";
+  position: absolute;
+  border: 0px solid transparent;
+}
+
+.emotion-0:after {
+  top: 100%;
+  left: 50%;
+  margin-left: -7px;
+  border-width: 8px 7px 0px 7px;
+  border-top-color: #323232;
+}
+
+<div
+  class="emotion-0 emotion-1"
+  data-testid="tooltip-content"
+  direction="top"
   role="tooltip"
 >
   Some content

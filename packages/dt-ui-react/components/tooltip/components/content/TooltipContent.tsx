@@ -1,6 +1,11 @@
 import { BaseProps } from '../../../../types';
 import { Portal } from '../../../Portal';
-import { TooltipDirection } from '../../constants';
+import {
+  TooltipBackground,
+  OTooltipBackground,
+  TooltipDirection,
+  OTooltipDirection,
+} from '../../constants';
 import { useTooltipContext } from '../../context';
 import { useTooltipPosition } from '../../hooks/useTooltipPosition';
 
@@ -8,11 +13,13 @@ import { TooltipContentStyled } from './TooltipContentStyled';
 
 export interface TooltipContentProps extends BaseProps {
   direction?: TooltipDirection;
+  background?: TooltipBackground;
 }
 
 export const TooltipContent = ({
   children,
-  direction = TooltipDirection.Top,
+  direction = OTooltipDirection.Top,
+  background = OTooltipBackground.Full,
   style,
   dataTestId,
 }: TooltipContentProps) => {
@@ -24,6 +31,7 @@ export const TooltipContent = ({
       <TooltipContentStyled
         data-testid={dataTestId ?? 'tooltip-content'}
         direction={direction}
+        background={background}
         role='tooltip'
         style={style}
         top={top}
