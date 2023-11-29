@@ -13,7 +13,7 @@ exports[`<Pill /> component Should render a span html element with the given con
   border-radius: 60px;
   text-transform: uppercase;
   text-align: center;
-  background-color: #5fa50b;
+  background-color: #21A330;
   display: block;
   width: 80px;
   text-overflow: ellipsis;

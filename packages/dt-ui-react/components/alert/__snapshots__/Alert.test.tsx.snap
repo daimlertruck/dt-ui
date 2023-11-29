@@ -15,14 +15,14 @@ exports[`<Alert /> component when the alert type is error should render a alert 
   align-items: center;
   padding: 16px 14px;
   gap: 18px;
-  border: 2px solid #D21C1C;
+  border: 2px solid #FF4A4A;
   border-radius: 2px;
 }
 
 .emotion-2 {
   width: 24px;
   height: 24px;
-  color: #D21C1C;
+  color: #FF4A4A;
   mix-blend-mode: normal;
 }
 
@@ -47,7 +47,7 @@ exports[`<Alert /> component when the alert type is error should render a alert 
       type="error"
     >
       <svg
-        color="#D21C1C"
+        color="#FF4A4A"
         fill="none"
         height="24"
         viewBox="0 0 24 24"
@@ -88,14 +88,14 @@ exports[`<Alert /> component when the alert type is info should render a alert w
   align-items: center;
   padding: 16px 14px;
   gap: 18px;
-  border: 2px solid #002441;
+  border: 2px solid #008DFC;
   border-radius: 2px;
 }
 
 .emotion-2 {
   width: 24px;
   height: 24px;
-  color: #002441;
+  color: #008DFC;
   mix-blend-mode: normal;
 }
 
@@ -171,14 +171,14 @@ exports[`<Alert /> component when the alert type is warning should render a aler
   align-items: center;
   padding: 16px 14px;
   gap: 18px;
-  border: 2px solid #FFC34E;
+  border: 2px solid #FBD633;
   border-radius: 2px;
 }
 
 .emotion-2 {
   width: 24px;
   height: 24px;
-  color: #FFC34E;
+  color: #FBD633;
   mix-blend-mode: normal;
 }
 
@@ -203,7 +203,7 @@ exports[`<Alert /> component when the alert type is warning should render a aler
       type="warning"
     >
       <svg
-        color="#FFC34E"
+        color="#FBD633"
         fill="none"
         height="24"
         viewBox="0 0 24 24"

@@ -31,7 +31,7 @@ exports[`<Button /> component renders button html element with the correct title
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   color: #FFFFFF;
-  background-color: #002441;
+  background-color: #036DC1;
 }
 
 .emotion-0:disabled {
@@ -45,7 +45,7 @@ exports[`<Button /> component renders button html element with the correct title
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #01508E;
+  background-color: #013C6B;
 }
 
 <div>
@@ -123,14 +123,14 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   transition: all 0.2s ease-in-out;
   gap: 14px;
   pointer-events: none;
-  color: #002441;
+  color: #036DC1;
   background-color: #FFFFFF;
 }
 
 .emotion-0:disabled {
-  color: #002441;
+  color: #036DC1;
   background-color: #FFFFFF;
-  border-color: #002441;
+  border-color: #036DC1;
   cursor: default;
 }
 
@@ -139,8 +139,8 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
 }
 
 .emotion-0:hover {
-  color: #002441;
-  background-color: #036DC1;
+  color: #036DC1;
+  background-color: #CCE8FF;
 }
 
 .emotion-2 {
@@ -160,9 +160,9 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
 .emotion-4 {
   width: 32px;
   height: 32px;
-  border: 2px solid #8B8C8C;
+  border: 2px solid #EBECED;
   border-radius: 50%;
-  border-top: 2px solid #002441;
+  border-top: 2px solid #036DC1;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -235,7 +235,7 @@ exports[`<Button /> component when loading is true renders a spinner light theme
   gap: 14px;
   pointer-events: none;
   color: #FFFFFF;
-  background-color: #002441;
+  background-color: #036DC1;
 }
 
 .emotion-0:disabled {
@@ -249,7 +249,7 @@ exports[`<Button /> component when loading is true renders a spinner light theme
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #01508E;
+  background-color: #013C6B;
 }
 
 .emotion-2 {
@@ -271,7 +271,7 @@ exports[`<Button /> component when loading is true renders a spinner light theme
   height: 32px;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #002441;
+  border-top: 2px solid #036DC1;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }

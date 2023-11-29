@@ -32,7 +32,7 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
-  background-color: #002441;
+  background-color: #036DC1;
   color: #FFFFFF;
   border-radius: 4px;
   padding: 12px 32px;
@@ -62,7 +62,7 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
 }
 
 .emotion-4:hover {
-  background: #036DC1;
+  background: #CCE8FF;
   color: #323232;
 }
 
@@ -86,7 +86,7 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   border-radius: 4px;
   padding: 12px 32px;
   cursor: not-allowed;
-  background-color: #8B8C8C;
+  background-color: #EBECED;
   color: #BABBBB;
   opacity: 0.4;
 }
@@ -230,8 +230,8 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   align-items: center;
   padding: 16px 14px;
   background-color: #FFFFFF;
-  box-shadow: inset 2px 0px 0px 0px #002441;
-  color: #002441;
+  box-shadow: inset 2px 0px 0px 0px #036DC1;
+  color: #036DC1;
   max-width: 300px;
   overflow: hidden;
   text-align: start;
@@ -280,7 +280,7 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   overflow: hidden;
   text-align: start;
   cursor: not-allowed;
-  background-color: #8B8C8C;
+  background-color: #EBECED;
   color: #BABBBB;
   opacity: 0.4;
 }
@@ -428,8 +428,8 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   align-items: center;
   padding: 16px 14px;
   background-color: #FFFFFF;
-  box-shadow: inset 2px 0px 0px 0px #D21C1C;
-  color: #D21C1C;
+  box-shadow: inset 2px 0px 0px 0px #FF4A4A;
+  color: #FF4A4A;
   max-width: 300px;
   overflow: hidden;
   text-align: start;

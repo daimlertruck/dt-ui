@@ -36,7 +36,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   margin: 0;
   background-color: #FFFFFF;
   border: 1px solid #323232;
-  border-bottom: 2px solid #D21C1C;
+  border-bottom: 2px solid #FF4A4A;
   color: #151617;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -130,7 +130,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   margin: 0;
   background-color: #FFFFFF;
   border: 1px solid #323232;
-  border-bottom: 2px solid #D21C1C;
+  border-bottom: 2px solid #FF4A4A;
   color: #151617;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -235,7 +235,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
 }
 
 .emotion-4:focus {
-  border-bottom: 2px solid #002441;
+  border-bottom: 2px solid #036DC1;
   outline: none;
 }
 

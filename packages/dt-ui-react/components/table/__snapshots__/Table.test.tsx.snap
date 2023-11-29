@@ -61,7 +61,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
 }
 
 .emotion-14 tr:hover {
-  background-color: #323232;
+  background-color: #F8F9FA;
 }
 
 @media (min-width: 600px) {
@@ -113,7 +113,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
 
 .emotion-18:first-of-type {
   color: #323232;
-  border-bottom: 1px solid #8B8C8C;
+  border-bottom: 1px solid #EBECED;
   padding-top: 0;
   font-weight: 700;
   font-size: 0.875rem;
@@ -125,7 +125,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
 @media (min-width: 900px) {
   .emotion-18 {
     display: table-cell;
-    border-top: 1px solid #8B8C8C;
+    border-top: 1px solid #EBECED;
     padding: 16px;
     max-width: 0;
     font-weight: 400;

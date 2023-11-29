@@ -24,7 +24,7 @@ exports[`<Counter /> component should render a span html element with the given 
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #002441;
+  background-color: #008DFC;
 }
 
 <div>
@@ -62,9 +62,9 @@ exports[`<Counter /> component should render outlined counter with neutral color
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #8B8C8C;
-  border: 2px solid #8B8C8C;
-  color: #8B8C8C;
+  background-color: #EBECED;
+  border: 2px solid #EBECED;
+  color: #EBECED;
   background-color: #FFFFFF;
 }
 

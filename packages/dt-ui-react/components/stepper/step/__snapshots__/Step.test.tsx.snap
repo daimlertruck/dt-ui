@@ -24,9 +24,9 @@ exports[`<Step /> component <Step.Counter /> component should render active beha
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #002441;
-  border: 2px solid #002441;
-  color: #002441;
+  background-color: #036DC1;
+  border: 2px solid #036DC1;
+  color: #036DC1;
   background-color: #FFFFFF;
 }
 
@@ -36,7 +36,7 @@ exports[`<Step /> component <Step.Counter /> component should render active beha
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
-  color: #002441;
+  color: #036DC1;
 }
 
 <div>
@@ -44,7 +44,7 @@ exports[`<Step /> component <Step.Counter /> component should render active beha
     class="emotion-0 emotion-1"
     color="primary"
     data-testid="counter"
-    style="border-width: 1px; background-color: rgb(3, 109, 193);"
+    style="border-width: 1px; background-color: rgb(204, 232, 255);"
   >
     <span
       class="emotion-2 emotion-3"
@@ -82,7 +82,7 @@ exports[`<Step /> component <Step.Counter /> component should render completed b
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #002441;
+  background-color: #036DC1;
 }
 
 <div>
@@ -135,9 +135,9 @@ exports[`<Step /> component <Step.Counter /> component should render default beh
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #002441;
-  border: 2px solid #002441;
-  color: #002441;
+  background-color: #036DC1;
+  border: 2px solid #036DC1;
+  color: #036DC1;
   background-color: #FFFFFF;
 }
 
@@ -147,7 +147,7 @@ exports[`<Step /> component <Step.Counter /> component should render default beh
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
-  color: #002441;
+  color: #036DC1;
 }
 
 <div>
@@ -176,7 +176,7 @@ exports[`<Step /> component <Step.Label /> component should render active behavi
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
-  color: #002441;
+  color: #036DC1;
 }
 
 <div>
@@ -196,7 +196,7 @@ exports[`<Step /> component <Step.Label /> component should render completed beh
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
-  color: #002441;
+  color: #036DC1;
 }
 
 <div>
@@ -216,7 +216,7 @@ exports[`<Step /> component <Step.Label /> component should render default behav
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
-  color: #8B8C8C;
+  color: #EBECED;
 }
 
 <div>
@@ -265,9 +265,9 @@ exports[`<Step /> component render active step 1`] = `
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #002441;
-  border: 2px solid #002441;
-  color: #002441;
+  background-color: #036DC1;
+  border: 2px solid #036DC1;
+  color: #036DC1;
   background-color: #FFFFFF;
 }
 
@@ -277,7 +277,7 @@ exports[`<Step /> component render active step 1`] = `
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
-  color: #002441;
+  color: #036DC1;
 }
 
 .emotion-6 {
@@ -286,7 +286,7 @@ exports[`<Step /> component render active step 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
-  color: #002441;
+  color: #036DC1;
 }
 
 <div>
@@ -297,7 +297,7 @@ exports[`<Step /> component render active step 1`] = `
       class="emotion-2 emotion-3"
       color="primary"
       data-testid="counter"
-      style="border-width: 1px; background-color: rgb(3, 109, 193);"
+      style="border-width: 1px; background-color: rgb(204, 232, 255);"
     >
       <span
         class="emotion-4 emotion-5"
@@ -354,9 +354,9 @@ exports[`<Step /> component render default step 1`] = `
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #002441;
-  border: 2px solid #002441;
-  color: #002441;
+  background-color: #036DC1;
+  border: 2px solid #036DC1;
+  color: #036DC1;
   background-color: #FFFFFF;
 }
 
@@ -366,7 +366,7 @@ exports[`<Step /> component render default step 1`] = `
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
-  color: #002441;
+  color: #036DC1;
 }
 
 .emotion-6 {
@@ -375,7 +375,7 @@ exports[`<Step /> component render default step 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
-  color: #8B8C8C;
+  color: #EBECED;
 }
 
 <div>
@@ -443,9 +443,9 @@ exports[`<Step /> component render disabled step 1`] = `
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #323232;
-  border: 2px solid #323232;
-  color: #323232;
+  background-color: #F8F9FA;
+  border: 2px solid #F8F9FA;
+  color: #F8F9FA;
   background-color: #FFFFFF;
 }
 
@@ -455,7 +455,7 @@ exports[`<Step /> component render disabled step 1`] = `
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
-  color: #323232;
+  color: #F8F9FA;
 }
 
 .emotion-6 {
@@ -464,7 +464,7 @@ exports[`<Step /> component render disabled step 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
-  color: #323232;
+  color: #F8F9FA;
 }
 
 <div>
@@ -532,9 +532,9 @@ exports[`<Step /> component render error step 1`] = `
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #D21C1C;
-  border: 2px solid #D21C1C;
-  color: #D21C1C;
+  background-color: #FF4A4A;
+  border: 2px solid #FF4A4A;
+  color: #FF4A4A;
   background-color: #FFFFFF;
 }
 
@@ -544,7 +544,7 @@ exports[`<Step /> component render error step 1`] = `
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
-  color: #D21C1C;
+  color: #FF4A4A;
 }
 
 .emotion-6 {
@@ -553,7 +553,7 @@ exports[`<Step /> component render error step 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
-  color: #D21C1C;
+  color: #FF4A4A;
 }
 
 <div>

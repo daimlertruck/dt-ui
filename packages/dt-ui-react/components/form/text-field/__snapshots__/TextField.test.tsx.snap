@@ -34,7 +34,7 @@ exports[`<TextField /> component onBlur event should have error state with error
   top: 15px;
   width: 24px;
   height: 24px;
-  color: #D21C1C;
+  color: #FF4A4A;
 }
 
 .emotion-6 {
@@ -45,7 +45,7 @@ exports[`<TextField /> component onBlur event should have error state with error
   margin: 0;
   background-color: #FFFFFF;
   border: 1px solid #323232;
-  border-bottom: 2px solid #D21C1C;
+  border-bottom: 2px solid #FF4A4A;
   color: #151617;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -85,7 +85,7 @@ exports[`<TextField /> component onBlur event should have error state with error
       class="emotion-4 emotion-5"
     >
       <svg
-        color="#D21C1C"
+        color="#FF4A4A"
         fill="none"
         height="24"
         viewBox="0 0 24 24"
@@ -175,7 +175,7 @@ exports[`<TextField /> component renders Loading input 1`] = `
   top: 15px;
   width: 24px;
   height: 24px;
-  color: #D21C1C;
+  color: #FF4A4A;
 }
 
 .emotion-6 {
@@ -197,7 +197,7 @@ exports[`<TextField /> component renders Loading input 1`] = `
   height: 32px;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #002441;
+  border-top: 2px solid #036DC1;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -221,7 +221,7 @@ exports[`<TextField /> component renders Loading input 1`] = `
 }
 
 .emotion-10:focus {
-  border-bottom: 2px solid #002441;
+  border-bottom: 2px solid #036DC1;
   outline: none;
 }
 
@@ -307,7 +307,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
 }
 
 .emotion-4:focus {
-  border-bottom: 2px solid #002441;
+  border-bottom: 2px solid #036DC1;
   outline: none;
 }
 
@@ -370,7 +370,7 @@ exports[`<TextField /> component renders input with side button 1`] = `
   top: 15px;
   width: 24px;
   height: 24px;
-  color: #D21C1C;
+  color: #FF4A4A;
 }
 
 .emotion-6 {
@@ -392,7 +392,7 @@ exports[`<TextField /> component renders input with side button 1`] = `
 }
 
 .emotion-6:focus {
-  border-bottom: 2px solid #002441;
+  border-bottom: 2px solid #036DC1;
   outline: none;
 }
 
@@ -460,7 +460,7 @@ exports[`<TextField /> component should render the TextField with error styles a
   top: 15px;
   width: 24px;
   height: 24px;
-  color: #D21C1C;
+  color: #FF4A4A;
 }
 
 .emotion-6 {
@@ -471,7 +471,7 @@ exports[`<TextField /> component should render the TextField with error styles a
   margin: 0;
   background-color: #FFFFFF;
   border: 1px solid #323232;
-  border-bottom: 2px solid #D21C1C;
+  border-bottom: 2px solid #FF4A4A;
   color: #151617;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -510,7 +510,7 @@ exports[`<TextField /> component should render the TextField with error styles a
       class="emotion-4 emotion-5"
     >
       <svg
-        color="#D21C1C"
+        color="#FF4A4A"
         fill="none"
         height="24"
         viewBox="0 0 24 24"
@@ -596,7 +596,7 @@ exports[`<TextField /> component should render the TextField with info message 1
 }
 
 .emotion-4:focus {
-  border-bottom: 2px solid #002441;
+  border-bottom: 2px solid #036DC1;
   outline: none;
 }
 

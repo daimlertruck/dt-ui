@@ -45,7 +45,7 @@ exports[`<Toast /> component when the toast type is success should render a toas
   align-items: center;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #5fa50b;
+  background-color: #21A330;
   color: #FFFFFF;
 }
 
@@ -201,7 +201,7 @@ exports[`<Toast /> component when the toast type is success should render a toas
   align-items: center;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #5fa50b;
+  background-color: #21A330;
   color: #FFFFFF;
 }
 

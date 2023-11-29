@@ -47,7 +47,7 @@ exports[`<SearchField /> component renders SearchField input element with the co
 }
 
 .emotion-4:focus {
-  border-bottom: 2px solid #002441;
+  border-bottom: 2px solid #036DC1;
   outline: none;
 }
 
