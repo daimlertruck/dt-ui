@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.12
+
+### Minor Changes
+
+- feat: update table designs to be adapted to mobile
+- feat: export useMedia hook to be reusable on apps
+- feat: add radius sizes to the theme
+
 ## 0.1.0-beta.11
 
 ### Patch Changes
