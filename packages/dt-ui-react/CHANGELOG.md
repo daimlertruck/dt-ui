@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.14
+
+### Minor Changes
+
+- feat: add empty state component
+
 ## 0.1.0-beta.13
 
 ### Minor Changes
