@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.13
+
+### Minor Changes
+
+- feat: uniformise tooltip look
+
 ## 0.1.0-beta.12
 
 ### Minor Changes
