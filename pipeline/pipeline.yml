@@ -169,6 +169,8 @@ stages:
       - job: Publish
         displayName: Run Publish to Artifactory
         steps:
+          - template: templates/yarn-node-install.yml
+          - template: templates/npmrc-creation.yml
           - script: |
               published_versions=$(yarn info @dt-ui/react versions)
               current_version=$(node -pe "require('./packages/dt-ui-react/package.json').version")
