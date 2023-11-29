@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.21
+
+### Minor Changes
+
+- feat: extend div props in the grid
+
 ## 0.1.0-alpha.20
 
 ### Minor Changes
