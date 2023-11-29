@@ -75,7 +75,7 @@ stages:
             inputs:
               targetType: inline
               script: |
-                fixups=$(git log --oneline origin/develop..HEAD -- | grep -e "fixup! ")
+                fixups=$(git log --oneline origin/main..HEAD -- | grep -e "fixup! ")
                 if [ -z "$fixups" ]; then
                   exit 0
                 fi
