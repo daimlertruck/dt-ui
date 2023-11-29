@@ -2,11 +2,11 @@ import { css, Theme } from '@emotion/react';
 
 import { Orientation } from '../../types';
 
-export const tabsVariantStyles = (orientation: Orientation) =>
+export const tabsVariantStyles = (orientation: Orientation, theme: Theme) =>
   ({
     horizontal: css`
       flex-direction: row;
-      gap: 12px;
+      gap: ${theme.spacing['4xs']};
       margin-bottom: 12px;
     `,
     vertical: css`
@@ -19,14 +19,27 @@ export const itemVariantStyles = (
   orientation: Orientation,
   theme: Theme,
   active?: boolean,
-  hasError?: boolean
+  hasError?: boolean,
+  disabled?: boolean
 ) =>
   ({
     horizontal: css`
-      background-color: ${active ? theme.colors.white : theme.colors.grey_80};
-      color: ${active ? theme.palette.primary : theme.colors.grey_200};
-      border-radius: 3px;
-      padding: 16px 32px;
+      ${active && !disabled
+        ? theme.fontStyles.body2Bold
+        : theme.fontStyles.body2};
+      background-color: ${active ? theme.palette.primary : theme.colors.white};
+      color: ${active ? theme.colors.white : theme.palette.textSecondary};
+      border-radius: ${theme.spacing['5xs']};
+      padding: ${theme.spacing['3xs']} ${theme.spacing.s};
+
+      ${!active &&
+      !disabled &&
+      `
+        &:hover {
+          background: ${theme.palette.primaryLight_300};
+          color: ${theme.palette.textPrimary};
+        }
+      `}
     `,
     vertical: css`
       padding: 16px 14px;

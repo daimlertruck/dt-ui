@@ -16,21 +16,32 @@ interface TabPanelStyledProps {
 
 export const TabsStyled = styled.div<Pick<TabItemStyledProps, 'orientation'>>`
   display: flex;
-  ${({ orientation }) => tabsVariantStyles(orientation)};
+  flex-wrap: wrap;
+  ${({ orientation, theme }) => tabsVariantStyles(orientation, theme)};
 `;
 
 export const ItemStyled = styled.button<TabItemStyledProps>`
   border: none;
-
   display: flex;
   align-items: center;
 
-  ${({ disabled, active }) => `
-    cursor: ${disabled || active ? 'default' : 'pointer'};
-    ${disabled && 'pointer-events: none; opacity: 0.4'};
+  ${({ orientation, theme, active, hasError, disabled }) =>
+    itemVariantStyles(orientation, theme, active, hasError, disabled)};
+
+  ${({ disabled, active, theme }) => `
+    cursor: ${disabled ? 'not-allowed' : active ? 'default' : 'pointer'};
+    ${
+      disabled &&
+      `
+        background-color: ${theme.palette.neutral};
+        color: ${theme.palette.textTertiary};
+        opacity: 0.4;
+        &:active {
+          pointer-events: none; 
+        }
+     `
+    };
   `}
-  ${({ orientation, theme, active, hasError }) =>
-    itemVariantStyles(orientation, theme, active, hasError)};
 `;
 
 export const PanelStyled = styled.div<TabPanelStyledProps>`

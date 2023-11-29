@@ -6,10 +6,14 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  gap: 12px;
+  gap: 8px;
   margin-bottom: 12px;
 }
 
@@ -23,11 +27,16 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #002441;
+  color: #FFFFFF;
+  border-radius: 4px;
+  padding: 12px 32px;
   cursor: default;
-  background-color: #FFFFFF;
-  color: #002441;
-  border-radius: 3px;
-  padding: 16px 32px;
 }
 
 .emotion-4 {
@@ -40,11 +49,21 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #7C7C7D;
+  border-radius: 4px;
+  padding: 12px 32px;
   cursor: pointer;
-  background-color: #4A4A4B;
-  color: #4F4F4F;
-  border-radius: 3px;
-  padding: 16px 32px;
+}
+
+.emotion-4:hover {
+  background: #036DC1;
+  color: #323232;
 }
 
 .emotion-8 {
@@ -57,13 +76,23 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: default;
-  pointer-events: none;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #7C7C7D;
+  border-radius: 4px;
+  padding: 12px 32px;
+  cursor: not-allowed;
+  background-color: #8B8C8C;
+  color: #BABBBB;
   opacity: 0.4;
-  background-color: #4A4A4B;
-  color: #4F4F4F;
-  border-radius: 3px;
-  padding: 16px 32px;
+}
+
+.emotion-8:active {
+  pointer-events: none;
 }
 
 .emotion-10 {
@@ -179,6 +208,10 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -195,7 +228,6 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: default;
   padding: 16px 14px;
   background-color: #FFFFFF;
   box-shadow: inset 2px 0px 0px 0px #002441;
@@ -203,6 +235,7 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   max-width: 300px;
   overflow: hidden;
   text-align: start;
+  cursor: default;
 }
 
 .emotion-4 {
@@ -215,7 +248,6 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   padding: 16px 14px;
   background-color: #FFFFFF;
   box-shadow: 0;
@@ -223,6 +255,7 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   max-width: 300px;
   overflow: hidden;
   text-align: start;
+  cursor: pointer;
 }
 
 .emotion-4:hover {
@@ -239,9 +272,6 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: default;
-  pointer-events: none;
-  opacity: 0.4;
   padding: 16px 14px;
   background-color: #FFFFFF;
   box-shadow: 0;
@@ -249,10 +279,18 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   max-width: 300px;
   overflow: hidden;
   text-align: start;
+  cursor: not-allowed;
+  background-color: #8B8C8C;
+  color: #BABBBB;
+  opacity: 0.4;
 }
 
 .emotion-8:hover {
   background: #636464;
+}
+
+.emotion-8:active {
+  pointer-events: none;
 }
 
 .emotion-10 {
@@ -368,6 +406,10 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -384,7 +426,6 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: default;
   padding: 16px 14px;
   background-color: #FFFFFF;
   box-shadow: inset 2px 0px 0px 0px #D21C1C;
@@ -392,6 +433,7 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   max-width: 300px;
   overflow: hidden;
   text-align: start;
+  cursor: default;
 }
 
 .emotion-4 {
