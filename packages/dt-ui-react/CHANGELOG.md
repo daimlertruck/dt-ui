@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.15
+
+### Patch Changes
+
+- chore: change all "gray" occurrences to "grey"
+
 ## 0.1.0-beta.14
 
 ### Minor Changes
