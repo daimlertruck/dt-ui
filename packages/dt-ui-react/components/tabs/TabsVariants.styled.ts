@@ -23,8 +23,8 @@ export const itemVariantStyles = (
 ) =>
   ({
     horizontal: css`
-      background-color: ${active ? theme.colors.white : theme.colors.gray_80};
-      color: ${active ? theme.palette.primary : theme.colors.gray_200};
+      background-color: ${active ? theme.colors.white : theme.colors.grey_80};
+      color: ${active ? theme.palette.primary : theme.colors.grey_200};
       border-radius: 3px;
       padding: 16px 32px;
     `,
@@ -40,7 +40,7 @@ export const itemVariantStyles = (
         ? theme.palette.error
         : active
         ? theme.palette.primary
-        : theme.colors.gray_100};
+        : theme.colors.grey_100};
       max-width: 300px;
       overflow: hidden;
       text-align: start;
@@ -48,7 +48,7 @@ export const itemVariantStyles = (
       ${!active &&
       `
         &:hover {
-          background: ${theme.colors.gray_70};
+          background: ${theme.colors.grey_70};
         }
       `}
     `,

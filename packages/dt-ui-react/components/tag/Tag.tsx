@@ -39,7 +39,7 @@ export const Tag = ({
           data-testid={`${dataTestId}-close-button`}
         >
           <CloseIcon
-            color={isDisabled ? theme.colors.gray_90 : 'currentColor'}
+            color={isDisabled ? theme.colors.grey_90 : 'currentColor'}
             width='8px'
             height='8px'
             viewBox='2 2 8 8'

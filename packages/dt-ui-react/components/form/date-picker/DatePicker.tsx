@@ -116,7 +116,7 @@ export const DatePicker = ({
           <Typography
             element='span'
             fontStyles='pXXSmall'
-            color={hasError ? 'red_100' : 'gray_100'}
+            color={hasError ? 'red_100' : 'grey_100'}
           >
             {message}
           </Typography>

@@ -46,7 +46,7 @@ exports[`List renders list correctly 1`] = `
   >
     <h2
       class="emotion-2 emotion-3"
-      color="gray_300"
+      color="grey_300"
       data-testid="typography"
       style="margin-top: 16px; margin-bottom: 16px; font-weight: 700;"
     >

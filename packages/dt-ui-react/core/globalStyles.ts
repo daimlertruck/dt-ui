@@ -18,14 +18,14 @@ export const globalStyles = (theme: Theme) => css`
 
   html {
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: greyscale;
     font-family: ${theme.fontFamily.default};
     box-sizing: border-box;
   }
 
   body {
-    color: ${theme.colors.gray_200};
-    background-color: ${theme.colors.gray_70};
+    color: ${theme.colors.grey_200};
+    background-color: ${theme.colors.grey_70};
     font-family: ${theme.fontFamily.default};
     width: 100%;
     min-height: 100vh;

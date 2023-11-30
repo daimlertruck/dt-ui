@@ -58,7 +58,7 @@ describe('<Toggle /> component', () => {
   });
 
   describe("when the toggle isn't disabled and isn't checked", () => {
-    it('should render a toggle with 400 gray and a label', () => {
+    it('should render a toggle with 400 grey and a label', () => {
       const { container } = render(
         <ProvidedToggle
           isDisabled={false}

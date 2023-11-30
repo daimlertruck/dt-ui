@@ -32,7 +32,7 @@ export const ArrowStyled = styled.button<ArrowStyledProps>`
     background-color: ${theme.colors.white};
     border: none;
     border-radius: 3px;
-    color: ${disabled ? theme.colors.gray_90 : theme.palette.primary};
+    color: ${disabled ? theme.colors.grey_90 : theme.palette.primary};
     cursor: ${disabled ? 'default' : 'pointer'};
   `}
 `;
@@ -46,11 +46,11 @@ export const InputStyled = styled.input<InputStyledProps>`
     width: 50px;
     height: 32px;
     background-color: ${theme.colors.white};
-    color: ${theme.colors.gray_200};
+    color: ${theme.colors.grey_200};
     border: ${
       hasError
         ? `2px solid ${theme.palette.error}`
-        : `1px solid ${theme.colors.gray_90}`
+        : `1px solid ${theme.colors.grey_90}`
     };
     border-radius: 3px;
 

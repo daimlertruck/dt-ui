@@ -60,6 +60,6 @@ export const CheckboxLabelStyled = styled.label`
     align-items: center;
     padding-left: 8px;
     ${theme.fontStyles.p};
-    color: ${theme.colors.gray_200};
+    color: ${theme.colors.grey_200};
   `}
 `;

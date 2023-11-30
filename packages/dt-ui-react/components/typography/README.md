@@ -7,7 +7,7 @@ import { Typography } from '@dt-ui/react';
 
 const App = () => {
   return (
-    <Typography element='h1' fontStyles='h1' color='gray_200'>
+    <Typography element='h1' fontStyles='h1' color='grey_200'>
       Some text
     </Typography>
   );
@@ -22,7 +22,7 @@ const App = () => {
 | ------------ | --------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------------------- |
 | `children`   | `ReactNode`                                                                 | -          | Child components to be rendered                                            |
 | `element`    | `Elements`                                                                  | p          | You can set the element tag                                                |
-| `color`      | `keyof Theme['colors']` \| `keyof Theme['palette']` \| 'unset' \| 'inherit' | `gray_300` | You can set the color of the element                                       |
+| `color`      | `keyof Theme['colors']` \| `keyof Theme['palette']` \| 'unset' \| 'inherit' | `grey_300` | You can set the color of the element                                       |
 | `fontStyles` | `keyof Theme['fontStyles'];`                                                | -          | You can set the font style (weight, line height, font size) of the element |
 | `dataTestId` | `string`                                                                    | typography | Customizable test identifier                                               |
 | `style`      | `React.CSSProperties`                                                       | -          | Customizable styles                                                        |

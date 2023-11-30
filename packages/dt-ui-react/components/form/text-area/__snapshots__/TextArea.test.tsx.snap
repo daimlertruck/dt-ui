@@ -84,7 +84,7 @@ exports[`<TextArea /> component it should a textarea 1`] = `
     />
     <span
       class="emotion-6 emotion-7"
-      color="gray_100"
+      color="grey_100"
       data-testid="typography"
     >
       200

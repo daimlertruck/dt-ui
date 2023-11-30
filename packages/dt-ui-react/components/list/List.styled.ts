@@ -36,7 +36,7 @@ export const CounterListItemStyled = styled.li`
     display: flex;
     align-items: center;
     gap: 12px;
-    color: ${theme.colors.gray_300};
+    color: ${theme.colors.grey_300};
 
     &:last-of-type {
       margin-bottom: 0;

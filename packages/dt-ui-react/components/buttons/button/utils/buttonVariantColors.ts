@@ -23,7 +23,7 @@ export const buttonVariantColors = (
     hoverBgColor: theme.palette[`${color}Dark_300` as ContainedColors],
   },
   outlined: {
-    color: color === 'neutral' ? theme.colors.gray_200 : theme.palette[color],
+    color: color === 'neutral' ? theme.colors.grey_200 : theme.palette[color],
     bgColor: theme.colors.white,
     hoverBgColor: theme.palette[`${color}Light_300` as OutlinedColors],
   },

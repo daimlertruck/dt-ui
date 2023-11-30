@@ -20,7 +20,7 @@ exports[`<Typography /> component should render a p html element with the given 
 <div>
   <p
     class="emotion-0 emotion-1"
-    color="gray_300"
+    color="grey_300"
     data-testid="typography"
   >
     Some text

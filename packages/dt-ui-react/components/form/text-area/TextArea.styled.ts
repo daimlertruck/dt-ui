@@ -13,9 +13,9 @@ export const TextAreaStyled = styled.textarea`
     ${theme.fontStyles.pSmall}
 
     background-color: ${theme.colors.white};
-    border: 1px solid ${theme.colors.gray_90};
+    border: 1px solid ${theme.colors.grey_90};
 
-    color: ${theme.colors.gray_300};
+    color: ${theme.colors.grey_300};
 
     resize: none;
     width: 100%;

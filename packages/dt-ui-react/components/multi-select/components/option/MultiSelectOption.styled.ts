@@ -14,7 +14,7 @@ export const MultiSelectOptionStyled = styled.li<{ disabled?: boolean }>`
 
 
     &:hover {
-      background: ${theme.colors.gray_70};
+      background: ${theme.colors.grey_70};
       cursor: pointer;
     }
 
@@ -36,7 +36,7 @@ export const CloseButtonStyled = styled.button`
     align-self: flex-start;
     padding-right: 12px;
     padding-top: 12px;
-    color: ${theme.colors.gray_90};
+    color: ${theme.colors.grey_90};
     &:hover {
       color: currentColor;
       cursor: pointer;

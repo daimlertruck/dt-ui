@@ -11,7 +11,7 @@ export interface AvatarProps extends AvatarStyledProps {
 }
 
 const COLOR: Record<AvatarType, keyof Theme['colors'] | 'unset' | 'inherit'> = {
-  teamMember: 'gray_70',
+  teamMember: 'grey_70',
   profile: 'blue_100',
 };
 

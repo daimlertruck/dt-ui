@@ -28,7 +28,7 @@ export const AlertIconStyled = styled.div<AlertStyledProps>`
 export const AlertContentStyled = styled.div`
   ${({ theme }) => `
     ${theme.fontStyles.pSmall};
-    color: ${theme.colors.gray_300};
+    color: ${theme.colors.grey_300};
     height: 100%;
   `}
 `;

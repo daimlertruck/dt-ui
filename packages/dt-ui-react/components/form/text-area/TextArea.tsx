@@ -60,7 +60,7 @@ const TextArea = ({
         onBlur={handleBlur}
         maxLength={maxLength}
       />
-      <Typography element='span' fontStyles='pXSmall' color='gray_100'>
+      <Typography element='span' fontStyles='pXSmall' color='grey_100'>
         {maxLength - chars} Characters
       </Typography>
     </TextAreaWrapper>

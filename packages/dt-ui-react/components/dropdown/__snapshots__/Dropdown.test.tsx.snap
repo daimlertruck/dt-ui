@@ -69,14 +69,14 @@ exports[`<Dropdown /> component renders a dropdown without border 1`] = `
       >
         <p
           class="emotion-4 emotion-5"
-          color="gray_100"
+          color="grey_100"
           data-testid="typography"
         >
           Label
         </p>
         <p
           class="emotion-6 emotion-5"
-          color="gray_300"
+          color="grey_300"
           data-testid="typography"
           style="text-overflow: ellipsis; overflow: hidden;"
         >

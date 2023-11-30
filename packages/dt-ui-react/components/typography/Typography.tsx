@@ -17,7 +17,7 @@ const Typography = forwardRef<HTMLParagraphElement, TypographyProps>(
       children,
       element,
       fontStyles,
-      color = 'gray_300',
+      color = 'grey_300',
       dataTestId,
       style,
     }: TypographyProps,

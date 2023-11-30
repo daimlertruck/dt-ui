@@ -14,7 +14,7 @@ const Template: Story = ({ title, description }) => {
     <Card>
       <Card.Title>{title}</Card.Title>
       <Card.Detail>
-        <Typography color='gray_100'>{description}</Typography>
+        <Typography color='grey_100'>{description}</Typography>
       </Card.Detail>
     </Card>
   );

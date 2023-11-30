@@ -39,7 +39,7 @@ export const ToastStyled = styled.div<ToastStyledProps>`
   ${({ theme, isVisible }) => `
     background-color: ${theme.colors.white};  
     opacity: ${isVisible ? 1 : 0};
-    color: ${theme.colors.gray_300};  
+    color: ${theme.colors.grey_300};  
   `}
 `;
 
@@ -78,6 +78,6 @@ export const ToastButtonCloseStyled = styled.button`
   line-height: 0;
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.gray_70};
+    background-color: ${({ theme }) => theme.colors.grey_70};
   }
 `;

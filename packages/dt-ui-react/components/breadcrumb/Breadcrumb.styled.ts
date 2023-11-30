@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const BreadcrumbStyled = styled.nav`
   ${({ theme }) => theme.fontStyles.pXSmall}
-  color: ${({ theme }) => theme.colors.gray_100};
+  color: ${({ theme }) => theme.colors.grey_100};
   margin-bottom: 15px;
 `;
 

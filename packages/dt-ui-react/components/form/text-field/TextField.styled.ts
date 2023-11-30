@@ -16,17 +16,17 @@ export const InputFieldStyled = styled.input<InputFieldStyledProps>`
   ${({ theme, hasError, disabled }) => `
     ${theme.fontStyles.pSmall}
 
-    background-color: ${disabled ? theme.colors.gray_70 : theme.colors.white};
-    border: 1px solid ${theme.colors.gray_90};
+    background-color: ${disabled ? theme.colors.grey_70 : theme.colors.white};
+    border: 1px solid ${theme.colors.grey_90};
 
     // Change border based on input status
     border-bottom: ${
       hasError
         ? `2px solid ${theme.palette.error}`
-        : `1px solid ${theme.colors.gray_90}`
+        : `1px solid ${theme.colors.grey_90}`
     };
 
-    color: ${disabled ? theme.colors.gray_100 : theme.colors.gray_300};
+    color: ${disabled ? theme.colors.grey_100 : theme.colors.grey_300};
     min-width: 198px;
     padding: 20px 15px 5px 15px;
     transition: all 0.2s ease-in-out;

@@ -72,13 +72,13 @@ export const MultiSelectItem = ({
         isDisabled={isDisabled}
       >
         <div style={{ overflow: 'hidden' }}>
-          <Typography fontStyles='pXXSmall' color='gray_100'>
+          <Typography fontStyles='pXXSmall' color='grey_100'>
             {label}
           </Typography>
           {!state.length ? (
             <Typography
               fontStyles='pSmall'
-              color='gray_200'
+              color='grey_200'
               style={{ textOverflow: 'ellipsis', overflow: 'hidden' }}
             >
               {placeholder ?? 'Select an option'}
@@ -103,7 +103,7 @@ export const MultiSelectItem = ({
         </div>
         {!isOpen ? (
           <OutlinedArrowDropDown
-            color={isDisabled ? theme.colors.gray_90 : 'currentColor'}
+            color={isDisabled ? theme.colors.grey_90 : 'currentColor'}
           />
         ) : (
           <OutlinedArrowDropUp />

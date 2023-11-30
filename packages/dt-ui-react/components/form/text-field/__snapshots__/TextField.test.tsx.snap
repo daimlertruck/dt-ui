@@ -637,7 +637,7 @@ exports[`<TextField /> component should render the TextField with info message 1
     >
       <span
         class="emotion-8 emotion-9"
-        color="gray_100"
+        color="grey_100"
         data-testid="typography"
       >
         My Infor Message

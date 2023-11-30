@@ -112,7 +112,7 @@ exports[`<Pagination /> component should render the pagination content 1`] = `
     />
     <p
       class="emotion-6 emotion-7"
-      color="gray_300"
+      color="grey_300"
       data-testid="typography"
     >
       of

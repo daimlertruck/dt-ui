@@ -80,7 +80,7 @@ exports[`<Card /> component renders div html element with the correct items 1`] 
     >
       <h2
         class="emotion-4 emotion-5"
-        color="gray_300"
+        color="grey_300"
         data-testid="typography"
       >
         Card Title

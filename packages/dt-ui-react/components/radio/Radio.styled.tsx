@@ -46,7 +46,7 @@ export const RadioInputStyled = styled.input`
 export const RadioLabelStyled = styled.label`
   ${({ theme }) => `
     ${theme.fontStyles.p};
-    color: ${theme.colors.gray_200};
+    color: ${theme.colors.grey_200};
     cursor: inherit;
   `}
 `;

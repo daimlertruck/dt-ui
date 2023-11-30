@@ -33,7 +33,7 @@ The component that displays the controls.
 | `isDisabled`     | `boolean`                                      | `false` | Specifies if the element should be disabled.                                  |
 | `isChecked`      | `boolean`                                      | `false` | Specifies if the element should be pre-selected (checked) when the page loads |
 | `checkedColor`   | `string`                                       | `green` | Specifies the color for the checked state                                     |
-| `uncheckedColor` | `string`                                       | `gray`  | Specifies the color for the unchecked state                                   |
+| `uncheckedColor` | `string`                                       | `grey`  | Specifies the color for the unchecked state                                   |
 
 ### Toggle.Label
 

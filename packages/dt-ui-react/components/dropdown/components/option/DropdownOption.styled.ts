@@ -9,7 +9,7 @@ export const DropdownOptionStyled = styled.li<{ disabled?: boolean }>`
     overflow-x: hidden;
 
     &:hover {
-      background: ${theme.colors.gray_70};
+      background: ${theme.colors.grey_70};
       cursor: pointer;
     }
 

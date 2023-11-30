@@ -9,7 +9,7 @@ export const ProfileInfoStyled = styled.ul`
     background: ${theme.colors.white};
     box-shadow: ${theme.shadows[4]};
     border-radius: ${theme.spacing.xxsmall};
-    color: ${theme.colors.gray_300};
+    color: ${theme.colors.grey_300};
     position: absolute;
     right: 0;
     z-index: 1;
@@ -31,7 +31,7 @@ export const ProfileInfoItemStyled = styled(DropdownOptionStyled)`
 
     &[disabled] {
       opacity: 1;
-      background-color: ${hexToRgba(theme.colors.gray_90, 0.4)};
+      background-color: ${hexToRgba(theme.colors.grey_90, 0.4)};
     }
 
     &:first-of-type {

@@ -53,7 +53,7 @@ Toggle.Label = ({ children, dataTestId }: BaseProps) => {
       data-testid={dataTestId ?? 'toggle-label'}
       element='span'
       fontStyles='pXXSmall'
-      color='gray_200'
+      color='grey_200'
       style={{ fontWeight: 700 }}
       dataTestId='toggle-label'
     >

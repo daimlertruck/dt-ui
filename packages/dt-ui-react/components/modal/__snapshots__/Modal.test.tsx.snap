@@ -233,7 +233,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
     >
       <p
         class="emotion-10 emotion-11"
-        color="gray_300"
+        color="grey_300"
         data-testid="typography"
         style="margin-bottom: 8px; text-transform: none; font-weight: 700;"
       >
