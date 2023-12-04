@@ -40,3 +40,4 @@ export { default as PauseCircleOutline } from './PauseCircleOutline';
 export { default as SearchIcon } from './Search';
 export { default as LeaveIcon } from './Leave';
 export { default as ExpandIcon } from './Expand';
+export { default as CollapseIcon } from './Collapse';
