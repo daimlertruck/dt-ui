@@ -39,3 +39,4 @@ export { default as MoreHorizontalIcon } from './MoreHorizontal';
 export { default as PauseCircleOutline } from './PauseCircleOutline';
 export { default as SearchIcon } from './Search';
 export { default as LeaveIcon } from './Leave';
+export { default as ExpandIcon } from './Expand';
