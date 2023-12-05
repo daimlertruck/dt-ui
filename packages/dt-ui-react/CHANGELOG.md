@@ -1,5 +1,12 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.22
+
+### Minor Changes
+
+- feat: add Collapse icon
+- feat: add Expand icon
+
 ## 0.1.0-alpha.21
 
 ### Minor Changes
