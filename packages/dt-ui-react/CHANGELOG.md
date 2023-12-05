@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.16
+
+### Patch Changes
+
+- refactor: adapt Tabs component to design
+
 ## 0.1.0-beta.15
 
 ### Patch Changes
