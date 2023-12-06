@@ -1,7 +1,8 @@
 # EmptyState
 
 This component fills the width of the container where is placed and its height varies depending on the content in it.
-The usage of this component is to show a message to the user when there is no data to display.
+The usage of this component is to show a message to the user when there is no data to display. 
+Furthermore, it can be used to show additional information like a button or a link, as a children.
 
 ## Usage
 

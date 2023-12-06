@@ -19,10 +19,19 @@ export const EmptyStateStyled = styled.div`
   `}
 `;
 
-export const EmptyStateDescriptionStyled = styled.div`
-  ${({ theme }) => `
+interface EmptyStateDescriptionProps {
+  hasChildren: boolean;
+}
+
+export const EmptyStateDescriptionStyled = styled.div<EmptyStateDescriptionProps>`
+  ${({ theme, hasChildren }) => `
     text-align: center;
     padding-top: ${theme.spacing['4xs']};
+    padding-bottom: ${hasChildren ? theme.spacing.xs : theme.spacing.none};
+    
+    @media only screen and (min-width: ${theme.breakpoints.s}) {
+      padding-top: ${theme.spacing['3xs']};
+    }
   `}
 `;
 

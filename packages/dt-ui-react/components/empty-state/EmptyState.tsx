@@ -24,7 +24,7 @@ export const EmptyState = ({
         {title}
       </Typography>
     </EmptyStateTitleStyled>
-    <EmptyStateDescriptionStyled>
+    <EmptyStateDescriptionStyled hasChildren={Boolean(children)}>
       <Typography fontStyles='body1' color='textSecondary'>
         {description}
       </Typography>
