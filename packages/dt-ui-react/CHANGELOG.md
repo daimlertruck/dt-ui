@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.17
+
+### Minor Changes
+
+- feat: update default palette
+
 ## 0.1.0-beta.16
 
 ### Patch Changes
