@@ -143,11 +143,12 @@ exports[`<Toast /> component when the toast type is success should render a toas
       <svg
         fill="none"
         height="12"
+        viewBox="2 2 8 8"
         width="12"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="m6.94 6 4.2-4.193a.67.67 0 0 0-.947-.947l-4.194 4.2L1.806.86a.67.67 0 1 0-.947.947L5.06 6l-4.2 4.194a.666.666 0 0 0 0 .946.667.667 0 0 0 .947 0l4.193-4.2 4.194 4.2a.668.668 0 1 0 .946-.947L6.94 6Z"
+          d="M9.5 3.205L8.795 2.5L6 5.295L3.205 2.5L2.5 3.205L5.295 6L2.5 8.795L3.205 9.5L6 6.705L8.795 9.5L9.5 8.795L6.705 6L9.5 3.205Z"
           fill="currentColor"
         />
       </svg>
@@ -300,11 +301,12 @@ exports[`<Toast /> component when the toast type is success should render a toas
       <svg
         fill="none"
         height="12"
+        viewBox="2 2 8 8"
         width="12"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="m6.94 6 4.2-4.193a.67.67 0 0 0-.947-.947l-4.194 4.2L1.806.86a.67.67 0 1 0-.947.947L5.06 6l-4.2 4.194a.666.666 0 0 0 0 .946.667.667 0 0 0 .947 0l4.193-4.2 4.194 4.2a.668.668 0 1 0 .946-.947L6.94 6Z"
+          d="M9.5 3.205L8.795 2.5L6 5.295L3.205 2.5L2.5 3.205L5.295 6L2.5 8.795L3.205 9.5L6 6.705L8.795 9.5L9.5 8.795L6.705 6L9.5 3.205Z"
           fill="currentColor"
         />
       </svg>
