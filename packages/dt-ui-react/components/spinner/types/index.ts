@@ -1,3 +1,5 @@
-export type SpinnerSize = 'small' | 'medium' | 'large' | 'extra-large';
+import { ComponentSize } from '../../../types/componentSize';
+
+export type SpinnerSize = ComponentSize;
 
 export type SpinnerColorScheme = 'positive' | 'negative';
