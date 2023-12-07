@@ -1,47 +1,46 @@
-import { CustomTheme as Theme } from '../../types';
+import React, { useState } from 'react';
+
 import { acronymGenerator } from '../../utils';
-import { Typography } from '../typography';
+import { Tooltip } from '../tooltip';
+import { TooltipContent } from '../tooltip/components';
 
 import { AvatarStyled, AvatarStyledProps } from './Avatar.styled';
-import { AvatarType } from './constants';
+import { AvatarType, AvatarSize } from './constants';
+import thumbnailSrc from './images/thumbnail.svg';
 
 export interface AvatarProps extends AvatarStyledProps {
   title: string;
+  imageSrc?: string;
   dataTestId?: string;
 }
 
-const COLOR: Record<AvatarType, keyof Theme['colors'] | 'unset' | 'inherit'> = {
-  teamMember: 'grey_70',
-  profile: 'blue_100',
-};
-
-const FONTS: Record<AvatarType, keyof Theme['fontStyles']> = {
-  teamMember: 'tag',
-  profile: 'pXXSmall',
-};
-
 export const Avatar = ({
   title,
-  isLoading = false,
-  type = AvatarType.Profile,
+  type = AvatarType.Primary,
+  size = AvatarSize.Medium,
+  imageSrc = thumbnailSrc,
   dataTestId,
 }: AvatarProps) => {
+  const [shownImageSrc, setShownImageSrc] = useState(imageSrc);
+
+  const handleImageError = () => {
+    setShownImageSrc(thumbnailSrc);
+  };
+
   return (
-    <AvatarStyled
-      isLoading={isLoading}
-      type={type}
-      data-testid={dataTestId ?? 'avatar'}
-    >
-      {!isLoading && (
-        <Typography
-          element='span'
-          color={COLOR[type]}
-          fontStyles={FONTS[type]}
-          style={{ fontWeight: 700 }}
-        >
-          {acronymGenerator(title)}
-        </Typography>
-      )}
-    </AvatarStyled>
+    <Tooltip>
+      <AvatarStyled
+        type={type}
+        size={size}
+        data-testid={dataTestId ?? 'avatar'}
+      >
+        {type === AvatarType.Profile ? (
+          <img src={shownImageSrc} alt={title} onError={handleImageError} />
+        ) : (
+          <div>{acronymGenerator(title)}</div>
+        )}
+      </AvatarStyled>
+      <TooltipContent>{title}</TooltipContent>
+    </Tooltip>
   );
 };

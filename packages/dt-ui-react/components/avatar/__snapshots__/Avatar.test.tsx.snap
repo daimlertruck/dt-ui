@@ -2,49 +2,67 @@
 
 exports[`<Avatar /> component renders span html element with the correct content 1`] = `
 .emotion-0 {
-  font-weight: 700;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.emotion-2 {
+  width: 24px;
+  height: 24px;
+  font-size: 10px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.emotion-2>* {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 0;
-  border-radius: 32px;
-  width: 32px;
-  height: 32px;
-  background: #FFFFFF;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 100%;
+  cursor: pointer;
 }
 
-.emotion-2 {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
-  letter-spacing: normal;
-  margin: 0;
-  color: #002441;
+.emotion-2>* {
+  background-color: #036DC1;
+}
+
+.emotion-2>*:hover {
+  background-color: #013C6B;
 }
 
 <div>
   <div
     class="emotion-0 emotion-1"
-    data-testid="avatar"
-    type="profile"
+    data-testid="tooltip-container"
   >
-    <span
+    <div
       class="emotion-2 emotion-3"
-      color="blue_100"
-      data-testid="typography"
-      style="font-weight: 700;"
+      data-testid="avatar"
+      type="primary"
     >
-      UN
-    </span>
+      <div>
+        UN
+      </div>
+    </div>
   </div>
 </div>
 `;

@@ -1,39 +1,121 @@
 import styled from '@emotion/styled';
 
-import { AvatarType } from './constants/AvatarType';
+import { AvatarType, AvatarSize } from './constants';
 
 export interface AvatarStyledProps {
-  isLoading?: boolean;
   type: AvatarType;
+  size: AvatarSize;
 }
 
 export const AvatarStyled = styled.div<AvatarStyledProps>`
-  ${({ theme, isLoading, type }) => `
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: ${theme.spacing.none};
-    border-radius: ${theme.spacing.large};
-    
+  ${({ theme, type, size }) => {
+    let styles = `
+      & > * {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: ${theme.radius.full};
+        cursor: pointer;
+      }
+    `;
 
-    ${
-      type === AvatarType.Profile &&
-      `
-        width: ${theme.spacing.large};
-        height: ${theme.spacing.large};
-        background: ${isLoading ? theme.colors.grey_90 : theme.colors.white};
-      `
-    };
+    switch (size) {
+      case AvatarSize.Small:
+        styles += `
+          width: 16px;
+          height: 16px;
+          font-size: 8px;
+          line-height: 10px;
+          
+          & > * {
+            padding: 3px 2px 2px 2px;
+          }
+        `;
+        break;
 
-    ${
-      type === AvatarType.TeamMember &&
-      `
-        width: ${theme.spacing.medium};
-        height: ${theme.spacing.medium};
-        background: ${theme.colors.grey_90};
-        margin: 0px 10px;
-      `
+      case AvatarSize.Medium:
+        styles += `
+          width: 24px;
+          height: 24px;
+          font-size: 10px;
+          line-height: 14px;
+        `;
+        break;
+
+      case AvatarSize.Large:
+        styles += `
+          width: 32px;
+          height: 32px;
+          font-size: 12px;
+          line-height: 16px;
+        `;
+        break;
+
+      default:
+        '';
+        break;
     }
-  `}
+
+    switch (type) {
+      case AvatarType.Primary:
+        styles += `
+          color: ${theme.colors.white};
+          
+          & > * {
+            background-color: ${theme.palette.primary};
+
+            &:hover {
+              background-color: ${theme.palette.primaryDark_200};
+            }
+          }
+        `;
+        break;
+
+      case AvatarType.Secondary:
+        styles += `
+          color: ${theme.palette.textSecondary};
+          
+          & > * {
+            background-color: ${theme.palette.neutralDark_100};
+
+            &:hover {
+              background-color: ${theme.palette.neutralDark_200};
+            }
+          }
+        `;
+        break;
+
+      case AvatarType.Tertiary:
+        styles += `
+          color: ${theme.palette.primary};
+          
+          & > * {
+            background-color: ${theme.colors.white};
+
+            &:hover {
+              color: ${theme.palette.primaryDark_200};
+            }
+          }
+        `;
+        break;
+
+      case AvatarType.Profile:
+        styles += `
+          & > * {
+            padding: initial;
+          }
+        `;
+        break;
+
+      default:
+        '';
+        break;
+    }
+
+    return styles;
+  }}
 `;

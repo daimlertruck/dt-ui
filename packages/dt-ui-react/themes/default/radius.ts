@@ -9,4 +9,5 @@ export const radius = {
   m: '40px',
   l: '48px',
   xl: '100px',
+  full: '100%',
 };

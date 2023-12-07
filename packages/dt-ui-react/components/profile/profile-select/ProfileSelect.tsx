@@ -1,7 +1,7 @@
 import { useTheme } from '@emotion/react';
 
 import { ArrowDropDown, ArrowDropUp } from '../../../core';
-import { Avatar, AvatarType } from '../../avatar';
+import { Avatar, AvatarType, AvatarSize } from '../../avatar';
 
 import { ProfileSelectStyled } from './ProfileSelect.styled';
 
@@ -26,7 +26,11 @@ export const ProfileSelect = ({
       onClick={onClick}
       disabled={isLoading}
     >
-      <Avatar type={AvatarType.Profile} title={title} isLoading={isLoading} />
+      <Avatar
+        type={AvatarType.Profile}
+        size={AvatarSize.Medium}
+        title={title}
+      />
       {!isMenuOpen ? (
         <ArrowDropDown
           color={isLoading ? theme.colors.grey_90 : theme.colors.white}

@@ -6,13 +6,13 @@ import { spacing } from './spacing';
 import { fontFamily, fontStyles, responsiveFontStyles } from './typography';
 
 export const theme = {
-  fontFamily,
-  fontStyles,
+  breakpoints,
   palette,
   colors,
+  radius,
   shadows,
   spacing,
-  breakpoints,
+  fontFamily,
+  fontStyles,
   responsiveFontStyles,
-  radius,
 };
