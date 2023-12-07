@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.18
+
+### Patch Changes
+
+- refactor: adapt EmptyState component to receive children
+
 ## 0.1.0-beta.17
 
 ### Minor Changes
