@@ -1,4 +1,11 @@
-import { forwardRef } from 'react';
+import {
+  Children,
+  ReactElement,
+  ReactNode,
+  cloneElement,
+  isValidElement,
+  useRef,
+} from 'react';
 
 import { BaseProps } from '../../types';
 
@@ -14,7 +21,21 @@ export interface BreadcrumbAnchorProps extends BaseProps {
   onClick?: () => void;
 }
 
-export const Breadcrumb = ({ children }: BaseProps) => {
+export interface BreadcrumbItemProps extends BaseProps {
+  icon?: ReactElement<SVGSVGElement>;
+  state?: BreadcrumbState;
+}
+
+export interface BreadcrumbTextProps extends BaseProps {
+  children: string;
+}
+
+export const Breadcrumb = ({
+  children,
+  separator = 'slash',
+}: BreadcrumbProps) => {
+  const breadcrumbRef = useRef<HTMLElement>(null);
+  const { visibleChildren } = useCollapsedBreadcrumb(children, breadcrumbRef);
   return (
     <BreadcrumbStyled aria-label='Breadcrumb' data-testid='breadcrumb'>
       {children}
