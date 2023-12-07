@@ -36,9 +36,8 @@ describe('useCollapsedBreadcrumb', () => {
     expect(result.current.visibleChildren).toMatchInlineSnapshot(`
       [
         "Name 1",
-        <BreadcrumbItem
-          icon={<More />}
-        />,
+        "Name 2",
+        "Name 3",
         "Name 4",
       ]
     `);
@@ -68,13 +67,9 @@ const renderUseCollapsedBreadcrumb = (
     value: isBreadcrumbsTooLarge ? 60 : 30,
   });
 
-  const breadcrumbRef = { current: containerRef };
-  const result = renderHook(
-    () => useCollapsedBreadcrumb(children, breadcrumbRef),
-    {
-      wrapper,
-    }
-  );
+  const result = renderHook(() => useCollapsedBreadcrumb(children), {
+    wrapper,
+  });
 
   act(() => {
     jest.advanceTimersByTime(501);

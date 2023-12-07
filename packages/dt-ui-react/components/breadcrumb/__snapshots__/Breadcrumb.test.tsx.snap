@@ -3,42 +3,97 @@
 exports[`<Breadcrumb /> component renders nav element with the correct breadcrumb items 1`] = `
 .emotion-0 {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18.76px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
-  color: #8B8C8C;
-  margin-bottom: 15px;
+  color: #7C7C7D;
+  margin-bottom: 12px;
+  overflow: hidden;
 }
 
 .emotion-2 {
   padding: 0px;
   margin: 0px;
+  width: 100%;
+  list-style: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  list-style: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  gap: 8px;
 }
 
-.emotion-4:last-child {
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-4:not(:last-child) {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #036DC1;
+  cursor: pointer;
+}
+
+.emotion-4:not(:last-child) * {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:not(:last-child):hover {
+  color: #013C6B;
+}
+
+.emotion-4 a {
+  color: inherit;
+}
+
+.emotion-4:hover svg {
+  color: #323232;
+}
+
+.emotion-4 svg {
+  color: #7C7C7D;
+}
+
+.emotion-4:last-child * {
+  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
-}
-
-.emotion-4:not(:last-child):after {
-  content: '/';
-  padding: 8px;
 }
 
 .emotion-6 {
-  color: #036DC1;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
 }
 
 <div>
@@ -53,17 +108,136 @@ exports[`<Breadcrumb /> component renders nav element with the correct breadcrum
       <li
         class="emotion-4 emotion-5"
       >
-        <a
+        <div
           class="emotion-6 emotion-7"
-          href="/"
+          data-testid="tooltip-container"
+          style="overflow: hidden;"
         >
-          Name 1
-        </a>
+          <div
+            class="emotion-8 emotion-9"
+          >
+            <svg
+              fill="none"
+              height="17"
+              viewBox="0 0 16 17"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.6667 9.33329H3.33333C2.6 9.33329 2 9.93329 2 10.6666V13.3333C2 14.0666 2.6 14.6666 3.33333 14.6666H12.6667C13.4 14.6666 14 14.0666 14 13.3333V10.6666C14 9.93329 13.4 9.33329 12.6667 9.33329ZM12.6667 13.3333H3.33333V10.6666H12.6667V13.3333Z"
+                fill="currentColor"
+              />
+              <path
+                d="M12.6667 2.66663H3.33333C2.6 2.66663 2 3.26663 2 3.99996V6.66663C2 7.39996 2.6 7.99996 3.33333 7.99996H12.6667C13.4 7.99996 14 7.39996 14 6.66663V3.99996C14 3.26663 13.4 2.66663 12.6667 2.66663ZM12.6667 6.66663H3.33333V3.99996H12.6667V6.66663Z"
+                fill="currentColor"
+              />
+            </svg>
+            <a
+              href="/"
+            >
+              Name 1
+            </a>
+          </div>
+        </div>
       </li>
+      <svg
+        fill="none"
+        height="12"
+        viewBox="0 0 8 12"
+        width="8"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M6.99468 4.99507C7.18215 5.1826 7.28747 5.4369 7.28747 5.70207C7.28747 5.96723 7.18215 6.22154 6.99468 6.40907L2.40168 11.0021C2.21539 11.1846 1.96458 11.2863 1.70375 11.285C1.44292 11.2837 1.19315 11.1795 1.00871 10.995C0.824278 10.8106 0.72008 10.5608 0.718763 10.3C0.717445 10.0392 0.819115 9.78836 1.00168 9.60207L4.90168 5.70207L1.00168 1.80207C0.819115 1.61578 0.717445 1.36497 0.718763 1.10414C0.72008 0.843312 0.824278 0.593541 1.00871 0.409105C1.19315 0.224668 1.44292 0.120471 1.70375 0.119153C1.96458 0.117836 2.21539 0.219506 2.40168 0.402069L6.99468 4.99507Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        />
+      </svg>
       <li
         class="emotion-4 emotion-5"
       >
-        Name 2
+        <div
+          class="emotion-6 emotion-7"
+          data-testid="tooltip-container"
+          style="overflow: hidden;"
+        >
+          <div
+            class="emotion-8 emotion-9"
+          >
+            <a
+              href="/"
+            >
+              Second page has a long text to...
+            </a>
+          </div>
+        </div>
+      </li>
+      <svg
+        fill="none"
+        height="12"
+        viewBox="0 0 8 12"
+        width="8"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M6.99468 4.99507C7.18215 5.1826 7.28747 5.4369 7.28747 5.70207C7.28747 5.96723 7.18215 6.22154 6.99468 6.40907L2.40168 11.0021C2.21539 11.1846 1.96458 11.2863 1.70375 11.285C1.44292 11.2837 1.19315 11.1795 1.00871 10.995C0.824278 10.8106 0.72008 10.5608 0.718763 10.3C0.717445 10.0392 0.819115 9.78836 1.00168 9.60207L4.90168 5.70207L1.00168 1.80207C0.819115 1.61578 0.717445 1.36497 0.718763 1.10414C0.72008 0.843312 0.824278 0.593541 1.00871 0.409105C1.19315 0.224668 1.44292 0.120471 1.70375 0.119153C1.96458 0.117836 2.21539 0.219506 2.40168 0.402069L6.99468 4.99507Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        />
+      </svg>
+      <li
+        class="emotion-4 emotion-5"
+      >
+        <div
+          class="emotion-6 emotion-7"
+          data-testid="tooltip-container"
+          style="overflow: hidden;"
+        >
+          <div
+            class="emotion-8 emotion-9"
+          >
+            <a
+              href="/"
+            >
+              Name 3
+            </a>
+          </div>
+        </div>
+      </li>
+      <svg
+        fill="none"
+        height="12"
+        viewBox="0 0 8 12"
+        width="8"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M6.99468 4.99507C7.18215 5.1826 7.28747 5.4369 7.28747 5.70207C7.28747 5.96723 7.18215 6.22154 6.99468 6.40907L2.40168 11.0021C2.21539 11.1846 1.96458 11.2863 1.70375 11.285C1.44292 11.2837 1.19315 11.1795 1.00871 10.995C0.824278 10.8106 0.72008 10.5608 0.718763 10.3C0.717445 10.0392 0.819115 9.78836 1.00168 9.60207L4.90168 5.70207L1.00168 1.80207C0.819115 1.61578 0.717445 1.36497 0.718763 1.10414C0.72008 0.843312 0.824278 0.593541 1.00871 0.409105C1.19315 0.224668 1.44292 0.120471 1.70375 0.119153C1.96458 0.117836 2.21539 0.219506 2.40168 0.402069L6.99468 4.99507Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        />
+      </svg>
+      <li
+        class="emotion-4 emotion-5"
+      >
+        <div
+          class="emotion-6 emotion-7"
+          data-testid="tooltip-container"
+          style="overflow: hidden;"
+        >
+          <div
+            class="emotion-8 emotion-9"
+          >
+            <a
+              href="/"
+            >
+              Last page has a long text to d...
+            </a>
+          </div>
+        </div>
       </li>
     </ul>
   </nav>
