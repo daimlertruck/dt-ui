@@ -11,6 +11,7 @@ export type CustomTheme = {
     primary: string;
     primaryDark_300: string;
     primaryDark_400: string;
+    primaryDark_500: string;
     success: string;
     successDark_300: string;
     warning: string;
@@ -92,6 +93,8 @@ export type CustomTheme = {
     greenPastel_50: string;
     greenPastel_60: string;
     greenPastel_70: string;
+    greenPastel_80: string;
+    greenPastel_90: string;
     // Legacy colors
     blue_200: string;
     blue_300: string;
