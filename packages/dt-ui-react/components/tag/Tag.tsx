@@ -1,49 +1,84 @@
-import { useTheme } from '@emotion/react';
-
 import { CloseIcon } from '../../core/assets';
 import { BaseProps } from '../../types';
 
+import { TagBorder, TagColor, TagSize, TagVariant } from './constants';
 import { TagStyled, TagGroupStyled, TagButtonCloseStyled } from './Tag.styled';
-import { TagVariant } from './TagVariants.styled';
 
-export interface TagProps extends BaseProps {
-  onClick?: (event: React.MouseEvent<HTMLSpanElement>) => void;
-  onClose?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+type TagConditionalProps =
+  | {
+      onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
+      onClose?: never;
+    }
+  | {
+      onClose?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+      onClick?: never;
+    };
+
+export type TagProps = {
   variant?: TagVariant;
+  color?: TagColor;
+  border?: TagBorder;
+  size?: TagSize;
   isDisabled?: boolean;
   isClickable?: boolean;
-}
+} & TagConditionalProps &
+  BaseProps;
 
 export const Tag = ({
+  style,
   children,
   dataTestId,
+  variant = 'solid',
+  color = 'primary',
+  border = 'squared',
+  size = 'small',
+  isClickable = false,
+  isDisabled = false,
   onClick,
   onClose,
-  variant = 'colored',
-  isDisabled = false,
-  isClickable = false,
 }: TagProps) => {
-  const theme = useTheme();
+  const dataTestIdName = dataTestId ?? 'tag';
+  const isDismissible = !!onClose;
+  const hasHoverStyle =
+    !isDisabled && (!!onClick || isClickable || isDismissible);
+  const hasClickableStyle = !isDismissible && hasHoverStyle;
+
+  const handleClickTag = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (isDisabled || isDismissible) {
+      return;
+    }
+
+    onClick?.(event);
+  };
 
   return (
     <TagStyled
-      data-testid={dataTestId ?? 'tag'}
-      isClickable={isClickable || !!onClick}
-      onClick={onClick}
+      style={style}
       variant={variant}
+      color={color}
+      border={border}
+      size={size}
+      hasHover={hasHoverStyle}
+      isClickable={hasClickableStyle}
+      isDismissible={isDismissible}
+      isDisabled={isDisabled}
+      onClick={handleClickTag}
+      data-testid={dataTestIdName}
+      aria-disabled={isDisabled}
     >
       {children}
-      {onClose && !isDisabled && (
+
+      {isDismissible && (
         <TagButtonCloseStyled
+          variant={variant}
+          color={color}
+          hasHover={hasHoverStyle}
+          disabled={isDisabled}
           onClick={onClose}
-          data-testid={`${dataTestId}-close-button`}
+          data-testid={`${dataTestIdName}-close-button`}
+          aria-disabled={isDisabled}
         >
-          <CloseIcon
-            color={isDisabled ? theme.colors.grey_90 : 'currentColor'}
-            width='8px'
-            height='8px'
-            viewBox='2 2 8 8'
-          />
+          <CloseIcon width='8px' height='8px' />
         </TagButtonCloseStyled>
       )}
     </TagStyled>

@@ -8,9 +8,7 @@ An alert displays a short, important message in a way that attracts the user's a
 import { Alert, AlertType } from '@dt-ui/react';
 
 export const App = () => {
-  return (
-    <Alert type={AlertType.Warning}>Some warning message here</Pill>
-  );
+  return <Alert type={AlertType.Warning}>Some warning message here</Alert>;
 };
 ```
 

@@ -1,59 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Tag /> component Basic tag veriant should render a span html element with given styles 1`] = `
-.emotion-0 {
-  border: 1px solid #323232;
-  background-color: #FFFFFF;
-  color: #4F4F4F;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 13.4px;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.5px;
-  padding: 4px 6px;
-  border-radius: 2px;
-}
-
-<div>
-  <span
-    class="emotion-0 emotion-1"
-    data-testid="tag"
-  >
-    Active
-  </span>
-</div>
-`;
-
-exports[`<Tag /> component should render a span html element with the given content 1`] = `
-.emotion-0 {
-  border: 0;
-  background-color: #E6F5FF;
-  color: #151617;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 13.4px;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.5px;
-  padding: 4px 6px;
-  border-radius: 2px;
-}
-
-<div>
-  <span
-    class="emotion-0 emotion-1"
-    data-testid="tag"
-  >
-    Active
-  </span>
-</div>
-`;
-
 exports[`<Tag /> component should render a wrapper for a group of tags 1`] = `
 .emotion-0 {
   display: -webkit-box;
@@ -64,41 +10,346 @@ exports[`<Tag /> component should render a wrapper for a group of tags 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 4px;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .emotion-2 {
-  border: 0;
-  background-color: #E6F5FF;
-  color: #151617;
+  font-size: 0.625rem;
   font-weight: 700;
-  font-size: 10px;
-  line-height: 13.4px;
-  letter-spacing: normal;
-  margin: 0;
+  line-height: 0.875rem;
+  padding: 2px 8px;
+  height: 18px;
+  border: 0;
+  color: #FFFFFF;
+  background-color: #013C6B;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.5px;
-  padding: 4px 6px;
-  border-radius: 2px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  gap: 4px;
+  border-radius: 0px;
 }
 
 <div>
   <div
     class="emotion-0 emotion-1"
   >
-    <span
+    <div
+      aria-disabled="false"
       class="emotion-2 emotion-3"
+      color="primary"
       data-testid="tag"
     >
       Active
-    </span>
-    <span
+    </div>
+    <div
+      aria-disabled="false"
       class="emotion-2 emotion-3"
+      color="primary"
       data-testid="tag"
     >
       Inactive
-    </span>
+    </div>
   </div>
+</div>
+`;
+
+exports[`<Tag /> component should render the tag with variant outlined, color blue, border squared, size small, isClickable as true, isDisabled as false, onClick and onClose 1`] = `
+.emotion-0 {
+  font-size: 0.625rem;
+  font-weight: 700;
+  line-height: 0.875rem;
+  padding: 2px 8px;
+  height: 18px;
+  border: 1px solid #008DFC;
+  color: #008DFC;
+  background-color: #E6F5FF;
+  border-color: #008DFC;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  gap: 4px;
+  border-radius: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.emotion-0:hover {
+  border-color: #013C6B;
+  background-color: #E6F5FF;
+  color: #013C6B;
+}
+
+<div
+  aria-disabled="false"
+  class="emotion-0 emotion-1"
+  color="blue"
+  data-testid="tag"
+>
+  Click me
+</div>
+`;
+
+exports[`<Tag /> component should render the tag with variant solid, color grey, border rounded, size medium, isClickable as false, isDisabled as false, onClick and onClose 1`] = `
+.emotion-0 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding: 8px 12px;
+  height: 32px;
+  border: 0;
+  color: #FFFFFF;
+  background-color: #7C7C7D;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  gap: 4px;
+  border-radius: 32px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.emotion-0:hover {
+  background-color: #323232;
+  color: #FFFFFF;
+}
+
+<div
+  aria-disabled="false"
+  class="emotion-0 emotion-1"
+  color="grey"
+  data-testid="tag"
+>
+  Click me
+</div>
+`;
+
+exports[`<Tag /> component should render the tag with variant solid, color grey, border rounded, size medium, isClickable as false, isDisabled as false, onClick and onClose 2`] = `
+.emotion-0 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding: 8px 12px;
+  height: 32px;
+  border: 0;
+  color: #FFFFFF;
+  background-color: #7C7C7D;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  gap: 4px;
+  border-radius: 32px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-0:hover {
+  background-color: #323232;
+  color: #FFFFFF;
+}
+
+.emotion-2 {
+  background-color: transparent;
+  color: currentColor;
+  display: inherit;
+  border: 0;
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 2px;
+}
+
+.emotion-2:hover {
+  background-color: #FFFFFF;
+  color: #323232;
+}
+
+.emotion-2:disabled {
+  cursor: not-allowed;
+}
+
+<div
+  aria-disabled="false"
+  class="emotion-0 emotion-1"
+  color="grey"
+  data-testid="tag"
+>
+  Click me
+  <button
+    aria-disabled="false"
+    class="emotion-2 emotion-3"
+    color="grey"
+    data-testid="tag-close-button"
+  >
+    <svg
+      fill="none"
+      height="8px"
+      viewBox="2 2 8 8"
+      width="8px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9.5 3.205L8.795 2.5L6 5.295L3.205 2.5L2.5 3.205L5.295 6L2.5 8.795L3.205 9.5L6 6.705L8.795 9.5L9.5 8.795L6.705 6L9.5 3.205Z"
+        fill="currentColor"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`<Tag /> component should render the tag with variant solid, color grey, border rounded, size medium, isClickable as false, isDisabled as true, onClick and onClose 1`] = `
+.emotion-0 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding: 8px 12px;
+  height: 32px;
+  border: 0;
+  color: #FFFFFF;
+  background-color: #D3D4D5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  gap: 4px;
+  border-radius: 32px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: not-allowed;
+}
+
+.emotion-2 {
+  background-color: transparent;
+  color: currentColor;
+  display: inherit;
+  border: 0;
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 2px;
+}
+
+.emotion-2:disabled {
+  cursor: not-allowed;
+}
+
+<div
+  aria-disabled="true"
+  class="emotion-0 emotion-1"
+  color="grey"
+  data-testid="tag"
+>
+  Click me
+  <button
+    aria-disabled="true"
+    class="emotion-2 emotion-3"
+    color="grey"
+    data-testid="tag-close-button"
+    disabled=""
+  >
+    <svg
+      fill="none"
+      height="8px"
+      viewBox="2 2 8 8"
+      width="8px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9.5 3.205L8.795 2.5L6 5.295L3.205 2.5L2.5 3.205L5.295 6L2.5 8.795L3.205 9.5L6 6.705L8.795 9.5L9.5 8.795L6.705 6L9.5 3.205Z"
+        fill="currentColor"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`<Tag /> component should render the tag with variant solid, color primary, border rounded, size medium, isClickable as false, isDisabled as false, onClick and onClose 1`] = `
+.emotion-0 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding: 8px 12px;
+  height: 32px;
+  border: 0;
+  color: #FFFFFF;
+  background-color: #013C6B;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  gap: 4px;
+  border-radius: 32px;
+}
+
+<div
+  aria-disabled="false"
+  class="emotion-0 emotion-1"
+  color="primary"
+  data-testid="tag"
+>
+  Click me
 </div>
 `;

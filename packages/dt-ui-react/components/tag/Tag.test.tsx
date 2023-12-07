@@ -1,82 +1,111 @@
-import { fireEvent, screen, render } from '@testing-library/react';
-import React from 'react';
+import { fireEvent, render } from '@testing-library/react';
 
 import { withProviders } from '../../utils';
 
-import { Tag, TagGroup } from './Tag';
+import { Tag, TagGroup, TagProps } from './Tag';
 
 describe('<Tag /> component', () => {
+  const ProvidedTagGroup = withProviders(TagGroup);
   const ProvidedTag = withProviders(Tag);
-
-  it('should render a span html element with the given content', () => {
-    const { container } = render(<ProvidedTag>Active</ProvidedTag>);
-
-    expect(container).toMatchSnapshot();
-  });
 
   it('should render a wrapper for a group of tags', () => {
     const { container } = render(
-      <TagGroup>
+      <ProvidedTagGroup>
         <ProvidedTag>Active</ProvidedTag>
         <ProvidedTag>Inactive</ProvidedTag>
-      </TagGroup>
+      </ProvidedTagGroup>
     );
 
     expect(container).toMatchSnapshot();
   });
 
-  describe('when the tag is clicked', () => {
-    it('should trigger the onClick function', () => {
+  it.each`
+    isDisabled | expectedClickTimes
+    ${true}    | ${0}
+    ${false}   | ${1}
+  `(
+    'should trigger the onClick function $expectedClickTimes times if isDisabled is $isDisabled, and close button should not exist if onClose is undefined',
+    ({ isDisabled, expectedClickTimes }) => {
       const onClick = jest.fn();
 
-      render(<ProvidedTag onClick={onClick}>Click me</ProvidedTag>);
-
-      const tag = screen.getByTestId('tag');
-      fireEvent.click(tag);
-
-      expect(onClick).toBeCalledTimes(1);
-    });
-  });
-
-  describe('Basic tag veriant', () => {
-    it('should render a span html element with given styles', () => {
-      const { container } = render(
-        <ProvidedTag variant='basic'>Active</ProvidedTag>
-      );
-
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should trigger the onClose function', () => {
-      const onClose = jest.fn();
-
-      render(
-        <ProvidedTag variant='basic' onClose={onClose} dataTestId='tag'>
-          Close me
+      const { getByTestId, queryByTestId } = render(
+        <ProvidedTag isDisabled={isDisabled} onClick={onClick} dataTestId='tag'>
+          Click me
         </ProvidedTag>
       );
 
-      const closeButton = screen.getByTestId('tag-close-button');
-      fireEvent.click(closeButton);
+      fireEvent.click(getByTestId('tag'));
 
-      expect(onClose).toBeCalledTimes(1);
-    });
+      expect(onClick).toHaveBeenCalledTimes(expectedClickTimes);
+      expect(queryByTestId('tag-close-button')).toBeNull();
+    }
+  );
 
-    describe('when the tag is clickable', () => {
-      it('should trigger the onClick function', () => {
-        const onClick = jest.fn();
+  it.each`
+    isDisabled | expectedCloseTimes
+    ${true}    | ${0}
+    ${false}   | ${1}
+  `(
+    'should trigger the close button $expectedCloseTimes times if isDisabled is $isDisabled and trigger onClose but not onClick',
+    ({ isDisabled, expectedCloseTimes }) => {
+      const onClick = jest.fn();
+      const onClose = jest.fn();
 
-        render(
-          <ProvidedTag variant='basic' onClick={onClick} isClickable={true}>
-            Click me
-          </ProvidedTag>
-        );
+      const { getByTestId } = render(
+        <ProvidedTag
+          isDisabled={isDisabled}
+          onClick={onClick}
+          onClose={onClose}
+          dataTestId='tag'
+        >
+          Click me
+        </ProvidedTag>
+      );
 
-        const tag = screen.getByTestId('tag');
-        fireEvent.click(tag);
+      fireEvent.click(getByTestId('tag'));
+      fireEvent.click(getByTestId('tag-close-button'));
 
-        expect(onClick).toBeCalledTimes(1);
-      });
-    });
-  });
+      expect(onClick).toHaveBeenCalledTimes(0);
+      expect(onClose).toHaveBeenCalledTimes(expectedCloseTimes);
+    }
+  );
+
+  it.each`
+    variant       | color        | border       | size        | isClickable | isDisabled | onClick      | onClose
+    ${'solid'}    | ${'primary'} | ${'rounded'} | ${'medium'} | ${false}    | ${false}   | ${undefined} | ${undefined}
+    ${'outlined'} | ${'blue'}    | ${'squared'} | ${'small'}  | ${true}     | ${false}   | ${undefined} | ${undefined}
+    ${'solid'}    | ${'grey'}    | ${'rounded'} | ${'medium'} | ${false}    | ${false}   | ${jest.fn()} | ${undefined}
+    ${'solid'}    | ${'grey'}    | ${'rounded'} | ${'medium'} | ${false}    | ${false}   | ${undefined} | ${jest.fn()}
+    ${'solid'}    | ${'grey'}    | ${'rounded'} | ${'medium'} | ${false}    | ${true}    | ${jest.fn()} | ${jest.fn()}
+  `(
+    'should render the tag with variant $variant, color $color, border $border, size $size, isClickable as $isClickable, isDisabled as $isDisabled, onClick and onClose',
+    ({
+      variant,
+      color,
+      border,
+      size,
+      isClickable,
+      isDisabled,
+      onClick,
+      onClose,
+    }: TagProps) => {
+      const { getByTestId } = render(
+        <ProvidedTag
+          isDisabled={isDisabled}
+          isClickable={isClickable}
+          variant={variant}
+          color={color}
+          border={border}
+          size={size}
+          onClick={onClick}
+          onClose={onClose}
+          dataTestId='tag'
+        >
+          Click me
+        </ProvidedTag>
+      );
+
+      expect(getByTestId('tag')).toMatchSnapshot();
+    }
+  );
 });

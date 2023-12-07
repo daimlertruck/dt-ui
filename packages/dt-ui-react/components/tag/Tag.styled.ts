@@ -1,43 +1,78 @@
 import styled from '@emotion/styled';
 
-import { tagVariantStyles, TagVariant } from './TagVariants.styled';
+import { TagBorder, TagColor, TagSize, TagVariant } from './constants';
+import { tagCloseButtonColorStyles } from './TagCloseButton.styled';
+import { tagSizeStyles } from './TagSizes.styled';
+import { tagVariantColors } from './utils/tagVariantColors';
 
 interface TagStyledProps {
+  hasHover: boolean;
   isClickable: boolean;
+  isDisabled: boolean;
+  isDismissible: boolean;
   variant: TagVariant;
+  color: TagColor;
+  border: TagBorder;
+  size: TagSize;
 }
 
-export const TagStyled = styled.span<TagStyledProps>`
-  ${({ variant, theme, isClickable }) =>
-    tagVariantStyles(variant, theme, isClickable)};
+interface TagButtonCloseStyledProps
+  extends Pick<TagStyledProps, 'hasHover' | 'variant' | 'color'> {
+  disabled: boolean;
+}
 
-  ${({ theme, isClickable }) => `
-    ${theme.fontStyles.tag}
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 0.5px;
-    padding: 4px 6px;
-    border-radius: 2px;
+export const TagStyled = styled.div<TagStyledProps>(
+  ({
+    theme,
+    border,
+    isDisabled,
+    isClickable,
+    isDismissible,
+    size,
+    variant,
+    color,
+    hasHover,
+  }) => ({
+    ...tagSizeStyles(theme, size),
+    ...tagVariantColors({ theme, variant, color, hasHover, isDisabled }),
 
-    ${
-      isClickable &&
-      `&:hover {
-        cursor: pointer;
-      }`
-    }    
-  `}
-`;
+    display: 'flex',
+    textTransform: 'uppercase',
+    alignItems: 'center',
+    maxWidth: 'max-content',
+    gap: theme.spacing['5xs'],
+    borderRadius: theme.radius[border === 'rounded' ? 's' : 'none'],
 
-export const TagGroupStyled = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 4px;
-`;
+    ...((isClickable || isDismissible) && { userSelect: 'none' }),
+    ...(isClickable && { cursor: 'pointer' }),
+    ...(isDisabled && { cursor: 'not-allowed' }),
+  })
+);
 
-export const TagButtonCloseStyled = styled.button`
-  border: 0;
-  cursor: pointer;
-  background: transparent;
-  align-self: flex-start;
-  padding-left: 12px;
+export const TagGroupStyled = styled.div(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  flexWrap: 'wrap',
+  gap: theme.spacing['4xs'],
+}));
+
+export const TagButtonCloseStyled = styled.button<TagButtonCloseStyledProps>`
+  ${({ theme, variant, color, hasHover, disabled }) => ({
+    ...tagCloseButtonColorStyles({
+      theme,
+      variant,
+      color,
+      hasHover,
+      isDisabled: disabled,
+    }),
+
+    display: 'inherit',
+    border: 0,
+    cursor: 'pointer',
+
+    borderRadius: theme.radius['2xs'],
+    padding: theme.spacing['6xs'],
+
+    ['&:disabled']: { cursor: 'not-allowed' },
+  })}
 `;

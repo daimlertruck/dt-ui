@@ -87,7 +87,6 @@ export const MultiSelectItem = ({
             <Box style={{ flexDirection: 'row', gap: '8px' }}>
               {state.map((option, index) => (
                 <Tag
-                  variant='basic'
                   dataTestId='multi-select-tag'
                   {...(option.isRemovable && {
                     onClose: (e) => handleRemoveItem(e, option),

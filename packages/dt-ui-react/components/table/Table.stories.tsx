@@ -1,8 +1,8 @@
 import { Story } from '@storybook/react';
 
-import { Colors } from '../../types';
 import { Avatar, AvatarType } from '../avatar';
-import { Pill } from '../pill';
+import { Tag } from '../tag';
+import { TagColor } from '../tag/constants';
 
 import {
   Table,
@@ -21,15 +21,10 @@ export default {
 const columns = ['Name', 'Email', 'Role', 'Status'];
 
 const rows = [
-  [
-    'Thomas Morse',
-    'thomas.morse@myhugecompanynamem.com',
-    'Operator',
-    'warning',
-  ],
-  ['Hanna Apple', 'hanna.apple@companysample.com', 'Admin', 'success'],
-  ['Marcus Klein', 'marcus.klein@companysample.com', 'Operator', 'success'],
-  ['Rick Thor', 'rick.thor@companysample.com', 'Admin', 'neutralLight_100'],
+  ['Thomas Morse', 'thomas.morse@myhugecompanynamem.com', 'Operator', 'yellow'],
+  ['Hanna Apple', 'hanna.apple@companysample.com', 'Admin', 'green'],
+  ['Marcus Klein', 'marcus.klein@companysample.com', 'Operator', 'green'],
+  ['Rick Thor', 'rick.thor@companysample.com', 'Admin', 'grey'],
 ];
 
 const columnSizes: { [key: string]: string } = {
@@ -44,22 +39,22 @@ const renderAvatarWithTitle = (title: string) => (
   </div>
 );
 
-const renderPill = (content: string) => (
-  <Pill color={content as Colors}>
+const renderTag = (content: string) => (
+  <Tag color={content as TagColor} size='small' border='rounded'>
     {
       {
-        success: 'ACTIVE',
-        warning: 'PENDING',
-        neutralLight_100: 'DEACTIVATED',
+        green: 'ACTIVE',
+        yellow: 'PENDING',
+        grey: 'DEACTIVATED',
       }[content]
     }
-  </Pill>
+  </Tag>
 );
 
 const renderContent = (colIndex: number, content: string) => {
   return {
     Name: renderAvatarWithTitle(content),
-    Status: renderPill(content),
+    Status: renderTag(content),
     Email: content,
     Role: content,
   }[columns[colIndex]];

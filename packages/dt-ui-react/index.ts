@@ -30,7 +30,6 @@ export * from './components/toast';
 export * from './components/modal';
 export * from './components/avatar';
 export * from './components/tooltip';
-export * from './components/pill';
 export * from './components/counter';
 export * from './components/list';
 export * from './components/description-list';
