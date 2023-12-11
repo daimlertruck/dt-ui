@@ -8,5 +8,6 @@
   },
   "eslint.workingDirectories": [
     "./packages/dt-ui-react",
+    "./packages/react-packages",
   ]
 }
