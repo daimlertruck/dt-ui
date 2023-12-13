@@ -87,7 +87,7 @@ export const ColumnHeaderStyled = styled.th<ColumnHeaderStyled>`
     text-align: ${textAlign};
     color: ${theme.palette.textPrimary};
     padding: 0 ${theme.spacing['2xs']} ${theme.spacing['2xs']};
-    ${theme.fontStyles.button2};
+    ${theme.fontStyles.button3};
   `}
 `;
 
