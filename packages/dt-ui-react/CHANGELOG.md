@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.21
+
+### Minor Changes
+
+- feat: add new icons (More and View Agenda)
+- feat: add hook to delay callbaks on resize event
+- feat: new breadcrumb styles and behaviour
+
 ## 0.1.0-beta.20
 
 ### Minor Changes
