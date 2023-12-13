@@ -2,45 +2,54 @@
 
 exports[`<Button /> component renders button html element with the correct title 1`] = `
 .emotion-0 {
-  border: 0;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  border: 0;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
-  font-weight: 700;
-  border-radius: 3px;
+  padding: 12px 24px;
+  border-radius: 4px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  min-width: 80px;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  white-space: nowrap;
-  cursor: pointer;
-  max-width: 20vw;
-  padding: 0px 15px;
-  height: 32px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  gap: 8px;
   color: #FFFFFF;
   background-color: #036DC1;
 }
 
-.emotion-0:disabled {
-  opacity: 0.4;
-  cursor: default;
+.emotion-0:focus {
+  box-shadow: 0px 2px 1px 0px #1A1A1A0D,0px 0px 0px 4px #E6F5FF;
+  background-color: #036DC1;
 }
 
 .emotion-0:disabled {
-  pointer-events: none;
+  opacity: 38%;
+}
+
+@media only screen and (min-width: 600px) {
+  .emotion-0 {
+    width: auto;
+  }
+}
+
+.emotion-0:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-0:hover {
@@ -95,34 +104,31 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
 .emotion-0 {
   border: 1px solid;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
-  font-weight: 700;
-  border-radius: 3px;
+  padding: 12px 24px;
+  border-radius: 4px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  min-width: 80px;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  white-space: nowrap;
-  cursor: pointer;
-  max-width: 20vw;
-  padding: 0px 15px;
-  height: 32px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  gap: 14px;
-  pointer-events: none;
+  gap: 8px;
   color: #036DC1;
   background-color: #FFFFFF;
 }
@@ -134,8 +140,14 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   cursor: default;
 }
 
+@media only screen and (min-width: 600px) {
+  .emotion-0 {
+    width: auto;
+  }
+}
+
 .emotion-0:disabled {
-  pointer-events: none;
+  cursor: not-allowed;
 }
 
 .emotion-0:hover {
@@ -172,6 +184,7 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
     class="emotion-0 emotion-1"
     color="primary"
     data-testid="undefined-button"
+    disabled=""
   >
     Button loading
     <div
@@ -204,47 +217,54 @@ exports[`<Button /> component when loading is true renders a spinner light theme
 }
 
 .emotion-0 {
-  border: 0;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  border: 0;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
-  font-weight: 700;
-  border-radius: 3px;
+  padding: 12px 24px;
+  border-radius: 4px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  min-width: 80px;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  white-space: nowrap;
-  cursor: pointer;
-  max-width: 20vw;
-  padding: 0px 15px;
-  height: 32px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  gap: 14px;
-  pointer-events: none;
+  gap: 8px;
   color: #FFFFFF;
   background-color: #036DC1;
 }
 
-.emotion-0:disabled {
-  opacity: 0.4;
-  cursor: default;
+.emotion-0:focus {
+  box-shadow: 0px 2px 1px 0px #1A1A1A0D,0px 0px 0px 4px #E6F5FF;
+  background-color: #036DC1;
 }
 
 .emotion-0:disabled {
-  pointer-events: none;
+  opacity: 38%;
+}
+
+@media only screen and (min-width: 600px) {
+  .emotion-0 {
+    width: auto;
+  }
+}
+
+.emotion-0:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-0:hover {
@@ -281,6 +301,7 @@ exports[`<Button /> component when loading is true renders a spinner light theme
     class="emotion-0 emotion-1"
     color="primary"
     data-testid="undefined-button"
+    disabled=""
   >
     Button loading
     <div

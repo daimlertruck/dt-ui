@@ -1,53 +1,57 @@
 import styled from '@emotion/styled';
 
-import { ButtonVariant, ContainedColors, OutlinedColors } from './constants';
+import {
+  ButtonSizes,
+  ButtonVariant,
+  OutlinedColors,
+  SolidColors,
+} from './constants';
 import { buttonVariantColors, buttonVariantStyles } from './utils';
+import { buttonSizeStyles } from './utils/buttonSizeStyles';
 
 export interface ButtonStyledProps {
   isLoading?: boolean;
   variant: ButtonVariant;
-  color: ContainedColors | OutlinedColors;
+  color: SolidColors | OutlinedColors;
+  size: ButtonSizes;
 }
 
 export const ButtonStyled = styled.button<ButtonStyledProps>`
-  ${({ theme, isLoading, variant, color }) => `
+  ${({ theme, variant, color, size }) => `
     ${buttonVariantStyles(variant, theme, color)};
-    ${theme.fontStyles.pSmall}
-    font-weight: 700;
-    border-radius: 3px;
+    ${buttonSizeStyles(size, theme)};
+    border-radius: ${theme.shape.button};
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    white-space: nowrap;
+    justify-content: center;
     cursor: pointer;
-    max-width: 20vw;
-    padding: 0px 15px;
-    height: 32px;
-    transition: all 0.2s ease-in-out;
-    ${
-      isLoading &&
-      `
-        gap: 14px;
-        pointer-events: none;
-      `
-    };
-
-    &:disabled {
-      pointer-events: none;
-    }
-
+    width: 100%;
+    min-width: 80px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    align-items: center;
+    gap: ${theme.spacing['4xs']};
+    
     color: ${buttonVariantColors(color, theme)[variant].color};
     background-color: ${buttonVariantColors(color, theme)[variant].bgColor};
+
+    @media only screen and (min-width: ${theme.breakpoints.s}) {
+      width: auto;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
 
     &:hover {
       color: ${
         buttonVariantColors(color, theme)[variant].hoverColor ??
         buttonVariantColors(color, theme)[variant].color
       };
+    
       background-color: ${
         buttonVariantColors(color, theme)[variant].hoverBgColor ??
         buttonVariantColors(color, theme)[variant].bgColor
       };
     };
+
   `}
 `;

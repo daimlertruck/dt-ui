@@ -1,8 +1,8 @@
 import { CustomTheme as Theme } from '../../../../types';
 import {
   ButtonVariant,
-  ContainedColors,
   OutlinedColors,
+  SolidColors,
   TextColors,
 } from '../constants/types';
 
@@ -14,13 +14,13 @@ interface ColorKeys {
 }
 
 export const buttonVariantColors = (
-  color: ContainedColors | OutlinedColors,
+  color: SolidColors | OutlinedColors,
   theme: Theme
 ): Record<ButtonVariant, ColorKeys> => ({
-  contained: {
+  solid: {
     color: theme.colors.white,
     bgColor: theme.palette[color],
-    hoverBgColor: theme.palette[`${color}Dark_300` as ContainedColors],
+    hoverBgColor: theme.palette[`${color}Dark_200` as SolidColors],
   },
   outlined: {
     color: color === 'neutral' ? theme.colors.grey_200 : theme.palette[color],

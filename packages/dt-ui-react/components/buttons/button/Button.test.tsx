@@ -41,7 +41,7 @@ describe('<Button /> component', () => {
 
     render(
       <ProvidedButton
-        variant='contained'
+        variant='solid'
         color='error'
         onClick={callbackFn}
         dataTestId='error'

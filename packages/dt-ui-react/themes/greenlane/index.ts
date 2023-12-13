@@ -6,6 +6,7 @@ import { spacing } from '../default/spacing';
 import { responsiveFontStyles } from '../default/typography';
 
 import { palette } from './palette';
+import { shape } from './shape';
 import { fontFamily, fontStyles } from './typography';
 
 export const greenlaneTheme = {
@@ -18,4 +19,5 @@ export const greenlaneTheme = {
   breakpoints,
   responsiveFontStyles,
   radius,
+  shape,
 };

@@ -17,5 +17,5 @@ Default.args = {
   children: 'Button',
   onClick: () => null,
   isLoading: false,
-  variant: 'contained',
+  variant: 'solid',
 };

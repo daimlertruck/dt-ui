@@ -12,6 +12,7 @@ export const palette = {
   success: colors.greenPastel_40,
   successDark_300: colors.greenPastel_70,
   error: colors.red_60,
+  errorDark_200: colors.red_80,
   errorDark_300: colors.red_90,
   errorLight_300: colors.red_70,
   warning: colors.yellow_50,

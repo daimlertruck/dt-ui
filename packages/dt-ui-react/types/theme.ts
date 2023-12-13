@@ -1,6 +1,7 @@
 export type CustomTheme = {
   palette: {
     error: string;
+    errorDark_200: string;
     errorDark_300: string;
     errorLight_300: string;
     info: string;
@@ -216,6 +217,9 @@ export type CustomTheme = {
     l: string;
     xl: string;
     full: string;
+  };
+  shape: {
+    button: string;
   };
   fontFamily: {
     default: string;

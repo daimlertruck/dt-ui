@@ -2,22 +2,29 @@ import { BaseProps } from '../../../types';
 import { Spinner } from '../../spinner';
 
 import { ButtonStyled } from './Button.styled';
-import { ContainedColors, OutlinedColors, TextColors } from './constants';
+import {
+  ButtonSizes,
+  OutlinedColors,
+  SolidColors,
+  TextColors,
+} from './constants';
 
 export type ButtonProps = {
-  onClick: () => void;
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
   isDisabled?: boolean;
   isLoading?: boolean;
+  size?: ButtonSizes;
 } & BaseProps &
   (
-    | { variant?: 'contained'; color?: ContainedColors }
+    | { variant?: 'solid'; color?: SolidColors }
     | { variant?: 'outlined'; color?: OutlinedColors }
     | { variant?: 'text'; color?: TextColors }
   );
 
 export const Button = ({
   style,
-  variant = 'contained',
+  size = 'medium',
+  variant = 'solid',
   children,
   onClick,
   dataTestId,
@@ -25,20 +32,27 @@ export const Button = ({
   isLoading,
   color = 'primary',
 }: ButtonProps) => {
+  const handleButtonClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    if (isDisabled || isLoading) {
+      return;
+    }
+    onClick?.(event);
+  };
+
   return (
     <ButtonStyled
       color={color}
-      disabled={isDisabled}
+      size={size}
+      disabled={isDisabled || isLoading}
       style={style}
       variant={variant}
-      onClick={onClick}
-      isLoading={isLoading}
+      onClick={handleButtonClick}
       data-testid={`${dataTestId}-button`}
     >
       {children}
       {isLoading && (
         <Spinner
-          colorScheme={variant !== 'contained' ? 'positive' : 'negative'}
+          colorScheme={variant !== 'solid' ? 'positive' : 'negative'}
           size='small'
         />
       )}

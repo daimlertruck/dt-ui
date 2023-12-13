@@ -22,7 +22,7 @@ describe('<EmptyState /> component', () => {
   it('should render Empty State with a Button as a children', () => {
     const { container } = render(
       <ProvidedEmptyState title={title} description={description}>
-        <Button onClick={() => {}} variant='contained'>
+        <Button onClick={() => {}} variant='solid'>
           Button
         </Button>
       </ProvidedEmptyState>

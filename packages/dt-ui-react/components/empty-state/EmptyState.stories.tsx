@@ -30,7 +30,7 @@ WithChildren.args = {
   title: 'Title here',
   description: 'Some description here.',
   children: (
-    <Button onClick={() => {}} variant='contained'>
+    <Button onClick={() => {}} variant='solid'>
       Button
     </Button>
   ),
