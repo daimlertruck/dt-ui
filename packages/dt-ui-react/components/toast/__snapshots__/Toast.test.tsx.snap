@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Toast /> component when the toast type is success should render a toast with title & message 1`] = `
+exports[`<Toast /> component should render a toast with title & message & action Buttons when type error 1`] = `
 @keyframes animation-0 {
   from {
     opacity: 0;
@@ -24,13 +24,16 @@ exports[`<Toast /> component when the toast type is success should render a toas
   -ms-flex-align: center;
   align-items: center;
   width: 335px;
-  -webkit-animation: animation-0 0.25s ease-in;
-  animation: animation-0 0.25s ease-in;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-animation: animation-0 0.75s ease-in;
+  animation: animation-0 0.75s ease-in;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  overflow: hidden;
   background-color: #FFFFFF;
   opacity: 1;
   color: #151617;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
 .emotion-2 {
@@ -45,7 +48,7 @@ exports[`<Toast /> component when the toast type is success should render a toas
   align-items: center;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #21A330;
+  background-color: #FF4A4A;
   color: #FFFFFF;
 }
 
@@ -55,70 +58,140 @@ exports[`<Toast /> component when the toast type is success should render a toas
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding: 12px 0;
-  margin: 0 24px 0 16px;
+  padding: 16px 16px;
 }
 
 .emotion-6 {
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  letter-spacing: normal;
-  margin: 0;
-  margin-bottom: 4px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -webkit-column-gap: 16px;
+  column-gap: 16px;
 }
 
 .emotion-8 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  color: #323232;
+  margin-bottom: 4px;
+  text-transform: capitalize;
 }
 
 .emotion-10 {
+  color: #BABBBB;
   border: 0;
   cursor: pointer;
   background: transparent;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: flex-start;
   align-self: flex-start;
-  margin-right: 12px;
-  margin-top: 12px;
-  border-radius: 3px;
-  padding: 5px;
   font-size: 0;
   line-height: 0;
 }
 
 .emotion-10:hover {
-  background-color: #636464;
+  background-color: #EBECED;
+}
+
+.emotion-12 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #7C7C7D;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding-top: 4px;
+}
+
+.emotion-16 {
+  border: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  min-width: 80px;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  color: #036DC1;
+  background-color: transparent;
+}
+
+.emotion-16:disabled {
+  color: #F8F9FA;
+}
+
+@media only screen and (min-width: 600px) {
+  .emotion-16 {
+    width: auto;
+  }
+}
+
+.emotion-16:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-16:hover {
+  color: #013C6B;
+  background-color: transparent;
 }
 
 <div>
   <div
     class="emotion-0 emotion-1"
     data-testid="toast-myId"
-    type="success"
+    type="error"
   >
     <div
       class="emotion-2 emotion-3"
-      type="success"
+      type="error"
     >
       <svg
-        fill="currentColor"
-        height="20"
-        width="20"
+        fill="none"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0Zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8Zm4.59-12.42L8 12.17 5.41 9.59 4 11l4 4 8-8-1.41-1.42Z"
+          d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM11 15H13V17H11V15ZM11 7H13V13H11V7Z"
           fill="currentColor"
         />
       </svg>
@@ -129,35 +202,57 @@ exports[`<Toast /> component when the toast type is success should render a toas
       <div
         class="emotion-6 emotion-7"
       >
-        my title text
+        <div
+          class="emotion-8 emotion-9"
+        >
+          my title text
+        </div>
+        <button
+          class="emotion-10 emotion-11"
+        >
+          <svg
+            fill="none"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div
+          class="emotion-12 emotion-13"
+        >
+          my message text
+        </div>
       </div>
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-14 emotion-15"
       >
-        my message text
+        <button
+          class="emotion-16 emotion-17"
+          color="primary"
+          data-testid="undefined-button"
+        >
+          Text
+        </button>
+        <button
+          class="emotion-16 emotion-17"
+          color="primary"
+          data-testid="undefined-button"
+        >
+          Text2
+        </button>
       </div>
     </div>
-    <button
-      class="emotion-10 emotion-11"
-    >
-      <svg
-        fill="none"
-        height="24"
-        viewBox="0 0 24 24"
-        width="24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-          fill="currentColor"
-        />
-      </svg>
-    </button>
   </div>
 </div>
 `;
 
-exports[`<Toast /> component when the toast type is success should render a toast with title, message & children 1`] = `
+exports[`<Toast /> component should render a toast with title & message & action Buttons when type info 1`] = `
 @keyframes animation-0 {
   from {
     opacity: 0;
@@ -181,13 +276,268 @@ exports[`<Toast /> component when the toast type is success should render a toas
   -ms-flex-align: center;
   align-items: center;
   width: 335px;
-  -webkit-animation: animation-0 0.25s ease-in;
-  animation: animation-0 0.25s ease-in;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-animation: animation-0 0.75s ease-in;
+  animation: animation-0 0.75s ease-in;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  overflow: hidden;
   background-color: #FFFFFF;
   opacity: 1;
   color: #151617;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.emotion-2 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #008DFC;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px 16px;
+}
+
+.emotion-6 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -webkit-column-gap: 16px;
+  column-gap: 16px;
+}
+
+.emotion-8 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #323232;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.emotion-10 {
+  color: #BABBBB;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  font-size: 0;
+  line-height: 0;
+}
+
+.emotion-10:hover {
+  background-color: #EBECED;
+}
+
+.emotion-12 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #7C7C7D;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding-top: 4px;
+}
+
+.emotion-16 {
+  border: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  min-width: 80px;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  color: #036DC1;
+  background-color: transparent;
+}
+
+.emotion-16:disabled {
+  color: #F8F9FA;
+}
+
+@media only screen and (min-width: 600px) {
+  .emotion-16 {
+    width: auto;
+  }
+}
+
+.emotion-16:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-16:hover {
+  color: #013C6B;
+  background-color: transparent;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="toast-myId"
+    type="info"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      type="info"
+    >
+      <svg
+        fill="none"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          fill="white"
+        />
+      </svg>
+    </div>
+    <div
+      class="emotion-4 emotion-5"
+    >
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div
+          class="emotion-8 emotion-9"
+        >
+          my title text
+        </div>
+        <button
+          class="emotion-10 emotion-11"
+        >
+          <svg
+            fill="none"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div
+          class="emotion-12 emotion-13"
+        >
+          my message text
+        </div>
+      </div>
+      <div
+        class="emotion-14 emotion-15"
+      >
+        <button
+          class="emotion-16 emotion-17"
+          color="primary"
+          data-testid="undefined-button"
+        >
+          Text
+        </button>
+        <button
+          class="emotion-16 emotion-17"
+          color="primary"
+          data-testid="undefined-button"
+        >
+          Text2
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Toast /> component should render a toast with title & message & action Buttons when type success 1`] = `
+@keyframes animation-0 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 335px;
+  -webkit-animation: animation-0 0.75s ease-in;
+  animation: animation-0 0.75s ease-in;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  opacity: 1;
+  color: #151617;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
 .emotion-2 {
@@ -212,50 +562,119 @@ exports[`<Toast /> component when the toast type is success should render a toas
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding: 12px 0;
-  margin: 0 24px 0 16px;
+  padding: 16px 16px;
 }
 
 .emotion-6 {
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  letter-spacing: normal;
-  margin: 0;
-  margin-bottom: 4px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -webkit-column-gap: 16px;
+  column-gap: 16px;
 }
 
 .emotion-8 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  color: #323232;
+  margin-bottom: 4px;
+  text-transform: capitalize;
 }
 
 .emotion-10 {
+  color: #BABBBB;
   border: 0;
   cursor: pointer;
   background: transparent;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: flex-start;
   align-self: flex-start;
-  margin-right: 12px;
-  margin-top: 12px;
-  border-radius: 3px;
-  padding: 5px;
   font-size: 0;
   line-height: 0;
 }
 
 .emotion-10:hover {
-  background-color: #636464;
+  background-color: #EBECED;
+}
+
+.emotion-12 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #7C7C7D;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding-top: 4px;
+}
+
+.emotion-16 {
+  border: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  min-width: 80px;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  color: #036DC1;
+  background-color: transparent;
+}
+
+.emotion-16:disabled {
+  color: #F8F9FA;
+}
+
+@media only screen and (min-width: 600px) {
+  .emotion-16 {
+    width: auto;
+  }
+}
+
+.emotion-16:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-16:hover {
+  color: #013C6B;
+  background-color: transparent;
 }
 
 <div>
@@ -286,17 +705,440 @@ exports[`<Toast /> component when the toast type is success should render a toas
       <div
         class="emotion-6 emotion-7"
       >
-        my title text
+        <div
+          class="emotion-8 emotion-9"
+        >
+          my title text
+        </div>
+        <button
+          class="emotion-10 emotion-11"
+        >
+          <svg
+            fill="none"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div
+          class="emotion-12 emotion-13"
+        >
+          my message text
+        </div>
       </div>
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-14 emotion-15"
       >
-        my message text
+        <button
+          class="emotion-16 emotion-17"
+          color="primary"
+          data-testid="undefined-button"
+        >
+          Text
+        </button>
+        <button
+          class="emotion-16 emotion-17"
+          color="primary"
+          data-testid="undefined-button"
+        >
+          Text2
+        </button>
       </div>
-      Some children
     </div>
-    <button
-      class="emotion-10 emotion-11"
+  </div>
+</div>
+`;
+
+exports[`<Toast /> component should render a toast with title & message & action Buttons when type warning 1`] = `
+@keyframes animation-0 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 335px;
+  -webkit-animation: animation-0 0.75s ease-in;
+  animation: animation-0 0.75s ease-in;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  opacity: 1;
+  color: #151617;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.emotion-2 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #FBD633;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px 16px;
+}
+
+.emotion-6 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -webkit-column-gap: 16px;
+  column-gap: 16px;
+}
+
+.emotion-8 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #323232;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.emotion-10 {
+  color: #BABBBB;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  font-size: 0;
+  line-height: 0;
+}
+
+.emotion-10:hover {
+  background-color: #EBECED;
+}
+
+.emotion-12 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #7C7C7D;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding-top: 4px;
+}
+
+.emotion-16 {
+  border: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  min-width: 80px;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  color: #036DC1;
+  background-color: transparent;
+}
+
+.emotion-16:disabled {
+  color: #F8F9FA;
+}
+
+@media only screen and (min-width: 600px) {
+  .emotion-16 {
+    width: auto;
+  }
+}
+
+.emotion-16:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-16:hover {
+  color: #013C6B;
+  background-color: transparent;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="toast-myId"
+    type="warning"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      type="warning"
+    >
+      <svg
+        fill="currentColor"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 6.49L19.53 19.5H4.47L12 6.49ZM12 2.5L1 21.5H23L12 2.5ZM13 16.5H11V18.5H13V16.5ZM13 10.5H11V14.5H13V10.5Z"
+          fill="white"
+        />
+      </svg>
+    </div>
+    <div
+      class="emotion-4 emotion-5"
+    >
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div
+          class="emotion-8 emotion-9"
+        >
+          my title text
+        </div>
+        <button
+          class="emotion-10 emotion-11"
+        >
+          <svg
+            fill="none"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div
+          class="emotion-12 emotion-13"
+        >
+          my message text
+        </div>
+      </div>
+      <div
+        class="emotion-14 emotion-15"
+      >
+        <button
+          class="emotion-16 emotion-17"
+          color="primary"
+          data-testid="undefined-button"
+        >
+          Text
+        </button>
+        <button
+          class="emotion-16 emotion-17"
+          color="primary"
+          data-testid="undefined-button"
+        >
+          Text2
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Toast /> component should render a toast with title & message when type error 1`] = `
+@keyframes animation-0 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 335px;
+  -webkit-animation: animation-0 0.75s ease-in;
+  animation: animation-0 0.75s ease-in;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  opacity: 1;
+  color: #151617;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.emotion-2 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #FF4A4A;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px 16px;
+}
+
+.emotion-6 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -webkit-column-gap: 16px;
+  column-gap: 16px;
+}
+
+.emotion-8 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #323232;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.emotion-10 {
+  color: #BABBBB;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  font-size: 0;
+  line-height: 0;
+}
+
+.emotion-10:hover {
+  background-color: #EBECED;
+}
+
+.emotion-12 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #7C7C7D;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding-top: 0;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="toast-myId"
+    type="error"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      type="error"
     >
       <svg
         fill="none"
@@ -306,11 +1148,608 @@ exports[`<Toast /> component when the toast type is success should render a toas
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+          d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM11 15H13V17H11V15ZM11 7H13V13H11V7Z"
           fill="currentColor"
         />
       </svg>
-    </button>
+    </div>
+    <div
+      class="emotion-4 emotion-5"
+    >
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div
+          class="emotion-8 emotion-9"
+        >
+          my title text
+        </div>
+        <button
+          class="emotion-10 emotion-11"
+        >
+          <svg
+            fill="none"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div
+          class="emotion-12 emotion-13"
+        >
+          my message text
+        </div>
+      </div>
+      <div
+        class="emotion-14 emotion-15"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Toast /> component should render a toast with title & message when type info 1`] = `
+@keyframes animation-0 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 335px;
+  -webkit-animation: animation-0 0.75s ease-in;
+  animation: animation-0 0.75s ease-in;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  opacity: 1;
+  color: #151617;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.emotion-2 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #008DFC;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px 16px;
+}
+
+.emotion-6 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -webkit-column-gap: 16px;
+  column-gap: 16px;
+}
+
+.emotion-8 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #323232;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.emotion-10 {
+  color: #BABBBB;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  font-size: 0;
+  line-height: 0;
+}
+
+.emotion-10:hover {
+  background-color: #EBECED;
+}
+
+.emotion-12 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #7C7C7D;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding-top: 0;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="toast-myId"
+    type="info"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      type="info"
+    >
+      <svg
+        fill="none"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+          fill="white"
+        />
+      </svg>
+    </div>
+    <div
+      class="emotion-4 emotion-5"
+    >
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div
+          class="emotion-8 emotion-9"
+        >
+          my title text
+        </div>
+        <button
+          class="emotion-10 emotion-11"
+        >
+          <svg
+            fill="none"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div
+          class="emotion-12 emotion-13"
+        >
+          my message text
+        </div>
+      </div>
+      <div
+        class="emotion-14 emotion-15"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Toast /> component should render a toast with title & message when type success 1`] = `
+@keyframes animation-0 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 335px;
+  -webkit-animation: animation-0 0.75s ease-in;
+  animation: animation-0 0.75s ease-in;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  opacity: 1;
+  color: #151617;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.emotion-2 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #21A330;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px 16px;
+}
+
+.emotion-6 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -webkit-column-gap: 16px;
+  column-gap: 16px;
+}
+
+.emotion-8 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #323232;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.emotion-10 {
+  color: #BABBBB;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  font-size: 0;
+  line-height: 0;
+}
+
+.emotion-10:hover {
+  background-color: #EBECED;
+}
+
+.emotion-12 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #7C7C7D;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding-top: 0;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="toast-myId"
+    type="success"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      type="success"
+    >
+      <svg
+        fill="currentColor"
+        height="20"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0Zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8Zm4.59-12.42L8 12.17 5.41 9.59 4 11l4 4 8-8-1.41-1.42Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      class="emotion-4 emotion-5"
+    >
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div
+          class="emotion-8 emotion-9"
+        >
+          my title text
+        </div>
+        <button
+          class="emotion-10 emotion-11"
+        >
+          <svg
+            fill="none"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div
+          class="emotion-12 emotion-13"
+        >
+          my message text
+        </div>
+      </div>
+      <div
+        class="emotion-14 emotion-15"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Toast /> component should render a toast with title & message when type warning 1`] = `
+@keyframes animation-0 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 335px;
+  -webkit-animation: animation-0 0.75s ease-in;
+  animation: animation-0 0.75s ease-in;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  opacity: 1;
+  color: #151617;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.emotion-2 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #FBD633;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px 16px;
+}
+
+.emotion-6 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -webkit-column-gap: 16px;
+  column-gap: 16px;
+}
+
+.emotion-8 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #323232;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.emotion-10 {
+  color: #BABBBB;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  font-size: 0;
+  line-height: 0;
+}
+
+.emotion-10:hover {
+  background-color: #EBECED;
+}
+
+.emotion-12 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  color: #7C7C7D;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding-top: 0;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="toast-myId"
+    type="warning"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      type="warning"
+    >
+      <svg
+        fill="currentColor"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 6.49L19.53 19.5H4.47L12 6.49ZM12 2.5L1 21.5H23L12 2.5ZM13 16.5H11V18.5H13V16.5ZM13 10.5H11V14.5H13V10.5Z"
+          fill="white"
+        />
+      </svg>
+    </div>
+    <div
+      class="emotion-4 emotion-5"
+    >
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div
+          class="emotion-8 emotion-9"
+        >
+          my title text
+        </div>
+        <button
+          class="emotion-10 emotion-11"
+        >
+          <svg
+            fill="none"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div
+          class="emotion-12 emotion-13"
+        >
+          my message text
+        </div>
+      </div>
+      <div
+        class="emotion-14 emotion-15"
+      />
+    </div>
   </div>
 </div>
 `;

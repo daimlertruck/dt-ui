@@ -28,7 +28,7 @@ const App = () => {
 
 It's a very customizable component. We are using [react-hot-toast](https://react-hot-toast.com/) for control our provider. You can check the `react-hot-toast` documentation for more knowledge on this. However, you can create your provider if you wish. For example, let's say you want to create a new prop called `autoHide`. If this prop isn't true, you want to have the toast indefinitely on the screen.
 
-```jsx
+```tsx
 interface CallToastArgs {
   title: string;
   message: string;
@@ -116,46 +116,46 @@ const MyComponent = () => {
 
 ### Toaster
 
-| Property             | Type                            | Default                  | Description                                                                                                                                                                        |
-| -------------------- | :------------------------------ | :----------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `smallPosition`      | `enum<ToastPosition>`           | ToastPosition.BottomLeft | You can change the position of all toasts by modifying supplying smallPosition prop for screens that are 767px width or less.                                                      |
-| `defaultPosition`    | `enum<ToastPosition>`           | ToastPosition.BottomLeft | You can change the position of all toasts by modifying supplying defaultPosition prop for screens that are 768px width or more.                                                    |
-| `toastOptions`       | `DefaultToastOptions`           | -                        | These will act as default options for all toasts. See the documentation [here](https://react-hot-toast.com/docs/toast).                                                            |
-| `reverseOrder`       | `boolean`                       | -                        | Toasts spawn at top by default. Set to true if you want new toasts at the end.                                                                                                     |
-| `gutter`             | `number`                        | 8                        | Changes the gap between each toast.                                                                                                                                                |
-| `containerStyle`     | `React.CSSProperties`           | -                        | Customize the style of toaster div. This can be used to change the offset of all toasts                                                                                            |
-| `containerClassName` | `string`                        | undefined                | Add a custom CSS class name to toaster div.                                                                                                                                        |
-| `children`           | `(toast: Toast) => JSX.Element` | -                        | You can provide your own render function to the Toaster by passing it as children. It will be called for each Toast allowing you to render any component based on the toast state. |
-|                      |
+| Property             | Type                            | Default   | Description                                                                                                                                                                        |
+|----------------------|:--------------------------------|:----------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `toastOptions`       | `DefaultToastOptions`           | -         | These will act as default options for all toasts. See the documentation [here](https://react-hot-toast.com/docs/toast).                                                            |
+| `reverseOrder`       | `boolean`                       | -         | Toasts spawn at top by default. Set to true if you want new toasts at the end.                                                                                                     |
+| `gutter`             | `number`                        | 8         | Changes the gap between each toast.                                                                                                                                                |
+| `containerStyle`     | `React.CSSProperties`           | -         | Customize the style of toaster div. This can be used to change the offset of all toasts                                                                                            |
+| `containerClassName` | `string`                        | undefined | Add a custom CSS class name to toaster div.                                                                                                                                        |
+| `children`           | `(toast: Toast) => JSX.Element` | -         | You can provide your own render function to the Toaster by passing it as children. It will be called for each Toast allowing you to render any component based on the toast state. |
 
 ### emitToast
 
-| Property   | Type              | Default | Description                                                     |
-| ---------- | :---------------- | :------ | :-------------------------------------------------------------- |
-| `type`     | `enum<ToastType>` | -       | Sets the variant toast ("success", ..., "N")                    |
-| `title`    | `string`          | -       | The title to be displayed                                       |
-| `message`  | `string`          | -       | The message to be displayed                                     |
-| `children` | `ReactNode`       | -       | A child that will be rendered at the end of the content section |
+| Property      | Type              | Default | Description                                                               |
+|---------------|:------------------|:--------|:--------------------------------------------------------------------------|
+| `type`        | `enum<ToastType>` | -       | Sets the variant toast ("success", ..., "N")                              |
+| `title`       | `string`          | -       | The title to be displayed                                                 |
+| `message`     | `string`          | -       | The message to be displayed                                               |
+| `dismissable` | `boolean`         | true    | Sets the visibility of a close button that will fire the onClose callback |
+| `children`    | `ReactNode`       | -       | A child that will be rendered at the end of the content section           |
 
 The emitToast extends from ToastOptions. They will overwrite all options received from `<Toaster />`. For example:
 
-| Property   | Type                  | Default                         | Description                                      |
-| ---------- | :-------------------- | :------------------------------ | :----------------------------------------------- |
-| `duration` | `number`              | For success: 5000, error: 15000 | Show the toast for a duration in ms              |
-| `position` | `enum<ToastPosition>` | -                               | You can change the position of the Toast called. |
-| `style`    | `CSSProperties`       | -                               | Add css directly to the toast.                   |
+| Property   | Type            | Default                            | Description                         |
+|------------|:----------------|:-----------------------------------|:------------------------------------|
+| `duration` | `number`        | For success: 4000, error: Infinity | Show the toast for a duration in ms |
+| `style`    | `CSSProperties` | -                                  | Add css directly to the toast.      |
 
 You can check all ToastOptions [here](https://react-hot-toast.com/docs/toast).
+The Toast position is fixed, on small screens it will be on the bottom center and on large screens it will be on the bottom right.
+The default duration for any type of toast is 4000ms. For the error type, the duration is infinite.
 
 ### Toast
 
-| Property    | Type              | Default | Description                                                       |
-| ----------- | :---------------- | :------ | :---------------------------------------------------------------- |
-| `id`        | `string`          | -       | Toast identifier                                                  |
-| `dataTest`  | `string`          | -       | Defines a value for the data test                                 |
-| `title`     | `string`          | -       | The title to be displayed                                         |
-| `message`   | `string`          | -       | The message to be displayed                                       |
-| `onClose`   | `string`          | -       | The callback when the close button is fired.                      |
-| `type`      | `enum<ToastType>` | -       | Sets the variant toast ("success", ..., "N")                      |
-| `isVisible` | `boolean`         | true    | Sets the visibility of the toast                                  |
-| `children`  | `ReactNode`       | -       | Child components to be rendered at the end of the content section |
+| Property      | Type              | Default | Description                                                                                                   |
+|---------------|:------------------|:--------|:--------------------------------------------------------------------------------------------------------------|
+| `id`          | `string`          | -       | Toast identifier                                                                                              |
+| `dataTest`    | `string`          | -       | Defines a value for the data test                                                                             |
+| `title`       | `string`          | -       | The title to be displayed                                                                                     |
+| `message`     | `string`          | -       | The message to be displayed                                                                                   |
+| `onClose`     | `string`          | -       | The callback when the close button is fired.                                                                  |
+| `type`        | `enum<ToastType>` | -       | Sets the variant toast ("success", ..., "N")                                                                  |
+| `isVisible`   | `boolean`         | true    | Sets the visibility of the toast and triggers the fade out effect                                             |
+| `dismissable` | `boolean`         | true    | Sets the visibility of a close button that will fire the onClose callback                                     |
+| `children`    | `ReactNode`       | -       | Child components to be rendered at the end of the content section, this can be used to receive action buttons |

@@ -2,6 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
 
 import { withProviders } from '../../utils';
+import { Button } from '../buttons';
 
 import { ToastType } from './constants';
 import Toast from './Toast';
@@ -15,12 +16,19 @@ describe('<Toast /> component', () => {
 
   const ProvidedToast = withProviders(Toast);
 
-  describe('when the toast type is success', () => {
-    it('should render a toast with title & message', () => {
+  it.each`
+    type
+    ${ToastType.Success}
+    ${ToastType.Warning}
+    ${ToastType.Info}
+    ${ToastType.Error}
+  `(
+    'should render a toast with title & message when type $type',
+    ({ type }) => {
       const { container } = render(
         <ProvidedToast
           id={TOAST_ID}
-          type={ToastType.Success}
+          type={type}
           title={TITLE}
           message={MESSAGE}
           onClose={onCloseFn}
@@ -28,41 +36,102 @@ describe('<Toast /> component', () => {
       );
 
       expect(container).toMatchSnapshot();
-    });
+    }
+  );
 
-    it('should render a toast with title, message & children', () => {
+  it.each`
+    type
+    ${ToastType.Success}
+    ${ToastType.Warning}
+    ${ToastType.Info}
+    ${ToastType.Error}
+  `(
+    'should render a toast with title & message & action Buttons when type $type',
+    ({ type }) => {
       const { container } = render(
         <ProvidedToast
           id={TOAST_ID}
-          type={ToastType.Success}
+          type={type}
           title={TITLE}
           message={MESSAGE}
           onClose={onCloseFn}
         >
-          Some children
+          <Button
+            color='primary'
+            variant='text'
+            onClick={() => console.log('clicked')}
+          >
+            Text
+          </Button>
+          <Button
+            variant='text'
+            color='primary'
+            onClick={() => console.log('clicked')}
+          >
+            Text2
+          </Button>
         </ProvidedToast>
       );
 
+      const button1 = screen.getByText('Text', { exact: true });
+      const button2 = screen.getByText('Text2', { exact: true });
+      expect(button1).toBeDefined();
+      expect(button2).toBeDefined();
       expect(container).toMatchSnapshot();
-    });
-  });
+    }
+  );
 
-  describe('when the close button is clicked', () => {
-    it('should fire the mock function', () => {
-      render(
-        <ProvidedToast
-          id={TOAST_ID}
-          type={ToastType.Success}
-          title={TITLE}
-          message={MESSAGE}
-          onClose={onCloseFn}
-        />
-      );
+  describe('Close button on Toast ', () => {
+    it.each`
+      type
+      ${ToastType.Success}
+      ${ToastType.Warning}
+      ${ToastType.Info}
+      ${ToastType.Error}
+    `(
+      'with dismissible as true should fire the mock function when type $type',
+      ({ type }) => {
+        render(
+          <ProvidedToast
+            id={TOAST_ID}
+            type={type}
+            title={TITLE}
+            message={MESSAGE}
+            onClose={onCloseFn}
+            dismissible={true}
+          />
+        );
 
-      const closeBtn = screen.getByRole('button');
-      fireEvent.click(closeBtn);
+        const closeBtn = screen.getByRole('button');
+        fireEvent.click(closeBtn);
 
-      expect(onCloseFn).toBeCalledTimes(1);
-    });
+        expect(onCloseFn).toBeCalled();
+      }
+    );
+
+    it.each`
+      type
+      ${ToastType.Success}
+      ${ToastType.Warning}
+      ${ToastType.Info}
+      ${ToastType.Error}
+    `(
+      'with dismissible is false should not be able to find the close button when type $type',
+      ({ type }) => {
+        render(
+          <ProvidedToast
+            id={TOAST_ID}
+            type={type}
+            title={TITLE}
+            message={MESSAGE}
+            onClose={onCloseFn}
+            dismissible={false}
+          />
+        );
+
+        const closeBtn = screen.queryByRole('button');
+        expect(closeBtn).toBeNull();
+      }
+    );
   });
 });

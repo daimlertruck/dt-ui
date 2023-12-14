@@ -1,3 +1,4 @@
+import { useTheme } from '@emotion/react';
 import { ReactNode } from 'react';
 import {
   toast,
@@ -11,19 +12,17 @@ import useMedia from '../../hooks/useMedia';
 import { ToastPosition, ToastType } from './constants';
 import Toast from './Toast';
 
-const TOAST_SUCCESS_DURATION = 5000;
+const TOAST_DEFAULT_DURATION = 4000;
 const TOAST_ERROR_DURATION = Infinity;
+const smallPosition = ToastPosition.BottomCenter;
+const defaultPosition = ToastPosition.BottomRight;
 
 export interface EmitToastProps extends ToastOptions {
   type: ToastType;
   title: string;
   message: string;
   children?: ReactNode;
-}
-
-export interface ToasterProps extends ToasterProviderProps {
-  smallPosition?: ToastPosition;
-  defaultPosition?: ToastPosition;
+  dismissible?: boolean;
 }
 
 export const emitToast = ({
@@ -31,11 +30,11 @@ export const emitToast = ({
   title,
   message,
   children,
-  duration = type === ToastType.Success
-    ? TOAST_SUCCESS_DURATION
-    : TOAST_ERROR_DURATION,
+  dismissible,
   ...props
 }: EmitToastProps) => {
+  const duration =
+    type === ToastType.Error ? TOAST_ERROR_DURATION : TOAST_DEFAULT_DURATION;
   toast.custom(
     (t) => {
       return (
@@ -46,6 +45,7 @@ export const emitToast = ({
           message={message}
           onClose={() => toast.dismiss(t.id)}
           isVisible={t.visible}
+          dismissible={dismissible}
         >
           {children}
         </Toast>
@@ -58,14 +58,10 @@ export const emitToast = ({
   );
 };
 
-const Toaster = ({
-  smallPosition = ToastPosition.BottomCenter,
-  defaultPosition = ToastPosition.BottomRight,
-  gutter = 8,
-  ...props
-}: ToasterProps) => {
-  const small = useMedia('(max-width: 767px)');
-  const position = (small ? smallPosition : defaultPosition) ?? props.position;
+const Toaster = ({ gutter = 8, ...props }: ToasterProviderProps) => {
+  const theme = useTheme();
+  const small = useMedia(`(max-width: ${theme.breakpoints.s})`);
+  const position = small ? smallPosition : defaultPosition;
   const margin = small ? 8 : 16;
 
   return (
@@ -75,7 +71,7 @@ const Toaster = ({
         position={position}
         {...props}
         containerStyle={{
-          bottom: margin,
+          bottom: 16,
           right: margin,
           top: margin,
           left: margin,
