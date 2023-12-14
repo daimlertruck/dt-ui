@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.22
+
+### Patch Changes
+
+- fix: update table header font style
+
 ## 0.1.0-beta.21
 
 ### Minor Changes
