@@ -63,7 +63,7 @@ export const MultiSelectOption = ({
       </MultiSelectOptionStyled>
       {option.isRemovable && disabled && (
         <CloseButtonStyled onClick={handleRemoveOption}>
-          <CloseIcon />
+          <CloseIcon width={12} height={12} />
         </CloseButtonStyled>
       )}
     </Box>

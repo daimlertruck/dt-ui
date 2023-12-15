@@ -71,7 +71,6 @@ export const TagButtonCloseStyled = styled.button<TagButtonCloseStyledProps>`
     cursor: 'pointer',
 
     borderRadius: theme.radius['2xs'],
-    padding: theme.spacing['6xs'],
 
     ['&:disabled']: { cursor: 'not-allowed' },
   })}

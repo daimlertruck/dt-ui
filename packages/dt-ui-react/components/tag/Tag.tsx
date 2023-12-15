@@ -78,7 +78,7 @@ export const Tag = ({
           data-testid={`${dataTestIdName}-close-button`}
           aria-disabled={isDisabled}
         >
-          <CloseIcon width='8px' height='8px' />
+          <CloseIcon width={12} height={12} />
         </TagButtonCloseStyled>
       )}
     </TagStyled>
