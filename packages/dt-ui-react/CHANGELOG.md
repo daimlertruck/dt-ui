@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.25
+
+### Patch Changes
+
+- fix: review close icon
+
 ## 0.1.0-beta.24
 
 ### Minor Changes
