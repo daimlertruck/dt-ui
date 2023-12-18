@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.23
+
+### Minor Changes
+
+- feat: adapt button to design specifications
+
 ## 0.1.0-beta.22
 
 ### Patch Changes
