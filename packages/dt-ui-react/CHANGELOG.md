@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.24
+
+### Minor Changes
+
+- feat: backdrop component
+
 ## 0.1.0-beta.23
 
 ### Minor Changes
