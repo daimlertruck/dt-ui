@@ -37,3 +37,7 @@ export { default as NoDataIcon } from './NoData';
 export { default as RemoveCircleOutline } from './RemoveCircleOutline';
 export { default as MoreIcon } from './More';
 export { default as ViewAgendaIcon } from './ViewAgenda';
+export { default as LocationOnIcon } from './LocationOn';
+export { default as LanguageIcon } from './Language';
+export { default as PhoneOutlinedIcon } from './PhoneOutlined';
+export { default as LocationSearchingIcon } from './LocationSearching';
