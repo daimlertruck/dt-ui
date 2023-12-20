@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.27
+
+### Minor Changes
+
+- feat: add icons
+
 ## 0.1.0-beta.26
 
 ### Patch Changes
