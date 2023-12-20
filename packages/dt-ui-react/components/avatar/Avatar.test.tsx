@@ -6,7 +6,6 @@ import { withProviders } from '../../utils';
 import { Avatar } from './Avatar';
 import { AvatarType, AvatarSize } from './constants';
 import avatarExampleImage from './images/example-avatar-image.png';
-import thumbnailSrc from './images/thumbnail.svg';
 
 describe('<Avatar /> component', () => {
   const ProvidedAvatar = withProviders(Avatar);
@@ -58,13 +57,12 @@ describe('<Avatar /> component', () => {
         type={AvatarType.Profile}
         size={AvatarSize.Medium}
         title='User Name'
-        imageSrc='invalid-image-url.png'
+        imageSrc=''
       />
     );
 
     const thumbnailImage = screen.getByAltText('User Name') as HTMLImageElement;
     expect(thumbnailImage).toBeInTheDocument();
-    expect(thumbnailImage.src).toContain(thumbnailSrc);
   });
 
   it('renders successfully "avatarExampleImage" for profile type', () => {

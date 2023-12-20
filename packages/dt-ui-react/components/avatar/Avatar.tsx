@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
+import { AvatarThumbnail } from '../../core/assets';
 import { acronymGenerator } from '../../utils';
 import { Tooltip } from '../tooltip';
 import { TooltipContent } from '../tooltip/components';
 
 import { AvatarStyled, AvatarStyledProps } from './Avatar.styled';
 import { AvatarType, AvatarSize } from './constants';
-import thumbnailSrc from './images/thumbnail.svg';
 
 export interface AvatarProps extends AvatarStyledProps {
   title: string;
@@ -18,14 +18,21 @@ export const Avatar = ({
   title,
   type = AvatarType.Primary,
   size = AvatarSize.Medium,
-  imageSrc = thumbnailSrc,
+  imageSrc = '',
   dataTestId,
 }: AvatarProps) => {
-  const [shownImageSrc, setShownImageSrc] = useState(imageSrc);
+  const [showThumbnail, setShowThumbnail] = useState(false);
 
   const handleImageError = () => {
-    setShownImageSrc(thumbnailSrc);
+    setShowThumbnail(true);
   };
+
+  const renderProfileImage = () =>
+    showThumbnail ? (
+      <AvatarThumbnail />
+    ) : (
+      <img src={imageSrc} alt={title} onError={handleImageError} />
+    );
 
   return (
     <Tooltip>
@@ -35,7 +42,7 @@ export const Avatar = ({
         data-testid={dataTestId ?? 'avatar'}
       >
         {type === AvatarType.Profile ? (
-          <img src={shownImageSrc} alt={title} onError={handleImageError} />
+          renderProfileImage()
         ) : (
           <div>{acronymGenerator(title)}</div>
         )}

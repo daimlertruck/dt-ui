@@ -1,6 +1,7 @@
 export * from './landing-page-background';
 export { default as ApisSVG } from './Apis';
 export { default as AppsSVG } from './Apps';
+export { default as AvatarThumbnail } from './AvatarThumbnail';
 export { default as ProductsSVG } from './Products';
 export { default as TeamsSVG } from './Teams';
 export { default as UsernameSVG } from './Username';
