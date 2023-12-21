@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.28
+
+### Patch Changes
+
+- fix: avatar thumbnail image
+
 ## 0.1.0-beta.27
 
 ### Minor Changes
