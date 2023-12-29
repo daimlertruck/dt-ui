@@ -19,6 +19,8 @@ export type CustomTheme = {
     neutralDark_100: string;
     neutralLight_100: string;
     neutralLight_300: string;
+    textSecondary: string;
+    textPrimary: string;
   };
   colors: {
     black: string;
@@ -32,6 +34,12 @@ export type CustomTheme = {
     blue_300: string;
     blue_400: string;
     blue_500: string;
+    gray_10: string;
+    gray_20: string;
+    gray_30: string;
+    gray_40: string;
+    gray_50: string;
+    gray_60: string;
     gray_70: string;
     gray_80: string;
     gray_90: string;
@@ -72,6 +80,21 @@ export type CustomTheme = {
   };
   spacing: {
     none: number;
+    '6xs': string;
+    '5xs': string;
+    '4xs': string;
+    '3xs': string;
+    '2xs': string;
+    xs: string;
+    m: string;
+    s: string;
+    l: string;
+    xl: string;
+    '2xl': string;
+    '3xl': string;
+    '4xl': string;
+    '5xl': string;
+    // Legacy
     xxxsmall: string;
     xxsmall: string;
     xsmall: string;
@@ -92,6 +115,7 @@ export type CustomTheme = {
     h4: string;
     h5: string;
     h6: string;
+    body1: string;
     p: string;
     pSmall: string;
     pXSmall: string;

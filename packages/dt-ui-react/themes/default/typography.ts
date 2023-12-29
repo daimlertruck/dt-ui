@@ -25,6 +25,7 @@ export const fontStyles = {
   h4: getTextStyles(400, '32px', 1.23),
   h5: getTextStyles(400, '24px', 1.23),
   h6: getTextStyles(700, '14px', 1.23),
+  body1: getTextStyles(400, '1rem', 1.34),
   p: getTextStyles(400, '18px', 1.34),
   pSmall: getTextStyles(400, '16px', 1.34),
   pXSmall: getTextStyles(400, '14px', 1.34),
