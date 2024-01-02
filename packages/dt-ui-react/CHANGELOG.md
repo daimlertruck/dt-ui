@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.24
+
+### Minor Changes
+
+- feat: export empty-state from dt-ui
+
 ## 0.1.0-alpha.23
 
 ### Minor Changes
