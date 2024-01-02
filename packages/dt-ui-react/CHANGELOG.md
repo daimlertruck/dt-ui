@@ -1,5 +1,12 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.23
+
+### Minor Changes
+
+- feat: update default theme
+- feat: add empty state component
+
 ## 0.1.0-alpha.22
 
 ### Minor Changes
