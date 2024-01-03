@@ -33,10 +33,10 @@ const getColorWithShade = ({
 
   if (color === 'primary') {
     return {
-      '90': palette.primaryDark_500,
-      '60': palette.primaryDark_200,
-      '30': palette.primaryLight_100,
-      '10': palette.primaryLight_400,
+      '90': palette.primaryDark_300,
+      '60': palette.primary,
+      '30': palette.primaryLight_300,
+      '10': palette.primaryLight_500,
     }[shade];
   }
 

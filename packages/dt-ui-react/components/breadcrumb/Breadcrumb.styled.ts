@@ -34,7 +34,7 @@ export const ItemStyled = styled.li`
       }
       
       &:hover {
-        color: ${theme.palette.primaryDark_500};
+        color: ${theme.palette.primaryDark_300};
       }
     }
 

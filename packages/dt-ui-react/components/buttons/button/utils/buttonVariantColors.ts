@@ -20,7 +20,7 @@ export const buttonVariantColors = (
   solid: {
     color: theme.colors.white,
     bgColor: theme.palette[color],
-    hoverBgColor: theme.palette[`${color}Dark_200` as SolidColors],
+    hoverBgColor: theme.palette[`${color}Dark_300` as SolidColors],
   },
   outlined: {
     color: color === 'neutral' ? theme.colors.grey_200 : theme.palette[color],

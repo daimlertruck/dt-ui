@@ -69,7 +69,7 @@ export const AvatarStyled = styled.div<AvatarStyledProps>`
             background-color: ${theme.palette.primary};
 
             &:hover {
-              background-color: ${theme.palette.primaryDark_200};
+              background-color: ${theme.palette.primaryDark_300};
             }
           }
         `;
@@ -97,7 +97,7 @@ export const AvatarStyled = styled.div<AvatarStyledProps>`
             background-color: ${theme.colors.white};
 
             &:hover {
-              color: ${theme.palette.primaryDark_200};
+              color: ${theme.palette.primaryDark_300};
             }
           }
         `;

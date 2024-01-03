@@ -9,10 +9,9 @@ export type CustomTheme = {
     primaryLight_100: string;
     primaryLight_300: string;
     primaryLight_400: string;
+    primaryLight_500: string;
     primary: string;
     primaryDark_300: string;
-    primaryDark_400: string;
-    primaryDark_500: string;
     success: string;
     successDark_300: string;
     warning: string;
