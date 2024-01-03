@@ -20,6 +20,10 @@ export type CustomTheme = {
     neutralDark_100: string;
     neutralDark_200: string;
     neutralDark_300: string;
+    neutralDark_400: string;
+    neutralDark_500: string;
+    neutralDark_600: string;
+    neutralDark_700: string;
     neutralLight_100: string;
     neutralLight_300: string;
     textTertiary: string;
@@ -219,6 +223,7 @@ export type CustomTheme = {
   };
   shape: {
     button: string;
+    modal: string;
   };
   fontFamily: {
     default: string;

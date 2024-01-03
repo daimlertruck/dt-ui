@@ -10,12 +10,14 @@ export interface IconButtonProps extends BaseProps {
   onMouseEnter?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   color?: keyof Theme['palette'];
   isDisabled?: boolean;
+  ariaLabel?: string;
 }
 
 export const IconButton = ({
   children,
   dataTestId,
   isDisabled,
+  ariaLabel,
   onClick,
   onMouseDown,
   onMouseUp,
@@ -39,6 +41,7 @@ export const IconButton = ({
       onMouseEnter={onMouseEnter}
       onMouseUp={onMouseUp}
       data-testid={dataTestId ?? 'icon-button'}
+      aria-label={ariaLabel}
     >
       {children}
     </IconButtonStyled>

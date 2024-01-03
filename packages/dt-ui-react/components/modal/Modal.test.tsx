@@ -17,11 +17,12 @@ describe('<Modal/> Component', () => {
       render(
         <ProvidedOverlay isOpen={true} dataTestId='modal-overlay'>
           <Modal handleClose={handleClick}>
-            <Modal.Header handleClose={handleClick}>Title</Modal.Header>
-            <Modal.Content>
-              <Modal.ContentTitle>Subtitle</Modal.ContentTitle>
-              Some text here
-            </Modal.Content>
+            <Modal.Header
+              title='Title'
+              subTitle='Sub Title'
+              handleClose={handleClick}
+            />
+            <Modal.Content>Some text here</Modal.Content>
             <Modal.Footer>
               <Button
                 variant='outlined'
@@ -131,26 +132,33 @@ describe('<Modal/> Component', () => {
     expect(modalRef.current).not.toBeNull();
   });
 
-  describe('handle disabled prop', () => {
+  describe('handle loading state', () => {
     beforeEach(() => {
       render(
-        <ProvidedOverlay isOpen={true} dataTestId='modal-overlay'>
-          <Modal handleClose={handleClick}>
-            <Modal.Header handleClose={handleClick} isDisabled={true}>
-              Title
-            </Modal.Header>
-            <Modal.Content>Some text here</Modal.Content>
-          </Modal>
-        </ProvidedOverlay>
+        <>
+          <ProvidedOverlay isOpen={true} dataTestId='modal-overlay'>
+            <Modal
+              handleClose={handleClick}
+              isLoading={true}
+              hasClickOutside={true}
+            >
+              <Modal.Header title='Title' handleClose={handleClick} />
+              <Modal.Content>Some text here</Modal.Content>
+            </Modal>
+          </ProvidedOverlay>
+          <div>outside</div>
+        </>
       );
     });
 
-    it('should not be possible to click on the Close icon', () => {
-      const closeBtn = within(screen.getByTestId('modal-header')).getByRole(
-        'button'
-      );
+    it('renders modal with loading overlay correctly', () => {
+      expect(screen.getByTestId('modal-overlay')).toMatchSnapshot();
+    });
 
-      expect(closeBtn).toBeDisabled();
+    it('should not fire handle close function when clicking outside', () => {
+      fireEvent.mouseDown(screen.getAllByText('outside')[0]);
+
+      expect(handleClick).toBeCalledTimes(0);
     });
   });
 });

@@ -8,22 +8,79 @@ import { Modal, Overlay } from './Modal';
 export default {
   title: 'Data Display/Modal',
   component: Modal,
+  argTypes: {
+    hasHeaderBorder: {
+      control: { type: 'boolean' },
+      defaultValue: { summary: false },
+      description: 'Add bottom border to Header',
+    },
+    hasHeaderBackgroundColor: {
+      control: { type: 'boolean' },
+      defaultValue: { summary: false },
+      description: 'Add background color to Header',
+    },
+    hasFooterBorder: {
+      control: { type: 'boolean' },
+      defaultValue: { summary: false },
+      description: 'Add top border to footer',
+    },
+    hasFooterBackgroundColor: {
+      control: { type: 'boolean' },
+      defaultValue: { summary: false },
+      description: 'Add background color to Footer',
+    },
+    hasClickOutside: {
+      control: { type: 'boolean' },
+      defaultValue: { summary: false },
+      description: 'Enables click outside to trigger close action',
+    },
+    isLoading: {
+      control: { type: 'boolean' },
+      defaultValue: { summary: false },
+      description: 'Adds loading spinner and overlay',
+    },
+  },
 };
 
-const Template: Story = ({ actionTitle, content, title, subtitle }) => {
+const Template: Story = ({
+  actionTitle,
+  content,
+  title,
+  subTitle,
+  hasClickOutside,
+  hasHeaderBorder,
+  hasHeaderBackgroundColor,
+  hasFooterBorder,
+  hasFooterBackgroundColor,
+  isLoading,
+}) => {
   const { isModalOpen, toggleModal } = useModal();
 
   return (
     <>
       <button onClick={toggleModal}>Click me</button>
       <Overlay isOpen={isModalOpen}>
-        <Modal handleClose={toggleModal}>
-          <Modal.Header handleClose={toggleModal}>{title}</Modal.Header>
-          <Modal.Content>
-            <Modal.ContentTitle>{subtitle}</Modal.ContentTitle>
-            <p>{content}</p>
-          </Modal.Content>
-          <Modal.Footer>
+        <Modal
+          handleClose={toggleModal}
+          hasClickOutside={hasClickOutside}
+          isLoading={isLoading}
+        >
+          <Modal.Header
+            handleClose={toggleModal}
+            title={title}
+            subTitle={subTitle}
+            hasBorder={hasHeaderBorder}
+            hasBackgroundColor={hasHeaderBackgroundColor}
+          />
+          {content && (
+            <Modal.Content>
+              <p>{content}</p>
+            </Modal.Content>
+          )}
+          <Modal.Footer
+            hasBorder={hasFooterBorder}
+            hasBackgroundColor={hasFooterBackgroundColor}
+          >
             <Button
               variant='outlined'
               color='neutral'
@@ -48,5 +105,11 @@ Default.args = {
   actionTitle: 'Action',
   content: 'Some content here',
   title: 'Title',
-  subtitle: 'Subtitle',
+  subTitle: 'Some random Subtitle here',
+  hasHeaderBorder: false,
+  hasHeaderBackgroundColor: false,
+  hasFooterBorder: false,
+  hasFooterBackgroundColor: false,
+  hasClickOutside: false,
+  isLoading: false,
 };
