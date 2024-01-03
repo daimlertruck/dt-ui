@@ -40,7 +40,7 @@ exports[`<EmptyState /> component should render Empty State 1`] = `
   font-size: 2rem;
   line-height: 1.23;
   margin: 0;
-  color: #CCCCCC;
+  color: #323232;
 }
 
 .emotion-6 {
@@ -57,8 +57,9 @@ exports[`<EmptyState /> component should render Empty State 1`] = `
 
 .emotion-8 {
   font-weight: 400;
-  font-size: 0.0625rem;
-  line-height: 1.34;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: normal;
   margin: 0;
   color: #7C7C7D;
 }
@@ -134,7 +135,7 @@ exports[`<EmptyState /> component should render Empty State with a Button as a c
   font-size: 2rem;
   line-height: 1.23;
   margin: 0;
-  color: #CCCCCC;
+  color: #323232;
 }
 
 .emotion-6 {
@@ -151,8 +152,9 @@ exports[`<EmptyState /> component should render Empty State with a Button as a c
 
 .emotion-8 {
   font-weight: 400;
-  font-size: 0.0625rem;
-  line-height: 1.34;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: normal;
   margin: 0;
   color: #7C7C7D;
 }

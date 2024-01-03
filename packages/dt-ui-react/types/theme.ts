@@ -23,6 +23,9 @@ export type CustomTheme = {
     textPrimary: string;
   };
   colors: {
+    grey_90_: string;
+
+    // Legacy
     black: string;
     blue_60: string;
     blue_65: string;

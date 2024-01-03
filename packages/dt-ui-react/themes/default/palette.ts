@@ -1,4 +1,7 @@
 export const colors = {
+  grey_90_: '#323232',
+
+  // Legacy
   black: '#000000',
   blue_60: '#EDF6FC',
   blue_65: '#90CEFF',
@@ -67,5 +70,5 @@ export const palette = {
   neutralLight_100: colors.gray_90,
   neutralLight_300: colors.gray_70,
   textSecondary: colors.gray_60,
-  textPrimary: colors.gray_90,
+  textPrimary: colors.grey_90_,
 };
