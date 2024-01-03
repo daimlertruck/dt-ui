@@ -4,3 +4,4 @@ export { default as debounce } from './debounce';
 export { acronymGenerator } from './acronymGenerator';
 export * from './constants';
 export { hexToRgba } from './hexToRgba';
+export { getTextStyle } from './typography';
