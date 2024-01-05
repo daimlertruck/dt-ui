@@ -1,5 +1,15 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.25
+
+### Minor Changes
+
+- feat: add new getTextStyle util
+
+### Patch Changes
+
+- fix: new properties in default theme
+
 ## 0.1.0-alpha.24
 
 ### Minor Changes
