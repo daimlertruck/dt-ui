@@ -1,0 +1,155 @@
+name: Build and Deploy Storybook
+
+env:
+  TBLX_NPM_ARTIFACT_TOKEN: ${{ secrets.TBLX_NPM_ARTIFACT_TOKEN }}
+  TBLX_NPM_ARTIFACT_USERNAME: ${{ secrets.TBLX_NPM_ARTIFACT_USERNAME }}
+  GIT_FAKE_EMAIL: dt-ui@daimlertruck.com
+  GIT_FAKE_USER: dt-ui
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "packages/dt-ui-react/**"
+      - "apps/docs/**"
+
+  pull_request:
+    paths:
+      - "packages/dt-ui-react/**"
+      - "apps/docs/**"
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-storybook:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup node and yarn
+        uses: "./.github/actions/yarn-node-install"
+        with:
+          CACHE_FILE_NAME: "global"
+          TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
+          TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
+
+      - name: Build Storybook
+        run: |
+          cd apps/docs
+          yarn build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          path: "./apps/docs/storybook-static"
+          name: storybook-static
+
+  deploy-storybook:
+    needs: build-storybook
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup fake credentials
+        run: |
+          git config --global user.email ${{ env.GIT_FAKE_EMAIL }}
+          git config --global user.name ${{ env.GIT_FAKE_USER }}
+
+      - name: Create new branch
+        run: |
+          git checkout -b gh-pages-${{ github.run_number }} origin/gh-pages
+
+      - name: Download Storybook files
+        uses: actions/download-artifact@v3
+        if: github.event_name == 'push'
+        with:
+          name: storybook-static
+          path: ${{ github.workspace }}
+
+      - name: Download Storybook files
+        uses: actions/download-artifact@v3
+        if: github.event_name == 'pull_request'
+        with:
+          name: storybook-static
+          path: ${{ github.workspace }}/PR-${{ github.event.number }}
+
+      - name: Deploy Storybook
+        run: |
+          git add . --all
+          echo -e "\n\033[34m==>\033[0;1m" "Checking for Changes\033[0m"
+          if [[ -z $(git status -s) ]]; then
+            echo -e "\033[33;1m==>\033[0m" "No Changes found."
+            exit 0
+          else
+            echo -e "\n\033[34m==>\033[0;1m" "Changes found.\033[0m"
+            git commit -m "chore: update and publish Storybook"
+            git checkout gh-pages
+            git merge gh-pages-${{ github.run_number }}
+            git push origin gh-pages
+          fi
+
+  change_pr_description:
+    runs-on: self-hosted
+    needs: deploy-storybook
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Check PR Description
+        id: check_pr_description
+        run: |
+          PR_VIEW_OUTPUT=$(curl --request GET --url "${{ github.server_url }}/api/v3/repos/${{ github.repository }}/pulls/${{ github.event.number }}" --header "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" | jq -r '.body')
+
+          if echo "$PR_VIEW_OUTPUT" | grep -q "/pages/.*/PR-${{ github.event.number }}"; then
+            echo "Preview Link is already in the description."
+            exit 0
+          else 
+            NEW_BODY=$(jq -n --arg string "$PR_VIEW_OUTPUT" '($string + "\n\n${{ github.server_url }}/pages/${{ github.repository }}/PR-${{ github.event.number }}")')
+          curl --request PATCH \
+            --url "${{ github.server_url }}/api/v3/repos/${{ github.repository }}/pulls/${{ github.event.number }}" \
+            --header "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            --data-raw '{ "body":'"$NEW_BODY"' }'
+          fi
+
+  delete_previews:
+    runs-on: self-hosted
+    if: github.event_name == 'push'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup fake credentials
+        run: |
+          git config --global user.email ${{ env.GIT_FAKE_EMAIL }}
+          git config --global user.name ${{ env.GIT_FAKE_USER }}
+
+      - name: Delete Preview Environment
+        shell: bash
+        run: |
+          COMMIT_HASH=$(git rev-parse HEAD)
+          FOUND_PR_NUMBER=$(curl --request GET --url "${{ github.server_url }}/api/v3/repos/${{ github.repository }}/commits/$COMMIT_HASH/pulls?state=closed" --header "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" | jq -r ".[].number")
+
+          if [ -z "$FOUND_PR_NUMBER" ]; then
+            echo "PR not found."
+            exit 0
+          else
+            echo "Will delete preview environment for: PR-$FOUND_PR_NUMBER"
+
+            git checkout -b gh-pages-${{ github.run_number }} origin/gh-pages
+            rm -rf PR-$FOUND_PR_NUMBER
+            git add . --all
+
+            git commit -m "chore: delete PR preview"
+            git checkout gh-pages
+            git merge gh-pages-${{ github.run_number }}
+            git push origin gh-pages
+          fi

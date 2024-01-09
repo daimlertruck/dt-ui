@@ -1,0 +1,60 @@
+name: Setup node and yarn
+
+description: Action to setup Node.js, yarn and install dependencies
+
+inputs:
+  CACHE_FILE_NAME:
+    description: A string to differentiate the cache creation for whole repo or specific app
+    required: true
+  TBLX_NPM_ARTIFACT_TOKEN:
+    description: Artifactory technical user token
+    required: true
+  TBLX_NPM_ARTIFACT_USERNAME:
+    description: Artifactory technical user username
+    required: true
+
+runs:
+  using: composite
+  steps:
+    # Create .npmrc file
+    - name: Create .npmrc file
+      shell: bash
+      run: |
+        touch .npmrc
+        echo "auto-install-peers = true" >> .npmrc
+        echo "@dt-ui:registry=https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/" >> .npmrc
+        echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:always-auth=true" >> .npmrc
+        echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:_password=${{ inputs.TBLX_NPM_ARTIFACT_TOKEN }}" >> .npmrc
+        echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:username=${{ inputs.TBLX_NPM_ARTIFACT_USERNAME }}" >> .npmrc
+
+    # Install Node
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    # As we're using self-hosted runners we need to install yarn
+    - name: Install yarn
+      shell: bash
+      run: |
+        npm install -g yarn
+        npm install turbo --global
+
+    # Create a cache from yarn.lock so we can skip the dependency installation if needed
+    - id: cache-node_modules
+      uses: actions/cache@v3
+      with:
+        # A list of files, directories, and wildcard patterns to cache and restore
+        path: |
+          ~/.yarn
+          **/node_modules
+        # An explicit key for restoring and saving the cache
+        key: ${{ inputs.CACHE_FILE_NAME }}-node-v16-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+        restore-keys: |
+          ${{ inputs.CACHE_FILE_NAME }}-node-v16-deps-
+
+    # Install dependencies if there isn't a hit on the cache
+    - name: Install dependencies
+      if: steps.cache-node_modules.outputs.cache-hit != 'true'
+      shell: bash
+      run: yarn --frozen-lockfile
