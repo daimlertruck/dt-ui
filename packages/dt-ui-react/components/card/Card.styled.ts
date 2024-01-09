@@ -35,6 +35,7 @@ export const CardTitleStyled = styled.div`
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
+  word-break: break-word;
 `;
 
 export const CardDetailStyled = styled.div`

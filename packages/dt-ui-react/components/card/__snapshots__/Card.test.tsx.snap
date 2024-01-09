@@ -40,6 +40,7 @@ exports[`<Card /> component renders div html element with the correct items 1`] 
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
+  word-break: break-word;
 }
 
 .emotion-4 {
