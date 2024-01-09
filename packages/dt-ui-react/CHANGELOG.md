@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.30
+
+### Minor Changes
+
+- feat: adapt Modal according to design
+
 ## 0.1.0-beta.29
 
 ### Patch Changes
