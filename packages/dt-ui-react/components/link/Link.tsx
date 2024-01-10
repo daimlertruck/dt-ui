@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
 
 import { BaseProps } from '../../types';
-import { ButtonSizes } from '../buttons/button/constants';
+import { ButtonSize } from '../buttons/button/constants';
 
 import { LinkTextSize } from './constants';
 import { LinkType } from './constants/types';
@@ -38,7 +38,7 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
           <ButtonLinkStyled
             data-testid={dataTestId ?? 'link-button'}
             variant='solid'
-            size={textSize as ButtonSizes}
+            size={textSize as ButtonSize}
             ref={ref}
             style={style}
             {...rest}

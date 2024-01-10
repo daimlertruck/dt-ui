@@ -16,6 +16,9 @@ export const Default = Template.bind({});
 Default.args = {
   children: 'Button',
   onClick: () => null,
+  isUppercased: false,
   isLoading: false,
   variant: 'solid',
+  color: 'primary',
+  size: 'medium',
 };

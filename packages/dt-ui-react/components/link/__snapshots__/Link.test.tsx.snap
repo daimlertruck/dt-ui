@@ -74,15 +74,6 @@ exports[`<Link /> component Should render a html underlined link element with th
 
 exports[`<Link /> component Should render an anchor element with button styles 1`] = `
 .emotion-0 {
-  text-transform: uppercase;
-  border: 0;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  padding: 12px 24px;
-  border-radius: 4px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -101,16 +92,26 @@ exports[`<Link /> component Should render an anchor element with button styles 1
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
+  border-radius: 4px;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 12px 24px;
+  border: 0;
   color: #FFFFFF;
   background-color: #036DC1;
 }
 
-.emotion-0:focus {
-  box-shadow: 0px 2px 1px 0px #1A1A1A0D,0px 0px 0px 4px #E6F5FF;
-  background-color: #036DC1;
+.emotion-0:hover {
+  color: #FFFFFF;
+  background-color: #013C6B;
 }
 
 .emotion-0:disabled {
+  cursor: not-allowed;
   opacity: 38%;
 }
 
@@ -118,15 +119,6 @@ exports[`<Link /> component Should render an anchor element with button styles 1
   .emotion-0 {
     width: auto;
   }
-}
-
-.emotion-0:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-0:hover {
-  color: #FFFFFF;
-  background-color: #013C6B;
 }
 
 <div>

@@ -1,7 +1,7 @@
 import { CustomTheme as Theme } from '../../../../types';
-import { ButtonSizes } from '../constants/types';
+import { ButtonSize } from '../constants';
 
-export const buttonSizeStyles = (size: ButtonSizes, theme: Theme) =>
+export const buttonSizeStyles = (size: ButtonSize, theme: Theme) =>
   ({
     large: `
       ${theme.fontStyles.button1}

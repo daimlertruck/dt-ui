@@ -124,14 +124,6 @@ exports[`<Toast /> component should render a toast with title & message & action
 }
 
 .emotion-16 {
-  border: none;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  padding: 12px 24px;
-  border-radius: 4px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -150,11 +142,26 @@ exports[`<Toast /> component should render a toast with title & message & action
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
+  border-radius: 4px;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 12px 24px;
+  border: none;
   color: #036DC1;
-  background-color: transparent;
+  background-color: 'transparent';
+}
+
+.emotion-16:hover {
+  color: #013C6B;
+  background-color: 'transparent';
 }
 
 .emotion-16:disabled {
+  cursor: not-allowed;
   color: #F8F9FA;
 }
 
@@ -162,15 +169,6 @@ exports[`<Toast /> component should render a toast with title & message & action
   .emotion-16 {
     width: auto;
   }
-}
-
-.emotion-16:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-16:hover {
-  color: #013C6B;
-  background-color: transparent;
 }
 
 <div>
@@ -376,14 +374,6 @@ exports[`<Toast /> component should render a toast with title & message & action
 }
 
 .emotion-16 {
-  border: none;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  padding: 12px 24px;
-  border-radius: 4px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -402,11 +392,26 @@ exports[`<Toast /> component should render a toast with title & message & action
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
+  border-radius: 4px;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 12px 24px;
+  border: none;
   color: #036DC1;
-  background-color: transparent;
+  background-color: 'transparent';
+}
+
+.emotion-16:hover {
+  color: #013C6B;
+  background-color: 'transparent';
 }
 
 .emotion-16:disabled {
+  cursor: not-allowed;
   color: #F8F9FA;
 }
 
@@ -414,15 +419,6 @@ exports[`<Toast /> component should render a toast with title & message & action
   .emotion-16 {
     width: auto;
   }
-}
-
-.emotion-16:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-16:hover {
-  color: #013C6B;
-  background-color: transparent;
 }
 
 <div>
@@ -628,14 +624,6 @@ exports[`<Toast /> component should render a toast with title & message & action
 }
 
 .emotion-16 {
-  border: none;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  padding: 12px 24px;
-  border-radius: 4px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -654,11 +642,26 @@ exports[`<Toast /> component should render a toast with title & message & action
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
+  border-radius: 4px;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 12px 24px;
+  border: none;
   color: #036DC1;
-  background-color: transparent;
+  background-color: 'transparent';
+}
+
+.emotion-16:hover {
+  color: #013C6B;
+  background-color: 'transparent';
 }
 
 .emotion-16:disabled {
+  cursor: not-allowed;
   color: #F8F9FA;
 }
 
@@ -666,15 +669,6 @@ exports[`<Toast /> component should render a toast with title & message & action
   .emotion-16 {
     width: auto;
   }
-}
-
-.emotion-16:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-16:hover {
-  color: #013C6B;
-  background-color: transparent;
 }
 
 <div>
@@ -879,14 +873,6 @@ exports[`<Toast /> component should render a toast with title & message & action
 }
 
 .emotion-16 {
-  border: none;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  padding: 12px 24px;
-  border-radius: 4px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -905,11 +891,26 @@ exports[`<Toast /> component should render a toast with title & message & action
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
+  border-radius: 4px;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 12px 24px;
+  border: none;
   color: #036DC1;
-  background-color: transparent;
+  background-color: 'transparent';
+}
+
+.emotion-16:hover {
+  color: #013C6B;
+  background-color: 'transparent';
 }
 
 .emotion-16:disabled {
+  cursor: not-allowed;
   color: #F8F9FA;
 }
 
@@ -917,15 +918,6 @@ exports[`<Toast /> component should render a toast with title & message & action
   .emotion-16 {
     width: auto;
   }
-}
-
-.emotion-16:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-16:hover {
-  color: #013C6B;
-  background-color: transparent;
 }
 
 <div>

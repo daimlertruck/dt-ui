@@ -1,26 +1,19 @@
 import styled from '@emotion/styled';
 
-import {
-  ButtonSizes,
-  ButtonVariant,
-  OutlinedColors,
-  SolidColors,
-} from './constants';
-import { buttonVariantColors, buttonVariantStyles } from './utils';
+import { ButtonSize, ButtonVariant, ButtonColor } from './constants';
+import { buttonVariantStyles } from './utils';
 import { buttonSizeStyles } from './utils/buttonSizeStyles';
 
 export interface ButtonStyledProps {
   isLoading?: boolean;
+  isUppercased?: boolean;
   variant: ButtonVariant;
-  color: SolidColors | OutlinedColors;
-  size: ButtonSizes;
+  color: ButtonColor;
+  size: ButtonSize;
 }
 
 export const ButtonStyled = styled.button<ButtonStyledProps>`
-  ${({ theme, variant, color, size }) => `
-    ${buttonVariantStyles(variant, theme, color)};
-    ${buttonSizeStyles(size, theme)};
-    border-radius: ${theme.shape.button};
+  ${({ theme, isUppercased, variant, color, size }) => `
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -29,29 +22,14 @@ export const ButtonStyled = styled.button<ButtonStyledProps>`
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     align-items: center;
     gap: ${theme.spacing['4xs']};
+    border-radius: ${theme.shape.button};
+    text-transform: ${isUppercased ? 'uppercase' : 'none'};
     
-    color: ${buttonVariantColors(color, theme)[variant].color};
-    background-color: ${buttonVariantColors(color, theme)[variant].bgColor};
+    ${buttonSizeStyles(size, theme)}
+    ${buttonVariantStyles(variant, theme, color)}
 
     @media only screen and (min-width: ${theme.breakpoints.s}) {
       width: auto;
     }
-
-    &:disabled {
-      cursor: not-allowed;
-    }
-
-    &:hover {
-      color: ${
-        buttonVariantColors(color, theme)[variant].hoverColor ??
-        buttonVariantColors(color, theme)[variant].color
-      };
-    
-      background-color: ${
-        buttonVariantColors(color, theme)[variant].hoverBgColor ??
-        buttonVariantColors(color, theme)[variant].bgColor
-      };
-    };
-
   `}
 `;

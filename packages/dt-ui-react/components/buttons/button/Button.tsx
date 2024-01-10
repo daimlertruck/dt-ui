@@ -2,34 +2,28 @@ import { BaseProps } from '../../../types';
 import { Spinner } from '../../spinner';
 
 import { ButtonStyled } from './Button.styled';
-import {
-  ButtonSizes,
-  OutlinedColors,
-  SolidColors,
-  TextColors,
-} from './constants';
+import { ButtonSize, ButtonColor, ButtonVariant } from './constants';
 
 export type ButtonProps = {
   onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
   isDisabled?: boolean;
+  isUppercased?: boolean;
   isLoading?: boolean;
-  size?: ButtonSizes;
-} & BaseProps &
-  (
-    | { variant?: 'solid'; color?: SolidColors }
-    | { variant?: 'outlined'; color?: OutlinedColors }
-    | { variant?: 'text'; color?: TextColors }
-  );
+  size?: ButtonSize;
+  variant?: ButtonVariant;
+  color?: ButtonColor;
+} & BaseProps;
 
 export const Button = ({
   style,
-  size = 'medium',
-  variant = 'solid',
   children,
   onClick,
   dataTestId,
-  isDisabled = false,
   isLoading,
+  isDisabled = false,
+  isUppercased = false,
+  size = 'medium',
+  variant = 'solid',
   color = 'primary',
 }: ButtonProps) => {
   const handleButtonClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -44,6 +38,7 @@ export const Button = ({
       color={color}
       size={size}
       disabled={isDisabled || isLoading}
+      isUppercased={isUppercased}
       style={style}
       variant={variant}
       onClick={handleButtonClick}
