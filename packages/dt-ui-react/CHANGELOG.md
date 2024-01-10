@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.31
+
+### Minor Changes
+
+- feat: export function hexToRgba
+
 ## 0.1.0-beta.30
 
 ### Minor Changes
