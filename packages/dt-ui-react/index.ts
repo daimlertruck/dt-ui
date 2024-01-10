@@ -45,7 +45,7 @@ export * from './components/radio';
 export * from './components/multi-select';
 
 //utils
-export { debounce, useClickOutside } from './utils/index';
+export { debounce, useClickOutside, hexToRgba } from './utils/index';
 export { ListStyleType } from './utils/constants';
 export * from './utils/testingUtils';
 
