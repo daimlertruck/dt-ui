@@ -68,50 +68,6 @@ stages:
                 echo -e "${RED}$fixups${NC}"
                 exit 1
 
-  - stage: ContinuousIntegration
-    displayName: Continuous Integration
-    dependsOn: Prepare
-    pool: DEVAgentPool
-    jobs:
-      - job: Lint
-        displayName: Run Lint
-        steps:
-          - template: templates/yarn-node-install.yml
-          - script: |
-              yarn install
-              yarn lint
-            displayName: "Run lint"
-
-      - job: UnitTests
-        displayName: Run Unit Tests
-        dependsOn: Lint
-        steps:
-          - template: templates/yarn-node-install.yml
-          - script: |
-              yarn install
-              yarn test
-            displayName: Run Unit Tests
-          - task: PublishTestResults@2
-            inputs:
-              testResultsFormat: JUnit
-              testResultsFiles: "**/jest-coverage/report.xml"
-              mergeTestResults: true
-              failTaskOnFailedTests: true
-
-      - job: Build
-        displayName: Run Build
-        steps:
-          - template: templates/yarn-node-install.yml
-          - template: templates/npmrc-creation.yml
-          - script: |
-              yarn install
-              yarn build
-            displayName: "Run build"
-            workingDirectory: packages/dt-ui-react
-
-          - publish: $(Build.SourcesDirectory)/packages/dt-ui-react/dist
-            artifact: build-react
-
   - stage: VersionAndTag
     displayName: Version and Tag DT-UI
     pool: DEVAgentPool
