@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.26
+
+### Patch Changes
+
+- fix: card title text overflow
+
 ## 0.1.0-alpha.25
 
 ### Minor Changes
