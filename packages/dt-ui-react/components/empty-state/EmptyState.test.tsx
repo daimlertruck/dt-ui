@@ -1,6 +1,7 @@
 import { render } from '@testing-library/react';
 import React from 'react';
 
+import { NoDataIcon } from '../../core';
 import { withProviders } from '../../utils';
 import { Button } from '../buttons';
 
@@ -13,18 +14,32 @@ describe('<EmptyState /> component', () => {
 
   it('should render Empty State', () => {
     const { container } = render(
-      <ProvidedEmptyState title={title} description={description} />
+      <ProvidedEmptyState>
+        <EmptyState.Content title={title} description={description} />
+      </ProvidedEmptyState>
     );
 
     expect(container).toMatchSnapshot();
   });
 
-  it('should render Empty State with a Button as a children', () => {
+  it('should render Empty State with a Button', () => {
     const { container } = render(
-      <ProvidedEmptyState title={title} description={description}>
+      <ProvidedEmptyState>
+        <EmptyState.Content title={title} description={description} />
         <Button onClick={() => {}} variant='solid'>
           Button
         </Button>
+      </ProvidedEmptyState>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render Empty State with image', () => {
+    const { container } = render(
+      <ProvidedEmptyState>
+        <NoDataIcon />
+        <EmptyState.Content title={title} description={description} />
       </ProvidedEmptyState>
     );
 

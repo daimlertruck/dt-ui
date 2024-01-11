@@ -8,10 +8,11 @@ export const EmptyStateStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: ${theme.spacing['4xs']};
+    border-radius: ${theme.shape.emptyState};
     border: 1px dashed ${theme.colors.grey_30};
     width: 100%;
     height: 100%;
+    gap: ${theme.spacing.xs};
     
     @media only screen and (min-width: ${theme.breakpoints.s}) {
       padding: ${theme.spacing['2xl']} ${theme.spacing['5xl']};
@@ -19,22 +20,17 @@ export const EmptyStateStyled = styled.div`
   `}
 `;
 
-interface EmptyStateDescriptionProps {
-  hasChildren: boolean;
-}
-
-export const EmptyStateDescriptionStyled = styled.div<EmptyStateDescriptionProps>`
-  ${({ theme, hasChildren }) => `
-    text-align: center;
-    padding-top: ${theme.spacing['4xs']};
-    padding-bottom: ${hasChildren ? theme.spacing.xs : theme.spacing.none};
-    
-    @media only screen and (min-width: ${theme.breakpoints.s}) {
-      padding-top: ${theme.spacing['3xs']};
-    }
-  `}
-`;
-
-export const EmptyStateTitleStyled = styled.div`
+export const EmptyStateContentStyled = styled.div`
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  ${({ theme }) => `
+      gap: ${theme.spacing['4xs']};
+
+      @media only screen and (min-width: ${theme.breakpoints.s}) {
+        gap: ${theme.spacing['3xs']};
+      }
+  `}
 `;

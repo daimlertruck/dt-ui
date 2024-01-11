@@ -224,6 +224,7 @@ export type CustomTheme = {
   shape: {
     button: string;
     modal: string;
+    emptyState: string;
   };
   fontFamily: {
     default: string;
