@@ -1,0 +1,113 @@
+name: Publish
+
+env:
+  TBLX_NPM_ARTIFACT_TOKEN: ${{ secrets.TBLX_NPM_ARTIFACT_TOKEN }}
+  TBLX_NPM_ARTIFACT_USERNAME: ${{ secrets.TBLX_NPM_ARTIFACT_USERNAME }}
+
+on:
+  push:
+    tags:
+      - "@dt-ui/react@**"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  gather-changed-packages:
+    runs-on: self-hosted
+    outputs:
+      changed-package: ${{ steps.get-changed-packages.outputs.result }}
+      matrix: ${{ steps.set-changed-packages.outputs.result }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 2
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install yarn and turbo
+        shell: bash
+        run: |
+          npm install -g yarn
+          npm install turbo --global
+
+      - name: Get changed packages
+        id: get-changed-packages
+        run: |
+          echo 'result<<CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
+          npx -y turbo build --dry-run=json --filter=[HEAD^1] --ignore="apps/*" >> $GITHUB_OUTPUT
+          echo 'CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
+
+      - name: Set changed packages
+        id: set-changed-packages
+        uses: actions/github-script@v6
+        with:
+          script: |
+            return ${{ toJson(fromJson(steps.get-changed-packages.outputs.result).packages) }}
+
+  publish:
+    runs-on: self-hosted
+    needs: [gather-changed-packages]
+    strategy:
+      matrix:
+        packages: ${{ fromJson(needs.gather-changed-packages.outputs.matrix) }}
+        exclude:
+          - packages: "//"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Setup node and yarn
+        uses: "./.github/actions/yarn-node-install"
+        with:
+          CACHE_FILE_NAME: ${{ matrix.packages }}
+          TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
+          TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
+
+      - name: Set package directory and version
+        id: package-detail
+        run: |
+          directory=$(yarn workspaces --json info | jq -r '.data' | jq -r '.["${{ matrix.packages }}"].location')
+          current_version=$(cat $directory/package.json | jq -r '.version')
+          echo "directory=$directory" >> $GITHUB_OUTPUT
+          echo "version=$current_version" >> $GITHUB_OUTPUT
+
+      - name: Compare package versions
+        run: |
+          published_versions=$(yarn info ${{ matrix.packages }} versions)
+          current_version=${{ steps.package-detail.outputs.version }}
+          if [[ $published_versions == *"$current_version"* ]]; then
+            echo "Version is already published: $current_version"
+            exit 1
+          else
+            echo "Publishing the new version: $current_version"
+          fi
+        shell: bash
+
+      - name: Run build ${{ matrix.packages }}
+        run: |
+          yarn build
+        working-directory: ${{ steps.package-detail.outputs.directory }}
+
+      - name: Yarn pack ${{ matrix.packages }}
+        run: |
+          yarn pack
+        working-directory: ${{ steps.package-detail.outputs.directory }}
+
+      - uses: jfrog/setup-jfrog-cli@v3
+        env:
+          JF_URL: ${{ secrets.ARTIFACTORY_URL }}
+          JF_USER: ${{ secrets.TBLX_NPM_ARTIFACT_USERNAME }}
+          JF_PASSWORD: ${{ secrets.TBLX_NPM_ARTIFACT_PASSWORD }}
+
+      - name: Publish to Artifactory
+        run: jf rt u ${{ steps.package-detail.outputs.directory }}/*.tgz DTUI_NPM_LOCAL/${{ matrix.packages }}/-/ --flat=true
