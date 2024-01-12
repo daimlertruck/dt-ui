@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.32
+
+### Minor Changes
+
+- feat(button): adapt button variant outline to new design in primary and secondary
+
 ## 0.1.0-beta.31
 
 ### Minor Changes
