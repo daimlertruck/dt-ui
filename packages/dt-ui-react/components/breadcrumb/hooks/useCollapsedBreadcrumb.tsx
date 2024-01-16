@@ -10,7 +10,7 @@ import {
   ReactNode,
 } from 'react';
 
-import { MoreIcon } from '../../../core';
+import { MoreHorizontalIcon } from '../../../core';
 import useDebounceResize from '../../../hooks/useDebounceResize';
 import useMedia from '../../../hooks/useMedia';
 import { Breadcrumb } from '../Breadcrumb';
@@ -45,7 +45,7 @@ export const useCollapsedBreadcrumb = (children: ReactNode) => {
       const modifiedChildren = [
         childrenArray[0],
         <Breadcrumb.Item key='more-icon'>
-          <MoreIcon />
+          <MoreHorizontalIcon />
         </Breadcrumb.Item>,
         isValidElement(lastChild)
           ? cloneElement(lastChild, {
