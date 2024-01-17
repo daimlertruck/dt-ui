@@ -23,12 +23,27 @@ const getOutlinedButtonStyles = (theme: Theme) => ({
       border: 1px solid ${theme.palette.primaryLight_300};
     }
   `,
-  error: {
-    enabled: {},
-    hover: {},
-    active: {},
-    disabled: {},
-  },
+  error: `
+    color: ${theme.palette.error};
+    background-color: ${theme.colors.white};
+    border: 1px solid ${theme.palette.error};
+    &:hover {
+      color: ${theme.palette.errorDark_300};
+      background-color: ${theme.colors.white};
+      border: 1px solid ${theme.palette.errorDark_300};
+    }
+    &:active {
+      color: ${theme.palette.errorDark_300};
+      background-color: ${theme.colors.white};
+      border: 1px solid ${theme.palette.errorDark_300};
+    }
+    &:disabled {
+      cursor: not-allowed;
+      color: ${theme.palette.errorLight_300};
+      background-color: ${theme.colors.white};
+      border: 1px solid ${theme.palette.errorLight_300};
+    }
+  `,
   neutral: `
     color: ${theme.palette.neutralDark_400};
     background-color: ${theme.colors.white};
