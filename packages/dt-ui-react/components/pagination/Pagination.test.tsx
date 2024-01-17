@@ -22,14 +22,14 @@ describe('<Pagination /> component', () => {
     const onClick = jest.fn();
     const { container } = render(
       <ProvidedPagination>
-        <Pagination.PreviousItem onClick={onClick} disabled={true} />
+        <Pagination.PreviousItem disabled onClick={onClick} />
         <PaginationInput
-          value={currentPage}
-          totalPages={totalPages}
           onChange={onClick}
           onHandleKeyDown={onClick}
+          totalPages={totalPages}
+          value={currentPage}
         />
-        <Pagination.Content totalPages={totalPages} onClick={onClick} />
+        <Pagination.Content onClick={onClick} totalPages={totalPages} />
         <Pagination.NextItem onClick={onClick} />
       </ProvidedPagination>
     );
@@ -61,22 +61,22 @@ describe('<Pagination /> component', () => {
             }
           />
           <PaginationInput
-            value={result.current.currentPage}
-            totalPages={totalPages}
             onChange={(value) => act(() => result.current.handleChange(value))}
             onHandleKeyDown={(e) =>
               act(() => {
                 result.current.handleUserInput(e);
               })
             }
+            totalPages={totalPages}
+            value={result.current.currentPage}
           />
           <Pagination.Content
-            totalPages={totalPages}
             onClick={() =>
               act(() => {
                 result.current.handleChange(totalPages);
               })
             }
+            totalPages={totalPages}
           />
           <Pagination.NextItem
             onClick={() =>

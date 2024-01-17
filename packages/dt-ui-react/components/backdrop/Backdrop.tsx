@@ -22,15 +22,15 @@ export const Backdrop = forwardRef<HTMLDivElement, BackdropProps>(
   ) => {
     return (
       <>
-        {isOpen && (
+        {isOpen ? (
           <BackdropStyled
-            type={type}
             data-testid={dataTestId ?? 'backdrop'}
             ref={ref}
+            type={type}
           >
             {children}
           </BackdropStyled>
-        )}
+        ) : null}
       </>
     );
   }

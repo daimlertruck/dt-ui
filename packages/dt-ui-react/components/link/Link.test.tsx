@@ -17,7 +17,7 @@ describe('<Link /> component', () => {
 
   it('Should render a html underlined link element with the correct title', () => {
     const { container } = render(
-      <ProvidedLink href='/' isUnderline={true}>
+      <ProvidedLink href='/' isUnderline>
         Redirect To
       </ProvidedLink>
     );
@@ -27,7 +27,7 @@ describe('<Link /> component', () => {
 
   it('Should render a disabled html link element', () => {
     const { container } = render(
-      <ProvidedLink href='/' isDisabled={true}>
+      <ProvidedLink href='/' isDisabled>
         Redirect To
       </ProvidedLink>
     );

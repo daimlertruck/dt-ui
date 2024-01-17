@@ -58,8 +58,8 @@ export const Tabs = ({
 
   return (
     <TabsStyled
+      data-testid={dataTestId ? dataTestId : 'tabs'}
       orientation={orientation}
-      data-testid={dataTestId ?? 'tabs'}
       role='tablist'
       style={style}
     >
@@ -80,14 +80,14 @@ Tabs.Item = ({
 }: TabItemProps) => {
   return (
     <ItemStyled
-      data-testid={dataTestId ?? `tab-item-${index}`}
       active={activeTab === index}
-      onClick={() => handleChange(index)}
+      data-testid={dataTestId ? dataTestId : `tab-item-${index}`}
       disabled={isDisabled}
-      role='tab'
-      orientation={orientation}
-      tabIndex={activeTab === index ? 0 : -1}
       hasError={hasError}
+      onClick={() => handleChange(index)}
+      orientation={orientation}
+      role='tab'
+      tabIndex={activeTab === index ? 0 : -1}
     >
       {children}
     </ItemStyled>
@@ -103,11 +103,11 @@ export const TabPanel = ({
 }: TabPanelProps) => {
   return (
     <PanelStyled
-      data-testid={dataTestId ?? `tab-panel-${index}`}
-      visible={activeTab === index}
+      data-testid={dataTestId ? dataTestId : `tab-panel-${index}`}
       role='tabpanel'
-      tabIndex={activeTab === index ? 0 : -1}
       style={style}
+      tabIndex={activeTab === index ? 0 : -1}
+      visible={activeTab === index}
     >
       {children}
     </PanelStyled>
@@ -116,7 +116,7 @@ export const TabPanel = ({
 
 TabPanel.Grid = ({ children, dataTestId }: BaseProps) => {
   return (
-    <PanelGridStyled data-testid={dataTestId ?? 'tab-panel-grid'}>
+    <PanelGridStyled data-testid={dataTestId ? dataTestId : 'tab-panel-grid'}>
       {children}
     </PanelGridStyled>
   );

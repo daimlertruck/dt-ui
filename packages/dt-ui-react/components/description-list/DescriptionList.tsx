@@ -18,8 +18,8 @@ export const DescriptionList = ({
 }: DescriptionListProps) => {
   return (
     <DescriptionListStyled
-      listStyleType={listStyleType}
       data-testid={`${dataTestId ? dataTestId + '-' : ''}description-list`}
+      listStyleType={listStyleType}
     >
       {children}
     </DescriptionListStyled>

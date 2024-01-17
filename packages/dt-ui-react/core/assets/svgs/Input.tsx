@@ -3,10 +3,10 @@ import React from 'react';
 const InputIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      width='16'
+      fill='none'
       height='17'
       viewBox='0 0 16 17'
-      fill='none'
+      width='16'
       xmlns='http://www.w3.org/2000/svg'
       {...props}
     >
@@ -19,10 +19,10 @@ const InputIcon = (props: React.SVGProps<SVGSVGElement>) => {
       <defs>
         <clipPath id='clip0_446_1650'>
           <rect
-            width='16'
-            height='16'
             fill='white'
+            height='16'
             transform='translate(0 0.500488)'
+            width='16'
           />
         </clipPath>
       </defs>

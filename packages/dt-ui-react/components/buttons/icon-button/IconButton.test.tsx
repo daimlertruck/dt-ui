@@ -21,11 +21,7 @@ describe('<IconButton /> component', () => {
 
   it('renders a disabled button html element', () => {
     render(
-      <ProvidedIconButton
-        isDisabled={true}
-        color='primary'
-        onClick={() => null}
-      >
+      <ProvidedIconButton color='primary' isDisabled onClick={() => null}>
         <EditIcon />
       </ProvidedIconButton>
     );
@@ -40,8 +36,8 @@ describe('<IconButton /> component', () => {
     render(
       <ProvidedIconButton
         color='error'
-        onClick={callbackFn}
         dataTestId='error-icon-button'
+        onClick={callbackFn}
       >
         <EditIcon />
       </ProvidedIconButton>

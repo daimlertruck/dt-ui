@@ -109,42 +109,42 @@ export const TextField = ({
 
   return (
     <TextFieldStyled style={style}>
-      <LabelField isActive={activeInput} forId={id} isDisabled={isDisabled}>
-        {label} {required && '*'}
+      <LabelField forId={id} isActive={activeInput} isDisabled={isDisabled}>
+        {label} {required ? '*' : null}
       </LabelField>
 
-      {(hasError || isLoading || !!icon) && (
+      {hasError || isLoading || !!icon ? (
         <InputFieldIconStyled>
-          {hasError && <ErrorIcon />}
-          {isLoading && <Spinner colorScheme='negative' size='small' />}
+          {hasError ? <ErrorIcon /> : null}
+          {isLoading ? <Spinner colorScheme='negative' size='small' /> : null}
           {!isLoading && !!icon && icon}
         </InputFieldIconStyled>
-      )}
+      ) : null}
       <InputFieldStyled
         disabled={isDisabled}
-        ref={inputRef}
-        type={type}
-        id={id}
-        name={name || id}
         hasError={hasError}
-        value={inputValue}
+        id={id}
+        maxLength={maxLength}
+        name={name || id}
+        onBlur={onBlur}
         onChange={handleChange}
         onFocus={onFocus}
-        onBlur={onBlur}
+        ref={inputRef}
         required={required}
-        maxLength={maxLength}
+        type={type}
+        value={inputValue}
       />
-      {message && (
+      {message ? (
         <TextFieldMessageStyled>
           <Typography
+            color={hasError ? 'red_100' : 'grey_100'}
             element='span'
             fontStyles='pXXSmall'
-            color={hasError ? 'red_100' : 'grey_100'}
           >
             {message}
           </Typography>
         </TextFieldMessageStyled>
-      )}
+      ) : null}
       {children}
     </TextFieldStyled>
   );

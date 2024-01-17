@@ -25,10 +25,14 @@ const Template: Story<BackdropProps> = ({ ...props }) => {
 
   return (
     <>
-      <button onClick={toggleBackdrop}>Open Backdrop</button>
+      <button onClick={toggleBackdrop} type='button'>
+        Open Backdrop
+      </button>
       <Backdrop {...props} isOpen={isBackdropOpen}>
         <>{props.children}</>
-        <button onClick={toggleBackdrop}>Close Backdrop</button>
+        <button onClick={toggleBackdrop} type='button'>
+          Close Backdrop
+        </button>
       </Backdrop>
     </>
   );

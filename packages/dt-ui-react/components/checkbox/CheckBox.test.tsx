@@ -11,8 +11,8 @@ describe('<CheckBox /> component', () => {
   it('renders checkbox with label', () => {
     const { container } = render(
       <ProvidedCheckBox
-        isDisabled={false}
         isChecked={false}
+        isDisabled={false}
         onChange={() => null}
       >
         Label
@@ -24,8 +24,8 @@ describe('<CheckBox /> component', () => {
   it('renders checkbox without label', () => {
     const { container } = render(
       <ProvidedCheckBox
-        isDisabled={false}
         isChecked={false}
+        isDisabled={false}
         onChange={() => null}
       />
     );
@@ -34,22 +34,14 @@ describe('<CheckBox /> component', () => {
 
   it('renders checkbox checked', () => {
     const { container } = render(
-      <ProvidedCheckBox
-        isDisabled={false}
-        isChecked={true}
-        onChange={() => null}
-      />
+      <ProvidedCheckBox isChecked isDisabled={false} onChange={() => null} />
     );
     expect(container).toMatchSnapshot();
   });
 
   it('renders checkbox disabled', () => {
     const { container } = render(
-      <ProvidedCheckBox
-        isDisabled={true}
-        isChecked={false}
-        onChange={() => null}
-      />
+      <ProvidedCheckBox isChecked={false} isDisabled onChange={() => null} />
     );
     expect(container).toMatchSnapshot();
   });

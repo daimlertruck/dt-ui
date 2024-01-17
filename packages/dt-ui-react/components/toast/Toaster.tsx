@@ -39,13 +39,13 @@ export const emitToast = ({
     (t) => {
       return (
         <Toast
+          dismissible={dismissible}
           id={t.id}
-          type={type}
-          title={title}
+          isVisible={t.visible}
           message={message}
           onClose={() => toast.dismiss(t.id)}
-          isVisible={t.visible}
-          dismissible={dismissible}
+          title={title}
+          type={type}
         >
           {children}
         </Toast>
@@ -65,20 +65,18 @@ const Toaster = ({ gutter = 8, ...props }: ToasterProviderProps) => {
   const margin = small ? 8 : 16;
 
   return (
-    <>
-      <ToastProvider
-        gutter={gutter}
-        position={position}
-        {...props}
-        containerStyle={{
-          bottom: 16,
-          right: margin,
-          top: margin,
-          left: margin,
-          ...props.containerStyle,
-        }}
-      />
-    </>
+    <ToastProvider
+      gutter={gutter}
+      position={position}
+      {...props}
+      containerStyle={{
+        bottom: 16,
+        right: margin,
+        top: margin,
+        left: margin,
+        ...props.containerStyle,
+      }}
+    />
   );
 };
 

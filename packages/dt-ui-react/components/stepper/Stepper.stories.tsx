@@ -26,23 +26,23 @@ const Template: Story<TemplateProps> = ({
   <Stepper orientation={orientation}>
     {options.map((opt, idx) => (
       <Step
-        key={idx}
         isActive={currentStep === idx + 1}
         isCompleted={completed.includes(idx + 1)}
+        key={opt}
       >
         <Step.Counter>{idx + 1}</Step.Counter>
         <Step.Label>{opt}</Step.Label>
       </Step>
     ))}
-    <Step key={options.length} isDisabled={true}>
+    <Step isDisabled key={options.length}>
       <Step.Counter>{options.length + 1}</Step.Counter>
       <Step.Label>Disabled</Step.Label>
     </Step>
-    <Step key={options.length + 1} isError={true}>
+    <Step isError key={options.length + 1}>
       <Step.Counter>{options.length + 2}</Step.Counter>
       <Step.Label>Error</Step.Label>
     </Step>
-    <Step key={options.length + 2} isError={true} isActive={true}>
+    <Step isActive isError key={options.length + 2}>
       <Step.Counter>{options.length + 3}</Step.Counter>
       <Step.Label>Active Error</Step.Label>
     </Step>

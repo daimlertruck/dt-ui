@@ -16,8 +16,8 @@ export const App = () => {
   return (
     <Dropdown>
       <Dropdown.Select label='Label'>
-        {options.map((option, idx) => (
-          <Dropdown.Option key={idx} option={option}>
+        {options.map((option) => (
+          <Dropdown.Option key={option.value} option={option}>
             {option.text ?? option.value}
           </Dropdown.Option>
         ))}

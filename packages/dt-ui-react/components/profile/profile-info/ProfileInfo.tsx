@@ -11,11 +11,7 @@ export const ProfileInfo = ({ children }: BaseProps) => {
   return <ProfileInfoStyled>{children}</ProfileInfoStyled>;
 };
 
-ProfileInfo.Item = function ProfileInfoItem({
-  children,
-  disabled,
-  onClick,
-}: ProfileInfoItemProps) {
+ProfileInfo.Item = ({ children, disabled, onClick }: ProfileInfoItemProps) => {
   return (
     <ProfileInfoItemStyled disabled={disabled} onClick={onClick} role='option'>
       {children}

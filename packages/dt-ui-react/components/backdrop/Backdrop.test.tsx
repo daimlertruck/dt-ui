@@ -10,7 +10,7 @@ describe('<Backdrop /> component', () => {
 
   it('expects rendered element to match snapshot', () => {
     const { container } = render(
-      <ProvidedBackdrop isOpen={true} type={BackdropType.Dark}>
+      <ProvidedBackdrop isOpen type={BackdropType.Dark}>
         <div>Example text</div>
       </ProvidedBackdrop>
     );
@@ -20,7 +20,7 @@ describe('<Backdrop /> component', () => {
 
   it('expects rendered element with type "light" to match snapshot', () => {
     const { container } = render(
-      <ProvidedBackdrop isOpen={true} type={BackdropType.Light}>
+      <ProvidedBackdrop isOpen type={BackdropType.Light}>
         <div>Example text</div>
       </ProvidedBackdrop>
     );
@@ -32,7 +32,7 @@ describe('<Backdrop /> component', () => {
     const exampleText = 'Example text';
 
     render(
-      <ProvidedBackdrop isOpen={true} type={BackdropType.Dark}>
+      <ProvidedBackdrop isOpen type={BackdropType.Dark}>
         <div>{exampleText}</div>
       </ProvidedBackdrop>
     );

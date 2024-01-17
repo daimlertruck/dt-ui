@@ -18,8 +18,8 @@ export const App = () => {
   return (
     <MultiSelect>
       <MultiSelect.Select label='Label'>
-        {options.map((option, idx) => (
-          <MultiSelect.Option key={idx} option={option}>
+        {options.map((option) => (
+          <MultiSelect.Option key={option.value} option={option}>
             {option.text ?? option.value}
           </MultiSelect.Option>
         ))}

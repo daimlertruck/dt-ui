@@ -5,4 +5,4 @@ export default {
   component: NavItem,
 };
 
-export const Active = () => <NavItem matchRoute={true}>ActiveItem</NavItem>;
+export const Active = () => <NavItem matchRoute>ActiveItem</NavItem>;

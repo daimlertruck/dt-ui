@@ -23,9 +23,9 @@ export const List = ({
   return (
     <ListStyled
       data-testid={testId}
-      listStyleType={listStyleType}
       hasMarginLeft={hasMarginLeft}
       hasPaddingLeft={hasPaddingLeft}
+      listStyleType={listStyleType}
       style={style}
     >
       {children}

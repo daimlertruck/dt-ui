@@ -33,13 +33,13 @@ export const Toggle = ({
   return (
     <ToggleWrapperStyled data-testid={testId}>
       <ToggleCheckBoxStyled
+        checked={isChecked}
+        checkedColor={checkedColor}
         disabled={isDisabled}
         id={checkboxId}
-        type='checkbox'
-        checkedColor={checkedColor}
-        uncheckedColor={uncheckedColor}
-        checked={isChecked}
         onChange={onChange}
+        type='checkbox'
+        uncheckedColor={uncheckedColor}
       />
       <ToggleSwitchStyled htmlFor={checkboxId} />
       {children}
@@ -50,12 +50,12 @@ export const Toggle = ({
 Toggle.Label = ({ children, dataTestId }: BaseProps) => {
   return (
     <Typography
+      color='grey_200'
       data-testid={dataTestId ?? 'toggle-label'}
+      dataTestId='toggle-label'
       element='span'
       fontStyles='pXXSmall'
-      color='grey_200'
       style={{ fontWeight: 700 }}
-      dataTestId='toggle-label'
     >
       {children}
     </Typography>

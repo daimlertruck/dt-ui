@@ -13,9 +13,9 @@ const Tooltip = ({
 }: TooltipContainerProps) => (
   <TooltipContextProvider>
     <TooltipContainer
+      dataTestId={dataTestId}
       hideDelay={hideDelay}
       style={style}
-      dataTestId={dataTestId}
     >
       {children}
     </TooltipContainer>

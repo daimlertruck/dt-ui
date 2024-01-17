@@ -20,12 +20,12 @@ export default {
 const Template: Story = ({ title, description, addActionButton }) => {
   return (
     <EmptyState>
-      <EmptyState.Content title={title} description={description} />
-      {addActionButton && (
+      <EmptyState.Content description={description} title={title} />
+      {addActionButton ? (
         <Button onClick={() => {}} variant='solid'>
           Action
         </Button>
-      )}
+      ) : null}
     </EmptyState>
   );
 };
@@ -42,7 +42,7 @@ const EmptyStateWithImage: Story = ({ title, description }) => {
   return (
     <EmptyState>
       <NoDataIcon />
-      <EmptyState.Content title={title} description={description} />
+      <EmptyState.Content description={description} title={title} />
     </EmptyState>
   );
 };

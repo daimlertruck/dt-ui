@@ -29,7 +29,7 @@ interface DataCellProps extends BaseProps {
 }
 
 export const Table = ({ children, dataTestId, isFixed }: TableProps) => (
-  <TableStyled isFixed={isFixed} data-testid={dataTestId ?? 'table'}>
+  <TableStyled data-testid={dataTestId ?? 'table'} isFixed={isFixed}>
     {children}
   </TableStyled>
 );
@@ -66,8 +66,8 @@ export const DataCell = ({
   textAlign = 'left',
 }: DataCellProps) => (
   <CellStyled
-    data-label={dataLabel}
     columnWidth={columnWidth}
+    data-label={dataLabel}
     textAlign={textAlign}
   >
     {children}

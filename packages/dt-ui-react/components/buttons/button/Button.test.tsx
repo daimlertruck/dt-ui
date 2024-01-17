@@ -10,7 +10,7 @@ describe('<Button /> component', () => {
 
   it('renders button html element with the correct title', () => {
     const { container } = render(
-      <ProvidedButton onClick={() => null} dataTestId='primary'>
+      <ProvidedButton dataTestId='primary' onClick={() => null}>
         Primary
       </ProvidedButton>
     );
@@ -21,11 +21,11 @@ describe('<Button /> component', () => {
   it('renders a disabled button html element with the correct title', () => {
     render(
       <ProvidedButton
-        isDisabled={true}
-        variant='outlined'
         color='neutral'
-        onClick={() => null}
         dataTestId='secondary'
+        isDisabled
+        onClick={() => null}
+        variant='outlined'
       >
         Secondary
       </ProvidedButton>
@@ -41,10 +41,10 @@ describe('<Button /> component', () => {
 
     render(
       <ProvidedButton
-        variant='solid'
         color='error'
-        onClick={callbackFn}
         dataTestId='error'
+        onClick={callbackFn}
+        variant='solid'
       >
         Error
       </ProvidedButton>
@@ -59,7 +59,7 @@ describe('<Button /> component', () => {
   describe('when loading is true', () => {
     it('renders a spinner light theme', () => {
       const { container } = render(
-        <ProvidedButton isLoading={true} onClick={() => null}>
+        <ProvidedButton isLoading onClick={() => null}>
           Button loading
         </ProvidedButton>
       );
@@ -69,11 +69,7 @@ describe('<Button /> component', () => {
 
     it('renders a spinner dark theme when variant is outlined', () => {
       const { container } = render(
-        <ProvidedButton
-          isLoading={true}
-          onClick={() => null}
-          variant='outlined'
-        >
+        <ProvidedButton isLoading onClick={() => null} variant='outlined'>
           Button loading
         </ProvidedButton>
       );

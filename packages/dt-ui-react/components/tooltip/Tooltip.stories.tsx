@@ -30,7 +30,7 @@ const Template: Story<{
     <StyledContainer>
       <Tooltip hideDelay={hideDelay}>
         {children}
-        <Tooltip.Content direction={direction} background={background}>
+        <Tooltip.Content background={background} direction={direction}>
           {contentChildren}
         </Tooltip.Content>
       </Tooltip>
@@ -46,9 +46,9 @@ Default.args = {
     children: (
       <IconButton
         color='error'
-        dataTestId={'delete-access-id-button-'}
-        onClick={() => console.log('hey')}
+        dataTestId='delete-access-id-button-'
         isDisabled={false}
+        onClick={() => console.log('hey')}
       >
         <DeleteIcon />
       </IconButton>

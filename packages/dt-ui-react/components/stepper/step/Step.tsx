@@ -58,7 +58,7 @@ const StepCounter = ({
   return (
     <Counter
       color={color}
-      isLarge={true}
+      isLarge
       outlined={!isCompleted}
       style={{
         borderWidth: 1,
@@ -66,11 +66,11 @@ const StepCounter = ({
       }}
     >
       {isCompleted ? (
-        <Check width={10} height={8} />
+        <Check height={8} width={10} />
       ) : (
         <Typography
-          element='span'
           color={color}
+          element='span'
           fontStyles='pXXSmall'
           style={{ fontWeight: 700 }}
         >

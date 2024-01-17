@@ -23,7 +23,7 @@ describe('<Tooltip /> component', () => {
       const { getByTestId, findByTestId } = render(
         <ProvidedTooltip>
           Hover me
-          <Tooltip.Content direction={direction} background={background}>
+          <Tooltip.Content background={background} direction={direction}>
             Some content
           </Tooltip.Content>
         </ProvidedTooltip>

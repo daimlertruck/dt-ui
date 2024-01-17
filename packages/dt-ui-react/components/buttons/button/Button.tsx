@@ -36,21 +36,21 @@ export const Button = ({
   return (
     <ButtonStyled
       color={color}
-      size={size}
+      data-testid={`${dataTestId}-button`}
       disabled={isDisabled || isLoading}
       isUppercased={isUppercased}
+      onClick={handleButtonClick}
+      size={size}
       style={style}
       variant={variant}
-      onClick={handleButtonClick}
-      data-testid={`${dataTestId}-button`}
     >
       {children}
-      {isLoading && (
+      {isLoading ? (
         <Spinner
           colorScheme={variant !== 'solid' ? 'positive' : 'negative'}
           size='small'
         />
-      )}
+      ) : null}
     </ButtonStyled>
   );
 };

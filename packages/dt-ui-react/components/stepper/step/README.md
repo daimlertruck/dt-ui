@@ -17,7 +17,7 @@ export const App = () => {
     <Stepper>
       {options.map((opt, idx) => (
         <Step
-          key={idx}
+          key={opt}
           isActive={currentStep === idx + 1}
           isCompleted={completed.includes(idx + 1)}
         >

@@ -15,24 +15,24 @@ describe('<Modal/> Component', () => {
   describe('handle modal actions', () => {
     beforeEach(() => {
       render(
-        <ProvidedOverlay isOpen={true} dataTestId='modal-overlay'>
+        <ProvidedOverlay dataTestId='modal-overlay' isOpen>
           <Modal handleClose={handleClick}>
             <Modal.Header
-              title='Title'
-              subTitle='Sub Title'
               handleClose={handleClick}
+              subTitle='Sub Title'
+              title='Title'
             />
             <Modal.Content>Some text here</Modal.Content>
             <Modal.Footer>
               <Button
-                variant='outlined'
                 color='neutral'
-                onClick={handleClick}
                 dataTestId='cancel'
+                onClick={handleClick}
+                variant='outlined'
               >
                 Cancel
               </Button>
-              <Button onClick={handleClick} dataTestId='action'>
+              <Button dataTestId='action' onClick={handleClick}>
                 Action
               </Button>
             </Modal.Footer>
@@ -87,8 +87,8 @@ describe('<Modal/> Component', () => {
     it('should fire handle close function when clicking outside', () => {
       render(
         <>
-          <ProvidedOverlay isOpen={true} dataTestId='modal-overlay'>
-            <Modal hasClickOutside={true} handleClose={handleClick}>
+          <ProvidedOverlay dataTestId='modal-overlay' isOpen>
+            <Modal handleClose={handleClick} hasClickOutside>
               Content
             </Modal>
           </ProvidedOverlay>
@@ -104,8 +104,8 @@ describe('<Modal/> Component', () => {
     it('should not fire handle close function when clicking outside', () => {
       render(
         <>
-          <ProvidedOverlay isOpen={true} dataTestId='modal-overlay'>
-            <Modal hasClickOutside={false} handleClose={handleClick}>
+          <ProvidedOverlay dataTestId='modal-overlay' isOpen>
+            <Modal handleClose={handleClick} hasClickOutside={false}>
               Content
             </Modal>
           </ProvidedOverlay>
@@ -123,7 +123,7 @@ describe('<Modal/> Component', () => {
     const modalRef = React.createRef<HTMLDivElement>();
     render(
       <Provider>
-        <Overlay isOpen={true} ref={modalRef}>
+        <Overlay isOpen ref={modalRef}>
           <Modal handleClose={handleClick}>Content</Modal>
         </Overlay>
       </Provider>
@@ -136,13 +136,9 @@ describe('<Modal/> Component', () => {
     beforeEach(() => {
       render(
         <>
-          <ProvidedOverlay isOpen={true} dataTestId='modal-overlay'>
-            <Modal
-              handleClose={handleClick}
-              isLoading={true}
-              hasClickOutside={true}
-            >
-              <Modal.Header title='Title' handleClose={handleClick} />
+          <ProvidedOverlay dataTestId='modal-overlay' isOpen>
+            <Modal handleClose={handleClick} hasClickOutside isLoading>
+              <Modal.Header handleClose={handleClick} title='Title' />
               <Modal.Content>Some text here</Modal.Content>
             </Modal>
           </ProvidedOverlay>

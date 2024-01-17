@@ -37,10 +37,10 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
         {type === 'button' ? (
           <ButtonLinkStyled
             data-testid={dataTestId ?? 'link-button'}
-            variant='solid'
-            size={textSize as ButtonSize}
             ref={ref}
+            size={textSize as ButtonSize}
             style={style}
+            variant='solid'
             {...rest}
             color='primary'
           >
@@ -48,13 +48,13 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
           </ButtonLinkStyled>
         ) : (
           <LinkStyled
-            textSize={textSize}
-            ref={ref}
             data-testid={dataTestId ?? 'link'}
-            onClick={onClick}
             disabled={isDisabled}
             isUnderline={isUnderline}
+            onClick={onClick}
+            ref={ref}
             style={style}
+            textSize={textSize}
             {...rest}
           >
             {children}

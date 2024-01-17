@@ -22,8 +22,8 @@ const Dropdown = ({
   name,
   dataTestId = 'dropdown',
 }: DropdownProps) => (
-  <DropdownContextProvider name={name} defaultValue={defaultValue}>
-    <BaseDropdownStyled role='menu' style={style} data-testid={dataTestId}>
+  <DropdownContextProvider defaultValue={defaultValue} name={name}>
+    <BaseDropdownStyled data-testid={dataTestId} role='menu' style={style}>
       {children}
     </BaseDropdownStyled>
   </DropdownContextProvider>

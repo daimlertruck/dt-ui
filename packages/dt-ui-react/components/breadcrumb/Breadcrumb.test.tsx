@@ -28,13 +28,10 @@ describe('<Breadcrumb /> component', () => {
     ];
 
     const { container } = render(
-      <ProvidedBreadcrumb separator={'arrow'}>
-        {breadcrumbs.map((breadcrumb, i) => (
-          <Breadcrumb.Item
-            key={`${i}-${breadcrumb.name}`}
-            disabled={breadcrumb.disabled}
-          >
-            {breadcrumb.showIcon && <ViewAgendaIcon />}
+      <ProvidedBreadcrumb separator='arrow'>
+        {breadcrumbs.map((breadcrumb) => (
+          <Breadcrumb.Item key={breadcrumb.name}>
+            {breadcrumb.showIcon ? <ViewAgendaIcon /> : null}
             <a href='/'>{breadcrumb.name}</a>
           </Breadcrumb.Item>
         ))}

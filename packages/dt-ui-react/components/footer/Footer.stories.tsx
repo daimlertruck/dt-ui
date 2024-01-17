@@ -8,13 +8,13 @@ export default {
 export const Default = () => (
   <Footer>
     <FooterItem>
-      <a>First Item</a>
+      <a href='/'>First Item</a>
     </FooterItem>
     <FooterItem>
-      <a>Second Item</a>
+      <a href='/'>Second Item</a>
     </FooterItem>
     <FooterItem>
-      <a>Third Item</a>
+      <a href='/'>Third Item</a>
     </FooterItem>
   </Footer>
 );

@@ -9,15 +9,10 @@ describe('<Radio /> component', () => {
   const ProvidedRadioGroup = withProviders(RadioGroup);
   it('renders Radio group with Radio 1 checked and Radio 3 disabled', () => {
     const { container } = render(
-      <ProvidedRadioGroup onChange={() => null} name='radio-group-name'>
-        <Radio
-          value='1'
-          isDisabled={false}
-          label='Label 1'
-          isDefaultChecked={true}
-        />
-        <Radio value='2' isDisabled={false} label='Label 2' />
-        <Radio value='3' isDisabled={true} label='Label 3' />
+      <ProvidedRadioGroup name='radio-group-name' onChange={() => null}>
+        <Radio isDefaultChecked isDisabled={false} label='Label 1' value='1' />
+        <Radio isDisabled={false} label='Label 2' value='2' />
+        <Radio isDisabled label='Label 3' value='3' />
       </ProvidedRadioGroup>
     );
     expect(container).toMatchSnapshot();
@@ -25,9 +20,9 @@ describe('<Radio /> component', () => {
 
   it('changes selected Radio', () => {
     render(
-      <ProvidedRadioGroup onChange={() => null} name='radio-group-name'>
-        <Radio value='1' label='Label 1' />
-        <Radio value='2' label='Label 2' isDefaultChecked={true} />
+      <ProvidedRadioGroup name='radio-group-name' onChange={() => null}>
+        <Radio label='Label 1' value='1' />
+        <Radio isDefaultChecked label='Label 2' value='2' />
       </ProvidedRadioGroup>
     );
 

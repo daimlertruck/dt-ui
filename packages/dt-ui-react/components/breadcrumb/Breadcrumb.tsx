@@ -29,9 +29,9 @@ export const Breadcrumb = ({
 
   return (
     <BreadcrumbStyled
-      ref={breadcrumbRef}
       aria-label='Breadcrumb'
       data-testid='breadcrumb'
+      ref={breadcrumbRef}
     >
       <ListStyled ref={breadcrumbListRef}>
         {withSeparator(visibleChildren, separator)}

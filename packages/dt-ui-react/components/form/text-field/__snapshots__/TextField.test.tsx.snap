@@ -411,7 +411,9 @@ exports[`<TextField /> component renders input with side button 1`] = `
     <span
       class="emotion-4 emotion-5"
     >
-      <button>
+      <button
+        type="button"
+      >
         My button
       </button>
     </span>

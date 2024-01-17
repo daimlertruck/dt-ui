@@ -3,10 +3,10 @@ import React from 'react';
 const ArrowDropUp = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      width='10'
+      fill='none'
       height='5'
       viewBox='0 0 10 5'
-      fill='none'
+      width='10'
       xmlns='http://www.w3.org/2000/svg'
       {...props}
     >

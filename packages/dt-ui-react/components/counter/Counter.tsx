@@ -19,9 +19,9 @@ export const Counter = ({
   return (
     <CounterStyled
       color={color}
-      outlined={outlined}
-      isLarge={isLarge}
       data-testid={dataTestId ?? 'counter'}
+      isLarge={isLarge}
+      outlined={outlined}
       style={style}
     >
       {children}

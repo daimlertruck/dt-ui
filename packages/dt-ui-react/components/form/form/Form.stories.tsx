@@ -42,8 +42,8 @@ const TemplateFormGroup: Story<GroupProps> = ({
         <TextField label='label 1' />
         <Toggle
           isChecked={checked}
+          isDisabled
           onChange={() => setChecked(!checked)}
-          isDisabled={true}
         >
           <Toggle.Label>inactive</Toggle.Label>
         </Toggle>

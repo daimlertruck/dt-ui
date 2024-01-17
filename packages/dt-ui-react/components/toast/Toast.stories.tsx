@@ -28,7 +28,10 @@ const Template: Story<EmitToastProps & ToastProps & ToasterProps> = ({
 }) => {
   return (
     <>
-      <button onClick={() => emitToast({ type, title, message, dismissible })}>
+      <button
+        onClick={() => emitToast({ type, title, message, dismissible })}
+        type='button'
+      >
         Click me
       </button>
       <Toaster {...props} />
@@ -56,6 +59,7 @@ const WithChildrenTemplate: Story<
         onClick={() =>
           emitToast({ type, title, message, dismissible, children })
         }
+        type='button'
       >
         Click me
       </button>
@@ -75,16 +79,16 @@ WithChildren.args = {
   children: (
     <>
       <Button
-        variant='text'
         onClick={() => console.log('clicked')}
         style={{ padding: '8px 12px', color: '#4A4A4B' }}
+        variant='text'
       >
         Action 1
       </Button>
       <Button
-        variant='text'
-        style={{ padding: '8px 12px', color: '#4A4A4B' }}
         onClick={() => console.log('clicked')}
+        style={{ padding: '8px 12px', color: '#4A4A4B' }}
+        variant='text'
       >
         Action 2
       </Button>

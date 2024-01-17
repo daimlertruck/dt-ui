@@ -34,16 +34,16 @@ export const Spinner = ({
 }: SpinnerProps) => {
   return (
     <Box style={{ margin: 'auto' }}>
-      <SpinnerStyled size={size} colorScheme={colorScheme} />
-      {loadingText && (
+      <SpinnerStyled colorScheme={colorScheme} size={size} />
+      {loadingText ? (
         <Typography
-          style={{ marginTop: theme.spacing['3xs'] }}
-          fontStyles={spinnerTextSize[size]}
           color={spinnerTextColor[colorScheme]}
+          fontStyles={spinnerTextSize[size]}
+          style={{ marginTop: theme.spacing['3xs'] }}
         >
           {loadingText}
         </Typography>
-      )}
+      ) : null}
     </Box>
   );
 };

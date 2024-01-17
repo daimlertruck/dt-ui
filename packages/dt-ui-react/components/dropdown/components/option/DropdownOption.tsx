@@ -37,10 +37,10 @@ export const DropdownOption = ({
   return (
     <DropdownOptionStyled
       data-testid={testId}
-      key={option.value}
       disabled={disabled}
-      role='option'
+      key={option.value}
       onClick={handleClick}
+      role='option'
     >
       {children}
     </DropdownOptionStyled>

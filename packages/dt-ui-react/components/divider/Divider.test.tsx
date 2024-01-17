@@ -9,7 +9,7 @@ describe('<Divider /> component', () => {
   const ProvidedDivider = withProviders(Divider);
 
   it('renders divider component', () => {
-    const { container } = render(<ProvidedDivider></ProvidedDivider>);
+    const { container } = render(<ProvidedDivider />);
 
     expect(container).toMatchSnapshot();
   });

@@ -19,10 +19,10 @@ const LabelField = ({
 
   return (
     <LabelFieldStyled
-      isActive={isActive}
-      htmlFor={forId}
       data-testid={testId}
       disabled={isDisabled}
+      htmlFor={forId}
+      isActive={isActive}
     >
       {children}
     </LabelFieldStyled>

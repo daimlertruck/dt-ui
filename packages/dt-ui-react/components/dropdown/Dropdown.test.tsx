@@ -19,11 +19,11 @@ describe('<Dropdown /> component', () => {
     render(
       <ProvidedDropdown name='test-dropdown'>
         <Dropdown.Select label='Label'>
-          {OPTIONS.map((option, idx) => (
+          {OPTIONS.map((option) => (
             <Dropdown.Option
-              key={idx}
-              option={option}
+              key={option.value}
               onClick={mockendFunction}
+              option={option}
             >
               {option.text ?? option.value}
             </Dropdown.Option>
@@ -62,9 +62,9 @@ describe('<Dropdown /> component', () => {
   it('renders a dropdown without border', () => {
     const { container } = render(
       <ProvidedDropdown>
-        <Dropdown.Select label='Label' hasBorder={false}>
-          {OPTIONS.map((option, idx) => (
-            <Dropdown.Option key={idx} option={option}>
+        <Dropdown.Select hasBorder={false} label='Label'>
+          {OPTIONS.map((option) => (
+            <Dropdown.Option key={option.value} option={option}>
               {option.text ?? option.value}
             </Dropdown.Option>
           ))}

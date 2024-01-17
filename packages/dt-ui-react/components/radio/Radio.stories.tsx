@@ -15,9 +15,9 @@ const Template: Story<RadioProps & RadioGroupProps> = ({
   label,
 }) => {
   return (
-    <RadioGroup direction={direction} onChange={() => null} name='radio-group'>
-      <Radio value='1' label='Label 1' isDisabled={isDisabled} />
-      <Radio value='2' label={label} isDefaultChecked={true} />
+    <RadioGroup direction={direction} name='radio-group' onChange={() => null}>
+      <Radio isDisabled={isDisabled} label='Label 1' value='1' />
+      <Radio isDefaultChecked label={label} value='2' />
     </RadioGroup>
   );
 };

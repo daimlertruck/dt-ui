@@ -35,7 +35,7 @@ const Form = ({
   const testId = dataTestId ?? 'test-form';
 
   return (
-    <FormStyled data-testid={testId} style={style} onSubmit={onSubmit}>
+    <FormStyled data-testid={testId} onSubmit={onSubmit} style={style}>
       {children}
     </FormStyled>
   );
@@ -44,28 +44,28 @@ const Form = ({
 Form.Group = ({ children, isDisabled, title, tooltip }: GroupProps) => {
   return (
     <GroupStyled>
-      {title && (
+      {title ? (
         <LabelStyled>
           <Typography
-            fontStyles='h6'
             color='blue_100'
+            fontStyles='h6'
             style={{ textTransform: 'uppercase' }}
           >
             {title}
           </Typography>
-          {tooltip && (
+          {tooltip ? (
             <Tooltip>
-              <InfoIcon width='16' height='16' />
+              <InfoIcon height='16' width='16' />
               <Tooltip.Content
-                style={{ maxWidth: 250 }}
                 direction={OTooltipDirection.Right}
+                style={{ maxWidth: 250 }}
               >
                 {tooltip}
               </Tooltip.Content>
             </Tooltip>
-          )}
+          ) : null}
         </LabelStyled>
-      )}
+      ) : null}
 
       <GroupItemsStyled disabled={isDisabled}>{children}</GroupItemsStyled>
     </GroupStyled>

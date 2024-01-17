@@ -25,11 +25,11 @@ describe('<MultiSelect /> component', () => {
     render(
       <ProvidedMultiSelect name='test-multi-select'>
         <MultiSelect.Select label='Label' placeholder='Select the Items'>
-          {OPTIONS.map((option, idx) => (
+          {OPTIONS.map((option) => (
             <MultiSelect.Option
-              key={idx}
-              option={option}
+              key={option.value}
               onClick={mockedFunction}
+              option={option}
             >
               {option.text ?? option.value}
             </MultiSelect.Option>
@@ -55,11 +55,11 @@ describe('<MultiSelect /> component', () => {
         name='test-multi-select'
       >
         <MultiSelect.Select label='Label' placeholder='Select the Items'>
-          {OPTIONS.map((option, idx) => (
+          {OPTIONS.map((option) => (
             <MultiSelect.Option
-              key={idx}
-              option={option}
+              key={option.value}
               onClick={mockedFunction}
+              option={option}
             >
               {option.text ?? option.value}
             </MultiSelect.Option>
@@ -76,11 +76,11 @@ describe('<MultiSelect /> component', () => {
     render(
       <ProvidedMultiSelect name='test-multi-select'>
         <MultiSelect.Select label='Label'>
-          {OPTIONS.map((option, idx) => (
+          {OPTIONS.map((option) => (
             <MultiSelect.Option
-              key={idx}
-              option={option}
+              key={option.value}
               onClick={mockedFunction}
+              option={option}
             >
               {option.text ?? option.value}
             </MultiSelect.Option>
@@ -105,11 +105,11 @@ describe('<MultiSelect /> component', () => {
     render(
       <ProvidedMultiSelect name='test-multi-select'>
         <MultiSelect.Select label='Label'>
-          {OPTIONS.map((option, idx) => (
+          {OPTIONS.map((option) => (
             <MultiSelect.Option
-              key={idx}
-              option={option}
+              key={option.value}
               onClick={mockedFunction}
+              option={option}
             >
               {option.text ?? option.value}
             </MultiSelect.Option>
@@ -134,11 +134,11 @@ describe('<MultiSelect /> component', () => {
     render(
       <ProvidedMultiSelect defaultValue={[OPTIONS[3]]} name='test-multi-select'>
         <MultiSelect.Select label='Label'>
-          {OPTIONS.map((option, idx) => (
+          {OPTIONS.map((option) => (
             <MultiSelect.Option
-              key={idx}
-              option={option}
+              key={option.value}
               onClick={mockedFunction}
+              option={option}
             >
               {option.text ?? option.value}
             </MultiSelect.Option>

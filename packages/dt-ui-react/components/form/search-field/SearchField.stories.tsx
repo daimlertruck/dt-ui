@@ -6,5 +6,5 @@ export default {
 };
 
 export const Default = () => {
-  return <SearchField label={'Search for anything'} />;
+  return <SearchField label='Search for anything' />;
 };

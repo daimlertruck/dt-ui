@@ -9,7 +9,7 @@ describe('<NavItem /> component', () => {
   const ProvidedNavItem = withProviders(NavItem);
 
   it('renders li html element with the correct title', () => {
-    render(<ProvidedNavItem matchRoute={true}>ActiveItem</ProvidedNavItem>);
+    render(<ProvidedNavItem matchRoute>ActiveItem</ProvidedNavItem>);
 
     const activeItem = screen.getByRole('listitem');
     expect(activeItem).toHaveTextContent('ActiveItem');

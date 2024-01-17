@@ -15,7 +15,7 @@ describe('<EmptyState /> component', () => {
   it('should render Empty State', () => {
     const { container } = render(
       <ProvidedEmptyState>
-        <EmptyState.Content title={title} description={description} />
+        <EmptyState.Content description={description} title={title} />
       </ProvidedEmptyState>
     );
 
@@ -25,7 +25,7 @@ describe('<EmptyState /> component', () => {
   it('should render Empty State with a Button', () => {
     const { container } = render(
       <ProvidedEmptyState>
-        <EmptyState.Content title={title} description={description} />
+        <EmptyState.Content description={description} title={title} />
         <Button onClick={() => {}} variant='solid'>
           Button
         </Button>
@@ -39,7 +39,7 @@ describe('<EmptyState /> component', () => {
     const { container } = render(
       <ProvidedEmptyState>
         <NoDataIcon />
-        <EmptyState.Content title={title} description={description} />
+        <EmptyState.Content description={description} title={title} />
       </ProvidedEmptyState>
     );
 

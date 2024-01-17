@@ -16,7 +16,7 @@ describe('<Counter /> component', () => {
 
   it('should render outlined counter with neutral color', () => {
     const { container } = render(
-      <ProvidedCounter color='neutral' outlined={true}>
+      <ProvidedCounter color='neutral' outlined>
         Active
       </ProvidedCounter>
     );

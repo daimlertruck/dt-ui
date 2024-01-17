@@ -53,9 +53,9 @@ const Toast = ({
   return (
     <ToastStyled
       data-testid={dataTest}
+      isVisible={isVisible}
       key={id}
       type={type}
-      isVisible={isVisible}
     >
       <ToastIconStyled type={type}>
         <Icon />
@@ -63,11 +63,11 @@ const Toast = ({
       <ToastContentStyled>
         <ToastTextContainer hasCloseButton={dismissible}>
           <ToastTitleStyled>{title}</ToastTitleStyled>
-          {dismissible && (
+          {dismissible ? (
             <ToastButtonCloseStyled onClick={onClose}>
               <CloseIcon />
             </ToastButtonCloseStyled>
-          )}
+          ) : null}
           <ToastMessageStyled>{message}</ToastMessageStyled>
         </ToastTextContainer>
         <ToastActionsStyled hasChildren={Boolean(children)}>

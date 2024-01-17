@@ -93,35 +93,35 @@ export const DatePicker = ({
 
   return (
     <TextFieldStyled style={style}>
-      <LabelField isActive={true} forId={id} isDisabled={isDisabled}>
-        {label} {required && '*'}
+      <LabelField forId={id} isActive isDisabled={isDisabled}>
+        {label} {required ? '*' : null}
       </LabelField>
       <InputFieldStyled
         disabled={isDisabled}
-        ref={inputRef}
-        type='date'
+        hasError={hasError}
+        id={id}
         max={max}
         min={min}
-        id={id}
         name={name || id}
-        hasError={hasError}
-        value={inputValue}
+        onBlur={handleBlur}
         onChange={handleChange}
         onFocus={handleFocus}
-        onBlur={handleBlur}
+        ref={inputRef}
+        type='date'
+        value={inputValue}
         {...rest}
       />
-      {message && (
+      {message ? (
         <TextFieldMessageStyled>
           <Typography
+            color={hasError ? 'red_100' : 'grey_100'}
             element='span'
             fontStyles='pXXSmall'
-            color={hasError ? 'red_100' : 'grey_100'}
           >
             {message}
           </Typography>
         </TextFieldMessageStyled>
-      )}
+      ) : null}
       {children}
     </TextFieldStyled>
   );

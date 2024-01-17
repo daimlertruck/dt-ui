@@ -28,12 +28,12 @@ const Typography = forwardRef<HTMLParagraphElement, TypographyProps>(
 
     return (
       <TypographyStyled
-        ref={ref}
         as={element}
-        fontStyles={fonts}
         color={color}
-        style={style}
         data-testid={dataTestId ?? 'typography'}
+        fontStyles={fonts}
+        ref={ref}
+        style={style}
       >
         {children}
       </TypographyStyled>

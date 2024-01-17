@@ -74,12 +74,12 @@ const Radio = ({
       }}
     >
       <RadioInputStyled
-        id={radioId}
         defaultChecked={isDefaultChecked}
-        type='radio'
         disabled={isDisabled}
-        onChange={onChange}
+        id={radioId}
         name={name}
+        onChange={onChange}
+        type='radio'
         value={value}
       />
       <RadioLabelStyled htmlFor={radioId}>{label}</RadioLabelStyled>

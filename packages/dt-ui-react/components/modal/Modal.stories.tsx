@@ -58,7 +58,9 @@ const Template: Story = ({
 
   return (
     <>
-      <button onClick={toggleModal}>Click me</button>
+      <button onClick={toggleModal} type='button'>
+        Click me
+      </button>
       <Overlay isOpen={isModalOpen}>
         <Modal
           handleClose={toggleModal}
@@ -67,29 +69,29 @@ const Template: Story = ({
         >
           <Modal.Header
             handleClose={toggleModal}
-            title={title}
-            subTitle={subTitle}
-            hasBorder={hasHeaderBorder}
             hasBackgroundColor={hasHeaderBackgroundColor}
+            hasBorder={hasHeaderBorder}
+            subTitle={subTitle}
+            title={title}
           />
-          {content && (
+          {content ? (
             <Modal.Content>
               <p>{content}</p>
             </Modal.Content>
-          )}
+          ) : null}
           <Modal.Footer
-            hasBorder={hasFooterBorder}
             hasBackgroundColor={hasFooterBackgroundColor}
+            hasBorder={hasFooterBorder}
           >
             <Button
-              variant='outlined'
               color='neutral'
-              onClick={toggleModal}
               dataTestId='cancel'
+              onClick={toggleModal}
+              variant='outlined'
             >
               Cancel
             </Button>
-            <Button onClick={() => null} dataTestId='action'>
+            <Button dataTestId='action' onClick={() => null}>
               {actionTitle}
             </Button>
           </Modal.Footer>

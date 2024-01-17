@@ -12,11 +12,7 @@ describe('<Toggle /> component', () => {
   describe('when the toggle is disabled and is checked', () => {
     it('should render a toggle with grey 400 bg color and light grey label color', () => {
       const { container } = render(
-        <ProvidedToggle
-          isDisabled={true}
-          isChecked={true}
-          onChange={() => null}
-        >
+        <ProvidedToggle isChecked isDisabled onChange={() => null}>
           <Toggle.Label>{LABEL}</Toggle.Label>
         </ProvidedToggle>
       );
@@ -28,11 +24,7 @@ describe('<Toggle /> component', () => {
   describe("when the toggle is disabled and isn't checked", () => {
     it('should render a toggle with 300 grey bg color and light grey label color', () => {
       const { container } = render(
-        <ProvidedToggle
-          isDisabled={true}
-          isChecked={false}
-          onChange={() => null}
-        >
+        <ProvidedToggle isChecked={false} isDisabled onChange={() => null}>
           <Toggle.Label>{LABEL}</Toggle.Label>
         </ProvidedToggle>
       );
@@ -44,11 +36,7 @@ describe('<Toggle /> component', () => {
   describe("when the toggle isn't disabled and is checked with default state", () => {
     it('should render a toggle with green color and a label', () => {
       const { container } = render(
-        <ProvidedToggle
-          isDisabled={false}
-          isChecked={true}
-          onChange={() => null}
-        >
+        <ProvidedToggle isChecked isDisabled={false} onChange={() => null}>
           {LABEL}
         </ProvidedToggle>
       );
@@ -61,8 +49,8 @@ describe('<Toggle /> component', () => {
     it('should render a toggle with 400 grey and a label', () => {
       const { container } = render(
         <ProvidedToggle
-          isDisabled={false}
           isChecked={false}
+          isDisabled={false}
           onChange={() => null}
         >
           {LABEL}

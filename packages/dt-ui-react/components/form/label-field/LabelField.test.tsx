@@ -13,7 +13,7 @@ describe('<LabelField /> component', () => {
     it('it should render a small font-size and -45º translation', () => {
       const { container } = render(
         <>
-          <ProvidedLabelField forId={INPUT_ID} isActive={true}>
+          <ProvidedLabelField forId={INPUT_ID} isActive>
             My Awesome Input
           </ProvidedLabelField>
           <input id={INPUT_ID} />
@@ -42,7 +42,7 @@ describe('<LabelField /> component', () => {
   it('it renders a disabled label field', () => {
     const { container } = render(
       <>
-        <ProvidedLabelField forId={INPUT_ID} isDisabled={true}>
+        <ProvidedLabelField forId={INPUT_ID} isDisabled>
           My Awesome Input
         </ProvidedLabelField>
         <input id={INPUT_ID} />

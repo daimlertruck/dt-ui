@@ -23,7 +23,7 @@ const Alert = ({ children, dataTestId, type, style }: AlertProps) => {
   const testId = dataTestId ?? 'alert';
 
   return (
-    <AlertStyled data-testid={testId} type={type} style={style}>
+    <AlertStyled data-testid={testId} style={style} type={type}>
       <AlertIconStyled type={type}>
         <Icon />
       </AlertIconStyled>

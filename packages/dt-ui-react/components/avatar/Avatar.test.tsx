@@ -13,9 +13,9 @@ describe('<Avatar /> component', () => {
   it('renders span html element with the correct content', () => {
     const { container } = render(
       <ProvidedAvatar
-        type={AvatarType.Primary}
         size={AvatarSize.Medium}
         title='User Name'
+        type={AvatarType.Primary}
       />
     );
 
@@ -25,10 +25,10 @@ describe('<Avatar /> component', () => {
   it('renders an image element for profile type with the correct alt text', () => {
     render(
       <ProvidedAvatar
-        type={AvatarType.Profile}
+        imageSrc={avatarExampleImage}
         size={AvatarSize.Medium}
         title='User Name'
-        imageSrc={avatarExampleImage}
+        type={AvatarType.Profile}
       />
     );
 
@@ -40,9 +40,9 @@ describe('<Avatar /> component', () => {
   it('renders a div element with the correct acronym for its title', () => {
     render(
       <ProvidedAvatar
-        type={AvatarType.Primary}
         size={AvatarSize.Medium}
         title='User Name'
+        type={AvatarType.Primary}
       />
     );
 
@@ -54,10 +54,10 @@ describe('<Avatar /> component', () => {
   it('renders thumbnail image for profile type when imageSrc fails to load', () => {
     render(
       <ProvidedAvatar
-        type={AvatarType.Profile}
+        imageSrc=''
         size={AvatarSize.Medium}
         title='User Name'
-        imageSrc=''
+        type={AvatarType.Profile}
       />
     );
 
@@ -68,10 +68,10 @@ describe('<Avatar /> component', () => {
   it('renders successfully "avatarExampleImage" for profile type', () => {
     render(
       <ProvidedAvatar
-        type={AvatarType.Profile}
+        imageSrc={avatarExampleImage}
         size={AvatarSize.Medium}
         title='User Name'
-        imageSrc={avatarExampleImage}
+        type={AvatarType.Profile}
       />
     );
 

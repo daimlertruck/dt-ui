@@ -41,16 +41,21 @@ describe('<Table /> component', () => {
         <Table>
           <TableHead>
             <TableRow>
-              {COLUMNS.map((column: string, i: number) => (
-                <ColumnHeader key={i}>{column}</ColumnHeader>
+              {COLUMNS.map((column: string) => (
+                <ColumnHeader key={`column-index-${column}`}>
+                  {column}
+                </ColumnHeader>
               ))}
             </TableRow>
           </TableHead>
           <TableBody>
             {ROWS.map((row: string[], rowIndex: number) => (
-              <TableRow key={rowIndex}>
-                {row.map((content: string, i: number) => (
-                  <DataCell dataLabel={COLUMNS[rowIndex]} key={i}>
+              <TableRow key={`row-index-${row}`}>
+                {row.map((content: string) => (
+                  <DataCell
+                    dataLabel={COLUMNS[rowIndex]}
+                    key={`data-cell-index-${content}`}
+                  >
                     {content}
                   </DataCell>
                 ))}

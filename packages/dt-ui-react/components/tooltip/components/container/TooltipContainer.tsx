@@ -36,9 +36,9 @@ export const TooltipContainer = ({
   return (
     <TooltipContainerStyled
       data-testid={dataTestId ?? 'tooltip-container'}
-      style={style}
       onMouseEnter={showTooltip}
       onMouseLeave={hideTooltip}
+      style={style}
     >
       {children}
     </TooltipContainerStyled>

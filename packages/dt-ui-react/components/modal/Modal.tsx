@@ -40,7 +40,7 @@ export const Overlay = forwardRef<HTMLDivElement, BackdropProps>(
   ({ children, dataTestId, isOpen, type }, ref) => {
     return (
       <Portal isOpen={isOpen}>
-        <Backdrop type={type} isOpen={isOpen} dataTestId={dataTestId} ref={ref}>
+        <Backdrop dataTestId={dataTestId} isOpen={isOpen} ref={ref} type={type}>
           {children}
         </Backdrop>
       </Portal>
@@ -62,11 +62,11 @@ export const Modal = ({
 
   return (
     <ModalStyled ref={ref}>
-      {isLoading && (
+      {isLoading ? (
         <ModalLoadingOverlay>
           <Spinner size='extra-large' />
         </ModalLoadingOverlay>
-      )}
+      ) : null}
       {children}
     </ModalStyled>
   );
@@ -82,28 +82,28 @@ Modal.Header = ({
 }: ModalHeaderProps) => {
   return (
     <HeaderStyled
+      data-testid={dataTestId ?? 'modal-header'}
       hasBackgroundColor={hasBackgroundColor}
       hasBorder={hasBorder}
-      data-testid={dataTestId ?? 'modal-header'}
     >
       <HeaderWrapperStyled>
-        <Typography fontStyles='h4' element='h4' color='textPrimary'>
+        <Typography color='textPrimary' element='h4' fontStyles='h4'>
           {title}
         </Typography>
 
         <IconButton
-          onMouseDown={handleClose}
-          color='neutralDark_700'
           ariaLabel='close modal'
+          color='neutralDark_700'
+          onMouseDown={handleClose}
         >
           <CloseIcon />
         </IconButton>
       </HeaderWrapperStyled>
-      {subTitle && (
-        <Typography fontStyles='body1' element='h5' color='textSecondary'>
+      {subTitle ? (
+        <Typography color='textSecondary' element='h5' fontStyles='body1'>
           {subTitle}
         </Typography>
-      )}
+      ) : null}
     </HeaderStyled>
   );
 };
@@ -120,8 +120,8 @@ Modal.Footer = ({
 }: ModalFooterProps) => {
   return (
     <FooterStyled
-      hasBorder={hasBorder}
       hasBackgroundColor={hasBackgroundColor}
+      hasBorder={hasBorder}
       style={style}
     >
       {children}

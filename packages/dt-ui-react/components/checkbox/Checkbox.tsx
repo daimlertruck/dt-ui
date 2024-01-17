@@ -23,12 +23,12 @@ const CheckBox = ({
   return (
     <Box style={{ flexDirection: 'row' }}>
       <CheckboxInputStyled
-        id={checkboxId}
-        type='checkbox'
         checked={isChecked}
-        disabled={isDisabled}
         data-testid={checkboxId}
+        disabled={isDisabled}
+        id={checkboxId}
         onChange={onChange}
+        type='checkbox'
       />
       <CheckboxLabelStyled htmlFor={checkboxId}>{children}</CheckboxLabelStyled>
     </Box>

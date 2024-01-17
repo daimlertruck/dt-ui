@@ -13,7 +13,7 @@ export const Box = ({
   style,
 }: BoxProps) => {
   return (
-    <BoxStyled style={style} as={element} data-testid={dataTestId}>
+    <BoxStyled as={element} data-testid={dataTestId} style={style}>
       {children}
     </BoxStyled>
   );

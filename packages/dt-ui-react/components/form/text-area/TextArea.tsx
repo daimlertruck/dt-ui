@@ -48,19 +48,19 @@ const TextArea = ({
 
   return (
     <TextAreaWrapper data-testid={testId}>
-      <LabelField isActive={activeInput} forId={testId}>
+      <LabelField forId={testId} isActive={activeInput}>
         {label}
       </LabelField>
       <TextAreaStyled
-        value={value}
-        name={name || testId}
         id={testId}
-        onFocus={handleFocus}
-        onChange={handleChange}
-        onBlur={handleBlur}
         maxLength={maxLength}
+        name={name || testId}
+        onBlur={handleBlur}
+        onChange={handleChange}
+        onFocus={handleFocus}
+        value={value}
       />
-      <Typography element='span' fontStyles='pXSmall' color='grey_100'>
+      <Typography color='grey_100' element='span' fontStyles='pXSmall'>
         {maxLength - chars} Characters
       </Typography>
     </TextAreaWrapper>

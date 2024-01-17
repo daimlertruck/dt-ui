@@ -18,14 +18,14 @@ const Template: Story = ({ totalPages }) => {
         onClick={() => handleChange(currentPage - 1)}
       />
       <PaginationInput
-        value={currentPage}
-        totalPages={totalPages}
-        onHandleKeyDown={handleUserInput}
         onChange={handleChange}
+        onHandleKeyDown={handleUserInput}
+        totalPages={totalPages}
+        value={currentPage}
       />
       <Pagination.Content
-        totalPages={totalPages}
         onClick={() => handleChange(totalPages)}
+        totalPages={totalPages}
       />
       <Pagination.NextItem
         disabled={currentPage >= totalPages || currentPage < 1}

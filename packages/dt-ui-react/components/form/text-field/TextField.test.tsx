@@ -28,8 +28,8 @@ describe('<TextField /> component', () => {
   it('renders input with an initial value', () => {
     render(
       <ProvidedTextField
-        label='My Input with prefilled value'
         initialValue='Initial Value'
+        label='My Input with prefilled value'
       />
     );
 
@@ -47,10 +47,10 @@ describe('<TextField /> component', () => {
   it('should render the TextField with error styles and message', () => {
     const { container } = render(
       <ProvidedTextField
+        hasError
+        initialValue='Initial Value'
         label='My Input with Error Message'
         message='My Error Message'
-        initialValue='Initial Value'
-        hasError={true}
       />
     );
 
@@ -60,9 +60,9 @@ describe('<TextField /> component', () => {
   it('should render the TextField with info message', () => {
     const { container } = render(
       <ProvidedTextField
+        hasError={false}
         label='My Input with info message'
         message='My Infor Message'
-        hasError={false}
       />
     );
 
@@ -71,7 +71,7 @@ describe('<TextField /> component', () => {
 
   it('renders disabled input', () => {
     const { container } = render(
-      <ProvidedTextField label='My disabled input' isDisabled={true} />
+      <ProvidedTextField isDisabled label='My disabled input' />
     );
 
     expect(container).toMatchSnapshot();
@@ -90,7 +90,7 @@ describe('<TextField /> component', () => {
 
   it('renders required text field', () => {
     const { container } = render(
-      <ProvidedTextField label='Required text' required={true} />
+      <ProvidedTextField label='Required text' required />
     );
 
     expect(container.querySelector('label')).toHaveTextContent(
@@ -114,7 +114,7 @@ describe('<TextField /> component', () => {
 
   it('renders Loading input', () => {
     const { container } = render(
-      <ProvidedTextField label='My disabled input' isLoading={true} />
+      <ProvidedTextField isLoading label='My disabled input' />
     );
 
     expect(container).toMatchSnapshot();
@@ -123,7 +123,7 @@ describe('<TextField /> component', () => {
   describe('onBlur event', () => {
     it('should have error state with error message', () => {
       const { container } = render(
-        <ProvidedTextField label='Some text' required={true} />
+        <ProvidedTextField label='Some text' required />
       );
       const input = container.querySelector('input') as HTMLElement;
 
@@ -135,11 +135,7 @@ describe('<TextField /> component', () => {
 
     it('should have active state', () => {
       const { container } = render(
-        <ProvidedTextField
-          label='Some text'
-          required={true}
-          initialValue='Value'
-        />
+        <ProvidedTextField initialValue='Value' label='Some text' required />
       );
       const input = container.querySelector('input') as HTMLElement;
       const label = container.querySelector('label') as HTMLElement;
@@ -152,9 +148,9 @@ describe('<TextField /> component', () => {
   });
 
   it('renders input with side button', () => {
-    const button = <button>My button</button>;
+    const button = <button type='button'>My button</button>;
     const { container } = render(
-      <ProvidedTextField label='My input' icon={button} />
+      <ProvidedTextField icon={button} label='My input' />
     );
 
     expect(container).toMatchSnapshot();

@@ -4,8 +4,8 @@ import { SVGProps } from 'react';
 const Timeline = (props: SVGProps<SVGSVGElement>) => (
   <svg
     fill='none'
-    xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 24 24'
+    xmlns='http://www.w3.org/2000/svg'
     {...props}
   >
     <g clipPath='url(#a)'>
@@ -16,7 +16,7 @@ const Timeline = (props: SVGProps<SVGSVGElement>) => (
     </g>
     <defs>
       <clipPath id='a'>
-        <path fill='currentColor' d='M0 0h24v24H0z' />
+        <path d='M0 0h24v24H0z' fill='currentColor' />
       </clipPath>
     </defs>
   </svg>

@@ -1,16 +1,18 @@
+const { resolve } = require('node:path');
+
 module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
-    'next',
     'turbo',
     'prettier',
+    ...['@vercel/style-guide/eslint/react'].map(require.resolve),
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'prettier'],
+  plugins: ['@typescript-eslint', 'prettier', 'import'],
   rules: {
     'eol-last': [2, 'always'],
     semi: [2, 'always'],
@@ -41,6 +43,20 @@ module.exports = {
           caseInsensitive: true,
         },
         'newlines-between': 'always',
+      },
+    ],
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
+    'react/self-closing-comp': [
+      'warn',
+      {
+        component: true,
+        html: false,
       },
     ],
   },

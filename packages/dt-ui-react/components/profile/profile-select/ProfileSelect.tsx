@@ -23,13 +23,13 @@ export const ProfileSelect = ({
   return (
     <ProfileSelectStyled
       data-testid='profile-selector'
-      onClick={onClick}
       disabled={isLoading}
+      onClick={onClick}
     >
       <Avatar
-        type={AvatarType.Profile}
         size={AvatarSize.Medium}
         title={title}
+        type={AvatarType.Profile}
       />
       {!isMenuOpen ? (
         <ArrowDropDown

@@ -54,18 +54,18 @@ export const MultiSelectOption = ({
     <Box style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
       <MultiSelectOptionStyled
         data-testid={testId}
-        key={option.value}
         disabled={disabled}
-        role='option'
+        key={option.value}
         onClick={handleAddOption}
+        role='option'
       >
         {children}
       </MultiSelectOptionStyled>
-      {option.isRemovable && disabled && (
+      {option.isRemovable && disabled ? (
         <CloseButtonStyled onClick={handleRemoveOption}>
-          <CloseIcon width={12} height={12} />
+          <CloseIcon height={12} width={12} />
         </CloseButtonStyled>
-      )}
+      ) : null}
     </Box>
   );
 };

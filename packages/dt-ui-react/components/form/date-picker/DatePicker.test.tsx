@@ -12,10 +12,10 @@ describe('<DatePicker /> component', () => {
     const { container } = render(
       <ProvidedDatePicker
         initialValue=''
-        required={true}
         label='Choose a date'
-        min='2023-03-30'
         max='2025-03-30'
+        min='2023-03-30'
+        required
       />
     );
 
@@ -27,11 +27,11 @@ describe('<DatePicker /> component', () => {
     const { container } = render(
       <ProvidedDatePicker
         initialValue=''
-        required={true}
         label='Choose a date'
-        min='2023-03-30'
         max='2025-03-30'
+        min='2023-03-30'
         onChange={onChange}
+        required
       />
     );
 
@@ -51,10 +51,10 @@ describe('<DatePicker /> component', () => {
       const { container } = render(
         <ProvidedDatePicker
           initialValue=''
-          required={true}
           label='Choose a date'
-          min='2023-03-30'
           max='2025-03-30'
+          min='2023-03-30'
+          required
         />
       );
       const input = container.querySelector('input') as HTMLElement;
@@ -69,10 +69,10 @@ describe('<DatePicker /> component', () => {
       const { container } = render(
         <ProvidedDatePicker
           initialValue=''
-          required={true}
           label='Choose a date'
-          min='2023-03-30'
           max='2025-03-30'
+          min='2023-03-30'
+          required
         />
       );
       const input = container.querySelector('input') as HTMLElement;

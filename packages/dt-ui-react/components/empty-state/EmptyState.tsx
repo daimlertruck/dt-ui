@@ -17,10 +17,10 @@ export const EmptyState = ({ children, dataTestId }: BaseProps) => (
 EmptyState.Content = ({ title, description }: EmptyStateContentProps) => {
   return (
     <EmptyStateContentStyled>
-      <Typography element='h2' fontStyles='h4' color='textPrimary'>
+      <Typography color='textPrimary' element='h2' fontStyles='h4'>
         {title}
       </Typography>
-      <Typography fontStyles='body1' color='textSecondary'>
+      <Typography color='textSecondary' fontStyles='body1'>
         {description}
       </Typography>
     </EmptyStateContentStyled>

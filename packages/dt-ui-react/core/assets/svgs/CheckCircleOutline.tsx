@@ -3,9 +3,9 @@ import React from 'react';
 const CheckCircleOutlineIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      width='20'
-      height='20'
       fill='currentColor'
+      height='20'
+      width='20'
       xmlns='http://www.w3.org/2000/svg'
       {...props}
     >

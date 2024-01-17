@@ -50,7 +50,7 @@ describe('<Form /> component', () => {
     it('should render a disabled form group', () => {
       const { container } = render(
         <ProvidedForm>
-          <Form.Group isDisabled={true}>
+          <Form.Group isDisabled>
             <TextField label='label 1' />
           </Form.Group>
         </ProvidedForm>

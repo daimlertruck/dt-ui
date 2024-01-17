@@ -28,10 +28,10 @@ describe('<Toast /> component', () => {
       const { container } = render(
         <ProvidedToast
           id={TOAST_ID}
-          type={type}
-          title={TITLE}
           message={MESSAGE}
           onClose={onCloseFn}
+          title={TITLE}
+          type={type}
         />
       );
 
@@ -51,22 +51,22 @@ describe('<Toast /> component', () => {
       const { container } = render(
         <ProvidedToast
           id={TOAST_ID}
-          type={type}
-          title={TITLE}
           message={MESSAGE}
           onClose={onCloseFn}
+          title={TITLE}
+          type={type}
         >
           <Button
             color='primary'
-            variant='text'
             onClick={() => console.log('clicked')}
+            variant='text'
           >
             Text
           </Button>
           <Button
-            variant='text'
             color='primary'
             onClick={() => console.log('clicked')}
+            variant='text'
           >
             Text2
           </Button>
@@ -93,12 +93,12 @@ describe('<Toast /> component', () => {
       ({ type }) => {
         render(
           <ProvidedToast
+            dismissible
             id={TOAST_ID}
-            type={type}
-            title={TITLE}
             message={MESSAGE}
             onClose={onCloseFn}
-            dismissible={true}
+            title={TITLE}
+            type={type}
           />
         );
 
@@ -120,12 +120,12 @@ describe('<Toast /> component', () => {
       ({ type }) => {
         render(
           <ProvidedToast
+            dismissible={false}
             id={TOAST_ID}
-            type={type}
-            title={TITLE}
             message={MESSAGE}
             onClose={onCloseFn}
-            dismissible={false}
+            title={TITLE}
+            type={type}
           />
         );
 

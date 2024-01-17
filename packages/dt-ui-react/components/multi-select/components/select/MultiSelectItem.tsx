@@ -67,32 +67,32 @@ export const MultiSelectItem = ({
     <>
       <MultiSelectStyled
         data-testid={dataTestId}
-        onClick={handleOpenMultiSelect}
         hasError={hasError}
         isDisabled={isDisabled}
+        onClick={handleOpenMultiSelect}
       >
         <div style={{ overflow: 'hidden' }}>
-          <Typography fontStyles='pXXSmall' color='grey_100'>
+          <Typography color='grey_100' fontStyles='pXXSmall'>
             {label}
           </Typography>
           {!state.length ? (
             <Typography
-              fontStyles='pSmall'
               color='grey_200'
+              fontStyles='pSmall'
               style={{ textOverflow: 'ellipsis', overflow: 'hidden' }}
             >
               {placeholder ?? 'Select an option'}
             </Typography>
           ) : (
             <Box style={{ flexDirection: 'row', gap: '8px' }}>
-              {state.map((option, index) => (
+              {state.map((option) => (
                 <Tag
                   dataTestId='multi-select-tag'
                   {...(option.isRemovable && {
                     onClose: (e) => handleRemoveItem(e, option),
                   })}
                   isClickable={option.isRemovable}
-                  key={`${option.value}--${index}`}
+                  key={`tag--${option.value}`}
                 >
                   {option.text}
                 </Tag>
@@ -108,9 +108,9 @@ export const MultiSelectItem = ({
           <OutlinedArrowDropUp />
         )}
       </MultiSelectStyled>
-      {isOpen && (
+      {isOpen ? (
         <DropdownMenu dataTestId={dataTestId}>{clonedChildren}</DropdownMenu>
-      )}
+      ) : null}
     </>
   );
 };

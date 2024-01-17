@@ -42,8 +42,8 @@ Pagination.Content = ({ totalPages, onClick }: ContentProps) => {
     <Typography fontStyles='pXSmall'>
       of{' '}
       <LastPageStyled
-        onClick={onClick}
         data-testid='pagination-last-page'
+        onClick={onClick}
         title='Go to last page'
       >
         {totalPages}
@@ -55,10 +55,10 @@ Pagination.Content = ({ totalPages, onClick }: ContentProps) => {
 Pagination.NextItem = ({ onClick, disabled }: ArrowProps) => {
   return (
     <ArrowStyled
-      title='Go to next page'
-      onClick={onClick}
-      disabled={disabled}
       data-testid='pagination-next-item'
+      disabled={disabled}
+      onClick={onClick}
+      title='Go to next page'
     >
       <ArrowRightIcon />
     </ArrowStyled>
@@ -68,10 +68,10 @@ Pagination.NextItem = ({ onClick, disabled }: ArrowProps) => {
 Pagination.PreviousItem = ({ onClick, disabled }: ArrowProps) => {
   return (
     <ArrowStyled
-      title='Go to previous page'
-      onClick={onClick}
-      disabled={disabled}
       data-testid='pagination-previous-item'
+      disabled={disabled}
+      onClick={onClick}
+      title='Go to previous page'
     >
       <ArrowLeftIcon />
     </ArrowStyled>
@@ -117,10 +117,10 @@ export const PaginationInput = ({
   return (
     <InputStyled
       data-testid='pagination-input'
-      value={inputValue}
-      onKeyDown={onHandleKeyDown}
-      onChange={handleChange}
       hasError={hasError}
+      onChange={handleChange}
+      onKeyDown={onHandleKeyDown}
+      value={inputValue}
     />
   );
 };

@@ -41,7 +41,7 @@ describe('useClickOutside', () => {
 
       return (
         <div data-testid='outside'>
-          <div data-testid='inside' ref={ref}></div>
+          <div data-testid='inside' ref={ref} />
         </div>
       );
     };

@@ -3,10 +3,10 @@ import React from 'react';
 const RemoveCircleOutline = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      width='20'
+      fill='none'
       height='20'
       viewBox='0 0 20 20'
-      fill='none'
+      width='20'
       xmlns='http://www.w3.org/2000/svg'
       {...props}
     >

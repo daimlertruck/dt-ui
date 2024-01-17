@@ -31,15 +31,15 @@ export const Avatar = ({
     showThumbnail ? (
       <AvatarThumbnail />
     ) : (
-      <img src={imageSrc} alt={title} onError={handleImageError} />
+      <img alt={title} onError={handleImageError} src={imageSrc} />
     );
 
   return (
     <Tooltip>
       <AvatarStyled
-        type={type}
-        size={size}
         data-testid={dataTestId ?? 'avatar'}
+        size={size}
+        type={type}
       >
         {type === AvatarType.Profile ? (
           renderProfileImage()

@@ -3,10 +3,10 @@ import React from 'react';
 const OutlinedArrowDropDown = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      width='12'
+      fill='none'
       height='8'
       viewBox='0 0 12 8'
-      fill='none'
+      width='12'
       xmlns='http://www.w3.org/2000/svg'
       {...props}
     >

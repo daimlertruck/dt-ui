@@ -34,13 +34,13 @@ const columnSizes: { [key: string]: string } = {
 
 const renderAvatarWithTitle = (title: string) => (
   <div style={{ display: 'flex' }}>
-    <Avatar title={title} type={AvatarType.TeamMember}></Avatar>
+    <Avatar title={title} type={AvatarType.TeamMember} />
     {title}
   </div>
 );
 
 const renderTag = (content: string) => (
-  <Tag color={content as TagColor} size='small' border='rounded'>
+  <Tag border='rounded' color={content as TagColor} size='small'>
     {
       {
         green: 'ACTIVE',
@@ -77,9 +77,9 @@ const Template: Story = ({ isFixed }) => {
           <TableRow key={row.toString()}>
             {row.map((content: string, i: number) => (
               <DataCell
+                columnWidth={columnSizes[columns[i]]}
                 dataLabel={columns[i]}
                 key={`column-${columns[i]}-${content}`}
-                columnWidth={columnSizes[columns[i]]}
               >
                 {renderContent(i, content)}
               </DataCell>

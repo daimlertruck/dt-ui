@@ -30,8 +30,8 @@ export const Default = ({
     <Dropdown defaultValue={defaultValue}>
       <Dropdown.Container>
         <Dropdown.Select label='Label' {...props}>
-          {options.map((option, idx) => (
-            <Dropdown.Option key={idx} option={option}>
+          {options.map((option) => (
+            <Dropdown.Option key={option.value} option={option}>
               {option.text ?? option.value}
             </Dropdown.Option>
           ))}
@@ -57,8 +57,8 @@ export const WithDefaultValue = ({
     <Dropdown defaultValue={defaultValue}>
       <Dropdown.Container>
         <Dropdown.Select label='Label' {...props}>
-          {options.map((option, idx) => (
-            <Dropdown.Option key={idx} option={option}>
+          {options.map((option) => (
+            <Dropdown.Option key={option.value} option={option}>
               {option.text ?? option.value}
             </Dropdown.Option>
           ))}
@@ -84,8 +84,8 @@ export const WithOneOption = ({
     <Dropdown defaultValue={defaultValue}>
       <Dropdown.Container>
         <Dropdown.Select label='Label' {...props}>
-          {options.map((option, idx) => (
-            <Dropdown.Option key={idx} option={option}>
+          {options.map((option) => (
+            <Dropdown.Option key={option.value} option={option}>
               {option.text ?? option.value}
             </Dropdown.Option>
           ))}
@@ -111,8 +111,8 @@ export const WithMessageOption = ({
     <Dropdown defaultValue={defaultValue}>
       <Dropdown.Container>
         <Dropdown.Select label='Label' {...props}>
-          {options.map((option, idx) => (
-            <Dropdown.Option key={idx} option={option}>
+          {options.map((option) => (
+            <Dropdown.Option key={option.value} option={option}>
               {option.text ?? option.value}
             </Dropdown.Option>
           ))}
@@ -140,13 +140,13 @@ export const OptionsWithOnlyValue = ({
     <Dropdown defaultValue={defaultValue}>
       <Dropdown.Container>
         <Dropdown.Select label='Label' {...props}>
-          {options.map((option, idx) => {
+          {options.map((option) => {
             const internalOption: DropdownOptionValue = {
               value: option.value,
             };
 
             return (
-              <Dropdown.Option key={idx} option={internalOption}>
+              <Dropdown.Option key={option.value} option={internalOption}>
                 {internalOption?.text ?? internalOption.value}
               </Dropdown.Option>
             );

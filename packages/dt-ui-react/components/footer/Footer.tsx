@@ -2,7 +2,7 @@ import { Nav } from '../nav';
 
 import { FooterStyled, FooterItemStyled } from './Footer.styled';
 
-interface FooterProps {
+export interface FooterProps {
   children: React.ReactNode;
   isFixed?: boolean;
 }

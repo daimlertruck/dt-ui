@@ -22,7 +22,7 @@ describe('<Step /> component', () => {
 
     it('active step', () => {
       const { container } = render(
-        <ProvidedStep isActive={true}>
+        <ProvidedStep isActive>
           <Step.Counter>1</Step.Counter>
           <Step.Label>Label</Step.Label>
         </ProvidedStep>
@@ -33,7 +33,7 @@ describe('<Step /> component', () => {
 
     it('disabled step', () => {
       const { container } = render(
-        <ProvidedStep isDisabled={true}>
+        <ProvidedStep isDisabled>
           <Step.Counter>1</Step.Counter>
           <Step.Label>Label</Step.Label>
         </ProvidedStep>
@@ -44,7 +44,7 @@ describe('<Step /> component', () => {
 
     it('error step', () => {
       const { container } = render(
-        <ProvidedStep isError={true}>
+        <ProvidedStep isError>
           <Step.Counter>1</Step.Counter>
           <Step.Label>Label</Step.Label>
         </ProvidedStep>
@@ -66,7 +66,7 @@ describe('<Step /> component', () => {
 
     it('should render active behaviour', () => {
       const { container } = render(
-        <ProvidedStepCounter isActive={true}>1</ProvidedStepCounter>
+        <ProvidedStepCounter isActive>1</ProvidedStepCounter>
       );
 
       expect(container).toMatchSnapshot();
@@ -74,7 +74,7 @@ describe('<Step /> component', () => {
 
     it('should render completed behaviour', () => {
       const { container } = render(
-        <ProvidedStepCounter isCompleted={true}>1</ProvidedStepCounter>
+        <ProvidedStepCounter isCompleted>1</ProvidedStepCounter>
       );
 
       expect(container).toMatchSnapshot();
@@ -93,7 +93,7 @@ describe('<Step /> component', () => {
 
     it('should render active behaviour', () => {
       const { container } = render(
-        <ProvidedStepLabel isActive={true}>Label</ProvidedStepLabel>
+        <ProvidedStepLabel isActive>Label</ProvidedStepLabel>
       );
 
       expect(container).toMatchSnapshot();
@@ -101,7 +101,7 @@ describe('<Step /> component', () => {
 
     it('should render completed behaviour', () => {
       const { container } = render(
-        <ProvidedStepLabel isCompleted={true}>1</ProvidedStepLabel>
+        <ProvidedStepLabel isCompleted>1</ProvidedStepLabel>
       );
 
       expect(container).toMatchSnapshot();

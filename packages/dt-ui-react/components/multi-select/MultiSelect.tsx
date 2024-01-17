@@ -20,8 +20,8 @@ const MultiSelect = ({
   name,
   dataTestId = 'multi-select',
 }: MultiSelectProps) => (
-  <MultiSelectContextProvider name={name} defaultValue={defaultValue}>
-    <BaseMultiSelectStyled role='menu' data-testid={dataTestId}>
+  <MultiSelectContextProvider defaultValue={defaultValue} name={name}>
+    <BaseMultiSelectStyled data-testid={dataTestId} role='menu'>
       {children}
     </BaseMultiSelectStyled>
   </MultiSelectContextProvider>

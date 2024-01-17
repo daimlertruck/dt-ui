@@ -29,13 +29,13 @@ export const TooltipContent = ({
   return children ? (
     <Portal isOpen={isVisible}>
       <TooltipContentStyled
+        background={background}
         data-testid={dataTestId ?? 'tooltip-content'}
         direction={direction}
-        background={background}
+        left={left}
         role='tooltip'
         style={style}
         top={top}
-        left={left}
       >
         {children}
       </TooltipContentStyled>

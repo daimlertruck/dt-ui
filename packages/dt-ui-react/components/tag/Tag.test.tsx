@@ -29,7 +29,7 @@ describe('<Tag /> component', () => {
       const onClick = jest.fn();
 
       const { getByTestId, queryByTestId } = render(
-        <ProvidedTag isDisabled={isDisabled} onClick={onClick} dataTestId='tag'>
+        <ProvidedTag dataTestId='tag' isDisabled={isDisabled} onClick={onClick}>
           Click me
         </ProvidedTag>
       );
@@ -53,10 +53,10 @@ describe('<Tag /> component', () => {
 
       const { getByTestId } = render(
         <ProvidedTag
+          dataTestId='tag'
           isDisabled={isDisabled}
           onClick={onClick}
           onClose={onClose}
-          dataTestId='tag'
         >
           Click me
         </ProvidedTag>
@@ -91,15 +91,15 @@ describe('<Tag /> component', () => {
     }: TagProps) => {
       const { getByTestId } = render(
         <ProvidedTag
-          isDisabled={isDisabled}
-          isClickable={isClickable}
-          variant={variant}
-          color={color}
           border={border}
-          size={size}
+          color={color}
+          dataTestId='tag'
+          isClickable={isClickable}
+          isDisabled={isDisabled}
           onClick={onClick}
           onClose={onClose}
-          dataTestId='tag'
+          size={size}
+          variant={variant}
         >
           Click me
         </ProvidedTag>

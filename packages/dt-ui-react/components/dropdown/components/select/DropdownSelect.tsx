@@ -73,21 +73,21 @@ export const DropdownSelect = ({
       <SelectDropdownStyled
         data-testid={dataTestId}
         disabled={disabled}
-        onClick={handleClick}
-        style={style}
         hasBorder={hasBorder}
         hasError={hasError}
+        onClick={handleClick}
+        style={style}
       >
         <div style={{ overflow: 'hidden' }}>
           <Typography
-            fontStyles='pXXSmall'
             color={disabled ? 'grey_90' : 'grey_100'}
+            fontStyles='pXXSmall'
           >
             {label}
           </Typography>
           <Typography
-            fontStyles='pSmall'
             color={disabled ? 'grey_100' : 'grey_300'}
+            fontStyles='pSmall'
             style={{ textOverflow: 'ellipsis', overflow: 'hidden' }}
           >
             {!state.value ? 'Select an option' : state.text}
@@ -101,9 +101,9 @@ export const DropdownSelect = ({
           <OutlinedArrowDropUp />
         )}
       </SelectDropdownStyled>
-      {isOpen && (
+      {isOpen ? (
         <DropdownMenu dataTestId={dataTestId}>{children}</DropdownMenu>
-      )}
+      ) : null}
     </>
   );
 };

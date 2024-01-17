@@ -23,9 +23,9 @@ const Template: Story<BreadcrumbProps> = ({ separator }) => {
 
   return (
     <Breadcrumb separator={separator}>
-      {breadcrumbs.map((breadcrumb, i) => (
-        <Breadcrumb.Item key={`${i}-${breadcrumb.name}`}>
-          {breadcrumb.showIcon && <ViewAgendaIcon />}
+      {breadcrumbs.map((breadcrumb) => (
+        <Breadcrumb.Item key={breadcrumb.name}>
+          {breadcrumb.showIcon ? <ViewAgendaIcon /> : null}
           <a href='/'>{breadcrumb.name}</a>
         </Breadcrumb.Item>
       ))}

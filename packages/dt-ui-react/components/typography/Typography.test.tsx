@@ -20,9 +20,9 @@ describe('<Typography /> component', () => {
     const { container } = render(
       <ProvidedTypography
         color='red_100'
-        fontStyles='h4'
-        element='h1'
         dataTestId='typography-h1'
+        element='h1'
+        fontStyles='h4'
       >
         Some text
       </ProvidedTypography>

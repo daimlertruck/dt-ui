@@ -53,34 +53,34 @@ export const Tag = ({
 
   return (
     <TagStyled
-      style={style}
-      variant={variant}
-      color={color}
+      aria-disabled={isDisabled}
       border={border}
-      size={size}
+      color={color}
+      data-testid={dataTestIdName}
       hasHover={hasHoverStyle}
       isClickable={hasClickableStyle}
-      isDismissible={isDismissible}
       isDisabled={isDisabled}
+      isDismissible={isDismissible}
       onClick={handleClickTag}
-      data-testid={dataTestIdName}
-      aria-disabled={isDisabled}
+      size={size}
+      style={style}
+      variant={variant}
     >
       {children}
 
-      {isDismissible && (
+      {isDismissible ? (
         <TagButtonCloseStyled
-          variant={variant}
-          color={color}
-          hasHover={hasHoverStyle}
-          disabled={isDisabled}
-          onClick={onClose}
-          data-testid={`${dataTestIdName}-close-button`}
           aria-disabled={isDisabled}
+          color={color}
+          data-testid={`${dataTestIdName}-close-button`}
+          disabled={isDisabled}
+          hasHover={hasHoverStyle}
+          onClick={onClose}
+          variant={variant}
         >
-          <CloseIcon width={12} height={12} />
+          <CloseIcon height={12} width={12} />
         </TagButtonCloseStyled>
-      )}
+      ) : null}
     </TagStyled>
   );
 };

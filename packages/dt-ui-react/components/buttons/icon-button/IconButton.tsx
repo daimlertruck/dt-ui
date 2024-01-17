@@ -33,15 +33,15 @@ export const IconButton = ({
 
   return (
     <IconButtonStyled
-      disabled={isDisabled}
+      aria-label={ariaLabel}
       color={color}
+      data-testid={dataTestId ? dataTestId : 'icon-button'}
+      disabled={isDisabled}
       onClick={handleClick}
       onMouseDown={onMouseDown}
-      onMouseOver={onMouseOver}
       onMouseEnter={onMouseEnter}
+      onMouseOver={onMouseOver}
       onMouseUp={onMouseUp}
-      data-testid={dataTestId ?? 'icon-button'}
-      aria-label={ariaLabel}
     >
       {children}
     </IconButtonStyled>

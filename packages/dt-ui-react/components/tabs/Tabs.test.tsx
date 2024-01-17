@@ -18,31 +18,31 @@ describe('Tabs', () => {
           <ProvidedFragment>
             <Tabs>
               <Tabs.Item
-                index='first'
-                handleChange={handleChange}
                 activeTab={activeTab}
+                handleChange={handleChange}
+                index='first'
               >
                 Tab 1
               </Tabs.Item>
               <Tabs.Item
-                index='second'
-                handleChange={handleChange}
                 activeTab={activeTab}
+                handleChange={handleChange}
+                index='second'
               >
                 Tab 2
               </Tabs.Item>
               <Tabs.Item
-                index='third'
-                handleChange={handleChange}
                 activeTab={activeTab}
+                handleChange={handleChange}
+                index='third'
               >
                 Tab 3
               </Tabs.Item>
               <Tabs.Item
-                index='fourth'
-                handleChange={handleChange}
                 activeTab={activeTab}
-                isDisabled={true}
+                handleChange={handleChange}
+                index='fourth'
+                isDisabled
               >
                 Tab 4
               </Tabs.Item>
@@ -74,31 +74,31 @@ describe('Tabs', () => {
           <ProvidedFragment>
             <Tabs orientation='vertical'>
               <Tabs.Item
-                index='first'
-                handleChange={handleChange}
                 activeTab={activeTab}
+                handleChange={handleChange}
+                index='first'
               >
                 Tab 1
               </Tabs.Item>
               <Tabs.Item
-                index='second'
-                handleChange={handleChange}
                 activeTab={activeTab}
+                handleChange={handleChange}
+                index='second'
               >
                 Tab 2
               </Tabs.Item>
               <Tabs.Item
-                index='third'
-                handleChange={handleChange}
                 activeTab={activeTab}
+                handleChange={handleChange}
+                index='third'
               >
                 Tab 3
               </Tabs.Item>
               <Tabs.Item
-                index='fourth'
-                handleChange={handleChange}
                 activeTab={activeTab}
-                isDisabled={true}
+                handleChange={handleChange}
+                index='fourth'
+                isDisabled
               >
                 Tab 4
               </Tabs.Item>
@@ -128,10 +128,10 @@ describe('Tabs', () => {
           <ProvidedFragment>
             <Tabs orientation='vertical'>
               <Tabs.Item
-                index='first'
-                handleChange={handleChange}
                 activeTab={activeTab}
-                hasError={true}
+                handleChange={handleChange}
+                hasError
+                index='first'
               >
                 Tab 1
               </Tabs.Item>
