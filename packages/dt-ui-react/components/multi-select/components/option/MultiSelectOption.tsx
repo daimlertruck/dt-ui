@@ -1,6 +1,6 @@
+import { Box } from '../../../..';
 import { CloseIcon } from '../../../../core/assets';
 import { BaseProps } from '../../../../types';
-import { Box } from '../../../box';
 import { useMultiSelectContext } from '../../context';
 import { MultiSelectOptionValue } from '../../types';
 import { Actions } from '../../types';

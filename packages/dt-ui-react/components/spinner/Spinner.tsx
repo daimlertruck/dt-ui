@@ -1,6 +1,6 @@
+import { Box } from '../..';
 import { theme } from '../../themes/default';
 import { CustomTheme as Theme } from '../../types';
-import { Box } from '../box';
 import { Typography } from '../typography';
 
 import { SpinnerStyled } from './Spinner.styled';

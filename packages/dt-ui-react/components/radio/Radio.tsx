@@ -1,7 +1,7 @@
 import { Children, cloneElement, ReactElement, useMemo } from 'react';
 
+import { Box } from '../..';
 import { BaseProps, Direction } from '../../types';
-import { Box } from '../box';
 
 import {
   RadioInputStyled,

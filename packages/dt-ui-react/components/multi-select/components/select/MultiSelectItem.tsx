@@ -1,12 +1,12 @@
 import { useTheme } from '@emotion/react';
 import { useMemo, Children, ReactElement, cloneElement } from 'react';
 
+import { Box } from '../../../..';
 import {
   OutlinedArrowDropDown,
   OutlinedArrowDropUp,
 } from '../../../../core/assets';
 import { BaseProps } from '../../../../types';
-import { Box } from '../../../box';
 import { DropdownMenu } from '../../../dropdown/components//menu/DropdownMenu';
 import { Tag } from '../../../tag';
 import { Typography } from '../../../typography';

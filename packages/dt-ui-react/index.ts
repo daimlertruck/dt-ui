@@ -36,13 +36,13 @@ export * from './components/description-list';
 export * from './components/alert';
 export * from './components/pagination';
 export * from './components/typography';
-export * from './components/box';
 export * from './components/tabs';
 export * from './components/spinner';
 export * from './components/stepper';
 export * from './components/checkbox';
 export * from './components/radio';
 export * from './components/multi-select';
+export * from '@dt-ui/react-box';
 
 //utils
 export { debounce, useClickOutside, hexToRgba } from './utils/index';

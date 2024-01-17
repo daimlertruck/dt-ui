@@ -1,7 +1,7 @@
 import { ChangeEvent } from 'react';
 
+import { Box } from '../..';
 import { BaseProps } from '../../types';
-import { Box } from '../box';
 
 import { CheckboxInputStyled, CheckboxLabelStyled } from './CheckBox.styled';
 
