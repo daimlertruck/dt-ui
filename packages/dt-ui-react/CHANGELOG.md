@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.37
+
+### Patch Changes
+
+- fix: remove hardcoded fill attribute from InfoOutline icon
+
 ## 0.1.0-beta.36
 
 ### Minor Changes
