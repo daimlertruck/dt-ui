@@ -68,4 +68,4 @@ jobs:
           TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
 
       - name: Run Build
-        run: yarn build
+        run: yarn run turbo build --filter='./packages/*'
