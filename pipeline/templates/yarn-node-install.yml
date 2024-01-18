@@ -1,9 +1,0 @@
-steps:
-  - task: NodeTool@0
-    displayName: Node install
-    inputs:
-      versionSpec: '16.x'
-  - task: YarnInstaller@3
-    inputs:
-      versionSpec: '1.x'
-      checkLatest: true

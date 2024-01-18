@@ -1,0 +1,127 @@
+name: Continous Integration & Version and Tag
+
+env:
+  TBLX_NPM_ARTIFACT_TOKEN: ${{ secrets.TBLX_NPM_ARTIFACT_TOKEN }}
+  TBLX_NPM_ARTIFACT_USERNAME: ${{ secrets.TBLX_NPM_ARTIFACT_USERNAME }}
+  GIT_FAKE_EMAIL: dt-ui@daimlertruck.com
+  GIT_FAKE_USER: dt-ui
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.head_commit.id }}
+  cancel-in-progress: true
+
+jobs:
+  check-fixups:
+    runs-on: self-hosted
+    if: "!contains(github.event.head_commit.message, 'release:')"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Check fixups commits
+        shell: bash
+        run: |
+          fixups=$(git log --oneline origin/main..${{github.ref_name}} -- | grep -e "fixup! " || true)
+          if [ -z "$fixups" ]; then
+            echo "Does not have fixups"
+            exit 0
+          else
+            RED='\033[0;31m'
+            NC='\033[0m' # No Color
+            echo -e "${RED}$fixups${NC}"
+            exit 1
+          fi
+
+  lint:
+    runs-on: self-hosted
+    if: "!contains(github.event.head_commit.message, 'release:')"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup node and yarn
+        uses: "./.github/actions/yarn-node-install"
+        with:
+          CACHE_FILE_NAME: "global"
+          TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
+          TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
+
+      - name: Run Lint
+        run: yarn lint
+
+  tests:
+    runs-on: self-hosted
+    if: "!contains(github.event.head_commit.message, 'release:')"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup node and yarn
+        uses: "./.github/actions/yarn-node-install"
+        with:
+          CACHE_FILE_NAME: "global"
+          TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
+          TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
+
+      - name: Run Tests
+        run: yarn test
+
+  build:
+    runs-on: self-hosted
+    if: "!contains(github.event.head_commit.message, 'release:')"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup node and yarn
+        uses: "./.github/actions/yarn-node-install"
+        with:
+          CACHE_FILE_NAME: "global"
+          TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
+          TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
+
+      - name: Run Build
+        run: yarn run turbo build --filter='./packages/*'
+
+  generate-version-tag:
+    needs: [check-fixups, tests, build, lint]
+    runs-on: self-hosted
+    if: github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, 'release:')
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+
+      - name: Setup node and yarn
+        uses: "./.github/actions/yarn-node-install"
+        with:
+          CACHE_FILE_NAME: "global"
+          TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
+          TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
+
+      - name: Setup fake credentials
+        run: |
+          git config --global user.email ${{ env.GIT_FAKE_EMAIL }}
+          git config --global user.name ${{ env.GIT_FAKE_USER }}
+
+      - name: Run build for changeset plugin
+        run: yarn run turbo build --filter=changeset-conventional-commits
+
+      - name: Bump affected packages version and tag
+        run: |
+          yarn changesets:ci
+          git push origin ${{ github.ref }}
+          git push origin --tags
