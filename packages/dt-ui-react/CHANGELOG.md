@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.35
+
+### Patch Changes
+
+- chore: add react and import plugin to eslint
+
 ## 0.1.0-beta.34
 
 ### Minor Changes
