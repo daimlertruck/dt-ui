@@ -1,5 +1,15 @@
 # @dt-ui/react
 
+## 0.1.0-beta.36
+
+### Minor Changes
+
+- feat: add styling to error/outlined button combination
+
+### Patch Changes
+
+- fix: update colors on palette
+
 ## 0.1.0-beta.35
 
 ### Patch Changes
