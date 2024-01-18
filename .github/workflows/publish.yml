@@ -60,6 +60,7 @@ jobs:
         packages: ${{ fromJson(needs.gather-changed-packages.outputs.matrix) }}
         exclude:
           - packages: "//"
+          - packages: "@dt-ui/docs"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
