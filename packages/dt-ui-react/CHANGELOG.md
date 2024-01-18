@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.38
+
+### Minor Changes
+
+- feature: add tooltip on truncated content at Table component
+
 ## 0.1.0-beta.37
 
 ### Patch Changes
