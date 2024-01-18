@@ -71,7 +71,7 @@ stages:
   - stage: VersionAndTag
     displayName: Version and Tag DT-UI
     pool: DEVAgentPool
-    dependsOn: ContinuousIntegration
+    dependsOn: Prepare
     condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
     jobs:
       - job: VersionAndTag
