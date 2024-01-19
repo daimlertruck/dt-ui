@@ -1,6 +1,6 @@
+import { Box } from '@dt-ui/react-box';
 import { ChangeEvent } from 'react';
 
-import { Box } from '../..';
 import { BaseProps } from '../../types';
 
 import { CheckboxInputStyled, CheckboxLabelStyled } from './CheckBox.styled';

@@ -1,4 +1,5 @@
-import { Box } from '../../../..';
+import { Box } from '@dt-ui/react-box';
+
 import { CloseIcon } from '../../../../core/assets';
 import { BaseProps } from '../../../../types';
 import { useMultiSelectContext } from '../../context';

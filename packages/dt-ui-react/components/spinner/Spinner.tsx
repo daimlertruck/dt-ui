@@ -1,4 +1,5 @@
-import { Box } from '../..';
+import { Box } from '@dt-ui/react-box';
+
 import { theme } from '../../themes/default';
 import { CustomTheme as Theme } from '../../types';
 import { Typography } from '../typography';

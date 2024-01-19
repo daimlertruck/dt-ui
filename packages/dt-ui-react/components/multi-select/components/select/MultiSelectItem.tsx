@@ -1,7 +1,7 @@
+import { Box } from '@dt-ui/react-box';
 import { useTheme } from '@emotion/react';
 import { useMemo, Children, ReactElement, cloneElement } from 'react';
 
-import { Box } from '../../../..';
 import {
   OutlinedArrowDropDown,
   OutlinedArrowDropUp,

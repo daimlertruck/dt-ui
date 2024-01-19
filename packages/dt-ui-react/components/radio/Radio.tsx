@@ -1,6 +1,6 @@
+import { Box } from '@dt-ui/react-box';
 import { Children, cloneElement, ReactElement, useMemo } from 'react';
 
-import { Box } from '../..';
 import { BaseProps, Direction } from '../../types';
 
 import {
