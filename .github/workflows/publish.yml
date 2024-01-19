@@ -96,8 +96,7 @@ jobs:
 
       - name: Run build ${{ matrix.packages }}
         run: |
-          yarn build
-        working-directory: ${{ steps.package-detail.outputs.directory }}
+          yarn run turbo build --filter=${{ matrix.packages }}...
 
       - name: Yarn pack ${{ matrix.packages }}
         run: |
