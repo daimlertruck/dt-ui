@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   stories: [
     '../../../packages/dt-ui-react/**/*.stories.@(js|jsx|ts|tsx|mdx)',
@@ -17,5 +19,15 @@ module.exports = {
   staticDirs: ['../static'],
   features: {
     emotionAlias: false,
+  },
+  webpackFinal: async (config) => {
+    config.resolve.alias = {
+      '@dt-ui/react-box': path.resolve(
+        __dirname,
+        '../../../packages/react-packages/box/index.ts'
+      ),
+    };
+
+    return config;
   },
 };
