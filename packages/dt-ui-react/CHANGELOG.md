@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.39
+
+### Patch Changes
+
+- chore: import box from react-packages to dt-ui
+
 ## 0.1.0-beta.38
 
 ### Minor Changes
