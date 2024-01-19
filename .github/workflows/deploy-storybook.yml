@@ -37,6 +37,7 @@ jobs:
           CACHE_FILE_NAME: "global"
           TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
           TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
+          NODE_VERSION: "16"
 
       - name: Build Storybook
         run: |

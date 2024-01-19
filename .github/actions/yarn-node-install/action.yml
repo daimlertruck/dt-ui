@@ -12,6 +12,10 @@ inputs:
   TBLX_NPM_ARTIFACT_USERNAME:
     description: Artifactory technical user username
     required: true
+  NODE_VERSION:
+    description: The node version to be installed
+    required: false
+    default: "18"
 
 runs:
   using: composite
@@ -31,7 +35,7 @@ runs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version: ${{ inputs.NODE_VERSION }}
 
     # As we're using self-hosted runners we need to install yarn
     - name: Install yarn
@@ -49,9 +53,9 @@ runs:
           ~/.yarn
           **/node_modules
         # An explicit key for restoring and saving the cache
-        key: ${{ inputs.CACHE_FILE_NAME }}-node-v16-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+        key: ${{ inputs.CACHE_FILE_NAME }}-node-v${{ inputs.NODE_VERSION }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
         restore-keys: |
-          ${{ inputs.CACHE_FILE_NAME }}-node-v16-deps-
+          ${{ inputs.CACHE_FILE_NAME }}-node-v${{ inputs.NODE_VERSION }}-deps-
 
     # Install dependencies if there isn't a hit on the cache
     - name: Install dependencies
