@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.28
+
+### Minor Changes
+
+- feat: drop specific styles from global
+
 ## 0.1.0-alpha.27
 
 ### Minor Changes
