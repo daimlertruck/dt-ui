@@ -1,0 +1,5 @@
+import{j as a}from"./jsx-runtime-CbCNBOXy.js";import{T as p}from"./TextArea-qDRty_qz.js";import"./index-IybTgENJ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./Typography-9OPir1PX.js";import"./TooltipProvider-7kej92-2.js";import"./index-Hhmu2M5c.js";import"./emotion-react.browser.esm-bvpyIPwg.js";import"./emotion-styled.browser.esm-yeljtSWm.js";import"./emotion-use-insertion-effect-with-fallbacks.browser.esm-_OkO9XJu.js";import"./index-XRl7aEt-.js";import"./index-5tMk2lpP.js";import"./util-HrY-sHGj.js";import"./LabelField-Y3KoqYBv.js";import"./LabelFied.styled-tjO3ymiF.js";import"./TextArea.styled-yvOGH942.js";const h={title:"Data Display/form/TextArea",component:p},s=({...m})=>a.jsx(p,{...m}),r=s.bind({});r.args={label:"App description",maxLength:120};var t,o,e;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:`({
+  ...props
+}) => {
+  return <TextArea {...props} />;
+}`,...(e=(o=r.parameters)==null?void 0:o.docs)==null?void 0:e.source}}};const y=["Default"];export{r as Default,y as __namedExportsOrder,h as default};
