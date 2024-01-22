@@ -107,4 +107,5 @@ export const App = () => {
 | `columnWidth` | `string`          | -        | Sets a fixed width value for the table column, applies only for desktop screens  |
 | `textAlign`   | `TextAlign`       | `left`   | Defines the text align within the column                                         |
 | `dataLabel`   | `string`          | -        | Column name to be shown in the gallery mode (applied in tablet/mobile screens)   |
+| `isVisible`   | `boolean`         | `false`  | Change the overflow visibility of the cell                                       |
  
