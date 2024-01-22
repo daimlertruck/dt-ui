@@ -104,6 +104,7 @@ jobs:
         with:
           ref: ${{ github.ref }}
           fetch-depth: 0
+          token: ${{ secrets.PU_ACCESS_TOKEN }}
 
       - name: Setup node and yarn
         uses: "./.github/actions/yarn-node-install"
