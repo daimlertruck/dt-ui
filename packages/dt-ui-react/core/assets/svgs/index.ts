@@ -12,6 +12,8 @@ export { default as ArrowDropDown } from './ArrowDropDown';
 export { default as ArrowDropUp } from './ArrowDropUp';
 export { default as CloseIcon } from './Close';
 export { default as WarningIcon } from './Warning';
+export { default as WarningOutlinedIcon } from './WarningOutlined';
+export { default as CheckCircleIcon } from './CheckCircle';
 export { default as CheckCircleOutlineIcon } from './CheckCircleOutline';
 export { default as InfoIcon } from './Info';
 export { default as InfoOutlineIcon } from './InfoOutline';

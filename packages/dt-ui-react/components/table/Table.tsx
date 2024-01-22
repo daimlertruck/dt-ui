@@ -33,7 +33,11 @@ interface DataCellProps extends BaseProps {
   dataLabel: string;
 }
 
-export const Table = ({ children, dataTestId, isFixed }: TableProps) => (
+export const Table = ({
+  children,
+  dataTestId,
+  isFixed = false,
+}: TableProps) => (
   <TableStyled data-testid={dataTestId ?? 'table'} isFixed={isFixed}>
     {children}
   </TableStyled>

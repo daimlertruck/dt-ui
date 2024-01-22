@@ -4,7 +4,9 @@ export type CustomTheme = {
     errorDark_200: string;
     errorDark_300: string;
     errorLight_300: string;
+    errorLight_100: string;
     info: string;
+    infoLight_100: string;
     primaryDark_200: string;
     primaryLight_100: string;
     primaryLight_300: string;
@@ -13,8 +15,10 @@ export type CustomTheme = {
     primary: string;
     primaryDark_300: string;
     success: string;
+    successLight_100: string;
     successDark_300: string;
     warning: string;
+    warningLight_100: string;
     warningDark_300: string;
     neutral: string;
     neutralDark_100: string;
@@ -216,6 +220,7 @@ export type CustomTheme = {
   };
   radius: {
     none: string;
+    '6xs': string;
     '5xs': string;
     '4xs': string;
     '3xs': string;
@@ -232,6 +237,7 @@ export type CustomTheme = {
     modal: string;
     emptyState: string;
     dropdown: string;
+    message: string;
   };
   fontFamily: {
     default: string;

@@ -33,7 +33,6 @@ export * from './components/tooltip';
 export * from './components/counter';
 export * from './components/list';
 export * from './components/description-list';
-export * from './components/alert';
 export * from './components/pagination';
 export * from './components/typography';
 export * from './components/tabs';
