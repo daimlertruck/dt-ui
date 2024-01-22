@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.29
+
+### Minor Changes
+
+- feat: export fontFace type
+
 ## 0.1.0-alpha.28
 
 ### Minor Changes
