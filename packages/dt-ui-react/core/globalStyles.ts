@@ -37,12 +37,4 @@ export const globalStyles = (theme: Theme) => css`
     text-decoration: none;
     cursor: pointer;
   }
-
-  .swagger-ui .info {
-    margin: 0px;
-  }
-
-  .swagger-ui .scheme-container:has(.servers) {
-    display: none;
-  }
 `;
