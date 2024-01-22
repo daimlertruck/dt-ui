@@ -100,3 +100,172 @@ exports[`<Dropdown /> component renders a dropdown without border 1`] = `
   </div>
 </div>
 `;
+
+exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
+.emotion-0 {
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.emotion-2 {
+  background: #FFFFFF;
+  border: 1px solid #323232;
+  border-radius: 3px;
+  padding: 8px 16px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+  height: 53px;
+  cursor: pointer;
+}
+
+.emotion-2:disabled {
+  pointer-events: none;
+  background-color: #636464;
+}
+
+.emotion-4 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing: normal;
+  margin: 0;
+  color: #8B8C8C;
+}
+
+.emotion-6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing: normal;
+  margin: 0;
+  color: #151617;
+}
+
+.emotion-8 {
+  background: #FFFFFF;
+  border: 1px solid #D3D4D5;
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px 0;
+  margin: 2px 0;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+  max-height: 180px;
+  overflow: auto;
+}
+
+.emotion-10 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  list-style: none;
+  padding: 8px 16px;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+
+.emotion-10:hover {
+  background: #E6F5FF;
+  cursor: pointer;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 15px;
+  margin-top: 4px;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="dropdown"
+    role="menu"
+  >
+    <button
+      class="emotion-2 emotion-3"
+      data-testid="dropdown-select"
+    >
+      <div
+        style="overflow: hidden;"
+      >
+        <p
+          class="emotion-4 emotion-5"
+          color="grey_100"
+          data-testid="typography"
+        >
+          Label
+        </p>
+        <p
+          class="emotion-6 emotion-5"
+          color="grey_300"
+          data-testid="typography"
+          style="text-overflow: ellipsis; overflow: hidden;"
+        >
+          Select an option
+        </p>
+      </div>
+      <svg
+        fill="none"
+        height="8"
+        viewBox="0 0 12 8"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10.59 7.91016L6 3.33016L1.41 7.91016L1.23266e-07 6.50016L6 0.500156L12 6.50016L10.59 7.91016Z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
+    <ul
+      class="emotion-8 emotion-9"
+      data-testid="dropdown-select-menu"
+    >
+      <li
+        class="emotion-10 emotion-11"
+        data-testid="dropdown-option-1"
+        role="option"
+      >
+        Option 1
+      </li>
+      <li
+        class="emotion-10 emotion-11"
+        data-testid="dropdown-option-2"
+        role="option"
+      >
+        Option 2
+      </li>
+    </ul>
+    <div
+      class="emotion-14 emotion-15"
+      data-testid="dropdown-text"
+    >
+      A short message.
+    </div>
+  </div>
+</div>
+`;

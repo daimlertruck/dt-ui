@@ -1,19 +1,20 @@
 import { BaseProps } from '../../types';
 
 import {
-  DropdownDetail,
-  DropdownSelect,
-  DropdownOption,
   DropdownContainer,
+  DropdownDetail,
+  DropdownMenu,
+  DropdownOption,
+  DropdownSelect,
 } from './components';
 import { DropdownContextProvider } from './context';
 import { BaseDropdownStyled } from './Dropdown.styled';
 import { DropdownOptionValue } from './types';
 
-export type DropdownProps = {
+export interface DropdownProps extends BaseProps {
   defaultValue?: DropdownOptionValue;
   name?: string;
-} & BaseProps;
+}
 
 const Dropdown = ({
   children,
@@ -33,5 +34,5 @@ Dropdown.Container = DropdownContainer;
 Dropdown.Detail = DropdownDetail;
 Dropdown.Select = DropdownSelect;
 Dropdown.Option = DropdownOption;
-
+Dropdown.Menu = DropdownMenu;
 export default Dropdown;

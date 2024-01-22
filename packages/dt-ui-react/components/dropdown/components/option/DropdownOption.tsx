@@ -4,11 +4,11 @@ import { DropdownOptionValue } from '../../types';
 
 import { DropdownOptionStyled } from './DropdownOption.styled';
 
-export type DropdownOptionProps = {
+export interface DropdownOptionProps extends BaseProps {
   option: DropdownOptionValue;
   isDisabled?: boolean;
   onClick?: (option: string, name?: string) => void;
-} & BaseProps;
+}
 
 export const DropdownOption = ({
   dataTestId,
@@ -25,9 +25,12 @@ export const DropdownOption = ({
   };
 
   const handleClick = () => {
-    onClick && onClick(option.value, name);
+    if (disabled) {
+      return;
+    }
     setIsOpen(false);
     setState(value);
+    onClick && onClick(option.value, name);
   };
 
   const disabled = isDisabled || state.value === option.value;

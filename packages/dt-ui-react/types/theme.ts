@@ -225,6 +225,7 @@ export type CustomTheme = {
     button: string;
     modal: string;
     emptyState: string;
+    dropdown: string;
   };
   fontFamily: {
     default: string;

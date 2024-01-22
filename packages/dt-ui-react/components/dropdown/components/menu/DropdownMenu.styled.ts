@@ -1,17 +1,18 @@
 import styled from '@emotion/styled';
 
+import { DROPDOWN_MENU_Z_INDEX } from '../../../../constants';
+
 export const DropdownMenuStyled = styled.ul`
   ${({ theme }) => `
     background: ${theme.colors.white};
-    border: 1px solid ${theme.colors.grey_90};
-    border-radius: 3px;
-    color: ${theme.colors.grey_300};
+    border: 1px solid ${theme.palette.neutralDark_100};
+    border-radius: ${theme.shape.dropdown};
     width: 100%;
-    padding: ${theme.spacing.none};
-    margin: ${theme.spacing.xxxsmall} 0px;
+    padding:${theme.spacing['4xs']} ${theme.spacing.none};
+    margin: ${theme.spacing['6xs']} ${theme.spacing.none};
     position: absolute;
     right: 0;
-    z-index: 1;
+    z-index: ${DROPDOWN_MENU_Z_INDEX};
     max-height: 180px;
     overflow: auto;
   `}

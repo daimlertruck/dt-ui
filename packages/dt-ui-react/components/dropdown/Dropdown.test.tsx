@@ -43,6 +43,30 @@ describe('<Dropdown /> component', () => {
     expect(optionsEl.length).toEqual(2);
   });
 
+  it('renders dropdown menu correctly', () => {
+    const { container } = render(
+      <ProvidedDropdown name='test-dropdown'>
+        <Dropdown.Select label='Label'>
+          {OPTIONS.map((option) => (
+            <Dropdown.Option
+              key={option.value}
+              onClick={mockendFunction}
+              option={option}
+            >
+              {option.text ?? option.value}
+            </Dropdown.Option>
+          ))}
+        </Dropdown.Select>
+        <Dropdown.Detail>A short message.</Dropdown.Detail>
+      </ProvidedDropdown>
+    );
+
+    const select = screen.getByRole('button');
+    fireEvent.click(select);
+
+    expect(container).toMatchSnapshot();
+  });
+
   it('renders disabled dropdown', () => {
     render(
       <ProvidedDropdown>
