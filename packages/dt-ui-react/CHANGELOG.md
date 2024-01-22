@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.40
+
+### Patch Changes
+
+- chore: add react box to dependencies
+
 ## 0.1.0-beta.39
 
 ### Patch Changes
