@@ -16,7 +16,7 @@ on:
       - main
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.head_commit.id }}
+  group: ${{ github.workflow }}-${{ github.event.head_commit.id || github.ref }}
   cancel-in-progress: true
 
 jobs:
