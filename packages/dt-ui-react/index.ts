@@ -26,7 +26,6 @@ export * from './components/footer';
 export * from './components/link';
 export * from './components/divider';
 export * from './components/breadcrumb';
-export * from './components/toast';
 export * from './components/modal';
 export * from './components/avatar';
 export * from './components/tooltip';
@@ -45,6 +44,7 @@ export * from './components/multi-select';
 //independent component packages
 export * from '@dt-ui/react-box';
 export * from '@dt-ui/react-empty-state';
+export * from '@dt-ui/react-toast';
 
 //utils
 export { debounce, useClickOutside, hexToRgba } from './utils/index';

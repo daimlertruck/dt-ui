@@ -7,7 +7,7 @@ import {
   ToasterProps as ToasterProviderProps,
 } from 'react-hot-toast';
 
-import useMedia from '../../hooks/useMedia';
+import { useMedia } from '../../../dt-ui-react/hooks';
 
 import { ToastPosition, ToastType } from './constants';
 import Toast from './Toast';

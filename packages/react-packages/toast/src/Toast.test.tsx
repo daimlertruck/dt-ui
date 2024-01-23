@@ -1,12 +1,14 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { act, fireEvent, render, screen } from '@testing-library/react';
 import { toast } from 'react-hot-toast';
 
-import { withProviders } from '../../utils';
-import { Button } from '../buttons';
+import { emitToast, Toaster } from '..';
+import { withProviders } from '../../../dt-ui-react/utils';
 
 import { ToastType } from './constants';
 import Toast from './Toast';
 import { dismissToast } from './Toaster';
+
+jest.useFakeTimers();
 
 describe('<Toast /> component', () => {
   const TOAST_ID = 'myId';
@@ -57,20 +59,8 @@ describe('<Toast /> component', () => {
           title={TITLE}
           type={type}
         >
-          <Button
-            color='primary'
-            onClick={() => console.log('clicked')}
-            variant='text'
-          >
-            Text
-          </Button>
-          <Button
-            color='primary'
-            onClick={() => console.log('clicked')}
-            variant='text'
-          >
-            Text2
-          </Button>
+          <button type='button'>Text</button>
+          <button type='button'>Text2</button>
         </ProvidedToast>
       );
 
@@ -137,10 +127,79 @@ describe('<Toast /> component', () => {
   });
 
   it('dismisses the toast with the specified ID when dismissToast function is called', () => {
-    toast.dismiss = jest.fn();
+    const spy = jest.spyOn(toast, 'dismiss');
 
     dismissToast('testToastId');
 
-    expect(toast.dismiss).toHaveBeenCalledWith('testToastId');
+    expect(spy).toHaveBeenCalledWith('testToastId');
+  });
+});
+
+describe('emitToast', () => {
+  it.each`
+    type
+    ${ToastType.Success}
+    ${ToastType.Warning}
+    ${ToastType.Info}
+  `(
+    'should emit the toast of type $type and dismiss automatically',
+    async ({ type }) => {
+      const ProvidedToaster = withProviders(Toaster);
+
+      const mockProps = {
+        type,
+        title: 'Title',
+        message: 'Message',
+      };
+
+      render(<ProvidedToaster />);
+
+      act(() => {
+        emitToast(mockProps);
+      });
+
+      expect(screen.getByText('Title')).toBeInTheDocument();
+      expect(screen.getByText('Message')).toBeInTheDocument();
+
+      act(() => {
+        jest.runAllTimers();
+      });
+
+      expect(screen.queryByText('Title')).not.toBeInTheDocument();
+    }
+  );
+
+  test('should emit the toast of type error and only dismiss when clicking close button', () => {
+    const ProvidedToaster = withProviders(Toaster);
+
+    const mockProps = {
+      type: ToastType.Error,
+      title: 'Title',
+      message: 'Message',
+    };
+
+    render(<ProvidedToaster />);
+
+    act(() => {
+      emitToast(mockProps);
+    });
+
+    expect(screen.getByText('Title')).toBeInTheDocument();
+    expect(screen.getByText('Message')).toBeInTheDocument();
+
+    act(() => {
+      jest.runAllTimers();
+    });
+
+    expect(screen.queryByText('Title')).toBeInTheDocument();
+
+    const closeButton = screen.getByRole('button');
+    fireEvent.click(closeButton);
+
+    act(() => {
+      jest.runAllTimers();
+    });
+
+    expect(screen.queryByText('Title')).not.toBeInTheDocument();
   });
 });

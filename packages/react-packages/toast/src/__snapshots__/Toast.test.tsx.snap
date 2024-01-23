@@ -125,54 +125,6 @@ exports[`<Toast /> component should render a toast with title & message & action
   padding-top: 4px;
 }
 
-.emotion-16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  cursor: pointer;
-  width: 100%;
-  min-width: 80px;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  padding: 12px 24px;
-  border: none;
-  color: #008DFC;
-  background-color: transparent;
-}
-
-.emotion-16:hover {
-  color: #025497;
-  background-color: transparent;
-}
-
-.emotion-16:disabled {
-  cursor: not-allowed;
-  color: #9AD2FE;
-}
-
-@media only screen and (min-width: 600px) {
-  .emotion-16 {
-    width: auto;
-  }
-}
-
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -233,16 +185,12 @@ exports[`<Toast /> component should render a toast with title & message & action
         class="emotion-14 emotion-15"
       >
         <button
-          class="emotion-16 emotion-17"
-          color="primary"
-          data-testid="undefined-button"
+          type="button"
         >
           Text
         </button>
         <button
-          class="emotion-16 emotion-17"
-          color="primary"
-          data-testid="undefined-button"
+          type="button"
         >
           Text2
         </button>
@@ -377,54 +325,6 @@ exports[`<Toast /> component should render a toast with title & message & action
   padding-top: 4px;
 }
 
-.emotion-16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  cursor: pointer;
-  width: 100%;
-  min-width: 80px;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  padding: 12px 24px;
-  border: none;
-  color: #008DFC;
-  background-color: transparent;
-}
-
-.emotion-16:hover {
-  color: #025497;
-  background-color: transparent;
-}
-
-.emotion-16:disabled {
-  cursor: not-allowed;
-  color: #9AD2FE;
-}
-
-@media only screen and (min-width: 600px) {
-  .emotion-16 {
-    width: auto;
-  }
-}
-
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -484,16 +384,12 @@ exports[`<Toast /> component should render a toast with title & message & action
         class="emotion-14 emotion-15"
       >
         <button
-          class="emotion-16 emotion-17"
-          color="primary"
-          data-testid="undefined-button"
+          type="button"
         >
           Text
         </button>
         <button
-          class="emotion-16 emotion-17"
-          color="primary"
-          data-testid="undefined-button"
+          type="button"
         >
           Text2
         </button>
@@ -628,54 +524,6 @@ exports[`<Toast /> component should render a toast with title & message & action
   padding-top: 4px;
 }
 
-.emotion-16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  cursor: pointer;
-  width: 100%;
-  min-width: 80px;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  padding: 12px 24px;
-  border: none;
-  color: #008DFC;
-  background-color: transparent;
-}
-
-.emotion-16:hover {
-  color: #025497;
-  background-color: transparent;
-}
-
-.emotion-16:disabled {
-  cursor: not-allowed;
-  color: #9AD2FE;
-}
-
-@media only screen and (min-width: 600px) {
-  .emotion-16 {
-    width: auto;
-  }
-}
-
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -735,16 +583,12 @@ exports[`<Toast /> component should render a toast with title & message & action
         class="emotion-14 emotion-15"
       >
         <button
-          class="emotion-16 emotion-17"
-          color="primary"
-          data-testid="undefined-button"
+          type="button"
         >
           Text
         </button>
         <button
-          class="emotion-16 emotion-17"
-          color="primary"
-          data-testid="undefined-button"
+          type="button"
         >
           Text2
         </button>
@@ -879,54 +723,6 @@ exports[`<Toast /> component should render a toast with title & message & action
   padding-top: 4px;
 }
 
-.emotion-16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  cursor: pointer;
-  width: 100%;
-  min-width: 80px;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  padding: 12px 24px;
-  border: none;
-  color: #008DFC;
-  background-color: transparent;
-}
-
-.emotion-16:hover {
-  color: #025497;
-  background-color: transparent;
-}
-
-.emotion-16:disabled {
-  cursor: not-allowed;
-  color: #9AD2FE;
-}
-
-@media only screen and (min-width: 600px) {
-  .emotion-16 {
-    width: auto;
-  }
-}
-
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -986,16 +782,12 @@ exports[`<Toast /> component should render a toast with title & message & action
         class="emotion-14 emotion-15"
       >
         <button
-          class="emotion-16 emotion-17"
-          color="primary"
-          data-testid="undefined-button"
+          type="button"
         >
           Text
         </button>
         <button
-          class="emotion-16 emotion-17"
-          color="primary"
-          data-testid="undefined-button"
+          type="button"
         >
           Text2
         </button>

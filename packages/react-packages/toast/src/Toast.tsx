@@ -4,8 +4,8 @@ import {
   CheckCircleOutlineIcon,
   WarningIcon,
   CloseIcon,
-} from '../../core/assets/svgs';
-import { BaseProps } from '../../types';
+} from '../../../dt-ui-react/core';
+import { BaseProps } from '../../../dt-ui-react/types';
 
 import { ToastType } from './constants';
 import {

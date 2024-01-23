@@ -1,4 +1,4 @@
-# Toast
+# Toast Package
 
 Toast is a pop-up message used to display relevant information to our users.
 
@@ -96,18 +96,18 @@ const MyComponent = () => {
   const { callToast } = useContext(ToasterContext);
 
   return (
-      <Button
-        onClick={() =>
-          callToast({
-            message: 'myMEssage' + count,
-            type: ToastType.Success,
-            title: 'success',
-            autoHide: false,
-          })
-        }
-      >
-        Clicked Me
-      </Button>
+    <Button
+      onClick={() =>
+        callToast({
+          message: 'myMEssage' + count,
+          type: ToastType.Success,
+          title: 'success',
+          autoHide: false,
+        })
+      }
+    >
+      Clicked Me
+    </Button>
   );
 };
 ```
@@ -117,7 +117,7 @@ const MyComponent = () => {
 ### Toaster
 
 | Property             | Type                            | Default   | Description                                                                                                                                                                        |
-|----------------------|:--------------------------------|:----------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------- | :------------------------------ | :-------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `toastOptions`       | `DefaultToastOptions`           | -         | These will act as default options for all toasts. See the documentation [here](https://react-hot-toast.com/docs/toast).                                                            |
 | `reverseOrder`       | `boolean`                       | -         | Toasts spawn at top by default. Set to true if you want new toasts at the end.                                                                                                     |
 | `gutter`             | `number`                        | 8         | Changes the gap between each toast.                                                                                                                                                |
@@ -128,7 +128,7 @@ const MyComponent = () => {
 ### emitToast
 
 | Property      | Type              | Default | Description                                                               |
-|---------------|:------------------|:--------|:--------------------------------------------------------------------------|
+| ------------- | :---------------- | :------ | :------------------------------------------------------------------------ |
 | `type`        | `enum<ToastType>` | -       | Sets the variant toast ("success", ..., "N")                              |
 | `title`       | `string`          | -       | The title to be displayed                                                 |
 | `message`     | `string`          | -       | The message to be displayed                                               |
@@ -138,7 +138,7 @@ const MyComponent = () => {
 The emitToast extends from ToastOptions. They will overwrite all options received from `<Toaster />`. For example:
 
 | Property   | Type            | Default                            | Description                         |
-|------------|:----------------|:-----------------------------------|:------------------------------------|
+| ---------- | :-------------- | :--------------------------------- | :---------------------------------- |
 | `duration` | `number`        | For success: 4000, error: Infinity | Show the toast for a duration in ms |
 | `style`    | `CSSProperties` | -                                  | Add css directly to the toast.      |
 
@@ -155,7 +155,7 @@ The default duration for any type of toast is 4000ms. For the error type, the du
 ### Toast
 
 | Property      | Type              | Default | Description                                                                                                   |
-|---------------|:------------------|:--------|:--------------------------------------------------------------------------------------------------------------|
+| ------------- | :---------------- | :------ | :------------------------------------------------------------------------------------------------------------ |
 | `id`          | `string`          | -       | Toast identifier                                                                                              |
 | `dataTest`    | `string`          | -       | Defines a value for the data test                                                                             |
 | `title`       | `string`          | -       | The title to be displayed                                                                                     |
@@ -165,3 +165,48 @@ The default duration for any type of toast is 4000ms. For the error type, the du
 | `isVisible`   | `boolean`         | true    | Sets the visibility of the toast and triggers the fade out effect                                             |
 | `dismissable` | `boolean`         | true    | Sets the visibility of a close button that will fire the onClose callback                                     |
 | `children`    | `ReactNode`       | -       | Child components to be rendered at the end of the content section, this can be used to receive action buttons |
+
+### Stack
+
+- [TypeScript](https://www.typescriptlang.org/) for static type checking
+- [React](https://reactjs.org/) — JavaScript library for user interfaces
+- [Emotion](https://emotion.sh/docs/introduction) — for writing css styles with JavaScript
+- [Storybook](https://storybook.js.org/) — UI component environment powered by Vite
+- [Jest](https://jestjs.io/) - JavaScript Testing Framework
+- [React Testing Library](https://testing-library.com/) - to test UI components in a user-centric way
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io) for code formatting
+- [Tsup](https://github.com/egoist/tsup) — TypeScript bundler powered by esbuild
+- [Yarn](https://yarnpkg.com/) from managing packages
+
+### Commands
+
+- `yarn build` - Build the package
+- `yarn dev` - Run the package locally
+- `yarn lint` - Lint all files within this package
+- `yarn test` Run all unit tests
+
+### Compilation
+
+Running `yarn build` from the root of the package will use [tsup](https://tsup.egoist.dev/) to compile the raw TypeScript and React code to plain JavaScript.
+
+The `/dist` folder contains the compiled output.
+
+```bash
+toast
+└── dist
+    ├── index.d.ts  <-- Types
+    ├── index.js    <-- CommonJS version
+    └── index.mjs   <-- ES Modules version
+    ...
+```
+
+### Versioning
+
+Follows [semantic versioning](https://semver.org/)
+
+### &copy; License
+
+Licensed under [Daimler Inner Source License (ISL)](LICENSE.md)
+
+For more info, see [Daimler FOSS](https://git.t3.daimlertruck.com/tbf/daimler-inner-source-license)
