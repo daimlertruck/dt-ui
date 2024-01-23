@@ -1,5 +1,12 @@
 # @dt-ui/react
 
+## 0.1.0-beta.43
+
+### Minor Changes
+
+- feat: update Dropdown according to design
+- feat: add property visibility to Table
+
 ## 0.1.0-beta.42
 
 ### Patch Changes
