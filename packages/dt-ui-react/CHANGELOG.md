@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.42
+
+### Patch Changes
+
+- fix: add missing empty state export
+
 ## 0.1.0-beta.41
 
 ### Minor Changes
