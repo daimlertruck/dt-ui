@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.41
+
+### Minor Changes
+
+- feat: drop specific styles from global styles
+
 ## 0.1.0-beta.40
 
 ### Patch Changes
