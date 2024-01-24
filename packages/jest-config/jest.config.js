@@ -19,6 +19,7 @@ module.exports = {
     'core',
     'constants',
     '.stories.tsx',
+    'dist',
   ],
   collectCoverage: true,
   coverageThreshold: {

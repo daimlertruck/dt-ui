@@ -1,9 +1,9 @@
 import { Story } from '@storybook/react';
 
-import { NoDataIcon } from '../../core';
-import { Button } from '../buttons';
+import { Button } from '../../../dt-ui-react/components/buttons';
+import { NoDataIcon } from '../../../dt-ui-react/core';
 
-import { EmptyState } from './EmptyState';
+import { EmptyState } from '.';
 
 export default {
   title: 'Data Display/EmptyState',

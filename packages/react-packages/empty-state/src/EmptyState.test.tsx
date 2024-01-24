@@ -1,9 +1,8 @@
 import { render } from '@testing-library/react';
-import React from 'react';
 
-import { NoDataIcon } from '../../core';
-import { withProviders } from '../../utils';
-import { Button } from '../buttons';
+import { Button } from '../../../dt-ui-react/components/buttons';
+import { NoDataIcon } from '../../../dt-ui-react/core';
+import { withProviders } from '../../../dt-ui-react/utils';
 
 import { EmptyState } from './EmptyState';
 

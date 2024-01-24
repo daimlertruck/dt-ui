@@ -42,8 +42,8 @@ export * from './components/stepper';
 export * from './components/checkbox';
 export * from './components/radio';
 export * from './components/multi-select';
-export * from './components/empty-state';
 export * from '@dt-ui/react-box';
+export * from '@dt-ui/react-empty-state';
 
 //utils
 export { debounce, useClickOutside, hexToRgba } from './utils/index';

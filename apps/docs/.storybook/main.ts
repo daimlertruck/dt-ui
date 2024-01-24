@@ -52,7 +52,7 @@ const config: StorybookConfig = {
           __dirname,
           `../../../packages/dt-ui-react/index.ts`
         ),
-        ...resolveComponentsPath(['box']),
+        ...resolveComponentsPath(['box', 'empty-state']),
       };
     }
     return config;
