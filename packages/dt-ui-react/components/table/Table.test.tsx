@@ -1,4 +1,5 @@
 import { render, screen, within } from '@testing-library/react';
+import '@emotion/jest';
 
 import { theme } from '../../themes/default';
 import { Provider } from '../Provider';
@@ -117,5 +118,41 @@ describe('<Table /> component', () => {
     );
 
     expect(container).toMatchSnapshot();
+  });
+
+  it('applies the expected styles when Table has Fixed Header', () => {
+    render(
+      <Provider theme={theme}>
+        <TableHead hasFixedHeader>
+          <TableRow>
+            {COLUMNS.map((column: string) => (
+              <ColumnHeader key={`column-header-${column}`}>
+                {column}
+              </ColumnHeader>
+            ))}
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {ROWS.map((row: string[]) => (
+            <TableRow key={row.toString()}>
+              {row.map((content: string, i: number) => (
+                <DataCell
+                  dataLabel={COLUMNS[i]}
+                  key={`column-${COLUMNS[i]}-${content}`}
+                >
+                  {content}
+                </DataCell>
+              ))}
+            </TableRow>
+          ))}
+        </TableBody>
+      </Provider>
+    );
+
+    const theadElement = screen.getByText('Column 1').closest('thead');
+
+    expect(theadElement).toHaveStyleRule('position', 'sticky', {
+      media: `(min-width: ${theme.breakpoints.m})`,
+    });
   });
 });

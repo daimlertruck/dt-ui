@@ -1,7 +1,13 @@
 import styled from '@emotion/styled';
 
+import { TABLE_HEADER_Z_INDEX } from '../../constants';
+
 interface TableStyledProps {
   isFixed?: boolean;
+}
+
+interface TableHeadStyledProps {
+  hasFixedHeader?: boolean;
 }
 
 interface CellStyledProps {
@@ -48,8 +54,8 @@ export const TableBodyStyled = styled.tbody`
   `}
 `;
 
-export const TableHeadStyled = styled.thead`
-  ${({ theme }) => `
+export const TableHeadStyled = styled.thead<TableHeadStyledProps>`
+  ${({ theme, hasFixedHeader }) => `
     display: none;
 
     tr {
@@ -58,6 +64,17 @@ export const TableHeadStyled = styled.thead`
 
     @media (min-width: ${theme.breakpoints.m}) {
       display: table-header-group;
+
+      ${
+        hasFixedHeader &&
+        `
+          position: sticky;
+          top: 0;
+          background-color: ${theme.colors.white};
+          z-index: ${TABLE_HEADER_Z_INDEX};
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05)
+        `
+      }
     }
 `}
 `;

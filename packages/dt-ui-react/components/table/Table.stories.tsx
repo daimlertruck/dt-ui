@@ -96,3 +96,43 @@ export const Default = Template.bind({});
 Default.args = {
   isFixed: false,
 };
+
+const FixedHeaderTemplate: Story = ({ isFixed, hasFixedHeader }) => {
+  return (
+    <div style={{ height: '200px', overflow: 'auto' }}>
+      <Table isFixed={isFixed}>
+        <TableHead hasFixedHeader={hasFixedHeader}>
+          <TableRow>
+            {columns.map((column: string) => (
+              <ColumnHeader key={`column-header-${column}`}>
+                {column}
+              </ColumnHeader>
+            ))}
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {[...rows, ...rows].map((row: string[]) => (
+            <TableRow key={row.toString()}>
+              {row.map((content: string, i: number) => (
+                <DataCell
+                  columnWidth={columnSizes[columns[i]]}
+                  dataLabel={columns[i]}
+                  key={`column-${columns[i]}-${content}`}
+                >
+                  {renderContent(i, content)}
+                </DataCell>
+              ))}
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </div>
+  );
+};
+
+export const FixedHeaderExample = FixedHeaderTemplate.bind({});
+
+FixedHeaderExample.args = {
+  isFixed: true,
+  hasFixedHeader: true,
+};

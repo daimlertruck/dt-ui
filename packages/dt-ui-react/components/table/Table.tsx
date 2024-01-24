@@ -14,6 +14,10 @@ export interface TableProps extends BaseProps {
   isFixed?: boolean;
 }
 
+interface TableHeadProps extends BaseProps {
+  hasFixedHeader?: boolean;
+}
+
 interface TableRowProps extends BaseProps {
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 }
@@ -35,8 +39,11 @@ export const Table = ({ children, dataTestId, isFixed }: TableProps) => (
   </TableStyled>
 );
 
-export const TableHead = ({ children }: BaseProps) => (
-  <TableHeadStyled>{children}</TableHeadStyled>
+export const TableHead = ({
+  children,
+  hasFixedHeader = false,
+}: TableHeadProps) => (
+  <TableHeadStyled hasFixedHeader={hasFixedHeader}>{children}</TableHeadStyled>
 );
 
 export const TableBody = ({ children }: BaseProps) => {
