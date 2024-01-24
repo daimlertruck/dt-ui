@@ -264,6 +264,7 @@ export type CustomTheme = {
     emptyState: string;
     dropdown: string;
     message: string;
+    progressbar: string;
   };
   fontFamily: {
     default: string;

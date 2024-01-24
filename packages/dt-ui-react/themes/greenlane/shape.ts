@@ -5,4 +5,5 @@ export const shape = {
   ...defaultShape,
   button: radius.xl,
   modal: radius['3xs'],
+  progressbar: radius['4xs'],
 };

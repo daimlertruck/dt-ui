@@ -1,0 +1,578 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProgressBar /> component should render the default options correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 48px;
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-columns: minmax(48px, 1fr) 28px 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  height: 16px;
+}
+
+.emotion-4 {
+  width: 100%;
+  background-color: #EBECED;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.emotion-6 {
+  width: 40%;
+  height: 4px;
+  background-color: #008DFC;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+  border-radius: 0px 0px 0px 0px;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="40"
+        class="emotion-4 emotion-5"
+        role="progressbar"
+      >
+        <div
+          class="emotion-6 emotion-7"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ProgressBar /> component should render the helper text when prop is provided 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 48px;
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-columns: minmax(48px, 1fr) 28px 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  height: 16px;
+}
+
+.emotion-4 {
+  width: 100%;
+  background-color: #EBECED;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.emotion-6 {
+  width: 40%;
+  height: 4px;
+  background-color: #008DFC;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.emotion-8 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #A1A2A3;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="40"
+        class="emotion-4 emotion-5"
+        role="progressbar"
+      >
+        <div
+          class="emotion-6 emotion-7"
+        />
+      </div>
+    </div>
+    <p
+      class="emotion-8 emotion-9"
+    >
+      Progress Bar Helper
+    </p>
+  </div>
+</div>
+`;
+
+exports[`<ProgressBar /> component should render the label when prop is provided 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 48px;
+}
+
+.emotion-2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #7C7C7D;
+}
+
+.emotion-4 {
+  display: grid;
+  grid-template-columns: minmax(48px, 1fr) 28px 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  height: 16px;
+}
+
+.emotion-6 {
+  width: 100%;
+  background-color: #EBECED;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.emotion-8 {
+  width: 40%;
+  height: 4px;
+  background-color: #008DFC;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+  border-radius: 0px 0px 0px 0px;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <p
+      class="emotion-2 emotion-3"
+      color="content.body"
+      data-testid="typography"
+    >
+      Progress Bar Label
+    </p>
+    <div
+      class="emotion-4 emotion-5"
+    >
+      <div
+        aria-label="Progress Bar Label"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="40"
+        class="emotion-6 emotion-7"
+        role="progressbar"
+      >
+        <div
+          class="emotion-8 emotion-9"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ProgressBar /> component should render the percentage 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 48px;
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-columns: minmax(48px, 1fr) 28px 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  height: 16px;
+}
+
+.emotion-4 {
+  width: 100%;
+  background-color: #EBECED;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.emotion-6 {
+  width: 40%;
+  height: 4px;
+  background-color: #008DFC;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+  border-radius: 0px 0px 0px 0px;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="40"
+        class="emotion-4 emotion-5"
+        role="progressbar"
+      >
+        <div
+          class="emotion-6 emotion-7"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ProgressBar /> component should render the sizes correctly should render the large size correctly when the prop is provided 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 48px;
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-columns: minmax(48px, 1fr) 28px 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  height: 16px;
+}
+
+.emotion-4 {
+  width: 100%;
+  background-color: #EBECED;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.emotion-6 {
+  width: 40%;
+  height: 8px;
+  background-color: #008DFC;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+  border-radius: 0px 0px 0px 0px;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="40"
+        class="emotion-4 emotion-5"
+        role="progressbar"
+      >
+        <div
+          class="emotion-6 emotion-7"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ProgressBar /> component should render the sizes correctly should render the small size correctly when the prop is provided 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 48px;
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-columns: minmax(48px, 1fr) 28px 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  height: 16px;
+}
+
+.emotion-4 {
+  width: 100%;
+  background-color: #EBECED;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.emotion-6 {
+  width: 40%;
+  height: 4px;
+  background-color: #008DFC;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+  border-radius: 0px 0px 0px 0px;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="40"
+        class="emotion-4 emotion-5"
+        role="progressbar"
+      >
+        <div
+          class="emotion-6 emotion-7"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ProgressBar /> component should render the states correctly should render the error state correctly when the prop is provided 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 48px;
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-columns: minmax(48px, 1fr) 28px 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  height: 16px;
+}
+
+.emotion-4 {
+  width: 100%;
+  background-color: #EBECED;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.emotion-6 {
+  width: 40%;
+  height: 4px;
+  background-color: #FF4A4A;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+  border-radius: 0px 0px 0px 0px;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="40"
+        class="emotion-4 emotion-5"
+        role="progressbar"
+      >
+        <div
+          class="emotion-6 emotion-7"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ProgressBar /> component should render the states correctly should render the success state correctly when the prop is provided 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 48px;
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-columns: minmax(48px, 1fr) 28px 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  height: 16px;
+}
+
+.emotion-4 {
+  width: 100%;
+  background-color: #EBECED;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.emotion-6 {
+  width: 40%;
+  height: 4px;
+  background-color: #21A330;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+  border-radius: 0px 0px 0px 0px;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="40"
+        class="emotion-4 emotion-5"
+        role="progressbar"
+      >
+        <div
+          class="emotion-6 emotion-7"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

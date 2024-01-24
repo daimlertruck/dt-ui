@@ -58,7 +58,7 @@ const Toast = ({
       type={type}
     >
       <ToastIconStyled type={type}>
-        <Icon />
+        <Icon height={20} width={20} />
       </ToastIconStyled>
       <ToastContentStyled>
         <ToastTextContainer hasCloseButton={dismissible}>

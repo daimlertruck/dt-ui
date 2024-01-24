@@ -39,6 +39,7 @@ export * from './components/stepper';
 export * from './components/checkbox';
 export * from './components/radio';
 export * from './components/multi-select';
+export * from './components/progress-bar';
 
 //independent component packages
 export * from '@dt-ui/react-box';
