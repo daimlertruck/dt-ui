@@ -137,3 +137,13 @@ export type CustomTheme = {
 };
 
 export type Colors = keyof CustomTheme['palette'];
+
+type FlattenKeys<T> = T extends object
+  ? {
+      [K in keyof T]: `${Exclude<K, symbol>}${FlattenKeys<T[K]> extends never
+        ? ''
+        : `.${FlattenKeys<T[K]>}`}`;
+    }[keyof T]
+  : never;
+
+export type PaletteKeys = FlattenKeys<CustomTheme['palette']>;
