@@ -53,7 +53,7 @@ runs:
           ~/.yarn
           **/node_modules
         # An explicit key for restoring and saving the cache
-        key: ${{ inputs.CACHE_FILE_NAME }}-node-v${{ inputs.NODE_VERSION }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+        key: ${{ inputs.CACHE_FILE_NAME }}-node-v${{ inputs.NODE_VERSION }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}-${{ hashFiles('packages/dt-ui-react/package.json') }}
         restore-keys: |
           ${{ inputs.CACHE_FILE_NAME }}-node-v${{ inputs.NODE_VERSION }}-deps-
 
