@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.45
+
+### Minor Changes
+
+- feat: create dismiss toast function
+
 ## 0.1.0-beta.44
 
 ### Minor Changes
