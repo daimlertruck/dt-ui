@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.44
+
+### Minor Changes
+
+- feat: drawer component
+
 ## 0.1.0-beta.43
 
 ### Minor Changes
