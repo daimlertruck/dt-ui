@@ -32,7 +32,7 @@ jobs:
       - name: Check fixups commits
         shell: bash
         run: |
-          fixups=$(git log --oneline origin/main..${{github.ref_name}} -- | grep -e "fixup! " || true)
+          fixups=$(git log --oneline origin/main..HEAD -- | grep -e "fixup! " || true)
           if [ -z "$fixups" ]; then
             echo "Does not have fixups"
             exit 0
