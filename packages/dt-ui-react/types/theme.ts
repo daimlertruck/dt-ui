@@ -198,6 +198,12 @@ export type CustomTheme = {
     pXXSmall: string;
     tag: string;
   };
+  animations: {
+    emphasizedDecelerate: {
+      duration: string;
+      timingFunction: string;
+    };
+  };
   breakpoints: {
     s: string;
     m: string;
