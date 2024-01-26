@@ -1,0 +1,1 @@
+import{j as o}from"./jsx-runtime-CbCNBOXy.js";import{L as r}from"./LabelFied.styled-I0kFRCjg.js";const b=({children:t,isDisabled:e,forId:s,isActive:l=!1,dataTestId:a})=>{const d=a??"label-field";return o.jsx(r,{"data-testid":d,disabled:e,htmlFor:s,isActive:l,children:t})};export{b as L};
