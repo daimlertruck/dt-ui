@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.46
+
+### Patch Changes
+
+- chore: update project dependencies
+- Updated dependencies
+  - @dt-ui/react-box@0.1.0-beta.3
+
 ## 0.1.0-beta.45
 
 ### Minor Changes
