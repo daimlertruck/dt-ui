@@ -12,9 +12,6 @@ export const globalStyles = (theme: Theme) => css`
     padding: 0;
     margin: 0;
   }
-  *:focus {
-    outline: none;
-  }
 
   html {
     -webkit-font-smoothing: antialiased;
