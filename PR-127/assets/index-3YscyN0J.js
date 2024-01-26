@@ -1,0 +1,1 @@
+import{j as a}from"./jsx-runtime-CbCNBOXy.js";import{B as x}from"./Box.styled-9IvOy3K5.js";const m=({dataTestId:t,children:o,element:s="div",style:r})=>a.jsx(x,{as:s,"data-testid":t,style:r,children:o});export{m as B};

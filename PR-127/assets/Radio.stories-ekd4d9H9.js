@@ -1,0 +1,10 @@
+import{j as e}from"./jsx-runtime-CbCNBOXy.js";import{B as b}from"./index-3YscyN0J.js";import{r as n}from"./index-IybTgENJ.js";import{R as x,a as f,G as R}from"./Radio.styled-u5UflEwL.js";import"./Box.styled-9IvOy3K5.js";import"./emotion-styled.browser.esm-MfHNkeEy.js";import"./emotion-element-c39617d8.browser.esm-HJoeL-IU.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./emotion-use-insertion-effect-with-fallbacks.browser.esm-_OkO9XJu.js";const D=({children:r,onChange:o,dataTestId:t,direction:s="row",name:l})=>{const d=n.useMemo(()=>n.Children.map(r,a=>a&&n.cloneElement(a,{...a.props,onChange:o,name:l})),[r,o,l]);return e.jsx(R,{"data-testid":t??"radio-group",direction:s,children:d})},p=({onChange:r,label:o,isDefaultChecked:t,isDisabled:s,name:l="radio-group-name",value:d})=>{const a=`${d}-id`;return e.jsxs(b,{style:{flexDirection:"row",gap:8,cursor:s?"default":"pointer"},children:[e.jsx(x,{defaultChecked:t,disabled:s,id:a,name:l,onChange:r,type:"radio",value:d}),e.jsx(f,{htmlFor:a,children:o})]})},v={title:"Data Display/Radio",component:p},j=({isDisabled:r,direction:o,label:t})=>e.jsxs(D,{direction:o,name:"radio-group",onChange:()=>null,children:[e.jsx(p,{isDisabled:r,label:"Label 1",value:"1"}),e.jsx(p,{isDefaultChecked:!0,label:t,value:"2"})]}),i=j.bind({});i.args={isDisabled:!1,direction:"row",label:"Label 2"};var u,c,m;i.parameters={...i.parameters,docs:{...(u=i.parameters)==null?void 0:u.docs,source:{originalSource:`({
+  isDisabled,
+  direction,
+  label
+}) => {
+  return <RadioGroup direction={direction} name='radio-group' onChange={() => null}>
+      <Radio isDisabled={isDisabled} label='Label 1' value='1' />
+      <Radio isDefaultChecked label={label} value='2' />
+    </RadioGroup>;
+}`,...(m=(c=i.parameters)==null?void 0:c.docs)==null?void 0:m.source}}};const w=["Default"];export{i as Default,w as __namedExportsOrder,v as default};
