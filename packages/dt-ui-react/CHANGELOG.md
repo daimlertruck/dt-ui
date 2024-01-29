@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.49
+
+### Patch Changes
+
+- refactor: add style and dataTestId props to spinner
+
 ## 0.1.0-beta.48
 
 ### Patch Changes
