@@ -21,8 +21,6 @@ export const globalStyles = (theme: Theme) => css`
   }
 
   body {
-    color: ${theme.colors.grey_200};
-    background-color: ${theme.colors.grey_70};
     font-family: ${theme.fontFamily.default};
     width: 100%;
     min-height: 100vh;
