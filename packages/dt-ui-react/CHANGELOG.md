@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.48
+
+### Patch Changes
+
+- refactor: use hover browser default style Keep every element with the same hover effect to maintain consistency.
+
 ## 0.1.0-beta.47
 
 ### Patch Changes
