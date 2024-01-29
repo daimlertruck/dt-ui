@@ -16,4 +16,5 @@ export const Default = Template.bind({});
 Default.args = {
   size: 'medium',
   colorScheme: 'positive',
+  loadingText: '',
 };

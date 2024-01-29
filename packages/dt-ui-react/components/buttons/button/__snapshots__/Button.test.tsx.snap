@@ -184,6 +184,7 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
     Button loading
     <div
       class="emotion-2 emotion-3"
+      data-testid="spinner"
       style="margin: auto;"
     >
       <div
@@ -293,6 +294,7 @@ exports[`<Button /> component when loading is true renders a spinner light theme
     Button loading
     <div
       class="emotion-2 emotion-3"
+      data-testid="spinner"
       style="margin: auto;"
     >
       <div

@@ -1,13 +1,13 @@
 import { Box } from '@dt-ui/react-box';
 
 import { theme } from '../../themes/default';
-import { CustomTheme as Theme } from '../../types';
+import { BaseProps, CustomTheme as Theme } from '../../types';
 import { Typography } from '../typography';
 
 import { SpinnerStyled } from './Spinner.styled';
 import { SpinnerColorScheme, SpinnerSize } from './types';
 
-export interface SpinnerProps {
+export interface SpinnerProps extends Omit<BaseProps, 'children'> {
   size?: SpinnerSize;
   colorScheme?: SpinnerColorScheme;
   loadingText?: string;
@@ -29,12 +29,14 @@ const spinnerTextSize: Record<SpinnerSize, keyof Theme['fontStyles']> = {
 };
 
 export const Spinner = ({
+  style,
+  dataTestId = 'spinner',
   size = 'medium',
   colorScheme = 'positive',
   loadingText,
 }: SpinnerProps) => {
   return (
-    <Box style={{ margin: 'auto' }}>
+    <Box dataTestId={dataTestId} style={{ margin: 'auto', ...style }}>
       <SpinnerStyled colorScheme={colorScheme} size={size} />
       {loadingText ? (
         <Typography
