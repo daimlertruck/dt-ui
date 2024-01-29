@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.47
+
+### Patch Changes
+
+- chore: make empty-state an independent package
+- Updated dependencies
+  - @dt-ui/react-empty-state@0.1.0-beta.1
+
 ## 0.1.0-beta.46
 
 ### Patch Changes
