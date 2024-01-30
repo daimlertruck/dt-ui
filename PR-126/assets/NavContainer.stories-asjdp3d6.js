@@ -1,3 +1,0 @@
-import{j as r}from"./jsx-runtime-vNq4Oc-g.js";import{N as m}from"./NavContainer.styled-bHGHfkby.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./emotion-styled.browser.esm-Scfyu_ZY.js";import"./extends-E30VzY7q.js";const n=({children:s,dataTestId:i})=>r.jsx(m,{"data-testid":i??"nav-container",children:s}),x={title:"Data Display/NavContainer",component:n},t=()=>r.jsx(n,{children:r.jsx("div",{children:"Item"})});var a,e,o;t.parameters={...t.parameters,docs:{...(a=t.parameters)==null?void 0:a.docs,source:{originalSource:`() => <NavContainer>
-    <div>Item</div>
-  </NavContainer>`,...(o=(e=t.parameters)==null?void 0:e.docs)==null?void 0:o.source}}};const N=["Default"];export{t as Default,N as __namedExportsOrder,x as default};
