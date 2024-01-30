@@ -33,12 +33,12 @@ const spinnerColors = (
   theme: Theme
 ): Record<SpinnerColorScheme, SpinnerColors> => ({
   positive: {
-    main: theme.palette.primary,
-    background: theme.palette.neutral,
+    main: theme.palette.primary.default,
+    background: theme.palette.primary.contrast,
   },
   negative: {
-    main: theme.palette.primary,
-    background: theme.colors.white,
+    main: theme.palette.content.contrast,
+    background: theme.palette.content.secondary,
   },
 });
 

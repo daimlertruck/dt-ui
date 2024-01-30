@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { CustomTheme as Theme } from '../../../types';
+import { Colors } from '../../../types';
 
 export const StepStyled = styled.li`
   display: flex;
@@ -9,12 +9,16 @@ export const StepStyled = styled.li`
 `;
 
 interface LabelStyledProps {
-  color: keyof Theme['palette'];
+  color: Colors | 'disabled';
 }
 
 export const LabelStyled = styled.span<LabelStyledProps>`
   ${({ theme, color }) => `
     ${theme.fontStyles.pSmall};
-    color: ${theme.palette[color]};
+    color: ${
+      color === 'disabled'
+        ? theme.palette.content.disabled
+        : theme.palette[color].default
+    };
   `}
 `;

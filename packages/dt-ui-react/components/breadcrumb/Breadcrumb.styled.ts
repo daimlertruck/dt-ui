@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const BreadcrumbStyled = styled.nav`
   ${({ theme }) => `
     ${theme.fontStyles.body2}
-    color: ${theme.palette.textSecondary};
+    color: ${theme.palette.content.body};
     margin-bottom: ${theme.spacing['3xs']};
     overflow: hidden;
   `}
@@ -26,15 +26,23 @@ export const ItemStyled = styled.li`
 
     &:not(:last-child) {
       ${theme.fontStyles.link2}
-      color: ${theme.palette.primary};
+      color: ${theme.palette.primary.default};
       cursor: pointer;
+
+      svg {
+        color: ${theme.palette.primary.default};
+      }
       
       & * {
         text-decoration: underline;
       }
       
       &:hover {
-        color: ${theme.palette.primaryDark_300};
+        color: ${theme.palette.primary.dark};
+
+        svg {
+          color: ${theme.palette.primary.dark};
+        }
       }
     }
 
@@ -42,14 +50,8 @@ export const ItemStyled = styled.li`
       color: inherit;
     }
 
-    &:hover {
-      svg {
-        color: ${theme.palette.textPrimary};
-      }
-    }
-
     svg {
-      color: ${theme.palette.textSecondary};
+      color: ${theme.palette.content.body};
     }
 
     &:last-child * {

@@ -14,9 +14,9 @@ describe('<Counter /> component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should render outlined counter with neutral color', () => {
+  it('should render outlined counter with secondary color', () => {
     const { container } = render(
-      <ProvidedCounter color='neutral' outlined>
+      <ProvidedCounter color='secondary' outlined>
         Active
       </ProvidedCounter>
     );

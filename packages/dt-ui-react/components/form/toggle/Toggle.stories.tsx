@@ -27,5 +27,5 @@ Default.args = {
   isDisabled: false,
   label: '',
   checkedColor: 'success',
-  uncheckedColor: 'neutral',
+  uncheckedColor: 'secondary',
 };

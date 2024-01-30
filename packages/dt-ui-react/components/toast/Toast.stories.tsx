@@ -79,15 +79,17 @@ WithChildren.args = {
   children: (
     <>
       <Button
+        color='secondary'
         onClick={() => console.log('clicked')}
-        style={{ padding: '8px 12px', color: '#4A4A4B' }}
+        style={{ padding: '8px 12px' }}
         variant='text'
       >
         Action 1
       </Button>
       <Button
+        color='secondary'
         onClick={() => console.log('clicked')}
-        style={{ padding: '8px 12px', color: '#4A4A4B' }}
+        style={{ padding: '8px 12px' }}
         variant='text'
       >
         Action 2

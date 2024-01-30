@@ -8,13 +8,13 @@ export const NavItemStyled = styled.li<{ matchRoute: boolean }>`
     padding-left: 0px;
 
     a {
-      color: ${theme.colors.white};
+      color: ${theme.palette.primary.contrast};
       cursor: pointer;
     }
 
     a:link,
     a:visited {
-      color: ${matchRoute ? theme.palette.primary : ''};
+      color: ${matchRoute ? theme.palette.primary.default : ''};
     }
   `}
 `;

@@ -41,8 +41,8 @@ describe('<Message /> component', () => {
       expect(screen.queryByTestId('message')).toHaveStyle(
         `background-color: ${
           type === MessageType.Default
-            ? theme.colors.grey_10
-            : theme.palette[`${type}Light_100`]
+            ? theme.palette.base.light
+            : theme.palette[type].light
         };`
       );
 

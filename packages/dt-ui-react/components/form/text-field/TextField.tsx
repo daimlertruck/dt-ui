@@ -137,7 +137,7 @@ export const TextField = ({
       {message ? (
         <TextFieldMessageStyled>
           <Typography
-            color={hasError ? 'red_100' : 'grey_100'}
+            color={hasError ? 'error.default' : 'content.body'}
             element='span'
             fontStyles='pXXSmall'
           >

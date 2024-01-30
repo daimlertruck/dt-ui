@@ -1,9 +1,10 @@
 import styled from '@emotion/styled';
 
-import { CustomTheme as Theme } from '../../types';
+import { CustomTheme as Theme, PaletteKeys } from '../../types';
+import { getContextualColor } from '../../utils';
 
 interface TypographyStyledProps {
-  color: keyof Theme['colors'] | keyof Theme['palette'] | 'unset' | 'inherit';
+  color: keyof Theme['colors'] | PaletteKeys | 'unset' | 'inherit';
   fontStyles: keyof Theme['fontStyles'];
 }
 
@@ -14,7 +15,7 @@ export const TypographyStyled = styled.p<TypographyStyledProps>`
       color === 'unset' || color === 'inherit'
         ? color
         : theme.colors[color as keyof Theme['colors']] ||
-          theme.palette[color as keyof Theme['palette']]
+          getContextualColor(color as PaletteKeys, theme)
     };
    ${theme.responsiveFontStyles[fontStyles]}
   `};

@@ -8,6 +8,12 @@ import { MessageType } from './types';
 export default {
   title: 'Data Display/Message',
   component: Message,
+  argTypes: {
+    type: {
+      options: Object.values(MessageType),
+      control: { type: 'inline-radio' },
+    },
+  },
 };
 
 const Template: StoryFn = ({ title, description, type }) => {

@@ -60,7 +60,7 @@ const TextArea = ({
         onFocus={handleFocus}
         value={value}
       />
-      <Typography color='grey_100' element='span' fontStyles='pXSmall'>
+      <Typography color='content.secondary' element='span' fontStyles='pXSmall'>
         {maxLength - chars} Characters
       </Typography>
     </TextAreaWrapper>

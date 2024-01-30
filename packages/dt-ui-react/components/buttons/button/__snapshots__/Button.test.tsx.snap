@@ -30,12 +30,12 @@ exports[`<Button /> component renders button html element with the correct title
   padding: 12px 24px;
   border: 0;
   color: #FFFFFF;
-  background-color: #036DC1;
+  background-color: #008DFC;
 }
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #013C6B;
+  background-color: #025497;
 }
 
 .emotion-0:disabled {
@@ -120,28 +120,25 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  color: #036DC1;
+  color: #008DFC;
   background-color: #FFFFFF;
-  border: 1px solid #036DC1;
+  border: 1px solid #008DFC;
 }
 
 .emotion-0:hover {
-  color: #013C6B;
-  background-color: #FFFFFF;
-  border: 1px solid #013C6B;
+  color: #025497;
+  border: 1px solid #025497;
 }
 
 .emotion-0:active {
-  color: #013C6B;
-  background-color: #FFFFFF;
-  border: 1px solid #013C6B;
+  color: #025497;
+  border: 1px solid #025497;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
-  color: #CCE8FF;
-  background-color: #FFFFFF;
-  border: 1px solid #CCE8FF;
+  color: #9AD2FE;
+  border: 1px solid #9AD2FE;
 }
 
 @media only screen and (min-width: 600px) {
@@ -167,9 +164,9 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
 .emotion-4 {
   width: 32px;
   height: 32px;
-  border: 2px solid #EBECED;
+  border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #036DC1;
+  border-top: 2px solid #008DFC;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -241,12 +238,12 @@ exports[`<Button /> component when loading is true renders a spinner light theme
   padding: 12px 24px;
   border: 0;
   color: #FFFFFF;
-  background-color: #036DC1;
+  background-color: #008DFC;
 }
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #013C6B;
+  background-color: #025497;
 }
 
 .emotion-0:disabled {
@@ -277,9 +274,9 @@ exports[`<Button /> component when loading is true renders a spinner light theme
 .emotion-4 {
   width: 32px;
   height: 32px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #A1A2A3;
   border-radius: 50%;
-  border-top: 2px solid #036DC1;
+  border-top: 2px solid #FFFFFF;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }

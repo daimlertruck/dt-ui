@@ -33,10 +33,14 @@ export const ProfileSelect = ({
       />
       {!isMenuOpen ? (
         <ArrowDropDown
-          color={isLoading ? theme.colors.grey_90 : theme.colors.white}
+          color={
+            isLoading
+              ? theme.palette.content.disabled
+              : theme.palette.content.contrast
+          }
         />
       ) : (
-        <ArrowDropUp color={theme.colors.white} />
+        <ArrowDropUp color={theme.palette.content.contrast} />
       )}
     </ProfileSelectStyled>
   );

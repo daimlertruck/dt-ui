@@ -84,7 +84,7 @@ const Template: Story = ({
             hasBorder={hasFooterBorder}
           >
             <Button
-              color='neutral'
+              color='secondary'
               dataTestId='cancel'
               onClick={toggleModal}
               variant='outlined'

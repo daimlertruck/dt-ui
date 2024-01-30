@@ -9,7 +9,7 @@ export const LabelFieldStyled = styled.label<LabelFieldProps>`
   ${({ theme }) => theme.fontStyles.pSmall}
 
   color: ${({ theme, disabled }) =>
-    disabled ? theme.colors.grey_90 : theme.colors.grey_100};
+    disabled ? theme.palette.content.disabled : theme.palette.content.body};
   cursor: inherit;
   font-size: ${({ isActive }) => (isActive ? '.75rem' : '1rem')};
   left: 15px;

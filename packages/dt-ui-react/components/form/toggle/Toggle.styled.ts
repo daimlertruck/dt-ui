@@ -18,7 +18,7 @@ export const ToggleSwitchStyled = styled.label`
   width: 40px;
   height: 20px;
   border-radius: 10px;
-  background: ${({ theme }) => theme.colors.grey_100};
+  background: ${({ theme }) => theme.palette.base.light};
   cursor: pointer;
   &::after {
     content: '';
@@ -48,7 +48,9 @@ export const ToggleCheckBoxStyled = styled.input<ToggleStyledProps>`
     ${({ theme, disabled, checkedColor }) =>
       `
       background: ${
-        disabled ? theme.colors.grey_100 : theme.palette[checkedColor]
+        disabled
+          ? theme.palette.base.light
+          : theme.palette[checkedColor].default
       };
     `}
 
@@ -63,14 +65,16 @@ export const ToggleCheckBoxStyled = styled.input<ToggleStyledProps>`
     }
   }
   &:disabled ~ span {
-    color: ${({ theme }) => theme.colors.grey_100};
+    color: ${({ theme }) => theme.palette.content.disabled};
   }
 
   &:not(:checked) + label {
     ${({ theme, disabled, uncheckedColor }) =>
       `
       background: ${
-        disabled ? theme.colors.grey_90 : theme.palette[uncheckedColor]
+        disabled
+          ? theme.palette.base.light
+          : theme.palette[uncheckedColor].default
       };
     `}
   }

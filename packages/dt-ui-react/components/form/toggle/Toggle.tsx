@@ -23,7 +23,7 @@ export const Toggle = ({
   dataTestId,
   children,
   checkedColor = 'success',
-  uncheckedColor = 'neutral',
+  uncheckedColor = 'secondary',
   isDisabled = false,
   isChecked = false,
 }: ToggleProps) => {
@@ -50,7 +50,7 @@ export const Toggle = ({
 Toggle.Label = ({ children, dataTestId }: BaseProps) => {
   return (
     <Typography
-      color='grey_200'
+      color='content.body'
       data-testid={dataTestId ?? 'toggle-label'}
       dataTestId='toggle-label'
       element='span'

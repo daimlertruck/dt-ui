@@ -25,7 +25,7 @@ describe('<Modal/> Component', () => {
             <Modal.Content>Some text here</Modal.Content>
             <Modal.Footer>
               <Button
-                color='neutral'
+                color='secondary'
                 dataTestId='cancel'
                 onClick={handleClick}
                 variant='outlined'

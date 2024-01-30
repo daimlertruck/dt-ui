@@ -82,7 +82,7 @@ exports[`<Drawer /> component renders correctly with children 1`] = `
   border: none;
   cursor: pointer;
   background-color: transparent;
-  color: #4F4F4F;
+  color: #7C7C7D;
   color: #7C7C7D;
 }
 
@@ -113,7 +113,7 @@ exports[`<Drawer /> component renders correctly with children 1`] = `
       >
         <button
           class="emotion-8 emotion-9"
-          color="neutralDark_700"
+          color="default"
           data-testid="drawer-close-button"
         >
           <svg

@@ -25,7 +25,7 @@ export const BackdropStyled = styled.div<BackdropStyledProps>`
       display: flex;
       align-items: center;
       justify-content: center;
-      background: ${hexToRgba(theme.colors.grey_90, opacityType[type])};
+      background: ${hexToRgba(theme.palette.base.dark, opacityType[type])};
       z-index: ${BACKDROP_Z_INDEX};
     `}
 `;

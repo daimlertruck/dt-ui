@@ -15,7 +15,7 @@ exports[`<TextField /> component onBlur event should have error state with error
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #7C7C7D;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -46,9 +46,9 @@ exports[`<TextField /> component onBlur event should have error state with error
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #323232;
+  border: 1px solid #D3D4D5;
   border-bottom: 2px solid #FF4A4A;
-  color: #151617;
+  color: #7C7C7D;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -68,7 +68,7 @@ exports[`<TextField /> component onBlur event should have error state with error
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #D21C1C;
+  color: #FF4A4A;
 }
 
 <div>
@@ -118,7 +118,7 @@ exports[`<TextField /> component onBlur event should have error state with error
     >
       <span
         class="emotion-10 emotion-11"
-        color="red_100"
+        color="error.default"
         data-testid="typography"
       >
         This field is required.
@@ -159,7 +159,7 @@ exports[`<TextField /> component renders Loading input 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #7C7C7D;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -199,9 +199,9 @@ exports[`<TextField /> component renders Loading input 1`] = `
 .emotion-8 {
   width: 32px;
   height: 32px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #A1A2A3;
   border-radius: 50%;
-  border-top: 2px solid #036DC1;
+  border-top: 2px solid #FFFFFF;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -214,9 +214,9 @@ exports[`<TextField /> component renders Loading input 1`] = `
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #323232;
-  border-bottom: 1px solid #323232;
-  color: #151617;
+  border: 1px solid #D3D4D5;
+  border-bottom: 1px solid #D3D4D5;
+  color: #7C7C7D;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -226,7 +226,7 @@ exports[`<TextField /> component renders Loading input 1`] = `
 }
 
 .emotion-10:focus {
-  border-bottom: 2px solid #036DC1;
+  border-bottom: 2px solid #008DFC;
   outline: none;
 }
 
@@ -281,7 +281,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #323232;
+  color: #BABBBB;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -302,10 +302,10 @@ exports[`<TextField /> component renders disabled input 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  background-color: #636464;
-  border: 1px solid #323232;
-  border-bottom: 1px solid #323232;
-  color: #8B8C8C;
+  background-color: #F8F9FA;
+  border: 1px solid #D3D4D5;
+  border-bottom: 1px solid #D3D4D5;
+  color: #BABBBB;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -315,7 +315,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
 }
 
 .emotion-4:focus {
-  border-bottom: 2px solid #036DC1;
+  border-bottom: 2px solid #008DFC;
   outline: none;
 }
 
@@ -359,7 +359,7 @@ exports[`<TextField /> component renders input with side button 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #7C7C7D;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -390,9 +390,9 @@ exports[`<TextField /> component renders input with side button 1`] = `
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #323232;
-  border-bottom: 1px solid #323232;
-  color: #151617;
+  border: 1px solid #D3D4D5;
+  border-bottom: 1px solid #D3D4D5;
+  color: #7C7C7D;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -402,7 +402,7 @@ exports[`<TextField /> component renders input with side button 1`] = `
 }
 
 .emotion-6:focus {
-  border-bottom: 2px solid #036DC1;
+  border-bottom: 2px solid #008DFC;
   outline: none;
 }
 
@@ -453,7 +453,7 @@ exports[`<TextField /> component should render the TextField with error styles a
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #7C7C7D;
   cursor: inherit;
   font-size: .75rem;
   left: 15px;
@@ -484,9 +484,9 @@ exports[`<TextField /> component should render the TextField with error styles a
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #323232;
+  border: 1px solid #D3D4D5;
   border-bottom: 2px solid #FF4A4A;
-  color: #151617;
+  color: #7C7C7D;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -506,7 +506,7 @@ exports[`<TextField /> component should render the TextField with error styles a
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #D21C1C;
+  color: #FF4A4A;
 }
 
 <div>
@@ -554,7 +554,7 @@ exports[`<TextField /> component should render the TextField with error styles a
     >
       <span
         class="emotion-10 emotion-11"
-        color="red_100"
+        color="error.default"
         data-testid="typography"
       >
         My Error Message
@@ -579,7 +579,7 @@ exports[`<TextField /> component should render the TextField with info message 1
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #7C7C7D;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -601,9 +601,9 @@ exports[`<TextField /> component should render the TextField with info message 1
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #323232;
-  border-bottom: 1px solid #323232;
-  color: #151617;
+  border: 1px solid #D3D4D5;
+  border-bottom: 1px solid #D3D4D5;
+  color: #7C7C7D;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -613,7 +613,7 @@ exports[`<TextField /> component should render the TextField with info message 1
 }
 
 .emotion-4:focus {
-  border-bottom: 2px solid #036DC1;
+  border-bottom: 2px solid #008DFC;
   outline: none;
 }
 
@@ -628,7 +628,7 @@ exports[`<TextField /> component should render the TextField with info message 1
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #7C7C7D;
 }
 
 <div>
@@ -655,7 +655,7 @@ exports[`<TextField /> component should render the TextField with info message 1
     >
       <span
         class="emotion-8 emotion-9"
-        color="grey_100"
+        color="content.body"
         data-testid="typography"
       >
         My Infor Message

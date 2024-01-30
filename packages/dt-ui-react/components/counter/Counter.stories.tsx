@@ -15,7 +15,7 @@ export const Default = Template.bind({});
 
 Default.args = {
   children: '2',
-  color: 'info',
+  color: 'informative',
   outlined: false,
   isLarge: false,
 };

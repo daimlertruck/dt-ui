@@ -1,38 +1,64 @@
 export type CustomTheme = {
   palette: {
-    error: string;
-    errorDark_200: string;
-    errorDark_300: string;
-    errorLight_300: string;
-    errorLight_100: string;
-    info: string;
-    infoLight_100: string;
-    primaryDark_200: string;
-    primaryLight_100: string;
-    primaryLight_300: string;
-    primaryLight_400: string;
-    primaryLight_500: string;
-    primary: string;
-    primaryDark_300: string;
-    success: string;
-    successLight_100: string;
-    successDark_300: string;
-    warning: string;
-    warningLight_100: string;
-    warningDark_300: string;
-    neutral: string;
-    neutralDark_100: string;
-    neutralDark_200: string;
-    neutralDark_300: string;
-    neutralDark_400: string;
-    neutralDark_500: string;
-    neutralDark_600: string;
-    neutralDark_700: string;
-    neutralLight_100: string;
-    neutralLight_300: string;
-    textTertiary: string;
-    textSecondary: string;
-    textPrimary: string;
+    base: {
+      default: string;
+      light: string;
+      dark: string;
+    };
+    border: {
+      light: string;
+      default: string;
+      contrast: string;
+    };
+    content: {
+      heading: string;
+      body: string;
+      secondary: string;
+      disabled: string;
+      contrast: string;
+    };
+    primary: {
+      default: string;
+      light: string;
+      medium: string;
+      dark: string;
+      contrast: string;
+    };
+    secondary: {
+      default: string;
+      light: string;
+      medium: string;
+      dark: string;
+      contrast: string;
+    };
+    error: {
+      default: string;
+      light: string;
+      medium: string;
+      dark: string;
+      contrast: string;
+    };
+    warning: {
+      default: string;
+      light: string;
+      medium: string;
+      dark: string;
+      contrast: string;
+    };
+    success: {
+      default: string;
+      light: string;
+      medium: string;
+      dark: string;
+      contrast: string;
+    };
+    informative: {
+      default: string;
+      light: string;
+      medium: string;
+      dark: string;
+      contrast: string;
+    };
   };
   colors: {
     black: string;
@@ -245,6 +271,19 @@ export type CustomTheme = {
   responsiveFontStyles: { [key: string]: string };
 };
 
-export type Colors = keyof CustomTheme['palette'];
+export type Colors = keyof Pick<
+  CustomTheme['palette'],
+  'primary' | 'secondary' | 'error' | 'success' | 'informative' | 'warning'
+>;
 
 export type Breakpoints = keyof CustomTheme['breakpoints'];
+
+type FlattenKeys<T> = T extends object
+  ? {
+      [K in keyof T]: `${Exclude<K, symbol>}${FlattenKeys<T[K]> extends never
+        ? ''
+        : `.${FlattenKeys<T[K]>}`}`;
+    }[keyof T]
+  : never;
+
+export type PaletteKeys = FlattenKeys<CustomTheme['palette']>;

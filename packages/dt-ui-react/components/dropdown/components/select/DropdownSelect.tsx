@@ -80,13 +80,13 @@ export const DropdownSelect = ({
       >
         <div style={{ overflow: 'hidden' }}>
           <Typography
-            color={disabled ? 'grey_90' : 'grey_100'}
+            color={disabled ? 'content.disabled' : 'content.body'}
             fontStyles='pXXSmall'
           >
             {label}
           </Typography>
           <Typography
-            color={disabled ? 'grey_100' : 'grey_300'}
+            color={disabled ? 'content.disabled' : 'content.body'}
             fontStyles='pSmall'
             style={{ textOverflow: 'ellipsis', overflow: 'hidden' }}
           >
@@ -95,7 +95,7 @@ export const DropdownSelect = ({
         </div>
         {!isOpen ? (
           <OutlinedArrowDropDown
-            color={isDisabled ? theme.colors.grey_90 : 'currentColor'}
+            color={isDisabled ? theme.palette.content.disabled : 'currentColor'}
           />
         ) : (
           <OutlinedArrowDropUp />

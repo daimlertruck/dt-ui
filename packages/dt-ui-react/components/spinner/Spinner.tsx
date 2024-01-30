@@ -1,7 +1,7 @@
 import { Box } from '@dt-ui/react-box';
+import { useTheme } from '@emotion/react';
 
-import { theme } from '../../themes/default';
-import { BaseProps, CustomTheme as Theme } from '../../types';
+import { BaseProps, CustomTheme as Theme, PaletteKeys } from '../../types';
 import { Typography } from '../typography';
 
 import { SpinnerStyled } from './Spinner.styled';
@@ -13,12 +13,9 @@ export interface SpinnerProps extends Omit<BaseProps, 'children'> {
   loadingText?: string;
 }
 
-const spinnerTextColor: Record<
-  SpinnerColorScheme,
-  keyof Theme['colors'] | keyof Theme['palette']
-> = {
-  positive: 'textSecondary',
-  negative: 'white',
+const spinnerTextColor: Record<SpinnerColorScheme, PaletteKeys> = {
+  positive: 'content.body',
+  negative: 'content.contrast',
 };
 
 const spinnerTextSize: Record<SpinnerSize, keyof Theme['fontStyles']> = {
@@ -35,6 +32,7 @@ export const Spinner = ({
   colorScheme = 'positive',
   loadingText,
 }: SpinnerProps) => {
+  const theme = useTheme();
   return (
     <Box dataTestId={dataTestId} style={{ margin: 'auto', ...style }}>
       <SpinnerStyled colorScheme={colorScheme} size={size} />

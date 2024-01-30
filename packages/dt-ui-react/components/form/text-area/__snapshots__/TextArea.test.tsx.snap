@@ -24,7 +24,7 @@ exports[`<TextArea /> component it should a textarea 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #7C7C7D;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -46,8 +46,8 @@ exports[`<TextArea /> component it should a textarea 1`] = `
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #323232;
-  color: #151617;
+  border: 1px solid #D3D4D5;
+  color: #7C7C7D;
   resize: none;
   width: 100%;
   padding: 20px 14px 14px 14px;
@@ -64,7 +64,7 @@ exports[`<TextArea /> component it should a textarea 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #A1A2A3;
 }
 
 <div>
@@ -87,7 +87,7 @@ exports[`<TextArea /> component it should a textarea 1`] = `
     />
     <span
       class="emotion-6 emotion-7"
-      color="grey_100"
+      color="content.secondary"
       data-testid="typography"
     >
       200

@@ -27,8 +27,12 @@ export const itemVariantStyles = (
       ${active && !disabled
         ? theme.fontStyles.body2Bold
         : theme.fontStyles.body2};
-      background-color: ${active ? theme.palette.primary : theme.colors.white};
-      color: ${active ? theme.colors.white : theme.palette.textSecondary};
+      background-color: ${active
+        ? theme.palette.primary.default
+        : theme.palette.base.default};
+      color: ${active
+        ? theme.palette.content.contrast
+        : theme.palette.content.body};
       border-radius: ${theme.spacing['5xs']};
       padding: ${theme.spacing['3xs']} ${theme.spacing.s};
 
@@ -36,24 +40,25 @@ export const itemVariantStyles = (
       !disabled &&
       `
         &:hover {
-          background: ${theme.palette.primaryLight_300};
-          color: ${theme.palette.textPrimary};
+          background: ${theme.palette.primary.light};
         }
       `}
     `,
     vertical: css`
       padding: 16px 14px;
-      background-color: ${theme.colors.white};
+      background-color: ${theme.palette.base.default};
       box-shadow: ${active
         ? `inset 2px 0px 0px 0px ${
-            hasError ? theme.palette.error : theme.palette.primary
+            hasError
+              ? theme.palette.error.default
+              : theme.palette.primary.default
           }`
         : 0};
       color: ${active && hasError
-        ? theme.palette.error
+        ? theme.palette.error.default
         : active
-        ? theme.palette.primary
-        : theme.colors.grey_100};
+        ? theme.palette.primary.default
+        : theme.palette.content.body};
       max-width: 300px;
       overflow: hidden;
       text-align: start;
@@ -61,7 +66,7 @@ export const itemVariantStyles = (
       ${!active &&
       `
         &:hover {
-          background: ${theme.colors.grey_70};
+          background: ${theme.palette.secondary.light};
         }
       `}
     `,

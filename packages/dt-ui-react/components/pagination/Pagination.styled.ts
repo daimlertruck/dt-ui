@@ -18,7 +18,7 @@ export const PaginationStyled = styled.div`
 export const LastPageStyled = styled.button`
   ${({ theme }) => `
     background-color: transparent;
-    color: ${theme.palette.primary};
+    color: ${theme.palette.primary.default};
     border: none;
     cursor: pointer;
   `}
@@ -29,10 +29,12 @@ export const ArrowStyled = styled.button<ArrowStyledProps>`
     justify-content: center;
     width: 32px;
     height: 32px;
-    background-color: ${theme.colors.white};
+    background-color: ${theme.palette.base.default};
     border: none;
     border-radius: 3px;
-    color: ${disabled ? theme.colors.grey_90 : theme.palette.primary};
+    color: ${
+      disabled ? theme.palette.content.body : theme.palette.primary.default
+    };
     cursor: ${disabled ? 'default' : 'pointer'};
   `}
 `;
@@ -45,17 +47,20 @@ export const InputStyled = styled.input<InputStyledProps>`
     margin: 0px;
     width: 50px;
     height: 32px;
-    background-color: ${theme.colors.white};
-    color: ${theme.colors.grey_200};
+    background-color: ${theme.palette.base.default};
+    color: ${theme.palette.content.body};
     border: ${
       hasError
-        ? `2px solid ${theme.palette.error}`
-        : `1px solid ${theme.colors.grey_90}`
+        ? `2px solid ${theme.palette.error.default}`
+        : `1px solid ${theme.palette.border.default}`
     };
     border-radius: 3px;
 
     &:focus {
-       ${!hasError && `border-bottom: 2px solid ${theme.palette.primary}`};
+       ${
+         !hasError &&
+         `border-bottom: 2px solid ${theme.palette.primary.default}`
+       };
     }
   `}
 `;

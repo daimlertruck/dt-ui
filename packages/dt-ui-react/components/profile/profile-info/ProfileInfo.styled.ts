@@ -6,10 +6,10 @@ import { DropdownOptionStyled } from '../../dropdown/components/option/DropdownO
 export const ProfileInfoStyled = styled.ul`
   ${({ theme }) => `
     padding: ${theme.spacing.none};
-    background: ${theme.colors.white};
+    background: ${theme.palette.base.default};
     box-shadow: ${theme.shadows[4]};
     border-radius: ${theme.spacing.xxsmall};
-    color: ${theme.colors.grey_300};
+    color: ${theme.palette.content.body};
     position: absolute;
     right: 0;
     z-index: 1;
@@ -31,7 +31,7 @@ export const ProfileInfoItemStyled = styled(DropdownOptionStyled)`
 
     &[disabled] {
       opacity: 1;
-      background-color: ${hexToRgba(theme.colors.grey_90, 0.4)};
+      background-color: ${hexToRgba(theme.palette.base.dark, 0.4)};
     }
 
     &:first-of-type {
@@ -42,15 +42,15 @@ export const ProfileInfoItemStyled = styled(DropdownOptionStyled)`
       font-weight: bold;
 
       &:hover {
-        background: ${theme.palette.primary};
-        color: ${theme.colors.white};
+        background: ${theme.palette.primary.default};
+        color: ${theme.palette.primary.contrast};
         cursor: pointer;
         border-radius: 0px 0px ${theme.spacing.xxsmall} ${
     theme.spacing.xxsmall
   };
 
         path {
-          fill: ${theme.colors.white};
+          fill: ${theme.palette.base.default};
         }
       }
     }

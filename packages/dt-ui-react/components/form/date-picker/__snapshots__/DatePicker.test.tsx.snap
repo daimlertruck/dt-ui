@@ -15,7 +15,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #7C7C7D;
   cursor: inherit;
   font-size: .75rem;
   left: 15px;
@@ -37,9 +37,9 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #323232;
+  border: 1px solid #D3D4D5;
   border-bottom: 2px solid #FF4A4A;
-  color: #151617;
+  color: #7C7C7D;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -59,7 +59,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #D21C1C;
+  color: #FF4A4A;
 }
 
 <div>
@@ -87,7 +87,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
     >
       <span
         class="emotion-8 emotion-9"
-        color="red_100"
+        color="error.default"
         data-testid="typography"
       >
         Please enter a valid date
@@ -112,7 +112,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #7C7C7D;
   cursor: inherit;
   font-size: .75rem;
   left: 15px;
@@ -134,9 +134,9 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #323232;
+  border: 1px solid #D3D4D5;
   border-bottom: 2px solid #FF4A4A;
-  color: #151617;
+  color: #7C7C7D;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -156,7 +156,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #D21C1C;
+  color: #FF4A4A;
 }
 
 <div>
@@ -184,7 +184,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
     >
       <span
         class="emotion-8 emotion-9"
-        color="red_100"
+        color="error.default"
         data-testid="typography"
       >
         Please enter a valid date
@@ -209,7 +209,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #7C7C7D;
   cursor: inherit;
   font-size: .75rem;
   left: 15px;
@@ -231,9 +231,9 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #323232;
-  border-bottom: 1px solid #323232;
-  color: #151617;
+  border: 1px solid #D3D4D5;
+  border-bottom: 1px solid #D3D4D5;
+  color: #7C7C7D;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -243,7 +243,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
 }
 
 .emotion-4:focus {
-  border-bottom: 2px solid #036DC1;
+  border-bottom: 2px solid #008DFC;
   outline: none;
 }
 

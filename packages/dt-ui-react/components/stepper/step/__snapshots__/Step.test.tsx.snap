@@ -25,9 +25,9 @@ exports[`<Step /> component <Step.Counter /> component should render active beha
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #036DC1;
-  border: 2px solid #036DC1;
-  color: #036DC1;
+  background-color: #008DFC;
+  border: 2px solid #008DFC;
+  color: #008DFC;
   background-color: #FFFFFF;
 }
 
@@ -38,7 +38,7 @@ exports[`<Step /> component <Step.Counter /> component should render active beha
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #036DC1;
+  color: #008DFC;
 }
 
 <div>
@@ -46,11 +46,11 @@ exports[`<Step /> component <Step.Counter /> component should render active beha
     class="emotion-0 emotion-1"
     color="primary"
     data-testid="counter"
-    style="border-width: 1px; background-color: rgb(204, 232, 255);"
+    style="border-width: 1px; background-color: rgb(230, 245, 255);"
   >
     <span
       class="emotion-2 emotion-3"
-      color="primary"
+      color="primary.default"
       data-testid="typography"
       style="font-weight: 700;"
     >
@@ -85,7 +85,7 @@ exports[`<Step /> component <Step.Counter /> component should render completed b
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #036DC1;
+  background-color: #008DFC;
 }
 
 <div>
@@ -139,9 +139,9 @@ exports[`<Step /> component <Step.Counter /> component should render default beh
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #036DC1;
-  border: 2px solid #036DC1;
-  color: #036DC1;
+  background-color: #008DFC;
+  border: 2px solid #008DFC;
+  color: #008DFC;
   background-color: #FFFFFF;
 }
 
@@ -152,7 +152,7 @@ exports[`<Step /> component <Step.Counter /> component should render default beh
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #036DC1;
+  color: #008DFC;
 }
 
 <div>
@@ -164,7 +164,7 @@ exports[`<Step /> component <Step.Counter /> component should render default beh
   >
     <span
       class="emotion-2 emotion-3"
-      color="primary"
+      color="primary.default"
       data-testid="typography"
       style="font-weight: 700;"
     >
@@ -182,7 +182,7 @@ exports[`<Step /> component <Step.Label /> component should render active behavi
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #036DC1;
+  color: #008DFC;
 }
 
 <div>
@@ -203,7 +203,7 @@ exports[`<Step /> component <Step.Label /> component should render completed beh
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #036DC1;
+  color: #008DFC;
 }
 
 <div>
@@ -224,13 +224,13 @@ exports[`<Step /> component <Step.Label /> component should render default behav
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #EBECED;
+  color: #7C7C7D;
 }
 
 <div>
   <span
     class="emotion-0 emotion-1"
-    color="neutral"
+    color="secondary"
   >
     Label
   </span>
@@ -274,9 +274,9 @@ exports[`<Step /> component render active step 1`] = `
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #036DC1;
-  border: 2px solid #036DC1;
-  color: #036DC1;
+  background-color: #008DFC;
+  border: 2px solid #008DFC;
+  color: #008DFC;
   background-color: #FFFFFF;
 }
 
@@ -287,7 +287,7 @@ exports[`<Step /> component render active step 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #036DC1;
+  color: #008DFC;
 }
 
 .emotion-6 {
@@ -297,7 +297,7 @@ exports[`<Step /> component render active step 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #036DC1;
+  color: #008DFC;
 }
 
 <div>
@@ -308,11 +308,11 @@ exports[`<Step /> component render active step 1`] = `
       class="emotion-2 emotion-3"
       color="primary"
       data-testid="counter"
-      style="border-width: 1px; background-color: rgb(204, 232, 255);"
+      style="border-width: 1px; background-color: rgb(230, 245, 255);"
     >
       <span
         class="emotion-4 emotion-5"
-        color="primary"
+        color="primary.default"
         data-testid="typography"
         style="font-weight: 700;"
       >
@@ -366,9 +366,9 @@ exports[`<Step /> component render default step 1`] = `
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #036DC1;
-  border: 2px solid #036DC1;
-  color: #036DC1;
+  background-color: #008DFC;
+  border: 2px solid #008DFC;
+  color: #008DFC;
   background-color: #FFFFFF;
 }
 
@@ -379,7 +379,7 @@ exports[`<Step /> component render default step 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #036DC1;
+  color: #008DFC;
 }
 
 .emotion-6 {
@@ -389,7 +389,7 @@ exports[`<Step /> component render default step 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #EBECED;
+  color: #7C7C7D;
 }
 
 <div>
@@ -404,7 +404,7 @@ exports[`<Step /> component render default step 1`] = `
     >
       <span
         class="emotion-4 emotion-5"
-        color="primary"
+        color="primary.default"
         data-testid="typography"
         style="font-weight: 700;"
       >
@@ -413,7 +413,7 @@ exports[`<Step /> component render default step 1`] = `
     </span>
     <span
       class="emotion-6 emotion-7"
-      color="neutral"
+      color="secondary"
     >
       Label
     </span>
@@ -458,9 +458,9 @@ exports[`<Step /> component render disabled step 1`] = `
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #F8F9FA;
-  border: 2px solid #F8F9FA;
-  color: #F8F9FA;
+  background-color: #7C7C7D;
+  border: 2px solid #BABBBB;
+  color: #BABBBB;
   background-color: #FFFFFF;
 }
 
@@ -471,7 +471,7 @@ exports[`<Step /> component render disabled step 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #F8F9FA;
+  color: #BABBBB;
 }
 
 .emotion-6 {
@@ -481,7 +481,7 @@ exports[`<Step /> component render disabled step 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #F8F9FA;
+  color: #BABBBB;
 }
 
 <div>
@@ -490,13 +490,13 @@ exports[`<Step /> component render disabled step 1`] = `
   >
     <span
       class="emotion-2 emotion-3"
-      color="neutralLight_100"
+      color="disabled"
       data-testid="counter"
       style="border-width: 1px;"
     >
       <span
         class="emotion-4 emotion-5"
-        color="neutralLight_100"
+        color="content.disabled"
         data-testid="typography"
         style="font-weight: 700;"
       >
@@ -505,7 +505,7 @@ exports[`<Step /> component render disabled step 1`] = `
     </span>
     <span
       class="emotion-6 emotion-7"
-      color="neutralLight_100"
+      color="disabled"
     >
       Label
     </span>
@@ -588,7 +588,7 @@ exports[`<Step /> component render error step 1`] = `
     >
       <span
         class="emotion-4 emotion-5"
-        color="error"
+        color="error.default"
         data-testid="typography"
         style="font-weight: 700;"
       >

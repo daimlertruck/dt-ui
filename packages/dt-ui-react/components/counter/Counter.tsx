@@ -3,14 +3,14 @@ import { BaseProps, Colors } from '../../types';
 import { CounterStyled } from './Counter.styled';
 
 export interface CounterProps extends BaseProps {
-  color?: Colors;
+  color?: Colors | 'disabled';
   outlined?: boolean;
   isLarge?: boolean;
 }
 
 export const Counter = ({
   children,
-  color = 'info',
+  color = 'informative',
   dataTestId,
   style,
   outlined = false,

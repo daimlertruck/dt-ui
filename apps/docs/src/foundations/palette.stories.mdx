@@ -1,0 +1,48 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+import { ThemeProvider} from '@storybook/theming';
+
+import {
+  theme as defaultTheme,
+  greenlaneTheme,
+} from '@dt-ui/react';
+
+<Meta title='Foundations/Palette' />
+
+# Default
+
+export const getColors = (theme) => Object.entries(theme.palette).reduce(
+  (acc, [key, value]) => {
+    const group = acc[key] ?? [];
+  return {
+    ...acc,
+    [key]: [
+      ...group,
+      {
+        ...value,
+      },
+    ],
+  };
+}, {});
+
+<div style={{ background: '#eeeeee', padding: '20px' }}>
+  <ThemeProvider theme={defaultTheme}>
+    <ColorPalette>
+      {Object.entries(getColors(defaultTheme)).map(([k, v]) => {
+        return <ColorItem key={k} title={k} colors={Object.assign({}, ...v)} />;
+      })}
+    </ColorPalette>
+  </ThemeProvider>
+</div>
+
+# Greenlane
+
+<div style={{ background: '#eeeeee', padding: '20px' }}>
+  <ThemeProvider theme={greenlaneTheme}>
+    <ColorPalette>
+      {Object.entries(getColors(greenlaneTheme)).map(([k, v]) => {
+        return <ColorItem key={k} title={k} colors={Object.assign({}, ...v)} />;
+      })}
+    </ColorPalette>
+  </ThemeProvider>
+</div>

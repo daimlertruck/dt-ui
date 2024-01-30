@@ -13,11 +13,11 @@ exports[`<IconButton /> component renders button html element with the an icon 1
   border: none;
   cursor: pointer;
   background-color: transparent;
-  color: #4F4F4F;
+  color: #7C7C7D;
 }
 
 .emotion-0:hover {
-  color: #036DC1;
+  color: #008DFC;
 }
 
 <div>

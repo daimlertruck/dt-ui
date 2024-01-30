@@ -63,13 +63,13 @@ export const AvatarStyled = styled.div<AvatarStyledProps>`
     switch (type) {
       case AvatarType.Primary:
         styles += `
-          color: ${theme.colors.white};
+          color: ${theme.palette.primary.contrast};
           
           & > * {
-            background-color: ${theme.palette.primary};
+            background-color: ${theme.palette.primary.default};
 
             &:hover {
-              background-color: ${theme.palette.primaryDark_300};
+              background-color: ${theme.palette.primary.dark};
             }
           }
         `;
@@ -77,13 +77,13 @@ export const AvatarStyled = styled.div<AvatarStyledProps>`
 
       case AvatarType.Secondary:
         styles += `
-          color: ${theme.palette.textSecondary};
+          color: ${theme.palette.secondary.contrast};
           
           & > * {
-            background-color: ${theme.palette.neutralDark_100};
+            background-color: ${theme.palette.secondary.default};
 
             &:hover {
-              background-color: ${theme.palette.neutralDark_200};
+              background-color: ${theme.palette.secondary.dark};
             }
           }
         `;
@@ -91,13 +91,13 @@ export const AvatarStyled = styled.div<AvatarStyledProps>`
 
       case AvatarType.Tertiary:
         styles += `
-          color: ${theme.palette.primary};
+          color: ${theme.palette.primary.default};
           
           & > * {
-            background-color: ${theme.colors.white};
+            background-color: ${theme.palette.primary.contrast};
 
             &:hover {
-              color: ${theme.palette.primaryDark_300};
+              background-color: ${theme.palette.primary.light};
             }
           }
         `;

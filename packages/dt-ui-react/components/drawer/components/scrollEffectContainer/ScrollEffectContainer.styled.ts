@@ -21,6 +21,6 @@ export const ScrollEffectStyled = styled.div`
   ${({ theme }) => `
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, ${theme.colors.white}, transparent);
+    background: linear-gradient(to bottom, ${theme.palette.base.default}, transparent);
   `}
 `;

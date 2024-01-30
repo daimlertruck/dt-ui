@@ -26,7 +26,7 @@ export const ModalStyled = styled.div`
 
   flex-direction: column;
   ${({ theme }) => `
-      background-color: ${theme.colors.white};
+      background-color: ${theme.palette.base.default};
       border-radius: ${theme.shape.modal};
       box-shadow: ${theme.shadows.s};
 
@@ -59,7 +59,7 @@ export const ModalLoadingOverlay = styled.div`
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: ${hexToRgba(theme.colors.grey_10, 0.8)};
+      background-color: ${hexToRgba(theme.palette.base.light, 0.8)};
       display: flex;
       align-items: center;
       justify-content: center;
@@ -73,9 +73,11 @@ export const HeaderStyled = styled.div<HeaderProps>`
   ${({ theme, hasBackgroundColor, hasBorder }) => `
     padding: ${theme.spacing.xs};
     background-color: ${
-      hasBackgroundColor ? theme.colors.grey_10 : 'transparent'
+      hasBackgroundColor ? theme.palette.base.light : 'transparent'
     };
-    border-bottom: ${hasBorder ? `1px solid ${theme.colors.grey_30}` : 'none'};
+    border-bottom: ${
+      hasBorder ? `1px solid ${theme.palette.border.default}` : 'none'
+    };
     gap: ${theme.spacing['4xs']};
 
     @media only screen and (min-width: ${theme.breakpoints.s}) {
@@ -83,7 +85,7 @@ export const HeaderStyled = styled.div<HeaderProps>`
     }
 
     button {
-      color: ${theme.palette.neutralDark_500};
+      color: ${theme.palette.content.body};
     }
 
     svg {
@@ -115,13 +117,15 @@ export const FooterStyled = styled.div<FooterProps>`
 
   ${({ theme, hasBackgroundColor, hasBorder }) => `
       background-color: ${
-        hasBackgroundColor ? theme.colors.grey_10 : 'transparent'
+        hasBackgroundColor ? theme.palette.base.light : 'transparent'
       };
-      border-top: ${hasBorder ? `1px solid ${theme.colors.grey_30}` : 'none'};
+      border-top: ${
+        hasBorder ? `1px solid ${theme.palette.border.default}` : 'none'
+      };
       gap: ${theme.spacing['3xs']};
       padding: ${theme.spacing.xs};
       @media only screen and (max-width: ${theme.breakpoints.s}) {
         flex-direction: column-reverse;
-       }
+      }
   `}
 `;

@@ -41,7 +41,7 @@ export const TableBodyStyled = styled.tbody`
     gap: ${theme.spacing['3xs']};
     
     tr:hover {
-      background-color: ${theme.palette.neutralLight_100};
+      background-color: ${theme.palette.base.light};
     }
 
     @media (min-width: ${theme.breakpoints.s}) {
@@ -70,7 +70,7 @@ export const TableHeadStyled = styled.thead<TableHeadStyledProps>`
         `
           position: sticky;
           top: 0;
-          background-color: ${theme.colors.white};
+          background-color: ${theme.palette.base.default};
           z-index: ${TABLE_HEADER_Z_INDEX};
           box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05)
         `
@@ -84,7 +84,7 @@ export const RowStyled = styled.tr<RowStyledProps>`
     display: block;
     padding: ${theme.spacing.xs};
     width: 100%;
-    background-color: ${theme.colors.white};
+    background-color: ${theme.palette.base.default};
     border-radius: ${theme.radius['4xs']};
     box-shadow: ${theme.shadows.s};
     cursor: ${selectableRow ? 'pointer' : 'auto'};
@@ -103,7 +103,7 @@ export const RowStyled = styled.tr<RowStyledProps>`
 export const ColumnHeaderStyled = styled.th<ColumnHeaderStyled>`
   ${({ theme, textAlign }) => `
     text-align: ${textAlign};
-    color: ${theme.palette.textPrimary};
+    color: ${theme.palette.content.heading};
     padding: 0 ${theme.spacing['2xs']} ${theme.spacing['2xs']};
     ${theme.fontStyles.button3};
   `}
@@ -118,34 +118,34 @@ export const CellStyled = styled.td<CellStyledProps>`
     padding: ${theme.spacing['3xs']} ${theme.spacing['2xs']};
     word-break: break-word;
     text-align: ${textAlign};
-    color: ${theme.palette.textSecondary};
+    color: ${theme.palette.content.body};
     ${theme.fontStyles.body2};
 
     &:not(:first-of-type){
       &:before {
         content: attr(data-label);
-        color: ${theme.palette.textPrimary};
+        color: ${theme.palette.content.heading};
         word-break: keep-all;
         ${theme.fontStyles.button2};
       }
     }
 
     &:first-of-type {
-      color: ${theme.palette.textPrimary};
-      border-bottom: 1px solid ${theme.palette.neutral};
+      color: ${theme.palette.content.heading};
+      border-bottom: 1px solid ${theme.palette.border.light};
       padding-top: 0;
       ${theme.fontStyles.body2Bold};
     }
 
     @media (min-width: ${theme.breakpoints.m}) {
       display: table-cell;      
-      border-top: 1px solid ${theme.palette.neutral};
+      border-top: 1px solid ${theme.palette.border.light};
       padding: ${theme.spacing['2xs']};
       max-width: 0;
       ${theme.fontStyles.body2};
       
       &:first-of-type {
-        color: ${theme.palette.textSecondary};
+        color: ${theme.palette.content.body};
         padding-top: ${theme.spacing['2xs']};
         border-bottom: none;
         ${theme.fontStyles.body2};

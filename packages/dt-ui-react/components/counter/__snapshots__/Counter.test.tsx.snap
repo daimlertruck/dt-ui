@@ -31,7 +31,7 @@ exports[`<Counter /> component should render a span html element with the given 
 <div>
   <span
     class="emotion-0 emotion-1"
-    color="info"
+    color="informative"
     data-testid="counter"
   >
     Active
@@ -39,7 +39,7 @@ exports[`<Counter /> component should render a span html element with the given 
 </div>
 `;
 
-exports[`<Counter /> component should render outlined counter with neutral color 1`] = `
+exports[`<Counter /> component should render outlined counter with secondary color 1`] = `
 .emotion-0 {
   font-weight: 700;
   font-size: 10px;
@@ -64,16 +64,16 @@ exports[`<Counter /> component should render outlined counter with neutral color
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #EBECED;
-  border: 2px solid #EBECED;
-  color: #EBECED;
+  background-color: #7C7C7D;
+  border: 2px solid #7C7C7D;
+  color: #7C7C7D;
   background-color: #FFFFFF;
 }
 
 <div>
   <span
     class="emotion-0 emotion-1"
-    color="neutral"
+    color="secondary"
     data-testid="counter"
   >
     Active

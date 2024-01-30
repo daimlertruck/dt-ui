@@ -82,7 +82,7 @@ const Drawer = ({
       <DrawerStyled isVisible={isVisible}>
         <CloseButtonContainerStyled>
           <CloseButtonStyled
-            color='neutralDark_700'
+            color='default'
             data-testid='drawer-close-button'
             onClick={handleClose}
           >

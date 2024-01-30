@@ -11,15 +11,17 @@ export const MessageStyled = styled.div<MessageStyledProps>`
     padding: ${theme.spacing['3xs']} ${theme.spacing['2xs']};
     background-color: ${
       type === MessageType.Default
-        ? theme.colors.grey_10
-        : theme.palette[`${type}Light_100`]
+        ? theme.palette.base.light
+        : theme.palette[type].light
     };
     display: flex;
     align-items: flex-start;
     justify-content: center;
     border-radius: ${theme.shape.message};
     border: 1px dashed ${
-      type === MessageType.Default ? theme.colors.grey_10 : theme.palette[type]
+      type === MessageType.Default
+        ? theme.palette.border.default
+        : theme.palette[type].default
     };
     width: 100%;
     height: 100%;
@@ -52,21 +54,25 @@ export const MessageIconStyled = styled.div<MessageIconStyledProps>`
     height: 100%;
     display: flex;
     align-items: center;
-    color: ${type === 'default' ? theme.colors.grey_10 : theme.palette[type]};
+    color: ${
+      type === 'default'
+        ? theme.palette.content.body
+        : theme.palette[type].default
+    };
     margin-top: ${theme.spacing['6xs']};
   `}
 `;
 
 export const MessageButtonCloseStyled = styled.button`
   ${({ theme }) => `
-    color: ${theme.colors.grey_60};
+    color: ${theme.palette.content.body};
     border: 0;
     cursor: pointer;
     background: transparent;
     display: flex;
   
     &:hover {
-      background-color: ${theme.colors.white};
+      background-color: ${theme.palette.base.default};
     }
   `}
 `;

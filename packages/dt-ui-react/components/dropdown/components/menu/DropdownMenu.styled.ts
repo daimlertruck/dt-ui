@@ -4,8 +4,8 @@ import { DROPDOWN_MENU_Z_INDEX } from '../../../../constants';
 
 export const DropdownMenuStyled = styled.ul`
   ${({ theme }) => `
-    background: ${theme.colors.white};
-    border: 1px solid ${theme.palette.neutralDark_100};
+    background: ${theme.palette.base.default};
+    border: 1px solid ${theme.palette.border.default};
     border-radius: ${theme.shape.dropdown};
     width: 100%;
     padding:${theme.spacing['4xs']} ${theme.spacing.none};

@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const CardStyled = styled.div`
   ${({ theme }) => `
     margin: ${theme.spacing.none};
-    background-color: ${theme.colors.white};
+    background-color: ${theme.palette.base.default};
     width: 100%;
     max-width: 530px;
     height: 100%;
@@ -15,7 +15,7 @@ export const CardStyled = styled.div`
     
     &::after {
       content: '';
-      background-color: ${theme.palette.primary};
+      background-color: ${theme.palette.primary.default};
       border-radius: ${theme.spacing.xxsmall};
       width: 40px;
       height: 5px;

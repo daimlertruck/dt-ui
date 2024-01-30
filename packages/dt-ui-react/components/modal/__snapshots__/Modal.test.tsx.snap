@@ -133,9 +133,9 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
 .emotion-8 {
   width: 64px;
   height: 64px;
-  border: 2px solid #EBECED;
+  border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #036DC1;
+  border-top: 2px solid #008DFC;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -161,7 +161,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
 }
 
 .emotion-10 button {
-  color: #323232;
+  color: #7C7C7D;
 }
 
 .emotion-10 svg {
@@ -207,7 +207,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
   border: none;
   cursor: pointer;
   background-color: transparent;
-  color: #4F4F4F;
+  color: #7C7C7D;
 }
 
 .emotion-16:hover {
@@ -257,7 +257,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
       >
         <h4
           class="emotion-14 emotion-15"
-          color="textPrimary"
+          color="content.heading"
           data-testid="typography"
         >
           Title
@@ -265,7 +265,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
         <button
           aria-label="close modal"
           class="emotion-16 emotion-17"
-          color="neutralDark_700"
+          color="default"
           data-testid="icon-button"
         >
           <svg
@@ -392,7 +392,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
 }
 
 .emotion-4 button {
-  color: #323232;
+  color: #7C7C7D;
 }
 
 .emotion-4 svg {
@@ -438,7 +438,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   border: none;
   cursor: pointer;
   background-color: transparent;
-  color: #4F4F4F;
+  color: #7C7C7D;
 }
 
 .emotion-10:hover {
@@ -522,28 +522,25 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  color: #4A4A4B;
+  color: #7C7C7D;
   background-color: #FFFFFF;
-  border: 1px solid #D3D4D5;
+  border: 1px solid #7C7C7D;
 }
 
 .emotion-18:hover {
-  color: #323232;
-  background-color: #FFFFFF;
-  border: 1px solid #BABBBB;
+  color: #4A4A4B;
+  border: 1px solid #4A4A4B;
 }
 
 .emotion-18:active {
-  color: #323232;
-  background-color: #FFFFFF;
-  border: 1px solid #BABBBB;
+  color: #4A4A4B;
+  border: 1px solid #4A4A4B;
 }
 
 .emotion-18:disabled {
   cursor: not-allowed;
-  color: #D3D4D5;
-  background-color: #FFFFFF;
-  border: 1px solid #D3D4D5;
+  color: #EBECED;
+  border: 1px solid #EBECED;
 }
 
 @media only screen and (min-width: 600px) {
@@ -581,12 +578,12 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   padding: 12px 24px;
   border: 0;
   color: #FFFFFF;
-  background-color: #036DC1;
+  background-color: #008DFC;
 }
 
 .emotion-20:hover {
   color: #FFFFFF;
-  background-color: #013C6B;
+  background-color: #025497;
 }
 
 .emotion-20:disabled {
@@ -617,7 +614,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
       >
         <h4
           class="emotion-8 emotion-9"
-          color="textPrimary"
+          color="content.heading"
           data-testid="typography"
         >
           Title
@@ -625,7 +622,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
         <button
           aria-label="close modal"
           class="emotion-10 emotion-11"
-          color="neutralDark_700"
+          color="default"
           data-testid="icon-button"
         >
           <svg
@@ -644,7 +641,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
       </div>
       <h5
         class="emotion-12 emotion-9"
-        color="textSecondary"
+        color="content.body"
         data-testid="typography"
       >
         Sub Title
@@ -660,7 +657,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
     >
       <button
         class="emotion-18 emotion-19"
-        color="neutral"
+        color="secondary"
         data-testid="cancel-button"
       >
         Cancel

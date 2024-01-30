@@ -6,7 +6,7 @@ const Error = (props: React.SVGProps<SVGSVGElement>) => {
 
   return (
     <svg
-      color={theme.palette.error}
+      color={theme.palette.error.default}
       fill='none'
       height='24'
       viewBox='0 0 24 24'

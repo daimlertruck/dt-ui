@@ -33,10 +33,10 @@ const getColorWithShade = ({
 
   if (color === 'primary') {
     return {
-      '90': palette.primaryDark_300,
-      '60': palette.primary,
-      '30': palette.primaryLight_300,
-      '10': palette.primaryLight_500,
+      '90': palette.primary.dark,
+      '60': palette.primary.default,
+      '30': palette.primary.medium,
+      '10': palette.primary.contrast,
     }[shade];
   }
 
@@ -78,12 +78,12 @@ export const tagVariantColors = ({
   return {
     solid: {
       border: theme.spacing.none,
-      color: theme.colors.white,
+      color: theme.palette.content.contrast,
       backgroundColor: colorWithDisabled,
       ...(hasHover && {
         '&:hover': {
           backgroundColor: colorShade90,
-          color: theme.colors.white,
+          color: theme.palette.content.contrast,
         },
       }),
     },

@@ -5,6 +5,11 @@ import { Spinner, SpinnerProps } from './Spinner';
 export default {
   title: 'Data Display/Spinner',
   component: Spinner,
+  parameters: {
+    backgrounds: {
+      values: [{ name: 'black', value: '#000' }],
+    },
+  },
 };
 
 const Template: Story<SpinnerProps> = ({ ...props }) => {

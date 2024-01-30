@@ -96,14 +96,14 @@ exports[`<EmptyState /> component should render Empty State 1`] = `
     >
       <h2
         class="emotion-4 emotion-5"
-        color="textPrimary"
+        color="content.heading"
         data-testid="typography"
       >
         Title here
       </h2>
       <p
         class="emotion-6 emotion-5"
-        color="textSecondary"
+        color="content.body"
         data-testid="typography"
       >
         Some description here.
@@ -227,12 +227,12 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
   padding: 12px 24px;
   border: 0;
   color: #FFFFFF;
-  background-color: #036DC1;
+  background-color: #008DFC;
 }
 
 .emotion-8:hover {
   color: #FFFFFF;
-  background-color: #013C6B;
+  background-color: #025497;
 }
 
 .emotion-8:disabled {
@@ -257,14 +257,14 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
     >
       <h2
         class="emotion-4 emotion-5"
-        color="textPrimary"
+        color="content.heading"
         data-testid="typography"
       >
         Title here
       </h2>
       <p
         class="emotion-6 emotion-5"
-        color="textSecondary"
+        color="content.body"
         data-testid="typography"
       >
         Some description here.
@@ -410,19 +410,19 @@ exports[`<EmptyState /> component should render Empty State with image 1`] = `
       <circle
         cx="44.5"
         cy="11.5"
-        fill="#036DC1"
+        fill="#008DFC"
         r="2.5"
       />
       <circle
         cx="44.5"
         cy="20.5"
-        fill="#036DC1"
+        fill="#008DFC"
         r="2.5"
       />
       <circle
         cx="44.5"
         cy="30.5"
-        fill="#036DC1"
+        fill="#008DFC"
         r="2.5"
       />
       <path
@@ -457,19 +457,19 @@ exports[`<EmptyState /> component should render Empty State with image 1`] = `
       <circle
         cx="10.5"
         cy="60.5"
-        fill="#036DC1"
+        fill="#008DFC"
         r="2.5"
       />
       <circle
         cx="10.5"
         cy="69.5"
-        fill="#036DC1"
+        fill="#008DFC"
         r="2.5"
       />
       <circle
         cx="10.5"
         cy="79.5"
-        fill="#036DC1"
+        fill="#008DFC"
         r="2.5"
       />
       <path
@@ -504,28 +504,28 @@ exports[`<EmptyState /> component should render Empty State with image 1`] = `
       <circle
         cx="44.5"
         cy="109.5"
-        fill="#036DC1"
+        fill="#008DFC"
         r="2.5"
       />
       <circle
         cx="44.5"
         cy="118.5"
-        fill="#036DC1"
+        fill="#008DFC"
         r="2.5"
       />
       <circle
         cx="44.5"
         cy="128.5"
-        fill="#036DC1"
+        fill="#008DFC"
         r="2.5"
       />
       <path
         d="M134.184 62.1256C129.827 57.7684 124.276 54.8011 118.233 53.5988C112.189 52.3965 105.925 53.0133 100.232 55.3713C94.5396 57.7292 89.6739 61.7222 86.2505 66.8455C82.8272 71.9689 81 77.9923 81 84.1541C81 90.3159 82.8272 96.3393 86.2505 101.463C89.6739 106.586 94.5396 110.579 100.232 112.937C105.925 115.295 112.189 115.912 118.233 114.709C124.276 113.507 129.827 110.54 134.184 106.183C137.077 103.29 139.372 99.8556 140.938 96.0759C142.504 92.2963 143.309 88.2453 143.309 84.1541C143.309 80.063 142.504 76.0119 140.938 72.2322C139.372 68.4525 137.077 65.0183 134.184 62.1256Z"
-        fill="#036DC1"
+        fill="#008DFC"
       />
       <path
         d="M159.834 124.746L137.177 102.089C134.324 99.236 130.424 98.5093 128.467 100.466C126.51 102.423 127.237 106.323 130.09 109.176L152.747 131.833C155.601 134.687 159.5 135.413 161.457 133.456C163.414 131.499 162.688 127.6 159.834 124.746Z"
-        fill="#036DC1"
+        fill="#008DFC"
       />
       <path
         d="M128.653 67.9294C125.405 64.6207 121.266 62.3675 116.76 61.4546C112.254 60.5418 107.584 61.0102 103.339 62.8008C99.0949 64.5913 95.4671 67.6236 92.9147 71.5141C90.3623 75.4046 89 79.9786 89 84.6577C89 89.3368 90.3623 93.9108 92.9147 97.8013C95.4671 101.692 99.0949 104.724 103.339 106.515C107.584 108.305 112.254 108.774 116.76 107.861C121.266 106.948 125.405 104.695 128.653 101.386C133.009 96.9489 135.455 90.9317 135.455 84.6577C135.455 78.3837 133.009 72.3665 128.653 67.9294Z"
@@ -548,14 +548,14 @@ exports[`<EmptyState /> component should render Empty State with image 1`] = `
     >
       <h2
         class="emotion-4 emotion-5"
-        color="textPrimary"
+        color="content.heading"
         data-testid="typography"
       >
         Title here
       </h2>
       <p
         class="emotion-6 emotion-5"
-        color="textSecondary"
+        color="content.body"
         data-testid="typography"
       >
         Some description here.

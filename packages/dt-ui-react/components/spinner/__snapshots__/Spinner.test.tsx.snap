@@ -34,9 +34,9 @@ exports[`<Spinner /> component should render the default options correctly 1`] =
 .emotion-2 {
   width: 48px;
   height: 48px;
-  border: 2px solid #EBECED;
+  border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #036DC1;
+  border-top: 2px solid #008DFC;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -136,9 +136,9 @@ exports[`<Spinner /> component should render the sizes correctly should render t
 .emotion-2 {
   width: 64px;
   height: 64px;
-  border: 2px solid #EBECED;
+  border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #036DC1;
+  border-top: 2px solid #008DFC;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -222,9 +222,9 @@ exports[`<Spinner /> component should render the sizes correctly should render t
 .emotion-2 {
   width: 56px;
   height: 56px;
-  border: 2px solid #EBECED;
+  border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #036DC1;
+  border-top: 2px solid #008DFC;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -292,9 +292,9 @@ exports[`<Spinner /> component should render the sizes correctly should render t
 .emotion-2 {
   width: 32px;
   height: 32px;
-  border: 2px solid #EBECED;
+  border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #036DC1;
+  border-top: 2px solid #008DFC;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -410,9 +410,9 @@ exports[`<Spinner /> component should render the small size correctly when the p
 .emotion-2 {
   width: 48px;
   height: 48px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #A1A2A3;
   border-radius: 50%;
-  border-top: 2px solid #036DC1;
+  border-top: 2px solid #FFFFFF;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -528,9 +528,9 @@ exports[`<Spinner /> component should render the text helper when prop is provid
 .emotion-2 {
   width: 48px;
   height: 48px;
-  border: 2px solid #EBECED;
+  border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #036DC1;
+  border-top: 2px solid #008DFC;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -556,7 +556,7 @@ exports[`<Spinner /> component should render the text helper when prop is provid
     />
     <p
       class="emotion-4 emotion-5"
-      color="textSecondary"
+      color="content.body"
       data-testid="typography"
       style="margin-top: 12px;"
     >

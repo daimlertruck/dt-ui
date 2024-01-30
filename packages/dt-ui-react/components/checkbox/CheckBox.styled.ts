@@ -4,8 +4,8 @@ export const CheckboxInputStyled = styled.input`
   ${({ theme }) => `
     appearance: none;
     margin: 0;
-    border: 1px solid ${theme.palette.neutralLight_100};
-    background-color: ${theme.colors.white};
+    border: 1px solid ${theme.palette.border.default};
+    background-color: ${theme.palette.base.default};
     transform: translateY(-0.075em);
     height: 16px;
     width: 16px;
@@ -19,7 +19,7 @@ export const CheckboxInputStyled = styled.input`
       height: 0.85em;
       clip-path: polygon(28% 38%, 41% 53%, 75% 24%, 86% 38%, 40% 78%, 15% 50%);
       transform: scale(0);
-      box-shadow: inset 1em 1em ${theme.colors.white};
+      box-shadow: inset 1em 1em ${theme.palette.base.default};
       background-color: CanvasText;
     }
     
@@ -28,7 +28,7 @@ export const CheckboxInputStyled = styled.input`
     }
 
     &:checked {
-      background: ${theme.palette.primary};
+      background: ${theme.palette.primary.default};
       border: none;
     }
 
@@ -37,15 +37,15 @@ export const CheckboxInputStyled = styled.input`
     }
 
     &:disabled:checked {
-      background-color: ${theme.palette.neutralLight_100};
+      background-color: ${theme.palette.primary.light};
     }
 
     &:disabled:not(checked){
-      background-color: ${theme.palette.neutralLight_300};
+      background-color: ${theme.palette.base.light};
     }
 
     &:disabled:not(checked) ~ label {
-      color: ${theme.palette.neutral};
+      color: ${theme.palette.content.disabled};
       pointer-events: none;
     }
   `}
@@ -60,6 +60,6 @@ export const CheckboxLabelStyled = styled.label`
     align-items: center;
     padding-left: 8px;
     ${theme.fontStyles.p};
-    color: ${theme.colors.grey_200};
+    color: ${theme.palette.content.body};
   `}
 `;

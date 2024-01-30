@@ -87,20 +87,20 @@ Modal.Header = ({
       hasBorder={hasBorder}
     >
       <HeaderWrapperStyled>
-        <Typography color='textPrimary' element='h4' fontStyles='h4'>
+        <Typography color='content.heading' element='h4' fontStyles='h4'>
           {title}
         </Typography>
 
         <IconButton
           ariaLabel='close modal'
-          color='neutralDark_700'
+          color='default'
           onMouseDown={handleClose}
         >
           <CloseIcon />
         </IconButton>
       </HeaderWrapperStyled>
       {subTitle ? (
-        <Typography color='textSecondary' element='h5' fontStyles='body1'>
+        <Typography color='content.body' element='h5' fontStyles='body1'>
           {subTitle}
         </Typography>
       ) : null}

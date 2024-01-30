@@ -3,13 +3,13 @@ import styled from '@emotion/styled';
 export const EmptyStateStyled = styled.div`
   ${({ theme }) => `
     padding: ${theme.spacing.l} ${theme.spacing.s};
-    background-color: ${theme.colors.grey_10};
+    background-color: ${theme.palette.base.light};
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: ${theme.shape.emptyState};
-    border: 1px dashed ${theme.colors.grey_30};
+    border: 1px dashed ${theme.palette.border.default};
     width: 100%;
     height: 100%;
     gap: ${theme.spacing.xs};

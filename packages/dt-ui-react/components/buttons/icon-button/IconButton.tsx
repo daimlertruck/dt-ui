@@ -1,4 +1,4 @@
-import { BaseProps, CustomTheme as Theme } from '../../../types';
+import { BaseProps, Colors } from '../../../types';
 
 import { IconButtonStyled } from './IconButton.styled';
 
@@ -8,7 +8,7 @@ export interface IconButtonProps extends BaseProps {
   onMouseUp?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   onMouseOver?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   onMouseEnter?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  color?: keyof Theme['palette'];
+  color?: Colors | 'default';
   isDisabled?: boolean;
   ariaLabel?: string;
 }

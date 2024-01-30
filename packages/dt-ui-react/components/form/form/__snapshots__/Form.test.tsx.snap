@@ -27,7 +27,7 @@ exports[`<Form /> component renders simple form 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #7C7C7D;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -49,9 +49,9 @@ exports[`<Form /> component renders simple form 1`] = `
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #323232;
-  border-bottom: 1px solid #323232;
-  color: #151617;
+  border: 1px solid #D3D4D5;
+  border-bottom: 1px solid #D3D4D5;
+  color: #7C7C7D;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -61,7 +61,7 @@ exports[`<Form /> component renders simple form 1`] = `
 }
 
 .emotion-6:focus {
-  border-bottom: 2px solid #036DC1;
+  border-bottom: 2px solid #008DFC;
   outline: none;
 }
 
@@ -135,7 +135,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  color: #8B8C8C;
+  color: #7C7C7D;
 }
 
 .emotion-4 {
@@ -171,7 +171,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #7C7C7D;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -193,9 +193,9 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #323232;
-  border-bottom: 1px solid #323232;
-  color: #151617;
+  border: 1px solid #D3D4D5;
+  border-bottom: 1px solid #D3D4D5;
+  color: #7C7C7D;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -205,7 +205,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
 }
 
 .emotion-10:focus {
-  border-bottom: 2px solid #036DC1;
+  border-bottom: 2px solid #008DFC;
   outline: none;
 }
 
@@ -269,7 +269,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  color: #8B8C8C;
+  color: #7C7C7D;
 }
 
 .emotion-4 {
@@ -303,7 +303,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #7C7C7D;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -325,9 +325,9 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #323232;
-  border-bottom: 1px solid #323232;
-  color: #151617;
+  border: 1px solid #D3D4D5;
+  border-bottom: 1px solid #D3D4D5;
+  color: #7C7C7D;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -337,7 +337,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
 }
 
 .emotion-10:focus {
-  border-bottom: 2px solid #036DC1;
+  border-bottom: 2px solid #008DFC;
   outline: none;
 }
 
@@ -419,7 +419,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  color: #8B8C8C;
+  color: #7C7C7D;
 }
 
 .emotion-4 {
@@ -445,7 +445,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #002441;
+  color: #008DFC;
 }
 
 .emotion-8 {
@@ -479,7 +479,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #8B8C8C;
+  color: #7C7C7D;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -501,9 +501,9 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #323232;
-  border-bottom: 1px solid #323232;
-  color: #151617;
+  border: 1px solid #D3D4D5;
+  border-bottom: 1px solid #D3D4D5;
+  color: #7C7C7D;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -513,7 +513,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
 }
 
 .emotion-14:focus {
-  border-bottom: 2px solid #036DC1;
+  border-bottom: 2px solid #008DFC;
   outline: none;
 }
 
@@ -530,7 +530,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
       >
         <p
           class="emotion-6 emotion-7"
-          color="blue_100"
+          color="primary.default"
           data-testid="typography"
           style="text-transform: uppercase;"
         >

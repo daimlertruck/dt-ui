@@ -33,7 +33,7 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  background-color: #036DC1;
+  background-color: #008DFC;
   color: #FFFFFF;
   border-radius: 4px;
   padding: 12px 32px;
@@ -64,8 +64,7 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
 }
 
 .emotion-4:hover {
-  background: #CCE8FF;
-  color: #323232;
+  background: #E6F5FF;
 }
 
 .emotion-8 {
@@ -89,7 +88,7 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   border-radius: 4px;
   padding: 12px 32px;
   cursor: not-allowed;
-  background-color: #EBECED;
+  background-color: #F8F9FA;
   color: #BABBBB;
   opacity: 0.4;
 }
@@ -233,8 +232,8 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   align-items: center;
   padding: 16px 14px;
   background-color: #FFFFFF;
-  box-shadow: inset 2px 0px 0px 0px #036DC1;
-  color: #036DC1;
+  box-shadow: inset 2px 0px 0px 0px #008DFC;
+  color: #008DFC;
   max-width: 300px;
   overflow: hidden;
   text-align: start;
@@ -254,7 +253,7 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   padding: 16px 14px;
   background-color: #FFFFFF;
   box-shadow: 0;
-  color: #8B8C8C;
+  color: #7C7C7D;
   max-width: 300px;
   overflow: hidden;
   text-align: start;
@@ -262,7 +261,7 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
 }
 
 .emotion-4:hover {
-  background: #636464;
+  background: #F8F9FA;
 }
 
 .emotion-8 {
@@ -278,18 +277,18 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   padding: 16px 14px;
   background-color: #FFFFFF;
   box-shadow: 0;
-  color: #8B8C8C;
+  color: #7C7C7D;
   max-width: 300px;
   overflow: hidden;
   text-align: start;
   cursor: not-allowed;
-  background-color: #EBECED;
+  background-color: #F8F9FA;
   color: #BABBBB;
   opacity: 0.4;
 }
 
 .emotion-8:hover {
-  background: #636464;
+  background: #F8F9FA;
 }
 
 .emotion-8:active {

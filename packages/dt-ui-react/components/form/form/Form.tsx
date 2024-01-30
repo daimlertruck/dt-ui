@@ -47,7 +47,7 @@ Form.Group = ({ children, isDisabled, title, tooltip }: GroupProps) => {
       {title ? (
         <LabelStyled>
           <Typography
-            color='blue_100'
+            color='primary.default'
             fontStyles='h6'
             style={{ textTransform: 'uppercase' }}
           >

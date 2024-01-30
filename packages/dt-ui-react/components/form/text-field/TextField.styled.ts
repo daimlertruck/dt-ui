@@ -16,17 +16,21 @@ export const InputFieldStyled = styled.input<InputFieldStyledProps>`
   ${({ theme, hasError, disabled }) => `
     ${theme.fontStyles.pSmall}
 
-    background-color: ${disabled ? theme.colors.grey_70 : theme.colors.white};
-    border: 1px solid ${theme.colors.grey_90};
+    background-color: ${
+      disabled ? theme.palette.base.light : theme.palette.base.default
+    };
+    border: 1px solid ${theme.palette.border.default};
 
     // Change border based on input status
     border-bottom: ${
       hasError
-        ? `2px solid ${theme.palette.error}`
-        : `1px solid ${theme.colors.grey_90}`
+        ? `2px solid ${theme.palette.error.default}`
+        : `1px solid ${theme.palette.border.default}`
     };
 
-    color: ${disabled ? theme.colors.grey_100 : theme.colors.grey_300};
+    color: ${
+      disabled ? theme.palette.content.disabled : theme.palette.content.body
+    };
     min-width: 198px;
     padding: 20px 15px 5px 15px;
     transition: all 0.2s ease-in-out;
@@ -37,7 +41,7 @@ export const InputFieldStyled = styled.input<InputFieldStyledProps>`
       ${
         !hasError &&
         `
-          border-bottom: 2px solid ${theme.palette.primary};
+          border-bottom: 2px solid ${theme.palette.primary.default};
           outline: none;
         `
       }
@@ -51,7 +55,7 @@ export const InputFieldIconStyled = styled.span`
   top: 15px;
   width: 24px;
   height: 24px;
-  color: ${({ theme }) => theme.palette.error};
+  color: ${({ theme }) => theme.palette.error.default};
 `;
 
 export const TextFieldMessageStyled = styled.div`

@@ -33,8 +33,8 @@ export const ItemStyled = styled.button<TabItemStyledProps>`
     ${
       disabled &&
       `
-        background-color: ${theme.palette.neutral};
-        color: ${theme.palette.textTertiary};
+        background-color: ${theme.palette.base.light};
+        color: ${theme.palette.content.disabled};
         opacity: 0.4;
         &:active {
           pointer-events: none; 
@@ -46,7 +46,7 @@ export const ItemStyled = styled.button<TabItemStyledProps>`
 
 export const PanelStyled = styled.div<TabPanelStyledProps>`
   ${({ visible, theme }) => `
-    background-color: ${theme.colors.white};
+    background-color: ${theme.palette.base.default};
     padding: 32px;
     width: 100%;
     ${

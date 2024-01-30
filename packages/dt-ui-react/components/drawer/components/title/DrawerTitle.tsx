@@ -5,7 +5,7 @@ export interface DrawerTitleProps {
 }
 
 export const DrawerTitle = ({ title }: DrawerTitleProps) => (
-  <Typography color='textPrimary' element='h4' fontStyles='h4'>
+  <Typography color='content.heading' element='h4' fontStyles='h4'>
     {title}
   </Typography>
 );

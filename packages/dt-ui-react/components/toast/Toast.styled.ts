@@ -19,8 +19,8 @@ export const ToastIconStyled = styled.div<ToastIconStyledProps>`
   padding-left: 8px;
   padding-right: 8px;
   ${({ theme, type }) => `
-    background-color: ${theme.palette[type]};  
-    color: ${theme.colors.white}
+    background-color: ${theme.palette[type].default};  
+    color: ${theme.palette[type].contrast}
 `}
 `;
 
@@ -38,9 +38,9 @@ export const ToastStyled = styled.div<ToastStyledProps>`
   transition: all 0.75s ease-in-out;
   overflow: hidden;
   ${({ theme, isVisible }) => `
-    background-color: ${theme.colors.white};  
+    background-color: ${theme.palette.base.default};  
     opacity: ${isVisible ? 1 : 0};
-    color: ${theme.colors.grey_300};
+    color: ${theme.palette.content.body};
     border-radius: ${theme.radius['5xs']};
     box-shadow: ${theme.shadows.s};
   `}
@@ -57,7 +57,7 @@ export const ToastContentStyled = styled.div`
 export const ToastTitleStyled = styled.div`
   ${({ theme }) => `
       ${theme.fontStyles.h5};
-      color: ${theme.palette.textPrimary};
+      color: ${theme.palette.content.heading};
       margin-bottom: ${theme.spacing['5xs']};
       text-transform: capitalize;
   `}
@@ -66,7 +66,7 @@ export const ToastTitleStyled = styled.div`
 export const ToastMessageStyled = styled.div`
   ${({ theme }) => `
     ${theme.fontStyles.body2};
-    color: ${theme.palette.textSecondary};
+    color: ${theme.palette.content.body};
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -76,7 +76,7 @@ export const ToastMessageStyled = styled.div`
 
 export const ToastButtonCloseStyled = styled.button`
   ${({ theme }) => `
-    color: ${theme.colors.grey_40};
+    color: ${theme.palette.content.body};
     border: 0;
     cursor: pointer;
     background: transparent;
@@ -85,7 +85,7 @@ export const ToastButtonCloseStyled = styled.button`
     line-height: 0;
   
     &:hover {
-      background-color: ${theme.palette.neutral};
+      background-color: ${theme.palette.base.light};
     }
   `}
 `;
@@ -116,5 +116,5 @@ export const ToastActionsStyled = styled.div<ToastActionsProps>`
     flex-direction: row;
     justify-content: flex-end;
     padding-top: ${hasChildren ? theme.spacing['5xs'] : 0};
- `}
+  `}
 `;

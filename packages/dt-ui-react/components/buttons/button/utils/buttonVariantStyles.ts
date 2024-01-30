@@ -1,68 +1,61 @@
 import { CustomTheme as Theme } from '../../../../types';
 import { ButtonVariant, ButtonColor } from '../constants';
 
-const getOutlinedButtonStyles = (theme: Theme) => ({
+const getOutlinedButtonStyles = (
+  theme: Theme
+): Record<ButtonColor, string> => ({
   primary: `
-    color: ${theme.palette.primary};
-    background-color: ${theme.colors.white};
-    border: 1px solid ${theme.palette.primary};
+    color: ${theme.palette.primary.default};
+    background-color: ${theme.palette.primary.contrast};
+    border: 1px solid ${theme.palette.primary.default};
     &:hover {
-      color: ${theme.palette.primaryDark_300};
-      background-color: ${theme.colors.white};
-      border: 1px solid ${theme.palette.primaryDark_300};
+      color: ${theme.palette.primary.dark};
+      border: 1px solid ${theme.palette.primary.dark};
     }
     &:active {
-      color: ${theme.palette.primaryDark_300};
-      background-color: ${theme.colors.white};
-      border: 1px solid ${theme.palette.primaryDark_300};
+      color: ${theme.palette.primary.dark};
+      border: 1px solid ${theme.palette.primary.dark};
     }
     &:disabled {
       cursor: not-allowed;
-      color: ${theme.palette.primaryLight_300};
-      background-color: ${theme.colors.white};
-      border: 1px solid ${theme.palette.primaryLight_300};
+      color: ${theme.palette.primary.medium};
+      border: 1px solid ${theme.palette.primary.medium};
     }
   `,
   error: `
-    color: ${theme.palette.error};
-    background-color: ${theme.colors.white};
-    border: 1px solid ${theme.palette.error};
+    color: ${theme.palette.error.default};
+    background-color: ${theme.palette.error.contrast};
+    border: 1px solid ${theme.palette.error.default};
     &:hover {
-      color: ${theme.palette.errorDark_300};
-      background-color: ${theme.colors.white};
-      border: 1px solid ${theme.palette.errorDark_300};
+      color: ${theme.palette.error.dark};
+      border: 1px solid ${theme.palette.error.dark};
     }
     &:active {
-      color: ${theme.palette.errorDark_300};
-      background-color: ${theme.colors.white};
-      border: 1px solid ${theme.palette.errorDark_300};
+      color: ${theme.palette.error.dark};
+      border: 1px solid ${theme.palette.error.dark};
     }
     &:disabled {
       cursor: not-allowed;
-      color: ${theme.palette.errorLight_300};
-      background-color: ${theme.colors.white};
-      border: 1px solid ${theme.palette.errorLight_300};
+      color: ${theme.palette.error.medium};
+      border: 1px solid ${theme.palette.error.medium};
     }
   `,
-  neutral: `
-    color: ${theme.palette.neutralDark_400};
-    background-color: ${theme.colors.white};
-    border: 1px solid ${theme.palette.neutralDark_100};
+  secondary: `
+    color: ${theme.palette.secondary.default};
+    background-color: ${theme.palette.secondary.contrast};
+    border: 1px solid ${theme.palette.secondary.default};
     &:hover {
-      color: ${theme.palette.neutralDark_700};
-      background-color: ${theme.colors.white};
-      border: 1px solid ${theme.palette.neutralDark_200};
+      color: ${theme.palette.secondary.dark};
+      border: 1px solid ${theme.palette.secondary.dark};
     }
     &:active {
-      color: ${theme.palette.neutralDark_700};
-      background-color: ${theme.colors.white};
-      border: 1px solid ${theme.palette.neutralDark_200};
+      color: ${theme.palette.secondary.dark};
+      border: 1px solid ${theme.palette.secondary.dark};
     }
     &:disabled {
       cursor: not-allowed;
-      color: ${theme.palette.neutralDark_100};
-      background-color: ${theme.colors.white};
-      border: 1px solid ${theme.palette.neutralDark_100};
+      color: ${theme.palette.secondary.medium};
+      border: 1px solid ${theme.palette.secondary.medium};
     }
   `,
 });
@@ -75,12 +68,12 @@ export const buttonVariantStyles = (
   return {
     solid: `
       border: ${theme.spacing.none};
-      color: ${theme.colors.white};
-      background-color: ${theme.palette[color]};
+      color: ${theme.palette[color].contrast};
+      background-color: ${theme.palette[color].default};
       
       &:hover {
-        color: ${theme.colors.white};
-        background-color: ${theme.palette[`${color}Dark_300`]};
+        color: ${theme.palette[color].contrast};
+        background-color: ${theme.palette[color].dark};
       }
 
       &:disabled {
@@ -91,17 +84,17 @@ export const buttonVariantStyles = (
     outlined: getOutlinedButtonStyles(theme)[color],
     text: `
       border: none;
-      color: ${theme.palette[color]};
-      background-color: 'transparent';
+      color: ${theme.palette[color].default};
+      background-color: transparent;
       
       &:hover {
-        color: ${theme.palette[`${color}Dark_300`]};
-        background-color: 'transparent';
+        color: ${theme.palette[color].dark};
+        background-color: transparent;
       }
       
       &:disabled {
         cursor: not-allowed;
-        color: ${theme.palette.neutralLight_100};
+        color: ${theme.palette[color].medium};
       }
     `,
   }[variant];

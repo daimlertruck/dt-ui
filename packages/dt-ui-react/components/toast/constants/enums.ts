@@ -10,7 +10,7 @@ export enum ToastPosition {
 export enum ToastType {
   Success = 'success',
   Error = 'error',
-  Info = 'info',
+  Info = 'informative',
   Warning = 'warning',
   /* react-hot-toast types
   Loading = 'loading',

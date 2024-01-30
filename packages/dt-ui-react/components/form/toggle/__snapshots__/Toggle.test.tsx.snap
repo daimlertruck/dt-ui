@@ -28,7 +28,7 @@ exports[`<Toggle /> component when the toggle is disabled and is checked should 
 }
 
 .emotion-2:checked+label {
-  background: #8B8C8C;
+  background: #F8F9FA;
 }
 
 .emotion-2:checked+label::after {
@@ -43,11 +43,11 @@ exports[`<Toggle /> component when the toggle is disabled and is checked should 
 }
 
 .emotion-2:disabled~span {
-  color: #8B8C8C;
+  color: #BABBBB;
 }
 
 .emotion-2:not(:checked)+label {
-  background: #323232;
+  background: #F8F9FA;
 }
 
 .emotion-4 {
@@ -55,7 +55,7 @@ exports[`<Toggle /> component when the toggle is disabled and is checked should 
   width: 40px;
   height: 20px;
   border-radius: 10px;
-  background: #8B8C8C;
+  background: #F8F9FA;
   cursor: pointer;
 }
 
@@ -78,7 +78,7 @@ exports[`<Toggle /> component when the toggle is disabled and is checked should 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #4F4F4F;
+  color: #7C7C7D;
 }
 
 <div>
@@ -99,7 +99,7 @@ exports[`<Toggle /> component when the toggle is disabled and is checked should 
     />
     <span
       class="emotion-6 emotion-7"
-      color="grey_200"
+      color="content.body"
       data-testid="toggle-label"
       style="font-weight: 700;"
     >
@@ -137,7 +137,7 @@ exports[`<Toggle /> component when the toggle is disabled and isn't checked shou
 }
 
 .emotion-2:checked+label {
-  background: #8B8C8C;
+  background: #F8F9FA;
 }
 
 .emotion-2:checked+label::after {
@@ -152,11 +152,11 @@ exports[`<Toggle /> component when the toggle is disabled and isn't checked shou
 }
 
 .emotion-2:disabled~span {
-  color: #8B8C8C;
+  color: #BABBBB;
 }
 
 .emotion-2:not(:checked)+label {
-  background: #323232;
+  background: #F8F9FA;
 }
 
 .emotion-4 {
@@ -164,7 +164,7 @@ exports[`<Toggle /> component when the toggle is disabled and isn't checked shou
   width: 40px;
   height: 20px;
   border-radius: 10px;
-  background: #8B8C8C;
+  background: #F8F9FA;
   cursor: pointer;
 }
 
@@ -187,7 +187,7 @@ exports[`<Toggle /> component when the toggle is disabled and isn't checked shou
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #4F4F4F;
+  color: #7C7C7D;
 }
 
 <div>
@@ -207,7 +207,7 @@ exports[`<Toggle /> component when the toggle is disabled and isn't checked shou
     />
     <span
       class="emotion-6 emotion-7"
-      color="grey_200"
+      color="content.body"
       data-testid="toggle-label"
       style="font-weight: 700;"
     >
@@ -260,11 +260,11 @@ exports[`<Toggle /> component when the toggle isn't disabled and is checked with
 }
 
 .emotion-2:disabled~span {
-  color: #8B8C8C;
+  color: #BABBBB;
 }
 
 .emotion-2:not(:checked)+label {
-  background: #EBECED;
+  background: #7C7C7D;
 }
 
 .emotion-4 {
@@ -272,7 +272,7 @@ exports[`<Toggle /> component when the toggle isn't disabled and is checked with
   width: 40px;
   height: 20px;
   border-radius: 10px;
-  background: #8B8C8C;
+  background: #F8F9FA;
   cursor: pointer;
 }
 
@@ -351,11 +351,11 @@ exports[`<Toggle /> component when the toggle isn't disabled and isn't checked s
 }
 
 .emotion-2:disabled~span {
-  color: #8B8C8C;
+  color: #BABBBB;
 }
 
 .emotion-2:not(:checked)+label {
-  background: #EBECED;
+  background: #7C7C7D;
 }
 
 .emotion-4 {
@@ -363,7 +363,7 @@ exports[`<Toggle /> component when the toggle isn't disabled and isn't checked s
   width: 40px;
   height: 20px;
   border-radius: 10px;
-  background: #8B8C8C;
+  background: #F8F9FA;
   cursor: pointer;
 }
 

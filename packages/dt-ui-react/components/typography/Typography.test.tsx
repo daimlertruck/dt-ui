@@ -35,11 +35,11 @@ describe('<Typography /> component', () => {
 
   it('should render a p html element with the primary color', () => {
     const { container } = render(
-      <ProvidedTypography color='primary'>Some text</ProvidedTypography>
+      <ProvidedTypography color='primary.default'>Some text</ProvidedTypography>
     );
 
     const pElement = container.querySelector('p');
     expect(pElement).toBeInTheDocument();
-    expect(pElement).toHaveStyle({ color: 'rgb(3, 109, 193)' });
+    expect(pElement).toHaveStyle({ color: 'rgb(0, 141, 252)' });
   });
 });

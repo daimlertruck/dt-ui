@@ -8,7 +8,7 @@ export const HeaderStyled = styled.header`
     width: 100%;
     padding: ${theme.spacing.none} ${theme.spacing.xs} ${theme.spacing.xs}
       ${theme.spacing.xs};
-    background-color: ${theme.colors.white};
+    background-color: ${theme.palette.base.default};
     border-radius: ${theme.radius['3xs']} ${theme.radius.none}
       ${theme.radius.none} ${theme.radius.none};
 

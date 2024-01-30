@@ -37,7 +37,7 @@ export const OverlayStyled = styled.div<DrawerBaseProps>`
     width: 100%;
     height: 100vh;
     position: absolute;
-    background-color: ${theme.colors.grey_90};
+    background-color: ${theme.palette.base.dark};
     opacity: ${isVisible ? 0.2 : 0};
     transition: opacity ${theme.animations.emphasizedDecelerate.duration}
       ${theme.animations.emphasizedDecelerate.timingFunction};
@@ -51,7 +51,7 @@ export const DrawerStyled = styled.div<DrawerBaseProps>`
     position: absolute;
     top: 0;
     right: 0;
-    background-color: ${theme.colors.white};
+    background-color: ${theme.palette.base.default};
     transform: ${isVisible ? 'translateX(0)' : 'translateX(100%)'};
     transition: transform ${theme.animations.emphasizedDecelerate.duration}
       ${theme.animations.emphasizedDecelerate.timingFunction};
@@ -87,6 +87,6 @@ export const CloseButtonContainerStyled = styled.div`
 
 export const CloseButtonStyled = styled(IconButtonStyled)`
   ${({ theme }) => `
-    color: ${theme.colors.grey_60};
+    color: ${theme.palette.content.body};
   `}
 `;

@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 
-import { CustomTheme as Theme } from '../../../types';
+import { Colors } from '../../../types';
 
 export interface IconButtonStyledProps {
-  color: keyof Theme['palette'];
+  color: Colors | 'default';
 }
 
 export const IconButtonStyled = styled.button<IconButtonStyledProps>`
@@ -13,10 +13,14 @@ export const IconButtonStyled = styled.button<IconButtonStyledProps>`
     border: none;
     cursor: pointer;
     background-color: transparent;
-    color: ${theme.colors.grey_200};
+    color: ${theme.palette.content.body};
 
     &:hover {
-      color: ${theme.palette[color]};
+      color: ${
+        color === 'default'
+          ? theme.palette.content.heading
+          : theme.palette[color].default
+      };
     };
     
     ${

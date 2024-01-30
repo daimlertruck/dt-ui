@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { Colors } from '../../types';
 
 export interface CounterStyledProps {
-  color: Colors;
+  color: Colors | 'disabled';
   outlined?: boolean;
   isLarge?: boolean;
 }
@@ -11,7 +11,11 @@ export interface CounterStyledProps {
 export const CounterStyled = styled.span<CounterStyledProps>`
   ${({ theme, color, outlined, isLarge }) => `
     ${theme.fontStyles.tag}
-    color: ${theme.colors.white};
+    color: ${
+      color === 'disabled'
+        ? theme.palette.content.contrast
+        : theme.palette[color].contrast
+    };
     border: ${theme.spacing.none};
     align-items: center;
     justify-content: center;
@@ -19,14 +23,26 @@ export const CounterStyled = styled.span<CounterStyledProps>`
     width: ${isLarge ? '24px' : '16px'};
     height: ${isLarge ? '24px' : '16px'};
     border-radius: 50%;
-    background-color: ${theme.palette[color]};
+    background-color: ${
+      color === 'disabled'
+        ? theme.palette.content.body
+        : theme.palette[color].default
+    };
 
     ${
       outlined &&
       `
-        border: 2px solid ${theme.palette[color]};
-        color: ${theme.palette[color]};
-        background-color: ${theme.colors.white}
+        border: 2px solid ${
+          color === 'disabled'
+            ? theme.palette.content.disabled
+            : theme.palette[color].default
+        };
+        color: ${
+          color === 'disabled'
+            ? theme.palette.content.disabled
+            : theme.palette[color].default
+        };
+        background-color: ${theme.palette.base.default}
       `
     };
   `}

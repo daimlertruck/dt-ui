@@ -1,12 +1,17 @@
 import { forwardRef } from 'react';
 
 import { theme } from '../../themes/default';
-import { BaseProps, Elements, CustomTheme as Theme } from '../../types';
+import {
+  BaseProps,
+  Elements,
+  CustomTheme as Theme,
+  PaletteKeys,
+} from '../../types';
 
 import { TypographyStyled } from './Typography.styled';
 
 export interface TypographyProps extends BaseProps {
-  color?: keyof Theme['colors'] | keyof Theme['palette'] | 'unset' | 'inherit';
+  color?: keyof Theme['colors'] | PaletteKeys | 'unset' | 'inherit';
   fontStyles?: keyof Theme['fontStyles'];
   element?: Elements;
 }

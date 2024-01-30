@@ -21,7 +21,7 @@ describe('<Button /> component', () => {
   it('renders a disabled button html element with the correct title', () => {
     render(
       <ProvidedButton
-        color='neutral'
+        color='secondary'
         dataTestId='secondary'
         isDisabled
         onClick={() => null}

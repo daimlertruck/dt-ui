@@ -50,10 +50,10 @@ const StepCounter = ({
   isError = false,
 }: BaseStepProps) => {
   const theme = useTheme();
-  const color = isError ? 'error' : isDisabled ? 'neutralLight_100' : 'primary';
+  const color = isError ? 'error' : isDisabled ? 'disabled' : 'primary';
   const bgColor = isError
-    ? theme.palette.errorLight_300
-    : theme.palette.primaryLight_300;
+    ? theme.palette.error.light
+    : theme.palette.primary.light;
 
   return (
     <Counter
@@ -69,7 +69,7 @@ const StepCounter = ({
         <Check height={8} width={10} />
       ) : (
         <Typography
-          color={color}
+          color={color === 'disabled' ? 'content.disabled' : `${color}.default`}
           element='span'
           fontStyles='pXXSmall'
           style={{ fontWeight: 700 }}
@@ -94,9 +94,9 @@ const labelColor = ({
   } else if (isActive || isCompleted) {
     return 'primary';
   } else if (isDisabled) {
-    return 'neutralLight_100';
+    return 'disabled';
   } else {
-    return 'neutral';
+    return 'secondary';
   }
 };
 
