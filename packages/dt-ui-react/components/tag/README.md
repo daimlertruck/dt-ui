@@ -2,6 +2,8 @@
 
 Tags can be used to display states (Active, Cancelled...) in lists, tables, etc.
 
+If the content of the tag exceeds the limit of 150px, it collapses with an ellipsis.
+
 ## Usage
 
 ```jsx
@@ -31,7 +33,7 @@ export const App = () => {
 | `onClick`    | `function`  | -       | The triggered function when clicked on the tag |
 | `onClose`    | `function`  | -       | The triggered function when closing the tag    |
 
-### TagGroup
+### Tag.Group
 
 | Property   | Type                  | Default | Description                  |
 | ---------- | --------------------- | ------- | ---------------------------- |

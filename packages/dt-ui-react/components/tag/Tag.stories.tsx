@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react';
 
-import { Tag, TagGroup, TagProps } from './Tag';
+import { Tag, TagProps } from './Tag';
 
 export default {
   title: 'Data Display/Tag',
@@ -21,10 +21,10 @@ Default.args = {
 
 const GroupTemplate: Story<TagProps> = ({ ...props }) => {
   return (
-    <TagGroup>
+    <Tag.Group>
       <Tag {...props}>{props.children}</Tag>
       <Tag {...props}>{props.children}</Tag>
-    </TagGroup>
+    </Tag.Group>
   );
 };
 export const DefaultGroup = GroupTemplate.bind({});

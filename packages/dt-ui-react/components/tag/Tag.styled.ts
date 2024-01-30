@@ -18,6 +18,11 @@ export const TagStyled = styled.span<TagStyledProps>`
     letter-spacing: 0.5px;
     padding: 4px 6px;
     border-radius: 2px;
+    display: block;
+    max-width: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 
     ${
       isClickable &&

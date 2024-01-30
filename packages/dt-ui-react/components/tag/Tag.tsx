@@ -24,16 +24,17 @@ export const Tag = ({
   isClickable = false,
 }: TagProps) => {
   const theme = useTheme();
+  const isDismissible = !!onClose;
 
   return (
     <TagStyled
       data-testid={dataTestId ?? 'tag'}
-      isClickable={isClickable || !!onClick}
+      isClickable={isClickable || isDismissible}
       onClick={onClick}
       variant={variant}
     >
       {children}
-      {onClose && !isDisabled && (
+      {isDismissible && !isDisabled && (
         <TagButtonCloseStyled
           onClick={onClose}
           data-testid={`${dataTestId}-close-button`}
@@ -50,6 +51,6 @@ export const Tag = ({
   );
 };
 
-export const TagGroup = ({ children, style }: BaseProps) => {
+Tag.Group = ({ children, style }: BaseProps) => {
   return <TagGroupStyled style={style}>{children}</TagGroupStyled>;
 };

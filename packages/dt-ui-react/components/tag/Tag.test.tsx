@@ -1,9 +1,8 @@
 import { fireEvent, screen, render } from '@testing-library/react';
-import React from 'react';
 
 import { withProviders } from '../../utils';
 
-import { Tag, TagGroup } from './Tag';
+import { Tag } from './Tag';
 
 describe('<Tag /> component', () => {
   const ProvidedTag = withProviders(Tag);
@@ -14,12 +13,20 @@ describe('<Tag /> component', () => {
     expect(container).toMatchSnapshot();
   });
 
+  it('should show ellipsis if the content exceeds the limit width', async () => {
+    const { container } = render(
+      <ProvidedTag>This is a very long tag label</ProvidedTag>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
   it('should render a wrapper for a group of tags', () => {
     const { container } = render(
-      <TagGroup>
+      <Tag.Group>
         <ProvidedTag>Active</ProvidedTag>
         <ProvidedTag>Inactive</ProvidedTag>
-      </TagGroup>
+      </Tag.Group>
     );
 
     expect(container).toMatchSnapshot();
