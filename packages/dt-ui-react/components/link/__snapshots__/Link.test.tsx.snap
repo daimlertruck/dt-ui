@@ -96,7 +96,6 @@ exports[`<Link /> component Should render an anchor element with button styles 1
   align-items: center;
   gap: 8px;
   border-radius: 4px;
-  text-transform: none;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.25rem;

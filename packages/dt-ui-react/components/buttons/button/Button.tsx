@@ -7,7 +7,6 @@ import { ButtonSize, ButtonColor, ButtonVariant } from './constants';
 export type ButtonProps = {
   onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
   isDisabled?: boolean;
-  isUppercased?: boolean;
   isLoading?: boolean;
   size?: ButtonSize;
   variant?: ButtonVariant;
@@ -21,7 +20,6 @@ export const Button = ({
   dataTestId,
   isLoading,
   isDisabled = false,
-  isUppercased = false,
   size = 'medium',
   variant = 'solid',
   color = 'primary',
@@ -38,7 +36,6 @@ export const Button = ({
       color={color}
       data-testid={`${dataTestId}-button`}
       disabled={isDisabled || isLoading}
-      isUppercased={isUppercased}
       onClick={handleButtonClick}
       size={size}
       style={style}

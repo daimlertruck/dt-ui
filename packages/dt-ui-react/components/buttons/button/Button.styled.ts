@@ -6,14 +6,13 @@ import { buttonSizeStyles } from './utils/buttonSizeStyles';
 
 export interface ButtonStyledProps {
   isLoading?: boolean;
-  isUppercased?: boolean;
   variant: ButtonVariant;
   color: ButtonColor;
   size: ButtonSize;
 }
 
 export const ButtonStyled = styled.button<ButtonStyledProps>`
-  ${({ theme, isUppercased, variant, color, size }) => `
+  ${({ theme, variant, color, size }) => `
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -23,7 +22,6 @@ export const ButtonStyled = styled.button<ButtonStyledProps>`
     align-items: center;
     gap: ${theme.spacing['4xs']};
     border-radius: ${theme.shape.button};
-    text-transform: ${isUppercased ? 'uppercase' : 'none'};
     
     ${buttonSizeStyles(size, theme)}
     ${buttonVariantStyles(variant, theme, color)}

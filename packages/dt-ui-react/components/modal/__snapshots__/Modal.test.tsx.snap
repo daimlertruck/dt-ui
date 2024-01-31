@@ -515,7 +515,6 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   align-items: center;
   gap: 8px;
   border-radius: 4px;
-  text-transform: none;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -573,7 +572,6 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   align-items: center;
   gap: 8px;
   border-radius: 4px;
-  text-transform: none;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.25rem;

@@ -1,24 +1,23 @@
-import { Story } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button, ButtonProps } from '.';
+import { Button } from '.';
 
-export default {
+type Story = StoryObj<typeof Button>;
+
+const meta: Meta<typeof Button> = {
   title: 'Data Display/Button',
   component: Button,
 };
 
-const Template: Story<ButtonProps> = ({ ...props }) => {
-  return <Button {...props} />;
-};
+export default meta;
 
-export const Default = Template.bind({});
-
-Default.args = {
-  children: 'Button',
-  onClick: () => null,
-  isUppercased: false,
-  isLoading: false,
-  variant: 'solid',
-  color: 'primary',
-  size: 'medium',
+export const Default: Story = {
+  args: {
+    children: 'Button',
+    onClick: () => null,
+    isLoading: false,
+    variant: 'solid',
+    color: 'primary',
+    size: 'medium',
+  },
 };
