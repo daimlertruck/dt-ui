@@ -1,5 +1,12 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.3
+
+### Patch Changes
+
+- fix: update typography sizes and text-trasnform
+- fix: remove isUppercased prop from button
+
 ## 0.1.0-beta.2
 
 ### Patch Changes
