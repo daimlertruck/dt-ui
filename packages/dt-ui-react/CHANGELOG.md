@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.51
+
+### Patch Changes
+
+- refactor: add style and dataTestId props to EmptyState
+- Updated dependencies
+  - @dt-ui/react-empty-state@0.1.0-beta.2
+
 ## 0.1.0-beta.50
 
 ### Minor Changes

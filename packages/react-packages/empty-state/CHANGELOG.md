@@ -1,5 +1,11 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.2
+
+### Patch Changes
+
+- refactor: add style and dataTestId props to EmptyState
+
 ## 0.1.0-beta.1
 
 ### Patch Changes
