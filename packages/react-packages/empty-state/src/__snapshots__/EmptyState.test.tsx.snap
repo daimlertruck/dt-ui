@@ -90,6 +90,7 @@ exports[`<EmptyState /> component should render Empty State 1`] = `
   >
     <div
       class="emotion-2 emotion-3"
+      data-testid="empty-state-content"
     >
       <h2
         class="emotion-4 emotion-5"
@@ -248,6 +249,7 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
   >
     <div
       class="emotion-2 emotion-3"
+      data-testid="empty-state-content"
     >
       <h2
         class="emotion-4 emotion-5"
@@ -536,6 +538,7 @@ exports[`<EmptyState /> component should render Empty State with image 1`] = `
     </svg>
     <div
       class="emotion-2 emotion-3"
+      data-testid="empty-state-content"
     >
       <h2
         class="emotion-4 emotion-5"

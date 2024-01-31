@@ -29,12 +29,20 @@ export const App = () => {
 
 ### EmptyState
 
-| Property      | Type        | Default         | Description                                                 |
-| ------------- | ----------- | --------------- | ----------------------------------------------------------- |
-| `children`    | `ReactNode` | -               | Child components to be rendered.                            |
-| `dataTestId`  | `string`    | `'empty-state'` | Customizable test identifier.                               |
-| `title`       | `string`    | -               | Text to be presented as Title within the Empty State.       |
-| `description` | `string`    | -               | Text to be presented as Description within the Empty State. |
+| Property     | Type                  | Default         | Description                                       |
+| ------------ | --------------------- | --------------- | ------------------------------------------------- |
+| `children`   | `ReactNode`           | -               | Child components to be rendered.                  |
+| `dataTestId` | `string`              | `'empty-state'` | Customizable test identifier.                     |
+| `style`      | `React.CSSProperties` | -               | Gives the EmptyState some specific css properties |
+
+### EmptyState.Content
+
+| Property      | Type                  | Default                 | Description                                                 |
+| ------------- | --------------------- | ----------------------- | ----------------------------------------------------------- |
+| `dataTestId`  | `string`              | `'empty-state-content'` | Customizable test identifier.                               |
+| `style`       | `React.CSSProperties` | -                       | Gives the EmptyState Content some specific css properties   |
+| `title`       | `string`              | -                       | Text to be presented as Title within the Empty State.       |
+| `description` | `string`              | -                       | Text to be presented as Description within the Empty State. |
 
 ### Stack
 
