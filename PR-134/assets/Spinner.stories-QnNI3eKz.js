@@ -1,5 +1,0 @@
-import{j as m}from"./jsx-runtime-vNq4Oc-g.js";import{S as p}from"./Spinner-iZqk1IJD.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./index-H1EXaXUo.js";import"./Box.styled-oB9eueTz.js";import"./emotion-styled.browser.esm-Scfyu_ZY.js";import"./extends-E30VzY7q.js";import"./Typography-WNFydnn9.js";import"./TooltipProvider-_0wtW8eX.js";import"./index-lb1Yyg-x.js";import"./emotion-react.browser.esm-7R29exhq.js";import"./index-XRl7aEt-.js";import"./index-5tMk2lpP.js";import"./util-p6oSlpjm.js";import"./Spinner.styled-U10FD3--.js";const h={title:"Data Display/Spinner",component:p},s=({...i})=>m.jsx(p,{...i}),r=s.bind({});r.args={size:"medium",colorScheme:"positive",loadingText:""};var o,t,e;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:`({
-  ...props
-}) => {
-  return <Spinner {...props} />;
-}`,...(e=(t=r.parameters)==null?void 0:t.docs)==null?void 0:e.source}}};const v=["Default"];export{r as Default,v as __namedExportsOrder,h as default};
