@@ -42,6 +42,7 @@ exports[`<Dropdown /> component renders a dropdown without border 1`] = `
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #8B8C8C;
 }
 
@@ -51,6 +52,7 @@ exports[`<Dropdown /> component renders a dropdown without border 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #151617;
 }
 
@@ -143,6 +145,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #8B8C8C;
 }
 
@@ -152,6 +155,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #151617;
 }
 
@@ -175,6 +179,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   list-style: none;
   padding: 8px 16px;
   text-overflow: ellipsis;

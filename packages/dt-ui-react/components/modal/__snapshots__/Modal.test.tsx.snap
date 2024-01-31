@@ -184,6 +184,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
   line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #323232;
 }
 
@@ -414,6 +415,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #323232;
 }
 
@@ -449,6 +451,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #7C7C7D;
 }
 
@@ -518,6 +521,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   padding: 12px 24px;
   color: #4A4A4B;
   background-color: #FFFFFF;
@@ -575,6 +579,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   padding: 12px 24px;
   border: 0;
   color: #FFFFFF;

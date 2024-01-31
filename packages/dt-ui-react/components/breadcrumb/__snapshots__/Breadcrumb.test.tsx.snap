@@ -7,6 +7,7 @@ exports[`<Breadcrumb /> component renders nav element with the correct breadcrum
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #7C7C7D;
   margin-bottom: 12px;
   overflow: hidden;
@@ -42,6 +43,7 @@ exports[`<Breadcrumb /> component renders nav element with the correct breadcrum
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #036DC1;
   cursor: pointer;
 }

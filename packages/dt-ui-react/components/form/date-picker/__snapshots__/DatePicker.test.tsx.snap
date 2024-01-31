@@ -14,6 +14,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #8B8C8C;
   cursor: inherit;
   font-size: .75rem;
@@ -34,6 +35,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 2px solid #FF4A4A;
@@ -56,6 +58,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #D21C1C;
 }
 
@@ -108,6 +111,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #8B8C8C;
   cursor: inherit;
   font-size: .75rem;
@@ -128,6 +132,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 2px solid #FF4A4A;
@@ -150,6 +155,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #D21C1C;
 }
 
@@ -202,6 +208,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #8B8C8C;
   cursor: inherit;
   font-size: .75rem;
@@ -222,6 +229,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 1px solid #323232;

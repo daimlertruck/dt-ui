@@ -541,6 +541,7 @@ exports[`<Spinner /> component should render the text helper when prop is provid
   line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #7C7C7D;
 }
 

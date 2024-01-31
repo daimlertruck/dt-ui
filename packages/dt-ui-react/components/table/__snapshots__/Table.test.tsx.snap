@@ -48,10 +48,11 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   color: #323232;
   padding: 0 16px 16px;
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 0.625rem;
   line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
 }
 
 .emotion-14 {
@@ -98,6 +99,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
 }
 
 .emotion-18:not(:first-of-type):before {
@@ -109,6 +111,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
 }
 
 .emotion-18:first-of-type {
@@ -120,6 +123,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
 }
 
 @media (min-width: 900px) {
@@ -133,6 +137,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
     line-height: 1.25rem;
     letter-spacing: normal;
     margin: 0;
+    text-transform: none;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -147,6 +152,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
     line-height: 1.25rem;
     letter-spacing: normal;
     margin: 0;
+    text-transform: none;
   }
 
   .emotion-18:before {

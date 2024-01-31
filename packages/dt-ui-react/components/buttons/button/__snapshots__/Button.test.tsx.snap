@@ -27,6 +27,7 @@ exports[`<Button /> component renders button html element with the correct title
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   padding: 12px 24px;
   border: 0;
   color: #FFFFFF;
@@ -119,6 +120,7 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   padding: 12px 24px;
   color: #036DC1;
   background-color: #FFFFFF;
@@ -238,6 +240,7 @@ exports[`<Button /> component when loading is true renders a spinner light theme
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   padding: 12px 24px;
   border: 0;
   color: #FFFFFF;

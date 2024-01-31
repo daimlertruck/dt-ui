@@ -32,6 +32,7 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   background-color: #036DC1;
   color: #FFFFFF;
   border-radius: 4px;
@@ -54,6 +55,7 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   background-color: #FFFFFF;
   color: #7C7C7D;
   border-radius: 4px;
@@ -81,6 +83,7 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   background-color: #FFFFFF;
   color: #7C7C7D;
   border-radius: 4px;

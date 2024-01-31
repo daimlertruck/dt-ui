@@ -26,6 +26,7 @@ exports[`<Form /> component renders simple form 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -46,6 +47,7 @@ exports[`<Form /> component renders simple form 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 1px solid #323232;
@@ -168,6 +170,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -188,6 +191,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 1px solid #323232;
@@ -298,6 +302,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -318,6 +323,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 1px solid #323232;
@@ -438,6 +444,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #002441;
 }
 
@@ -471,6 +478,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #8B8C8C;
   cursor: inherit;
   font-size: 1rem;
@@ -491,6 +499,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   background-color: #FFFFFF;
   border: 1px solid #323232;
   border-bottom: 1px solid #323232;

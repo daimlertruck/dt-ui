@@ -12,6 +12,7 @@ exports[`<Link /> component Should render a disabled html link element 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
 }
 
 <div>
@@ -36,6 +37,7 @@ exports[`<Link /> component Should render a html link element with the correct t
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
 }
 
 <div>
@@ -59,6 +61,7 @@ exports[`<Link /> component Should render a html underlined link element with th
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
 }
 
 <div>
@@ -99,6 +102,7 @@ exports[`<Link /> component Should render an anchor element with button styles 1
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   padding: 12px 24px;
   border: 0;
   color: #FFFFFF;

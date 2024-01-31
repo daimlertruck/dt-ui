@@ -77,6 +77,7 @@ exports[`<Toggle /> component when the toggle is disabled and is checked should 
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #4F4F4F;
 }
 
@@ -185,6 +186,7 @@ exports[`<Toggle /> component when the toggle is disabled and isn't checked shou
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #4F4F4F;
 }
 

@@ -7,6 +7,7 @@ exports[`<Counter /> component should render a span html element with the given 
   line-height: 13.4px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -45,6 +46,7 @@ exports[`<Counter /> component should render outlined counter with neutral color
   line-height: 13.4px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;

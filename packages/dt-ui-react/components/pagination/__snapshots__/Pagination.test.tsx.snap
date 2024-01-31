@@ -34,6 +34,7 @@ exports[`<Pagination /> component should render the pagination content 1`] = `
   line-height: 18.76px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   text-align: center;
   padding: 6px 8px;
   margin: 0px;
@@ -55,6 +56,7 @@ exports[`<Pagination /> component should render the pagination content 1`] = `
   line-height: 18.76px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #151617;
 }
 

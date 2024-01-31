@@ -32,6 +32,7 @@ exports[`<Alert /> component when the alert type is error should render a alert 
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #151617;
   height: 100%;
 }
@@ -105,6 +106,7 @@ exports[`<Alert /> component when the alert type is info should render a alert w
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #151617;
   height: 100%;
 }
@@ -173,6 +175,7 @@ exports[`<Alert /> component when the alert type is warning should render a aler
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #151617;
   height: 100%;
 }

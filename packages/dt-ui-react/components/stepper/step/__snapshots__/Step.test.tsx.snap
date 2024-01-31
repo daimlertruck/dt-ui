@@ -7,6 +7,7 @@ exports[`<Step /> component <Step.Counter /> component should render active beha
   line-height: 13.4px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -36,6 +37,7 @@ exports[`<Step /> component <Step.Counter /> component should render active beha
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #036DC1;
 }
 
@@ -65,6 +67,7 @@ exports[`<Step /> component <Step.Counter /> component should render completed b
   line-height: 13.4px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -118,6 +121,7 @@ exports[`<Step /> component <Step.Counter /> component should render default beh
   line-height: 13.4px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -147,6 +151,7 @@ exports[`<Step /> component <Step.Counter /> component should render default beh
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #036DC1;
 }
 
@@ -176,6 +181,7 @@ exports[`<Step /> component <Step.Label /> component should render active behavi
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #036DC1;
 }
 
@@ -196,6 +202,7 @@ exports[`<Step /> component <Step.Label /> component should render completed beh
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #036DC1;
 }
 
@@ -216,6 +223,7 @@ exports[`<Step /> component <Step.Label /> component should render default behav
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #EBECED;
 }
 
@@ -248,6 +256,7 @@ exports[`<Step /> component render active step 1`] = `
   line-height: 13.4px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -277,6 +286,7 @@ exports[`<Step /> component render active step 1`] = `
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #036DC1;
 }
 
@@ -286,6 +296,7 @@ exports[`<Step /> component render active step 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #036DC1;
 }
 
@@ -337,6 +348,7 @@ exports[`<Step /> component render default step 1`] = `
   line-height: 13.4px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -366,6 +378,7 @@ exports[`<Step /> component render default step 1`] = `
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #036DC1;
 }
 
@@ -375,6 +388,7 @@ exports[`<Step /> component render default step 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #EBECED;
 }
 
@@ -426,6 +440,7 @@ exports[`<Step /> component render disabled step 1`] = `
   line-height: 13.4px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -455,6 +470,7 @@ exports[`<Step /> component render disabled step 1`] = `
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #F8F9FA;
 }
 
@@ -464,6 +480,7 @@ exports[`<Step /> component render disabled step 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #F8F9FA;
 }
 
@@ -515,6 +532,7 @@ exports[`<Step /> component render error step 1`] = `
   line-height: 13.4px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #FFFFFF;
   border: 0;
   -webkit-align-items: center;
@@ -544,6 +562,7 @@ exports[`<Step /> component render error step 1`] = `
   line-height: 16.08px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #FF4A4A;
 }
 
@@ -553,6 +572,7 @@ exports[`<Step /> component render error step 1`] = `
   line-height: 21.44px;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #FF4A4A;
 }
 
