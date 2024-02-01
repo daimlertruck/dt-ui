@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.54
+
+### Minor Changes
+
+- feat: add Message component
+
 ## 0.1.0-beta.53
 
 ### Minor Changes
