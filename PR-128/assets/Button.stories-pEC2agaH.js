@@ -1,5 +1,0 @@
-import{j as e}from"./jsx-runtime-vNq4Oc-g.js";import{B as p}from"./Button-Rtha2aFP.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./Spinner-y_PWtyog.js";import"./index-H1EXaXUo.js";import"./Box.styled-oB9eueTz.js";import"./emotion-styled.browser.esm-Scfyu_ZY.js";import"./extends-E30VzY7q.js";import"./Typography-VWNkGQM0.js";import"./TooltipProvider-y9Uc-rOM.js";import"./index-lb1Yyg-x.js";import"./emotion-react.browser.esm-7R29exhq.js";import"./index-XRl7aEt-.js";import"./index-5tMk2lpP.js";import"./util-p6oSlpjm.js";import"./Spinner.styled-U10FD3--.js";import"./Button.styled-AWsdAV6e.js";const v={title:"Data Display/Button",component:p},m=({...s})=>e.jsx(p,{...s}),t=m.bind({});t.args={children:"Button",onClick:()=>null,isUppercased:!1,isLoading:!1,variant:"solid",color:"primary",size:"medium"};var r,o,i;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`({
-  ...props
-}) => {
-  return <Button {...props} />;
-}`,...(i=(o=t.parameters)==null?void 0:o.docs)==null?void 0:i.source}}};const z=["Default"];export{t as Default,z as __namedExportsOrder,v as default};
