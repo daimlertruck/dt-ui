@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.53
+
+### Minor Changes
+
+- feat: code generator for new component package
+
 ## 0.1.0-beta.52
 
 ### Patch Changes
