@@ -118,6 +118,7 @@ For now, there is only available one theme (the default one).
   - [changeset-conventional-commits (forked - custom package)](https://github.com/iamchathu/changeset-conventional-commits) for automatically generating changesets based on conventional commits
 - [Tsup](https://github.com/egoist/tsup) — TypeScript bundler powered by esbuild
 - [Yarn](https://yarnpkg.com/) from managing packages
+- [Turbo-gen](https://turbo.build/repo/docs/core-concepts/monorepos/code-generation#writing-generators)/[Plop](https://plopjs.com/documentation/) for custom generators
 
 #### Useful Commands
 
@@ -190,6 +191,24 @@ For more information on Storybook and Docs, read the following documentation and
 - https://medium.com/storybookjs/storybook-docs-sneak-peak-5be78445094a
 - https://storybook.js.org/tutorials/design-systems-for-developers/react/en/document/
 - https://storybook.js.org/blog/structuring-your-storybook/
+
+#### How to add a new component?
+
+Components are independent packages that should be created in the workspace `packages/react-packages/**`
+
+To facilitate this process and keep consistency across all components, please make use of the following script:
+```bash 
+yarn component:create
+
+? What is the name of the package without suffix "@dt-ui/react-" e.g, box, accordion, empty-state.
+```
+Provide a name for your component and you will have the component generated with:
+- `story` file for storyboook
+- `styled` file for styled-component
+- `test` file for tests
+- `index`file with component example
+
+All the integration with storybook and `dt-ui-react` main library will be provided automatically.
 
 #### How to add documentation pages?
 

@@ -1,0 +1,11 @@
+import { render } from '@testing-library/react';
+
+import { {{componentName}} } from './{{componentName}}';
+
+describe('<{{componentName}} /> component', () => {
+  it('should render {{componentName}}', () => {
+    const { container } = render(<{{componentName}} />);
+
+    expect(container).toMatchSnapshot();
+  });
+});

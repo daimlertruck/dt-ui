@@ -42,6 +42,8 @@ export * from './components/stepper';
 export * from './components/checkbox';
 export * from './components/radio';
 export * from './components/multi-select';
+
+//independent component packages
 export * from '@dt-ui/react-box';
 export * from '@dt-ui/react-empty-state';
 

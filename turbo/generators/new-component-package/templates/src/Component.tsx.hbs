@@ -1,0 +1,13 @@
+import { BaseProps } from '../../../dt-ui-react/types';
+
+import { {{componentName}}Styled } from './{{componentName}}.styled';
+
+export interface {{componentName}}Props extends BaseProps {}
+
+export const {{componentName}} = ({ dataTestId, style }: {{componentName}}Props) => {
+  return (
+    <{{componentName}}Styled data-testid={dataTestId} style={style}>
+      {{componentName}} works!
+    </{{componentName}}Styled>
+  );
+};
