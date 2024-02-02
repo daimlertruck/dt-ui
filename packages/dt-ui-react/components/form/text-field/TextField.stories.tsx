@@ -1,8 +1,8 @@
+import { Tooltip } from '@dt-ui/react-tooltip';
 import { Story } from '@storybook/react';
 
 import { CopyIcon } from '../../../core/assets';
 import { IconButton } from '../../buttons';
-import { Tooltip } from '../../tooltip';
 
 import { TextField, TextFieldProps } from './TextField';
 
@@ -16,10 +16,11 @@ const Template: Story<TextFieldProps> = (props) => {
 };
 
 const copyButton = (
-  <Tooltip content='Copy to clipboard'>
+  <Tooltip>
     <IconButton dataTestId='copy-button' onClick={() => console.log('here')}>
       <CopyIcon />
     </IconButton>
+    <Tooltip.Content>Copy to clipboard</Tooltip.Content>
   </Tooltip>
 );
 

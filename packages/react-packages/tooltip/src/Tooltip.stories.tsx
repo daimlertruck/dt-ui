@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import { Story } from '@storybook/react';
 
-import { DeleteIcon } from '../../core';
-import { IconButton } from '../buttons';
+import { IconButton } from '../../../dt-ui-react/components/buttons';
+import { DeleteIcon } from '../../../dt-ui-react/core';
 
 import { TooltipContainerProps } from './components/container';
 import { TooltipContentProps } from './components/content';

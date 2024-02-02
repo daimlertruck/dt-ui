@@ -1,9 +1,10 @@
+import { withTooltipProvider } from '@dt-ui/react-tooltip';
 import { renderHook } from '@testing-library/react';
 import React from 'react';
 
 import { Table } from '../components/table';
 import { BaseProps } from '../types';
-import { withProviders, withTooltipProvider } from '../utils';
+import { withProviders } from '../utils';
 
 import useDebounceResize from './useDebounceResize';
 import { useIsOverflow } from './useIsOverflow';

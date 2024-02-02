@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { TOOLTIP_Z_INDEX } from '../../../../constants';
+import { TOOLTIP_Z_INDEX } from '../../../../../dt-ui-react/constants';
 import {
   TooltipDirection,
   OTooltipDirection,
@@ -38,14 +38,11 @@ export const TooltipContentStyled = styled.div<TooltipContentStyledProps>`
       position: absolute;
       border: 0px solid transparent;
     }
-
     ${background === OTooltipBackground.Opacity && 'opacity: 80%'};
-
     ${
       direction === OTooltipDirection.Bottom &&
       `
       transform: translateX(-50%);
-
         &:after {
           bottom: 100%;
           left: 50%;
@@ -55,12 +52,10 @@ export const TooltipContentStyled = styled.div<TooltipContentStyledProps>`
         }
       `
     };
-
     ${
       direction === OTooltipDirection.Top &&
       `
         transform: translate(-50%, -100%);
-
         &:after {
           top: 100%;
           left: 50%;
@@ -70,12 +65,10 @@ export const TooltipContentStyled = styled.div<TooltipContentStyledProps>`
         }
       `
     };
-
     ${
       direction === OTooltipDirection.Right &&
       `
         transform: translateY(-50%);
-
         &:after {
           top: 50%;
           right: 100%;
@@ -85,7 +78,6 @@ export const TooltipContentStyled = styled.div<TooltipContentStyledProps>`
         }
       `
     };
-
     ${
       direction === OTooltipDirection.Left &&
       `

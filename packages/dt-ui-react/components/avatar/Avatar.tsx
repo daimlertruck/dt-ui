@@ -1,9 +1,8 @@
+import { Tooltip } from '@dt-ui/react-tooltip';
 import React, { useState } from 'react';
 
 import { AvatarThumbnail } from '../../core/assets';
 import { acronymGenerator } from '../../utils';
-import { Tooltip } from '../tooltip';
-import { TooltipContent } from '../tooltip/components';
 
 import { AvatarStyled, AvatarStyledProps } from './Avatar.styled';
 import { AvatarType, AvatarSize } from './constants';
@@ -47,7 +46,7 @@ export const Avatar = ({
           <div>{acronymGenerator(title)}</div>
         )}
       </AvatarStyled>
-      <TooltipContent>{title}</TooltipContent>
+      <Tooltip.Content>{title}</Tooltip.Content>
     </Tooltip>
   );
 };

@@ -1,7 +1,6 @@
 import { DropdownContextProvider } from '../components/dropdown/context';
 import { MultiSelectContextProvider } from '../components/multi-select/context';
 import { Provider } from '../components/Provider';
-import { TooltipContextProvider } from '../components/tooltip/context';
 import { theme } from '../themes/default';
 
 export const withProviders = <P extends object>(
@@ -36,18 +35,6 @@ export const withMultiSelectProvider = <P extends object>(
       <MultiSelectContextProvider>
         <Component {...(props as P)} />
       </MultiSelectContextProvider>
-    );
-  };
-};
-
-export const withTooltipProvider = <P extends object>(
-  Component: React.ComponentType<P>
-) => {
-  return ({ ...props }: P) => {
-    return (
-      <TooltipContextProvider>
-        <Component {...(props as P)} />
-      </TooltipContextProvider>
     );
   };
 };

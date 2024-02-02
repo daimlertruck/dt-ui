@@ -12,11 +12,13 @@ on:
       - main
     paths:
       - "packages/dt-ui-react/**"
+      - "packages/react-packages/**"
       - "apps/docs/**"
 
   pull_request:
     paths:
       - "packages/dt-ui-react/**"
+      - "packages/react-packages/**"
       - "apps/docs/**"
 
 jobs:

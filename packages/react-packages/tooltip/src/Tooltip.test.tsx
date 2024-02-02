@@ -4,10 +4,11 @@ import {
   waitForElementToBeRemoved,
 } from '@testing-library/react';
 
-import { withProviders, withTooltipProvider } from '../../utils';
+import { withProviders } from '../../../dt-ui-react/utils';
 
 import { TooltipContentProps } from './components';
 import Tooltip from './Tooltip';
+import { withTooltipProvider } from './utils';
 
 describe('<Tooltip /> component', () => {
   const ProvidedTooltip = withProviders(withTooltipProvider(Tooltip));

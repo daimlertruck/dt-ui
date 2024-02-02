@@ -45,6 +45,8 @@ const config: StorybookConfig = {
   },
   viteFinal: async (config: InlineConfig) => {
     if (config.resolve) {
+      const components = ['box', 'empty-state', 'toast', 'tooltip'];
+
       config.resolve.alias = {
         ...config.resolve.alias,
         '@storybook/blocks': getAbsolutePath('@storybook/blocks'),
@@ -52,7 +54,7 @@ const config: StorybookConfig = {
           __dirname,
           `../../../packages/dt-ui-react/index.ts`
         ),
-        ...resolveComponentsPath(['box', 'empty-state', 'toast']),
+        ...resolveComponentsPath(components),
       };
     }
     return config;

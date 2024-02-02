@@ -1,6 +1,6 @@
 import { MouseEvent } from 'react';
 
-import { BaseProps } from '../../../../types';
+import { BaseProps } from '../../../../../dt-ui-react/types';
 import { useTooltipContext } from '../../context';
 
 import { TooltipContainerStyled } from './TooltipContainerStyled';
