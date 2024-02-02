@@ -1,5 +1,0 @@
-import{j as m}from"./jsx-runtime-vNq4Oc-g.js";import{S as p}from"./Spinner-XruJ2zRJ.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./index-lOH_pZ5X.js";import"./Box.styled-zcGhU7kj.js";import"./emotion-styled.browser.esm-QTPHyGVR.js";import"./extends-E30VzY7q.js";import"./emotion-element-c39617d8.browser.esm-4Kx8mvQ5.js";import"./index-i4R6vv1G.js";import"./TooltipProvider-dYtCL4NP.js";import"./index-NFQKXe9b.js";import"./emotion-react.browser.esm-OUs2k2GK.js";import"./index-XRl7aEt-.js";import"./index-5tMk2lpP.js";import"./util-p6oSlpjm.js";import"./Typography-8sSoJOlL.js";import"./Spinner.styled-euKDJvzq.js";const y={title:"Data Display/Spinner",component:p,parameters:{backgrounds:{values:[{name:"black",value:"#000"}]}}},s=({...i})=>m.jsx(p,{...i}),r=s.bind({});r.args={size:"medium",colorScheme:"positive"};var o,t,e;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:`({
-  ...props
-}) => {
-  return <Spinner {...props} />;
-}`,...(e=(t=r.parameters)==null?void 0:t.docs)==null?void 0:e.source}}};const z=["Default"];export{r as Default,z as __namedExportsOrder,y as default};

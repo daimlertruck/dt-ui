@@ -1,5 +1,0 @@
-import{j as a}from"./jsx-runtime-vNq4Oc-g.js";import{T as p}from"./TextArea-DFUiPR5R.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./Typography-8sSoJOlL.js";import"./index-i4R6vv1G.js";import"./TooltipProvider-dYtCL4NP.js";import"./index-NFQKXe9b.js";import"./emotion-react.browser.esm-OUs2k2GK.js";import"./emotion-element-c39617d8.browser.esm-4Kx8mvQ5.js";import"./extends-E30VzY7q.js";import"./index-XRl7aEt-.js";import"./index-5tMk2lpP.js";import"./util-p6oSlpjm.js";import"./emotion-styled.browser.esm-QTPHyGVR.js";import"./LabelField-YmEXfUx7.js";import"./LabelFied.styled-O06yYu5z.js";import"./TextArea.styled-WUE7dRxp.js";const L={title:"Data Display/form/TextArea",component:p},i=({...m})=>a.jsx(p,{...m}),r=i.bind({});r.args={label:"App description",maxLength:120};var t,o,e;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:`({
-  ...props
-}) => {
-  return <TextArea {...props} />;
-}`,...(e=(o=r.parameters)==null?void 0:o.docs)==null?void 0:e.source}}};const O=["Default"];export{r as Default,O as __namedExportsOrder,L as default};
