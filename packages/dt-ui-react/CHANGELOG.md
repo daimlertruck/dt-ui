@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.30
+
+### Minor Changes
+
+- feat: add limit width to tag
+
 ## 0.1.0-alpha.29
 
 ### Minor Changes
