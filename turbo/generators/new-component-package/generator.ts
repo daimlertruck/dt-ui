@@ -33,7 +33,7 @@ export const newComponentPackageGenerator = (plop: PlopTypes.NodePlopAPI) =>
         data
       );
 
-      data!.packageVersion = '0.1.0.beta.0';
+      data!.packageVersion = '0.1.0-beta.0';
 
       return [
         {
