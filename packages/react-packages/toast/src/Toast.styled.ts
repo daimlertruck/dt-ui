@@ -33,7 +33,7 @@ export const ToastStyled = styled.div<ToastStyledProps>`
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 335px;
+  width: 360px;
   animation: ${fadeIn} 0.75s ease-in;
   transition: all 0.75s ease-in-out;
   overflow: hidden;
@@ -56,7 +56,7 @@ export const ToastContentStyled = styled.div`
 
 export const ToastTitleStyled = styled.div`
   ${({ theme }) => `
-      ${theme.fontStyles.h5};
+      ${theme.fontStyles.h6};
       color: ${theme.palette.content.heading};
       margin-bottom: ${theme.spacing['5xs']};
       text-transform: capitalize;
@@ -99,7 +99,7 @@ export const ToastTextContainer = styled.div<ToastTextContainerProps>`
     display: grid;
     ${
       hasCloseButton
-        ? 'grid-template-columns: auto 1fr;'
+        ? 'grid-template-columns: auto 24px;'
         : 'grid-template-rows: auto auto;'
     }
     column-gap: ${theme.spacing['2xs']};

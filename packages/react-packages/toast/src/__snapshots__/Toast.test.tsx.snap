@@ -23,7 +23,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 335px;
+  width: 360px;
   -webkit-animation: animation-0 0.75s ease-in;
   animation: animation-0 0.75s ease-in;
   -webkit-transition: all 0.75s ease-in-out;
@@ -63,7 +63,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 
 .emotion-6 {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 24px;
   -webkit-column-gap: 16px;
   column-gap: 16px;
 }
@@ -71,7 +71,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 .emotion-8 {
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -223,7 +223,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 335px;
+  width: 360px;
   -webkit-animation: animation-0 0.75s ease-in;
   animation: animation-0 0.75s ease-in;
   -webkit-transition: all 0.75s ease-in-out;
@@ -263,7 +263,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 
 .emotion-6 {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 24px;
   -webkit-column-gap: 16px;
   column-gap: 16px;
 }
@@ -271,7 +271,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 .emotion-8 {
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -422,7 +422,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 335px;
+  width: 360px;
   -webkit-animation: animation-0 0.75s ease-in;
   animation: animation-0 0.75s ease-in;
   -webkit-transition: all 0.75s ease-in-out;
@@ -462,7 +462,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 
 .emotion-6 {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 24px;
   -webkit-column-gap: 16px;
   column-gap: 16px;
 }
@@ -470,7 +470,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 .emotion-8 {
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -621,7 +621,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 335px;
+  width: 360px;
   -webkit-animation: animation-0 0.75s ease-in;
   animation: animation-0 0.75s ease-in;
   -webkit-transition: all 0.75s ease-in-out;
@@ -661,7 +661,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 
 .emotion-6 {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 24px;
   -webkit-column-gap: 16px;
   column-gap: 16px;
 }
@@ -669,7 +669,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 .emotion-8 {
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -820,7 +820,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 335px;
+  width: 360px;
   -webkit-animation: animation-0 0.75s ease-in;
   animation: animation-0 0.75s ease-in;
   -webkit-transition: all 0.75s ease-in-out;
@@ -860,7 +860,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 
 .emotion-6 {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 24px;
   -webkit-column-gap: 16px;
   column-gap: 16px;
 }
@@ -868,7 +868,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 .emotion-8 {
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1009,7 +1009,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 335px;
+  width: 360px;
   -webkit-animation: animation-0 0.75s ease-in;
   animation: animation-0 0.75s ease-in;
   -webkit-transition: all 0.75s ease-in-out;
@@ -1049,7 +1049,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 
 .emotion-6 {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 24px;
   -webkit-column-gap: 16px;
   column-gap: 16px;
 }
@@ -1057,7 +1057,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 .emotion-8 {
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1197,7 +1197,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 335px;
+  width: 360px;
   -webkit-animation: animation-0 0.75s ease-in;
   animation: animation-0 0.75s ease-in;
   -webkit-transition: all 0.75s ease-in-out;
@@ -1237,7 +1237,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 
 .emotion-6 {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 24px;
   -webkit-column-gap: 16px;
   column-gap: 16px;
 }
@@ -1245,7 +1245,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 .emotion-8 {
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1385,7 +1385,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 335px;
+  width: 360px;
   -webkit-animation: animation-0 0.75s ease-in;
   animation: animation-0 0.75s ease-in;
   -webkit-transition: all 0.75s ease-in-out;
@@ -1425,7 +1425,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 
 .emotion-6 {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 24px;
   -webkit-column-gap: 16px;
   column-gap: 16px;
 }
@@ -1433,7 +1433,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 .emotion-8 {
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
