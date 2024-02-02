@@ -1,5 +1,18 @@
 # @dt-ui/react
 
+## 0.1.0-beta.55
+
+### Minor Changes
+
+- feat: create util to get contextual colors
+
+### Patch Changes
+
+- chore: remove colors from global styles
+- refactor: update dt-ui to use contextual colors
+- Updated dependencies
+  - @dt-ui/react-empty-state@0.1.0-beta.4
+
 ## 0.1.0-beta.54
 
 ### Minor Changes

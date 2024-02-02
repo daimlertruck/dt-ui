@@ -1,5 +1,11 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.4
+
+### Patch Changes
+
+- refactor: update dt-ui to use contextual colors
+
 ## 0.1.0-beta.3
 
 ### Patch Changes
