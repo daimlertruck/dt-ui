@@ -17,7 +17,7 @@
     "dev": "tsup --watch",
     "lint": "eslint --cache .",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "test": "jest",
+    "test": "jest -u",
     "test:report": "open ./jest-coverage/lcov-report/index.html",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

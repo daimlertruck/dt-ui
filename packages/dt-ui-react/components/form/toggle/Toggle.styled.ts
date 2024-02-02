@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 
-import { Colors } from '../../../types';
+import { AlphaColors } from '../../../types';
 
 interface ToggleStyledProps {
-  checkedColor: Colors;
-  uncheckedColor: Colors;
+  checkedColor: AlphaColors;
+  uncheckedColor: AlphaColors;
 }
 export const ToggleWrapperStyled = styled.div`
   position: relative;
@@ -48,7 +48,7 @@ export const ToggleCheckBoxStyled = styled.input<ToggleStyledProps>`
     ${({ theme, disabled, checkedColor }) =>
       `
       background: ${
-        disabled ? theme.colors.gray_100 : theme.palette[checkedColor]
+        disabled ? theme.colors.gray_100 : theme.palette.alpha[checkedColor]
       };
     `}
 
@@ -70,7 +70,7 @@ export const ToggleCheckBoxStyled = styled.input<ToggleStyledProps>`
     ${({ theme, disabled, uncheckedColor }) =>
       `
       background: ${
-        disabled ? theme.colors.gray_90 : theme.palette[uncheckedColor]
+        disabled ? theme.colors.gray_90 : theme.palette.alpha[uncheckedColor]
       };
     `}
   }

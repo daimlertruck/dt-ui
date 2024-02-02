@@ -10,7 +10,7 @@ export const TextAreaWrapper = styled.div`
 
 export const TextAreaStyled = styled.textarea`
   ${({ theme }) => `
-    ${theme.fontStyles.pSmall}
+    ${theme.fontStyles.alpha.pSmall}
 
     background-color: ${theme.colors.white};
     border: 1px solid ${theme.colors.gray_90};

@@ -26,7 +26,7 @@ export const ModalStyled = styled.div`
 
 export const HeaderStyled = styled.div`
   ${({ theme }) => `
-    ${theme.fontStyles.h5};
+    ${theme.fontStyles.alpha.h5};
     font-weight: 700;
     color: ${theme.colors.gray_300};
     display: flex;

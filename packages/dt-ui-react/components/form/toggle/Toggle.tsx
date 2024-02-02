@@ -1,6 +1,6 @@
 import { ChangeEvent } from 'react';
 
-import { BaseProps, Colors } from '../../../types';
+import { BaseProps, AlphaColors } from '../../../types';
 import { Typography } from '../../typography';
 
 import {
@@ -14,8 +14,8 @@ export interface ToggleProps extends BaseProps {
   dataTestId?: string;
   isDisabled?: boolean;
   isChecked?: boolean;
-  checkedColor?: Colors;
-  uncheckedColor?: Colors;
+  checkedColor?: AlphaColors;
+  uncheckedColor?: AlphaColors;
 }
 
 export const Toggle = ({

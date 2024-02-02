@@ -7,7 +7,7 @@ import { theme } from './default';
 
 # Default
 
-export const colors = Object.entries(theme.palette).reduce((acc, [key, value]) => {
+export const colors = Object.entries(theme.palette.alpha).reduce((acc, [key, value]) => {
   const groupedKey = key.split(/(?=[A-Z])/g)[0];
   const group = acc[groupedKey] ?? [];
   return {

@@ -12,7 +12,7 @@ export const TagStyled = styled.span<TagStyledProps>`
     tagVariantStyles(variant, theme, isClickable)};
 
   ${({ theme, isClickable }) => `
-    ${theme.fontStyles.tag}
+    ${theme.fontStyles.alpha.tag}
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.5px;

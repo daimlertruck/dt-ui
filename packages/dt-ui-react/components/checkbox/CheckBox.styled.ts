@@ -4,7 +4,7 @@ export const CheckboxInputStyled = styled.input`
   ${({ theme }) => `
     appearance: none;
     margin: 0;
-    border: 1px solid ${theme.palette.neutralLight_100};
+    border: 1px solid ${theme.palette.alpha.neutralLight_100};
     background-color: ${theme.colors.white};
     transform: translateY(-0.075em);
     height: 16px;
@@ -28,7 +28,7 @@ export const CheckboxInputStyled = styled.input`
     }
 
     &:checked {
-      background: ${theme.palette.primary};
+      background: ${theme.palette.alpha.primary};
       border: none;
     }
 
@@ -37,15 +37,15 @@ export const CheckboxInputStyled = styled.input`
     }
 
     &:disabled:checked {
-      background-color: ${theme.palette.neutralLight_100};
+      background-color: ${theme.palette.alpha.neutralLight_100};
     }
 
     &:disabled:not(checked){
-      background-color: ${theme.palette.neutralLight_300};
+      background-color: ${theme.palette.alpha.neutralLight_300};
     }
 
     &:disabled:not(checked) ~ label {
-      color: ${theme.palette.neutral};
+      color: ${theme.palette.alpha.neutral};
       pointer-events: none;
     }
   `}
@@ -59,7 +59,7 @@ export const CheckboxLabelStyled = styled.label`
     display: inline-flex;
     align-items: center;
     padding-left: 8px;
-    ${theme.fontStyles.p};
+    ${theme.fontStyles.alpha.p};
     color: ${theme.colors.gray_200};
   `}
 `;

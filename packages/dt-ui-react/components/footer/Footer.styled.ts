@@ -6,7 +6,7 @@ interface FooterStyledProps {
 
 export const FooterStyled = styled.footer<FooterStyledProps>`
   ${({ theme, isFixed }) => `
-    ${theme.fontStyles.pXSmall}
+    ${theme.fontStyles.alpha.pXSmall}
     display: flex;
     flex-wrap: nowrap;
     align-items: center;

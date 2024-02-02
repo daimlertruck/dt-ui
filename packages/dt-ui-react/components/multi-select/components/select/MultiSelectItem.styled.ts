@@ -20,7 +20,7 @@ export const MultiSelectStyled = styled.div<MultiSelectStyledProps>`
     min-height: 60px;
     cursor: pointer;
     
-    ${hasError && `border-bottom: 2px solid ${theme.palette.error}`};
+    ${hasError && `border-bottom: 2px solid ${theme.palette.alpha.error}`};
 
     ${
       isDisabled &&

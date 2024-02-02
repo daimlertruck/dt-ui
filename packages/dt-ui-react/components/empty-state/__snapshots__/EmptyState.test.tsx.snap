@@ -61,6 +61,7 @@ exports[`<EmptyState /> component should render Empty State 1`] = `
   line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #7C7C7D;
 }
 
@@ -156,6 +157,7 @@ exports[`<EmptyState /> component should render Empty State with a Button as a c
   line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
+  text-transform: none;
   color: #7C7C7D;
 }
 

@@ -8,7 +8,7 @@ export interface IconButtonProps extends BaseProps {
   onMouseUp?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   onMouseOver?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   onMouseEnter?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  color?: keyof Theme['palette'];
+  color?: keyof Theme['palette']['alpha'];
   isDisabled?: boolean;
 }
 

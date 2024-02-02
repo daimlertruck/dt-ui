@@ -12,7 +12,7 @@ interface LinkStyledProps {
 
 export const LinkStyled = styled.a<LinkStyledProps>`
   ${({ theme, disabled, isUnderline, textSize }) => `
-    color: ${theme.palette.primary};
+    color: ${theme.palette.alpha.primary};
     text-decoration: ${isUnderline ? 'underline' : 'none'};
 
     ${
@@ -27,21 +27,21 @@ export const LinkStyled = styled.a<LinkStyledProps>`
     ${
       textSize == LinkTextSize.Large &&
       `
-        ${theme.fontStyles.p}
+        ${theme.fontStyles.alpha.p}
       `
     };
 
     ${
       textSize == LinkTextSize.Medium &&
       `
-        ${theme.fontStyles.pSmall}
+        ${theme.fontStyles.alpha.pSmall}
       `
     };
 
     ${
       textSize == LinkTextSize.Small &&
       `
-        ${theme.fontStyles.pXXSmall}
+        ${theme.fontStyles.alpha.pXXSmall}
       `
     };
   `}

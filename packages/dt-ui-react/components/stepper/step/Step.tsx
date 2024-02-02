@@ -52,8 +52,8 @@ const StepCounter = ({
   const theme = useTheme();
   const color = isError ? 'error' : isDisabled ? 'neutralLight_100' : 'primary';
   const bgColor = isError
-    ? theme.palette.errorLight_300
-    : theme.palette.primaryLight_300;
+    ? theme.palette.alpha.errorLight_300
+    : theme.palette.alpha.primaryLight_300;
 
   return (
     <Counter

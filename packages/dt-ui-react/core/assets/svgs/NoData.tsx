@@ -21,9 +21,9 @@ const NoData = (props: React.SVGProps<SVGSVGElement>) => {
       <rect x='53' y='9' width='67' height='4' rx='2' fill='#CCCCCC' />
       <rect x='53' y='19' width='67' height='4' rx='2' fill='#CCCCCC' />
       <rect x='53' y='29' width='43' height='4' rx='2' fill='#CCCCCC' />
-      <circle cx='44.5' cy='11.5' r='2.5' fill={theme.palette.primary} />
-      <circle cx='44.5' cy='20.5' r='2.5' fill={theme.palette.primary} />
-      <circle cx='44.5' cy='30.5' r='2.5' fill={theme.palette.primary} />
+      <circle cx='44.5' cy='11.5' r='2.5' fill={theme.palette.alpha.primary} />
+      <circle cx='44.5' cy='20.5' r='2.5' fill={theme.palette.alpha.primary} />
+      <circle cx='44.5' cy='30.5' r='2.5' fill={theme.palette.alpha.primary} />
       <path
         d='M5.83724 51H88.1628C90.3287 51 92 52.7006 92 54.6953V85.3047C92 87.2994 90.3287 89 88.1628 89H5.83724C3.67128 89 2 87.2994 2 85.3047V54.6953C2 52.7006 3.67128 51 5.83724 51Z'
         stroke='#CCCCCC'
@@ -32,9 +32,9 @@ const NoData = (props: React.SVGProps<SVGSVGElement>) => {
       <rect x='19' y='58' width='67' height='4' rx='2' fill='#CCCCCC' />
       <rect x='19' y='68' width='67' height='4' rx='2' fill='#CCCCCC' />
       <rect x='19' y='78' width='43' height='4' rx='2' fill='#CCCCCC' />
-      <circle cx='10.5' cy='60.5' r='2.5' fill={theme.palette.primary} />
-      <circle cx='10.5' cy='69.5' r='2.5' fill={theme.palette.primary} />
-      <circle cx='10.5' cy='79.5' r='2.5' fill={theme.palette.primary} />
+      <circle cx='10.5' cy='60.5' r='2.5' fill={theme.palette.alpha.primary} />
+      <circle cx='10.5' cy='69.5' r='2.5' fill={theme.palette.alpha.primary} />
+      <circle cx='10.5' cy='79.5' r='2.5' fill={theme.palette.alpha.primary} />
       <path
         d='M39.8372 100H122.163C124.329 100 126 101.701 126 103.695V134.305C126 136.299 124.329 138 122.163 138H39.8372C37.6713 138 36 136.299 36 134.305V103.695C36 101.701 37.6713 100 39.8372 100Z'
         stroke='#CCCCCC'
@@ -43,16 +43,16 @@ const NoData = (props: React.SVGProps<SVGSVGElement>) => {
       <rect x='53' y='107' width='67' height='4' rx='2' fill='#CCCCCC' />
       <rect x='53' y='117' width='67' height='4' rx='2' fill='#CCCCCC' />
       <rect x='53' y='127' width='43' height='4' rx='2' fill='#CCCCCC' />
-      <circle cx='44.5' cy='109.5' r='2.5' fill={theme.palette.primary} />
-      <circle cx='44.5' cy='118.5' r='2.5' fill={theme.palette.primary} />
-      <circle cx='44.5' cy='128.5' r='2.5' fill={theme.palette.primary} />
+      <circle cx='44.5' cy='109.5' r='2.5' fill={theme.palette.alpha.primary} />
+      <circle cx='44.5' cy='118.5' r='2.5' fill={theme.palette.alpha.primary} />
+      <circle cx='44.5' cy='128.5' r='2.5' fill={theme.palette.alpha.primary} />
       <path
         d='M134.184 62.1256C129.827 57.7684 124.276 54.8011 118.233 53.5988C112.189 52.3965 105.925 53.0133 100.232 55.3713C94.5396 57.7292 89.6739 61.7222 86.2505 66.8455C82.8272 71.9689 81 77.9923 81 84.1541C81 90.3159 82.8272 96.3393 86.2505 101.463C89.6739 106.586 94.5396 110.579 100.232 112.937C105.925 115.295 112.189 115.912 118.233 114.709C124.276 113.507 129.827 110.54 134.184 106.183C137.077 103.29 139.372 99.8556 140.938 96.0759C142.504 92.2963 143.309 88.2453 143.309 84.1541C143.309 80.063 142.504 76.0119 140.938 72.2322C139.372 68.4525 137.077 65.0183 134.184 62.1256Z'
-        fill={theme.palette.primary}
+        fill={theme.palette.alpha.primary}
       />
       <path
         d='M159.834 124.746L137.177 102.089C134.324 99.236 130.424 98.5093 128.467 100.466C126.51 102.423 127.237 106.323 130.09 109.176L152.747 131.833C155.601 134.687 159.5 135.413 161.457 133.456C163.414 131.499 162.688 127.6 159.834 124.746Z'
-        fill={theme.palette.primary}
+        fill={theme.palette.alpha.primary}
       />
       <path
         d='M128.653 67.9294C125.405 64.6207 121.266 62.3675 116.76 61.4546C112.254 60.5418 107.584 61.0102 103.339 62.8008C99.0949 64.5913 95.4671 67.6236 92.9147 71.5141C90.3623 75.4046 89 79.9786 89 84.6577C89 89.3368 90.3623 93.9108 92.9147 97.8013C95.4671 101.692 99.0949 104.724 103.339 106.515C107.584 108.305 112.254 108.774 116.76 107.861C121.266 106.948 125.405 104.695 128.653 101.386C133.009 96.9489 135.455 90.9317 135.455 84.6577C135.455 78.3837 133.009 72.3665 128.653 67.9294Z'

@@ -15,7 +15,7 @@ export const CardStyled = styled.div`
     
     &::after {
       content: '';
-      background-color: ${theme.palette.primary};
+      background-color: ${theme.palette.alpha.primary};
       border-radius: ${theme.spacing.xxsmall};
       width: 40px;
       height: 5px;

@@ -22,7 +22,7 @@ interface RowStyledProps {
 
 export const TableStyled = styled.table<TableStyledProps>`
   ${({ isFixed, theme, variant }) => `
-    ${theme.fontStyles.pSmall};
+    ${theme.fontStyles.alpha.pSmall};
     border-collapse: separate;
     border-spacing: ${`0 ${theme.spacing.xsmall}`};
     width: 100%;
@@ -93,7 +93,7 @@ export const RowStyled = styled.tr<RowStyledProps>`
 
 export const ColumnHeaderStyled = styled.th<{ variant?: TableVariant }>`
   ${({ theme, variant }) => `
-    ${theme.fontStyles.h6};
+    ${theme.fontStyles.alpha.h6};
     padding: 16px 16px 8px;
     text-align: left;
     text-transform: uppercase;
@@ -127,7 +127,7 @@ export const CellStyled = styled.td<CellStyledProps>`
     white-space: nowrap;
 
     &:first-of-type {
-      border-left: ${`6px solid ${theme.palette.primary}`};
+      border-left: ${`6px solid ${theme.palette.alpha.primary}`};
     }
 
     &:nth-of-type(1) {

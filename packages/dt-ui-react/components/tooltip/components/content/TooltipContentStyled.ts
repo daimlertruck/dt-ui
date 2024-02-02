@@ -11,12 +11,12 @@ interface TooltipContentStyledProps {
 
 export const TooltipContentStyled = styled.div<TooltipContentStyledProps>`
   ${({ theme, direction, top, left }) => `
-    ${theme.fontStyles.pXXSmall};
+    ${theme.fontStyles.alpha.pXXSmall};
     width: max-content;
     max-width: 160px;
     overflow-wrap: break-word;
     padding: ${theme.spacing.xsmall};
-    background-color: ${theme.palette.primaryDark_400};
+    background-color: ${theme.palette.alpha.primaryDark_400};
     box-shadow: ${theme.shadows[5]};
     color: ${theme.colors.white};
     border-radius: 4px;
@@ -44,7 +44,7 @@ export const TooltipContentStyled = styled.div<TooltipContentStyledProps>`
           bottom: 100%;
           left: 50%;
           margin-left: -5px;
-          border-bottom-color:${theme.palette.primaryDark_400};
+          border-bottom-color:${theme.palette.alpha.primaryDark_400};
         }
       `
     };
@@ -58,7 +58,7 @@ export const TooltipContentStyled = styled.div<TooltipContentStyledProps>`
           top: 100%; 
           left: 50%;
           margin-left: -5px;
-          border-top-color: ${theme.palette.primaryDark_400};
+          border-top-color: ${theme.palette.alpha.primaryDark_400};
         }
       `
     };
@@ -72,7 +72,7 @@ export const TooltipContentStyled = styled.div<TooltipContentStyledProps>`
           top: 50%;
           right: 100%;
           margin-top: -5px;
-          border-right-color: ${theme.palette.primaryDark_400};
+          border-right-color: ${theme.palette.alpha.primaryDark_400};
         }
       `
     };
@@ -86,7 +86,7 @@ export const TooltipContentStyled = styled.div<TooltipContentStyledProps>`
           top: 50%;
           left: 100%;
           margin-top: -5px;
-          border-left-color: ${theme.palette.primaryDark_400};
+          border-left-color: ${theme.palette.alpha.primaryDark_400};
         }
       `
     }

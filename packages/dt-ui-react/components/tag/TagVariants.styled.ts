@@ -20,12 +20,12 @@ export const tagVariantStyles = (
     `,
     colored: css`
       border: ${theme.spacing.none};
-      background-color: ${theme.palette.primaryLight_400};
+      background-color: ${theme.palette.alpha.primaryLight_400};
       color: ${theme.colors.gray_300};
 
       ${isClickable &&
       `&:hover {
-        background-color: ${theme.palette.primaryDark_200};
+        background-color: ${theme.palette.alpha.primaryDark_200};
         color: ${theme.colors.white};
       }`}
     `,

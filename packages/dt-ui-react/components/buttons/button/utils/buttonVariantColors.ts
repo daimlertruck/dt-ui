@@ -19,17 +19,18 @@ export const buttonVariantColors = (
 ): Record<ButtonVariant, ColorKeys> => ({
   contained: {
     color: theme.colors.white,
-    bgColor: theme.palette[color],
-    hoverBgColor: theme.palette[`${color}Dark_300` as ContainedColors],
+    bgColor: theme.palette.alpha[color],
+    hoverBgColor: theme.palette.alpha[`${color}Dark_300` as ContainedColors],
   },
   outlined: {
-    color: color === 'neutral' ? theme.colors.gray_200 : theme.palette[color],
+    color:
+      color === 'neutral' ? theme.colors.gray_200 : theme.palette.alpha[color],
     bgColor: theme.colors.white,
-    hoverBgColor: theme.palette[`${color}Light_300` as OutlinedColors],
+    hoverBgColor: theme.palette.alpha[`${color}Light_300` as OutlinedColors],
   },
   text: {
-    color: theme.palette[color],
+    color: theme.palette.alpha[color],
     bgColor: 'transparent',
-    hoverColor: theme.palette[`${color as TextColors}Dark_300`],
+    hoverColor: theme.palette.alpha[`${color as TextColors}Dark_300`],
   },
 });

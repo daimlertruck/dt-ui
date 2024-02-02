@@ -31,8 +31,8 @@ const spinnerSizes: Record<Size, string> = {
 
 const spinnerColors = (theme: Theme): Record<SpinnerTheme, SpinnerColors> => ({
   dark: {
-    main: theme.palette.primary,
-    background: theme.palette.neutralLight_100,
+    main: theme.palette.alpha.primary,
+    background: theme.palette.alpha.neutralLight_100,
   },
   light: {
     main: theme.colors.white,

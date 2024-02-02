@@ -1,26 +1,94 @@
 export type CustomTheme = {
+  animations: {
+    emphasizedDecelerate: {
+      duration: string;
+      timingFunction: string;
+    };
+  };
   palette: {
-    error: string;
-    errorDark_300: string;
-    errorLight_300: string;
-    info: string;
-    primaryDark_200: string;
-    primaryLight_100: string;
-    primaryLight_300: string;
-    primaryLight_400: string;
-    primary: string;
-    primaryDark_300: string;
-    primaryDark_400: string;
-    success: string;
-    successDark_300: string;
-    warning: string;
-    warningDark_300: string;
-    neutral: string;
-    neutralDark_100: string;
-    neutralLight_100: string;
-    neutralLight_300: string;
-    textSecondary: string;
-    textPrimary: string;
+    base: {
+      default: string;
+      light: string;
+      dark: string;
+    };
+    border: {
+      light: string;
+      default: string;
+      contrast: string;
+    };
+    content: {
+      heading: string;
+      body: string;
+      secondary: string;
+      disabled: string;
+      contrast: string;
+    };
+    primary: {
+      default: string;
+      light: string;
+      medium: string;
+      dark: string;
+      contrast: string;
+    };
+    secondary: {
+      default: string;
+      light: string;
+      medium: string;
+      dark: string;
+      contrast: string;
+    };
+    error: {
+      default: string;
+      light: string;
+      medium: string;
+      dark: string;
+      contrast: string;
+    };
+    warning: {
+      default: string;
+      light: string;
+      medium: string;
+      dark: string;
+      contrast: string;
+    };
+    success: {
+      default: string;
+      light: string;
+      medium: string;
+      dark: string;
+      contrast: string;
+    };
+    informative: {
+      default: string;
+      light: string;
+      medium: string;
+      dark: string;
+      contrast: string;
+    };
+    // Legacy
+    alpha: {
+      error: string;
+      errorDark_300: string;
+      errorLight_300: string;
+      info: string;
+      primaryDark_200: string;
+      primaryLight_100: string;
+      primaryLight_300: string;
+      primaryLight_400: string;
+      primary: string;
+      primaryDark_300: string;
+      primaryDark_400: string;
+      success: string;
+      successDark_300: string;
+      warning: string;
+      warningDark_300: string;
+      neutral: string;
+      neutralDark_100: string;
+      neutralLight_100: string;
+      neutralLight_300: string;
+      textSecondary: string;
+      textPrimary: string;
+    };
   };
   colors: {
     grey_90_: string;
@@ -81,6 +149,27 @@ export type CustomTheme = {
     4: string;
     5: string;
   };
+  radius: {
+    none: string;
+    '6xs': string;
+    '5xs': string;
+    '4xs': string;
+    '3xs': string;
+    '2xs': string;
+    xs: string;
+    s: string;
+    m: string;
+    l: string;
+    xl: string;
+    full: string;
+  };
+  shape: {
+    button: string;
+    modal: string;
+    emptyState: string;
+    dropdown: string;
+    message: string;
+  };
   spacing: {
     none: number;
     '6xs': string;
@@ -118,7 +207,38 @@ export type CustomTheme = {
     h4: string;
     h5: string;
     h6: string;
+    body1Bold: string;
     body1: string;
+    body2Bold: string;
+    body2: string;
+    body3Bold: string;
+    body3: string;
+    body4Bold: string;
+    body4: string;
+    link1Bold: string;
+    link1: string;
+    link2Bold: string;
+    link2: string;
+    link3Bold: string;
+    link3: string;
+    button1: string;
+    button2: string;
+    button3: string;
+    // Legacy
+    alpha: {
+      h1: string;
+      h2: string;
+      h3: string;
+      h4: string;
+      h5: string;
+      h6: string;
+      body1: string;
+      p: string;
+      pSmall: string;
+      pXSmall: string;
+      pXXSmall: string;
+      tag: string;
+    };
     p: string;
     pSmall: string;
     pXSmall: string;
@@ -126,17 +246,29 @@ export type CustomTheme = {
     tag: string;
   };
   breakpoints: {
+    s: string;
+    m: string;
+    l: string;
+    xl: string;
+    // Legacy
     md: string;
     lg: string;
-    xl: string;
     xxl: string;
   };
   fontFamily: {
     default: string;
   };
+  responsiveFontStyles: { [key: string]: string };
 };
 
-export type Colors = keyof CustomTheme['palette'];
+export type AlphaColors = keyof CustomTheme['palette']['alpha'];
+
+export type Colors = keyof Pick<
+  CustomTheme['palette'],
+  'primary' | 'secondary' | 'error' | 'success' | 'informative' | 'warning'
+>;
+
+export type Breakpoints = keyof CustomTheme['breakpoints'];
 
 type FlattenKeys<T> = T extends object
   ? {
@@ -146,4 +278,4 @@ type FlattenKeys<T> = T extends object
     }[keyof T]
   : never;
 
-export type PaletteKeys = FlattenKeys<CustomTheme['palette']>;
+export type PaletteKeys = FlattenKeys<Omit<CustomTheme['palette'], 'alpha'>>;

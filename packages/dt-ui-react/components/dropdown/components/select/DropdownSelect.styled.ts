@@ -20,7 +20,7 @@ export const SelectDropdownStyled = styled.button<SelectDropdownStyledProps>`
     height: 53px;
     cursor: pointer;
 
-    ${hasError && `border-bottom: 2px solid ${theme.palette.error}`};
+    ${hasError && `border-bottom: 2px solid ${theme.palette.alpha.error}`};
     &:disabled {
       pointer-events: none;
       background-color: ${theme.colors.gray_70};

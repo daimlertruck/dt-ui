@@ -24,7 +24,7 @@ export const itemVariantStyles = (
   ({
     horizontal: css`
       background-color: ${active ? theme.colors.white : theme.colors.gray_80};
-      color: ${active ? theme.palette.primary : theme.colors.gray_200};
+      color: ${active ? theme.palette.alpha.primary : theme.colors.gray_200};
       border-radius: 3px;
       padding: 16px 32px;
     `,
@@ -33,13 +33,13 @@ export const itemVariantStyles = (
       background-color: ${theme.colors.white};
       box-shadow: ${active
         ? `inset 2px 0px 0px 0px ${
-            hasError ? theme.palette.error : theme.palette.primary
+            hasError ? theme.palette.alpha.error : theme.palette.alpha.primary
           }`
         : 0};
       color: ${active && hasError
-        ? theme.palette.error
+        ? theme.palette.alpha.error
         : active
-        ? theme.palette.primary
+        ? theme.palette.alpha.primary
         : theme.colors.gray_100};
       max-width: 300px;
       overflow: hidden;

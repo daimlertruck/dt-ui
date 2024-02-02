@@ -6,8 +6,12 @@ import { BaseProps, Elements, CustomTheme as Theme } from '../../types';
 import { TypographyStyled } from './Typography.styled';
 
 export interface TypographyProps extends BaseProps {
-  color?: keyof Theme['colors'] | keyof Theme['palette'] | 'unset' | 'inherit';
-  fontStyles?: keyof Theme['fontStyles'];
+  color?:
+    | keyof Theme['colors']
+    | keyof Theme['palette']['alpha']
+    | 'unset'
+    | 'inherit';
+  fontStyles?: keyof Theme['fontStyles']['alpha'];
   element?: Elements;
 }
 
@@ -23,8 +27,8 @@ const Typography = forwardRef<HTMLParagraphElement, TypographyProps>(
     }: TypographyProps,
     ref
   ) => {
-    const el = element as keyof Theme['fontStyles'];
-    const fonts = fontStyles ?? (theme.fontStyles[el] ? el : 'p');
+    const el = element as keyof Theme['fontStyles']['alpha'];
+    const fonts = fontStyles ?? (theme.fontStyles.alpha[el] ? el : 'p');
 
     return (
       <TypographyStyled

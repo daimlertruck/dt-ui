@@ -12,7 +12,7 @@ export interface ButtonStyledProps {
 export const ButtonStyled = styled.button<ButtonStyledProps>`
   ${({ theme, isLoading, variant, color }) => `
     ${buttonVariantStyles(variant, theme, color)};
-    ${theme.fontStyles.pSmall}
+    ${theme.fontStyles.alpha.pSmall}
     font-weight: 700;
     border-radius: 3px;
     display: flex;

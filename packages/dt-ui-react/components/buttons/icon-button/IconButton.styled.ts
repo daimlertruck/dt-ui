@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { CustomTheme as Theme } from '../../../types';
 
 export interface IconButtonStyledProps {
-  color: keyof Theme['palette'];
+  color: keyof Theme['palette']['alpha'];
 }
 
 export const IconButtonStyled = styled.button<IconButtonStyledProps>`
@@ -16,7 +16,7 @@ export const IconButtonStyled = styled.button<IconButtonStyledProps>`
     color: ${theme.colors.gray_200};
 
     &:hover {
-      color: ${theme.palette[color]};
+      color: ${theme.palette.alpha[color]};
     };
     
     ${

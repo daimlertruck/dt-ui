@@ -18,7 +18,7 @@ export const ProfileInfoStyled = styled.ul`
 
 export const ProfileInfoItemStyled = styled(DropdownOptionStyled)`
   ${({ theme }) => `
-    ${theme.fontStyles.pSmall}
+    ${theme.fontStyles.alpha.pSmall}
     padding: ${theme.spacing.xsmall} ${theme.spacing.gutter};
     display: grid;
     grid-template-columns: 20px auto;
@@ -42,7 +42,7 @@ export const ProfileInfoItemStyled = styled(DropdownOptionStyled)`
       font-weight: bold;
 
       &:hover {
-        background: ${theme.palette.primary};
+        background: ${theme.palette.alpha.primary};
         color: ${theme.colors.white};
         cursor: pointer;
         border-radius: 0px 0px ${theme.spacing.xxsmall} ${

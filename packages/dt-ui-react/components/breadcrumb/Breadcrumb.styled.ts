@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const BreadcrumbStyled = styled.nav`
-  ${({ theme }) => theme.fontStyles.pXSmall}
+  ${({ theme }) => theme.fontStyles.alpha.pXSmall}
   color: ${({ theme }) => theme.colors.gray_100};
   margin-bottom: 15px;
 `;
@@ -28,6 +28,6 @@ export const ItemStyled = styled.li`
 `;
 
 export const AnchorStyled = styled.a`
-  color: ${({ theme }) => theme.palette.primary};
+  color: ${({ theme }) => theme.palette.alpha.primary};
   text-decoration: underline;
 `;

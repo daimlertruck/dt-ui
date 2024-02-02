@@ -8,7 +8,7 @@ export { theme } from './themes/default';
 export type {
   CustomTheme as Theme,
   BaseProps,
-  Colors,
+  AlphaColors as Colors,
   FontFace,
 } from './types';
 

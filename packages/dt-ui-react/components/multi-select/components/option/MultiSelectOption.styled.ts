@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const MultiSelectOptionStyled = styled.li<{ disabled?: boolean }>`
   ${({ theme, disabled }) => `
-    ${theme.fontStyles.pXSmall}
+    ${theme.fontStyles.alpha.pXSmall}
     list-style: none;
     padding: ${theme.spacing.small} ${theme.spacing.xmedium};
     text-overflow: ellipsis;

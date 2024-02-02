@@ -16,21 +16,21 @@ export const buttonVariantStyles = (
       text-transform: uppercase;
         ${
           color === 'neutral'
-            ? theme.palette.neutralDark_100
-            : theme.palette[color]
+            ? theme.palette.alpha.neutralDark_100
+            : theme.palette.alpha[color]
         };
 
       &:disabled {
         color: ${
           color === 'neutral'
-            ? theme.palette.neutralLight_100
-            : theme.palette[color]
+            ? theme.palette.alpha.neutralLight_100
+            : theme.palette.alpha[color]
         };
         background-color: ${theme.colors.white};
         border-color: ${
           color === 'neutral'
-            ? theme.palette.neutralLight_100
-            : theme.palette[color]
+            ? theme.palette.alpha.neutralLight_100
+            : theme.palette.alpha[color]
         };
         cursor: default;
       }
@@ -47,7 +47,7 @@ export const buttonVariantStyles = (
       border: none;
 
       &:disabled {
-        color: ${theme.palette.neutralLight_100};
+        color: ${theme.palette.alpha.neutralLight_100};
       }
     `,
   }[variant]);

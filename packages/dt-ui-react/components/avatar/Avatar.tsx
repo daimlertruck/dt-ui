@@ -15,7 +15,7 @@ const COLOR: Record<AvatarType, keyof Theme['colors'] | 'unset' | 'inherit'> = {
   profile: 'blue_100',
 };
 
-const FONTS: Record<AvatarType, keyof Theme['fontStyles']> = {
+const FONTS: Record<AvatarType, keyof Theme['fontStyles']['alpha']> = {
   teamMember: 'tag',
   profile: 'pXXSmall',
 };

@@ -19,7 +19,7 @@ export const ToastIconStyled = styled.div<ToastIconStyledProps>`
   padding-left: 8px;
   padding-right: 8px;
   ${({ theme, type }) => `
-    background-color: ${theme.palette[type]};  
+    background-color: ${theme.palette.alpha[type]};  
     color: ${theme.colors.white}
 `}
 `;
@@ -53,7 +53,7 @@ export const ToastContentStyled = styled.div`
 export const ToastTitleStyled = styled.div`
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  ${({ theme }) => theme.fontStyles.h6};
+  ${({ theme }) => theme.fontStyles.alpha.h6};
   margin-bottom: 4px;
 `;
 
@@ -62,7 +62,7 @@ export const ToastMessageStyled = styled.div`
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  ${({ theme }) => theme.fontStyles.pXXSmall};
+  ${({ theme }) => theme.fontStyles.alpha.pXXSmall};
 `;
 
 export const ToastButtonCloseStyled = styled.button`

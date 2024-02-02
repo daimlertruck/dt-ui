@@ -6,7 +6,7 @@ export interface LabelFieldProps {
 }
 
 export const LabelFieldStyled = styled.label<LabelFieldProps>`
-  ${({ theme }) => theme.fontStyles.pSmall}
+  ${({ theme }) => theme.fontStyles.alpha.pSmall}
 
   color: ${({ theme, disabled }) =>
     disabled ? theme.colors.gray_90 : theme.colors.gray_100};

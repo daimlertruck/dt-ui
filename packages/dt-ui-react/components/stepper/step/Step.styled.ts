@@ -9,12 +9,12 @@ export const StepStyled = styled.li`
 `;
 
 interface LabelStyledProps {
-  color: keyof Theme['palette'];
+  color: keyof Theme['palette']['alpha'];
 }
 
 export const LabelStyled = styled.span<LabelStyledProps>`
   ${({ theme, color }) => `
-    ${theme.fontStyles.pSmall};
-    color: ${theme.palette[color]};
+    ${theme.fontStyles.alpha.pSmall};
+    color: ${theme.palette.alpha[color]};
   `}
 `;

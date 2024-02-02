@@ -18,7 +18,7 @@ export const PaginationStyled = styled.div`
 export const LastPageStyled = styled.button`
   ${({ theme }) => `
     background-color: transparent;
-    color: ${theme.palette.primary};
+    color: ${theme.palette.alpha.primary};
     border: none;
     cursor: pointer;
   `}
@@ -32,14 +32,14 @@ export const ArrowStyled = styled.button<ArrowStyledProps>`
     background-color: ${theme.colors.white};
     border: none;
     border-radius: 3px;
-    color: ${disabled ? theme.colors.gray_90 : theme.palette.primary};
+    color: ${disabled ? theme.colors.gray_90 : theme.palette.alpha.primary};
     cursor: ${disabled ? 'default' : 'pointer'};
   `}
 `;
 
 export const InputStyled = styled.input<InputStyledProps>`
   ${({ theme, hasError }) => `
-    ${theme.fontStyles.pXSmall};
+    ${theme.fontStyles.alpha.pXSmall};
     text-align: center;
     padding: 6px 8px;
     margin: 0px;
@@ -49,13 +49,15 @@ export const InputStyled = styled.input<InputStyledProps>`
     color: ${theme.colors.gray_200};
     border: ${
       hasError
-        ? `2px solid ${theme.palette.error}`
+        ? `2px solid ${theme.palette.alpha.error}`
         : `1px solid ${theme.colors.gray_90}`
     };
     border-radius: 3px;
 
     &:focus {
-       ${!hasError && `border-bottom: 2px solid ${theme.palette.primary}`};
+       ${
+         !hasError && `border-bottom: 2px solid ${theme.palette.alpha.primary}`
+       };
     }
   `}
 `;

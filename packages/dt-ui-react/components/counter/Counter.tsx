@@ -1,9 +1,9 @@
-import { BaseProps, Colors } from '../../types';
+import { BaseProps, AlphaColors } from '../../types';
 
 import { CounterStyled } from './Counter.styled';
 
 export interface CounterProps extends BaseProps {
-  color?: Colors;
+  color?: AlphaColors;
   outlined?: boolean;
   isLarge?: boolean;
 }

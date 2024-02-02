@@ -16,7 +16,7 @@ export const DescriptionListStyled = styled.dl<DescriptionListStyledProps>`
 `;
 
 export const TermStyled = styled.dt`
-  ${({ theme }) => theme.fontStyles.pSmall};
+  ${({ theme }) => theme.fontStyles.alpha.pSmall};
   font-weight: 700;
   margin-bottom: 10px;
   display: list-item;

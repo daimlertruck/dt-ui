@@ -9,28 +9,28 @@ interface GroupStyledProps {
 export const RadioInputStyled = styled.input`
   ${({ theme }) => `
     background: ${theme.colors.white};
-    border: 1px solid ${theme.palette.neutralLight_100};
+    border: 1px solid ${theme.palette.alpha.neutralLight_100};
     border-radius: 50%;
     width: 16px;
     height: 16px;
     appearance: none;
     
     &:disabled {
-      background: ${theme.palette.neutralLight_300};
+      background: ${theme.palette.alpha.neutralLight_300};
       pointer-events: none;
     }
 
     &:disabled + label {
-      color: ${theme.palette.neutral};
+      color: ${theme.palette.alpha.neutral};
     }
 
     &:checked {
       border-width: 5px;
-      border-color: ${theme.palette.primary};
+      border-color: ${theme.palette.alpha.primary};
     }
 
     &:checked:disabled {
-      border-color: ${theme.palette.neutralLight_100};
+      border-color: ${theme.palette.alpha.neutralLight_100};
     }
 
     &:checked:before {
@@ -45,7 +45,7 @@ export const RadioInputStyled = styled.input`
 
 export const RadioLabelStyled = styled.label`
   ${({ theme }) => `
-    ${theme.fontStyles.p};
+    ${theme.fontStyles.alpha.p};
     color: ${theme.colors.gray_200};
     cursor: inherit;
   `}

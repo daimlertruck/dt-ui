@@ -1,15 +1,32 @@
-import { breakpoints } from './breakpoints';
-import { palette, colors } from './palette';
-import { shadows } from './shadows';
-import { spacing } from './spacing';
-import { fontFamily, fontStyles } from './typography';
+import { Theme } from '../..';
 
-export const theme = {
+import { palette as alphaPalette, colors } from './alpha/palette';
+import { fontStyles as alphaFontStyles } from './alpha/typography';
+import { animations } from './animations';
+import { breakpoints } from './breakpoints';
+import { palette } from './palette';
+import { radius } from './radius';
+import { shadows } from './shadows';
+import { shape } from './shape';
+import { spacing } from './spacing';
+import { fontFamily, fontStyles, responsiveFontStyles } from './typography';
+
+export const theme: Theme = {
+  animations,
   fontFamily,
-  fontStyles,
-  palette,
+  fontStyles: {
+    alpha: alphaFontStyles,
+    ...fontStyles,
+  },
+  palette: {
+    alpha: alphaPalette,
+    ...palette,
+  },
   colors,
+  radius,
   shadows,
+  shape,
   spacing,
   breakpoints,
+  responsiveFontStyles,
 };

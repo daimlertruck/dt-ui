@@ -31,7 +31,7 @@ export const ListStyled = styled.ul<ListStyledProps>`
 
 export const CounterListItemStyled = styled.li`
   ${({ theme }) => `
-    ${theme.fontStyles.pSmall}
+    ${theme.fontStyles.alpha.pSmall}
     margin-bottom: ${theme.spacing.xmedium};
     display: flex;
     align-items: center;

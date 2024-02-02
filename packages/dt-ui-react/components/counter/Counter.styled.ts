@@ -1,16 +1,16 @@
 import styled from '@emotion/styled';
 
-import { Colors } from '../../types';
+import { AlphaColors } from '../../types';
 
 export interface CounterStyledProps {
-  color: Colors;
+  color: AlphaColors;
   outlined?: boolean;
   isLarge?: boolean;
 }
 
 export const CounterStyled = styled.span<CounterStyledProps>`
   ${({ theme, color, outlined, isLarge }) => `
-    ${theme.fontStyles.tag}
+    ${theme.fontStyles.alpha.tag}
     color: ${theme.colors.white};
     border: ${theme.spacing.none};
     align-items: center;
@@ -19,13 +19,13 @@ export const CounterStyled = styled.span<CounterStyledProps>`
     width: ${isLarge ? '24px' : '16px'};
     height: ${isLarge ? '24px' : '16px'};
     border-radius: 50%;
-    background-color: ${theme.palette[color]};
+    background-color: ${theme.palette.alpha[color]};
 
     ${
       outlined &&
       `
-        border: 2px solid ${theme.palette[color]};
-        color: ${theme.palette[color]};
+        border: 2px solid ${theme.palette.alpha[color]};
+        color: ${theme.palette.alpha[color]};
         background-color: ${theme.colors.white}
       `
     };

@@ -1,9 +1,9 @@
-import { BaseProps, Colors } from '../../types';
+import { BaseProps, AlphaColors } from '../../types';
 
 import { PillStyled } from './Pill.styled';
 
 export interface PillProps extends BaseProps {
-  color?: Colors;
+  color?: AlphaColors;
 }
 
 export const Pill = ({
