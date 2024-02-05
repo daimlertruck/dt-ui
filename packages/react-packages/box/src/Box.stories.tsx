@@ -1,24 +1,23 @@
-import { Story } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
-import { Box, BoxProps } from '.';
+import { Box } from '.';
 
-export default {
+const meta: Meta<typeof Box> = {
   title: 'Data Display/Box',
   component: Box,
   argTypes: {
     element: { control: 'text' },
   },
-};
-
-const Template: Story<BoxProps> = ({ ...props }) => {
-  return (
+  render: ({ ...props }) => (
     <Box {...props}>
       <p>Content 1</p>
       <p>Content 2</p>
     </Box>
-  );
+  ),
 };
 
-export const Default = Template.bind({});
+export default meta;
 
-Default.args = {};
+export const Template: StoryObj<typeof Box> = {
+  args: {},
+};
