@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.31
+
+### Minor Changes
+
+- feat: add forwardRef to tag
+
 ## 0.1.0-alpha.30
 
 ### Minor Changes
