@@ -12,7 +12,6 @@ interface TableHeadStyledProps {
 
 interface CellStyledProps {
   columnWidth?: string;
-  isVisible?: boolean;
   textAlign?: TextAlign;
 }
 
@@ -110,7 +109,7 @@ export const ColumnHeaderStyled = styled.th<ColumnHeaderStyled>`
 `;
 
 export const CellStyled = styled.td<CellStyledProps>`
-  ${({ theme, columnWidth, textAlign, isVisible }) => `
+  ${({ theme, columnWidth, textAlign }) => `
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,15 +154,12 @@ export const CellStyled = styled.td<CellStyledProps>`
         display: none;
       }
       
-      white-space: nowrap;
-      overflow: ${isVisible ? 'visible' : 'hidden'};
-      text-overflow: ellipsis;
+      word-break: break-word;
 
       ${
         !!columnWidth &&
         `
         white-space: unset;
-        word-break: break-word;
         width: ${columnWidth};
         max-width: ${columnWidth};
       `

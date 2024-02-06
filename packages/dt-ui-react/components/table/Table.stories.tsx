@@ -97,7 +97,7 @@ Default.args = {
   isFixed: false,
 };
 
-const FixedHeaderTemplate: Story = ({ isFixed, hasFixedHeader }) => {
+const StickyHeaderTemplate: Story = ({ isFixed, hasFixedHeader }) => {
   return (
     <div style={{ height: '200px', overflow: 'auto' }}>
       <Table isFixed={isFixed}>
@@ -130,9 +130,9 @@ const FixedHeaderTemplate: Story = ({ isFixed, hasFixedHeader }) => {
   );
 };
 
-export const FixedHeaderExample = FixedHeaderTemplate.bind({});
+export const StickyHeaderExample = StickyHeaderTemplate.bind({});
 
-FixedHeaderExample.args = {
+StickyHeaderExample.args = {
   isFixed: true,
   hasFixedHeader: true,
 };

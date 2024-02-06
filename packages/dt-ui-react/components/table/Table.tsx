@@ -27,7 +27,6 @@ interface ColumnHeaderProps extends BaseProps {
 }
 
 interface DataCellProps extends BaseProps {
-  isVisible?: boolean;
   columnWidth?: string;
   textAlign?: TextAlign;
   dataLabel: string;
@@ -76,12 +75,10 @@ export const DataCell = ({
   columnWidth,
   dataLabel,
   textAlign = 'left',
-  isVisible,
 }: DataCellProps) => (
   <CellStyled
     columnWidth={columnWidth}
     data-label={dataLabel}
-    isVisible={isVisible}
     textAlign={textAlign}
   >
     {children}
