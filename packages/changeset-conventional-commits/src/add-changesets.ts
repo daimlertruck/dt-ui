@@ -59,7 +59,7 @@ export const conventionalCommitChangeset = async (
       : difference(changesets, currentChangesets);
 
   writePackageNamesToBeTagged(
-    newChangesets.map(({ releases: [release] }) => release.name)
+    newChangesets.map(({ releases }) => releases.map(({ name }) => name)).flat()
   );
 
   newChangesets.forEach((changeset) => writeChangeset(changeset, cwd));
