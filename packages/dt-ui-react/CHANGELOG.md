@@ -1,5 +1,14 @@
 # @dt-ui/react
 
+## 0.1.0-beta.56
+
+### Patch Changes
+
+- refactor: update story files
+- Updated dependencies
+  - @dt-ui/react-box@0.1.0-beta.4
+  - @dt-ui/react-empty-state@0.1.0-beta.5
+
 ## 0.1.0-beta.55
 
 ### Minor Changes
