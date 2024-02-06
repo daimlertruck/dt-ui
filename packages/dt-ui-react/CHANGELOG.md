@@ -1,5 +1,15 @@
 # @dt-ui/react
 
+## 0.1.0-beta.59
+
+### Patch Changes
+
+- chore: make tooltip independent package
+- refactor: update tooltip story
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-tooltip@0.1.0-beta.1
+
 ## 0.1.0-beta.58
 
 ### Minor Changes
