@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.58
+
+### Minor Changes
+
+- feat: add icons Bolt, Payments, EV_Station, Wifi icons
+
 ## 0.1.0-beta.57
 
 ### Minor Changes
