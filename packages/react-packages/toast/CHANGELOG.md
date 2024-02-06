@@ -1,5 +1,11 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.2
+
+### Minor Changes
+
+- feat: implement progress bar
+
 ## 0.1.0-beta.1
 
 ### Minor Changes
