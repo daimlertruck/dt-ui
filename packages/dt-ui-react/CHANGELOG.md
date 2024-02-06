@@ -1,5 +1,15 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.32
+
+### Minor Changes
+
+- feat: create util to get contextual colors
+
+### Patch Changes
+
+- chore: adap theme to main branch
+
 ## 0.1.0-alpha.31
 
 ### Minor Changes
