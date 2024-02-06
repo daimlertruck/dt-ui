@@ -54,10 +54,6 @@ export const AvatarStyled = styled.div<AvatarStyledProps>`
           line-height: 16px;
         `;
         break;
-
-      default:
-        '';
-        break;
     }
 
     switch (type) {
@@ -109,10 +105,6 @@ export const AvatarStyled = styled.div<AvatarStyledProps>`
             padding: initial;
           }
         `;
-        break;
-
-      default:
-        '';
         break;
     }
 

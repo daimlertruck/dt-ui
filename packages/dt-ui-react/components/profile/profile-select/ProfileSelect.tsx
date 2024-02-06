@@ -1,7 +1,7 @@
+import { Avatar, AvatarSize, AvatarType } from '@dt-ui/react-avatar';
 import { useTheme } from '@emotion/react';
 
 import { ArrowDropDown, ArrowDropUp } from '../../../core';
-import { Avatar, AvatarType, AvatarSize } from '../../avatar';
 
 import { ProfileSelectStyled } from './ProfileSelect.styled';
 

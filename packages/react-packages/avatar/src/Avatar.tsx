@@ -1,11 +1,11 @@
 import { Tooltip } from '@dt-ui/react-tooltip';
 import React, { useState } from 'react';
 
-import { AvatarThumbnail } from '../../core/assets';
-import { acronymGenerator } from '../../utils';
+import { AvatarThumbnail } from '../../../dt-ui-react/core';
 
 import { AvatarStyled, AvatarStyledProps } from './Avatar.styled';
 import { AvatarType, AvatarSize } from './constants';
+import { acronymGenerator } from './utils';
 
 export interface AvatarProps extends AvatarStyledProps {
   title: string;
@@ -13,7 +13,7 @@ export interface AvatarProps extends AvatarStyledProps {
   dataTestId?: string;
 }
 
-export const Avatar = ({
+const Avatar = ({
   title,
   type = AvatarType.Primary,
   size = AvatarSize.Medium,
@@ -50,3 +50,5 @@ export const Avatar = ({
     </Tooltip>
   );
 };
+
+export default Avatar;

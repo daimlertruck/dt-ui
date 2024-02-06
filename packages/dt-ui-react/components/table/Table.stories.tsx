@@ -1,6 +1,6 @@
+import { Avatar, AvatarSize, AvatarType } from '@dt-ui/react-avatar';
 import { Story } from '@storybook/react';
 
-import { Avatar, AvatarType } from '../avatar';
 import { Tag } from '../tag';
 import { TagColor } from '../tag/constants';
 
@@ -34,7 +34,7 @@ const columnSizes: { [key: string]: string } = {
 
 const renderAvatarWithTitle = (title: string) => (
   <div style={{ display: 'flex' }}>
-    <Avatar title={title} type={AvatarType.TeamMember} />
+    <Avatar size={AvatarSize.Small} title={title} type={AvatarType.Primary} />
     {title}
   </div>
 );

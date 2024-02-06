@@ -1,10 +1,10 @@
-import { Story } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
-import { Avatar, AvatarProps } from './Avatar';
+import Avatar from './Avatar';
 import { AvatarType, AvatarSize } from './constants';
 import avatarExampleImage from './images/example-avatar-image.png';
 
-export default {
+const meta: Meta<typeof Avatar> = {
   title: 'Data Display/Avatar',
   component: Avatar,
   argTypes: {
@@ -21,23 +21,21 @@ export default {
   },
 };
 
-const Template: Story<AvatarProps> = ({ ...props }) => {
-  return <Avatar {...props} />;
+export default meta;
+
+export const Template: StoryObj<typeof Avatar> = {
+  args: {
+    title: 'User Name',
+    type: AvatarType.Primary,
+    size: AvatarSize.Medium,
+  },
 };
 
-export const Default = Template.bind({});
-
-Default.args = {
-  title: 'User Name',
-  type: AvatarType.Primary,
-  size: AvatarSize.Medium,
-};
-
-export const WithProfileImage = Template.bind({});
-
-WithProfileImage.args = {
-  title: 'User Name',
-  type: AvatarType.Profile,
-  size: AvatarSize.Large,
-  imageSrc: avatarExampleImage,
+export const WithProfileImageTemplate: StoryObj<typeof Avatar> = {
+  args: {
+    title: 'User Name',
+    type: AvatarType.Profile,
+    size: AvatarSize.Large,
+    imageSrc: avatarExampleImage,
+  },
 };

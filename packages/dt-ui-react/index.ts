@@ -27,7 +27,6 @@ export * from './components/link';
 export * from './components/divider';
 export * from './components/breadcrumb';
 export * from './components/modal';
-export * from './components/avatar';
 export * from './components/counter';
 export * from './components/list';
 export * from './components/description-list';
@@ -43,6 +42,7 @@ export * from './components/progress-bar';
 export * from './components/message';
 
 //independent component packages
+export * from '@dt-ui/react-avatar';
 export * from '@dt-ui/react-box';
 export * from '@dt-ui/react-empty-state';
 export * from '@dt-ui/react-toast';
