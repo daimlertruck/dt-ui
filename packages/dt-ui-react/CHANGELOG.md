@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.61
+
+### Patch Changes
+
+- fix: remove ellipsis overflow from data cell
+
 ## 0.1.0-beta.60
 
 ### Minor Changes
