@@ -1,5 +1,20 @@
 # @dt-ui/react
 
+## 0.1.0-beta.57
+
+### Minor Changes
+
+- feat: adapt toast to design specifications
+- feat: share toast id with toast children component
+
+### Patch Changes
+
+- chore: transform Toast to independent package
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-toast@0.1.0-beta.1
+
 ## 0.1.0-beta.56
 
 ### Patch Changes
