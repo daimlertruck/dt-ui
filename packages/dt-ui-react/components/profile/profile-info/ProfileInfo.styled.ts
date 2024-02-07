@@ -1,6 +1,6 @@
+import { hexToRgba } from '@dt-ui/react-core';
 import styled from '@emotion/styled';
 
-import { hexToRgba } from '../../../utils';
 import { DropdownOptionStyled } from '../../dropdown/components/option/DropdownOption.styled';
 
 export const ProfileInfoStyled = styled.ul`

@@ -1,4 +1,5 @@
-import { CustomTheme as Theme } from '../../../../types';
+import { Theme } from '@dt-ui/react-core';
+
 import { ButtonSize } from '../constants';
 
 export const buttonSizeStyles = (size: ButtonSize, theme: Theme) =>

@@ -1,7 +1,7 @@
+import { BaseProps } from '@dt-ui/react-core';
 import { Story } from '@storybook/react';
 import { useState } from 'react';
 
-import { BaseProps } from '../../../types';
 import { TextArea } from '../text-area';
 import { TextField } from '../text-field';
 import { Toggle } from '../toggle';

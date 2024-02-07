@@ -1,4 +1,4 @@
-import { CustomTheme } from '../../dt-ui-react/types';
+import { Theme as CustomTheme } from '@dt-ui/react-core';
 
 export * from './src';
 

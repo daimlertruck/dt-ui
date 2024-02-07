@@ -1,7 +1,6 @@
+import { withProviders } from '@dt-ui/react-core';
 import { render, fireEvent, screen } from '@testing-library/react';
 import React from 'react';
-
-import { withProviders } from '../../utils';
 
 import { Radio, RadioGroup } from '.';
 

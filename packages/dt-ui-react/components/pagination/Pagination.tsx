@@ -1,8 +1,7 @@
+import { BaseProps, debounce } from '@dt-ui/react-core';
 import React, { useEffect, useMemo, useState } from 'react';
 
 import { ArrowLeftIcon, ArrowRightIcon } from '../../core';
-import { BaseProps } from '../../types';
-import { debounce } from '../../utils';
 import { Typography } from '../typography';
 
 import {

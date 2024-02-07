@@ -1,7 +1,8 @@
 import { Box } from '@dt-ui/react-box';
+import { BaseProps } from '@dt-ui/react-core';
 import { Children, cloneElement, ReactElement, useMemo } from 'react';
 
-import { BaseProps, Direction } from '../../types';
+import { Direction } from '../../types';
 
 import {
   RadioInputStyled,

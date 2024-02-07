@@ -1,8 +1,7 @@
+import { withProviders, theme } from '@dt-ui/react-core';
 import { fireEvent, render } from '@testing-library/react';
 
 import { Link } from '../../../dt-ui-react/components/link';
-import { theme } from '../../../dt-ui-react/themes/default';
-import { withProviders } from '../../../dt-ui-react/utils';
 
 import { Message } from './Message';
 import { MessageType, OMessageType } from './types';

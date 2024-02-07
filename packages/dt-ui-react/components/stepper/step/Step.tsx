@@ -1,8 +1,8 @@
+import { BaseProps } from '@dt-ui/react-core';
 import { useTheme } from '@emotion/react';
 import { Children, cloneElement, ReactElement, useMemo } from 'react';
 
 import { Check } from '../../../core';
-import { BaseProps } from '../../../types';
 import { Counter } from '../../counter';
 import { Typography } from '../../typography';
 

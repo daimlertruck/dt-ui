@@ -1,6 +1,5 @@
+import { Orientation } from '@dt-ui/react-core';
 import styled from '@emotion/styled';
-
-import { Orientation } from '../../types';
 
 import { itemVariantStyles, tabsVariantStyles } from './TabsVariants.styled';
 

@@ -1,6 +1,6 @@
+import { BaseProps } from '@dt-ui/react-core';
 import { forwardRef } from 'react';
 
-import { BaseProps } from '../../types';
 import { ButtonSize } from '../buttons/button/constants';
 
 import { LinkTextSize } from './constants';

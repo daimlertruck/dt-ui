@@ -47,6 +47,7 @@ const config: StorybookConfig = {
     if (config.resolve) {
       const components = [
         'backdrop',
+        'core',
         'message',
         'box',
         'empty-state',

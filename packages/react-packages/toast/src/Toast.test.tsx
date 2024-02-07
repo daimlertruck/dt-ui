@@ -1,8 +1,8 @@
+import { withProviders } from '@dt-ui/react-core';
 import { act, fireEvent, render, screen } from '@testing-library/react';
 import { toast } from 'react-hot-toast';
 
 import { emitToast, Toaster } from '..';
-import { withProviders } from '../../../dt-ui-react/utils';
 
 import { ToastType } from './constants';
 import Toast from './Toast';

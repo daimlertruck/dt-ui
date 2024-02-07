@@ -1,7 +1,7 @@
+import { withProviders } from '@dt-ui/react-core';
 import { render, fireEvent, waitFor } from '@testing-library/react';
 import React from 'react';
 
-import { withProviders } from '../../../utils';
 import { TextField } from '../text-field';
 
 import { Form } from '.';

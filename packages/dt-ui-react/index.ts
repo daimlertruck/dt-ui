@@ -1,20 +1,9 @@
 import '@emotion/react';
-import { CustomTheme } from './types';
+import { Theme as CustomTheme } from '@dt-ui/react-core';
 // Core styles
 export * from './core';
 
-// Themes
-export { theme } from './themes/default';
-export { greenlaneTheme } from './themes/greenlane';
-export type {
-  CustomTheme as Theme,
-  BaseProps,
-  Colors,
-  FontFace,
-} from './types';
-
 // Components
-export * from './components/Provider';
 export * from './components/buttons';
 export * from './components/nav';
 export * from './components/nav-container';
@@ -49,18 +38,15 @@ export * from './components/progress-bar';
 export * from '@dt-ui/react-avatar';
 export * from '@dt-ui/react-backdrop';
 export * from '@dt-ui/react-box';
+export * from '@dt-ui/react-core';
 export * from '@dt-ui/react-empty-state';
 export * from '@dt-ui/react-toast';
 export * from '@dt-ui/react-tooltip';
 export * from '@dt-ui/react-message';
 
 //utils
-export { debounce, useClickOutside, hexToRgba } from './utils/index';
 export { ListStyleType } from './utils/constants';
 export * from './utils/testingUtils';
-
-//hooks
-export * from './hooks';
 
 declare module '@emotion/react' {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface

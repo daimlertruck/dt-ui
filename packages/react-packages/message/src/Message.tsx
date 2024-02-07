@@ -1,3 +1,4 @@
+import { BaseProps } from '@dt-ui/react-core';
 import { SVGProps, ReactElement } from 'react';
 
 import { Typography } from '../../../dt-ui-react/components/typography';
@@ -8,7 +9,6 @@ import {
   InfoIcon,
   WarningIcon,
 } from '../../../dt-ui-react/core';
-import { BaseProps } from '../../../dt-ui-react/types';
 
 import {
   MessageStyled,

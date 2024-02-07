@@ -1,7 +1,7 @@
+import { withProviders } from '@dt-ui/react-core';
 import { render } from '@testing-library/react';
 import React from 'react';
 
-import { withProviders } from '../../utils';
 import { Link } from '../link';
 
 describe('<Link /> component', () => {

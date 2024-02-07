@@ -1,4 +1,5 @@
-import { BaseProps } from '../../types';
+import { BaseProps } from '@dt-ui/react-core';
+
 import { Typography } from '../typography';
 
 import { CardStyled, CardTitleStyled, CardDetailStyled } from './Card.styled';

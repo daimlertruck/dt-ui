@@ -1,6 +1,6 @@
+import { BaseProps, Colors } from '@dt-ui/react-core';
 import { ChangeEvent } from 'react';
 
-import { BaseProps, Colors } from '../../../types';
 import { Typography } from '../../typography';
 
 import {

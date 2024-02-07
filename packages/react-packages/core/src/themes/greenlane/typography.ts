@@ -1,4 +1,4 @@
-import { getTextStyles } from '../../utils/typography';
+import { getTextStyles } from '../../utils';
 import { fontStyles as defaultFontStyles } from '../default/typography';
 
 export const fontFamily = {

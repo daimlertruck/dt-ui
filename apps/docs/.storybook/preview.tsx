@@ -9,7 +9,7 @@ import {
   theme as defaultTheme,
   greenlaneTheme,
   globalStyles,
-} from '@dt-ui/react';
+} from '@dt-ui/react-core';
 import { webFonts } from './webFonts';
 
 const GlobalStyles = () => (

@@ -1,8 +1,6 @@
+import { Provider, theme } from '@dt-ui/react-core';
 import { render, screen, within } from '@testing-library/react';
 import '@emotion/jest';
-
-import { theme } from '../../themes/default';
-import { Provider } from '../Provider';
 
 import {
   Table,

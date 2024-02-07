@@ -1,7 +1,6 @@
+import { BaseProps, useClickOutside } from '@dt-ui/react-core';
 import { useRef } from 'react';
 
-import { BaseProps } from '../../../../types';
-import { useClickOutside } from '../../../../utils';
 import { useMultiSelectContext } from '../../context';
 
 export const MultiSelectContainer = ({ children }: BaseProps) => {

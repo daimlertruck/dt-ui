@@ -1,3 +1,4 @@
+import { useMedia } from '@dt-ui/react-core';
 import { useTheme } from '@emotion/react';
 import { Children, cloneElement, ReactElement, ReactNode } from 'react';
 import {
@@ -6,8 +7,6 @@ import {
   Toaster as ToastProvider,
   ToasterProps as ToasterProviderProps,
 } from 'react-hot-toast';
-
-import { useMedia } from '../../../dt-ui-react/hooks';
 
 import { ToastPosition, ToastType } from './constants';
 import Toast from './Toast';

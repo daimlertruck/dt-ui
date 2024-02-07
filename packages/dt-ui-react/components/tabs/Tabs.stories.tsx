@@ -1,6 +1,5 @@
+import { Orientation } from '@dt-ui/react-core';
 import { Story } from '@storybook/react';
-
-import { Orientation } from '../../types';
 
 import { useTabs } from './hooks';
 import { Tabs, TabPanel } from './Tabs';

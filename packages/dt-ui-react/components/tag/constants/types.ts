@@ -1,4 +1,4 @@
-import { ComponentSize } from '../../../types/componentSize';
+import { ComponentSize } from '@dt-ui/react-core';
 
 export type TagColor =
   | 'primary'

@@ -1,8 +1,7 @@
+import { BaseProps, withProviders } from '@dt-ui/react-core';
 import { renderHook, act } from '@testing-library/react';
 import { ReactNode } from 'react';
 
-import { BaseProps } from '../../../types';
-import { withProviders } from '../../../utils';
 import { Breadcrumb } from '../Breadcrumb';
 
 import { useCollapsedBreadcrumb } from './useCollapsedBreadcrumb';

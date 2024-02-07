@@ -1,8 +1,7 @@
+import { DRAWER_Z_INDEX, BaseProps } from '@dt-ui/react-core';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
-import { DRAWER_Z_INDEX } from '../../constants';
-import { BaseProps } from '../../types';
 import { IconButtonStyled } from '../buttons/icon-button/IconButton.styled';
 
 export interface DrawerBaseProps extends BaseProps {

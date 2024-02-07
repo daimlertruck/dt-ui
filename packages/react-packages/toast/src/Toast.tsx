@@ -1,3 +1,5 @@
+import { BaseProps } from '@dt-ui/react-core';
+
 import {
   InfoOutlineIcon,
   ErrorOutlineIcon,
@@ -5,7 +7,6 @@ import {
   WarningOutlineIcon,
   CloseIcon,
 } from '../../../dt-ui-react/core';
-import { BaseProps } from '../../../dt-ui-react/types';
 
 import { ToastType } from './constants';
 import {

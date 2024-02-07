@@ -1,4 +1,5 @@
-import { BaseProps } from '../../../../types';
+import { BaseProps } from '@dt-ui/react-core';
+
 import { useDropdownContext } from '../../context';
 import { DropdownOptionValue } from '../../types';
 

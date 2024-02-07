@@ -1,7 +1,8 @@
+import { withProviders } from '@dt-ui/react-core';
 import { fireEvent, render, screen, within } from '@testing-library/react';
 import React from 'react';
 
-import { withDropdownProvider, withProviders } from '../../utils';
+import { withDropdownProvider } from '../../utils';
 
 import { Dropdown } from '.';
 

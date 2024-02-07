@@ -1,4 +1,5 @@
-import { theme } from '../../themes/default';
+import { theme } from '@dt-ui/react-core';
+
 import { getContextualColor } from '../theme';
 
 describe('getContextualColor', () => {

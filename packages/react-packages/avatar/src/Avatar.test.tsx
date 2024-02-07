@@ -1,7 +1,6 @@
+import { withProviders } from '@dt-ui/react-core';
 import { render, screen } from '@testing-library/react';
 import React from 'react';
-
-import { withProviders } from '../../../dt-ui-react/utils';
 
 import Avatar from './Avatar';
 import { AvatarType, AvatarSize } from './constants';

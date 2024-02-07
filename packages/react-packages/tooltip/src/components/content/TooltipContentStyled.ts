@@ -1,6 +1,6 @@
+import { TOOLTIP_Z_INDEX } from '@dt-ui/react-core';
 import styled from '@emotion/styled';
 
-import { TOOLTIP_Z_INDEX } from '../../../../../dt-ui-react/constants';
 import {
   TooltipDirection,
   OTooltipDirection,

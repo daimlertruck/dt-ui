@@ -1,6 +1,5 @@
+import { BaseProps, Orientation } from '@dt-ui/react-core';
 import { useMemo, Children, ReactElement, cloneElement } from 'react';
-
-import { BaseProps, Orientation } from '../../types';
 
 import {
   TabsStyled,

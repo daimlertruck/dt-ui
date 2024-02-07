@@ -1,5 +1,5 @@
-import { Portal } from '../../../../../dt-ui-react/components/Portal';
-import { BaseProps } from '../../../../../dt-ui-react/types';
+import { BaseProps, Portal } from '@dt-ui/react-core';
+
 import {
   TooltipBackground,
   OTooltipBackground,

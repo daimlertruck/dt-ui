@@ -1,7 +1,5 @@
+import { hexToRgba, MODAL_Z_INDEX } from '@dt-ui/react-core';
 import styled from '@emotion/styled';
-
-import { MODAL_Z_INDEX } from '../../constants';
-import { hexToRgba } from '../../utils';
 
 export interface HeaderProps {
   hasBackgroundColor: boolean;

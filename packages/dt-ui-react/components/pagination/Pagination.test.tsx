@@ -1,3 +1,4 @@
+import { withProviders } from '@dt-ui/react-core';
 import {
   fireEvent,
   render,
@@ -8,8 +9,6 @@ import {
   RenderHookResult,
 } from '@testing-library/react';
 import React from 'react';
-
-import { withProviders } from '../../utils';
 
 import { usePagination } from './hooks';
 import { Pagination, PaginationInput } from './Pagination';

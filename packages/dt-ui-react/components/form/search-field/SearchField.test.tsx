@@ -1,7 +1,6 @@
+import { withProviders } from '@dt-ui/react-core';
 import { fireEvent, render } from '@testing-library/react';
 import React from 'react';
-
-import { withProviders } from '../../../utils';
 
 import { SearchField } from './SearchField';
 

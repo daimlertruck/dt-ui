@@ -1,6 +1,5 @@
+import { Orientation } from '@dt-ui/react-core';
 import { css, Theme } from '@emotion/react';
-
-import { Orientation } from '../../types';
 
 export const tabsVariantStyles = (orientation: Orientation, theme: Theme) =>
   ({

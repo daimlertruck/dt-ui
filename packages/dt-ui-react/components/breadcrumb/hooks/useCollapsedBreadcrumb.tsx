@@ -1,3 +1,4 @@
+import { useDebounceResize, useMedia } from '@dt-ui/react-core';
 import { useTheme } from '@emotion/react';
 import {
   Children,
@@ -11,8 +12,6 @@ import {
 } from 'react';
 
 import { MoreHorizontalIcon } from '../../../core';
-import useDebounceResize from '../../../hooks/useDebounceResize';
-import useMedia from '../../../hooks/useMedia';
 import { Breadcrumb } from '../Breadcrumb';
 
 const isBreadcrumbRefValid = (

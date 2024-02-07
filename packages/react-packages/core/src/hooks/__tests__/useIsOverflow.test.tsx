@@ -1,17 +1,14 @@
-import { withTooltipProvider } from '@dt-ui/react-tooltip';
 import { renderHook } from '@testing-library/react';
 import React from 'react';
 
-import { Table } from '../components/table';
-import { BaseProps } from '../types';
-import { withProviders } from '../utils';
+import { BaseProps } from '../../types';
+import { withProviders } from '../../utils';
+import useDebounceResize from '../useDebounceResize';
+import { useIsOverflow } from '../useIsOverflow';
+import useMedia from '../useMedia';
 
-import useDebounceResize from './useDebounceResize';
-import { useIsOverflow } from './useIsOverflow';
-import useMedia from './useMedia';
-
-jest.mock('./useDebounceResize.ts');
-jest.mock('./useMedia.ts');
+jest.mock('../useDebounceResize.ts');
+jest.mock('../useMedia.ts');
 
 const mockUseDebounceResize = useDebounceResize as jest.Mock<() => void>;
 const mockUseMedia = useMedia as jest.Mock<boolean>;
@@ -26,7 +23,7 @@ describe('useIsOverflow', () => {
 
   it('should not modify children if not on desktop', () => {
     mockUseMedia.mockReturnValue(false);
-    const { result } = renderUseCollapsedBreadcrumb();
+    const { result } = renderComponent();
 
     expect(result.current.overflow).toBe(false);
   });
@@ -37,19 +34,21 @@ describe('useIsOverflow', () => {
       .spyOn(React, 'useRef')
       .mockReturnValue({ current: { clientWidth: 0, scrollWidth: 1 } });
 
-    const { result } = renderUseCollapsedBreadcrumb();
+    const { result } = renderComponent();
 
     expect(result.current.overflow).toBe(true);
   });
 });
 
-const ProvidedTable = withProviders(withTooltipProvider(Table));
+const ProvidedTable = withProviders(({ children }: BaseProps) => (
+  <table>{children}</table>
+));
 
 const wrapper = ({ children }: BaseProps) => (
   <ProvidedTable>{children}</ProvidedTable>
 );
 
-const renderUseCollapsedBreadcrumb = () => {
+const renderComponent = () => {
   const result = renderHook(() => useIsOverflow(), {
     wrapper,
   });

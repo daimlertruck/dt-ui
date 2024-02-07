@@ -1,4 +1,5 @@
 import { Box } from '@dt-ui/react-box';
+import { BaseProps } from '@dt-ui/react-core';
 import { useTheme } from '@emotion/react';
 import { useMemo, Children, ReactElement, cloneElement } from 'react';
 
@@ -6,7 +7,6 @@ import {
   OutlinedArrowDropDown,
   OutlinedArrowDropUp,
 } from '../../../../core/assets';
-import { BaseProps } from '../../../../types';
 import { DropdownMenu } from '../../../dropdown/components//menu/DropdownMenu';
 import { Tag } from '../../../tag';
 import { Typography } from '../../../typography';

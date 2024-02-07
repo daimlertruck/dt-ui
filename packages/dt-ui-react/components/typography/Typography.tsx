@@ -1,12 +1,8 @@
+import { BaseProps, Theme, PaletteKeys } from '@dt-ui/react-core';
+import { useTheme } from '@emotion/react';
 import { forwardRef } from 'react';
 
-import { theme } from '../../themes/default';
-import {
-  BaseProps,
-  Elements,
-  CustomTheme as Theme,
-  PaletteKeys,
-} from '../../types';
+import { Elements } from '../../types';
 
 import { TypographyStyled } from './Typography.styled';
 
@@ -28,6 +24,7 @@ const Typography = forwardRef<HTMLParagraphElement, TypographyProps>(
     }: TypographyProps,
     ref
   ) => {
+    const theme = useTheme();
     const el = element as keyof Theme['fontStyles'];
     const fonts = fontStyles ?? (theme.fontStyles[el] ? el : 'body1');
 

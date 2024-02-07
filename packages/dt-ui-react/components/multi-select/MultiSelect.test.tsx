@@ -1,7 +1,8 @@
+import { withProviders } from '@dt-ui/react-core';
 import { fireEvent, render, screen, within } from '@testing-library/react';
 import React from 'react';
 
-import { withMultiSelectProvider, withProviders } from '../../utils';
+import { withMultiSelectProvider } from '../../utils';
 
 import { MultiSelect } from '.';
 

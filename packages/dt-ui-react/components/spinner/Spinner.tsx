@@ -1,7 +1,7 @@
 import { Box } from '@dt-ui/react-box';
+import { BaseProps, Theme, PaletteKeys } from '@dt-ui/react-core';
 import { useTheme } from '@emotion/react';
 
-import { BaseProps, CustomTheme as Theme, PaletteKeys } from '../../types';
 import { Typography } from '../typography';
 
 import { SpinnerStyled } from './Spinner.styled';

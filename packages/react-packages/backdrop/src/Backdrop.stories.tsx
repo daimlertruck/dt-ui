@@ -1,7 +1,6 @@
+import { Portal } from '@dt-ui/react-core';
 import { Meta, StoryFn } from '@storybook/react';
 import { useState } from 'react';
-
-import { Portal } from '../../../dt-ui-react/components/Portal';
 
 import { Backdrop, BackdropProps } from './Backdrop';
 import { BackdropType } from './constants';

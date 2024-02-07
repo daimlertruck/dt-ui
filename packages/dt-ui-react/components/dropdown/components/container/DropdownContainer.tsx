@@ -1,7 +1,6 @@
+import { BaseProps, useClickOutside } from '@dt-ui/react-core';
 import { useRef } from 'react';
 
-import { BaseProps } from '../../../../types';
-import { useClickOutside } from '../../../../utils';
 import { useDropdownContext } from '../../context';
 
 export const DropdownContainer = ({

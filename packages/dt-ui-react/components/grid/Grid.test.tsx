@@ -1,7 +1,7 @@
+import { withProviders } from '@dt-ui/react-core';
 import { render, screen } from '@testing-library/react';
 import React from 'react';
 
-import { withProviders } from '../../utils';
 import { Card } from '../card';
 
 import { Grid } from './Grid';

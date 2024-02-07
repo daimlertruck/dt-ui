@@ -1,3 +1,4 @@
+import { BaseProps } from '@dt-ui/react-core';
 import React, {
   useState,
   useEffect,
@@ -6,7 +7,6 @@ import React, {
   InputHTMLAttributes,
 } from 'react';
 
-import { BaseProps } from '../../../types';
 import { Typography } from '../../typography';
 import { LabelField } from '../label-field';
 import {

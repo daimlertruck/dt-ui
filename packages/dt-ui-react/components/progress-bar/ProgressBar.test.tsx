@@ -1,6 +1,5 @@
+import { withProviders } from '@dt-ui/react-core';
 import { render } from '@testing-library/react';
-
-import { withProviders } from '../../utils';
 
 import { ProgressBar } from './ProgressBar';
 

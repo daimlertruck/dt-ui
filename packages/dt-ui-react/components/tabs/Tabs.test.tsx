@@ -1,7 +1,6 @@
+import { withProviders } from '@dt-ui/react-core';
 import { render, renderHook, act } from '@testing-library/react';
 import React, { Fragment } from 'react';
-
-import { withProviders } from '../../utils';
 
 import { useTabs } from './hooks';
 import { Tabs, TabPanel } from './Tabs';

@@ -1,8 +1,8 @@
+import { BaseProps } from '@dt-ui/react-core';
 import { Tooltip } from '@dt-ui/react-tooltip';
 import { Children, ReactNode, cloneElement, isValidElement } from 'react';
 
 import { ArrowRightIcon } from '../../core';
-import { BaseProps } from '../../types';
 
 import {
   BreadcrumbStyled,

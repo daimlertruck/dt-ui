@@ -1,5 +1,6 @@
+import { BaseProps } from '@dt-ui/react-core';
+
 import { CloseIcon } from '../../core/assets';
-import { BaseProps } from '../../types';
 
 import { TagBorder, TagColor, TagSize, TagVariant } from './constants';
 import { TagStyled, TagGroupStyled, TagButtonCloseStyled } from './Tag.styled';

@@ -1,6 +1,5 @@
+import { Colors } from '@dt-ui/react-core';
 import styled from '@emotion/styled';
-
-import { Colors } from '../../../types';
 
 interface ToggleStyledProps {
   checkedColor: Colors;

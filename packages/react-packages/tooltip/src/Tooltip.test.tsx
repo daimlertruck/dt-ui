@@ -1,10 +1,9 @@
+import { withProviders } from '@dt-ui/react-core';
 import {
   render,
   fireEvent,
   waitForElementToBeRemoved,
 } from '@testing-library/react';
-
-import { withProviders } from '../../../dt-ui-react/utils';
 
 import { TooltipContentProps } from './components';
 import Tooltip from './Tooltip';

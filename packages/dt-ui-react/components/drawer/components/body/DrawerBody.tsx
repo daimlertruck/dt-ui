@@ -1,4 +1,4 @@
-import { BaseProps } from '../../../../types';
+import { BaseProps } from '@dt-ui/react-core';
 
 import { DrawerContentStyled } from './DrawerBody.styled';
 

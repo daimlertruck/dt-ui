@@ -1,8 +1,8 @@
+import { withProviders } from '@dt-ui/react-core';
 import { render } from '@testing-library/react';
 import React from 'react';
 
 import { ViewAgendaIcon } from '../../core';
-import { withProviders } from '../../utils';
 
 import { Breadcrumb } from './Breadcrumb';
 
@@ -10,7 +10,7 @@ describe('<Breadcrumb /> component', () => {
   const ProvidedBreadcrumb = withProviders(Breadcrumb);
 
   beforeEach(() => {
-    jest.mock('../../hooks/useMedia', () => ({
+    jest.mock('@dt-ui/react-core', () => ({
       useMedia: jest.fn(() => true),
     }));
   });

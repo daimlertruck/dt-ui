@@ -1,4 +1,4 @@
-import { CustomTheme as Theme } from '../../types';
+import { Theme } from '@dt-ui/react-core';
 
 import { TagColor, TagVariant } from './constants';
 import { tagVariantColors } from './utils/tagVariantColors';

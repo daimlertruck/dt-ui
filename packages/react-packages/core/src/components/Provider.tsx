@@ -1,9 +1,8 @@
-import { ThemeProvider, Global, Theme } from '@emotion/react';
+import { ThemeProvider, Global } from '@emotion/react';
 import React from 'react';
 
-import { globalStyles } from '../core';
-import { theme as defaultTheme } from '../themes/default';
-import { FontFace } from '../types';
+import { theme as defaultTheme, globalStyles } from '../themes';
+import { FontFace, CustomTheme as Theme } from '../types';
 
 type ThemeProviderType = {
   theme?: Theme;

@@ -1,7 +1,7 @@
 import { Box } from '@dt-ui/react-box';
+import { BaseProps } from '@dt-ui/react-core';
 
 import { CloseIcon } from '../../../../core/assets';
-import { BaseProps } from '../../../../types';
 import { useMultiSelectContext } from '../../context';
 import { MultiSelectOptionValue } from '../../types';
 import { Actions } from '../../types';

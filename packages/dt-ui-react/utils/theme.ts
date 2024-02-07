@@ -1,4 +1,4 @@
-import { PaletteKeys, CustomTheme as Theme } from '../types';
+import { PaletteKeys, Theme } from '@dt-ui/react-core';
 
 type PaletteKey = keyof Theme['palette'];
 type Shade = keyof Theme['palette'][PaletteKey];
