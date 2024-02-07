@@ -22,8 +22,8 @@ export const modifyStorybookComponentsPathAction: PlopTypes.ModifyActionConfig =
   {
     type: 'modify',
     path: '{{ turbo.paths.root }}/apps/docs/.storybook/main.ts',
-    pattern: '...resolveComponentsPath([',
-    template: "...resolveComponentsPath(['{{packageName}}', ",
+    pattern: 'const components = [',
+    template: "const components = ['{{packageName}}', ",
     templateFile: '',
   };
 
