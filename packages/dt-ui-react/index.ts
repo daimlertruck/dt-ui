@@ -40,6 +40,7 @@ export * from './components/checkbox';
 export * from './components/radio';
 export * from './components/multi-select';
 export * from './components/progress-bar';
+export * from './components/message';
 
 //independent component packages
 export * from '@dt-ui/react-box';
