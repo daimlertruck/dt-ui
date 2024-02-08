@@ -113,7 +113,7 @@ There is a case where you don't have the specification ready but the component i
 
 1. Run ``yarn generate:component``
 
-2. You will be asked for a package name
+2. You will be asked for a package name (in kebab-case)
 
 3. A component package with a boilerplate will be created in the workspace react-packages 🎉
 
