@@ -6,7 +6,7 @@ import {
   CloseIcon,
   ErrorIcon,
   InfoIcon,
-  WarningOutlinedIcon,
+  WarningIcon,
 } from '../../../dt-ui-react/core';
 import { BaseProps } from '../../../dt-ui-react/types';
 
@@ -30,7 +30,7 @@ export const MessageIcons: Record<MessageType, MessageIcon | null> = {
   [OMessageType.Error]: ErrorIcon,
   [OMessageType.Info]: InfoIcon,
   [OMessageType.Success]: CheckCircleIcon,
-  [OMessageType.Warning]: WarningOutlinedIcon,
+  [OMessageType.Warning]: WarningIcon,
   [OMessageType.Default]: null,
 };
 

@@ -50,6 +50,6 @@ export { default as UsernameSVG } from './Username';
 export { default as ViewAgendaIcon } from './ViewAgenda';
 export { default as Visibility } from './Visibility';
 export { default as VisibilityOff } from './VisibilityOff';
+export { default as WarningOutlineIcon } from './WarningOutline';
 export { default as WarningIcon } from './Warning';
-export { default as WarningOutlinedIcon } from './WarningOutlined';
 export { default as WifiIcon } from './Wifi';

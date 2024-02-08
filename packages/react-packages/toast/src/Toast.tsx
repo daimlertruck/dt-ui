@@ -2,7 +2,7 @@ import {
   InfoOutlineIcon,
   ErrorOutlineIcon,
   CheckCircleOutlineIcon,
-  WarningIcon,
+  WarningOutlineIcon,
   CloseIcon,
 } from '../../../dt-ui-react/core';
 import { BaseProps } from '../../../dt-ui-react/types';
@@ -33,7 +33,7 @@ const ToastIcons = {
   [ToastType.Success]: CheckCircleOutlineIcon,
   [ToastType.Error]: ErrorOutlineIcon,
   [ToastType.Info]: InfoOutlineIcon,
-  [ToastType.Warning]: WarningIcon,
+  [ToastType.Warning]: WarningOutlineIcon,
 };
 
 const Toast = ({
