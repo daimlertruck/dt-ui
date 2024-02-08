@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.65
+
+### Patch Changes
+
+- chore: transform backdrop in independent package
+- Updated dependencies
+  - @dt-ui/react-backdrop@0.1.0-beta.1
+
 ## 0.1.0-beta.64
 
 ### Patch Changes
