@@ -33,12 +33,6 @@ export const TagStyled = styled.span<TagStyledProps>`
   `}
 `;
 
-export const TagGroupStyled = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 4px;
-`;
-
 export const TagButtonCloseStyled = styled.button`
   border: 0;
   cursor: pointer;

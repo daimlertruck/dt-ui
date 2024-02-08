@@ -21,17 +21,6 @@ describe('<Tag /> component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should render a wrapper for a group of tags', () => {
-    const { container } = render(
-      <Tag.Group>
-        <ProvidedTag>Active</ProvidedTag>
-        <ProvidedTag>Inactive</ProvidedTag>
-      </Tag.Group>
-    );
-
-    expect(container).toMatchSnapshot();
-  });
-
   describe('when the tag is clicked', () => {
     it('should trigger the onClick function', () => {
       const onClick = jest.fn();

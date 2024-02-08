@@ -20,12 +20,7 @@ Default.args = {
 };
 
 const GroupTemplate: Story<TagProps> = ({ ...props }) => {
-  return (
-    <Tag.Group>
-      <Tag {...props}>{props.children}</Tag>
-      <Tag {...props}>{props.children}</Tag>
-    </Tag.Group>
-  );
+  return <Tag {...props}>{props.children}</Tag>;
 };
 export const DefaultGroup = GroupTemplate.bind({});
 

@@ -11,10 +11,7 @@ import { Tag } from '@dt-ui/react';
 
 export const App = () => {
   return (
-    <TagGroup>
-      <Tag>Active</Tag>
-      <Tag>Inactive</Tag>
-    </TagGroup>
+    <Tag>Active</Tag>
   );
 };
 ```
@@ -32,10 +29,3 @@ export const App = () => {
 | `isClickable`| `boolean`   | false   | Specifies if the element can be clicked        |
 | `onClick`    | `function`  | -       | The triggered function when clicked on the tag |
 | `onClose`    | `function`  | -       | The triggered function when closing the tag    |
-
-### Tag.Group
-
-| Property   | Type                  | Default | Description                  |
-| ---------- | --------------------- | ------- | ---------------------------- |
-| `children` | `ReactNode`           | -       | Group of Tags to be rendered |
-| `style`    | `React.CSSProperties` | -       | Customizable styles          |

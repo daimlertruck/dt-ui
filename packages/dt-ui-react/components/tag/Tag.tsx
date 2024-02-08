@@ -4,7 +4,7 @@ import { forwardRef } from 'react';
 import { CloseIcon } from '../../core/assets';
 import { BaseProps } from '../../types';
 
-import { TagStyled, TagGroupStyled, TagButtonCloseStyled } from './Tag.styled';
+import { TagStyled, TagButtonCloseStyled } from './Tag.styled';
 import { TagVariant } from './TagVariants.styled';
 
 export interface TagProps extends BaseProps {
@@ -15,14 +15,7 @@ export interface TagProps extends BaseProps {
   isClickable?: boolean;
 }
 
-interface TagComponent
-  extends React.ForwardRefExoticComponent<
-    TagProps & React.RefAttributes<HTMLSpanElement>
-  > {
-  Group?: ({ children, style }: BaseProps) => JSX.Element;
-}
-
-export const Tag: TagComponent = forwardRef<HTMLSpanElement, TagProps>(
+export const Tag = forwardRef<HTMLSpanElement, TagProps>(
   (
     {
       children,
@@ -64,7 +57,3 @@ export const Tag: TagComponent = forwardRef<HTMLSpanElement, TagProps>(
     );
   }
 );
-
-Tag.Group = ({ children, style }: BaseProps) => {
-  return <TagGroupStyled style={style}>{children}</TagGroupStyled>;
-};
