@@ -1,5 +1,11 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.3
+
+### Patch Changes
+
+- fix: change warning icons names
+
 ## 0.1.0-beta.2
 
 ### Minor Changes

@@ -1,5 +1,16 @@
 # @dt-ui/react
 
+## 0.1.0-beta.66
+
+### Patch Changes
+
+- fix: change warning icons names
+- refactor: remove dismiss logic from message component
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-message@0.1.0-beta.2
+  - @dt-ui/react-toast@0.1.0-beta.3
+
 ## 0.1.0-beta.65
 
 ### Patch Changes
