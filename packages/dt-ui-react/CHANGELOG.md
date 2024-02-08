@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.67
+
+### Minor Changes
+
+- feat: export FontFace type
+
 ## 0.1.0-beta.66
 
 ### Patch Changes
