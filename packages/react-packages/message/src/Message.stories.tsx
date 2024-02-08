@@ -19,9 +19,24 @@ const meta: Meta<MessageStory> = {
       options: Object.values(OMessageType),
       control: { type: 'inline-radio' },
     },
+    onClose: {
+      options: [true, undefined],
+      control: {
+        type: 'radio',
+        labels: {
+          true: 'Has onClose',
+          undefined: 'Does not have onClose',
+        },
+      },
+    },
   },
-  render: ({ hasActions, isDismissable, title, description, type }) => (
-    <Message isDismissable={isDismissable} type={type}>
+  render: ({ hasActions, onClose, title, description, type }) => (
+    <Message
+      {...(onClose && {
+        onClose: () => console.log('closed'),
+      })}
+      type={type}
+    >
       {title ? <Message.Title>{title}</Message.Title> : null}
       {description ? (
         <Message.Description>{description}</Message.Description>
@@ -40,21 +55,20 @@ export default meta;
 
 export const Default: StoryObj<MessageStory> = {
   args: {
-    isDismissable: true,
+    type: OMessageType.Error,
     hasActions: true,
     title: 'This is a title',
     description: 'Some important information will appear here.',
-    type: OMessageType.Error,
+    onClose: true as unknown as MessageStory['onClose'],
   },
 };
 
 export const WithCustomContent: StoryObj<MessageStory> = {
   args: {
     type: OMessageType.Info,
-    isDismissable: false,
   },
-  render: ({ type, isDismissable }) => (
-    <Message isDismissable={isDismissable} type={type}>
+  render: ({ type }) => (
+    <Message type={type}>
       <p>This is a custom and non-dismissable content</p>
     </Message>
   ),

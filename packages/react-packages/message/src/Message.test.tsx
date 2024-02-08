@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 
 import { Link } from '../../../dt-ui-react/components/link';
 import { theme } from '../../../dt-ui-react/themes/default';
@@ -22,14 +22,14 @@ describe('<Message /> component', () => {
   `(
     'should render a Message with title & description, when type $type',
     ({ type }: { type: MessageType }) => {
-      const { container } = render(
-        <ProvidedMessage type={type}>
+      const { container, queryByTestId } = render(
+        <ProvidedMessage onClose={jest.fn()} type={type}>
           <Message.Title>{title}</Message.Title>
           <Message.Description>{description}</Message.Description>
         </ProvidedMessage>
       );
 
-      const icon = screen.queryByTestId('message-icon');
+      const icon = queryByTestId('message-icon');
       if (type === OMessageType.Default) {
         expect(icon).not.toBeInTheDocument();
       } else {
@@ -38,7 +38,7 @@ describe('<Message /> component', () => {
         expect(messageIconStyled).toHaveAttribute('type', type);
       }
 
-      expect(screen.queryByTestId('message')).toHaveStyle(
+      expect(queryByTestId('message')).toHaveStyle(
         `background-color: ${
           type === OMessageType.Default
             ? theme.palette.base.light
@@ -50,35 +50,36 @@ describe('<Message /> component', () => {
     }
   );
 
-  it('should render a Message without title', () => {
-    render(<ProvidedMessage type={OMessageType.Success} />);
+  it('should render a Message without title and not render the close button if onClose is not a prop', () => {
+    const { queryByRole } = render(
+      <ProvidedMessage type={OMessageType.Success} />
+    );
 
-    const messageTitle = screen.queryByRole('heading');
+    const messageTitle = queryByRole('heading');
+    const messageCloseButton = queryByRole('button');
+
     expect(messageTitle).toBeNull();
+    expect(messageCloseButton).toBeNull();
   });
 
-  it('should dismiss the Message', () => {
-    render(<ProvidedMessage type={OMessageType.Warning} />);
+  it('should call onClose if the close button is clicked', () => {
+    const onCloseMock = jest.fn();
+    const { getByRole } = render(
+      <ProvidedMessage onClose={onCloseMock} type={OMessageType.Warning} />
+    );
 
-    const messageCloseButton = screen.getByRole('button');
+    const messageCloseButton = getByRole('button');
+
     expect(messageCloseButton).toBeInTheDocument();
 
     fireEvent.click(messageCloseButton);
 
-    expect(screen.queryByTestId('message')).toBeNull();
-  });
-
-  it('should not render close icon when the component is not dismissable', () => {
-    render(
-      <ProvidedMessage isDismissable={false} type={OMessageType.Default} />
-    );
-
-    expect(screen.queryByRole('button')).not.toBeInTheDocument();
+    expect(onCloseMock).toHaveBeenCalledTimes(1);
   });
 
   it('should render a Message with an Action', () => {
     const mockOnClick = jest.fn();
-    render(
+    const { getByRole } = render(
       <ProvidedMessage type={OMessageType.Info}>
         <Message.Action>
           <Link href='#' onClick={mockOnClick}>
@@ -88,7 +89,7 @@ describe('<Message /> component', () => {
       </ProvidedMessage>
     );
 
-    const messageAction = screen.getByRole('link');
+    const messageAction = getByRole('link');
     expect(messageAction).toBeInTheDocument();
 
     fireEvent.click(messageAction);

@@ -32,13 +32,15 @@ export const App = () => {
 
 ### Message
 
-| Property      | Type          | Default     | Description                                                                                                                                                              |
-| ------------- | ------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `children`    | `ReactNode`   | -           | Child components to be rendered. There is flexibility on what the content can be, but the recommendation is that it should be a link with a character count limit of 25. |
-| `dataTestId`  | `string`      | `'message'` | Customizable test identifier.                                                                                                                                            |
-| `type`        | `MessageType` | -           | Sets the type of the Message, responsible for the icon and It's color, the background color and color of the dashed border                                               |
-| `title`       | `string`      | -           | Optional Text to be presented as Title within the Message.Content, It should have text character count limit: 50.                                                        |
-| `description` | `string`      | -           | Text to be presented as Description within the Message.Content, It should have text character count limit: 230.                                                          |
+| Property      | Type                  | Default     | Description                                                                                                                                                              |
+| ------------- | --------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `children`    | `ReactNode`           | -           | Child components to be rendered. There is flexibility on what the content can be, but the recommendation is that it should be a link with a character count limit of 25. |
+| `dataTestId`  | `string`              | `'message'` | Customizable test identifier.                                                                                                                                            |
+| `style`       | `React.CSSProperties` | -           | Customizable styles                                                                                                                                                      |
+| `type`        | `MessageType`         | `'default'` | Sets the type of the Message, responsible for the icon and It's color, the background color and color of the dashed border                                               |
+| `title`       | `string`              | -           | Optional Text to be presented as Title within the Message.Content, It should have text character count limit: 50.                                                        |
+| `description` | `string`              | -           | Text to be presented as Description within the Message.Content, It should have text character count limit: 230.                                                          |
+| `onClose`     | `function`            | -           | When provided, a close button is displayed and, when clicked, it triggers this function.                                                                                 |
 
 ### Message.Title
 

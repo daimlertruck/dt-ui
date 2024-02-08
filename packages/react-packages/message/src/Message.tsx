@@ -1,4 +1,4 @@
-import { useState, SVGProps, ReactElement } from 'react';
+import { SVGProps, ReactElement } from 'react';
 
 import { Typography } from '../../../dt-ui-react/components/typography';
 import {
@@ -21,7 +21,7 @@ import { MessageType, OMessageType } from './types';
 
 export interface MessageProps extends BaseProps {
   type: MessageType;
-  isDismissable?: boolean;
+  onClose?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 type MessageIcon = (props: SVGProps<SVGSVGElement>) => ReactElement;
@@ -37,28 +37,27 @@ export const MessageIcons: Record<MessageType, MessageIcon | null> = {
 export const Message = ({
   children,
   dataTestId,
-  type,
-  isDismissable = true,
+  style,
+  type = OMessageType.Default,
+  onClose,
 }: MessageProps) => {
-  const [isDismissed, setIsDismissed] = useState(false);
+  const isDismissable = !!onClose;
   const Icon = MessageIcons[type];
 
-  const handleDismiss = () => {
-    setIsDismissed(true);
-  };
-
-  if (isDismissed) return null;
-
   return (
-    <MessageStyled data-testid={dataTestId ?? 'message'} type={type}>
-      {!!Icon ? (
+    <MessageStyled
+      data-testid={dataTestId ?? 'message'}
+      style={style}
+      type={type}
+    >
+      {Icon ? (
         <MessageIconStyled type={type}>
           <Icon data-testid='message-icon' height='16px' width='16px' />
         </MessageIconStyled>
       ) : null}
       <MessageContentStyled>{children}</MessageContentStyled>
       {isDismissable ? (
-        <MessageButtonCloseStyled onClick={handleDismiss}>
+        <MessageButtonCloseStyled onClick={onClose}>
           <CloseIcon height='16px' width='16px' />
         </MessageButtonCloseStyled>
       ) : null}
