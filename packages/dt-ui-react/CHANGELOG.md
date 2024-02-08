@@ -1,5 +1,12 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.33
+
+### Patch Changes
+
+- fix: tag onclick behaviour
+- fix: drop tag group
+
 ## 0.1.0-alpha.32
 
 ### Minor Changes
