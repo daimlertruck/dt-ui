@@ -41,7 +41,7 @@ export const Tag: TagComponent = forwardRef<HTMLSpanElement, TagProps>(
     return (
       <TagStyled
         data-testid={dataTestId ?? 'tag'}
-        isClickable={isClickable || isDismissible}
+        isClickable={isClickable || !!onClick}
         onClick={onClick}
         variant={variant}
         ref={ref}
