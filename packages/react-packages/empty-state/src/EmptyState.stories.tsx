@@ -31,7 +31,7 @@ const meta: Meta<EmptyStateProps> = {
 
 export default meta;
 
-export const Template: StoryObj<EmptyStateProps> = {
+export const Default: StoryObj<EmptyStateProps> = {
   args: {
     title: 'Title here',
     description: 'Some description here.',

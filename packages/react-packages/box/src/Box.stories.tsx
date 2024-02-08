@@ -18,6 +18,6 @@ const meta: Meta<typeof Box> = {
 
 export default meta;
 
-export const Template: StoryObj<typeof Box> = {
+export const Default: StoryObj<typeof Box> = {
   args: {},
 };

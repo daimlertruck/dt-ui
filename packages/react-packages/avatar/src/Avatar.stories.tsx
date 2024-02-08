@@ -23,7 +23,7 @@ const meta: Meta<typeof Avatar> = {
 
 export default meta;
 
-export const Template: StoryObj<typeof Avatar> = {
+export const Default: StoryObj<typeof Avatar> = {
   args: {
     title: 'User Name',
     type: AvatarType.Primary,
@@ -31,7 +31,7 @@ export const Template: StoryObj<typeof Avatar> = {
   },
 };
 
-export const WithProfileImageTemplate: StoryObj<typeof Avatar> = {
+export const WithProfileImage: StoryObj<typeof Avatar> = {
   args: {
     title: 'User Name',
     type: AvatarType.Profile,

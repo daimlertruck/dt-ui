@@ -51,7 +51,7 @@ const meta: Meta<TooltipProps> = {
 
 export default meta;
 
-export const Template: StoryObj<TooltipProps> = {
+export const Default: StoryObj<TooltipProps> = {
   args: {
     hideDelay: 0,
     children: (
