@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { MessageType } from './types';
+import { MessageType, OMessageType } from './types';
 
 interface MessageStyledProps {
   type: MessageType;
@@ -10,7 +10,7 @@ export const MessageStyled = styled.div<MessageStyledProps>`
   ${({ theme, type }) => `
     padding: ${theme.spacing['3xs']} ${theme.spacing['2xs']};
     background-color: ${
-      type === MessageType.Default
+      type === OMessageType.Default
         ? theme.palette.base.light
         : theme.palette[type].light
     };
@@ -19,7 +19,7 @@ export const MessageStyled = styled.div<MessageStyledProps>`
     justify-content: center;
     border-radius: ${theme.shape.message};
     border: 1px dashed ${
-      type === MessageType.Default
+      type === OMessageType.Default
         ? theme.palette.border.default
         : theme.palette[type].default
     };

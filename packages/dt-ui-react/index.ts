@@ -39,7 +39,6 @@ export * from './components/checkbox';
 export * from './components/radio';
 export * from './components/multi-select';
 export * from './components/progress-bar';
-export * from './components/message';
 
 //independent component packages
 export * from '@dt-ui/react-avatar';
@@ -47,6 +46,7 @@ export * from '@dt-ui/react-box';
 export * from '@dt-ui/react-empty-state';
 export * from '@dt-ui/react-toast';
 export * from '@dt-ui/react-tooltip';
+export * from '@dt-ui/react-message';
 
 //utils
 export { debounce, useClickOutside, hexToRgba } from './utils/index';

@@ -1,14 +1,14 @@
 import { useState, SVGProps, ReactElement } from 'react';
 
+import { Typography } from '../../../dt-ui-react/components/typography';
 import {
   CheckCircleIcon,
   CloseIcon,
   ErrorIcon,
   InfoIcon,
   WarningOutlinedIcon,
-} from '../../core';
-import { BaseProps } from '../../types';
-import { Typography } from '../typography';
+} from '../../../dt-ui-react/core';
+import { BaseProps } from '../../../dt-ui-react/types';
 
 import {
   MessageStyled,
@@ -17,7 +17,7 @@ import {
   MessageContentStyled,
   MessageActionStyled,
 } from './Message.styled';
-import { MessageType } from './types';
+import { MessageType, OMessageType } from './types';
 
 export interface MessageProps extends BaseProps {
   type: MessageType;
@@ -27,11 +27,11 @@ export interface MessageProps extends BaseProps {
 type MessageIcon = (props: SVGProps<SVGSVGElement>) => ReactElement;
 
 export const MessageIcons: Record<MessageType, MessageIcon | null> = {
-  [MessageType.Error]: ErrorIcon,
-  [MessageType.Info]: InfoIcon,
-  [MessageType.Success]: CheckCircleIcon,
-  [MessageType.Warning]: WarningOutlinedIcon,
-  [MessageType.Default]: null,
+  [OMessageType.Error]: ErrorIcon,
+  [OMessageType.Info]: InfoIcon,
+  [OMessageType.Success]: CheckCircleIcon,
+  [OMessageType.Warning]: WarningOutlinedIcon,
+  [OMessageType.Default]: null,
 };
 
 export const Message = ({

@@ -1,11 +1,11 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 
-import { theme } from '../../themes/default';
-import { withProviders } from '../../utils';
-import { Link } from '../link';
+import { Link } from '../../../dt-ui-react/components/link';
+import { theme } from '../../../dt-ui-react/themes/default';
+import { withProviders } from '../../../dt-ui-react/utils';
 
 import { Message } from './Message';
-import { MessageType } from './types';
+import { MessageType, OMessageType } from './types';
 
 describe('<Message /> component', () => {
   const ProvidedMessage = withProviders(Message);
@@ -14,11 +14,11 @@ describe('<Message /> component', () => {
 
   it.each`
     type
-    ${MessageType.Info}
-    ${MessageType.Success}
-    ${MessageType.Warning}
-    ${MessageType.Error}
-    ${MessageType.Default}
+    ${OMessageType.Info}
+    ${OMessageType.Success}
+    ${OMessageType.Warning}
+    ${OMessageType.Error}
+    ${OMessageType.Default}
   `(
     'should render a Message with title & description, when type $type',
     ({ type }: { type: MessageType }) => {
@@ -30,7 +30,7 @@ describe('<Message /> component', () => {
       );
 
       const icon = screen.queryByTestId('message-icon');
-      if (type === MessageType.Default) {
+      if (type === OMessageType.Default) {
         expect(icon).not.toBeInTheDocument();
       } else {
         expect(icon).toBeInTheDocument();
@@ -40,7 +40,7 @@ describe('<Message /> component', () => {
 
       expect(screen.queryByTestId('message')).toHaveStyle(
         `background-color: ${
-          type === MessageType.Default
+          type === OMessageType.Default
             ? theme.palette.base.light
             : theme.palette[type].light
         };`
@@ -51,14 +51,14 @@ describe('<Message /> component', () => {
   );
 
   it('should render a Message without title', () => {
-    render(<ProvidedMessage type={MessageType.Success} />);
+    render(<ProvidedMessage type={OMessageType.Success} />);
 
     const messageTitle = screen.queryByRole('heading');
     expect(messageTitle).toBeNull();
   });
 
   it('should dismiss the Message', () => {
-    render(<ProvidedMessage type={MessageType.Warning} />);
+    render(<ProvidedMessage type={OMessageType.Warning} />);
 
     const messageCloseButton = screen.getByRole('button');
     expect(messageCloseButton).toBeInTheDocument();
@@ -70,7 +70,7 @@ describe('<Message /> component', () => {
 
   it('should not render close icon when the component is not dismissable', () => {
     render(
-      <ProvidedMessage isDismissable={false} type={MessageType.Default} />
+      <ProvidedMessage isDismissable={false} type={OMessageType.Default} />
     );
 
     expect(screen.queryByRole('button')).not.toBeInTheDocument();
@@ -79,7 +79,7 @@ describe('<Message /> component', () => {
   it('should render a Message with an Action', () => {
     const mockOnClick = jest.fn();
     render(
-      <ProvidedMessage type={MessageType.Info}>
+      <ProvidedMessage type={OMessageType.Info}>
         <Message.Action>
           <Link href='#' onClick={mockOnClick}>
             View action
