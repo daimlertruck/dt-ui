@@ -6,7 +6,12 @@ export * from './core';
 // Themes
 export { theme } from './themes/default';
 export { greenlaneTheme } from './themes/greenlane';
-export type { CustomTheme as Theme, BaseProps, Colors } from './types';
+export type {
+  CustomTheme as Theme,
+  BaseProps,
+  Colors,
+  FontFace,
+} from './types';
 
 // Components
 export * from './components/Provider';
