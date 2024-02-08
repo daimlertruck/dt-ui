@@ -1,9 +1,9 @@
+import { Backdrop, BackdropProps } from '@dt-ui/react-backdrop';
 import { forwardRef, RefObject, useRef } from 'react';
 
 import { CloseIcon } from '../../core/assets';
 import { BaseProps } from '../../types';
 import useClickOutside from '../../utils/useClickOutside';
-import { Backdrop, BackdropProps } from '../backdrop';
 import { IconButton } from '../buttons';
 import { Portal } from '../Portal';
 import { Spinner } from '../spinner';

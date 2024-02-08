@@ -42,6 +42,7 @@ export * from './components/progress-bar';
 
 //independent component packages
 export * from '@dt-ui/react-avatar';
+export * from '@dt-ui/react-backdrop';
 export * from '@dt-ui/react-box';
 export * from '@dt-ui/react-empty-state';
 export * from '@dt-ui/react-toast';

@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 
-import { BaseProps } from '../../types';
+import { BaseProps } from '../../../dt-ui-react/types';
 
 import { BackdropStyled } from './Backdrop.styled';
 import { BackdropType } from './constants';

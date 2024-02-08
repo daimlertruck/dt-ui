@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import { withProviders } from '../../utils';
+import { withProviders } from '../../../dt-ui-react/utils';
 
 import { Backdrop } from './Backdrop';
 import { BackdropType } from './constants';
@@ -40,5 +40,17 @@ describe('<Backdrop /> component', () => {
     const divElement = screen.getByTestId('backdrop');
     expect(divElement).toBeInTheDocument();
     expect(divElement).toHaveTextContent(exampleText);
+  });
+
+  it('expects to not have backdrop open', () => {
+    const exampleText = 'Example text';
+
+    render(
+      <ProvidedBackdrop isOpen={false}>
+        <div>{exampleText}</div>
+      </ProvidedBackdrop>
+    );
+
+    expect(screen.queryByTestId('backdrop')).toBeNull();
   });
 });

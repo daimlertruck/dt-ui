@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
-import { BACKDROP_Z_INDEX } from '../../constants';
-import { hexToRgba } from '../../utils';
+import { BACKDROP_Z_INDEX } from '../../../dt-ui-react/constants';
+import { hexToRgba } from '../../../dt-ui-react/utils';
 
 import { BackdropType } from './constants';
 
