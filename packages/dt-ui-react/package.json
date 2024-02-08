@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react",
-  "version": "0.1.0-beta.62",
+  "version": "0.1.0-beta.63",
   "exports": {
     ".": "./dist/index.js",
     "./index.css": "./dist/index.css"
@@ -44,7 +44,7 @@
     "typescript": "^4.5.3"
   },
   "dependencies": {
-    "@dt-ui/react-avatar": "0.1.0-beta.0",
+    "@dt-ui/react-avatar": "0.1.0-beta.1",
     "@dt-ui/react-box": "0.1.0-beta.4",
     "@dt-ui/react-empty-state": "0.1.0-beta.5",
     "@dt-ui/react-toast": "0.1.0-beta.2",

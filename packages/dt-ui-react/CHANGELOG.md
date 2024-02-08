@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.63
+
+### Patch Changes
+
+- chore: make avatar an independent package
+- Updated dependencies
+  - @dt-ui/react-avatar@0.1.0-beta.1
+
 ## 0.1.0-beta.62
 
 ### Patch Changes
