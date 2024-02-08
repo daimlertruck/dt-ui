@@ -11,7 +11,7 @@ import {
   ReactNode,
 } from 'react';
 
-import { MoreHorizontalIcon } from '../../../core';
+import { MoreHorizontalIcon } from '../../../../dt-ui-react/core';
 import { Breadcrumb } from '../Breadcrumb';
 
 const isBreadcrumbRefValid = (

@@ -19,7 +19,6 @@ export * from './components/form';
 export * from './components/footer';
 export * from './components/link';
 export * from './components/divider';
-export * from './components/breadcrumb';
 export * from './components/modal';
 export * from './components/counter';
 export * from './components/list';
@@ -43,6 +42,7 @@ export * from '@dt-ui/react-empty-state';
 export * from '@dt-ui/react-toast';
 export * from '@dt-ui/react-tooltip';
 export * from '@dt-ui/react-message';
+export * from '@dt-ui/react-breadcrumb';
 
 //utils
 export { ListStyleType } from './utils/constants';
