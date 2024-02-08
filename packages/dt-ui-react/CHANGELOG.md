@@ -1,5 +1,19 @@
 # @dt-ui/react
 
+## 0.1.0-beta.64
+
+### Patch Changes
+
+- chore: make message component an independent package
+- refactor: change storybook template names to default
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-message@0.1.0-beta.1
+  - @dt-ui/react-avatar@0.1.0-beta.2
+  - @dt-ui/react-box@0.1.0-beta.5
+  - @dt-ui/react-empty-state@0.1.0-beta.6
+  - @dt-ui/react-tooltip@0.1.0-beta.2
+
 ## 0.1.0-beta.63
 
 ### Patch Changes

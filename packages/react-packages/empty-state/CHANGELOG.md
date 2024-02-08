@@ -1,5 +1,11 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.6
+
+### Patch Changes
+
+- refactor: change storybook template names to default
+
 ## 0.1.0-beta.5
 
 ### Patch Changes
