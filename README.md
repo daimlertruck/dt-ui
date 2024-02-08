@@ -54,7 +54,7 @@ Scopes can be associated with a separate registry. This allows you to seamlessly
 
 Encode your `<apiKey>` to `<BASE64_PASSWORD>` using an appropriate [encoding tool like this one](https://www.base64encode.org).
 
-Your `<USERNAME>` should include "_user_@tbdir.net". 
+Your `<USERNAME>` should include "_user_@tbdir.net".
 
 ### Install DT UI package
 
@@ -96,7 +96,7 @@ For now, there is only available one theme (the default one).
 
 ### Prerequisites
 
-- Node.js >= v16.13.0 < v17.0.0
+- Node.js >= v18.0.0
 - Yarn
 
 ### 📓 Installation
@@ -133,7 +133,6 @@ For now, there is only available one theme (the default one).
 - `yarn changesets:tag` - Commits the newly created changelogs with the latest packages version and adds the git-tag as `<package-name>@<package-version>`
 - `yarn changesets:ci` - Runs the whole changesets flow, useful for pipelines to generate changesets, versioning and tags
 - 🚧 `yarn release` - Build all packages and run npm publish in each package that is of a later version than the one currently listed on npm
-
 
 ### Apps & Packages
 
@@ -197,12 +196,15 @@ For more information on Storybook and Docs, read the following documentation and
 Components are independent packages that should be created in the workspace `packages/react-packages/**`
 
 To facilitate this process and keep consistency across all components, please make use of the following script:
-```bash 
-yarn generate:component
+
+```bash
+yarn component:create
 
 ? What is the name of the package without suffix "@dt-ui/react-" e.g, box, accordion, empty-state.
 ```
+
 Provide a name for your component and you will have the component generated with:
+
 - `story` file for storyboook
 - `styled` file for styled-component
 - `test` file for tests
@@ -229,13 +231,13 @@ Note: MDX and CSF stories can't coexist in the same directory.
 
 ### Versioning & Publishing Packages
 
-This project uses [Changesets](https://github.com/changesets/changesets) and [changeset-conventional-commits (forked - custom package)](packages/changeset-conventional-commits/README.md) to manage versions and create changelogs. 
+This project uses [Changesets](https://github.com/changesets/changesets) and [changeset-conventional-commits (forked - custom package)](packages/changeset-conventional-commits/README.md) to manage versions and create changelogs.
 
 #### Workflow
 
 - `changeset-conventional-commits`: Generates changesets based on conventional commits
 - `Changesets`: Consumes the changesets in order to bump the packages version and it's dependencies
-- `changeset-conventional-commits`: At last, commits the new packages version and changelogs with summary: `release: version packages` and tag it using the format: `<package-name>@<package-version>`  
+- `changeset-conventional-commits`: At last, commits the new packages version and changelogs with summary: `release: version packages` and tag it using the format: `<package-name>@<package-version>`
 
 #### Generating the Changelog
 
@@ -262,43 +264,45 @@ To generate your changelog, run `yarn changeset:add` followed by `yarn changeset
 - fix: remove page components
 ```
 
- 🛠 This is the default format provided by changesets, it's not so flexible to customize, however we have some room for improvement, check it out: [modifying the changelog formats](https://github.com/changesets/changesets/blob/main/docs/modifying-changelog-format.md)
+🛠 This is the default format provided by changesets, it's not so flexible to customize, however we have some room for improvement, check it out: [modifying the changelog formats](https://github.com/changesets/changesets/blob/main/docs/modifying-changelog-format.md)
 
 #### Releasing
 
 When you merge your code to the `main` branch, the pipeline will run the `VersionAndTag` step with `yarn changeset:ci` script defined in the root `package.json`:
 
-```bash 
-yarn changesets:add && yarn changesets:version && yarn changesets:tag 
+```bash
+yarn changesets:add && yarn changesets:version && yarn changesets:tag
 ```
+
 Respectively runs:
 
-```bash 
+```bash
 node scripts/changeset-plugin --add-changesets
 ```
 
-```bash 
+```bash
 changeset version
 ```
 
-```bash 
+```bash
 node scripts/changeset-plugin --add-tag
 ```
 
 Those commands will be responsible to:
- - Generate changeset based on the last conventional commits since the last tagged version
- - Bump packages with semver based on changeset files
- - Commit generated `CHANGELOG.md` files and updated `package.json` files, adding the summary: `release: version packages`
-   - Adds git-tag for the new packages version and push changes.
+
+- Generate changeset based on the last conventional commits since the last tagged version
+- Bump packages with semver based on changeset files
+- Commit generated `CHANGELOG.md` files and updated `package.json` files, adding the summary: `release: version packages`
+  - Adds git-tag for the new packages version and push changes.
 
 🛠 Finally after versioning and tagging, the pack and publish is done in the pipeline in the step `BuildAndPublish` by running the following commands for the `@dt-ui/react` package:
- 
- - `yarn install`
- - `yarn build`
- - `yarn pack`
- - `yarn publish`
 
- The `BuildAndPublish` step only runs if the previous `VersionAndTag` step has been run successfully
+- `yarn install`
+- `yarn build`
+- `yarn pack`
+- `yarn publish`
+
+The `BuildAndPublish` step only runs if the previous `VersionAndTag` step has been run successfully
 
 ⚠️ All flagged 🚧 information on this file needs further review since might not be working as expected.\
 ⚠️ All flagged 🛠 information on this file represents the current state but not the final, it needs to be improved.
