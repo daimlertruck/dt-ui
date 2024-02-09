@@ -49,13 +49,6 @@ export const TagStyled = styled.div<TagStyledProps>(
   })
 );
 
-export const TagGroupStyled = styled.div(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  flexWrap: 'wrap',
-  gap: theme.spacing['4xs'],
-}));
-
 export const TagButtonCloseStyled = styled.button<TagButtonCloseStyledProps>`
   ${({ theme, variant, color, hasHover, disabled }) => ({
     ...tagCloseButtonColorStyles({
@@ -75,3 +68,10 @@ export const TagButtonCloseStyled = styled.button<TagButtonCloseStyledProps>`
     ['&:disabled']: { cursor: 'not-allowed' },
   })}
 `;
+
+export const TagGroupStyled = styled.div(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  flexWrap: 'wrap',
+  gap: theme.spacing['4xs'],
+}));

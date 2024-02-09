@@ -14,7 +14,6 @@ export * from './components/nav-item';
 export * from './components/grid';
 export * from './components/card';
 export * from './components/table';
-export * from './components/tag';
 export * from './components/form';
 export * from './components/footer';
 export * from './components/link';
@@ -43,6 +42,7 @@ export * from '@dt-ui/react-toast';
 export * from '@dt-ui/react-tooltip';
 export * from '@dt-ui/react-message';
 export * from '@dt-ui/react-breadcrumb';
+export * from '@dt-ui/react-tag';
 
 //utils
 export { ListStyleType } from './utils/constants';

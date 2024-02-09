@@ -1,25 +1,23 @@
 {
-  "name": "@dt-ui/react",
-  "version": "0.1.0-beta.72",
+  "name": "@dt-ui/react-tag",
+  "version": "0.1.0-beta.0",
   "exports": {
-    ".": "./dist/index.js",
-    "./index.css": "./dist/index.css"
+    ".": "./dist/index.js"
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist/**"
   ],
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "main": "./dist/index.js",
-  "license": "MIT",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
     "lint": "eslint --cache .",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "test": "jest",
-    "test:update:snapshot": "jest -u",
-    "test:report": "open ./jest-coverage/lcov-report/index.html"
+    "test": "jest"
+  },
+  "dependencies": {
+    "@dt-ui/react-core": "0.1.0-beta.2"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
@@ -42,20 +40,6 @@
     "tsconfig": "*",
     "tsup": "^6.6.3",
     "typescript": "^4.5.3"
-  },
-  "dependencies": {
-    "@dt-ui/react-tag": "0.1.0-beta.0",
-    "@dt-ui/react-avatar": "0.1.0-beta.4",
-    "@dt-ui/react-backdrop": "0.1.0-beta.3",
-    "@dt-ui/react-breadcrumb": "0.1.0-beta.2",
-    "@dt-ui/react-box": "0.1.0-beta.6",
-    "@dt-ui/react-core": "0.1.0-beta.2",
-    "@dt-ui/react-empty-state": "0.1.0-beta.8",
-    "@dt-ui/react-message": "0.1.0-beta.4",
-    "@dt-ui/react-toast": "0.1.0-beta.6",
-    "@dt-ui/react-tooltip": "0.1.0-beta.4",
-    "@emotion/server": "^11.4.0",
-    "emotion-normalize": "^11.0.1"
   },
   "peerDependencies": {
     "@emotion/css": "^11.7.1",

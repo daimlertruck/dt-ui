@@ -1,8 +1,6 @@
 import { Avatar, AvatarSize, AvatarType } from '@dt-ui/react-avatar';
+import { Tag, TagColor } from '@dt-ui/react-tag';
 import { Story } from '@storybook/react';
-
-import { Tag } from '../tag';
-import { TagColor } from '../tag/constants';
 
 import {
   Table,
