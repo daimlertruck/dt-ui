@@ -192,13 +192,13 @@ For more information on Storybook and Docs, read the following documentation and
 - https://storybook.js.org/tutorials/design-systems-for-developers/react/en/document/
 - https://storybook.js.org/blog/structuring-your-storybook/
 
-#### How to add a new component?
+#### How to generate a boilerplate for new component-package?
 
 Components are independent packages that should be created in the workspace `packages/react-packages/**`
 
 To facilitate this process and keep consistency across all components, please make use of the following script:
 ```bash 
-yarn component:create
+yarn generate:component
 
 ? What is the name of the package without suffix "@dt-ui/react-" e.g, box, accordion, empty-state.
 ```
