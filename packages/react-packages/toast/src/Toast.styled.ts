@@ -71,7 +71,7 @@ export const ToastMessageStyled = styled.div`
     word-break: break-word;
     hyphens: auto;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
   `}
 `;

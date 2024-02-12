@@ -111,7 +111,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   -ms-hyphens: auto;
   hyphens: auto;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
 
@@ -316,7 +316,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   -ms-hyphens: auto;
   hyphens: auto;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
 
@@ -520,7 +520,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   -ms-hyphens: auto;
   hyphens: auto;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
 
@@ -725,7 +725,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   -ms-hyphens: auto;
   hyphens: auto;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
 
@@ -929,7 +929,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   -ms-hyphens: auto;
   hyphens: auto;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
 
@@ -1123,7 +1123,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   -ms-hyphens: auto;
   hyphens: auto;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
 
@@ -1316,7 +1316,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   -ms-hyphens: auto;
   hyphens: auto;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
 
@@ -1510,7 +1510,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   -ms-hyphens: auto;
   hyphens: auto;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
 
