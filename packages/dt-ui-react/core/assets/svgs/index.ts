@@ -53,3 +53,4 @@ export { default as VisibilityOff } from './VisibilityOff';
 export { default as WarningOutlineIcon } from './WarningOutline';
 export { default as WarningIcon } from './Warning';
 export { default as WifiIcon } from './Wifi';
+export { default as SettingsIcon } from './Settings';
