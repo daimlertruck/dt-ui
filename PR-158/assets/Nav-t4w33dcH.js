@@ -1,0 +1,1 @@
+import{j as t}from"./jsx-runtime-vNq4Oc-g.js";import{N as r,a as e}from"./Nav.styled-wZZ9GwDG.js";const d=({children:a,dataTestId:s})=>t.jsx(r,{"data-testid":s??"navbar",children:t.jsx(e,{children:a})});export{d as N};

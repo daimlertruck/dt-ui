@@ -1,0 +1,3 @@
+import{j as r}from"./jsx-runtime-vNq4Oc-g.js";import{H as m}from"./Header.styled-eWFGRoIX.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./emotion-styled.browser.esm-Scfyu_ZY.js";import"./extends-E30VzY7q.js";const o=({children:d,dataTestId:i})=>r.jsx(m,{"data-testid":i??"navbar-header",children:d}),x={title:"Data Display/Header",component:o},e=()=>r.jsx(o,{children:r.jsx("div",{children:"Header"})});var a,t,s;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`() => <Header>
+    <div>Header</div>
+  </Header>`,...(s=(t=e.parameters)==null?void 0:t.docs)==null?void 0:s.source}}};const f=["Default"];export{e as Default,f as __namedExportsOrder,x as default};
