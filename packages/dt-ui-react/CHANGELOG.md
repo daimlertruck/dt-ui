@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.68
+
+### Minor Changes
+
+- feat: add settings icon
+
 ## 0.1.0-beta.67
 
 ### Minor Changes
