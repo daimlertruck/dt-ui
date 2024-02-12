@@ -1,3 +1,5 @@
+import path from 'path';
+
 import type { Config } from 'jest';
 
 const config: Config = {
@@ -12,7 +14,7 @@ const config: Config = {
       'jest-transform-stub',
   },
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$'],
-  setupFilesAfterEnv: ['./jest.setup.js'],
+  setupFilesAfterEnv: [path.resolve(__dirname, 'jest.setup.ts')],
   snapshotSerializers: ['@emotion/jest/serializer'],
   coveragePathIgnorePatterns: [
     'node_modules',
