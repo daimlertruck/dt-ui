@@ -1,5 +1,11 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.7
+
+### Patch Changes
+
+- chore: create core package
+
 ## 0.1.0-beta.6
 
 ### Patch Changes

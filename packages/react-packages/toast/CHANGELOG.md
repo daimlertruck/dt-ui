@@ -1,5 +1,11 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.4
+
+### Patch Changes
+
+- chore: create core package
+
 ## 0.1.0-beta.3
 
 ### Patch Changes
