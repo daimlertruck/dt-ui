@@ -4,8 +4,7 @@ import baseConfig from 'jest-config';
 const config: Config = {
   ...baseConfig,
   moduleNameMapper: {
-    '^@dt-ui/react-(.*)$': ['<rootDir>/../$1/index.ts'],
+    '^@dt-ui/react-(.*)$': ['<rootDir>/../react-packages/$1/index.ts'],
   },
 };
-
 export default config;

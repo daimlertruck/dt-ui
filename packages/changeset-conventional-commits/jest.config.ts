@@ -3,9 +3,8 @@ import baseConfig from 'jest-config';
 
 const config: Config = {
   ...baseConfig,
-  moduleNameMapper: {
-    '^@dt-ui/react-(.*)$': ['<rootDir>/../$1/index.ts'],
-  },
+  testEnvironment: 'node',
+  setupFilesAfterEnv: undefined,
 };
 
 export default config;

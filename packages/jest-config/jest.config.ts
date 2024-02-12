@@ -1,4 +1,6 @@
-module.exports = {
+import type { Config } from 'jest';
+
+const config: Config = {
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: ['node_modules'],
   moduleDirectories: ['node_modules', 'src'],
@@ -11,6 +13,7 @@ module.exports = {
   },
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$'],
   setupFilesAfterEnv: ['./jest.setup.js'],
+  snapshotSerializers: ['@emotion/jest/serializer'],
   coveragePathIgnorePatterns: [
     'node_modules',
     'index.ts',
@@ -39,3 +42,5 @@ module.exports = {
     ],
   ],
 };
+
+export default config;
