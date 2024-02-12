@@ -1,0 +1,3 @@
+import{j as t}from"./jsx-runtime-vNq4Oc-g.js";import{N as s}from"./Nav-rDnI0Lc1.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./Nav.styled-GsNCx_OC.js";import"./emotion-styled.browser.esm-QTPHyGVR.js";import"./extends-E30VzY7q.js";import"./emotion-element-c39617d8.browser.esm-4Kx8mvQ5.js";const x={title:"Data Display/Nav",component:s},r=()=>t.jsx(s,{children:t.jsx("li",{children:"Item"})});var o,e,a;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:`() => <Nav>
+    <li>Item</li>
+  </Nav>`,...(a=(e=r.parameters)==null?void 0:e.docs)==null?void 0:a.source}}};const N=["Default"];export{r as Default,N as __namedExportsOrder,x as default};
