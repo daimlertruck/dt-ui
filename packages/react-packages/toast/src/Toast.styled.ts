@@ -68,6 +68,8 @@ export const ToastMessageStyled = styled.div`
     ${theme.fontStyles.body2};
     color: ${theme.palette.content.body};
     overflow: hidden;
+    word-break: break-word;
+    hyphens: auto;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
