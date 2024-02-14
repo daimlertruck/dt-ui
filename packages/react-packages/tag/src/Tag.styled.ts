@@ -68,10 +68,3 @@ export const TagButtonCloseStyled = styled.button<TagButtonCloseStyledProps>`
     ['&:disabled']: { cursor: 'not-allowed' },
   })}
 `;
-
-export const TagGroupStyled = styled.div(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  flexWrap: 'wrap',
-  gap: theme.spacing['4xs'],
-}));

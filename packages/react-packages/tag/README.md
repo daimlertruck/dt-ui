@@ -31,12 +31,6 @@ export const App = () => {
 | `onClick`     | `function`   | -       | The triggered function when the tag is clicked. This also applies the clickable styles. If the component has the onClose property this will not be triggered |
 | `onClose`     | `function`   | -       | The triggered function when closing the tag
 
-### TagGroup
-| Property   | Type                  | Default | Description                  |
-| ---------- | --------------------- | ------- | ---------------------------- |
-| `children` | `ReactNode`           | -       | Group of Tags to be rendered |
-| `style`    | `React.CSSProperties` | -       | Customizable styles          |
-
 ## Stack
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking

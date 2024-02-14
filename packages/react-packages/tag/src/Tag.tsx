@@ -4,7 +4,7 @@ import { forwardRef } from 'react';
 import { CloseIcon } from '../../../dt-ui-react/core/assets';
 
 import { TagBorder, TagColor, TagSize, TagVariant } from './constants';
-import { TagStyled, TagButtonCloseStyled, TagGroupStyled } from './Tag.styled';
+import { TagStyled, TagButtonCloseStyled } from './Tag.styled';
 
 export type TagProps = {
   variant?: TagVariant;
@@ -83,7 +83,3 @@ export const Tag = forwardRef<HTMLDivElement, TagProps>(
     );
   }
 );
-
-export const TagGroup = ({ children, style }: BaseProps) => {
-  return <TagGroupStyled style={style}>{children}</TagGroupStyled>;
-};

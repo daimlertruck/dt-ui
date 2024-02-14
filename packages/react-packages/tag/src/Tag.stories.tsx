@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Tag, TagGroup, TagProps } from './Tag';
+import { Tag, TagProps } from './Tag';
 
 const TagVariantOptions = {
   Solid: 'solid',
@@ -99,24 +99,4 @@ export const Default: StoryObj<TagProps> = {
     onClick: undefined,
     onClose: undefined,
   },
-};
-
-export const WithTagGroup: StoryObj<TagProps> = {
-  args: {
-    children: 'tag label',
-    variant: 'solid',
-    size: 'small',
-    color: 'primary',
-    border: 'squared',
-    isClickable: false,
-    isDisabled: false,
-    onClick: undefined,
-    onClose: undefined,
-  },
-  render: ({ ...props }) => (
-    <TagGroup>
-      <Tag {...props}>{props.children}</Tag>
-      <Tag {...props}>{props.children}</Tag>
-    </TagGroup>
-  ),
 };

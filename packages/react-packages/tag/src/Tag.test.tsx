@@ -1,22 +1,10 @@
 import { withProviders } from '@dt-ui/react-core';
 import { fireEvent, render } from '@testing-library/react';
 
-import { Tag, TagGroup, TagProps } from './Tag';
+import { Tag, TagProps } from './Tag';
 
 describe('<Tag /> component', () => {
-  const ProvidedTagGroup = withProviders(TagGroup);
   const ProvidedTag = withProviders(Tag);
-
-  it('should render a wrapper for a group of tags', () => {
-    const { container } = render(
-      <ProvidedTagGroup>
-        <ProvidedTag>Active</ProvidedTag>
-        <ProvidedTag>Inactive</ProvidedTag>
-      </ProvidedTagGroup>
-    );
-
-    expect(container).toMatchSnapshot();
-  });
 
   it.each`
     isDisabled | expectedClickTimes
