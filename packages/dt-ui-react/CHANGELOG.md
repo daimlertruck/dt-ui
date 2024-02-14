@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.70
+
+### Patch Changes
+
+- chore: make breadcrumb component independent package
+- Updated dependencies
+  - @dt-ui/react-breadcrumb@0.1.0-beta.1
+
 ## 0.1.0-beta.69
 
 ### Patch Changes
