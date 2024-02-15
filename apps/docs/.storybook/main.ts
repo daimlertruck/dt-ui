@@ -46,16 +46,17 @@ const config: StorybookConfig = {
   viteFinal: async (config: InlineConfig) => {
     if (config.resolve) {
       const components = [
-        'breadcrumb',
-        'tag',
+        'avatar',
         'backdrop',
-        'core',
-        'message',
+        'breadcrumb',
         'box',
+        'core',
         'empty-state',
+        'message',
+        'tag',
         'toast',
         'tooltip',
-        'avatar',
+        'spinner',
       ];
 
       config.resolve.alias = {

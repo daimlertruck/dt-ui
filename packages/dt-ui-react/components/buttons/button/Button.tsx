@@ -1,6 +1,5 @@
 import { BaseProps } from '@dt-ui/react-core';
-
-import { Spinner } from '../../spinner';
+import { Spinner } from '@dt-ui/react-spinner';
 
 import { ButtonStyled } from './Button.styled';
 import { ButtonSize, ButtonColor, ButtonVariant } from './constants';

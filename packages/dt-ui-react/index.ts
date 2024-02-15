@@ -25,7 +25,6 @@ export * from './components/description-list';
 export * from './components/pagination';
 export * from './components/typography';
 export * from './components/tabs';
-export * from './components/spinner';
 export * from './components/stepper';
 export * from './components/checkbox';
 export * from './components/radio';
@@ -43,6 +42,7 @@ export * from '@dt-ui/react-tooltip';
 export * from '@dt-ui/react-message';
 export * from '@dt-ui/react-breadcrumb';
 export * from '@dt-ui/react-tag';
+export * from '@dt-ui/react-spinner';
 
 //utils
 export { ListStyleType } from './utils/constants';

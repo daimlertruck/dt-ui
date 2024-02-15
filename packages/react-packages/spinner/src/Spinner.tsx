@@ -2,7 +2,7 @@ import { Box } from '@dt-ui/react-box';
 import { BaseProps, Theme, PaletteKeys } from '@dt-ui/react-core';
 import { useTheme } from '@emotion/react';
 
-import { Typography } from '../typography';
+import { Typography } from '../../../dt-ui-react/components/typography';
 
 import { SpinnerStyled } from './Spinner.styled';
 import { SpinnerColorScheme, SpinnerSize } from './types';

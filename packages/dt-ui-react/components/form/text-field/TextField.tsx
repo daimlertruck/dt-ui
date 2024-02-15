@@ -1,4 +1,5 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { Spinner } from '@dt-ui/react-spinner';
 import React, {
   useState,
   useEffect,
@@ -9,7 +10,6 @@ import React, {
 } from 'react';
 
 import { ErrorIcon } from '../../../core/assets';
-import { Spinner } from '../../spinner';
 import { Typography } from '../../typography';
 import { LabelField } from '../label-field';
 
