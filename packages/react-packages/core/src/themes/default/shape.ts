@@ -5,6 +5,6 @@ export const shape = {
   modal: radius['5xs'],
   emptyState: radius['4xs'],
   dropdown: radius['5xs'],
-  message: radius['6xs'],
+  message: radius['5xs'],
   progressbar: radius['none'],
 };

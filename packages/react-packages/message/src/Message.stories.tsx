@@ -68,7 +68,7 @@ export const WithCustomContent: StoryObj<MessageStory> = {
     type: OMessageType.Info,
   },
   render: ({ type }) => (
-    <Message type={type}>
+    <Message style={{ alignItems: 'center' }} type={type}>
       <p>This is a custom and non-dismissable content</p>
     </Message>
   ),

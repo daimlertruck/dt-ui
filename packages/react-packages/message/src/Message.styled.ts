@@ -53,13 +53,11 @@ export const MessageIconStyled = styled.div<MessageIconStyledProps>`
   ${({ theme, type }) => `
     height: 100%;
     display: flex;
-    align-items: center;
     color: ${
       type === 'default'
         ? theme.palette.content.body
         : theme.palette[type].default
     };
-    margin-top: ${theme.spacing['6xs']};
   `}
 `;
 
