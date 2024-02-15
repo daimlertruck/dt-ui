@@ -1,5 +1,20 @@
 # @dt-ui/react
 
+## 0.1.0-beta.71
+
+### Minor Changes
+
+- feat: break words on Toast message
+- feat: truncate Toast message in 6 lines
+
+### Patch Changes
+
+- chore: add index.ts to tsconfig on Toast
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-toast@0.1.0-beta.5
+
 ## 0.1.0-beta.70
 
 ### Patch Changes
