@@ -40,3 +40,5 @@ If you want to add another custom generator to the DT-UI Design System, follow t
    - Make adjustments as necessary to meet the specific needs of the new generator.
 
 For technical documentation about how to implement a custom generator to meet your goal please check the [plop's offical documentation](https://plopjs.com/documentation/).
+
+⚠️ In the package.json template, the "@dt-ui/react-core" package has the "*" wildcard which does not work for pre-releases. When generating a new package, this version should be updated with the latest one of react-core.
