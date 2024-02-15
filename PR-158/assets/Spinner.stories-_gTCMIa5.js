@@ -1,5 +1,0 @@
-import{j as a}from"./jsx-runtime-vNq4Oc-g.js";import{S as p}from"./Spinner-TJ4Xns0i.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./index-lOH_pZ5X.js";import"./Box.styled-zcGhU7kj.js";import"./emotion-styled.browser.esm-QTPHyGVR.js";import"./extends-E30VzY7q.js";import"./emotion-element-c39617d8.browser.esm-4Kx8mvQ5.js";import"./Typography-D6FO4u36.js";import"./MultiSelectProvider-vrdgqO57.js";import"./Spinner.styled-euKDJvzq.js";import"./emotion-react.browser.esm-OUs2k2GK.js";const v={title:"Data Display/Spinner",component:p,parameters:{backgrounds:{values:[{name:"black",value:"#000"}]}}},i=({...s})=>a.jsx(p,{...s}),r=i.bind({});r.args={size:"medium",colorScheme:"positive",loadingText:""};var e,o,t;r.parameters={...r.parameters,docs:{...(e=r.parameters)==null?void 0:e.docs,source:{originalSource:`({
-  ...props
-}) => {
-  return <Spinner {...props} />;
-}`,...(t=(o=r.parameters)==null?void 0:o.docs)==null?void 0:t.source}}};const _=["Default"];export{r as Default,_ as __namedExportsOrder,v as default};
