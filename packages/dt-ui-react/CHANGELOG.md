@@ -1,5 +1,23 @@
 # @dt-ui/react
 
+## 0.1.0-beta.72
+
+### Patch Changes
+
+- chore: migrate jest setup file to jest package
+- chore: migrate jest configuration to typescript
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-avatar@0.1.0-beta.4
+  - @dt-ui/react-backdrop@0.1.0-beta.3
+  - @dt-ui/react-box@0.1.0-beta.6
+  - @dt-ui/react-breadcrumb@0.1.0-beta.2
+  - @dt-ui/react-core@0.1.0-beta.2
+  - @dt-ui/react-empty-state@0.1.0-beta.8
+  - @dt-ui/react-message@0.1.0-beta.4
+  - @dt-ui/react-toast@0.1.0-beta.6
+  - @dt-ui/react-tooltip@0.1.0-beta.4
+
 ## 0.1.0-beta.71
 
 ### Minor Changes

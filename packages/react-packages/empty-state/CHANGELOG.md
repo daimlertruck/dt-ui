@@ -1,5 +1,12 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.8
+
+### Patch Changes
+
+- chore: migrate jest setup file to jest package
+- chore: migrate jest configuration to typescript
+
 ## 0.1.0-beta.7
 
 ### Patch Changes
