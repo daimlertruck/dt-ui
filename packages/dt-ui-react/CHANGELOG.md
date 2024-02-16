@@ -1,5 +1,26 @@
 # @dt-ui/react
 
+## 0.1.0-beta.74
+
+### Minor Changes
+
+- feat: review Message designs based on designs
+
+### Patch Changes
+
+- fix: move react-core to main dependencies
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-avatar@0.1.0-beta.5
+  - @dt-ui/react-backdrop@0.1.0-beta.4
+  - @dt-ui/react-breadcrumb@0.1.0-beta.3
+  - @dt-ui/react-empty-state@0.1.0-beta.9
+  - @dt-ui/react-message@0.1.0-beta.5
+  - @dt-ui/react-toast@0.1.0-beta.7
+  - @dt-ui/react-tooltip@0.1.0-beta.5
+  - @dt-ui/react-core@0.1.0-beta.3
+  - @dt-ui/react-tag@0.1.0-beta.2
+
 ## 0.1.0-beta.73
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.3
+
+### Minor Changes
+
+- feat: review Message designs based on designs
+
 ## 0.1.0-beta.2
 
 ### Patch Changes

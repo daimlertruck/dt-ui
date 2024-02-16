@@ -1,5 +1,17 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.9
+
+### Minor Changes
+
+- feat: review Message designs based on designs
+
+### Patch Changes
+
+- fix: move react-core to main dependencies
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.3
+
 ## 0.1.0-beta.8
 
 ### Patch Changes

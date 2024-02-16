@@ -1,5 +1,17 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.7
+
+### Minor Changes
+
+- feat: review Message designs based on designs
+
+### Patch Changes
+
+- fix: move react-core to main dependencies
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.3
+
 ## 0.1.0-beta.6
 
 ### Patch Changes

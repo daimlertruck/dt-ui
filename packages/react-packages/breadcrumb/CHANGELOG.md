@@ -1,5 +1,19 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.3
+
+### Minor Changes
+
+- feat: review Message designs based on designs
+
+### Patch Changes
+
+- fix: move react-core to main dependencies
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-tooltip@0.1.0-beta.5
+  - @dt-ui/react-core@0.1.0-beta.3
+
 ## 0.1.0-beta.2
 
 ### Patch Changes
