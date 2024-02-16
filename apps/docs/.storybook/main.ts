@@ -51,6 +51,7 @@ const config: StorybookConfig = {
         'breadcrumb',
         'box',
         'core',
+        'drawer',
         'empty-state',
         'message',
         'tag',

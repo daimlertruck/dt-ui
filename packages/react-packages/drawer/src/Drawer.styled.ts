@@ -2,7 +2,7 @@ import { DRAWER_Z_INDEX, BaseProps } from '@dt-ui/react-core';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
-import { IconButtonStyled } from '../buttons/icon-button/IconButton.styled';
+import { IconButtonStyled } from '../../../dt-ui-react/components/buttons/icon-button/IconButton.styled';
 
 export interface DrawerBaseProps extends BaseProps {
   isVisible: boolean;

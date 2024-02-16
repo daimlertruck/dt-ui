@@ -1,7 +1,7 @@
 import { useTheme, Global } from '@emotion/react';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 
-import { CloseIcon } from '../../core';
+import { CloseIcon } from '../../../dt-ui-react/core';
 
 import {
   DrawerTitle,
@@ -101,4 +101,5 @@ Drawer.Title = DrawerTitle;
 Drawer.Header = DrawerHeader;
 Drawer.ScrollEffectContainer = ScrollEffectContainer;
 Drawer.Body = DrawerBody;
+
 export default Drawer;
