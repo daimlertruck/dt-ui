@@ -1,5 +1,15 @@
 # @dt-ui/react
 
+## 0.1.0-beta.73
+
+### Patch Changes
+
+- fix: drop tag group
+- chore: convert tag to independent package
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-tag@0.1.0-beta.1
+
 ## 0.1.0-beta.72
 
 ### Patch Changes
