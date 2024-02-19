@@ -1,6 +1,7 @@
 import { useTheme, Global } from '@emotion/react';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 
+import { IconButton } from '../../../dt-ui-react/components/buttons';
 import { CloseIcon } from '../../../dt-ui-react/core';
 
 import {
@@ -15,7 +16,6 @@ import {
   DrawerBaseProps,
   OverlayStyled,
   MainContainerStyled,
-  CloseButtonStyled,
   DrawerInnerContainerStyled,
   CloseButtonContainerStyled,
 } from './Drawer.styled';
@@ -81,13 +81,13 @@ const Drawer = ({
 
       <DrawerStyled isVisible={isVisible}>
         <CloseButtonContainerStyled>
-          <CloseButtonStyled
+          <IconButton
             color='default'
-            data-testid='drawer-close-button'
+            dataTestId='drawer-close-button'
             onClick={handleClose}
           >
             <CloseIcon />
-          </CloseButtonStyled>
+          </IconButton>
         </CloseButtonContainerStyled>
         <DrawerInnerContainerStyled ref={refDrawerContainer}>
           {children}

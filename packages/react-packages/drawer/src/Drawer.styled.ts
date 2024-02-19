@@ -1,8 +1,6 @@
-import { DRAWER_Z_INDEX, BaseProps } from '@dt-ui/react-core';
+import { BaseProps, DRAWER_Z_INDEX } from '@dt-ui/react-core';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-
-import { IconButtonStyled } from '../../../dt-ui-react/components/buttons/icon-button/IconButton.styled';
 
 export interface DrawerBaseProps extends BaseProps {
   isVisible: boolean;
@@ -81,11 +79,5 @@ export const CloseButtonContainerStyled = styled.div`
     @media only screen and (min-width: ${theme.breakpoints.s}) {
       padding: ${theme.spacing.s};
     }
-  `}
-`;
-
-export const CloseButtonStyled = styled(IconButtonStyled)`
-  ${({ theme }) => `
-    color: ${theme.palette.content.body};
   `}
 `;
