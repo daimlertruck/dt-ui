@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'DTUI-icons-outlined';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('./fonts/MaterialSymbolsOutlined.woff2') format('woff2'),
+    url('./fonts/MaterialSymbolsOutlined.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DTUI-icons-rounded';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('./fonts/MaterialSymbolsRounded.woff2') format('woff2'),
+    url('./fonts/MaterialSymbolsRounded.ttf') format('truetype');;
+}

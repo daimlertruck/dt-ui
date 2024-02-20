@@ -1,0 +1,21 @@
+{
+  "name": "@dt-ui/icons",
+  "version": "0.1.0-beta.0",
+  "main": "index.ts",
+  "files": [
+    "/src/fonts/*.{woff2,ttf}"
+  ],
+  "exports": {
+    ".": "./index.ts",
+    "./index.css": "./src/index.css"
+  },
+  "scripts": {
+    "lint": "eslint --cache ."
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "eslint-plugin-storybook": "^0.6.12",
+    "tsconfig": "*",
+    "typescript": "^4.5.3"
+  }
+}
