@@ -1,13 +1,12 @@
 import { Avatar, AvatarSize, AvatarType } from '@dt-ui/react-avatar';
 import { Tag, TagColor } from '@dt-ui/react-tag';
-import { Story } from '@storybook/react';
+import { Tooltip } from '@dt-ui/react-tooltip';
+import { Meta, StoryObj } from '@storybook/react';
 
-import { default as Table } from './Table';
+import { InfoOutlineIcon } from '../../core';
 
-export default {
-  title: 'Data Display/Table',
-  component: Table,
-};
+import { TableHeadProps } from './components';
+import { default as Table, TableProps } from './Table';
 
 const columns = ['Name', 'Email', 'Role', 'Status'];
 
@@ -24,7 +23,7 @@ const columnSizes: { [key: string]: string } = {
 };
 
 const renderAvatarWithTitle = (title: string) => (
-  <div style={{ display: 'flex' }}>
+  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
     <Avatar size={AvatarSize.Small} title={title} type={AvatarType.Primary} />
     {title}
   </div>
@@ -51,63 +50,42 @@ const renderContent = (colIndex: number, content: string) => {
   }[columns[colIndex]];
 };
 
-const Template: Story = ({ isFixed }) => {
-  return (
-    <Table isFixed={isFixed}>
-      <Table.Head>
-        <Table.Row>
-          {columns.map((column: string) => (
-            <Table.ColumnHeader key={`column-header-${column}`}>
-              {column}
-            </Table.ColumnHeader>
-          ))}
-        </Table.Row>
-      </Table.Head>
-      <Table.Body>
-        {rows.map((row: string[]) => (
-          <Table.Row key={row.toString()}>
-            {row.map((content: string, i: number) => (
-              <Table.DataCell
-                columnWidth={columnSizes[columns[i]]}
-                dataLabel={columns[i]}
-                key={`column-${columns[i]}-${content}`}
-              >
-                {renderContent(i, content)}
-              </Table.DataCell>
-            ))}
-          </Table.Row>
-        ))}
-      </Table.Body>
-    </Table>
-  );
-};
-
-export const Default = Template.bind({});
-
-Default.args = {
-  isFixed: false,
-};
-
-const StickyHeaderTemplate: Story = ({ isFixed, hasFixedHeader }) => {
-  return (
-    <div style={{ height: '200px', overflow: 'auto' }}>
+const meta: Meta<TableProps & TableHeadProps> = {
+  title: 'Data Display/Table',
+  component: Table,
+  render: ({ isFixed, hasFixedHeader }) => (
+    <div
+      style={{ ...(hasFixedHeader && { height: '200px', overflow: 'auto' }) }}
+    >
       <Table isFixed={isFixed}>
         <Table.Head hasFixedHeader={hasFixedHeader}>
           <Table.Row>
             {columns.map((column: string) => (
-              <Table.ColumnHeader key={`column-header-${column}`}>
-                {column}
+              <Table.ColumnHeader
+                dataTestId='test'
+                key={`column-header-${column}`}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                  {column}
+                  {column === 'Status' && (
+                    <Tooltip>
+                      <InfoOutlineIcon height={16} width={16} />
+                      <Tooltip.Content>
+                        Pending: Yellow | Active: Green | Deactivated: Grey
+                      </Tooltip.Content>
+                    </Tooltip>
+                  )}
+                </div>
               </Table.ColumnHeader>
             ))}
           </Table.Row>
         </Table.Head>
         <Table.Body>
-          {[...rows, ...rows].map((row: string[]) => (
+          {rows.map((row: string[]) => (
             <Table.Row key={row.toString()}>
               {row.map((content: string, i: number) => (
                 <Table.DataCell
                   columnWidth={columnSizes[columns[i]]}
-                  dataLabel={columns[i]}
                   key={`column-${columns[i]}-${content}`}
                 >
                   {renderContent(i, content)}
@@ -118,12 +96,14 @@ const StickyHeaderTemplate: Story = ({ isFixed, hasFixedHeader }) => {
         </Table.Body>
       </Table>
     </div>
-  );
+  ),
 };
 
-export const StickyHeaderExample = StickyHeaderTemplate.bind({});
-
-StickyHeaderExample.args = {
-  isFixed: true,
-  hasFixedHeader: true,
+export const Default: StoryObj<TableProps & TableHeadProps> = {
+  args: {
+    isFixed: false,
+    hasFixedHeader: false,
+  },
 };
+
+export default meta;

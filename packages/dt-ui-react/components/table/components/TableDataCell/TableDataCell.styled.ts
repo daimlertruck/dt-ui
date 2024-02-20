@@ -18,25 +18,20 @@ export const CellStyled = styled.td<CellStyledProps>`
     text-align: ${textAlign};
     color: ${theme.palette.content.body};
     ${theme.fontStyles.body2};
-    &:not(:first-of-type){
-      &:before {
-        content: attr(data-label);
-        color: ${theme.palette.content.heading};
-        word-break: keep-all;
-        ${theme.fontStyles.button2};
-      }
-    }
+
     &:first-of-type {
-      color: ${theme.palette.content.heading};
       border-bottom: 1px solid ${theme.palette.border.light};
       padding-top: 0;
-      ${theme.fontStyles.body2Bold};
+
+      .header-cell {
+        display: none;
+      }
     }
+
     @media (min-width: ${theme.breakpoints.m}) {
       display: table-cell;      
       border-top: 1px solid ${theme.palette.border.light};
       padding: ${theme.spacing['2xs']};
-      max-width: 0;
       ${theme.fontStyles.body2};
       
       &:first-of-type {
@@ -45,19 +40,28 @@ export const CellStyled = styled.td<CellStyledProps>`
         border-bottom: none;
         ${theme.fontStyles.body2};
       }
-      &:before {
-        display: none;
-      }
-      
+
       word-break: break-word;
+
       ${
         !!columnWidth &&
         `
-        white-space: unset;
         width: ${columnWidth};
         max-width: ${columnWidth};
       `
       }
+    }
+  `}
+`;
+
+export const CellWithHeaderStyled = styled.div`
+  ${({ theme }) => `
+    word-break: keep-all;
+    color: ${theme.palette.content.heading};
+    ${theme.fontStyles.button3};
+
+    @media (min-width: ${theme.breakpoints.m}) {
+        display: none;
     }
   `}
 `;

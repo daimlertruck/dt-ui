@@ -2,12 +2,12 @@ import { Children, ReactNode, isValidElement } from 'react';
 
 const extractColumnHeaders = (columnHeaders: ReactNode): ReactNode[] => {
   return Children.toArray(columnHeaders).reduce<ReactNode[]>(
-    (headers, columnHeader) => {
-      if (isValidElement(columnHeader)) {
-        return [...headers, columnHeader.props.children];
+    (accumulator, current) => {
+      if (isValidElement(current)) {
+        return [...accumulator, current.props.children];
       }
 
-      return headers;
+      return accumulator;
     },
     []
   );

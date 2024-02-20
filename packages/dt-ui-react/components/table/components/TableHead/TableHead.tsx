@@ -1,6 +1,9 @@
 import { BaseProps } from '@dt-ui/react-core';
 
+import { useTableContext } from '../../context/TableProvider';
+
 import { TableHeadStyled } from './TableHead.styled';
+import { extractTableHeaders } from './utils';
 
 export interface TableHeadProps extends BaseProps {
   hasFixedHeader?: boolean;
@@ -11,12 +14,19 @@ export const TableHead = ({
   dataTestId,
   children,
   hasFixedHeader = false,
-}: TableHeadProps) => (
-  <TableHeadStyled
-    data-testid={dataTestId ?? 'table-head'}
-    hasFixedHeader={hasFixedHeader}
-    style={style}
-  >
-    {children}
-  </TableHeadStyled>
-);
+}: TableHeadProps) => {
+  const tableContext = useTableContext();
+  const headers = extractTableHeaders(children);
+
+  tableContext.appendColumnHeaders(headers);
+
+  return (
+    <TableHeadStyled
+      data-testid={dataTestId ?? 'table-head'}
+      hasFixedHeader={hasFixedHeader}
+      style={style}
+    >
+      {children}
+    </TableHeadStyled>
+  );
+};

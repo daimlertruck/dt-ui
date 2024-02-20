@@ -102,28 +102,13 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   text-transform: none;
 }
 
-.emotion-18:not(:first-of-type):before {
-  content: attr(data-label);
-  color: #323232;
-  word-break: keep-all;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-}
-
 .emotion-18:first-of-type {
-  color: #323232;
   border-bottom: 1px solid #EBECED;
   padding-top: 0;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
+}
+
+.emotion-18:first-of-type .header-cell {
+  display: none;
 }
 
 @media (min-width: 900px) {
@@ -131,7 +116,6 @@ exports[`<Table /> component renders a Basic Table 1`] = `
     display: table-cell;
     border-top: 1px solid #EBECED;
     padding: 16px;
-    max-width: 0;
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -152,8 +136,21 @@ exports[`<Table /> component renders a Basic Table 1`] = `
     margin: 0;
     text-transform: none;
   }
+}
 
-  .emotion-18:before {
+.emotion-20 {
+  word-break: keep-all;
+  color: #323232;
+  font-weight: 600;
+  font-size: 0.625rem;
+  line-height: 1rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+}
+
+@media (min-width: 900px) {
+  .emotion-20 {
     display: none;
   }
 }
@@ -165,27 +162,33 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   >
     <thead
       class="emotion-2 emotion-3"
+      data-testid="table-head"
     >
       <tr
         class="emotion-4 emotion-5"
+        data-testid="table-row"
       >
         <th
           class="emotion-6 emotion-7"
+          data-testid="table-column-header"
         >
           Column 1
         </th>
         <th
           class="emotion-6 emotion-7"
+          data-testid="table-column-header"
         >
           Column 2
         </th>
         <th
           class="emotion-6 emotion-7"
+          data-testid="table-column-header"
         >
           Column 3
         </th>
         <th
           class="emotion-6 emotion-7"
+          data-testid="table-column-header"
         >
           Column 4
         </th>
@@ -193,88 +196,152 @@ exports[`<Table /> component renders a Basic Table 1`] = `
     </thead>
     <tbody
       class="emotion-14 emotion-15"
+      data-testid="table-body"
     >
       <tr
         class="emotion-4 emotion-5"
+        data-testid="table-row"
       >
         <td
           class="emotion-18 emotion-19"
-          data-label="Column 1"
+          data-testid="table-data-cell"
         >
+          <div
+            class="header-cell emotion-20 emotion-21"
+          >
+            Column 1
+          </div>
           Row 1 - content 1
         </td>
         <td
           class="emotion-18 emotion-19"
-          data-label="Column 2"
+          data-testid="table-data-cell"
         >
+          <div
+            class="header-cell emotion-20 emotion-21"
+          >
+            Column 2
+          </div>
           Row 1 - content 2
         </td>
         <td
           class="emotion-18 emotion-19"
-          data-label="Column 3"
+          data-testid="table-data-cell"
         >
+          <div
+            class="header-cell emotion-20 emotion-21"
+          >
+            Column 3
+          </div>
           Row 1 - content 3
         </td>
         <td
           class="emotion-18 emotion-19"
-          data-label="Column 4"
+          data-testid="table-data-cell"
         >
+          <div
+            class="header-cell emotion-20 emotion-21"
+          >
+            Column 4
+          </div>
           Row 1 - content 4
         </td>
       </tr>
       <tr
         class="emotion-4 emotion-5"
+        data-testid="table-row"
       >
         <td
           class="emotion-18 emotion-19"
-          data-label="Column 1"
+          data-testid="table-data-cell"
         >
+          <div
+            class="header-cell emotion-20 emotion-21"
+          >
+            Column 1
+          </div>
           Row 2 - content 1
         </td>
         <td
           class="emotion-18 emotion-19"
-          data-label="Column 2"
+          data-testid="table-data-cell"
         >
+          <div
+            class="header-cell emotion-20 emotion-21"
+          >
+            Column 2
+          </div>
           Row 2 - content 2
         </td>
         <td
           class="emotion-18 emotion-19"
-          data-label="Column 3"
+          data-testid="table-data-cell"
         >
+          <div
+            class="header-cell emotion-20 emotion-21"
+          >
+            Column 3
+          </div>
           Row 2 - content 3
         </td>
         <td
           class="emotion-18 emotion-19"
-          data-label="Column 4"
+          data-testid="table-data-cell"
         >
+          <div
+            class="header-cell emotion-20 emotion-21"
+          >
+            Column 4
+          </div>
           Row 2 - content 4
         </td>
       </tr>
       <tr
         class="emotion-4 emotion-5"
+        data-testid="table-row"
       >
         <td
           class="emotion-18 emotion-19"
-          data-label="Column 1"
+          data-testid="table-data-cell"
         >
+          <div
+            class="header-cell emotion-20 emotion-21"
+          >
+            Column 1
+          </div>
           Row 3 - content 1
         </td>
         <td
           class="emotion-18 emotion-19"
-          data-label="Column 2"
+          data-testid="table-data-cell"
         >
+          <div
+            class="header-cell emotion-20 emotion-21"
+          >
+            Column 2
+          </div>
           Row 3 - content 2
         </td>
         <td
           class="emotion-18 emotion-19"
-          data-label="Column 3"
+          data-testid="table-data-cell"
         >
+          <div
+            class="header-cell emotion-20 emotion-21"
+          >
+            Column 3
+          </div>
           Row 3 - content 3
         </td>
         <td
           class="emotion-18 emotion-19"
-          data-label="Column 4"
+          data-testid="table-data-cell"
         >
+          <div
+            class="header-cell emotion-20 emotion-21"
+          >
+            Column 4
+          </div>
           Row 3 - content 4
         </td>
       </tr>

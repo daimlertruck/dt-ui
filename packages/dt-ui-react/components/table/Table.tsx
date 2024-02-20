@@ -7,6 +7,7 @@ import {
   TableHead,
   TableRow,
 } from './components';
+import { TableContextProvider } from './context';
 import { TableStyled } from './Table.styled';
 
 export interface TableProps extends BaseProps {
@@ -19,13 +20,15 @@ const Table = ({
   style,
   isFixed = false,
 }: TableProps) => (
-  <TableStyled
-    data-testid={dataTestId ?? 'table'}
-    isFixed={isFixed}
-    style={style}
-  >
-    {children}
-  </TableStyled>
+  <TableContextProvider>
+    <TableStyled
+      data-testid={dataTestId ?? 'table'}
+      isFixed={isFixed}
+      style={style}
+    >
+      {children}
+    </TableStyled>
+  </TableContextProvider>
 );
 
 Table.Head = TableHead;

@@ -20,7 +20,7 @@ export const TableHeadStyled = styled.thead<TableHeadStyledProps>`
           top: 0;
           background-color: ${theme.palette.base.default};
           z-index: ${TABLE_HEADER_Z_INDEX};
-          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05)
+          box-shadow: ${theme.shadows.xs};
         `
       }
     }

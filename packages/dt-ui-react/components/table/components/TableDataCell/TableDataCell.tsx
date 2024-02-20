@@ -2,25 +2,22 @@ import { BaseProps } from '@dt-ui/react-core';
 
 import { TextAlign } from '../../types';
 
-import { CellStyled } from './TableDataCell.styled';
+import { CellStyled, CellWithHeaderStyled } from './TableDataCell.styled';
 
 export interface TableDataCellProps extends BaseProps {
-  dataLabel: string;
   columnWidth?: string;
   textAlign?: TextAlign;
 }
 
-export const TableDataCell = ({
+const TableDataCell = ({
   children,
   columnWidth,
-  dataLabel,
   style,
   dataTestId,
   textAlign = 'left',
 }: TableDataCellProps) => (
   <CellStyled
     columnWidth={columnWidth}
-    data-label={dataLabel}
     data-testid={dataTestId ?? 'table-data-cell'}
     style={style}
     textAlign={textAlign}
@@ -28,3 +25,11 @@ export const TableDataCell = ({
     {children}
   </CellStyled>
 );
+
+const TableDataCellHeader = ({ children }: BaseProps) => (
+  <CellWithHeaderStyled className='header-cell'>
+    {children}
+  </CellWithHeaderStyled>
+);
+
+export { TableDataCell, TableDataCellHeader };

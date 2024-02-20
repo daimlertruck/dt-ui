@@ -1,36 +1,29 @@
 import { ReactNode, createContext, useContext, useRef } from 'react';
 
 interface TableContextState {
-  columnHeaderChildren: ReactNode[];
+  columnHeadersChildren: ReactNode[];
   appendColumnHeaders: (children: ReactNode[]) => void;
-  clearColumnHeaders: () => void;
 }
 
 const DEFAULT_VALUE: TableContextState = {
-  columnHeaderChildren: [],
+  columnHeadersChildren: [],
   appendColumnHeaders: () => null,
-  clearColumnHeaders: () => null,
 };
 
 export const TableContext = createContext<TableContextState>(DEFAULT_VALUE);
 
 export const TableContextProvider = ({ children }: { children: ReactNode }) => {
-  const columnHeaderChildren = useRef(DEFAULT_VALUE.columnHeaderChildren);
+  const columnHeadersChildren = useRef(DEFAULT_VALUE.columnHeadersChildren);
 
   const appendColumnHeaders = (children: ReactNode[]) => {
-    columnHeaderChildren.current = children;
-  };
-
-  const clearColumnHeaders = () => {
-    columnHeaderChildren.current = [];
+    columnHeadersChildren.current = children;
   };
 
   const providerValue: TableContextState = {
-    get columnHeaderChildren() {
-      return columnHeaderChildren.current;
+    get columnHeadersChildren() {
+      return columnHeadersChildren.current;
     },
     appendColumnHeaders,
-    clearColumnHeaders,
   };
 
   return (
