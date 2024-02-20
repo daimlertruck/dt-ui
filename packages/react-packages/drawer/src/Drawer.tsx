@@ -1,7 +1,7 @@
 import { useTheme, Global } from '@emotion/react';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 
-import { IconButton } from '../../../dt-ui-react/components/buttons';
+import { IconButton } from '../../../dt-ui-react/components/buttons/icon-button';
 import { CloseIcon } from '../../../dt-ui-react/core';
 
 import {
