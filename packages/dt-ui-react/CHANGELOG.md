@@ -1,5 +1,19 @@
 # @dt-ui/react
 
+## 0.1.0-beta.77
+
+### Patch Changes
+
+- chore: make divider independent pkg
+- fix: icon button import
+- fix: spinner dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-divider@0.1.0-beta.1
+  - @dt-ui/react-drawer@0.1.0-beta.2
+  - @dt-ui/react-spinner@0.1.0-beta.2
+
 ## 0.1.0-beta.76
 
 ### Patch Changes
