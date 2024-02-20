@@ -24,7 +24,7 @@ exports[`<Pagination /> component should render the pagination content 1`] = `
   background-color: #FFFFFF;
   border: none;
   border-radius: 3px;
-  color: #7C7C7D;
+  color: #636464;
   cursor: default;
 }
 
@@ -41,7 +41,7 @@ exports[`<Pagination /> component should render the pagination content 1`] = `
   width: 50px;
   height: 32px;
   background-color: #FFFFFF;
-  color: #7C7C7D;
+  color: #636464;
   border: 1px solid #D3D4D5;
   border-radius: 3px;
 }

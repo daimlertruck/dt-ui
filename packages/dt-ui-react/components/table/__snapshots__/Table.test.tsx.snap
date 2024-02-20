@@ -93,7 +93,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   padding: 12px 16px;
   word-break: break-word;
   text-align: left;
-  color: #7C7C7D;
+  color: #636464;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -126,7 +126,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   }
 
   .emotion-18:first-of-type {
-    color: #7C7C7D;
+    color: #636464;
     padding-top: 16px;
     border-bottom: none;
     font-weight: 400;

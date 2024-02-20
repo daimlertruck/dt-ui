@@ -99,7 +99,7 @@ exports[`<CheckBox /> component renders checkbox checked 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 <div>
@@ -221,7 +221,7 @@ exports[`<CheckBox /> component renders checkbox disabled 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 <div>
@@ -343,7 +343,7 @@ exports[`<CheckBox /> component renders checkbox with label 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 <div>
@@ -466,7 +466,7 @@ exports[`<CheckBox /> component renders checkbox without label 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 <div>

@@ -15,7 +15,7 @@ exports[`<TextField /> component onBlur event should have error state with error
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -48,7 +48,7 @@ exports[`<TextField /> component onBlur event should have error state with error
   background-color: #FFFFFF;
   border: 1px solid #D3D4D5;
   border-bottom: 2px solid #FF4A4A;
-  color: #7C7C7D;
+  color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -159,7 +159,7 @@ exports[`<TextField /> component renders Loading input 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -216,7 +216,7 @@ exports[`<TextField /> component renders Loading input 1`] = `
   background-color: #FFFFFF;
   border: 1px solid #D3D4D5;
   border-bottom: 1px solid #D3D4D5;
-  color: #7C7C7D;
+  color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -359,7 +359,7 @@ exports[`<TextField /> component renders input with side button 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -392,7 +392,7 @@ exports[`<TextField /> component renders input with side button 1`] = `
   background-color: #FFFFFF;
   border: 1px solid #D3D4D5;
   border-bottom: 1px solid #D3D4D5;
-  color: #7C7C7D;
+  color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -453,7 +453,7 @@ exports[`<TextField /> component should render the TextField with error styles a
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
   cursor: inherit;
   font-size: .75rem;
   left: 15px;
@@ -486,7 +486,7 @@ exports[`<TextField /> component should render the TextField with error styles a
   background-color: #FFFFFF;
   border: 1px solid #D3D4D5;
   border-bottom: 2px solid #FF4A4A;
-  color: #7C7C7D;
+  color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -579,7 +579,7 @@ exports[`<TextField /> component should render the TextField with info message 1
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -603,7 +603,7 @@ exports[`<TextField /> component should render the TextField with info message 1
   background-color: #FFFFFF;
   border: 1px solid #D3D4D5;
   border-bottom: 1px solid #D3D4D5;
-  color: #7C7C7D;
+  color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -628,7 +628,7 @@ exports[`<TextField /> component should render the TextField with info message 1
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 <div>

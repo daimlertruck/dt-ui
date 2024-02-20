@@ -34,7 +34,7 @@ exports[`List renders list correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   gap: 12px;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 .emotion-4:last-of-type {

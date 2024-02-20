@@ -78,7 +78,7 @@ exports[`<Toggle /> component when the toggle is disabled and is checked should 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 <div>
@@ -187,7 +187,7 @@ exports[`<Toggle /> component when the toggle is disabled and isn't checked shou
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 <div>

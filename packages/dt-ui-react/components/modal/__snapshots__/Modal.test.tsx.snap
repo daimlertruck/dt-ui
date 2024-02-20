@@ -161,7 +161,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
 }
 
 .emotion-10 button {
-  color: #7C7C7D;
+  color: #636464;
 }
 
 .emotion-10 svg {
@@ -207,7 +207,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
   border: none;
   cursor: pointer;
   background-color: transparent;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 .emotion-16:hover {
@@ -392,7 +392,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
 }
 
 .emotion-4 button {
-  color: #7C7C7D;
+  color: #636464;
 }
 
 .emotion-4 svg {
@@ -438,7 +438,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   border: none;
   cursor: pointer;
   background-color: transparent;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 .emotion-10:hover {
@@ -452,7 +452,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 .emotion-14 {

@@ -55,11 +55,11 @@ exports[`<Message /> component should render a Message with title & description,
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 .emotion-8 {
-  color: #7C7C7D;
+  color: #636464;
   border: 0;
   cursor: pointer;
   background: transparent;
@@ -181,11 +181,11 @@ exports[`<Message /> component should render a Message with title & description,
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 .emotion-10 {
-  color: #7C7C7D;
+  color: #636464;
   border: 0;
   cursor: pointer;
   background: transparent;
@@ -330,11 +330,11 @@ exports[`<Message /> component should render a Message with title & description,
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 .emotion-10 {
-  color: #7C7C7D;
+  color: #636464;
   border: 0;
   cursor: pointer;
   background: transparent;
@@ -473,11 +473,11 @@ exports[`<Message /> component should render a Message with title & description,
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 .emotion-10 {
-  color: #7C7C7D;
+  color: #636464;
   border: 0;
   cursor: pointer;
   background: transparent;
@@ -616,11 +616,11 @@ exports[`<Message /> component should render a Message with title & description,
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 .emotion-10 {
-  color: #7C7C7D;
+  color: #636464;
   border: 0;
   cursor: pointer;
   background: transparent;

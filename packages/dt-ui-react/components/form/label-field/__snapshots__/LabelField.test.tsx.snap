@@ -45,7 +45,7 @@ exports[`<LabelField /> component when the LabelField is active it should render
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
   cursor: inherit;
   font-size: .75rem;
   left: 15px;
@@ -81,7 +81,7 @@ exports[`<LabelField /> component when the LabelField is inactive it should rend
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;

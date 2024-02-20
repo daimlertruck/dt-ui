@@ -24,7 +24,7 @@ exports[`<TextArea /> component it should a textarea 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #636464;
   cursor: inherit;
   font-size: 1rem;
   left: 15px;
@@ -47,7 +47,7 @@ exports[`<TextArea /> component it should a textarea 1`] = `
   text-transform: none;
   background-color: #FFFFFF;
   border: 1px solid #D3D4D5;
-  color: #7C7C7D;
+  color: #636464;
   resize: none;
   width: 100%;
   padding: 20px 14px 14px 14px;

@@ -82,7 +82,7 @@ exports[`<Drawer /> component renders correctly with children 1`] = `
   border: none;
   cursor: pointer;
   background-color: transparent;
-  color: #7C7C7D;
+  color: #636464;
 }
 
 .emotion-8:hover {

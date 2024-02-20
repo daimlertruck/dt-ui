@@ -458,7 +458,7 @@ exports[`<Step /> component render disabled step 1`] = `
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #7C7C7D;
+  background-color: #636464;
   border: 2px solid #BABBBB;
   color: #BABBBB;
   background-color: #FFFFFF;

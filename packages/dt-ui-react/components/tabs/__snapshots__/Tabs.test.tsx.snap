@@ -57,7 +57,7 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  color: #7C7C7D;
+  color: #636464;
   border-radius: 4px;
   padding: 12px 32px;
   cursor: pointer;
@@ -84,7 +84,7 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  color: #7C7C7D;
+  color: #636464;
   border-radius: 4px;
   padding: 12px 32px;
   cursor: not-allowed;
@@ -253,7 +253,7 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   padding: 16px 14px;
   background-color: #FFFFFF;
   box-shadow: 0;
-  color: #7C7C7D;
+  color: #636464;
   max-width: 300px;
   overflow: hidden;
   text-align: start;
@@ -277,7 +277,7 @@ exports[`Tabs <Tabs /> component when orientation is vertical should match the s
   padding: 16px 14px;
   background-color: #FFFFFF;
   box-shadow: 0;
-  color: #7C7C7D;
+  color: #636464;
   max-width: 300px;
   overflow: hidden;
   text-align: start;
