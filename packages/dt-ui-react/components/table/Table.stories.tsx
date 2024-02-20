@@ -2,14 +2,7 @@ import { Avatar, AvatarSize, AvatarType } from '@dt-ui/react-avatar';
 import { Tag, TagColor } from '@dt-ui/react-tag';
 import { Story } from '@storybook/react';
 
-import {
-  Table,
-  TableHead,
-  TableBody,
-  TableRow,
-  ColumnHeader,
-  DataCell,
-} from './Table';
+import { default as Table } from './Table';
 
 export default {
   title: 'Data Display/Table',
@@ -61,30 +54,30 @@ const renderContent = (colIndex: number, content: string) => {
 const Template: Story = ({ isFixed }) => {
   return (
     <Table isFixed={isFixed}>
-      <TableHead>
-        <TableRow>
+      <Table.Head>
+        <Table.Row>
           {columns.map((column: string) => (
-            <ColumnHeader key={`column-header-${column}`}>
+            <Table.ColumnHeader key={`column-header-${column}`}>
               {column}
-            </ColumnHeader>
+            </Table.ColumnHeader>
           ))}
-        </TableRow>
-      </TableHead>
-      <TableBody>
+        </Table.Row>
+      </Table.Head>
+      <Table.Body>
         {rows.map((row: string[]) => (
-          <TableRow key={row.toString()}>
+          <Table.Row key={row.toString()}>
             {row.map((content: string, i: number) => (
-              <DataCell
+              <Table.DataCell
                 columnWidth={columnSizes[columns[i]]}
                 dataLabel={columns[i]}
                 key={`column-${columns[i]}-${content}`}
               >
                 {renderContent(i, content)}
-              </DataCell>
+              </Table.DataCell>
             ))}
-          </TableRow>
+          </Table.Row>
         ))}
-      </TableBody>
+      </Table.Body>
     </Table>
   );
 };
@@ -99,30 +92,30 @@ const StickyHeaderTemplate: Story = ({ isFixed, hasFixedHeader }) => {
   return (
     <div style={{ height: '200px', overflow: 'auto' }}>
       <Table isFixed={isFixed}>
-        <TableHead hasFixedHeader={hasFixedHeader}>
-          <TableRow>
+        <Table.Head hasFixedHeader={hasFixedHeader}>
+          <Table.Row>
             {columns.map((column: string) => (
-              <ColumnHeader key={`column-header-${column}`}>
+              <Table.ColumnHeader key={`column-header-${column}`}>
                 {column}
-              </ColumnHeader>
+              </Table.ColumnHeader>
             ))}
-          </TableRow>
-        </TableHead>
-        <TableBody>
+          </Table.Row>
+        </Table.Head>
+        <Table.Body>
           {[...rows, ...rows].map((row: string[]) => (
-            <TableRow key={row.toString()}>
+            <Table.Row key={row.toString()}>
               {row.map((content: string, i: number) => (
-                <DataCell
+                <Table.DataCell
                   columnWidth={columnSizes[columns[i]]}
                   dataLabel={columns[i]}
                   key={`column-${columns[i]}-${content}`}
                 >
                   {renderContent(i, content)}
-                </DataCell>
+                </Table.DataCell>
               ))}
-            </TableRow>
+            </Table.Row>
           ))}
-        </TableBody>
+        </Table.Body>
       </Table>
     </div>
   );

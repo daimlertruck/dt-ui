@@ -5,14 +5,7 @@ Tables display sets of data. They can be fully customized.
 ## Usage
 
 ```jsx
-import {
-  ColumnHeader,
-  DataCell,
-  Table,
-  TableBody,
-  TableHead,
-  TableRow,
-} from '@dt-ui/react';
+import { Table } from '@dt-ui/react';
 
 export const App = () => {
   const columns = ['Column 1', 'Column 2', 'Column 3', 'Column 4'];
@@ -41,22 +34,26 @@ export const App = () => {
   return (
     <div>
       <Table>
-        <TableHead>
-          <TableRow>
+        <Table.Head>
+          <Table.Row>
             {columns.map((column: string) => (
-              <ColumnHeader key={`column-header-${column}`}>{column}</ColumnHeader>
+              <Table.ColumnHeader key={`column-header-${column}`}>
+                {column}
+              </Table.ColumnHeader>
             ))}
-          </TableRow>
-        </TableHead>
-        <TableBody>
+          </Table.Row>
+        </Table.Head>
+        <Table.Body>
           {rows.map((row: string[], i: number) => (
-            <TableRow key={row.toString()}>
+            <Table.Row key={row.toString()}>
               {row.map((content: string, i: number) => (
-                <DataCell key={`column-${columns[i]}-${content}`}>{content}</DataCell>
+                <Table.DataCell key={`column-${columns[i]}-${content}`}>
+                  {content}
+                </Table.DataCell>
               ))}
-            </TableRow>
+            </Table.Row>
           ))}
-        </TableBody>
+        </Table.Body>
       </Table>
     </div>
   );
@@ -67,45 +64,56 @@ export const App = () => {
 
 ### Table
 
-| Property     | Type        | Default | Description                                                                     |
-| ------------ | ----------- | ------- | ------------------------------------------------------------------------------- |
-| `children`   | `ReactNode` | -       | Child components to be rendered                                                 |
-| `isFixed`    | `boolean`   | -       | Define the table layout value. If the value is true, the table-layout is fixed. |
-| `dataTestId` | `string`    | -       | Customizable test identifier                                                    |
+| Property     | Type                  | Default | Description                                                                     |
+| ------------ | --------------------- | ------- | ------------------------------------------------------------------------------- |
+| `children`   | `ReactNode`           | -       | Child components to be rendered                                                 |
+| `isFixed`    | `boolean`             | -       | Define the table layout value. If the value is true, the table-layout is fixed. |
+| `dataTestId` | `string`              | -       | Customizable test identifier                                                    |
+| `style`      | `React.CSSProperties` | -       | Gives the Table some specific css properties                                    |
 
-### TableHead
+### Table.Head
 
-| Property           | Type        | Default | Description                     |
-| ------------------ | ----------- | ------- | ------------------------------- |
-| `children`         | `ReactNode` | -       | Child components to be rendered |
+| Property         | Type                  | Default | Description                                                       |
+| ---------------- | --------------------- | ------- | ----------------------------------------------------------------- |
+| `children`       | `ReactNode`           | -       | Child components to be rendered                                   |
+| `hasFixedHeader` | `boolean`             | false   | Define the column headers sticky when scrolling the table content |
+| `dataTestId`     | `string`              | -       | Customizable test identifier                                      |
+| `style`          | `React.CSSProperties` | -       | Gives the Table.Head some specific css properties                 |
 
-### ColumnHeader
+### Table.ColumnHeader
 
-| Property    | Type        | Default | Description                                     |
-| ----------- | ----------- | ------- | ----------------------------------------------- |
-| `children`  | `ReactNode` | -       | Child components to be rendered                 |
-| `textAlign` | `TextAlign` | `left`  | Defines the text align within the column header |
+| Property     | Type                  | Default | Description                                               |
+| ------------ | --------------------- | ------- | --------------------------------------------------------- |
+| `children`   | `ReactNode`           | -       | Child components to be rendered                           |
+| `textAlign`  | `TextAlign`           | `left`  | Defines the text align within the column header           |
+| `dataTestId` | `string`              | -       | Customizable test identifier                              |
+| `style`      | `React.CSSProperties` | -       | Gives the Table.ColumnHeader some specific css properties |
 
-### TableBody
+### Table.Body
 
-| Property           | Type        | Default | Description                     |
-| ------------------ | ----------- | ------- | --------------------------------|
-| `children`         | `ReactNode` | -       | Child components to be rendered |
+| Property     | Type                  | Default | Description                                       |
+| ------------ | --------------------- | ------- | ------------------------------------------------- |
+| `children`   | `ReactNode`           | -       | Child components to be rendered                   |
+| `dataTestId` | `string`              | -       | Customizable test identifier                      |
+| `style`      | `React.CSSProperties` | -       | Gives the Table.Body some specific css properties |
 
-### TableRow
+### Table.Row
 
-| Property   | Type                                             | Default | Description                                    |
-| ---------- | ------------------------------------------------ | ------- | ---------------------------------------------- |
-| `children` | `ReactNode`                                      | -       | Child components to be rendered                |
-| `onClick`  | `(event: React.MouseEvent<HTMLElement>) => void` | -       | The triggered function when clicked on the row |
+| Property     | Type                                             | Default | Description                                      |
+| ------------ | ------------------------------------------------ | ------- | ------------------------------------------------ |
+| `children`   | `ReactNode`                                      | -       | Child components to be rendered                  |
+| `onClick`    | `(event: React.MouseEvent<HTMLElement>) => void` | -       | The triggered function when clicked on the row   |
+| `dataTestId` | `string`                                         | -       | Customizable test identifier                     |
+| `style`      | `React.CSSProperties`                            | -       | Gives the Table.Row some specific css properties |
 
-### DataCell
+### Table.DataCell
 
-| Property      | Type              | Default  | Description                                                                      |
-| ------------- | ----------------- | -------- | -------------------------------------------------------------------------------- |
-| `children`    | `ReactNode`       | -        | Child components to be rendered                                                  |
-| `columnWidth` | `string`          | -        | Sets a fixed width value for the table column, applies only for desktop screens  |
-| `textAlign`   | `TextAlign`       | `left`   | Defines the text align within the column                                         |
-| `dataLabel`   | `string`          | -        | Column name to be shown in the gallery mode (applied in tablet/mobile screens)   |
-| `isVisible`   | `boolean`         | `false`  | Change the overflow visibility of the cell                                       |
- 
+| Property      | Type                  | Default | Description                                                                     |
+| ------------- | --------------------- | ------- | ------------------------------------------------------------------------------- |
+| `children`    | `ReactNode`           | -       | Child components to be rendered                                                 |
+| `columnWidth` | `string`              | -       | Sets a fixed width value for the table column, applies only for desktop screens |
+| `textAlign`   | `TextAlign`           | `left`  | Defines the text align within the column                                        |
+| `dataLabel`   | `string`              | -       | Column name to be shown in the gallery mode (applied in tablet/mobile screens)  |
+| `isVisible`   | `boolean`             | `false` | Change the overflow visibility of the cell                                      |
+| `dataTestId`  | `string`              | -       | Customizable test identifier                                                    |
+| `style`       | `React.CSSProperties` | -       | Gives the Table.Row some specific css properties                                |

@@ -2,14 +2,7 @@ import { Provider, theme } from '@dt-ui/react-core';
 import { render, screen, within } from '@testing-library/react';
 import '@emotion/jest';
 
-import {
-  Table,
-  TableHead,
-  TableBody,
-  TableRow,
-  ColumnHeader,
-  DataCell,
-} from './Table';
+import { default as Table } from './Table';
 
 describe('<Table /> component', () => {
   const COLUMNS = ['Column 1', 'Column 2', 'Column 3', 'Column 4'];
@@ -38,29 +31,29 @@ describe('<Table /> component', () => {
     render(
       <Provider theme={theme}>
         <Table>
-          <TableHead>
-            <TableRow>
+          <Table.Head>
+            <Table.Row>
               {COLUMNS.map((column: string) => (
-                <ColumnHeader key={`column-index-${column}`}>
+                <Table.ColumnHeader key={`column-index-${column}`}>
                   {column}
-                </ColumnHeader>
+                </Table.ColumnHeader>
               ))}
-            </TableRow>
-          </TableHead>
-          <TableBody>
+            </Table.Row>
+          </Table.Head>
+          <Table.Body>
             {ROWS.map((row: string[], rowIndex: number) => (
-              <TableRow key={`row-index-${row}`}>
+              <Table.Row key={`row-index-${row}`}>
                 {row.map((content: string) => (
-                  <DataCell
+                  <Table.DataCell
                     dataLabel={COLUMNS[rowIndex]}
                     key={`data-cell-index-${content}`}
                   >
                     {content}
-                  </DataCell>
+                  </Table.DataCell>
                 ))}
-              </TableRow>
+              </Table.Row>
             ))}
-          </TableBody>
+          </Table.Body>
         </Table>
       </Provider>
     );
@@ -88,29 +81,29 @@ describe('<Table /> component', () => {
     const { container } = render(
       <Provider theme={theme}>
         <Table>
-          <TableHead>
-            <TableRow>
+          <Table.Head>
+            <Table.Row>
               {COLUMNS.map((column: string) => (
-                <ColumnHeader key={`column-header-${column}`}>
+                <Table.ColumnHeader key={`column-header-${column}`}>
                   {column}
-                </ColumnHeader>
+                </Table.ColumnHeader>
               ))}
-            </TableRow>
-          </TableHead>
-          <TableBody>
+            </Table.Row>
+          </Table.Head>
+          <Table.Body>
             {ROWS.map((row: string[]) => (
-              <TableRow key={row.toString()}>
+              <Table.Row key={row.toString()}>
                 {row.map((content: string, i: number) => (
-                  <DataCell
+                  <Table.DataCell
                     dataLabel={COLUMNS[i]}
                     key={`column-${COLUMNS[i]}-${content}`}
                   >
                     {content}
-                  </DataCell>
+                  </Table.DataCell>
                 ))}
-              </TableRow>
+              </Table.Row>
             ))}
-          </TableBody>
+          </Table.Body>
         </Table>
       </Provider>
     );
@@ -121,29 +114,29 @@ describe('<Table /> component', () => {
   it('applies the expected styles when Table has Fixed Header', () => {
     render(
       <Provider theme={theme}>
-        <TableHead hasFixedHeader>
-          <TableRow>
+        <Table.Head hasFixedHeader>
+          <Table.Row>
             {COLUMNS.map((column: string) => (
-              <ColumnHeader key={`column-header-${column}`}>
+              <Table.ColumnHeader key={`column-header-${column}`}>
                 {column}
-              </ColumnHeader>
+              </Table.ColumnHeader>
             ))}
-          </TableRow>
-        </TableHead>
-        <TableBody>
+          </Table.Row>
+        </Table.Head>
+        <Table.Body>
           {ROWS.map((row: string[]) => (
-            <TableRow key={row.toString()}>
+            <Table.Row key={row.toString()}>
               {row.map((content: string, i: number) => (
-                <DataCell
+                <Table.DataCell
                   dataLabel={COLUMNS[i]}
                   key={`column-${COLUMNS[i]}-${content}`}
                 >
                   {content}
-                </DataCell>
+                </Table.DataCell>
               ))}
-            </TableRow>
+            </Table.Row>
           ))}
-        </TableBody>
+        </Table.Body>
       </Provider>
     );
 
