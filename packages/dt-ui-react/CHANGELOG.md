@@ -1,5 +1,32 @@
 # @dt-ui/react
 
+## 0.1.0-beta.78
+
+### Minor Changes
+
+- feat: custom header in mobile is shown on cells
+- feat: utility functions to add headers in datacell
+- feat: separate table into compound component
+- feat: update contextual color to follow figma spec
+- feat: table context to manage table internal logic
+- feat: utility functions to extract table headers
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-breadcrumb@0.1.0-beta.4
+  - @dt-ui/react-core@0.1.0-beta.4
+  - @dt-ui/react-drawer@0.1.0-beta.3
+  - @dt-ui/react-empty-state@0.1.0-beta.10
+  - @dt-ui/react-message@0.1.0-beta.6
+  - @dt-ui/react-spinner@0.1.0-beta.3
+  - @dt-ui/react-toast@0.1.0-beta.8
+  - @dt-ui/react-avatar@0.1.0-beta.6
+  - @dt-ui/react-backdrop@0.1.0-beta.5
+  - @dt-ui/react-divider@0.1.0-beta.2
+  - @dt-ui/react-tag@0.1.0-beta.3
+  - @dt-ui/react-tooltip@0.1.0-beta.6
+
 ## 0.1.0-beta.77
 
 ### Patch Changes

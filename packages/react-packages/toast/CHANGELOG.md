@@ -1,5 +1,16 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.8
+
+### Minor Changes
+
+- feat: update contextual color to follow figma spec
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.4
+
 ## 0.1.0-beta.7
 
 ### Minor Changes

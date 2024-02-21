@@ -1,5 +1,16 @@
 # @dt-ui/react-tooltip
 
+## 0.1.0-beta.6
+
+### Minor Changes
+
+- feat: update contextual color to follow figma spec
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.4
+
 ## 0.1.0-beta.5
 
 ### Minor Changes

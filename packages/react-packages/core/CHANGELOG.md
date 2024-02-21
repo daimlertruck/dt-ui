@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.4
+
+### Minor Changes
+
+- feat: update contextual color to follow figma spec
+
 ## 0.1.0-beta.3
 
 ### Minor Changes

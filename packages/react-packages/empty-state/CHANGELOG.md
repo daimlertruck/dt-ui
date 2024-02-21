@@ -1,5 +1,16 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.10
+
+### Minor Changes
+
+- feat: update contextual color to follow figma spec
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.4
+
 ## 0.1.0-beta.9
 
 ### Minor Changes
