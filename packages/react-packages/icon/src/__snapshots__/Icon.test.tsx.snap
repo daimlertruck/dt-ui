@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon component tests renders Icon component 1`] = `
+.emotion-0 {
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #636464;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+<div>
+  <i
+    class="emotion-0 emotion-1"
+    color="#636464"
+    data-testid="icon"
+  >
+    warning
+  </i>
+</div>
+`;

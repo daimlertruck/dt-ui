@@ -54,6 +54,7 @@ const config: StorybookConfig = {
         'divider',
         'drawer',
         'empty-state',
+        'icon',
         'message',
         'tag',
         'toast',

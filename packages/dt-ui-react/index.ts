@@ -39,6 +39,7 @@ export * from '@dt-ui/react-core';
 export * from '@dt-ui/react-divider';
 export * from '@dt-ui/react-drawer';
 export * from '@dt-ui/react-empty-state';
+export * from '@dt-ui/react-icon';
 export * from '@dt-ui/react-message';
 export * from '@dt-ui/react-tag';
 export * from '@dt-ui/react-toast';
