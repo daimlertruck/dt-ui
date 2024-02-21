@@ -1,17 +1,19 @@
 import { BaseProps } from '@dt-ui/react-core';
 import { Spinner } from '@dt-ui/react-spinner';
+import { ComponentPropsWithoutRef } from 'react';
 
 import { ButtonStyled } from './Button.styled';
 import { ButtonSize, ButtonColor, ButtonVariant } from './constants';
 
-export type ButtonProps = {
-  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+export interface ButtonProps
+  extends ComponentPropsWithoutRef<'button'>,
+    BaseProps {
   isDisabled?: boolean;
   isLoading?: boolean;
   size?: ButtonSize;
   variant?: ButtonVariant;
   color?: ButtonColor;
-} & BaseProps;
+}
 
 export const Button = ({
   style,
@@ -23,6 +25,7 @@ export const Button = ({
   size = 'medium',
   variant = 'solid',
   color = 'primary',
+  ...props
 }: ButtonProps) => {
   const handleButtonClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     if (isDisabled || isLoading) {
@@ -33,6 +36,7 @@ export const Button = ({
 
   return (
     <ButtonStyled
+      {...props}
       color={color}
       data-testid={`${dataTestId}-button`}
       disabled={isDisabled || isLoading}
