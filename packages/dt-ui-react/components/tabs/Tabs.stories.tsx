@@ -1,95 +1,64 @@
-import { Orientation } from '@dt-ui/react-core';
-import { Story } from '@storybook/react';
+import { Box } from '@dt-ui/react-box';
+import { Meta, StoryFn } from '@storybook/react';
+
+import { MenuIcon } from '../../core';
+import { Counter } from '../counter';
 
 import { useTabs } from './hooks';
-import { Tabs, TabPanel } from './Tabs';
+import { Tabs, TabsProps } from './Tabs';
 
-export default {
-  title: 'Data Display/Tabs',
-  component: Tabs,
-  parameters: {
-    backgrounds: { default: 'light' },
-  },
+type TabsStoryProps = TabsProps & {
+  tabName: string;
 };
 
-const Template: Story<{
-  tabName: string;
-  tabPanelGridTitle: string;
-  tabPanelGridSubtitle: string;
-  orientation: Orientation;
-}> = ({ tabName, tabPanelGridTitle, tabPanelGridSubtitle, orientation }) => {
+const Template: StoryFn<TabsStoryProps> = ({ tabName, variant }) => {
   const { activeTab, handleChange } = useTabs('first');
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: orientation === 'horizontal' ? 'column' : 'row',
-      }}
-    >
-      <Tabs orientation={orientation}>
-        <Tabs.Item
-          activeTab={activeTab}
-          handleChange={handleChange}
-          index='first'
-        >
+    <Tabs activeTab={activeTab} variant={variant}>
+      <Tabs.Item handleChange={handleChange} index='first'>
+        <Box style={{ flexDirection: 'row', gap: 4 }}>
+          <MenuIcon />
           {tabName}
-        </Tabs.Item>
-        <Tabs.Item
-          activeTab={activeTab}
-          handleChange={handleChange}
-          index='second'
-        >
-          Tab 2
-        </Tabs.Item>
-        <Tabs.Item
-          activeTab={activeTab}
-          handleChange={handleChange}
-          index='third'
-        >
-          Tab 3
-        </Tabs.Item>
-        <Tabs.Item
-          activeTab={activeTab}
-          handleChange={handleChange}
-          index='fourth'
-          isDisabled
-        >
-          Tab 4
-        </Tabs.Item>
-        <Tabs.Item
-          activeTab={activeTab}
-          handleChange={handleChange}
-          hasError
-          index='fifth'
-        >
-          Tab 5
-        </Tabs.Item>
-      </Tabs>
-      <TabPanel activeTab={activeTab} index='first'>
-        <TabPanel.Grid>
-          <p>{tabPanelGridTitle}</p>
-          <p>{tabPanelGridSubtitle}</p>
-        </TabPanel.Grid>
-      </TabPanel>
-      <TabPanel activeTab={activeTab} index='second'>
-        Tab 2 content
-      </TabPanel>
-      <TabPanel activeTab={activeTab} index='third'>
-        Tab 3 content
-      </TabPanel>
-      <TabPanel activeTab={activeTab} index='fifth'>
-        Tab 5 content
-      </TabPanel>
-    </div>
+          <Counter>2</Counter>
+        </Box>
+      </Tabs.Item>
+      <Tabs.Item handleChange={handleChange} index='second'>
+        Tab 2
+      </Tabs.Item>
+      <Tabs.Item handleChange={handleChange} index='third'>
+        Tab 3
+      </Tabs.Item>
+      <Tabs.Item handleChange={handleChange} index='fourth' isDisabled>
+        Tab 4
+      </Tabs.Item>
+      <Tabs.Item handleChange={handleChange} index='fifth'>
+        Tab 5
+      </Tabs.Item>
+    </Tabs>
   );
 };
 
-export const Default = Template.bind({});
-
-Default.args = {
-  tabName: 'Tab 1',
-  tabPanelGridTitle: 'Testing tab panel grid:',
-  tabPanelGridSubtitle: 'Tab 1 content',
-  orientation: 'horizontal',
+export const Default = {
+  args: {
+    tabName: 'Tab 1',
+    variant: 'boxed',
+  },
 };
+
+const meta: Meta<TabsStoryProps> = {
+  title: 'Data Display/Tabs',
+  component: Tabs,
+  render: Template,
+  parameters: {
+    backgrounds: { default: 'light' },
+  },
+  argTypes: {
+    variant: {
+      options: ['book', 'boxed'],
+      control: { type: 'radio' },
+    },
+  },
+};
+
+export default meta;

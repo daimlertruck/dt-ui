@@ -1,20 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tabs <Tabs /> component when orientation is horizontal should match the snapshot by displaying the content from Tab 1 1`] = `
+exports[`<Tabs /> component should match the snapshot by displaying the content from Tab 1 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  gap: 8px;
-  margin-bottom: 12px;
 }
 
 .emotion-2 {
@@ -27,17 +21,18 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: transparent;
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  background-color: #00677F;
-  color: #FFFFFF;
-  border-radius: 4px;
+  border-bottom: 2px solid #008DFC;
+  color: #008DFC;
   padding: 12px 32px;
   cursor: default;
+  white-space: nowrap;
 }
 
 .emotion-4 {
@@ -50,21 +45,22 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: transparent;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  background-color: #FFFFFF;
+  border-bottom: 1px solid #D3D4D5;
   color: #636464;
-  border-radius: 4px;
   padding: 12px 32px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .emotion-4:hover {
-  background: #ECF7FB;
+  background: #FFFFFF;
 }
 
 .emotion-8 {
@@ -77,62 +73,34 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: transparent;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  background-color: #FFFFFF;
-  color: #636464;
-  border-radius: 4px;
+  border-bottom: 1px solid #D3D4D5;
+  color: #BABBBB;
   padding: 12px 32px;
   cursor: not-allowed;
-  background-color: #F8F9FA;
-  color: #BABBBB;
-  opacity: 0.4;
+  white-space: nowrap;
+  false opacity: 0.4;
 }
 
 .emotion-8:active {
   pointer-events: none;
 }
 
-.emotion-10 {
-  background-color: #FFFFFF;
-  padding: 32px;
-  width: 100%;
-}
-
-.emotion-12 {
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: 190px auto;
-  gap: 6px;
-  overflow: hidden;
-  overflow-wrap: break-word;
-}
-
-.emotion-14 {
-  background-color: #FFFFFF;
-  padding: 32px;
-  width: 100%;
-  display: none;
-}
-
 <div>
   <div
     class="emotion-0 emotion-1"
     data-testid="tabs"
-    orientation="horizontal"
     role="tablist"
   >
     <button
       class="emotion-2 emotion-3"
       data-testid="tab-item-first"
-      orientation="horizontal"
       role="tab"
       tabindex="0"
     >
@@ -141,7 +109,6 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
     <button
       class="emotion-4 emotion-3"
       data-testid="tab-item-second"
-      orientation="horizontal"
       role="tab"
       tabindex="-1"
     >
@@ -150,7 +117,6 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
     <button
       class="emotion-4 emotion-3"
       data-testid="tab-item-third"
-      orientation="horizontal"
       role="tab"
       tabindex="-1"
     >
@@ -160,336 +126,11 @@ exports[`Tabs <Tabs /> component when orientation is horizontal should match the
       class="emotion-8 emotion-3"
       data-testid="tab-item-fourth"
       disabled=""
-      orientation="horizontal"
       role="tab"
       tabindex="-1"
     >
       Tab 4
     </button>
-  </div>
-  <div
-    class="emotion-10 emotion-11"
-    data-testid="tab-panel-first"
-    role="tabpanel"
-    tabindex="0"
-  >
-    <div
-      class="emotion-12 emotion-13"
-      data-testid="tab-panel-grid"
-    >
-      <p>
-        Testing tab panel grid:
-      </p>
-      <p>
-        Tab 1 content
-      </p>
-    </div>
-  </div>
-  <div
-    class="emotion-14 emotion-11"
-    data-testid="tab-panel-second"
-    role="tabpanel"
-    tabindex="-1"
-  >
-    Tab 2 content
-  </div>
-  <div
-    class="emotion-14 emotion-11"
-    data-testid="tab-panel-third"
-    role="tabpanel"
-    tabindex="-1"
-  >
-    Tab 3 content
-  </div>
-</div>
-`;
-
-exports[`Tabs <Tabs /> component when orientation is vertical should match the snapshot by displaying the content from Tab 1 1`] = `
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.emotion-2 {
-  border: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 16px 14px;
-  background-color: #FFFFFF;
-  box-shadow: inset 2px 0px 0px 0px #00677F;
-  color: #00677F;
-  max-width: 300px;
-  overflow: hidden;
-  text-align: start;
-  cursor: default;
-}
-
-.emotion-4 {
-  border: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 16px 14px;
-  background-color: #FFFFFF;
-  box-shadow: 0;
-  color: #636464;
-  max-width: 300px;
-  overflow: hidden;
-  text-align: start;
-  cursor: pointer;
-}
-
-.emotion-4:hover {
-  background: #F8F9FA;
-}
-
-.emotion-8 {
-  border: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 16px 14px;
-  background-color: #FFFFFF;
-  box-shadow: 0;
-  color: #636464;
-  max-width: 300px;
-  overflow: hidden;
-  text-align: start;
-  cursor: not-allowed;
-  background-color: #F8F9FA;
-  color: #BABBBB;
-  opacity: 0.4;
-}
-
-.emotion-8:hover {
-  background: #F8F9FA;
-}
-
-.emotion-8:active {
-  pointer-events: none;
-}
-
-.emotion-10 {
-  background-color: #FFFFFF;
-  padding: 32px;
-  width: 100%;
-}
-
-.emotion-12 {
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: 190px auto;
-  gap: 6px;
-  overflow: hidden;
-  overflow-wrap: break-word;
-}
-
-.emotion-14 {
-  background-color: #FFFFFF;
-  padding: 32px;
-  width: 100%;
-  display: none;
-}
-
-<div>
-  <div
-    class="emotion-0 emotion-1"
-    data-testid="tabs"
-    orientation="vertical"
-    role="tablist"
-  >
-    <button
-      class="emotion-2 emotion-3"
-      data-testid="tab-item-first"
-      orientation="vertical"
-      role="tab"
-      tabindex="0"
-    >
-      Tab 1
-    </button>
-    <button
-      class="emotion-4 emotion-3"
-      data-testid="tab-item-second"
-      orientation="vertical"
-      role="tab"
-      tabindex="-1"
-    >
-      Tab 2
-    </button>
-    <button
-      class="emotion-4 emotion-3"
-      data-testid="tab-item-third"
-      orientation="vertical"
-      role="tab"
-      tabindex="-1"
-    >
-      Tab 3
-    </button>
-    <button
-      class="emotion-8 emotion-3"
-      data-testid="tab-item-fourth"
-      disabled=""
-      orientation="vertical"
-      role="tab"
-      tabindex="-1"
-    >
-      Tab 4
-    </button>
-  </div>
-  <div
-    class="emotion-10 emotion-11"
-    data-testid="tab-panel-first"
-    role="tabpanel"
-    tabindex="0"
-  >
-    <div
-      class="emotion-12 emotion-13"
-      data-testid="tab-panel-grid"
-    >
-      <p>
-        Testing tab panel grid:
-      </p>
-      <p>
-        Tab 1 content
-      </p>
-    </div>
-  </div>
-  <div
-    class="emotion-14 emotion-11"
-    data-testid="tab-panel-second"
-    role="tabpanel"
-    tabindex="-1"
-  >
-    Tab 2 content
-  </div>
-  <div
-    class="emotion-14 emotion-11"
-    data-testid="tab-panel-third"
-    role="tabpanel"
-    tabindex="-1"
-  >
-    Tab 3 content
-  </div>
-</div>
-`;
-
-exports[`Tabs <Tabs /> component when orientation is vertical should match the snapshot by displaying the red tab 1`] = `
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.emotion-2 {
-  border: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 16px 14px;
-  background-color: #FFFFFF;
-  box-shadow: inset 2px 0px 0px 0px #FF4A4A;
-  color: #FF4A4A;
-  max-width: 300px;
-  overflow: hidden;
-  text-align: start;
-  cursor: default;
-}
-
-.emotion-4 {
-  background-color: #FFFFFF;
-  padding: 32px;
-  width: 100%;
-}
-
-.emotion-6 {
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: 190px auto;
-  gap: 6px;
-  overflow: hidden;
-  overflow-wrap: break-word;
-}
-
-<div>
-  <div
-    class="emotion-0 emotion-1"
-    data-testid="tabs"
-    orientation="vertical"
-    role="tablist"
-  >
-    <button
-      class="emotion-2 emotion-3"
-      data-testid="tab-item-first"
-      orientation="vertical"
-      role="tab"
-      tabindex="0"
-    >
-      Tab 1
-    </button>
-  </div>
-  <div
-    class="emotion-4 emotion-5"
-    data-testid="tab-panel-first"
-    role="tabpanel"
-    tabindex="0"
-  >
-    <div
-      class="emotion-6 emotion-7"
-      data-testid="tab-panel-grid"
-    >
-      <p>
-        Testing tab panel grid:
-      </p>
-      <p>
-        Tab 1 content
-      </p>
-    </div>
   </div>
 </div>
 `;
