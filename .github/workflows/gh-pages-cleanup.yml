@@ -1,0 +1,65 @@
+name: GH Pages Cleanup
+
+env:
+  GIT_FAKE_EMAIL: dt-ui@daimlertruck.com
+  GIT_FAKE_USER: dt-ui
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"
+
+jobs:
+  cleanup:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup fake credentials
+        run: |
+          git config --global user.email ${{ env.GIT_FAKE_EMAIL }}
+          git config --global user.name ${{ env.GIT_FAKE_USER }}
+
+      - name: Create new branch
+        run: |
+          git checkout -b gh-pages-${{ github.run_number }} origin/gh-pages
+
+      - name: List open PRs
+        id: list_prs
+        uses: actions/github-script@v6
+        with:
+          result-encoding: string
+          script: |
+            const result = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open'
+            })
+            return result.data.map((pr) => `PR-${pr.number}`)
+
+      - name: List existing folders
+        id: list_folders
+        run: |
+          echo 'result<<FOLDER_DELIMITER' >> $GITHUB_OUTPUT
+          ls -d PR-* >> $GITHUB_OUTPUT
+          echo 'FOLDER_DELIMITER' >> $GITHUB_OUTPUT
+
+      - name: Delete unused folders
+        run: |
+          folders=(${{steps.list_folders.outputs.result}})
+
+          for folder in "${folders[@]}"; do
+            if [[ ! "${{steps.list_prs.outputs.result}}" =~ "${folder}" ]]; then
+              echo "Deleting folder: $folder"
+              rm -rf $folder
+            fi
+          done
+
+          git add . --all
+          git commit -m "chore: cleanup unused folders"
+          git checkout gh-pages
+          git merge gh-pages-${{ github.run_number }}
+          git push origin gh-pages
