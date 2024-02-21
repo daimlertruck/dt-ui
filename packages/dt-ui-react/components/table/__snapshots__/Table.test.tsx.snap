@@ -47,9 +47,9 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   text-align: left;
   color: #323232;
   padding: 0 16px 16px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.625rem;
-  line-height: 1rem;
+  line-height: 0.875rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -141,9 +141,9 @@ exports[`<Table /> component renders a Basic Table 1`] = `
 .emotion-20 {
   word-break: keep-all;
   color: #323232;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.625rem;
-  line-height: 1rem;
+  line-height: 0.875rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

@@ -20,8 +20,8 @@ exports[`<Button /> component renders button html element with the correct title
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
-  border-radius: 4px;
-  font-weight: 600;
+  border-radius: 0px;
+  font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
@@ -30,12 +30,12 @@ exports[`<Button /> component renders button html element with the correct title
   padding: 12px 24px;
   border: 0;
   color: #FFFFFF;
-  background-color: #008DFC;
+  background-color: #00677F;
 }
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #025497;
+  background-color: #004355;
 }
 
 .emotion-0:disabled {
@@ -112,33 +112,33 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
-  border-radius: 4px;
-  font-weight: 600;
+  border-radius: 0px;
+  font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  color: #008DFC;
+  color: #00677F;
   background-color: #FFFFFF;
-  border: 1px solid #008DFC;
+  border: 1px solid #00677F;
 }
 
 .emotion-0:hover {
-  color: #025497;
-  border: 1px solid #025497;
+  color: #004355;
+  border: 1px solid #004355;
 }
 
 .emotion-0:active {
-  color: #025497;
-  border: 1px solid #025497;
+  color: #004355;
+  border: 1px solid #004355;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
-  color: #9AD2FE;
-  border: 1px solid #9AD2FE;
+  color: #79AEBF;
+  border: 1px solid #79AEBF;
 }
 
 @media only screen and (min-width: 600px) {
@@ -166,7 +166,7 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   height: 32px;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #008DFC;
+  border-top: 2px solid #00677F;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -228,8 +228,8 @@ exports[`<Button /> component when loading is true renders a spinner light theme
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
-  border-radius: 4px;
-  font-weight: 600;
+  border-radius: 0px;
+  font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
@@ -238,12 +238,12 @@ exports[`<Button /> component when loading is true renders a spinner light theme
   padding: 12px 24px;
   border: 0;
   color: #FFFFFF;
-  background-color: #008DFC;
+  background-color: #00677F;
 }
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #025497;
+  background-color: #004355;
 }
 
 .emotion-0:disabled {

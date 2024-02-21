@@ -2,9 +2,9 @@
 
 exports[`<Typography /> component should render a p html element with the given content 1`] = `
 .emotion-0 {
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

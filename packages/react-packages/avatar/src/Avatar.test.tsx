@@ -21,7 +21,7 @@ describe('<Avatar /> component', () => {
   const typeStyles: Record<AvatarType, string> = {
     [AvatarType.Primary]: 'color: #FFFFFF;',
     [AvatarType.Secondary]: 'color: #FFFFFF;',
-    [AvatarType.Tertiary]: 'color: #008DFC;',
+    [AvatarType.Tertiary]: 'color: #00677F;',
     [AvatarType.Profile]: 'padding: 0px',
   };
 

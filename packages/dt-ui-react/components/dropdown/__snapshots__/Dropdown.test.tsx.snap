@@ -162,7 +162,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
 .emotion-8 {
   background: #FFFFFF;
   border: 1px solid #D3D4D5;
-  border-radius: 4px;
+  border-radius: 0px;
   width: 100%;
   padding: 8px 0;
   margin: 2px 0;
@@ -188,7 +188,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
 }
 
 .emotion-10:hover {
-  background: #E6F5FF;
+  background: #ECF7FB;
   cursor: pointer;
 }
 

@@ -47,7 +47,7 @@ exports[`<Pagination /> component should render the pagination content 1`] = `
 }
 
 .emotion-4:focus {
-  border-bottom: 2px solid #008DFC;
+  border-bottom: 2px solid #00677F;
 }
 
 .emotion-6 {
@@ -62,7 +62,7 @@ exports[`<Pagination /> component should render the pagination content 1`] = `
 
 .emotion-8 {
   background-color: transparent;
-  color: #008DFC;
+  color: #00677F;
   border: none;
   cursor: pointer;
 }
@@ -77,7 +77,7 @@ exports[`<Pagination /> component should render the pagination content 1`] = `
   background-color: #FFFFFF;
   border: none;
   border-radius: 3px;
-  color: #008DFC;
+  color: #00677F;
   cursor: pointer;
 }
 

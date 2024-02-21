@@ -61,7 +61,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #FFFFFF;
-  border-radius: 4px;
+  border-radius: 0px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
@@ -135,7 +135,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
   height: 64px;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #008DFC;
+  border-top: 2px solid #00677F;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -179,9 +179,9 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
 }
 
 .emotion-14 {
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -337,7 +337,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #FFFFFF;
-  border-radius: 4px;
+  border-radius: 0px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
@@ -410,9 +410,9 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
 }
 
 .emotion-8 {
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -514,8 +514,8 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
-  border-radius: 4px;
-  font-weight: 600;
+  border-radius: 0px;
+  font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
@@ -568,8 +568,8 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
-  border-radius: 4px;
-  font-weight: 600;
+  border-radius: 0px;
+  font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
@@ -578,12 +578,12 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   padding: 12px 24px;
   border: 0;
   color: #FFFFFF;
-  background-color: #008DFC;
+  background-color: #00677F;
 }
 
 .emotion-20:hover {
   color: #FFFFFF;
-  background-color: #025497;
+  background-color: #004355;
 }
 
 .emotion-20:disabled {

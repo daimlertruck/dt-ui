@@ -226,7 +226,7 @@ exports[`<TextField /> component renders Loading input 1`] = `
 }
 
 .emotion-10:focus {
-  border-bottom: 2px solid #008DFC;
+  border-bottom: 2px solid #00677F;
   outline: none;
 }
 
@@ -315,7 +315,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
 }
 
 .emotion-4:focus {
-  border-bottom: 2px solid #008DFC;
+  border-bottom: 2px solid #00677F;
   outline: none;
 }
 
@@ -402,7 +402,7 @@ exports[`<TextField /> component renders input with side button 1`] = `
 }
 
 .emotion-6:focus {
-  border-bottom: 2px solid #008DFC;
+  border-bottom: 2px solid #00677F;
   outline: none;
 }
 
@@ -613,7 +613,7 @@ exports[`<TextField /> component should render the TextField with info message 1
 }
 
 .emotion-4:focus {
-  border-bottom: 2px solid #008DFC;
+  border-bottom: 2px solid #00677F;
   outline: none;
 }
 

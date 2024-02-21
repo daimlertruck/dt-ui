@@ -259,7 +259,7 @@ exports[`<Tag /> component should render the tag with variant solid, color prima
   height: 32px;
   border: 0;
   color: #FFFFFF;
-  background-color: #008DFC;
+  background-color: #00677F;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

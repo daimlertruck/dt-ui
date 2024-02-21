@@ -5,11 +5,15 @@ import { ThemeProvider} from '@storybook/theming';
 import {
   theme as defaultTheme,
   greenlaneTheme,
+  truckAPITheme
 } from '@dt-ui/react-core';
 
 <Meta title='Foundations/Palette' />
 
-# Default
+export const themes = [
+  {name: 'Daimler (default)', theme: defaultTheme}, 
+  {name: 'Greenlane', theme: greenlaneTheme},
+  {name: 'TruckAPI', theme: truckAPITheme}]
 
 export const getColors = (theme) => Object.entries(theme.palette).reduce(
   (acc, [key, value]) => {
@@ -25,24 +29,17 @@ export const getColors = (theme) => Object.entries(theme.palette).reduce(
   };
 }, {});
 
-<div style={{ background: '#eeeeee', padding: '20px' }}>
-  <ThemeProvider theme={defaultTheme}>
-    <ColorPalette>
-      {Object.entries(getColors(defaultTheme)).map(([k, v]) => {
-        return <ColorItem key={k} title={k} colors={Object.assign({}, ...v)} />;
-      })}
-    </ColorPalette>
-  </ThemeProvider>
-</div>
-
-# Greenlane
-
-<div style={{ background: '#eeeeee', padding: '20px' }}>
-  <ThemeProvider theme={greenlaneTheme}>
-    <ColorPalette>
-      {Object.entries(getColors(greenlaneTheme)).map(([k, v]) => {
-        return <ColorItem key={k} title={k} colors={Object.assign({}, ...v)} />;
-      })}
-    </ColorPalette>
-  </ThemeProvider>
-</div>
+{themes.map(({name, theme}) => ( 
+  <>
+    <h1>{name}</h1>
+    <div style={{ background: '#eeeeee', padding: '20px' }}>
+      <ThemeProvider theme={theme}>
+        <ColorPalette>
+          {Object.entries(getColors(theme)).map(([k, v]) => {
+            return <ColorItem key={k} title={k} colors={Object.assign({}, ...v)} />;
+          })}
+        </ColorPalette>
+      </ThemeProvider>
+    </div>
+  </>
+))}

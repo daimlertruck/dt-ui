@@ -61,7 +61,7 @@ exports[`<Form /> component renders simple form 1`] = `
 }
 
 .emotion-6:focus {
-  border-bottom: 2px solid #008DFC;
+  border-bottom: 2px solid #00677F;
   outline: none;
 }
 
@@ -205,7 +205,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
 }
 
 .emotion-10:focus {
-  border-bottom: 2px solid #008DFC;
+  border-bottom: 2px solid #00677F;
   outline: none;
 }
 
@@ -337,7 +337,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
 }
 
 .emotion-10:focus {
-  border-bottom: 2px solid #008DFC;
+  border-bottom: 2px solid #00677F;
   outline: none;
 }
 
@@ -439,13 +439,13 @@ exports[`<Form /> component with Form.Group should render a form with group titl
 }
 
 .emotion-6 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #008DFC;
+  color: #00677F;
 }
 
 .emotion-8 {
@@ -513,7 +513,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
 }
 
 .emotion-14:focus {
-  border-bottom: 2px solid #008DFC;
+  border-bottom: 2px solid #00677F;
   outline: none;
 }
 

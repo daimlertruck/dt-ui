@@ -1,10 +1,10 @@
 import { radius } from './radius';
 
 export const shape = {
-  button: radius['5xs'],
-  modal: radius['5xs'],
-  emptyState: radius['4xs'],
-  dropdown: radius['5xs'],
-  message: radius['5xs'],
+  button: radius['none'],
+  modal: radius['none'],
+  emptyState: radius['none'],
+  dropdown: radius['none'],
+  message: radius['none'],
   progressbar: radius['none'],
 };

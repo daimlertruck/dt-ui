@@ -36,7 +36,7 @@ exports[`<Spinner /> component should render the default options correctly 1`] =
   height: 48px;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #008DFC;
+  border-top: 2px solid #00677F;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -138,7 +138,7 @@ exports[`<Spinner /> component should render the sizes correctly should render t
   height: 64px;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #008DFC;
+  border-top: 2px solid #00677F;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -224,7 +224,7 @@ exports[`<Spinner /> component should render the sizes correctly should render t
   height: 56px;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #008DFC;
+  border-top: 2px solid #00677F;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -294,7 +294,7 @@ exports[`<Spinner /> component should render the sizes correctly should render t
   height: 32px;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #008DFC;
+  border-top: 2px solid #00677F;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -530,7 +530,7 @@ exports[`<Spinner /> component should render the text helper when prop is provid
   height: 48px;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #008DFC;
+  border-top: 2px solid #00677F;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }

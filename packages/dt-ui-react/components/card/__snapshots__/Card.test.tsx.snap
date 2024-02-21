@@ -22,7 +22,7 @@ exports[`<Card /> component renders div html element with the correct items 1`] 
 
 .emotion-0::after {
   content: '';
-  background-color: #008DFC;
+  background-color: #00677F;
   border-radius: 4px;
   width: 40px;
   height: 5px;
@@ -43,9 +43,9 @@ exports[`<Card /> component renders div html element with the correct items 1`] 
 }
 
 .emotion-4 {
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

@@ -2,7 +2,7 @@
 
 exports[`<Link /> component Should render a disabled html link element 1`] = `
 .emotion-0 {
-  color: #008DFC;
+  color: #00677F;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   opacity: 0.4;
@@ -29,7 +29,7 @@ exports[`<Link /> component Should render a disabled html link element 1`] = `
 
 exports[`<Link /> component Should render a html link element with the correct title 1`] = `
 .emotion-0 {
-  color: #008DFC;
+  color: #00677F;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   font-weight: 400;
@@ -53,7 +53,7 @@ exports[`<Link /> component Should render a html link element with the correct t
 
 exports[`<Link /> component Should render a html underlined link element with the correct title 1`] = `
 .emotion-0 {
-  color: #008DFC;
+  color: #00677F;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   font-weight: 400;
@@ -95,8 +95,8 @@ exports[`<Link /> component Should render an anchor element with button styles 1
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
-  border-radius: 4px;
-  font-weight: 600;
+  border-radius: 0px;
+  font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
@@ -105,12 +105,12 @@ exports[`<Link /> component Should render an anchor element with button styles 1
   padding: 12px 24px;
   border: 0;
   color: #FFFFFF;
-  background-color: #008DFC;
+  background-color: #00677F;
 }
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #025497;
+  background-color: #004355;
 }
 
 .emotion-0:disabled {

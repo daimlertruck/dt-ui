@@ -67,4 +67,31 @@ export const webFonts: FontFace[] = [
       src: "url(/fonts/poppins/poppins-bold.woff) format('woff'), url(/fonts/poppins/poppins-bold.woff2) format('woff2')",
     },
   },
+  /* daimler-cs regular */
+  {
+    '@font-face': {
+      fontFamily: 'DaimlerCSPro',
+      fontStyle: 'normal',
+      fontWeight: 400,
+      src: "url(/fonts/daimler-cs-pro/DaimlerCSPro-Regular.otf) format('opentype')",
+    },
+  },
+  /* daimler-cs bold */
+  {
+    '@font-face': {
+      fontFamily: 'DaimlerCSPro',
+      fontStyle: 'normal',
+      fontWeight: 700,
+      src: "url(/fonts/daimler-cs-pro/DaimlerCSPro-Bold.otf) format('opentype')",
+    },
+  },
+  /* daimler-cs italic */
+  {
+    '@font-face': {
+      fontFamily: 'DaimlerCSPro',
+      fontStyle: 'italic',
+      fontWeight: 400,
+      src: "url(/fonts/daimler-cs-pro/DaimlerCSPro-Italic.otf) format('opentype')",
+    },
+  },
 ];

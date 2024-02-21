@@ -39,6 +39,6 @@ describe('<Typography /> component', () => {
 
     const pElement = container.querySelector('p');
     expect(pElement).toBeInTheDocument();
-    expect(pElement).toHaveStyle({ color: 'rgb(0, 141, 252)' });
+    expect(pElement).toHaveStyle({ color: 'rgb(0, 103, 127)' });
   });
 });

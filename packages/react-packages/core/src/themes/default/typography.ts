@@ -5,7 +5,7 @@ import { breakpoints } from './breakpoints';
 
 export const fontFamily = {
   default:
-    "Roboto, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif",
+    "DaimlerCSPro, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif",
 };
 
 interface responsiveStyle {
@@ -16,12 +16,12 @@ interface responsiveStyle {
 }
 
 export const fontStyles = {
-  h1: getTextStyles(700, '2.5rem', '3rem'),
-  h2: getTextStyles(700, '2rem', '2.5rem'),
-  h3: getTextStyles(500, '1.5rem', '1.75rem'),
-  h4: getTextStyles(500, '1.25rem', '1.5rem'),
-  h5: getTextStyles(500, '1rem', '1.25rem'),
-  h6: getTextStyles(500, '1rem', '1.5rem'),
+  h1: getTextStyles(700, '3rem', '3.25rem'),
+  h2: getTextStyles(700, '2.5rem', '2.75rem'),
+  h3: getTextStyles(600, '2rem', '2.25rem'),
+  h4: getTextStyles(600, '1.5rem', '1.75rem'),
+  h5: getTextStyles(600, '1.25rem', '1.5rem'),
+  h6: getTextStyles(600, '1rem', '1.5rem'),
   body1Bold: getTextStyles(700, '1rem', '1.5rem'),
   body1: getTextStyles(400, '1rem', '1.5rem'),
   body2Bold: getTextStyles(700, '0.875rem', '1.25rem'),
@@ -36,9 +36,9 @@ export const fontStyles = {
   link2: getTextStyles(400, '0.875rem', '1.25rem'),
   link3Bold: getTextStyles(700, '0.75rem', '1rem'),
   link3: getTextStyles(400, '0.75rem', '1rem'),
-  button1: getTextStyles(600, '1rem', '1.5rem'),
-  button2: getTextStyles(600, '0.875rem', '1.25rem'),
-  button3: getTextStyles(600, '0.625rem', '1rem'),
+  button1: getTextStyles(700, '1rem', '1.5rem'),
+  button2: getTextStyles(700, '0.875rem', '1.25rem'),
+  button3: getTextStyles(700, '0.625rem', '0.875rem'),
   // Legacy
   p: getTextStyles(400, '18px', '24.12px'),
   pSmall: getTextStyles(400, '16px', '21.44px'),
