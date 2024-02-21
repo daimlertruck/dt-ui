@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeProvider, Global } from '@emotion/react';
+import { Global } from '@emotion/react';
 
 import type { Preview } from '@storybook/react';
 import { themes } from '@storybook/theming';
@@ -10,6 +10,7 @@ import {
   greenlaneTheme,
   globalStyles,
   truckAPITheme,
+  Provider
 } from '@dt-ui/react-core';
 import { webFonts } from './webFonts';
 
@@ -25,7 +26,7 @@ export const decorators = [
       TruckAPI: truckAPITheme,
     },
     defaultTheme: 'Default',
-    Provider: ThemeProvider,
+    Provider,
     GlobalStyles,
   }),
 ];

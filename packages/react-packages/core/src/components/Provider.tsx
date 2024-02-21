@@ -4,6 +4,8 @@ import React from 'react';
 import { theme as defaultTheme, globalStyles } from '../themes';
 import { FontFace, CustomTheme as Theme } from '../types';
 
+import '@dt-ui/icons/index.css';
+
 type ThemeProviderType = {
   theme?: Theme;
   webFonts?: FontFace[];

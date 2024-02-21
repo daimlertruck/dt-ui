@@ -21,4 +21,5 @@ export const theme: CustomTheme = {
   fontStyles,
   responsiveFontStyles,
   shape,
+  icons: 'outlined',
 };

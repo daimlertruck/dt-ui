@@ -16,6 +16,9 @@
     "lint": "eslint --cache .",
     "test": "jest"
   },
+  "dependencies": {
+    "@dt-ui/icons": "0.1.0-beta.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",

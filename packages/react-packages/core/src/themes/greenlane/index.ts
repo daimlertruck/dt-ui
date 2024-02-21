@@ -11,4 +11,5 @@ export const greenlaneTheme: CustomTheme = {
   fontStyles,
   palette,
   shape,
+  icons: 'rounded',
 };
