@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.79
+
+### Minor Changes
+
+- feat: extend button props
+
 ## 0.1.0-beta.78
 
 ### Minor Changes
