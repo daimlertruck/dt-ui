@@ -1,5 +1,32 @@
 # @dt-ui/react
 
+## 0.1.0-beta.81
+
+### Minor Changes
+
+- feat: create Icons package
+- feat: add icons to theme Provider
+- feat: create react Icon component
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.6
+  - @dt-ui/react-avatar@0.1.0-beta.8
+  - @dt-ui/react-backdrop@0.1.0-beta.7
+  - @dt-ui/react-breadcrumb@0.1.0-beta.6
+  - @dt-ui/react-divider@0.1.0-beta.4
+  - @dt-ui/react-drawer@0.1.0-beta.5
+  - @dt-ui/react-empty-state@0.1.0-beta.12
+  - @dt-ui/react-icon@0.1.0-beta.1
+  - @dt-ui/react-message@0.1.0-beta.8
+  - @dt-ui/react-spinner@0.1.0-beta.5
+  - @dt-ui/react-tag@0.1.0-beta.5
+  - @dt-ui/react-toast@0.1.0-beta.10
+  - @dt-ui/react-tooltip@0.1.0-beta.8
+
 ## 0.1.0-beta.80
 
 ### Minor Changes

@@ -1,5 +1,18 @@
 # @dt-ui/react-backdrop
 
+## 0.1.0-beta.7
+
+### Minor Changes
+
+- feat: create Icons package
+- feat: add icons to theme Provider
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.6
+
 ## 0.1.0-beta.6
 
 ### Minor Changes
