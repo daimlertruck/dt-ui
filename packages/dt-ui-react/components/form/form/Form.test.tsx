@@ -1,8 +1,7 @@
 import { withProviders } from '@dt-ui/react-core';
+import { TextField } from '@dt-ui/react-text-field';
 import { render, fireEvent, waitFor } from '@testing-library/react';
 import React from 'react';
-
-import { TextField } from '../text-field';
 
 import { Form } from '.';
 

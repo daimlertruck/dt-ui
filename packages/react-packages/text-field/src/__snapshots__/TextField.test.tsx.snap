@@ -30,24 +30,19 @@ exports[`<TextField /> component onBlur event should have error state with error
 }
 
 .emotion-4 {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  width: 24px;
-  height: 24px;
   color: #FF4A4A;
 }
 
 .emotion-6 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #D3D4D5;
-  border-bottom: 2px solid #FF4A4A;
+  border-radius: 0px;
+  border: 1px solid #FF4A4A;
   color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -63,8 +58,8 @@ exports[`<TextField /> component onBlur event should have error state with error
 
 .emotion-10 {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -79,32 +74,16 @@ exports[`<TextField /> component onBlur event should have error state with error
       class="emotion-2 emotion-3"
       data-testid="label-field"
       for="Some-text"
+      style="color: rgb(161, 162, 163);"
     >
       Some text
        
-      *
-    </label>
-    <span
-      class="emotion-4 emotion-5"
-    >
-      <svg
-        color="#FF4A4A"
-        fill="none"
-        height="24"
-        viewBox="0 0 24 24"
-        width="24"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        class="emotion-4 emotion-5"
       >
-        <path
-          d="M19.0711 19.0711C17.1957 20.9464 14.6522 22 12 22C9.34784 22 6.8043 20.9464 4.92893 19.0711C3.05357 17.1957 2 14.6522 2 12C2 9.34784 3.05357 6.8043 4.92893 4.92893C6.8043 3.05357 9.34784 2 12 2C14.6522 2 17.1957 3.05357 19.0711 4.92893C20.9464 6.8043 22 9.34784 22 12C22 14.6522 20.9464 17.1957 19.0711 19.0711Z"
-          fill="currentColor"
-        />
-        <path
-          d="M12.8797 13.6863L13.1157 6.48828H10.8997L11.0997 13.6863H12.8797ZM11.9907 17.5123C12.1621 17.5181 12.333 17.4894 12.4932 17.4281C12.6534 17.3667 12.7997 17.2739 12.9234 17.1551C13.0471 17.0362 13.1458 16.8938 13.2136 16.7362C13.2813 16.5786 13.3168 16.4091 13.318 16.2375C13.3191 16.066 13.2859 15.8959 13.2202 15.7375C13.1545 15.579 13.0577 15.4353 12.9356 15.3148C12.8135 15.1944 12.6684 15.0996 12.5091 15.0361C12.3497 14.9727 12.1792 14.9418 12.0077 14.9453C11.6733 14.9521 11.3547 15.0892 11.1198 15.3274C10.8849 15.5656 10.7522 15.886 10.75 16.2205C10.7478 16.555 10.8762 16.8772 11.1079 17.1184C11.3397 17.3597 11.6564 17.501 11.9907 17.5123Z"
-          fill="white"
-        />
-      </svg>
-    </span>
+        *
+      </span>
+    </label>
     <input
       class="emotion-6 emotion-7"
       id="Some-text"
@@ -179,7 +158,6 @@ exports[`<TextField /> component renders Loading input 1`] = `
   top: 15px;
   width: 24px;
   height: 24px;
-  color: #FF4A4A;
 }
 
 .emotion-6 {
@@ -208,14 +186,14 @@ exports[`<TextField /> component renders Loading input 1`] = `
 
 .emotion-10 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
+  border-radius: 0px;
   border: 1px solid #D3D4D5;
-  border-bottom: 1px solid #D3D4D5;
   color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -223,11 +201,6 @@ exports[`<TextField /> component renders Loading input 1`] = `
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 53px;
-}
-
-.emotion-10:focus {
-  border-bottom: 2px solid #00677F;
-  outline: none;
 }
 
 <div>
@@ -238,6 +211,7 @@ exports[`<TextField /> component renders Loading input 1`] = `
       class="emotion-2 emotion-3"
       data-testid="label-field"
       for="My-disabled-input"
+      style="color: rgb(161, 162, 163);"
     >
       My disabled input
        
@@ -297,14 +271,14 @@ exports[`<TextField /> component renders disabled input 1`] = `
 
 .emotion-4 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   background-color: #F8F9FA;
+  border-radius: 0px;
   border: 1px solid #D3D4D5;
-  border-bottom: 1px solid #D3D4D5;
   color: #BABBBB;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -312,11 +286,6 @@ exports[`<TextField /> component renders disabled input 1`] = `
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 53px;
-}
-
-.emotion-4:focus {
-  border-bottom: 2px solid #00677F;
-  outline: none;
 }
 
 <div>
@@ -328,6 +297,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
       data-testid="label-field"
       disabled=""
       for="My-disabled-input"
+      style="color: rgb(161, 162, 163);"
     >
       My disabled input
        
@@ -379,19 +349,18 @@ exports[`<TextField /> component renders input with side button 1`] = `
   top: 15px;
   width: 24px;
   height: 24px;
-  color: #FF4A4A;
 }
 
 .emotion-6 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
+  border-radius: 0px;
   border: 1px solid #D3D4D5;
-  border-bottom: 1px solid #D3D4D5;
   color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -399,11 +368,6 @@ exports[`<TextField /> component renders input with side button 1`] = `
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 53px;
-}
-
-.emotion-6:focus {
-  border-bottom: 2px solid #00677F;
-  outline: none;
 }
 
 <div>
@@ -414,6 +378,7 @@ exports[`<TextField /> component renders input with side button 1`] = `
       class="emotion-2 emotion-3"
       data-testid="label-field"
       for="My-input"
+      style="color: rgb(161, 162, 163);"
     >
       My input
        
@@ -468,24 +433,15 @@ exports[`<TextField /> component should render the TextField with error styles a
 }
 
 .emotion-4 {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  width: 24px;
-  height: 24px;
-  color: #FF4A4A;
-}
-
-.emotion-6 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #D3D4D5;
-  border-bottom: 2px solid #FF4A4A;
+  border-radius: 0px;
+  border: 1px solid #FF4A4A;
   color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -495,14 +451,14 @@ exports[`<TextField /> component should render the TextField with error styles a
   height: 53px;
 }
 
-.emotion-8 {
+.emotion-6 {
   padding-left: 15px;
 }
 
-.emotion-10 {
+.emotion-8 {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -517,43 +473,23 @@ exports[`<TextField /> component should render the TextField with error styles a
       class="emotion-2 emotion-3"
       data-testid="label-field"
       for="My-Input-with-Error-Message"
+      style="color: rgb(255, 74, 74);"
     >
       My Input with Error Message
        
     </label>
-    <span
-      class="emotion-4 emotion-5"
-    >
-      <svg
-        color="#FF4A4A"
-        fill="none"
-        height="24"
-        viewBox="0 0 24 24"
-        width="24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M19.0711 19.0711C17.1957 20.9464 14.6522 22 12 22C9.34784 22 6.8043 20.9464 4.92893 19.0711C3.05357 17.1957 2 14.6522 2 12C2 9.34784 3.05357 6.8043 4.92893 4.92893C6.8043 3.05357 9.34784 2 12 2C14.6522 2 17.1957 3.05357 19.0711 4.92893C20.9464 6.8043 22 9.34784 22 12C22 14.6522 20.9464 17.1957 19.0711 19.0711Z"
-          fill="currentColor"
-        />
-        <path
-          d="M12.8797 13.6863L13.1157 6.48828H10.8997L11.0997 13.6863H12.8797ZM11.9907 17.5123C12.1621 17.5181 12.333 17.4894 12.4932 17.4281C12.6534 17.3667 12.7997 17.2739 12.9234 17.1551C13.0471 17.0362 13.1458 16.8938 13.2136 16.7362C13.2813 16.5786 13.3168 16.4091 13.318 16.2375C13.3191 16.066 13.2859 15.8959 13.2202 15.7375C13.1545 15.579 13.0577 15.4353 12.9356 15.3148C12.8135 15.1944 12.6684 15.0996 12.5091 15.0361C12.3497 14.9727 12.1792 14.9418 12.0077 14.9453C11.6733 14.9521 11.3547 15.0892 11.1198 15.3274C10.8849 15.5656 10.7522 15.886 10.75 16.2205C10.7478 16.555 10.8762 16.8772 11.1079 17.1184C11.3397 17.3597 11.6564 17.501 11.9907 17.5123Z"
-          fill="white"
-        />
-      </svg>
-    </span>
     <input
-      class="emotion-6 emotion-7"
+      class="emotion-4 emotion-5"
       id="My-Input-with-Error-Message"
       name="My-Input-with-Error-Message"
       type="text"
       value="Initial Value"
     />
     <div
-      class="emotion-8 emotion-9"
+      class="emotion-6 emotion-7"
     >
       <span
-        class="emotion-10 emotion-11"
+        class="emotion-8 emotion-9"
         color="error.default"
         data-testid="typography"
       >
@@ -595,14 +531,14 @@ exports[`<TextField /> component should render the TextField with info message 1
 
 .emotion-4 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
+  border-radius: 0px;
   border: 1px solid #D3D4D5;
-  border-bottom: 1px solid #D3D4D5;
   color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -612,23 +548,18 @@ exports[`<TextField /> component should render the TextField with info message 1
   height: 53px;
 }
 
-.emotion-4:focus {
-  border-bottom: 2px solid #00677F;
-  outline: none;
-}
-
 .emotion-6 {
   padding-left: 15px;
 }
 
 .emotion-8 {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #BABBBB;
 }
 
 <div>
@@ -639,6 +570,7 @@ exports[`<TextField /> component should render the TextField with info message 1
       class="emotion-2 emotion-3"
       data-testid="label-field"
       for="My-Input-with-info-message"
+      style="color: rgb(161, 162, 163);"
     >
       My Input with info message
        
@@ -655,7 +587,7 @@ exports[`<TextField /> component should render the TextField with info message 1
     >
       <span
         class="emotion-8 emotion-9"
-        color="content.body"
+        color="content.tertiary"
         data-testid="typography"
       >
         My Infor Message

@@ -2,6 +2,7 @@ import { BaseProps } from '@dt-ui/react-core';
 import { LabelField } from '@dt-ui/react-label-field';
 import { Spinner } from '@dt-ui/react-spinner';
 import { Typography } from '@dt-ui/react-typography';
+import { useTheme } from '@emotion/react';
 import React, {
   useState,
   useEffect,
@@ -11,9 +12,8 @@ import React, {
   ReactNode,
 } from 'react';
 
-import { ErrorIcon } from '../../../core/assets';
-
 import {
+  LabelTextRequiredStyled,
   TextFieldStyled,
   InputFieldStyled,
   InputFieldIconStyled,
@@ -28,10 +28,11 @@ export interface TextFieldProps extends BaseProps {
   hasError?: boolean;
   name?: string;
   required?: boolean;
+  requiredMessage?: string;
   initialValue?: string;
   maxLength?: number;
   inputRef?: MutableRefObject<HTMLInputElement>;
-  message?: string | null;
+  message?: string;
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
   icon?: ReactNode;
 }
@@ -43,6 +44,7 @@ export const TextField = ({
   label,
   name,
   required,
+  requiredMessage,
   style,
   children,
   initialValue,
@@ -58,6 +60,7 @@ export const TextField = ({
   const [hasError, setHasError] = useState(hasErrorProp);
   const [message, setMessage] = useState(messageProp);
   const id = label.replaceAll(' ', '-');
+  const theme = useTheme();
 
   useEffect(() => {
     // Check if there's an initial value coming from props
@@ -73,10 +76,6 @@ export const TextField = ({
   useEffect(() => {
     setHasError(hasErrorProp);
     setMessage(messageProp);
-
-    if (!inputValue) {
-      setHasError(false);
-    }
   }, [hasErrorProp, initialValue, messageProp, inputValue]);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -94,9 +93,9 @@ export const TextField = ({
     if (event.currentTarget.value === '') {
       setActiveInput(false);
 
-      if (required) {
+      if (required && requiredMessage) {
         setHasError(true);
-        setMessage('This field is required.');
+        setMessage(requiredMessage);
       }
     }
 
@@ -109,13 +108,27 @@ export const TextField = ({
 
   return (
     <TextFieldStyled style={style}>
-      <LabelField forId={id} isActive={activeInput} isDisabled={isDisabled}>
-        {label} {required ? '*' : null}
+      <LabelField
+        forId={id}
+        isActive={activeInput}
+        isDisabled={isDisabled}
+        style={{
+          color:
+            hasError && !!inputValue
+              ? theme.palette.error.default
+              : theme.palette.content.secondary,
+        }}
+      >
+        {label}{' '}
+        {required ? (
+          <LabelTextRequiredStyled hasError={hasError}>
+            *
+          </LabelTextRequiredStyled>
+        ) : null}
       </LabelField>
 
-      {hasError || isLoading || !!icon ? (
+      {isLoading || !!icon ? (
         <InputFieldIconStyled>
-          {hasError ? <ErrorIcon /> : null}
           {isLoading ? <Spinner colorScheme='negative' size='small' /> : null}
           {!isLoading && !!icon && icon}
         </InputFieldIconStyled>
@@ -137,9 +150,9 @@ export const TextField = ({
       {message ? (
         <TextFieldMessageStyled>
           <Typography
-            color={hasError ? 'error.default' : 'content.body'}
+            color={hasError ? 'error.default' : 'content.tertiary'}
             element='span'
-            fontStyles='pXXSmall'
+            fontStyles='body3'
           >
             {message}
           </Typography>

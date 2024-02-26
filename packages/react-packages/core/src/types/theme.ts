@@ -264,6 +264,7 @@ export type CustomTheme = {
     checkbox: string;
     modal: string;
     emptyState: string;
+    textField: string;
     dropdown: string;
     message: string;
     progressbar: string;

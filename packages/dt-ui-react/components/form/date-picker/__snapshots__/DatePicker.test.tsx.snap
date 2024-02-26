@@ -31,14 +31,14 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 .emotion-4 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #D3D4D5;
-  border-bottom: 2px solid #FF4A4A;
+  border-radius: 0px;
+  border: 1px solid #FF4A4A;
   color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -128,14 +128,14 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 .emotion-4 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
-  border: 1px solid #D3D4D5;
-  border-bottom: 2px solid #FF4A4A;
+  border-radius: 0px;
+  border: 1px solid #FF4A4A;
   color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -225,14 +225,14 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
 
 .emotion-4 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
+  border-radius: 0px;
   border: 1px solid #D3D4D5;
-  border-bottom: 1px solid #D3D4D5;
   color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -240,11 +240,6 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 53px;
-}
-
-.emotion-4:focus {
-  border-bottom: 2px solid #00677F;
-  outline: none;
 }
 
 <div>

@@ -43,14 +43,14 @@ exports[`<Form /> component renders simple form 1`] = `
 
 .emotion-6 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
+  border-radius: 0px;
   border: 1px solid #D3D4D5;
-  border-bottom: 1px solid #D3D4D5;
   color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -58,11 +58,6 @@ exports[`<Form /> component renders simple form 1`] = `
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 53px;
-}
-
-.emotion-6:focus {
-  border-bottom: 2px solid #00677F;
-  outline: none;
 }
 
 <div>
@@ -77,6 +72,7 @@ exports[`<Form /> component renders simple form 1`] = `
         class="emotion-4 emotion-5"
         data-testid="label-field"
         for="label-1"
+        style="color: rgb(161, 162, 163);"
       >
         label 1
          
@@ -96,6 +92,7 @@ exports[`<Form /> component renders simple form 1`] = `
         class="emotion-4 emotion-5"
         data-testid="label-field"
         for="label-2"
+        style="color: rgb(161, 162, 163);"
       >
         label 2
          
@@ -187,14 +184,14 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
 
 .emotion-10 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
+  border-radius: 0px;
   border: 1px solid #D3D4D5;
-  border-bottom: 1px solid #D3D4D5;
   color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -202,11 +199,6 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 53px;
-}
-
-.emotion-10:focus {
-  border-bottom: 2px solid #00677F;
-  outline: none;
 }
 
 <div>
@@ -228,6 +220,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
             class="emotion-8 emotion-9"
             data-testid="label-field"
             for="label-1"
+            style="color: rgb(161, 162, 163);"
           >
             label 1
              
@@ -319,14 +312,14 @@ exports[`<Form /> component with Form.Group should render a form with display fl
 
 .emotion-10 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
+  border-radius: 0px;
   border: 1px solid #D3D4D5;
-  border-bottom: 1px solid #D3D4D5;
   color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -334,11 +327,6 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 53px;
-}
-
-.emotion-10:focus {
-  border-bottom: 2px solid #00677F;
-  outline: none;
 }
 
 <div>
@@ -359,6 +347,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
             class="emotion-8 emotion-9"
             data-testid="label-field"
             for="label-1"
+            style="color: rgb(161, 162, 163);"
           >
             label 1
              
@@ -378,6 +367,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
             class="emotion-8 emotion-9"
             data-testid="label-field"
             for="label-2"
+            style="color: rgb(161, 162, 163);"
           >
             label 2
              
@@ -495,14 +485,14 @@ exports[`<Form /> component with Form.Group should render a form with group titl
 
 .emotion-14 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   background-color: #FFFFFF;
+  border-radius: 0px;
   border: 1px solid #D3D4D5;
-  border-bottom: 1px solid #D3D4D5;
   color: #636464;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
@@ -510,11 +500,6 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 53px;
-}
-
-.emotion-14:focus {
-  border-bottom: 2px solid #00677F;
-  outline: none;
 }
 
 <div>
@@ -547,6 +532,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
             class="emotion-12 emotion-13"
             data-testid="label-field"
             for="label-1"
+            style="color: rgb(161, 162, 163);"
           >
             label 1
              
@@ -566,6 +552,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
             class="emotion-12 emotion-13"
             data-testid="label-field"
             for="label-2"
+            style="color: rgb(161, 162, 163);"
           >
             label 2
              

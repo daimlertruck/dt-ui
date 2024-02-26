@@ -5,6 +5,7 @@ export const shape = {
   checkbox: radius['none'],
   modal: radius['none'],
   emptyState: radius['none'],
+  textField: radius['none'],
   dropdown: radius['none'],
   message: radius['none'],
   progressbar: radius['none'],

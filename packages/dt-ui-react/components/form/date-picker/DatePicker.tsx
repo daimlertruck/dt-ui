@@ -1,5 +1,10 @@
 import { BaseProps } from '@dt-ui/react-core';
 import { LabelField } from '@dt-ui/react-label-field';
+import {
+  TextFieldStyled,
+  InputFieldStyled,
+  TextFieldMessageStyled,
+} from '@dt-ui/react-text-field';
 import { Typography } from '@dt-ui/react-typography';
 import React, {
   useState,
@@ -8,12 +13,6 @@ import React, {
   useRef,
   InputHTMLAttributes,
 } from 'react';
-
-import {
-  TextFieldStyled,
-  InputFieldStyled,
-  TextFieldMessageStyled,
-} from '../text-field/TextField.styled';
 
 export interface DatePickerProps
   extends BaseProps,

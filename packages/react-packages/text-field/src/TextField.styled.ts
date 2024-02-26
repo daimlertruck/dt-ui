@@ -14,17 +14,17 @@ export const TextFieldStyled = styled.div`
 
 export const InputFieldStyled = styled.input<InputFieldStyledProps>`
   ${({ theme, hasError, disabled }) => `
-    ${theme.fontStyles.pSmall}
+    ${theme.fontStyles.body2}
 
     background-color: ${
       disabled ? theme.palette.base.light : theme.palette.base.default
     };
-    border: 1px solid ${theme.palette.border.default};
+    border-radius: ${theme.shape.textField};
 
     // Change border based on input status
-    border-bottom: ${
+    border: ${
       hasError
-        ? `2px solid ${theme.palette.error.default}`
+        ? `1px solid ${theme.palette.error.default}`
         : `1px solid ${theme.palette.border.default}`
     };
 
@@ -36,17 +36,12 @@ export const InputFieldStyled = styled.input<InputFieldStyledProps>`
     transition: all 0.2s ease-in-out;
     width: 100%;
     height: 53px;
-
-    &:focus {
-      ${
-        !hasError &&
-        `
-          border-bottom: 2px solid ${theme.palette.primary.default};
-          outline: none;
-        `
-      }
-    }
   `}
+`;
+
+export const LabelTextRequiredStyled = styled.span<{ hasError: boolean }>`
+  color: ${({ theme, hasError }) =>
+    hasError ? theme.palette.error.default : theme.palette.content.secondary};
 `;
 
 export const InputFieldIconStyled = styled.span`
@@ -55,7 +50,6 @@ export const InputFieldIconStyled = styled.span`
   top: 15px;
   width: 24px;
   height: 24px;
-  color: ${({ theme }) => theme.palette.error.default};
 `;
 
 export const TextFieldMessageStyled = styled.div`

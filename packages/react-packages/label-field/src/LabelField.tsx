@@ -1,3 +1,5 @@
+import { CSSProperties } from 'react';
+
 import { LabelFieldStyled } from './LabelField.styled';
 
 export interface LabelFieldProps {
@@ -6,6 +8,7 @@ export interface LabelFieldProps {
   isDisabled?: boolean;
   isActive?: boolean;
   dataTestId?: string;
+  style?: CSSProperties;
 }
 
 export const LabelField = ({
@@ -14,6 +17,7 @@ export const LabelField = ({
   forId,
   isActive = false,
   dataTestId,
+  style,
 }: LabelFieldProps) => {
   const testId = dataTestId ?? 'label-field';
 
@@ -23,6 +27,7 @@ export const LabelField = ({
       disabled={isDisabled}
       htmlFor={forId}
       isActive={isActive}
+      style={style}
     >
       {children}
     </LabelFieldStyled>

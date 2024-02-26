@@ -1,4 +1,3 @@
-export * from './text-field';
 export * from './search-field';
 export * from './text-area';
 export * from './toggle';

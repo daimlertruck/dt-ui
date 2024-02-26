@@ -89,7 +89,11 @@ describe('<TextField /> component', () => {
 
   it('renders required text field', () => {
     const { container } = render(
-      <ProvidedTextField label='Required text' required />
+      <ProvidedTextField
+        label='Required text'
+        required
+        requiredMessage='This field is required.'
+      />
     );
 
     expect(container.querySelector('label')).toHaveTextContent(
@@ -122,13 +126,17 @@ describe('<TextField /> component', () => {
   describe('onBlur event', () => {
     it('should have error state with error message', () => {
       const { container } = render(
-        <ProvidedTextField label='Some text' required />
+        <ProvidedTextField
+          label='Some text'
+          required
+          requiredMessage='This field is required.'
+        />
       );
       const input = container.querySelector('input') as HTMLElement;
 
       fireEvent.blur(input, { currentTarget: { value: '' } });
 
-      expect(input).toHaveStyle('border-bottom: 2px solid #FF4A4A');
+      expect(input).toHaveStyle('border: 1px solid #FF4A4A');
       expect(container).toMatchSnapshot();
     });
 

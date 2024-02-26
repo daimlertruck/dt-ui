@@ -47,6 +47,7 @@ export * from '@dt-ui/react-tag';
 export * from '@dt-ui/react-spinner';
 export * from '@dt-ui/react-accordion';
 export * from '@dt-ui/react-checkbox';
+export * from '@dt-ui/react-text-field';
 export * from '@dt-ui/react-label-field';
 export * from '@dt-ui/react-table';
 export * from '@dt-ui/react-typography';

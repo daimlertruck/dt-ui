@@ -1,9 +1,9 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { TextField } from '@dt-ui/react-text-field';
 import { Story } from '@storybook/react';
 import { useState } from 'react';
 
 import { TextArea } from '../text-area';
-import { TextField } from '../text-field';
 import { Toggle } from '../toggle';
 
 import { GroupProps } from './Form';

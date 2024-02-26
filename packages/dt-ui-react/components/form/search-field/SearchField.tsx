@@ -1,7 +1,6 @@
 import { debounce } from '@dt-ui/react-core';
+import { TextField } from '@dt-ui/react-text-field';
 import { ChangeEvent } from 'react';
-
-import { TextField } from '../text-field';
 
 import { SearchFieldIconStyled } from './SearchField.styled';
 

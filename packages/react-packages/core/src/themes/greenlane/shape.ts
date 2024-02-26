@@ -8,6 +8,7 @@ export const shape = {
   dropdown: radius['5xs'],
   emptyState: radius['4xs'],
   message: radius['4xs'],
+  textField: radius['6xs'],
   modal: radius['3xs'],
   progressbar: radius['4xs'],
 };
