@@ -1,3 +1,0 @@
-import{j as a}from"./jsx-runtime-vNq4Oc-g.js";import{D as i}from"./Divider.styled-3Nhqj9z_.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./emotion-styled.browser.esm-Scfyu_ZY.js";import"./extends-E30VzY7q.js";const m=({style:s})=>a.jsx(i,{style:s}),l={title:"Data Display/Divider",component:m},r={args:{}};var t,e,o;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:`{
-  args: {}
-}`,...(o=(e=r.parameters)==null?void 0:e.docs)==null?void 0:o.source}}};const f=["Default"];export{r as Default,f as __namedExportsOrder,l as default};
