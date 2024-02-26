@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import { BaseProps } from '../../types';
 
 import { TableVariant } from './constants';
@@ -63,8 +64,10 @@ export const ColumnHeader = ({ children, variant }: TableVariantProps) => (
   <ColumnHeaderStyled variant={variant}>{children}</ColumnHeaderStyled>
 );
 
-export const DataCell = ({ children, visibility, variant }: DataCellProps) => (
-  <CellStyled isVisible={visibility} variant={variant}>
-    {children}
-  </CellStyled>
+export const DataCell = forwardRef<HTMLTableCellElement, DataCellProps>(
+  ({ children, visibility, variant }: DataCellProps, ref) => (
+    <CellStyled isVisible={visibility} variant={variant} ref={ref}>
+      {children}
+    </CellStyled>
+  )
 );
