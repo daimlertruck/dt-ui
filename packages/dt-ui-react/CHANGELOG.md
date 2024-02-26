@@ -1,5 +1,27 @@
 # @dt-ui/react
 
+## 0.1.0-beta.80
+
+### Minor Changes
+
+- feat: create TruckAPI theme and update default
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-avatar@0.1.0-beta.7
+  - @dt-ui/react-breadcrumb@0.1.0-beta.5
+  - @dt-ui/react-core@0.1.0-beta.5
+  - @dt-ui/react-empty-state@0.1.0-beta.11
+  - @dt-ui/react-message@0.1.0-beta.7
+  - @dt-ui/react-spinner@0.1.0-beta.4
+  - @dt-ui/react-tag@0.1.0-beta.4
+  - @dt-ui/react-toast@0.1.0-beta.9
+  - @dt-ui/react-backdrop@0.1.0-beta.6
+  - @dt-ui/react-divider@0.1.0-beta.3
+  - @dt-ui/react-drawer@0.1.0-beta.4
+  - @dt-ui/react-tooltip@0.1.0-beta.7
+
 ## 0.1.0-beta.79
 
 ### Minor Changes

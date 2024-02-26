@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.5
+
+### Minor Changes
+
+- feat: create TruckAPI theme and update default
+
 ## 0.1.0-beta.4
 
 ### Minor Changes

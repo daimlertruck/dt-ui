@@ -1,5 +1,17 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.5
+
+### Minor Changes
+
+- feat: create TruckAPI theme and update default
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.5
+  - @dt-ui/react-tooltip@0.1.0-beta.7
+
 ## 0.1.0-beta.4
 
 ### Minor Changes
