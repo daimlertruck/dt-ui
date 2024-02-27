@@ -1,5 +1,16 @@
 # @dt-ui/react
 
+## 0.1.0-beta.82
+
+### Minor Changes
+
+- feat: accordion component
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-accordion@0.1.0-beta.1
+
 ## 0.1.0-beta.81
 
 ### Minor Changes
