@@ -48,6 +48,7 @@ export * from '@dt-ui/react-message';
 export * from '@dt-ui/react-breadcrumb';
 export * from '@dt-ui/react-tag';
 export * from '@dt-ui/react-spinner';
+export * from '@dt-ui/react-accordion';
 
 //utils
 export { ListStyleType } from './utils/constants';

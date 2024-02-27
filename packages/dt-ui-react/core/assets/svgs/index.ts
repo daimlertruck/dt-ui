@@ -46,6 +46,8 @@ export { default as SignoutSVG } from './Signout';
 export { default as TeamsSVG } from './Teams';
 export { default as Timeline } from './Timeline';
 export { default as TopicIcon } from './Topic';
+export { default as UnfoldLessIcon } from './UnfoldLess';
+export { default as UnfoldMoreIcon } from './UnfoldMore';
 export { default as UsernameSVG } from './Username';
 export { default as ViewAgendaIcon } from './ViewAgenda';
 export { default as Visibility } from './Visibility';

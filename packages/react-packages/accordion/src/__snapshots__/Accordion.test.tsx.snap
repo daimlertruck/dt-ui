@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProvidedAccordion /> component renders correctly the closed accordion 1`] = `
+.emotion-0 {
+  position: relative;
+  width: 100%;
+  min-width: '248px';
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.emotion-0:hover {
+  background-color: #ECF7FB;
+}
+
+.emotion-2 {
+  padding: 16px;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  .emotion-2 {
+    padding: 24px;
+    padding-bottom: 0;
+  }
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+
+@media only screen and (min-width: 600px) {
+  .emotion-4 {
+    padding-bottom: 24px;
+  }
+}
+
+.emotion-6 {
+  width: 100%;
+}
+
+.emotion-8 {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  color: #A1A2A3;
+}
+
+.emotion-10 {
+  border: 0px;
+  border-top: 1px #D3D4D5 solid;
+  margin-block: 12px;
+  width: 100%;
+}
+
+.emotion-12 {
+  padding: calc(16px + 16px);
+  padding-top: calc(0 + 16px);
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .emotion-12 {
+    padding: calc(24px + 16px);
+  }
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="accordion-container"
+  >
+    <header
+      aria-disabled="false"
+      class="emotion-2 emotion-3"
+      data-testid="accordion-header"
+      role="button"
+      tabindex="0"
+    >
+      <div
+        class="emotion-4 emotion-5"
+      >
+        <div
+          class="emotion-6 emotion-7"
+        >
+          Header Content
+        </div>
+        <div
+          class="emotion-8 emotion-9"
+        >
+          <svg
+            fill="none"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M11.9999 5.83L15.1699 9L16.5799 7.59L11.9999 3L7.40991 7.59L8.82991 9L11.9999 5.83ZM11.9999 18.17L8.82991 15L7.41991 16.41L11.9999 21L16.5899 16.41L15.1699 15L11.9999 18.17Z"
+                fill="currentColor"
+                id="Vector"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <hr
+        class="emotion-10 emotion-11"
+        style="margin: -1px 0px 0px 0px;"
+      />
+    </header>
+    <div
+      class="emotion-12 emotion-13"
+      data-testid="accordion-body"
+    >
+      <div>
+        Accordion Body
+      </div>
+    </div>
+  </div>
+</div>
+`;

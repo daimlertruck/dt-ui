@@ -47,6 +47,10 @@ const config: StorybookConfig = {
     if (config.resolve) {
       const components = [
         'avatar',
+        'accordion',
+        'avatar',
+        'breadcrumb',
+        'tag',
         'backdrop',
         'breadcrumb',
         'box',
