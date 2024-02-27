@@ -3,7 +3,7 @@ import { Tag, TagColor } from '@dt-ui/react-tag';
 import { Tooltip } from '@dt-ui/react-tooltip';
 import { Meta, StoryObj } from '@storybook/react';
 
-import { InfoOutlineIcon } from '../../core';
+import { InfoOutlineIcon } from '../../../dt-ui-react/core';
 
 import { TableHeadProps } from './components';
 import { default as Table, TableProps } from './Table';

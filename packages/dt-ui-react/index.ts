@@ -13,7 +13,6 @@ export * from './components/profile';
 export * from './components/nav-item';
 export * from './components/grid';
 export * from './components/card';
-export * from './components/table';
 export * from './components/form';
 export * from './components/footer';
 export * from './components/link';
@@ -50,6 +49,7 @@ export * from '@dt-ui/react-spinner';
 export * from '@dt-ui/react-accordion';
 export * from '@dt-ui/react-checkbox';
 export * from '@dt-ui/react-label-field';
+export * from '@dt-ui/react-table';
 
 //utils
 export { ListStyleType } from './utils/constants';
