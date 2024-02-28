@@ -198,7 +198,7 @@ Components are independent packages that should be created in the workspace `pac
 To facilitate this process and keep consistency across all components, please make use of the following script:
 
 ```bash
-yarn component:create
+yarn generate:component
 
 ? What is the name of the package without suffix "@dt-ui/react-" e.g, box, accordion, empty-state.
 ```

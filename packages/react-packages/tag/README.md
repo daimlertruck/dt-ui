@@ -8,9 +8,7 @@ Tags can be used to display states (Active, Cancelled...) in lists, tables, etc.
 import { Tag } from '@dt-ui/react-tag';
 
 export const App = () => {
-  return (
-    <Tag>Active</Tag>
-  );
+  return <Tag>Active</Tag>;
 };
 ```
 
@@ -29,7 +27,7 @@ export const App = () => {
 | `isDisabled`  | `boolean`    | false   | Specifies if the element should be disabled                                                                                                                  |
 | `isClickable` | `boolean`    | false   | Specifies if the element should have the clickable styles                                                                                                    |
 | `onClick`     | `function`   | -       | The triggered function when the tag is clicked. This also applies the clickable styles. If the component has the onClose property this will not be triggered |
-| `onClose`     | `function`   | -       | The triggered function when closing the tag
+| `onClose`     | `function`   | -       | The triggered function when closing the tag                                                                                                                  |
 
 ## Stack
 
@@ -49,7 +47,9 @@ export const App = () => {
 - `yarn build` - Build the package
 - `yarn dev` - Run the package locally
 - `yarn lint` - Lint all files within this package
-- `yarn test` Run all unit tests
+- `yarn test` - Run all unit tests
+- `yarn test:report` - Open the test coverage report
+- `yarn test:update:snapshot` - Run all unit tests and update the snapshot
 
 ## Compilation
 

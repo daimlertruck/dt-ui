@@ -38,7 +38,9 @@ export const App = () => {
 - `yarn build` - Build the package
 - `yarn dev` - Run the package locally
 - `yarn lint` - Lint all files within this package
-- `yarn test` Run all unit tests
+- `yarn test` - Run all unit tests
+- `yarn test:report` - Open the test coverage report
+- `yarn test:update:snapshot` - Run all unit tests and update the snapshot
 
 ## Compilation
 

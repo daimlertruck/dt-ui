@@ -14,7 +14,9 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "lint": "eslint --cache .",
-    "test": "jest"
+    "test": "jest",
+    "test:report": "open ./jest-coverage/lcov-report/index.html",
+    "test:update:snapshot": "jest -u"
   },
   "dependencies": {
     "@dt-ui/icons": "0.1.0-beta.1",
