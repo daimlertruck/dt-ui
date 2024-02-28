@@ -1,0 +1,5 @@
+import{j as m}from"./jsx-runtime-vNq4Oc-g.js";import{T as p}from"./TextArea-ZIA0R4Is.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./Typography-44N2ASWu.js";import"./index-5j7WHYEJ.js";import"./emotion-react.browser.esm-OUs2k2GK.js";import"./emotion-element-c39617d8.browser.esm-4Kx8mvQ5.js";import"./extends-E30VzY7q.js";import"./index-jmm5gWkb.js";import"./index-XRl7aEt-.js";import"./util-p6oSlpjm.js";import"./index-5tMk2lpP.js";import"./emotion-styled.browser.esm-QTPHyGVR.js";import"./LabelField-OWWqgjhK.js";const E={title:"Data Display/form/TextArea",component:p},s=({...a})=>m.jsx(p,{...a}),r=s.bind({});r.args={label:"App description",maxLength:120};var t,o,e;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:`({
+  ...props
+}) => {
+  return <TextArea {...props} />;
+}`,...(e=(o=r.parameters)==null?void 0:o.docs)==null?void 0:e.source}}};const h=["Default"];export{r as Default,h as __namedExportsOrder,E as default};
