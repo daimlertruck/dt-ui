@@ -8,15 +8,12 @@ import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 import {
   theme as defaultTheme,
   greenlaneTheme,
-  globalStyles,
   truckAPITheme,
-  Provider
+  Provider,
 } from '@dt-ui/react-core';
 import { webFonts } from './webFonts';
 
-const GlobalStyles = () => (
-  <Global styles={[globalStyles(defaultTheme), ...webFonts]} />
-);
+const GlobalStyles = () => <Global styles={[...webFonts]} />;
 
 export const decorators = [
   withThemeFromJSXProvider({
