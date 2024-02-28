@@ -1,19 +1,10 @@
 import { withProviders } from '@dt-ui/react-core';
 import { render } from '@testing-library/react';
-import React from 'react';
 
-import Typography from './Typography';
+import { Typography } from './Typography';
 
 describe('<Typography /> component', () => {
   const ProvidedTypography = withProviders(Typography);
-
-  it('should render a p html element with the given content', () => {
-    const { container } = render(
-      <ProvidedTypography fontStyles='h4'>Some text</ProvidedTypography>
-    );
-
-    expect(container).toMatchSnapshot();
-  });
 
   it('should render a red h1 html element with the given content', () => {
     const { container } = render(

@@ -1,7 +1,5 @@
-import { Theme, PaletteKeys } from '@dt-ui/react-core';
+import { Theme, PaletteKeys, getContextualColor } from '@dt-ui/react-core';
 import styled from '@emotion/styled';
-
-import { getContextualColor } from '../../utils';
 
 interface TypographyStyledProps {
   color: keyof Theme['colors'] | PaletteKeys | 'unset' | 'inherit';

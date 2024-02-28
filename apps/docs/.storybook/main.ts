@@ -47,7 +47,8 @@ const config: StorybookConfig = {
     if (config.resolve) {
       const components = [
         'label-field',
-        'table', 
+        'table',
+        'typography',
         'avatar',
         'accordion',
         'avatar',

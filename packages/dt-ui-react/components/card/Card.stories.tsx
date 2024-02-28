@@ -1,6 +1,5 @@
+import { Typography } from '@dt-ui/react-typography';
 import { Story } from '@storybook/react';
-
-import { Typography } from '../typography';
 
 import { Card } from './Card';
 

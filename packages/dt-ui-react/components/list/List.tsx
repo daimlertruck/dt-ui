@@ -1,7 +1,7 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { Typography } from '@dt-ui/react-typography';
 
 import { ListStyleType } from '../../utils';
-import { Typography } from '../typography';
 
 import { CounterListItemStyled, ListStyled } from './List.styled';
 

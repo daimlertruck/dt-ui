@@ -1,6 +1,6 @@
 {
-  "name": "@dt-ui/react-message",
-  "version": "0.1.0-beta.13",
+  "name": "@dt-ui/react-typography",
+  "version": "0.1.0-beta.0",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -14,13 +14,10 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "lint": "eslint --cache .",
-    "test": "jest",
-    "test:report": "open ./jest-coverage/lcov-report/index.html",
-    "test:update:snapshot": "jest -u"
+    "test": "jest"
   },
   "dependencies": {
-    "@dt-ui/react-core": "0.1.0-beta.10",
-    "@dt-ui/react-typography": "0.1.0-beta.0"
+    "@dt-ui/react-core": "0.1.0-beta.10"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",

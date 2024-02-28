@@ -20,7 +20,8 @@
   },
   "dependencies": {
     "@dt-ui/react-core": "0.1.0-beta.10",
-    "@dt-ui/react-box": "0.1.0-beta.7"
+    "@dt-ui/react-box": "0.1.0-beta.7",
+    "@dt-ui/react-typography": "0.1.0-beta.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",

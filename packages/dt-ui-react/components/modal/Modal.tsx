@@ -1,11 +1,11 @@
 import { Backdrop, BackdropProps } from '@dt-ui/react-backdrop';
 import { BaseProps, useClickOutside, Portal } from '@dt-ui/react-core';
 import { Spinner } from '@dt-ui/react-spinner';
+import { Typography } from '@dt-ui/react-typography';
 import { forwardRef, RefObject, useRef } from 'react';
 
 import { CloseIcon } from '../../core/assets';
 import { IconButton } from '../buttons';
-import { Typography } from '../typography';
 
 import {
   ContentStyled,

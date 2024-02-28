@@ -1,4 +1,5 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { Typography } from '@dt-ui/react-typography';
 import { useTheme } from '@emotion/react';
 import { Children, ReactElement, useEffect } from 'react';
 
@@ -6,7 +7,6 @@ import {
   OutlinedArrowDropDown,
   OutlinedArrowDropUp,
 } from '../../../../core/assets';
-import { Typography } from '../../../typography';
 import { useDropdownContext } from '../../context';
 import { DropdownMenu } from '../menu/DropdownMenu';
 

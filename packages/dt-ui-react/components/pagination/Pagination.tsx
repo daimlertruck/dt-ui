@@ -1,8 +1,8 @@
 import { BaseProps, debounce } from '@dt-ui/react-core';
+import { Typography } from '@dt-ui/react-typography';
 import React, { useEffect, useMemo, useState } from 'react';
 
 import { ArrowLeftIcon, ArrowRightIcon } from '../../core';
-import { Typography } from '../typography';
 
 import {
   PaginationStyled,

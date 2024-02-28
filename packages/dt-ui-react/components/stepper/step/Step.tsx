@@ -1,10 +1,10 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { Typography } from '@dt-ui/react-typography';
 import { useTheme } from '@emotion/react';
 import { Children, cloneElement, ReactElement, useMemo } from 'react';
 
 import { Check } from '../../../core';
 import { Counter } from '../../counter';
-import { Typography } from '../../typography';
 
 import { LabelStyled, StepStyled } from './Step.styled';
 

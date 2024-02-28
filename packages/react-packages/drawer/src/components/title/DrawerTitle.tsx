@@ -1,4 +1,4 @@
-import { Typography } from '../../../../../dt-ui-react/components/typography';
+import { Typography } from '@dt-ui/react-typography';
 
 export interface DrawerTitleProps {
   title: string;

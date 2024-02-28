@@ -1,5 +1,6 @@
+import { Typography } from '@dt-ui/react-typography';
+
 import { CheckCircleOutlineIcon, ErrorOutlineIcon } from '../../core';
-import { Typography } from '../typography';
 
 import { MAX_PROGRESS_BAR_VALUE, MIN_PROGRESS_BAR_VALUE } from './constants';
 import {

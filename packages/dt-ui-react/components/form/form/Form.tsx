@@ -1,9 +1,9 @@
 import { BaseProps } from '@dt-ui/react-core';
 import { OTooltipDirection, Tooltip } from '@dt-ui/react-tooltip';
+import { Typography } from '@dt-ui/react-typography';
 import { FormEvent, ReactNode } from 'react';
 
 import { InfoIcon } from '../../../core';
-import { Typography } from '../../typography';
 
 import {
   FormStyled,

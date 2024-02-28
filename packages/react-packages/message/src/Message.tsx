@@ -1,7 +1,7 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { Typography } from '@dt-ui/react-typography';
 import { SVGProps, ReactElement } from 'react';
 
-import { Typography } from '../../../dt-ui-react/components/typography';
 import {
   CheckCircleIcon,
   CloseIcon,

@@ -21,7 +21,6 @@ export * from './components/counter';
 export * from './components/list';
 export * from './components/description-list';
 export * from './components/pagination';
-export * from './components/typography';
 export * from './components/tabs';
 export * from './components/stepper';
 export * from './components/radio';
@@ -50,6 +49,7 @@ export * from '@dt-ui/react-accordion';
 export * from '@dt-ui/react-checkbox';
 export * from '@dt-ui/react-label-field';
 export * from '@dt-ui/react-table';
+export * from '@dt-ui/react-typography';
 
 //utils
 export { ListStyleType } from './utils/constants';

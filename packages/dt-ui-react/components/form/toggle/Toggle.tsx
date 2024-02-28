@@ -1,7 +1,6 @@
 import { BaseProps, Colors } from '@dt-ui/react-core';
+import { Typography } from '@dt-ui/react-typography';
 import { ChangeEvent } from 'react';
-
-import { Typography } from '../../typography';
 
 import {
   ToggleCheckBoxStyled,

@@ -7,4 +7,5 @@ export type Elements =
   | 'h6'
   | 'p'
   | 'span'
+  | 'label'
   | 'a';

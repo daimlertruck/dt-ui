@@ -1,9 +1,8 @@
-import { BaseProps, Theme, PaletteKeys } from '@dt-ui/react-core';
+import { BaseProps, PaletteKeys, Theme } from '@dt-ui/react-core';
 import { useTheme } from '@emotion/react';
 import { forwardRef } from 'react';
 
-import { Elements } from '../../types';
-
+import { Elements } from './types';
 import { TypographyStyled } from './Typography.styled';
 
 export interface TypographyProps extends BaseProps {
@@ -12,7 +11,7 @@ export interface TypographyProps extends BaseProps {
   element?: Elements;
 }
 
-const Typography = forwardRef<HTMLParagraphElement, TypographyProps>(
+export const Typography = forwardRef<HTMLParagraphElement, TypographyProps>(
   (
     {
       children,
@@ -42,5 +41,3 @@ const Typography = forwardRef<HTMLParagraphElement, TypographyProps>(
     );
   }
 );
-
-export default Typography;
