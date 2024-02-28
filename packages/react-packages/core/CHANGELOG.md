@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.7
+
+### Minor Changes
+
+- feat: add contextual color add content tertiary to palette
+
 ## 0.1.0-beta.6
 
 ### Minor Changes

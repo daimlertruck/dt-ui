@@ -1,5 +1,16 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.13
+
+### Minor Changes
+
+- feat: add contextual color add content tertiary to palette
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.7
+
 ## 0.1.0-beta.12
 
 ### Minor Changes

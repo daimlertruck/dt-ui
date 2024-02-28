@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-tooltip",
-  "version": "0.1.0-beta.8",
+  "version": "0.1.0-beta.9",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -17,7 +17,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@dt-ui/react-core": "0.1.0-beta.6"
+    "@dt-ui/react-core": "0.1.0-beta.7"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
