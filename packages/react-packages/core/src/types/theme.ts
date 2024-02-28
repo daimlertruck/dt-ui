@@ -14,6 +14,7 @@ export type CustomTheme = {
       heading: string;
       body: string;
       secondary: string;
+      tertiary: string;
       disabled: string;
       contrast: string;
     };
