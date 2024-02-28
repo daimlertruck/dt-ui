@@ -1,5 +1,26 @@
 # @dt-ui/react
 
+## 0.1.0-beta.84
+
+### Patch Changes
+
+- chore: move util functions to the core
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.8
+  - @dt-ui/react-accordion@0.1.0-beta.3
+  - @dt-ui/react-avatar@0.1.0-beta.10
+  - @dt-ui/react-backdrop@0.1.0-beta.9
+  - @dt-ui/react-breadcrumb@0.1.0-beta.8
+  - @dt-ui/react-divider@0.1.0-beta.6
+  - @dt-ui/react-drawer@0.1.0-beta.7
+  - @dt-ui/react-empty-state@0.1.0-beta.14
+  - @dt-ui/react-icon@0.1.0-beta.3
+  - @dt-ui/react-message@0.1.0-beta.10
+  - @dt-ui/react-spinner@0.1.0-beta.7
+  - @dt-ui/react-tag@0.1.0-beta.7
+  - @dt-ui/react-toast@0.1.0-beta.12
+  - @dt-ui/react-tooltip@0.1.0-beta.10
+
 ## 0.1.0-beta.83
 
 ### Minor Changes

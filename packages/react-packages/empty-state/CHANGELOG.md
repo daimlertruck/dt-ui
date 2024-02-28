@@ -1,5 +1,13 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.14
+
+### Patch Changes
+
+- chore: move util functions to the core
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.8
+
 ## 0.1.0-beta.13
 
 ### Minor Changes

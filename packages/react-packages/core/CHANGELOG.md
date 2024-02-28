@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.8
+
+### Patch Changes
+
+- chore: move util functions to the core
+
 ## 0.1.0-beta.7
 
 ### Minor Changes

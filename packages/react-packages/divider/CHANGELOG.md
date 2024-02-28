@@ -1,5 +1,13 @@
 # @dt-ui/react-divider
 
+## 0.1.0-beta.6
+
+### Patch Changes
+
+- chore: move util functions to the core
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.8
+
 ## 0.1.0-beta.5
 
 ### Minor Changes

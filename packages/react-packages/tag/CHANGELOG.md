@@ -1,5 +1,13 @@
 # @dt-ui/react-tag
 
+## 0.1.0-beta.7
+
+### Patch Changes
+
+- chore: move util functions to the core
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.8
+
 ## 0.1.0-beta.6
 
 ### Minor Changes

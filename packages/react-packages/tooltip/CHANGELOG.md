@@ -1,5 +1,13 @@
 # @dt-ui/react-tooltip
 
+## 0.1.0-beta.10
+
+### Patch Changes
+
+- chore: move util functions to the core
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.8
+
 ## 0.1.0-beta.9
 
 ### Minor Changes

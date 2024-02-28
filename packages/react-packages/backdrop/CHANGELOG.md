@@ -1,5 +1,13 @@
 # @dt-ui/react-backdrop
 
+## 0.1.0-beta.9
+
+### Patch Changes
+
+- chore: move util functions to the core
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.8
+
 ## 0.1.0-beta.8
 
 ### Minor Changes
