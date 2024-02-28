@@ -17,4 +17,5 @@ export {
   useClickOutside,
   withProviders,
   renderStatic,
+  getContextualColor,
 } from './utils';

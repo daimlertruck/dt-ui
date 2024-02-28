@@ -1,6 +1,5 @@
-import { theme } from '@dt-ui/react-core';
-
-import { getContextualColor } from '../theme';
+import { theme } from '../../themes';
+import { getContextualColor } from '../getContextualColor';
 
 describe('getContextualColor', () => {
   it('should return the correct color for a valid PaletteKeys input', () => {

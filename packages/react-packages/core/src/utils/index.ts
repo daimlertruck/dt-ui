@@ -4,3 +4,4 @@ export { default as useClickOutside } from './useClickOutside';
 export { getTextStyles } from './typography';
 export { withProviders } from './testingUtils';
 export { renderStatic } from './renderer';
+export { getContextualColor } from './getContextualColor';
