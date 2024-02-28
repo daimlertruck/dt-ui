@@ -1,8 +1,8 @@
 import { theme, withProviders } from '@dt-ui/react-core';
-import { render, screen, within } from '@testing-library/react';
+import { render, screen, within, waitFor } from '@testing-library/react';
 import '@emotion/jest';
 
-import { TableHeadProps } from './components';
+import { TableHeadProps, TableDataCellProps } from './components';
 import { default as Table, TableProps } from './Table';
 
 const COLUMNS = ['Column 1', 'Column 2', 'Column 3', 'Column 4'];
@@ -30,9 +30,16 @@ const ROWS = [
 const ProvidedTable = withProviders(Table);
 
 const renderTableWithProps = (
-  { isFixed, hasFixedHeader }: TableProps & TableHeadProps = {
+  {
+    isFixed,
+    hasFixedHeader,
+    textAlign,
+    columnWidth,
+  }: TableProps & TableHeadProps & TableDataCellProps = {
     isFixed: false,
     hasFixedHeader: false,
+    textAlign: 'left',
+    columnWidth: '',
   }
 ) => {
   return render(
@@ -40,7 +47,10 @@ const renderTableWithProps = (
       <Table.Head hasFixedHeader={hasFixedHeader}>
         <Table.Row>
           {COLUMNS.map((column: string) => (
-            <Table.ColumnHeader key={`column-header-${column}`}>
+            <Table.ColumnHeader
+              key={`column-header-${column}`}
+              textAlign={textAlign}
+            >
               {column}
             </Table.ColumnHeader>
           ))}
@@ -50,7 +60,11 @@ const renderTableWithProps = (
         {ROWS.map((row: string[]) => (
           <Table.Row key={row.toString()}>
             {row.map((content: string, i: number) => (
-              <Table.DataCell key={`column-${COLUMNS[i]}-${content}`}>
+              <Table.DataCell
+                columnWidth={columnWidth}
+                key={`column-${COLUMNS[i]}-${content}`}
+                textAlign={textAlign}
+              >
                 {content}
               </Table.DataCell>
             ))}
@@ -100,6 +114,32 @@ describe('<Table /> component', () => {
 
     expect(theadElement).toHaveStyleRule('position', 'sticky', {
       media: `(min-width: ${theme.breakpoints.m})`,
+    });
+  });
+
+  it('applies custom column Width to table data cell', () => {
+    renderTableWithProps({ columnWidth: '20px' });
+
+    const tdElements = screen.getAllByTestId('table-data-cell');
+
+    tdElements.map(async (e) => {
+      await waitFor(() => expect(e).toHaveStyleRule('max-width', '20px'));
+    });
+  });
+
+  it('applies the expected styles when Table has text aligned center', () => {
+    renderTableWithProps({ textAlign: 'center' });
+
+    const thElements = screen.getAllByTestId('table-column-header');
+    const tdElements = screen.getAllByTestId('table-data-cell');
+
+    expect(thElements).toHaveLength(4);
+    thElements.map((e) => {
+      expect(e).toHaveStyleRule('text-align', 'center');
+    });
+
+    tdElements.map((e) => {
+      expect(e).toHaveStyleRule('text-align', 'center');
     });
   });
 
