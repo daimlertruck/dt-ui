@@ -51,6 +51,7 @@ const config: StorybookConfig = {
         'accordion',
         'avatar',
         'breadcrumb',
+        'checkbox',
         'tag',
         'backdrop',
         'breadcrumb',

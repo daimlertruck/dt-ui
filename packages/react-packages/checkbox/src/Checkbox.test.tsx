@@ -1,8 +1,7 @@
 import { withProviders } from '@dt-ui/react-core';
-import { render } from '@testing-library/react';
-import React from 'react';
+import { fireEvent, render } from '@testing-library/react';
 
-import { Checkbox } from '.';
+import { Checkbox } from './Checkbox';
 
 describe('<CheckBox /> component', () => {
   const ProvidedCheckBox = withProviders(Checkbox);
@@ -38,10 +37,36 @@ describe('<CheckBox /> component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('renders checkbox disabled', () => {
-    const { container } = render(
-      <ProvidedCheckBox isChecked={false} isDisabled onChange={() => null} />
+  it('onChange is triggered', () => {
+    const onChangeMock = jest.fn();
+    const { getByRole } = render(
+      <ProvidedCheckBox
+        isChecked={false}
+        isDisabled={false}
+        onChange={onChangeMock}
+      />
     );
+    const messageCloseButton = getByRole('checkbox');
+
+    expect(messageCloseButton).toBeInTheDocument();
+
+    fireEvent.click(messageCloseButton);
+
+    expect(onChangeMock).toHaveBeenCalledTimes(1);
+  });
+
+  it('renders checkbox disabled', () => {
+    const onChangeMock = jest.fn();
+    const { container, getByRole } = render(
+      <ProvidedCheckBox isChecked={false} isDisabled onChange={onChangeMock} />
+    );
+    const messageCloseButton = getByRole('checkbox');
+
+    expect(messageCloseButton).toBeInTheDocument();
+
+    fireEvent.click(messageCloseButton);
+
+    expect(onChangeMock).toHaveBeenCalledTimes(0);
     expect(container).toMatchSnapshot();
   });
 });

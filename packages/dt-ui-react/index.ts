@@ -25,7 +25,6 @@ export * from './components/pagination';
 export * from './components/typography';
 export * from './components/tabs';
 export * from './components/stepper';
-export * from './components/checkbox';
 export * from './components/radio';
 export * from './components/multi-select';
 export * from './components/progress-bar';
@@ -49,6 +48,7 @@ export * from '@dt-ui/react-breadcrumb';
 export * from '@dt-ui/react-tag';
 export * from '@dt-ui/react-spinner';
 export * from '@dt-ui/react-accordion';
+export * from '@dt-ui/react-checkbox';
 export * from '@dt-ui/react-label-field';
 
 //utils

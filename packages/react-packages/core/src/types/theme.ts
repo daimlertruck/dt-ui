@@ -261,6 +261,7 @@ export type CustomTheme = {
   };
   shape: {
     button: string;
+    checkbox: string;
     modal: string;
     emptyState: string;
     dropdown: string;
