@@ -1,5 +1,13 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.9
+
+### Patch Changes
+
+- chore: update component generator and lint fixes
+- Updated dependencies
+  - @dt-ui/react-tooltip@0.1.0-beta.11
+
 ## 0.1.0-beta.8
 
 ### Patch Changes

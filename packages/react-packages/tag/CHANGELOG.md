@@ -1,5 +1,11 @@
 # @dt-ui/react-tag
 
+## 0.1.0-beta.8
+
+### Patch Changes
+
+- chore: update component generator and lint fixes
+
 ## 0.1.0-beta.7
 
 ### Patch Changes

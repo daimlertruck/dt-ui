@@ -1,5 +1,11 @@
 # @dt-ui/react-divider
 
+## 0.1.0-beta.7
+
+### Patch Changes
+
+- chore: update component generator and lint fixes
+
 ## 0.1.0-beta.6
 
 ### Patch Changes

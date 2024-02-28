@@ -1,5 +1,13 @@
 # @dt-ui/react-spinner
 
+## 0.1.0-beta.8
+
+### Patch Changes
+
+- chore: update component generator and lint fixes
+- Updated dependencies
+  - @dt-ui/react-box@0.1.0-beta.7
+
 ## 0.1.0-beta.7
 
 ### Patch Changes

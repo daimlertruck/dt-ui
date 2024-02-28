@@ -1,5 +1,13 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.4
+
+### Patch Changes
+
+- chore: update component generator and lint fixes
+- Updated dependencies
+  - @dt-ui/react-divider@0.1.0-beta.7
+
 ## 0.1.0-beta.3
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @dt-ui/react-icon
 
+## 0.1.0-beta.4
+
+### Patch Changes
+
+- chore: update component generator and lint fixes
+
 ## 0.1.0-beta.3
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.15
+
+### Patch Changes
+
+- chore: update component generator and lint fixes
+
 ## 0.1.0-beta.14
 
 ### Patch Changes

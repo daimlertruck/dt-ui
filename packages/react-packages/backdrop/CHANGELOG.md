@@ -1,5 +1,11 @@
 # @dt-ui/react-backdrop
 
+## 0.1.0-beta.10
+
+### Patch Changes
+
+- chore: update component generator and lint fixes
+
 ## 0.1.0-beta.9
 
 ### Patch Changes

@@ -1,5 +1,26 @@
 # @dt-ui/react
 
+## 0.1.0-beta.85
+
+### Patch Changes
+
+- chore: update component generator and lint fixes
+- Updated dependencies
+  - @dt-ui/react-accordion@0.1.0-beta.4
+  - @dt-ui/react-avatar@0.1.0-beta.11
+  - @dt-ui/react-backdrop@0.1.0-beta.10
+  - @dt-ui/react-box@0.1.0-beta.7
+  - @dt-ui/react-breadcrumb@0.1.0-beta.9
+  - @dt-ui/react-divider@0.1.0-beta.7
+  - @dt-ui/react-drawer@0.1.0-beta.8
+  - @dt-ui/react-empty-state@0.1.0-beta.15
+  - @dt-ui/react-icon@0.1.0-beta.4
+  - @dt-ui/react-message@0.1.0-beta.11
+  - @dt-ui/react-spinner@0.1.0-beta.8
+  - @dt-ui/react-tag@0.1.0-beta.8
+  - @dt-ui/react-toast@0.1.0-beta.13
+  - @dt-ui/react-tooltip@0.1.0-beta.11
+
 ## 0.1.0-beta.84
 
 ### Patch Changes

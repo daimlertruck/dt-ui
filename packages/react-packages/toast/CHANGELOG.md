@@ -1,5 +1,11 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.13
+
+### Patch Changes
+
+- chore: update component generator and lint fixes
+
 ## 0.1.0-beta.12
 
 ### Patch Changes
