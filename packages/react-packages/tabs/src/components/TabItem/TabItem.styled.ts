@@ -8,6 +8,7 @@ interface TabItemStyledProps {
 }
 
 export const TabItemStyled = styled.button<TabItemStyledProps>`
+  min-height: 50px;
   border: none;
   display: flex;
   align-items: center;

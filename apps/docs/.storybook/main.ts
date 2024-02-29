@@ -65,6 +65,7 @@ const config: StorybookConfig = {
         'empty-state',
         'icon',
         'message',
+        'tabs',
         'tag',
         'toast',
         'tooltip',

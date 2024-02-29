@@ -1,0 +1,274 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tabs /> component should match the snapshot by displaying book variant 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-2 {
+  min-height: 50px;
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  background-color: transparent;
+  border-bottom: 2px solid #00677F;
+  color: #00677F;
+  padding: 12px 32px;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  min-height: 50px;
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  background-color: transparent;
+  border-bottom: 1px solid #D3D4D5;
+  color: #636464;
+  padding: 12px 32px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.emotion-4:hover {
+  color: #004355;
+}
+
+.emotion-8 {
+  min-height: 50px;
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  background-color: transparent;
+  border-bottom: 1px solid #D3D4D5;
+  color: #BABBBB;
+  padding: 12px 32px;
+  cursor: not-allowed;
+  white-space: nowrap;
+  false opacity: 0.4;
+}
+
+.emotion-8:active {
+  pointer-events: none;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="tabs"
+    role="tablist"
+  >
+    <button
+      class="emotion-2 emotion-3"
+      data-testid="tab-item-first"
+      role="tab"
+      tabindex="0"
+    >
+      Tab 1
+    </button>
+    <button
+      class="emotion-4 emotion-3"
+      data-testid="tab-item-second"
+      role="tab"
+      tabindex="-1"
+    >
+      Tab 2
+    </button>
+    <button
+      class="emotion-4 emotion-3"
+      data-testid="tab-item-third"
+      role="tab"
+      tabindex="-1"
+    >
+      Tab 3
+    </button>
+    <button
+      class="emotion-8 emotion-3"
+      data-testid="tab-item-fourth"
+      disabled=""
+      role="tab"
+      tabindex="-1"
+    >
+      Tab 4
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Tabs /> component should match the snapshot by displaying boxed variant 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-2 {
+  min-height: 50px;
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  background: #FFFFFF;
+  color: #00677F;
+  padding: 12px 32px;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  min-height: 50px;
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  background: transparent;
+  color: #636464;
+  padding: 12px 32px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.emotion-4:hover {
+  background: #FFFFFF;
+}
+
+.emotion-8 {
+  min-height: 50px;
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  background: transparent;
+  color: #BABBBB;
+  padding: 12px 32px;
+  cursor: not-allowed;
+  white-space: nowrap;
+  false opacity: 0.4;
+}
+
+.emotion-8:active {
+  pointer-events: none;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="tabs"
+    role="tablist"
+  >
+    <button
+      class="emotion-2 emotion-3"
+      data-testid="tab-item-first"
+      role="tab"
+      tabindex="0"
+    >
+      Tab 1
+    </button>
+    <button
+      class="emotion-4 emotion-3"
+      data-testid="tab-item-second"
+      role="tab"
+      tabindex="-1"
+    >
+      Tab 2
+    </button>
+    <button
+      class="emotion-4 emotion-3"
+      data-testid="tab-item-third"
+      role="tab"
+      tabindex="-1"
+    >
+      Tab 3
+    </button>
+    <button
+      class="emotion-8 emotion-3"
+      data-testid="tab-item-fourth"
+      disabled=""
+      role="tab"
+      tabindex="-1"
+    >
+      Tab 4
+    </button>
+  </div>
+</div>
+`;

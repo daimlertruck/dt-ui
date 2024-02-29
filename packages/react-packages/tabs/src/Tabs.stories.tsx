@@ -1,8 +1,8 @@
 import { Box } from '@dt-ui/react-box';
+import { Icon } from '@dt-ui/react-icon';
 import { Meta, StoryFn } from '@storybook/react';
 
-import { MenuIcon } from '../../core';
-import { Counter } from '../counter';
+import { Counter } from '../../../dt-ui-react/components/counter';
 
 import { useTabs } from './hooks';
 import { Tabs, TabsProps } from './Tabs';
@@ -18,7 +18,7 @@ const Template: StoryFn<TabsStoryProps> = ({ tabName, variant }) => {
     <Tabs activeTab={activeTab} variant={variant}>
       <Tabs.Item handleChange={handleChange} index='first'>
         <Box style={{ flexDirection: 'row', gap: 4 }}>
-          <MenuIcon />
+          <Icon code='menu' color='inherit' />
           {tabName}
           <Counter>2</Counter>
         </Box>
