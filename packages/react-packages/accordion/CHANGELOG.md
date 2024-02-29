@@ -1,5 +1,14 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.5
+
+### Patch Changes
+
+- fix(icons): export css and update imports on deps
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.9
+  - @dt-ui/react-divider@0.1.0-beta.8
+
 ## 0.1.0-beta.4
 
 ### Patch Changes

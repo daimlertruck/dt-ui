@@ -1,5 +1,14 @@
 # @dt-ui/react-avatar
 
+## 0.1.0-beta.12
+
+### Patch Changes
+
+- fix(icons): export css and update imports on deps
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.9
+  - @dt-ui/react-tooltip@0.1.0-beta.12
+
 ## 0.1.0-beta.11
 
 ### Patch Changes

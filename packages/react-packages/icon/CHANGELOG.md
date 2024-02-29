@@ -1,5 +1,14 @@
 # @dt-ui/react-icon
 
+## 0.1.0-beta.5
+
+### Patch Changes
+
+- fix(icons): export css and update imports on deps
+- Updated dependencies
+  - @dt-ui/icons@0.1.0-beta.2
+  - @dt-ui/react-core@0.1.0-beta.9
+
 ## 0.1.0-beta.4
 
 ### Patch Changes
