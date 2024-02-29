@@ -11,6 +11,8 @@ import {
   truckAPITheme,
   Provider,
 } from '@dt-ui/react-core';
+import '@dt-ui/icons/index.css';
+
 import { webFonts } from './webFonts';
 
 const GlobalStyles = () => <Global styles={[...webFonts]} />;

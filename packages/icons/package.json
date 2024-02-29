@@ -1,14 +1,14 @@
 {
   "name": "@dt-ui/icons",
   "version": "0.1.0-beta.1",
-  "main": "index.ts",
-  "files": [
-    "/src/fonts/*.{woff2,ttf}"
-  ],
   "exports": {
     ".": "./index.ts",
     "./index.css": "./src/index.css"
   },
+  "main": "./index.ts",
+  "files": [
+    "src/**"
+  ],
   "scripts": {
     "lint": "eslint --cache ."
   },

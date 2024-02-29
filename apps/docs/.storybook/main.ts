@@ -70,10 +70,6 @@ const config: StorybookConfig = {
       config.resolve.alias = {
         ...config.resolve.alias,
         '@storybook/blocks': getAbsolutePath('@storybook/blocks'),
-        '@dt-ui/icons/index.css': path.resolve(
-          __dirname,
-          `../../../packages/icons/src/index.css`
-        ),
         '@dt-ui/react': path.resolve(
           __dirname,
           `../../../packages/dt-ui-react/index.ts`

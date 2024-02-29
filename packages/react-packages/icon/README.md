@@ -14,14 +14,14 @@ export const App = () => {
 
 ## Properties
 
-| Property     | Type                   | Default    | Description                                     |
-| ------------ | ---------------------- | ---------- | ----------------------------------------------- |
-| `code`       | `Code`                 | -          | Specifies the icon code for the desired symbol. |
-| `color`      | `string`               | -          | Sets the color of the icon.                     |
-| `fontSize`   | `string`               | '24px'     | Defines the font size of the icon.              |
-| `variant`    | 'outlined' \| 'filled' | 'outlined' | Specifies the icon filling variant.             |
-| `dataTestId` | `string`               | 'icon'     | Customizable test identifier.                   |
-| `style`      | `React.CSSProperties`  | -          | Additional styles to apply to the icon.         |
+| Property     | Type                   | Default    | Description                                                                                |
+| ------------ | ---------------------- | ---------- | ------------------------------------------------------------------------------------------ |
+| `code`       | `Code`                 | -          | Specifies the icon code for the desired symbol.                                            |
+| `color`      | `string`               | -          | Sets the color of the icon.                                                                |
+| `size`       | `Size`                 | 'large'    | Specifies the predefined icon sizes. Custom font-sizes are allowed through the style prop. |
+| `variant`    | 'outlined' \| 'filled' | 'outlined' | Specifies the icon filling variant.                                                        |
+| `dataTestId` | `string`               | 'icon'     | Customizable test identifier.                                                              |
+| `style`      | `React.CSSProperties`  | -          | Additional styles to apply to the icon.                                                    |
 
 ## Stack
 
