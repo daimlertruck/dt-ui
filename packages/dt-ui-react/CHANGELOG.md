@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.86
+
+### Patch Changes
+
+- chore: extract label-field to independent package
+- Updated dependencies
+  - @dt-ui/react-label-field@0.1.0-beta.1
+
 ## 0.1.0-beta.85
 
 ### Patch Changes
