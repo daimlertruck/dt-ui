@@ -1,5 +1,28 @@
 # @dt-ui/react
 
+## 0.1.0-beta.88
+
+### Patch Changes
+
+- refactor: move and refactor checkbox refactor checkbox according to design
+- Updated dependencies
+  - @dt-ui/react-checkbox@0.1.0-beta.1
+  - @dt-ui/react-core@0.1.0-beta.10
+  - @dt-ui/react-accordion@0.1.0-beta.6
+  - @dt-ui/react-avatar@0.1.0-beta.13
+  - @dt-ui/react-backdrop@0.1.0-beta.12
+  - @dt-ui/react-breadcrumb@0.1.0-beta.11
+  - @dt-ui/react-divider@0.1.0-beta.9
+  - @dt-ui/react-drawer@0.1.0-beta.10
+  - @dt-ui/react-empty-state@0.1.0-beta.17
+  - @dt-ui/react-icon@0.1.0-beta.6
+  - @dt-ui/react-label-field@0.1.0-beta.3
+  - @dt-ui/react-message@0.1.0-beta.13
+  - @dt-ui/react-spinner@0.1.0-beta.10
+  - @dt-ui/react-tag@0.1.0-beta.10
+  - @dt-ui/react-toast@0.1.0-beta.15
+  - @dt-ui/react-tooltip@0.1.0-beta.13
+
 ## 0.1.0-beta.87
 
 ### Patch Changes
