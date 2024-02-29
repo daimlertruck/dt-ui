@@ -1,7 +1,7 @@
+import { LabelField } from '@dt-ui/react-label-field';
 import { ChangeEvent, useEffect, useState } from 'react';
 
 import { Typography } from '../../typography';
-import { LabelField } from '../label-field';
 
 import { TextAreaStyled, TextAreaWrapper } from './TextArea.styled';
 

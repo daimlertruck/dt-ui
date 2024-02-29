@@ -1,4 +1,4 @@
-import { LabelFieldStyled } from './LabelFied.styled';
+import { LabelFieldStyled } from './LabelField.styled';
 
 export interface LabelFieldProps {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ export interface LabelFieldProps {
   dataTestId?: string;
 }
 
-const LabelField = ({
+export const LabelField = ({
   children,
   isDisabled,
   forId,
@@ -28,5 +28,3 @@ const LabelField = ({
     </LabelFieldStyled>
   );
 };
-
-export default LabelField;

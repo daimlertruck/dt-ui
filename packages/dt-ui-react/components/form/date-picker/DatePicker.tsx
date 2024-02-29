@@ -1,4 +1,5 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { LabelField } from '@dt-ui/react-label-field';
 import React, {
   useState,
   useEffect,
@@ -8,7 +9,6 @@ import React, {
 } from 'react';
 
 import { Typography } from '../../typography';
-import { LabelField } from '../label-field';
 import {
   TextFieldStyled,
   InputFieldStyled,

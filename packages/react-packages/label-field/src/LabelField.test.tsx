@@ -2,7 +2,7 @@ import { withProviders } from '@dt-ui/react-core';
 import { render } from '@testing-library/react';
 import React from 'react';
 
-import { LabelField } from './';
+import { LabelField } from './LabelField';
 
 describe('<LabelField /> component', () => {
   const ProvidedLabelField = withProviders(LabelField);

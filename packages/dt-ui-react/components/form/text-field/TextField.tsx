@@ -1,4 +1,5 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { LabelField } from '@dt-ui/react-label-field';
 import { Spinner } from '@dt-ui/react-spinner';
 import React, {
   useState,
@@ -11,7 +12,6 @@ import React, {
 
 import { ErrorIcon } from '../../../core/assets';
 import { Typography } from '../../typography';
-import { LabelField } from '../label-field';
 
 import {
   TextFieldStyled,

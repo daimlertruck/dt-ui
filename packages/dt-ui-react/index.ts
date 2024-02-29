@@ -49,6 +49,7 @@ export * from '@dt-ui/react-breadcrumb';
 export * from '@dt-ui/react-tag';
 export * from '@dt-ui/react-spinner';
 export * from '@dt-ui/react-accordion';
+export * from '@dt-ui/react-label-field';
 
 //utils
 export { ListStyleType } from './utils/constants';
