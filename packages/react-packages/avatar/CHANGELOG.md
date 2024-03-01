@@ -1,5 +1,14 @@
 # @dt-ui/react-avatar
 
+## 0.1.0-beta.14
+
+### Patch Changes
+
+- refactor: extract text-field to new package with greenlane theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.11
+  - @dt-ui/react-tooltip@0.1.0-beta.14
+
 ## 0.1.0-beta.13
 
 ### Patch Changes
