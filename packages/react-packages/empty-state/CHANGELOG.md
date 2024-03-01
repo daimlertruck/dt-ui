@@ -1,5 +1,13 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.18
+
+### Patch Changes
+
+- chore: make Typography component independent
+- Updated dependencies
+  - @dt-ui/react-typography@0.1.0-beta.1
+
 ## 0.1.0-beta.17
 
 ### Patch Changes

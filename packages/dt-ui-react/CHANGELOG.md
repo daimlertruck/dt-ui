@@ -1,5 +1,17 @@
 # @dt-ui/react
 
+## 0.1.0-beta.91
+
+### Patch Changes
+
+- chore: make Typography component independent
+- Updated dependencies
+  - @dt-ui/react-drawer@0.1.0-beta.11
+  - @dt-ui/react-empty-state@0.1.0-beta.18
+  - @dt-ui/react-message@0.1.0-beta.14
+  - @dt-ui/react-spinner@0.1.0-beta.11
+  - @dt-ui/react-typography@0.1.0-beta.1
+
 ## 0.1.0-beta.90
 
 ### Patch Changes
