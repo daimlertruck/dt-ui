@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.90
+
+### Patch Changes
+
+- fix: bump core package version on table
+- Updated dependencies
+  - @dt-ui/react-table@0.1.0-beta.2
+
 ## 0.1.0-beta.89
 
 ### Patch Changes
