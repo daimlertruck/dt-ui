@@ -19,7 +19,7 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-core": "0.1.0-beta.6"
+    "@dt-ui/react-core": "0.1.0-beta.10"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
