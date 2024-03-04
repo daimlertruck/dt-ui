@@ -1,5 +1,14 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.13
+
+### Patch Changes
+
+- fix: make icons an optional property in theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.12
+  - @dt-ui/react-tooltip@0.1.0-beta.15
+
 ## 0.1.0-beta.12
 
 ### Patch Changes

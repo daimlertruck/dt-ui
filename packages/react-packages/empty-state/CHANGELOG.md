@@ -1,5 +1,14 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.20
+
+### Patch Changes
+
+- fix: make icons an optional property in theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.12
+  - @dt-ui/react-typography@0.1.0-beta.3
+
 ## 0.1.0-beta.19
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @dt-ui/react-table
 
+## 0.1.0-beta.4
+
+### Patch Changes
+
+- fix: make icons an optional property in theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.12
+
 ## 0.1.0-beta.3
 
 ### Patch Changes

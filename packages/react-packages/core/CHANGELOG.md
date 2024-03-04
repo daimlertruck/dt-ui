@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.12
+
+### Patch Changes
+
+- fix: make icons an optional property in theme
+
 ## 0.1.0-beta.11
 
 ### Patch Changes

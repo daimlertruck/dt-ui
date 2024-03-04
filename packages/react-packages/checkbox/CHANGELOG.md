@@ -1,5 +1,14 @@
 # @dt-ui/react-checkbox
 
+## 0.1.0-beta.3
+
+### Patch Changes
+
+- fix: make icons an optional property in theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.12
+  - @dt-ui/react-icon@0.1.0-beta.8
+
 ## 0.1.0-beta.2
 
 ### Patch Changes
