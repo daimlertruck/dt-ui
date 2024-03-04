@@ -273,7 +273,7 @@ export type CustomTheme = {
     default: string;
   };
   responsiveFontStyles: { [key: string]: string };
-  icons: 'outlined' | 'rounded';
+  icons?: 'outlined' | 'rounded';
 };
 
 export type Colors = keyof Pick<
