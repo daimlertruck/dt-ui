@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-empty-state",
-  "version": "0.1.0-beta.20",
+  "version": "0.1.0-beta.21",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -19,7 +19,7 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-button": "0.1.0-beta.0",
+    "@dt-ui/react-button": "0.1.0-beta.1",
     "@dt-ui/react-core": "0.1.0-beta.12",
     "@dt-ui/react-typography": "0.1.0-beta.3"
   },

@@ -1,5 +1,15 @@
 # @dt-ui/react
 
+## 0.1.0-beta.94
+
+### Patch Changes
+
+- chore: make Button component independent
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.1
+  - @dt-ui/react-empty-state@0.1.0-beta.21
+  - @dt-ui/react-toast@0.1.0-beta.18
+
 ## 0.1.0-beta.93
 
 ### Patch Changes
