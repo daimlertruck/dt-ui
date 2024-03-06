@@ -1,5 +1,17 @@
 # @dt-ui/react
 
+## 0.1.0-beta.96
+
+### Minor Changes
+
+- feat: apply new tab design
+
+### Patch Changes
+
+- chore: make tabs independent component
+- Updated dependencies
+  - @dt-ui/react-tabs@0.1.0-beta.1
+
 ## 0.1.0-beta.95
 
 ### Minor Changes
