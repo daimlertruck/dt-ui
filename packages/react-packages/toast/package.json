@@ -19,6 +19,7 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
+    "@dt-ui/react-button": "0.1.0-beta.0",
     "@dt-ui/react-core": "0.1.0-beta.12",
     "react-hot-toast": "^2.3.0"
   },

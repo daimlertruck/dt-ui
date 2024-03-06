@@ -1,7 +1,6 @@
+import { ButtonSize } from '@dt-ui/react-button';
 import { BaseProps } from '@dt-ui/react-core';
 import { forwardRef } from 'react';
-
-import { ButtonSize } from '../buttons/button/constants';
 
 import { LinkTextSize } from './constants';
 import { LinkType } from './constants/types';

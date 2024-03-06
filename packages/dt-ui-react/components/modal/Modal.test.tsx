@@ -1,8 +1,7 @@
+import { Button } from '@dt-ui/react-button';
 import { withProviders, Provider } from '@dt-ui/react-core';
 import { fireEvent, render, screen, within } from '@testing-library/react';
 import React from 'react';
-
-import { Button } from '../buttons';
 
 import { Modal, Overlay } from './Modal';
 

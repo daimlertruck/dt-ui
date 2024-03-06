@@ -1,6 +1,5 @@
+import { ButtonStyled } from '@dt-ui/react-button';
 import styled from '@emotion/styled';
-
-import { ButtonStyled } from '../buttons/button/Button.styled';
 
 import { LinkTextSize } from './constants';
 

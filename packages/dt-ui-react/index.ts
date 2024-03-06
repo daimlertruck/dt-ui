@@ -51,6 +51,7 @@ export * from '@dt-ui/react-text-field';
 export * from '@dt-ui/react-label-field';
 export * from '@dt-ui/react-table';
 export * from '@dt-ui/react-typography';
+export * from '@dt-ui/react-button';
 
 //utils
 export { ListStyleType } from './utils/constants';

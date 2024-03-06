@@ -1,8 +1,7 @@
+import { Button } from '@dt-ui/react-button';
 import { Portal } from '@dt-ui/react-core';
 import type { Meta, StoryObj } from '@storybook/react';
 import { ToasterProps } from 'react-hot-toast';
-
-import { Button } from '../../../dt-ui-react/components/buttons';
 
 import { ToastType } from './constants';
 import Toast from './Toast';

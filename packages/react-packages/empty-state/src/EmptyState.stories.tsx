@@ -1,6 +1,6 @@
+import { Button } from '@dt-ui/react-button';
 import { Meta, StoryObj } from '@storybook/react';
 
-import { Button } from '../../../dt-ui-react/components/buttons';
 import { NoDataIcon } from '../../../dt-ui-react/core';
 
 import { EmptyState, EmptyStateContentProps } from '.';

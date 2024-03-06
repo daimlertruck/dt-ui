@@ -1,6 +1,5 @@
+import { Button } from '@dt-ui/react-button';
 import { Story } from '@storybook/react';
-
-import { Button } from '../buttons';
 
 import { useModal } from './hooks';
 import { Modal, Overlay } from './Modal';

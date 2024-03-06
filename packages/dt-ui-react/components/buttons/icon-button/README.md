@@ -5,7 +5,7 @@ This component allows the user to take action by clicking on an Icon.
 ## Usage
 
 ```jsx
-import { Button, EditIcon } from '@dt-ui/react';
+import { IconButton, EditIcon } from '@dt-ui/react';
 
 export const App = () => {
   const handleClick = () => null; //Some action here
