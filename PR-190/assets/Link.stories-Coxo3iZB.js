@@ -1,5 +1,0 @@
-import{j as s}from"./jsx-runtime-CKrituN3.js";import{L as i,a as m}from"./Link-DNf16rFs.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";import"./Box.styled-OXY0hm-i.js";import"./emotion-styled.browser.esm-CRzct0lr.js";import"./extends-ChRHEBve.js";import"./emotion-element-43c6fea0.browser.esm-DXL8qHXx.js";import"./Typography-BEz-Klo6.js";import"./index-qwY8W0Yo.js";import"./emotion-react.browser.esm-DebaLaFy.js";import"./index-BtM5VmRH.js";import"./index-BAMY2Nnw.js";import"./util-BQ0cylCP.js";import"./index-BDlDW0Uq.js";import"./Spinner.styled-DLX8sObT.js";import"./Button.styled-BaZIR7EZ.js";const z={title:"Data Display/Link",component:i},a=({...p})=>s.jsx(i,{...p}),r=a.bind({});r.args={children:"Redirect to",href:"https://www.google.com/",target:"_blank",textSize:m.Medium,isUnderline:!0,isDisabled:!1};var t,o,e;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:`({
-  ...props
-}) => {
-  return <Link {...props} />;
-}`,...(e=(o=r.parameters)==null?void 0:o.docs)==null?void 0:e.source}}};const E=["Default"];export{r as Default,E as __namedExportsOrder,z as default};
