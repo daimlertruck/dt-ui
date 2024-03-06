@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react",
-  "version": "0.1.0-beta.94",
+  "version": "0.1.0-beta.95",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
@@ -37,7 +37,7 @@
     "@dt-ui/react-label-field": "0.1.0-beta.5",
     "@dt-ui/react-message": "0.1.0-beta.16",
     "@dt-ui/react-spinner": "0.1.0-beta.13",
-    "@dt-ui/react-table": "0.1.0-beta.4",
+    "@dt-ui/react-table": "0.1.0-beta.5",
     "@dt-ui/react-tag": "0.1.0-beta.12",
     "@dt-ui/react-text-field": "0.1.0-beta.2",
     "@dt-ui/react-toast": "0.1.0-beta.18",

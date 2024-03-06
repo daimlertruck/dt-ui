@@ -1,5 +1,16 @@
 # @dt-ui/react
 
+## 0.1.0-beta.95
+
+### Minor Changes
+
+- feat: forward ref from table data cell
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-table@0.1.0-beta.5
+
 ## 0.1.0-beta.94
 
 ### Patch Changes
