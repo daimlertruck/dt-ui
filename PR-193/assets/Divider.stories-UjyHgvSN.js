@@ -1,0 +1,3 @@
+import{D as a}from"./Divider-Dl75CAAV.js";import"./jsx-runtime-CKrituN3.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";import"./emotion-styled.browser.esm-DhD7UCCJ.js";import"./extends-DJVMZnyl.js";import"./emotion-element-43c6fea0.browser.esm-CsO0Y6lU.js";const D={title:"Data Display/Divider",component:a},r={args:{}};var t,e,o;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {}
+}`,...(o=(e=r.parameters)==null?void 0:e.docs)==null?void 0:o.source}}};const l=["Default"];export{r as Default,l as __namedExportsOrder,D as default};
