@@ -1,10 +1,8 @@
 {
-  "name": "@dt-ui/react",
-  "version": "0.1.0-beta.96",
-  "license": "MIT",
+  "name": "@dt-ui/react-progress-bar",
+  "version": "0.1.0-beta.0",
   "exports": {
-    ".": "./dist/index.js",
-    "./index.css": "./dist/index.css"
+    ".": "./dist/index.js"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,7 +12,6 @@
   ],
   "scripts": {
     "build": "tsup",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "dev": "tsup --watch",
     "lint": "eslint --cache .",
     "test": "jest",
@@ -22,37 +19,15 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-accordion": "0.1.0-beta.8",
-    "@dt-ui/react-avatar": "0.1.0-beta.15",
-    "@dt-ui/react-backdrop": "0.1.0-beta.14",
-    "@dt-ui/react-box": "0.1.0-beta.7",
-    "@dt-ui/react-breadcrumb": "0.1.0-beta.13",
-    "@dt-ui/react-button": "0.1.0-beta.1",
-    "@dt-ui/react-checkbox": "0.1.0-beta.3",
-    "@dt-ui/react-core": "0.1.0-beta.12",
-    "@dt-ui/react-divider": "0.1.0-beta.11",
-    "@dt-ui/react-drawer": "0.1.0-beta.13",
-    "@dt-ui/react-empty-state": "0.1.0-beta.21",
     "@dt-ui/react-icon": "0.1.0-beta.8",
-    "@dt-ui/react-label-field": "0.1.0-beta.5",
-    "@dt-ui/react-message": "0.1.0-beta.16",
-    "@dt-ui/react-progress-bar": "0.1.0-beta.0",
-    "@dt-ui/react-spinner": "0.1.0-beta.13",
-    "@dt-ui/react-table": "0.1.0-beta.5",
-    "@dt-ui/react-tabs": "0.1.0-beta.1",
-    "@dt-ui/react-tag": "0.1.0-beta.12",
-    "@dt-ui/react-text-field": "0.1.0-beta.2",
-    "@dt-ui/react-toast": "0.1.0-beta.18",
-    "@dt-ui/react-tooltip": "0.1.0-beta.15",
-    "@dt-ui/react-typography": "0.1.0-beta.3",
-    "@emotion/server": "^11.4.0",
-    "emotion-normalize": "^11.0.1"
+    "@dt-ui/react-typography": "0.1.0-beta.3"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.23.3",
+    "@dt-ui/react-core": "0.1.0-beta.12",
     "@emotion/babel-plugin": "^11.11.0",
     "@emotion/css": "^11.7.1",
     "@emotion/jest": "^11.10.0",

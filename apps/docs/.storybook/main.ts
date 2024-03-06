@@ -45,7 +45,9 @@ const config: StorybookConfig = {
   },
   viteFinal: async (config: InlineConfig) => {
     if (config.resolve) {
-      const components = ['button', 
+      const components = [
+        'progress-bar',
+        'button',
         'label-field',
         'text-field',
         'table',

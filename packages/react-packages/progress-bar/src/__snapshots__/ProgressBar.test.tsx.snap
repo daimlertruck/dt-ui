@@ -576,3 +576,309 @@ exports[`<ProgressBar /> component should render the states correctly should ren
   </div>
 </div>
 `;
+
+exports[`<ProgressBar /> component should render with different info prop should render correctly with icon 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 48px;
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-columns: minmax(48px, 1fr) 28px 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  height: 16px;
+}
+
+.emotion-4 {
+  width: 100%;
+  background-color: #EBECED;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.emotion-6 {
+  width: 40%;
+  height: 4px;
+  background-color: #FF4A4A;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.emotion-8 {
+  height: 16px;
+  line-height: 16px;
+}
+
+.emotion-10 {
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #FF4A4A;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="40"
+        class="emotion-4 emotion-5"
+        role="progressbar"
+      >
+        <div
+          class="emotion-6 emotion-7"
+        />
+      </div>
+      <div
+        class="emotion-8 emotion-9"
+      >
+        <i
+          class="emotion-10 emotion-11"
+          color="#FF4A4A"
+          data-testid="icon"
+        >
+          error
+        </i>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ProgressBar /> component should render with different info prop should render correctly with text 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 48px;
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-columns: minmax(48px, 1fr) 28px 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  height: 16px;
+}
+
+.emotion-4 {
+  width: 100%;
+  background-color: #EBECED;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.emotion-6 {
+  width: 40%;
+  height: 4px;
+  background-color: #FF4A4A;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.emotion-8 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  text-align: center;
+  color: #FF4A4A;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="40"
+        class="emotion-4 emotion-5"
+        role="progressbar"
+      >
+        <div
+          class="emotion-6 emotion-7"
+        />
+      </div>
+      <div
+        class="emotion-8 emotion-9"
+      >
+        40%
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ProgressBar /> component should render with different info prop should render correctly with text and icon 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 48px;
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-columns: minmax(48px, 1fr) 28px 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  height: 16px;
+}
+
+.emotion-4 {
+  width: 100%;
+  background-color: #EBECED;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.emotion-6 {
+  width: 40%;
+  height: 4px;
+  background-color: #FF4A4A;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.emotion-8 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  text-align: center;
+  color: #FF4A4A;
+}
+
+.emotion-10 {
+  height: 16px;
+  line-height: 16px;
+}
+
+.emotion-12 {
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #FF4A4A;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="40"
+        class="emotion-4 emotion-5"
+        role="progressbar"
+      >
+        <div
+          class="emotion-6 emotion-7"
+        />
+      </div>
+      <div
+        class="emotion-8 emotion-9"
+      >
+        40%
+      </div>
+      <div
+        class="emotion-10 emotion-11"
+      >
+        <i
+          class="emotion-12 emotion-13"
+          color="#FF4A4A"
+          data-testid="icon"
+        >
+          error
+        </i>
+      </div>
+    </div>
+  </div>
+</div>
+`;

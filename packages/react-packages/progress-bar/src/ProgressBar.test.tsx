@@ -49,6 +49,31 @@ describe('<ProgressBar /> component', () => {
       expect(container).toMatchSnapshot();
     });
   });
+  describe('should render with different info prop', () => {
+    it('should render correctly with text and icon', () => {
+      const { container } = render(
+        <ProvidedProgressBar info='both' state='error' value={40} />
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should render correctly with text', () => {
+      const { container } = render(
+        <ProvidedProgressBar info='text' state='error' value={40} />
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should render correctly with icon', () => {
+      const { container } = render(
+        <ProvidedProgressBar info='icon' state='error' value={40} />
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+  });
 
   it('should render the percentage', () => {
     const { container } = render(

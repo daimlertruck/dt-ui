@@ -17,7 +17,6 @@ interface ProgressBarColor {
   background: string;
   helper: string;
   percentage: string;
-  icon: string;
 }
 
 const progressBarHeights: Record<ProgressBarSize, string> = {
@@ -32,19 +31,16 @@ const progressBarColors = (
     background: theme.palette.informative.default,
     helper: theme.palette.content.secondary,
     percentage: theme.palette.content.body,
-    icon: theme.palette.content.body,
   },
   success: {
     background: theme.palette.success.default,
     helper: theme.palette.content.secondary,
     percentage: theme.palette.content.body,
-    icon: theme.palette.success.default,
   },
   error: {
     background: theme.palette.error.default,
     helper: theme.palette.error.default,
     percentage: theme.palette.error.default,
-    icon: theme.palette.error.default,
   },
 });
 
@@ -104,10 +100,7 @@ export const ProgressBarPercentageTextStyled = styled.div<StyledProgressBarTextP
   `};
 `;
 
-export const ProgressBarIconStyled = styled.div<StyledProgressBarTextProps>`
-  ${({ theme, state }) => `
-    height: 16px;
-    color: ${progressBarColors(theme)[state].icon};
-    line-height: 16px;
-  `};
+export const ProgressBarIconStyled = styled.div`
+  height: 16px;
+  line-height: 16px;
 `;

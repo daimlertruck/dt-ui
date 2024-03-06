@@ -24,7 +24,6 @@ export * from './components/pagination';
 export * from './components/stepper';
 export * from './components/radio';
 export * from './components/multi-select';
-export * from './components/progress-bar';
 
 //independent component packages
 export * from '@dt-ui/react-accordion';
@@ -56,6 +55,7 @@ export * from '@dt-ui/react-label-field';
 export * from '@dt-ui/react-table';
 export * from '@dt-ui/react-typography';
 export * from '@dt-ui/react-button';
+export * from '@dt-ui/react-progress-bar';
 
 //utils
 export { ListStyleType } from './utils/constants';

@@ -1,6 +1,6 @@
+import { Icon } from '@dt-ui/react-icon';
 import { Typography } from '@dt-ui/react-typography';
-
-import { CheckCircleOutlineIcon, ErrorOutlineIcon } from '../../core';
+import { useTheme } from '@emotion/react';
 
 import { MAX_PROGRESS_BAR_VALUE, MIN_PROGRESS_BAR_VALUE } from './constants';
 import {
@@ -35,6 +35,8 @@ export const ProgressBar = ({
     Math.max(value, MIN_PROGRESS_BAR_VALUE),
     MAX_PROGRESS_BAR_VALUE
   );
+  const theme = useTheme();
+
   return (
     <ProgressBarFieldStyled>
       {label ? (
@@ -75,8 +77,16 @@ export const ProgressBar = ({
     }
 
     const ProgressIcon = {
-      success: <CheckCircleOutlineIcon height={16} width={16} />,
-      error: <ErrorOutlineIcon height={16} width={16} />,
+      success: (
+        <Icon
+          code='check_circle'
+          color={theme.palette.success.default}
+          size='medium'
+        />
+      ),
+      error: (
+        <Icon code='error' color={theme.palette.error.default} size='medium' />
+      ),
     } as const;
 
     let content = (
@@ -88,9 +98,7 @@ export const ProgressBar = ({
     if (state !== 'active') {
       if (info === 'icon') {
         content = (
-          <ProgressBarIconStyled state={state}>
-            {ProgressIcon[state]}
-          </ProgressBarIconStyled>
+          <ProgressBarIconStyled>{ProgressIcon[state]}</ProgressBarIconStyled>
         );
       }
 
@@ -98,10 +106,7 @@ export const ProgressBar = ({
         content = (
           <>
             {content}
-
-            <ProgressBarIconStyled state={state}>
-              {ProgressIcon[state]}
-            </ProgressBarIconStyled>
+            <ProgressBarIconStyled>{ProgressIcon[state]}</ProgressBarIconStyled>
           </>
         );
       }
