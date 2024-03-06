@@ -1,4 +1,5 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { forwardRef } from 'react';
 
 import { TextAlign } from '../../types';
 
@@ -9,21 +10,27 @@ export interface TableDataCellProps extends BaseProps {
   textAlign?: TextAlign;
 }
 
-const TableDataCell = ({
-  children,
-  columnWidth,
-  style,
-  dataTestId,
-  textAlign = 'left',
-}: TableDataCellProps) => (
-  <CellStyled
-    columnWidth={columnWidth}
-    data-testid={dataTestId ?? 'table-data-cell'}
-    style={style}
-    textAlign={textAlign}
-  >
-    {children}
-  </CellStyled>
+const TableDataCell = forwardRef<HTMLTableCellElement, TableDataCellProps>(
+  (
+    {
+      children,
+      columnWidth,
+      style,
+      dataTestId,
+      textAlign = 'left',
+    }: TableDataCellProps,
+    ref
+  ) => (
+    <CellStyled
+      columnWidth={columnWidth}
+      data-testid={dataTestId ?? 'table-data-cell'}
+      ref={ref}
+      style={style}
+      textAlign={textAlign}
+    >
+      {children}
+    </CellStyled>
+  )
 );
 
 const TableDataCellHeader = ({ children }: BaseProps) => (
