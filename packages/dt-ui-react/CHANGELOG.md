@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.97
+
+### Patch Changes
+
+- chore: make progress-bar independent package
+- Updated dependencies
+  - @dt-ui/react-progress-bar@0.1.0-beta.1
+
 ## 0.1.0-beta.96
 
 ### Minor Changes
