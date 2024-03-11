@@ -9,4 +9,5 @@ export const shape = {
   dropdown: radius['none'],
   message: radius['none'],
   progressbar: radius['none'],
+  accordion: radius['none'],
 };

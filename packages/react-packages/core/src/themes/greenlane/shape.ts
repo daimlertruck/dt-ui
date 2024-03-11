@@ -11,4 +11,5 @@ export const shape = {
   textField: radius['6xs'],
   modal: radius['3xs'],
   progressbar: radius['4xs'],
+  accordion: radius['3xs'],
 };

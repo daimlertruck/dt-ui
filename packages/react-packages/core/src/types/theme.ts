@@ -268,6 +268,7 @@ export type CustomTheme = {
     dropdown: string;
     message: string;
     progressbar: string;
+    accordion: string;
   };
   fontFamily: {
     default: string;

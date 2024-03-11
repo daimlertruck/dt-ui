@@ -6,23 +6,23 @@ exports[`<ProvidedAccordion /> component renders correctly the closed accordion 
   width: 100%;
   min-width: '248px';
   background-color: #FFFFFF;
-  border-radius: 4px;
+  border-radius: 0px;
+  box-shadow: 0px 1px 0px 0px #EBECED;
 }
 
 .emotion-0:hover {
   background-color: #ECF7FB;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 }
 
 .emotion-2 {
   padding: 16px;
-  padding-bottom: 0;
   cursor: pointer;
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
   .emotion-2 {
     padding: 24px;
-    padding-bottom: 0;
   }
 }
 
@@ -39,13 +39,6 @@ exports[`<ProvidedAccordion /> component renders correctly the closed accordion 
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  padding-bottom: 16px;
-}
-
-@media only screen and (min-width: 600px) {
-  .emotion-4 {
-    padding-bottom: 24px;
-  }
 }
 
 .emotion-6 {
@@ -60,21 +53,15 @@ exports[`<ProvidedAccordion /> component renders correctly the closed accordion 
 }
 
 .emotion-10 {
-  border: 0px;
-  border-top: 1px #D3D4D5 solid;
-  margin-block: 12px;
-  width: 100%;
-}
-
-.emotion-12 {
-  padding: calc(16px + 16px);
-  padding-top: calc(0 + 16px);
+  padding: 16px;
+  padding-top: 0;
   display: none;
 }
 
 @media only screen and (min-width: 600px) {
-  .emotion-12 {
-    padding: calc(24px + 16px);
+  .emotion-10 {
+    padding: 24px;
+    padding-top: 0;
   }
 }
 
@@ -118,13 +105,9 @@ exports[`<ProvidedAccordion /> component renders correctly the closed accordion 
           </svg>
         </div>
       </div>
-      <hr
-        class="emotion-10 emotion-11"
-        style="margin: -1px 0px 0px 0px;"
-      />
     </header>
     <div
-      class="emotion-12 emotion-13"
+      class="emotion-10 emotion-11"
       data-testid="accordion-body"
     >
       <div>

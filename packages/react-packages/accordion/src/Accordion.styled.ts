@@ -6,6 +6,7 @@ import { AccordionBackgroundColor } from './constants';
 interface AccordinStyledProps {
   backgroundColor: AccordionBackgroundColor;
   isDisabled: boolean;
+  isOpenState: boolean;
 }
 
 const accordionBackgroundColors = (
@@ -22,13 +23,23 @@ const accordionHoverBackgroundColors = (
   grey: theme.palette.secondary.medium,
 });
 
+const accordionBorders = (
+  theme: Theme
+): Record<AccordionBackgroundColor, string> => ({
+  white: `0px 1px 0px 0px ${theme.palette.border.light}`,
+  grey: 'none',
+});
+
 export const AccordionStyled = styled.div<AccordinStyledProps>`
-  ${({ theme, backgroundColor, isDisabled }) => `
+  ${({ theme, backgroundColor, isDisabled, isOpenState }) => `
     position: relative;
     width: 100%;
     min-width: '248px';
     background-color: ${accordionBackgroundColors(theme)[backgroundColor]};
-    border-radius: ${theme.radius['5xs']};
+    border-radius: ${theme.shape.accordion};
+    box-shadow: ${
+      isOpenState ? 'none' : accordionBorders(theme)[backgroundColor]
+    };
 
     ${
       isDisabled
@@ -42,6 +53,7 @@ export const AccordionStyled = styled.div<AccordinStyledProps>`
           background-color: ${
             accordionHoverBackgroundColors(theme)[backgroundColor]
           };
+          box-shadow: ${theme.shadows.xs}
         }
       `
     }
@@ -60,5 +72,6 @@ export const DisabledOverlay = styled.div`
 
   ${({ theme }) => `
     background-color: ${theme.palette.secondary.medium}
+    border-radius: ${theme.shape.accordion};
   `}
 `;

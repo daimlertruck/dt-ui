@@ -11,4 +11,5 @@ export const shape = {
   dropdown: radius['5xs'],
   message: radius['5xs'],
   progressbar: radius['none'],
+  accordion: radius['5xs'],
 };

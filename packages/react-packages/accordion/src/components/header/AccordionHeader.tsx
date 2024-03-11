@@ -1,11 +1,9 @@
 import { BaseProps } from '@dt-ui/react-core';
-import { Divider } from '@dt-ui/react-divider';
 
 import {
   UnfoldMoreIcon,
   UnfoldLessIcon,
 } from '../../../../../dt-ui-react/core';
-import { AccordionBackgroundColor } from '../../constants';
 
 import {
   ChildrenContainerStyled,
@@ -17,7 +15,6 @@ import {
 export interface AccordionHeaderProps extends BaseProps {
   handleHeaderClick: () => void;
   handleHeaderKeyPress: (event: { key: string }) => void;
-  backgroundColor: AccordionBackgroundColor;
   isOpenState: boolean;
   isDisabled: boolean;
 }
@@ -26,7 +23,6 @@ export const AccordionHeader = ({
   handleHeaderClick,
   handleHeaderKeyPress,
   isOpenState,
-  backgroundColor,
   isDisabled,
   children,
   dataTestId,
@@ -48,9 +44,5 @@ export const AccordionHeader = ({
         {isOpenState ? <UnfoldLessIcon /> : <UnfoldMoreIcon />}
       </IconContainerStyled>
     </FlexContainerStyled>
-
-    {backgroundColor === AccordionBackgroundColor.White ? (
-      <Divider style={{ margin: 0, marginTop: -1 }} />
-    ) : null}
   </HeaderStyled>
 );

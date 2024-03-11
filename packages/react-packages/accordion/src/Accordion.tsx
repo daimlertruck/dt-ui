@@ -48,12 +48,12 @@ const Accordion = ({
       backgroundColor={backgroundColor}
       data-testid={dataTestId ?? 'accordion-container'}
       isDisabled={isDisabled}
+      isOpenState={isOpenState}
       style={style}
     >
       {isDisabled ? <DisabledOverlay /> : null}
 
       <AccordionHeader
-        backgroundColor={backgroundColor}
         handleHeaderClick={handleHeaderClick}
         handleHeaderKeyPress={handleHeaderKeyPress}
         isDisabled={isDisabled}
