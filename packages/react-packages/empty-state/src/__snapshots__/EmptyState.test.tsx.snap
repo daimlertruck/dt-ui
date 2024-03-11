@@ -210,12 +210,13 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
   cursor: pointer;
   width: 100%;
   min-width: 80px;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border: 2px solid transparent;
   gap: 8px;
   border-radius: 0px;
   font-weight: 700;
@@ -225,7 +226,7 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  border: 0;
+  border-color: #00677F;
   color: #FFFFFF;
   background-color: #00677F;
 }
@@ -233,11 +234,14 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
 .emotion-8:hover {
   color: #FFFFFF;
   background-color: #004355;
+  border-color: #004355;
 }
 
 .emotion-8:disabled {
   cursor: not-allowed;
-  opacity: 38%;
+  color: #FFFFFF;
+  background-color: #79AEBF;
+  border-color: #79AEBF;
 }
 
 @media only screen and (min-width: 600px) {

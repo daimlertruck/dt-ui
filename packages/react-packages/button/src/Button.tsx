@@ -3,7 +3,7 @@ import { Spinner } from '@dt-ui/react-spinner';
 import { ComponentPropsWithoutRef } from 'react';
 
 import { ButtonStyled } from './Button.styled';
-import { ButtonSize, ButtonColor, ButtonVariant } from './constants';
+import { ButtonAppearance, ButtonSize, ButtonVariant } from './constants';
 
 export interface ButtonProps
   extends ComponentPropsWithoutRef<'button'>,
@@ -12,7 +12,7 @@ export interface ButtonProps
   isLoading?: boolean;
   size?: ButtonSize;
   variant?: ButtonVariant;
-  color?: ButtonColor;
+  color?: ButtonAppearance;
 }
 
 export const Button = ({
@@ -33,7 +33,6 @@ export const Button = ({
     }
     onClick?.(event);
   };
-
   return (
     <ButtonStyled
       {...props}

@@ -507,12 +507,13 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   cursor: pointer;
   width: 100%;
   min-width: 80px;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border: 2px solid transparent;
   gap: 8px;
   border-radius: 0px;
   font-weight: 700;
@@ -523,24 +524,24 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   text-transform: none;
   padding: 12px 24px;
   color: #7C7C7D;
-  background-color: #FFFFFF;
-  border: 1px solid #7C7C7D;
+  border-color: #7C7C7D;
+  background-color: transparent;
 }
 
 .emotion-18:hover {
   color: #4A4A4B;
-  border: 1px solid #4A4A4B;
+  border-color: #4A4A4B;
 }
 
 .emotion-18:active {
   color: #4A4A4B;
-  border: 1px solid #4A4A4B;
+  border-color: #4A4A4B;
 }
 
 .emotion-18:disabled {
   cursor: not-allowed;
   color: #EBECED;
-  border: 1px solid #EBECED;
+  border-color: #EBECED;
 }
 
 @media only screen and (min-width: 600px) {
@@ -561,12 +562,13 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   cursor: pointer;
   width: 100%;
   min-width: 80px;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border: 2px solid transparent;
   gap: 8px;
   border-radius: 0px;
   font-weight: 700;
@@ -576,7 +578,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  border: 0;
+  border-color: #00677F;
   color: #FFFFFF;
   background-color: #00677F;
 }
@@ -584,11 +586,14 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
 .emotion-20:hover {
   color: #FFFFFF;
   background-color: #004355;
+  border-color: #004355;
 }
 
 .emotion-20:disabled {
   cursor: not-allowed;
-  opacity: 38%;
+  color: #FFFFFF;
+  background-color: #79AEBF;
+  border-color: #79AEBF;
 }
 
 @media only screen and (min-width: 600px) {

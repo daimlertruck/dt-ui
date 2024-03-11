@@ -17,6 +17,22 @@ describe('<Button /> component', () => {
     expect(container).toMatchSnapshot();
   });
 
+  it('renders button html element with contrast styles', () => {
+    const { getByTestId } = render(
+      <ProvidedButton
+        color='contrast'
+        dataTestId='contrast'
+        onClick={() => null}
+      >
+        Contrast
+      </ProvidedButton>
+    );
+
+    expect(getByTestId('contrast-button')).toHaveStyle(
+      'color: #323232;background-color: #79AEBF;border-color: #79AEBF;'
+    );
+  });
+
   it('renders a disabled button html element with the correct title', () => {
     render(
       <ProvidedButton

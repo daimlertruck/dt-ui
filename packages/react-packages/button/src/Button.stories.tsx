@@ -19,5 +19,39 @@ export const Default: Story = {
     variant: 'solid',
     color: 'primary',
     size: 'medium',
+    isDisabled: false,
   },
+  argTypes: {
+    variant: {
+      options: ['solid', 'outlined', 'text'],
+      control: { type: 'select' },
+    },
+    color: {
+      options: ['primary', 'secondary', 'error', 'contrast'],
+      control: { type: 'select' },
+    },
+    size: {
+      options: ['medium', 'large', 'small'],
+      control: { type: 'select' },
+    },
+    isDisabled: {
+      control: 'boolean',
+    },
+  },
+};
+
+export const buttonWithDarkBackground: Story = {
+  ...Default,
+  render: ({ ...props }) => (
+    <div
+      style={{
+        width: '200px',
+        height: '100px',
+        backgroundColor: '#000000',
+        padding: '20px',
+      }}
+    >
+      <Button {...props} />
+    </div>
+  ),
 };

@@ -13,12 +13,13 @@ exports[`<Button /> component renders button html element with the correct title
   cursor: pointer;
   width: 100%;
   min-width: 80px;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border: 2px solid transparent;
   gap: 8px;
   border-radius: 0px;
   font-weight: 700;
@@ -28,7 +29,7 @@ exports[`<Button /> component renders button html element with the correct title
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  border: 0;
+  border-color: #00677F;
   color: #FFFFFF;
   background-color: #00677F;
 }
@@ -36,11 +37,14 @@ exports[`<Button /> component renders button html element with the correct title
 .emotion-0:hover {
   color: #FFFFFF;
   background-color: #004355;
+  border-color: #004355;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
-  opacity: 38%;
+  color: #FFFFFF;
+  background-color: #79AEBF;
+  border-color: #79AEBF;
 }
 
 @media only screen and (min-width: 600px) {
@@ -105,12 +109,13 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   cursor: pointer;
   width: 100%;
   min-width: 80px;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border: 2px solid transparent;
   gap: 8px;
   border-radius: 0px;
   font-weight: 700;
@@ -121,24 +126,24 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   text-transform: none;
   padding: 12px 24px;
   color: #00677F;
-  background-color: #FFFFFF;
-  border: 1px solid #00677F;
+  border-color: #00677F;
+  background-color: transparent;
 }
 
 .emotion-0:hover {
   color: #004355;
-  border: 1px solid #004355;
+  border-color: #004355;
 }
 
 .emotion-0:active {
   color: #004355;
-  border: 1px solid #004355;
+  border-color: #004355;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
   color: #79AEBF;
-  border: 1px solid #79AEBF;
+  border-color: #79AEBF;
 }
 
 @media only screen and (min-width: 600px) {
@@ -221,12 +226,13 @@ exports[`<Button /> component when loading is true renders a spinner light theme
   cursor: pointer;
   width: 100%;
   min-width: 80px;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border: 2px solid transparent;
   gap: 8px;
   border-radius: 0px;
   font-weight: 700;
@@ -236,7 +242,7 @@ exports[`<Button /> component when loading is true renders a spinner light theme
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  border: 0;
+  border-color: #00677F;
   color: #FFFFFF;
   background-color: #00677F;
 }
@@ -244,11 +250,14 @@ exports[`<Button /> component when loading is true renders a spinner light theme
 .emotion-0:hover {
   color: #FFFFFF;
   background-color: #004355;
+  border-color: #004355;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
-  opacity: 38%;
+  color: #FFFFFF;
+  background-color: #79AEBF;
+  border-color: #79AEBF;
 }
 
 @media only screen and (min-width: 600px) {
