@@ -60,10 +60,10 @@ export const App = () => {
 
 ### Dropdown.Option
 
-| Property     | Type                       | Default                          | Description                                       |
-| ------------ | -------------------------- | -------------------------------- | ------------------------------------------------- |
-| `children`   | `ReactNode`                | -                                | Child components to be rendered                   |
-| `option`     | `DropdownOptionValue`      | -                                | The option object.                                |
-| `dataTestId` | `string`                   | `dropdown-option-{option.value}` | Customizable test identifier                      |
-| `isDisabled` | `boolean`                  | `false`                          | Set the dropdown disabled.                        |
-| `onClick`    | `(option: string) => void` | -                                | The triggered function when clicked on the option |
+| Property     | Type                                                        | Default                          | Description                                       |
+| ------------ | ----------------------------------------------------------- | -------------------------------- | ------------------------------------------------- |
+| `children`   | `ReactNode`                                                 | -                                | Child components to be rendered                   |
+| `option`     | `DropdownOptionValue`                                       | -                                | The option object.                                |
+| `dataTestId` | `string`                                                    | `dropdown-option-{option.value}` | Customizable test identifier                      |
+| `isDisabled` | `boolean`                                                   | `false`                          | Set the dropdown disabled.                        |
+| `onClick`    | `(option: string, name: string, event: MouseEvent) => void` | -                                | The triggered function when clicked on the option |

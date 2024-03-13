@@ -1,4 +1,5 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { MouseEvent } from 'react';
 
 import { useDropdownContext } from '../../context';
 import { DropdownOptionValue } from '../../types';
@@ -8,7 +9,11 @@ import { DropdownOptionStyled } from './DropdownOption.styled';
 export interface DropdownOptionProps extends BaseProps {
   option: DropdownOptionValue;
   isDisabled?: boolean;
-  onClick?: (option: string, name?: string) => void;
+  onClick?: (
+    option: string,
+    name: string | undefined,
+    event: MouseEvent<HTMLLIElement>
+  ) => void;
 }
 
 export const DropdownOption = ({
@@ -25,13 +30,14 @@ export const DropdownOption = ({
     value: option.value,
   };
 
-  const handleClick = () => {
+  const handleClick = (event: MouseEvent<HTMLLIElement>) => {
     if (disabled) {
       return;
     }
+
     setIsOpen(false);
     setState(value);
-    onClick && onClick(option.value, name);
+    onClick && onClick(option.value, name, event);
   };
 
   const disabled = isDisabled || state.value === option.value;
