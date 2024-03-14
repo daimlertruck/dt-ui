@@ -1403,19 +1403,6 @@
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
   integrity sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==
 
-"@dt-ui/react-core@0.1.0-beta.9":
-  version "0.1.0-beta.9"
-  resolved "https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/@dt-ui/react-core/-/dt-ui-react-core-v0.1.0-beta.9.tgz#b27ae9ccdf4c53b9c47013017e79192e1052b26f"
-  integrity sha1-snrpzN9MU7nEcBMBfnkZLhBSsm8=
-
-"@dt-ui/react-spinner@0.1.0-beta.9":
-  version "0.1.0-beta.9"
-  resolved "https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/@dt-ui/react-spinner/-/dt-ui-react-spinner-v0.1.0-beta.9.tgz#4ab5c152593e0de0f8d714cf9a20c6df3d806ef0"
-  integrity sha1-SrXBUlk+DeD41xTPmiDG3z2AbvA=
-  dependencies:
-    "@dt-ui/react-box" "0.1.0-beta.7"
-    "@dt-ui/react-core" "0.1.0-beta.9"
-
 "@emotion/babel-plugin@^11.11.0":
   version "11.11.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.11.0.tgz#c2d872b6a7767a9d176d007f5b31f7d504bb5d6c"

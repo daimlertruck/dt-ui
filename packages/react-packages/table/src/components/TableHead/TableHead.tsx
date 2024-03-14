@@ -1,9 +1,9 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { Children, isValidElement } from 'react';
 
-import { useTableContext } from '../../context/TableProvider';
+import { useTableContext } from '../../context';
 
 import { TableHeadStyled } from './TableHead.styled';
-import { extractTableHeaders } from './utils';
 
 export interface TableHeadProps extends BaseProps {
   hasFixedHeader?: boolean;
@@ -15,10 +15,13 @@ export const TableHead = ({
   children,
   hasFixedHeader = false,
 }: TableHeadProps) => {
-  const tableContext = useTableContext();
-  const headers = extractTableHeaders(children);
+  const { setColumnsLength } = useTableContext();
 
-  tableContext.appendColumnHeaders(headers);
+  Children.map(children, (child) => {
+    if (isValidElement(child)) {
+      setColumnsLength(child.props.children?.length ?? 0);
+    }
+  });
 
   return (
     <TableHeadStyled

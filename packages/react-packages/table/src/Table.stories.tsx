@@ -8,13 +8,58 @@ import { InfoOutlineIcon } from '../../../dt-ui-react/core';
 import { TableHeadProps } from './components';
 import { default as Table, TableProps } from './Table';
 
-const columns = ['Name', 'Email', 'Role', 'Status'];
+const columns = [
+  'Name',
+  'Email',
+  'Role',
+  'Status',
+  'Phone',
+  'Department',
+  'Location',
+  'Manager',
+];
 
 const rows = [
-  ['Thomas Morse', 'thomas.morse@myhugecompanynamem.com', 'Operator', 'yellow'],
-  ['Hanna Apple', 'hanna.apple@companysample.com', 'Admin', 'green'],
-  ['Marcus Klein', 'marcus.klein@companysample.com', 'Operator', 'green'],
-  ['Rick Thor', 'rick.thor@companysample.com', 'Admin', 'grey'],
+  [
+    'John Doe',
+    'john@example.com',
+    'Developer',
+    'green',
+    '+123456789',
+    'Engineering',
+    'New York',
+    'Alice',
+  ],
+  [
+    'Jane Smith',
+    'jane@example.com',
+    'Designer',
+    'grey',
+    '+987654321',
+    'Design',
+    'San Francisco',
+    'Bob',
+  ],
+  [
+    'Alice Johnson',
+    'alice@example.com',
+    'Manager',
+    'yellow',
+    '+135792468',
+    'Management',
+    'Los Angeles',
+    'Charlie',
+  ],
+  [
+    'Bob Brown',
+    'bob@example.com',
+    'Engineer',
+    'green',
+    '+246813579',
+    'Engineering',
+    'Chicago',
+    'David',
+  ],
 ];
 
 const columnSizes: { [key: string]: string } = {
@@ -42,12 +87,15 @@ const renderTag = (content: string) => (
 );
 
 const renderContent = (colIndex: number, content: string) => {
+  const columnName = columns[colIndex];
+  if (columnName !== 'Name' && columnName !== 'Status') {
+    return content;
+  }
+
   return {
     Name: renderAvatarWithTitle(content),
     Status: renderTag(content),
-    Email: content,
-    Role: content,
-  }[columns[colIndex]];
+  }[columnName];
 };
 
 const meta: Meta<TableProps & TableHeadProps> = {
@@ -107,3 +155,55 @@ export const Default: StoryObj<TableProps & TableHeadProps> = {
 };
 
 export default meta;
+const fixedColumnCount = 1;
+const fixedEndColumnCount = 2;
+
+export const TableWithPinnedColumns: Meta<TableProps & TableHeadProps> = {
+  title: 'Table',
+  component: Table,
+  render: () => (
+    <div style={{ width: '500px', overflow: 'auto' }}>
+      <Table
+        fixedColumnCount={fixedColumnCount}
+        fixedEndColumnCount={fixedEndColumnCount}
+      >
+        <Table.Head>
+          <Table.Row>
+            {columns.map((column: string) => (
+              <Table.ColumnHeader
+                dataTestId='test'
+                key={`column-header-${column}`}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                  {column}
+                  {column === 'Status' && (
+                    <Tooltip>
+                      <InfoOutlineIcon height={16} width={16} />
+                      <Tooltip.Content>
+                        Pending: Yellow | Active: Green | Deactivated: Grey
+                      </Tooltip.Content>
+                    </Tooltip>
+                  )}
+                </div>
+              </Table.ColumnHeader>
+            ))}
+          </Table.Row>
+        </Table.Head>
+        <Table.Body>
+          {rows.map((row: string[]) => (
+            <Table.Row key={row.toString()}>
+              {row.map((content: string, i: number) => (
+                <Table.DataCell
+                  columnWidth={columnSizes[columns[i]]}
+                  key={`column-${columns[i]}-${content}`}
+                >
+                  {renderContent(i, content)}
+                </Table.DataCell>
+              ))}
+            </Table.Row>
+          ))}
+        </Table.Body>
+      </Table>
+    </div>
+  ),
+};

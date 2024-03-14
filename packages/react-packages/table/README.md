@@ -9,7 +9,8 @@ import { Table } from '@dt-ui/react';
 
 export const App = () => {
   const columns = ['Column 1', 'Column 2', 'Column 3', 'Column 4'];
-
+  const fixedColumnCount = 1;
+  const fixedEndColumnCount = 2;
   const rows = [
     [
       'Row 1 - content 1',
@@ -33,7 +34,10 @@ export const App = () => {
 
   return (
     <div>
-      <Table>
+      <Table
+        fixedColumnCount={fixedColumnCount}
+        fixedEndColumnCount={fixedEndColumnCount}
+      >
         <Table.Head>
           <Table.Row>
             {columns.map((column: string) => (
@@ -70,6 +74,8 @@ export const App = () => {
 | `isFixed`    | `boolean`             | -       | Define the table layout value. If the value is true, the table-layout is fixed. |
 | `dataTestId` | `string`              | -       | Customizable test identifier                                                    |
 | `style`      | `React.CSSProperties` | -       | Gives the Table some specific css properties                                    |
+| `fixedColumnCount`      | `number` | 0       | Number that indicates how many columns should be fixed on the left                                    |
+| `fixedEndColumnCount`      | `number` | 0      | Number that indicates how many columns should be fixed on the right                                 |
 
 ### Table.Head
 

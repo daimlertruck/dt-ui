@@ -2,45 +2,387 @@
 
 exports[`<Table /> component renders a Basic Table 1`] = `
 .emotion-0 {
+  table-layout: fixed;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.emotion-2 {
+  display: table-header-group;
+}
+
+.emotion-4 {
+  display: table-row;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  cursor: auto;
+}
+
+.emotion-6 {
+  text-align: left;
+  color: #323232;
+  padding: 0 16px 16px;
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  left: 0px;
+  right: unset;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+  background: #FFFFFF;
+  box-shadow: 1px 0 0 0 #EBECED;
+}
+
+.emotion-8 {
+  text-align: left;
+  color: #323232;
+  padding: 0 16px 16px;
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+}
+
+.emotion-10 {
+  text-align: left;
+  color: #323232;
+  padding: 0 16px 16px;
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  left: unset;
+  right: 110px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+  background: #FFFFFF;
+  box-shadow: -1px 0 0 0 #EBECED;
+}
+
+.emotion-12 {
+  text-align: left;
+  color: #323232;
+  padding: 0 16px 16px;
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  left: unset;
+  right: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+  background: #FFFFFF;
+  box-shadow: unset;
+}
+
+.emotion-14 {
+  display: table-header-group;
+}
+
+.emotion-14 tr:hover td {
+  background-color: #F8F9FA;
+}
+
+.emotion-16 {
+  display: table-row;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.emotion-18 {
+  display: table-cell;
+  min-width: 110px;
+  word-break: break-word;
+  border-top: 1px solid #EBECED;
+  padding: 16px;
+  text-align: left;
+  color: #636464;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  false z-index: 2;
+  left: 0px;
+  right: unset;
+  position: -webkit-sticky;
+  position: sticky;
+  background: #FFFFFF;
+  box-shadow: 1px 0 0 0 #EBECED;
+}
+
+.emotion-18:first-of-type {
+  padding-top: 16px;
+  border-bottom: none;
+}
+
+.emotion-20 {
+  display: table-cell;
+  min-width: 110px;
+  word-break: break-word;
+  border-top: 1px solid #EBECED;
+  padding: 16px;
+  text-align: left;
+  color: #636464;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+}
+
+.emotion-20:first-of-type {
+  padding-top: 16px;
+  border-bottom: none;
+}
+
+.emotion-22 {
+  display: table-cell;
+  min-width: 110px;
+  word-break: break-word;
+  border-top: 1px solid #EBECED;
+  padding: 16px;
+  text-align: left;
+  color: #636464;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  false z-index: 2;
+  left: unset;
+  right: 110px;
+  position: -webkit-sticky;
+  position: sticky;
+  background: #FFFFFF;
+  box-shadow: -1px 0 0 0 #EBECED;
+}
+
+.emotion-22:first-of-type {
+  padding-top: 16px;
+  border-bottom: none;
+}
+
+.emotion-24 {
+  display: table-cell;
+  min-width: 110px;
+  word-break: break-word;
+  border-top: 1px solid #EBECED;
+  padding: 16px;
+  text-align: left;
+  color: #636464;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  false z-index: 2;
+  left: unset;
+  right: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  background: #FFFFFF;
+  box-shadow: unset;
+}
+
+.emotion-24:first-of-type {
+  padding-top: 16px;
+  border-bottom: none;
+}
+
+<div>
+  <table
+    class="emotion-0 emotion-1"
+    data-testid="table"
+  >
+    <thead
+      class="emotion-2 emotion-3"
+      data-testid="table-head"
+    >
+      <tr
+        class="emotion-4 emotion-5"
+        data-testid="table-row"
+      >
+        <th
+          class="emotion-6 emotion-7"
+          data-column-index="0"
+          data-testid="table-column-header"
+        >
+          Column 1
+        </th>
+        <th
+          class="emotion-8 emotion-7"
+          data-column-index="1"
+          data-testid="table-column-header"
+        >
+          Column 2
+        </th>
+        <th
+          class="emotion-10 emotion-7"
+          data-column-index="2"
+          data-testid="table-column-header"
+        >
+          Column 3
+        </th>
+        <th
+          class="emotion-12 emotion-7"
+          data-column-index="3"
+          data-testid="table-column-header"
+        >
+          Column 4
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="emotion-14 emotion-15"
+      data-testid="table-body"
+    >
+      <tr
+        class="emotion-16 emotion-5"
+        data-testid="table-row"
+      >
+        <td
+          class="emotion-18 emotion-19"
+          data-column-index="0"
+          data-testid="table-data-cell"
+        >
+          Row 1 - content 1
+        </td>
+        <td
+          class="emotion-20 emotion-19"
+          data-column-index="1"
+          data-testid="table-data-cell"
+        >
+          Row 1 - content 2
+        </td>
+        <td
+          class="emotion-22 emotion-19"
+          data-column-index="2"
+          data-testid="table-data-cell"
+        >
+          Row 1 - content 3
+        </td>
+        <td
+          class="emotion-24 emotion-19"
+          data-column-index="3"
+          data-testid="table-data-cell"
+        >
+          Row 1 - content 4
+        </td>
+      </tr>
+      <tr
+        class="emotion-16 emotion-5"
+        data-testid="table-row"
+      >
+        <td
+          class="emotion-18 emotion-19"
+          data-column-index="0"
+          data-testid="table-data-cell"
+        >
+          Row 2 - content 1
+        </td>
+        <td
+          class="emotion-20 emotion-19"
+          data-column-index="1"
+          data-testid="table-data-cell"
+        >
+          Row 2 - content 2
+        </td>
+        <td
+          class="emotion-22 emotion-19"
+          data-column-index="2"
+          data-testid="table-data-cell"
+        >
+          Row 2 - content 3
+        </td>
+        <td
+          class="emotion-24 emotion-19"
+          data-column-index="3"
+          data-testid="table-data-cell"
+        >
+          Row 2 - content 4
+        </td>
+      </tr>
+      <tr
+        class="emotion-16 emotion-5"
+        data-testid="table-row"
+      >
+        <td
+          class="emotion-18 emotion-19"
+          data-column-index="0"
+          data-testid="table-data-cell"
+        >
+          Row 3 - content 1
+        </td>
+        <td
+          class="emotion-20 emotion-19"
+          data-column-index="1"
+          data-testid="table-data-cell"
+        >
+          Row 3 - content 2
+        </td>
+        <td
+          class="emotion-22 emotion-19"
+          data-column-index="2"
+          data-testid="table-data-cell"
+        >
+          Row 3 - content 3
+        </td>
+        <td
+          class="emotion-24 emotion-19"
+          data-column-index="3"
+          data-testid="table-data-cell"
+        >
+          Row 3 - content 4
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`<Table /> component renders a Basic Table without fixed columns 1`] = `
+.emotion-0 {
   table-layout: auto;
   width: 100%;
   border-spacing: 0;
 }
 
 .emotion-2 {
-  display: none;
-}
-
-.emotion-2 tr {
-  background: transparent;
-}
-
-@media (min-width: 900px) {
-  .emotion-2 {
-    display: table-header-group;
-  }
+  display: table-header-group;
 }
 
 .emotion-4 {
-  display: block;
-  padding: 24px;
+  display: table-row;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 0;
   width: 100%;
   background-color: #FFFFFF;
-  border-radius: 8px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
   cursor: auto;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-@media (min-width: 900px) {
-  .emotion-4 {
-    display: table-row;
-    border-radius: 0px;
-    box-shadow: none;
-    padding: 0;
-  }
 }
 
 .emotion-6 {
@@ -56,42 +398,19 @@ exports[`<Table /> component renders a Basic Table 1`] = `
 }
 
 .emotion-14 {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
+  display: table-header-group;
 }
 
-.emotion-14 tr:hover {
+.emotion-14 tr:hover td {
   background-color: #F8F9FA;
 }
 
-@media (min-width: 600px) {
-  .emotion-14 {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 900px) {
-  .emotion-14 {
-    display: table-header-group;
-  }
-}
-
 .emotion-18 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 16px;
+  display: table-cell;
+  min-width: 110px;
   word-break: break-word;
+  border-top: 1px solid #EBECED;
+  padding: 16px;
   text-align: left;
   color: #636464;
   font-weight: 400;
@@ -103,56 +422,8 @@ exports[`<Table /> component renders a Basic Table 1`] = `
 }
 
 .emotion-18:first-of-type {
-  border-bottom: 1px solid #EBECED;
-  padding-top: 0;
-}
-
-.emotion-18:first-of-type .header-cell {
-  display: none;
-}
-
-@media (min-width: 900px) {
-  .emotion-18 {
-    display: table-cell;
-    border-top: 1px solid #EBECED;
-    padding: 16px;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    letter-spacing: normal;
-    margin: 0;
-    text-transform: none;
-    word-break: break-word;
-  }
-
-  .emotion-18:first-of-type {
-    color: #636464;
-    padding-top: 16px;
-    border-bottom: none;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    letter-spacing: normal;
-    margin: 0;
-    text-transform: none;
-  }
-}
-
-.emotion-20 {
-  word-break: keep-all;
-  color: #323232;
-  font-weight: 700;
-  font-size: 0.625rem;
-  line-height: 0.875rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-}
-
-@media (min-width: 900px) {
-  .emotion-20 {
-    display: none;
-  }
+  padding-top: 16px;
+  border-bottom: none;
 }
 
 <div>
@@ -206,44 +477,24 @@ exports[`<Table /> component renders a Basic Table 1`] = `
           class="emotion-18 emotion-19"
           data-testid="table-data-cell"
         >
-          <div
-            class="header-cell emotion-20 emotion-21"
-          >
-            Column 1
-          </div>
           Row 1 - content 1
         </td>
         <td
           class="emotion-18 emotion-19"
           data-testid="table-data-cell"
         >
-          <div
-            class="header-cell emotion-20 emotion-21"
-          >
-            Column 2
-          </div>
           Row 1 - content 2
         </td>
         <td
           class="emotion-18 emotion-19"
           data-testid="table-data-cell"
         >
-          <div
-            class="header-cell emotion-20 emotion-21"
-          >
-            Column 3
-          </div>
           Row 1 - content 3
         </td>
         <td
           class="emotion-18 emotion-19"
           data-testid="table-data-cell"
         >
-          <div
-            class="header-cell emotion-20 emotion-21"
-          >
-            Column 4
-          </div>
           Row 1 - content 4
         </td>
       </tr>
@@ -255,44 +506,24 @@ exports[`<Table /> component renders a Basic Table 1`] = `
           class="emotion-18 emotion-19"
           data-testid="table-data-cell"
         >
-          <div
-            class="header-cell emotion-20 emotion-21"
-          >
-            Column 1
-          </div>
           Row 2 - content 1
         </td>
         <td
           class="emotion-18 emotion-19"
           data-testid="table-data-cell"
         >
-          <div
-            class="header-cell emotion-20 emotion-21"
-          >
-            Column 2
-          </div>
           Row 2 - content 2
         </td>
         <td
           class="emotion-18 emotion-19"
           data-testid="table-data-cell"
         >
-          <div
-            class="header-cell emotion-20 emotion-21"
-          >
-            Column 3
-          </div>
           Row 2 - content 3
         </td>
         <td
           class="emotion-18 emotion-19"
           data-testid="table-data-cell"
         >
-          <div
-            class="header-cell emotion-20 emotion-21"
-          >
-            Column 4
-          </div>
           Row 2 - content 4
         </td>
       </tr>
@@ -304,44 +535,24 @@ exports[`<Table /> component renders a Basic Table 1`] = `
           class="emotion-18 emotion-19"
           data-testid="table-data-cell"
         >
-          <div
-            class="header-cell emotion-20 emotion-21"
-          >
-            Column 1
-          </div>
           Row 3 - content 1
         </td>
         <td
           class="emotion-18 emotion-19"
           data-testid="table-data-cell"
         >
-          <div
-            class="header-cell emotion-20 emotion-21"
-          >
-            Column 2
-          </div>
           Row 3 - content 2
         </td>
         <td
           class="emotion-18 emotion-19"
           data-testid="table-data-cell"
         >
-          <div
-            class="header-cell emotion-20 emotion-21"
-          >
-            Column 3
-          </div>
           Row 3 - content 3
         </td>
         <td
           class="emotion-18 emotion-19"
           data-testid="table-data-cell"
         >
-          <div
-            class="header-cell emotion-20 emotion-21"
-          >
-            Column 4
-          </div>
           Row 3 - content 4
         </td>
       </tr>

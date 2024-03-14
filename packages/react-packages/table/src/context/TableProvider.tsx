@@ -1,29 +1,84 @@
 import { ReactNode, createContext, useContext, useRef } from 'react';
 
 interface TableContextState {
-  columnHeadersChildren: ReactNode[];
-  appendColumnHeaders: (children: ReactNode[]) => void;
+  columnsLength: number;
+  setColumnsLength: (columnsLength: number) => void;
+  fixedColumnCount: number;
+  fixedEndColumnCount: number;
+  fixedColumns: number[];
+  setFixedColumns: (columns: number[]) => void;
+  fixedEndColumns: number[];
+  setFixedEndColumns: (columns: number[]) => void;
+  showBoxShadow: number[];
+  setShowBoxShadow: (columns: number[]) => void;
+}
+
+interface TableContextProviderProps {
+  children: ReactNode;
+  fixedColumnCount: number;
+  fixedEndColumnCount: number;
 }
 
 const DEFAULT_VALUE: TableContextState = {
-  columnHeadersChildren: [],
-  appendColumnHeaders: () => null,
+  columnsLength: 0,
+  setColumnsLength: () => null,
+  fixedColumnCount: 0,
+  fixedEndColumnCount: 0,
+  fixedColumns: [],
+  setFixedColumns: () => null,
+  fixedEndColumns: [],
+  setFixedEndColumns: () => null,
+  showBoxShadow: [],
+  setShowBoxShadow: () => null,
 };
 
 export const TableContext = createContext<TableContextState>(DEFAULT_VALUE);
 
-export const TableContextProvider = ({ children }: { children: ReactNode }) => {
-  const columnHeadersChildren = useRef(DEFAULT_VALUE.columnHeadersChildren);
+export const TableContextProvider = ({
+  children,
+  fixedColumnCount,
+  fixedEndColumnCount,
+}: TableContextProviderProps) => {
+  const fixedColumnsRef = useRef<number[]>([]);
+  const fixedEndColumnsRef = useRef<number[]>([]);
+  const columnsLengthRef = useRef(0);
+  const showBoxShadowRef = useRef<number[]>([]);
 
-  const appendColumnHeaders = (children: ReactNode[]) => {
-    columnHeadersChildren.current = children;
+  const setFixedColumns = (columns: number[]) => {
+    fixedColumnsRef.current = columns;
+  };
+
+  const setFixedEndColumns = (columns: number[]) => {
+    fixedEndColumnsRef.current = columns;
+  };
+
+  const setColumnsLength = (columnsLength: number) => {
+    columnsLengthRef.current = columnsLength;
+  };
+
+  const setShowBoxShadow = (columns: number[]) => {
+    showBoxShadowRef.current = columns;
   };
 
   const providerValue: TableContextState = {
-    get columnHeadersChildren() {
-      return columnHeadersChildren.current;
+    get columnsLength() {
+      return columnsLengthRef.current;
     },
-    appendColumnHeaders,
+    setColumnsLength,
+    fixedColumnCount,
+    fixedEndColumnCount,
+    get fixedColumns() {
+      return fixedColumnsRef.current;
+    },
+    setFixedColumns,
+    get fixedEndColumns() {
+      return fixedEndColumnsRef.current;
+    },
+    setFixedEndColumns,
+    get showBoxShadow() {
+      return showBoxShadowRef.current;
+    },
+    setShowBoxShadow,
   };
 
   return (

@@ -7,22 +7,16 @@ interface TableHeadStyledProps {
 
 export const TableHeadStyled = styled.thead<TableHeadStyledProps>`
   ${({ theme, hasFixedHeader }) => `
-    display: none;
-    tr {
-      background: transparent;
-    }
-    @media (min-width: ${theme.breakpoints.m}) {
-      display: table-header-group;
-      ${
-        hasFixedHeader &&
-        `
-          position: sticky;
-          top: 0;
-          background-color: ${theme.palette.base.default};
-          z-index: ${TABLE_HEADER_Z_INDEX};
-          box-shadow: ${theme.shadows.xs};
-        `
-      }
+    display: table-header-group;
+    ${
+      hasFixedHeader &&
+      `
+        position: sticky;
+        top: 0;
+        background-color: ${theme.palette.base.default};
+        z-index: ${TABLE_HEADER_Z_INDEX};
+        box-shadow: ${theme.shadows.xs};
+      `
     }
 `}
 `;

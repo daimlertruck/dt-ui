@@ -1,4 +1,4 @@
-import { theme, withProviders } from '@dt-ui/react-core';
+import { withProviders } from '@dt-ui/react-core';
 import { render, screen, within, waitFor } from '@testing-library/react';
 import '@emotion/jest';
 
@@ -42,8 +42,15 @@ const renderTableWithProps = (
     columnWidth: '',
   }
 ) => {
+  const fixedColumnCount = 1;
+  const fixedEndColumnCount = 2;
+
   return render(
-    <ProvidedTable isFixed={isFixed}>
+    <ProvidedTable
+      fixedColumnCount={fixedColumnCount}
+      fixedEndColumnCount={fixedEndColumnCount}
+      isFixed={isFixed}
+    >
       <Table.Head hasFixedHeader={hasFixedHeader}>
         <Table.Row>
           {COLUMNS.map((column: string) => (
@@ -58,7 +65,7 @@ const renderTableWithProps = (
       </Table.Head>
       <Table.Body>
         {ROWS.map((row: string[]) => (
-          <Table.Row key={row.toString()}>
+          <Table.Row key={row.toString()} onClick={jest.fn()}>
             {row.map((content: string, i: number) => (
               <Table.DataCell
                 columnWidth={columnWidth}
@@ -77,7 +84,43 @@ const renderTableWithProps = (
 
 describe('<Table /> component', () => {
   it('renders a Basic Table', () => {
-    const { container } = renderTableWithProps();
+    const { container } = renderTableWithProps({ isFixed: true });
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('renders a Basic Table without fixed columns', () => {
+    const { container } = render(
+      <ProvidedTable>
+        <Table.Head>
+          <Table.Row>
+            {COLUMNS.map((column: string) => (
+              <Table.ColumnHeader
+                key={`column-header-${column}`}
+                textAlign='left'
+              >
+                {column}
+              </Table.ColumnHeader>
+            ))}
+          </Table.Row>
+        </Table.Head>
+        <Table.Body>
+          {ROWS.map((row: string[]) => (
+            <Table.Row key={row.toString()}>
+              {row.map((content: string, i: number) => (
+                <Table.DataCell
+                  columnWidth=''
+                  key={`column-${COLUMNS[i]}-${content}`}
+                  textAlign='left'
+                >
+                  {content}
+                </Table.DataCell>
+              ))}
+            </Table.Row>
+          ))}
+        </Table.Body>
+      </ProvidedTable>
+    );
 
     expect(container).toMatchSnapshot();
   });
@@ -112,9 +155,7 @@ describe('<Table /> component', () => {
 
     const theadElement = screen.getByTestId('table-head');
 
-    expect(theadElement).toHaveStyleRule('position', 'sticky', {
-      media: `(min-width: ${theme.breakpoints.m})`,
-    });
+    expect(theadElement).toHaveStyleRule('position', 'sticky');
   });
 
   it('applies custom column Width to table data cell', () => {
@@ -143,26 +184,15 @@ describe('<Table /> component', () => {
     });
   });
 
-  it('should append headers on data cells to be shown on mobile version', () => {
+  it('applies the expected styles when Table has fixed columns', () => {
     renderTableWithProps();
 
-    ROWS.forEach((rowData: string[]) => {
-      rowData.forEach((data, columnIndex) => {
-        const dataCell = screen.getByText(data).closest('td');
-        const dataCellContent = within(dataCell!);
-        const headerInDataCell = dataCellContent.getByText(
-          COLUMNS[columnIndex],
-          {
-            selector: '.header-cell',
-          }
-        );
+    const fixedColumn = screen.getByText('Column 1');
+    const fixedEndColumn1 = screen.getByText('Column 3');
+    const fixedEndColumn2 = screen.getByText('Column 4');
 
-        expect(headerInDataCell).toBeInTheDocument();
-
-        expect(headerInDataCell).toHaveStyleRule('display', 'none', {
-          media: `(min-width: ${theme.breakpoints.m})`,
-        });
-      });
-    });
+    expect(fixedColumn).toHaveStyleRule('position', 'sticky');
+    expect(fixedEndColumn1).toHaveStyleRule('position', 'sticky');
+    expect(fixedEndColumn2).toHaveStyleRule('position', 'sticky');
   });
 });

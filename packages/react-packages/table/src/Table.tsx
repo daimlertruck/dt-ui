@@ -12,6 +12,8 @@ import { TableStyled } from './Table.styled';
 
 export interface TableProps extends BaseProps {
   isFixed?: boolean;
+  fixedColumnCount?: number;
+  fixedEndColumnCount?: number;
 }
 
 const Table = ({
@@ -19,8 +21,13 @@ const Table = ({
   dataTestId,
   style,
   isFixed = false,
+  fixedColumnCount = 0,
+  fixedEndColumnCount = 0,
 }: TableProps) => (
-  <TableContextProvider>
+  <TableContextProvider
+    fixedColumnCount={fixedColumnCount}
+    fixedEndColumnCount={fixedEndColumnCount}
+  >
     <TableStyled
       data-testid={dataTestId ?? 'table'}
       isFixed={isFixed}
