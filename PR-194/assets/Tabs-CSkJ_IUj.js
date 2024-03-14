@@ -1,0 +1,38 @@
+import{j as d}from"./jsx-runtime-CKrituN3.js";import{B as $}from"./index-gq_RjDZX.js";import"./index-u8Tre6qU.js";import"./index-BtM5VmRH.js";import{r as l}from"./index-CBqU2yxZ.js";import{u as w}from"./useDebounceResize-Cg-w-8ih.js";import{I as m}from"./Icon-Ec8CY5p0.js";import{n as x}from"./emotion-styled.browser.esm-DhD7UCCJ.js";const S=x.button`
+  min-height: 50px;
+  border: none;
+  display: flex;
+  align-items: center;
+
+  ${({theme:e,active:o,disabled:n,variant:s})=>`
+
+    ${o?e.fontStyles.body2Bold:e.fontStyles.body2}
+
+    ${s==="book"?`
+          background-color: transparent;
+          border-bottom: ${o?`2px solid ${e.palette.primary.default}`:`1px solid ${e.palette.border.default}`};`:`
+          background: ${o?`${e.palette.base.default}`:"transparent"};`}
+    
+    color: ${o?e.palette.primary.default:n?e.palette.content.disabled:e.palette.content.body};
+    padding: ${e.spacing["3xs"]} ${e.spacing.s};
+    cursor: ${o?"default":n?"not-allowed":"pointer"};
+    white-space: nowrap;
+
+    ${!o&&!n&&`
+      &:hover {
+        ${s==="book"?`color: ${e.palette.primary.dark};`:`background: ${e.palette.base.default};`}        
+      `}
+
+    ${n&&`
+        opacity: 0.4;
+  
+        &:active {
+          pointer-events: none; 
+        }
+     `};
+  `}
+`,k=({activeTab:e,children:o,dataTestId:n,isDisabled:s,index:i,variant:t="boxed",handleChange:u})=>{const r=l.useRef(null),p=()=>{if(!r||!r.current||!r.current.parentElement)return;const c=r.current.getBoundingClientRect(),a=r.current.parentElement.getBoundingClientRect();c.left<a.left&&r.current.parentElement.scroll({left:r.current.parentElement.scrollLeft-(a.left-c.left)}),a.right<c.right&&r.current.parentElement.scroll({left:r.current.parentElement.scrollLeft+(c.right-a.right)}),u(i)};return d.jsx(S,{active:e===i,"data-testid":n||`tab-item-${i}`,disabled:s,onClick:p,ref:r,role:"tab",tabIndex:e===i?0:-1,variant:t,children:o})},C=x.div`
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+`,y=120,E=.5,R=({children:e,dataTestId:o,style:n,activeTab:s,variant:i="boxed"})=>{const t=l.useRef(null),[u,r]=l.useState(!1),[p,c]=l.useState(!1),a=l.useMemo(()=>l.Children.map(e,f=>f&&l.cloneElement(f,{...f.props,activeTab:s,variant:i})),[e,s,i]),g=f=>{!t||!t.current||(t.current.scroll({left:t.current.scrollLeft+f}),b())},b=()=>{!t||!t.current||(r(t.current.scrollLeft>0),c(t.current.clientWidth+t.current.scrollLeft+E<t.current.scrollWidth))};return l.useEffect(b,[]),w(b),d.jsxs($,{style:{flexDirection:"row"},children:[d.jsx(m,{code:"keyboard_arrow_left",dataTestId:"left-arrow",onClick:()=>g(-y),style:{visibility:u?"visible":"hidden"}}),d.jsx(C,{"data-testid":o||"tabs",ref:t,role:"tablist",style:n,children:a}),d.jsx(m,{code:"keyboard_arrow_right",dataTestId:"right-arrow",onClick:()=>g(y),style:{visibility:p?"visible":"hidden"}})]})};R.Item=k;export{R as T};
