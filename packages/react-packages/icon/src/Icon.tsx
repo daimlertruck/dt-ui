@@ -10,6 +10,7 @@ export interface IconProps extends Omit<BaseProps, 'children'> {
   color?: string;
   size?: Size;
   variant?: Variant;
+  onClick?: () => void;
 }
 
 export const Icon = ({
@@ -19,6 +20,7 @@ export const Icon = ({
   size = 'large',
   style,
   variant = 'outlined',
+  onClick,
 }: IconProps) => {
   const theme = useTheme();
 
@@ -26,6 +28,8 @@ export const Icon = ({
     <IconStyled
       color={color ?? theme.palette.content.body}
       data-testid={dataTestId ?? 'icon'}
+      hasClick={!!onClick}
+      onClick={onClick}
       size={size}
       style={style}
       variant={variant}
