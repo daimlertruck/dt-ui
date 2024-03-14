@@ -35,6 +35,12 @@ const Template: StoryFn<TabsStoryProps> = ({ tabName, variant }) => {
       <Tabs.Item handleChange={handleChange} index='fifth'>
         Tab 5
       </Tabs.Item>
+      <Tabs.Item handleChange={handleChange} index='six'>
+        Tab 6
+      </Tabs.Item>
+      <Tabs.Item handleChange={handleChange} index='seven'>
+        Tab 7
+      </Tabs.Item>
     </Tabs>
   );
 };

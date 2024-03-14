@@ -6,12 +6,51 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .emotion-2 {
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #636464;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.emotion-6 {
   min-height: 50px;
   border: none;
   display: -webkit-box;
@@ -36,7 +75,7 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
   white-space: nowrap;
 }
 
-.emotion-4 {
+.emotion-8 {
   min-height: 50px;
   border: none;
   display: -webkit-box;
@@ -61,11 +100,11 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
   white-space: nowrap;
 }
 
-.emotion-4:hover {
+.emotion-8:hover {
   color: #004355;
 }
 
-.emotion-8 {
+.emotion-12 {
   min-height: 50px;
   border: none;
   display: -webkit-box;
@@ -91,49 +130,70 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
   false opacity: 0.4;
 }
 
-.emotion-8:active {
+.emotion-12:active {
   pointer-events: none;
 }
 
 <div>
   <div
     class="emotion-0 emotion-1"
-    data-testid="tabs"
-    role="tablist"
+    style="flex-direction: row;"
   >
-    <button
+    <i
       class="emotion-2 emotion-3"
-      data-testid="tab-item-first"
-      role="tab"
-      tabindex="0"
+      color="#636464"
+      data-testid="left-arrow"
+      style="visibility: hidden;"
     >
-      Tab 1
-    </button>
-    <button
-      class="emotion-4 emotion-3"
-      data-testid="tab-item-second"
-      role="tab"
-      tabindex="-1"
+      keyboard_arrow_left
+    </i>
+    <div
+      class="emotion-4 emotion-5"
+      data-testid="tabs"
+      role="tablist"
     >
-      Tab 2
-    </button>
-    <button
-      class="emotion-4 emotion-3"
-      data-testid="tab-item-third"
-      role="tab"
-      tabindex="-1"
+      <button
+        class="emotion-6 emotion-7"
+        data-testid="tab-item-first"
+        role="tab"
+        tabindex="0"
+      >
+        Tab 1
+      </button>
+      <button
+        class="emotion-8 emotion-7"
+        data-testid="tab-item-second"
+        role="tab"
+        tabindex="-1"
+      >
+        Tab 2
+      </button>
+      <button
+        class="emotion-8 emotion-7"
+        data-testid="tab-item-third"
+        role="tab"
+        tabindex="-1"
+      >
+        Tab 3
+      </button>
+      <button
+        class="emotion-12 emotion-7"
+        data-testid="tab-item-fourth"
+        disabled=""
+        role="tab"
+        tabindex="-1"
+      >
+        Tab 4
+      </button>
+    </div>
+    <i
+      class="emotion-2 emotion-3"
+      color="#636464"
+      data-testid="right-arrow"
+      style="visibility: hidden;"
     >
-      Tab 3
-    </button>
-    <button
-      class="emotion-8 emotion-3"
-      data-testid="tab-item-fourth"
-      disabled=""
-      role="tab"
-      tabindex="-1"
-    >
-      Tab 4
-    </button>
+      keyboard_arrow_right
+    </i>
   </div>
 </div>
 `;
@@ -144,12 +204,51 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .emotion-2 {
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #636464;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.emotion-6 {
   min-height: 50px;
   border: none;
   display: -webkit-box;
@@ -173,7 +272,7 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
   white-space: nowrap;
 }
 
-.emotion-4 {
+.emotion-8 {
   min-height: 50px;
   border: none;
   display: -webkit-box;
@@ -197,11 +296,11 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
   white-space: nowrap;
 }
 
-.emotion-4:hover {
+.emotion-8:hover {
   background: #FFFFFF;
 }
 
-.emotion-8 {
+.emotion-12 {
   min-height: 50px;
   border: none;
   display: -webkit-box;
@@ -226,49 +325,70 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
   false opacity: 0.4;
 }
 
-.emotion-8:active {
+.emotion-12:active {
   pointer-events: none;
 }
 
 <div>
   <div
     class="emotion-0 emotion-1"
-    data-testid="tabs"
-    role="tablist"
+    style="flex-direction: row;"
   >
-    <button
+    <i
       class="emotion-2 emotion-3"
-      data-testid="tab-item-first"
-      role="tab"
-      tabindex="0"
+      color="#636464"
+      data-testid="left-arrow"
+      style="visibility: hidden;"
     >
-      Tab 1
-    </button>
-    <button
-      class="emotion-4 emotion-3"
-      data-testid="tab-item-second"
-      role="tab"
-      tabindex="-1"
+      keyboard_arrow_left
+    </i>
+    <div
+      class="emotion-4 emotion-5"
+      data-testid="tabs"
+      role="tablist"
     >
-      Tab 2
-    </button>
-    <button
-      class="emotion-4 emotion-3"
-      data-testid="tab-item-third"
-      role="tab"
-      tabindex="-1"
+      <button
+        class="emotion-6 emotion-7"
+        data-testid="tab-item-first"
+        role="tab"
+        tabindex="0"
+      >
+        Tab 1
+      </button>
+      <button
+        class="emotion-8 emotion-7"
+        data-testid="tab-item-second"
+        role="tab"
+        tabindex="-1"
+      >
+        Tab 2
+      </button>
+      <button
+        class="emotion-8 emotion-7"
+        data-testid="tab-item-third"
+        role="tab"
+        tabindex="-1"
+      >
+        Tab 3
+      </button>
+      <button
+        class="emotion-12 emotion-7"
+        data-testid="tab-item-fourth"
+        disabled=""
+        role="tab"
+        tabindex="-1"
+      >
+        Tab 4
+      </button>
+    </div>
+    <i
+      class="emotion-2 emotion-3"
+      color="#636464"
+      data-testid="right-arrow"
+      style="visibility: hidden;"
     >
-      Tab 3
-    </button>
-    <button
-      class="emotion-8 emotion-3"
-      data-testid="tab-item-fourth"
-      disabled=""
-      role="tab"
-      tabindex="-1"
-    >
-      Tab 4
-    </button>
+      keyboard_arrow_right
+    </i>
   </div>
 </div>
 `;
