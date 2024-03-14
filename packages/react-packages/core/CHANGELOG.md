@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.13
+
+### Patch Changes
+
+- fix: match accordion design
+
 ## 0.1.0-beta.12
 
 ### Patch Changes

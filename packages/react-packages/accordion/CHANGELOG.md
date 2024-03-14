@@ -1,5 +1,14 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.9
+
+### Patch Changes
+
+- fix: match accordion design
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.13
+  - @dt-ui/react-divider@0.1.0-beta.12
+
 ## 0.1.0-beta.8
 
 ### Patch Changes

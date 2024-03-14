@@ -1,5 +1,15 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.23
+
+### Patch Changes
+
+- fix: match accordion design
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.13
+  - @dt-ui/react-button@0.1.0-beta.3
+  - @dt-ui/react-typography@0.1.0-beta.4
+
 ## 0.1.0-beta.22
 
 ### Minor Changes
