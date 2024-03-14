@@ -1,5 +1,18 @@
 # @dt-ui/react
 
+## 0.1.0-beta.98
+
+### Minor Changes
+
+- feat: add button contrast style
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.2
+  - @dt-ui/react-empty-state@0.1.0-beta.22
+  - @dt-ui/react-toast@0.1.0-beta.19
+
 ## 0.1.0-beta.97
 
 ### Patch Changes

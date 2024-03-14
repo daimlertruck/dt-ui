@@ -1,5 +1,16 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.22
+
+### Minor Changes
+
+- feat: add button contrast style
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.2
+
 ## 0.1.0-beta.21
 
 ### Patch Changes
