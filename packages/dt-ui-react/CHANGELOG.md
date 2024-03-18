@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.100
+
+### Minor Changes
+
+- feat: forward original dropdown option click event
+
 ## 0.1.0-beta.99
 
 ### Patch Changes
