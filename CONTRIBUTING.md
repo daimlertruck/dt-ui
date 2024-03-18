@@ -20,7 +20,8 @@ This guide is intended to support the developers by providing a set of programmi
     - [4.2. How to build a component from scratch](#42-how-to-build-a-component-from-scratch)
     - [4.3. When to use Types / Interfaces](#43-when-to-use-types--interfaces)
     - [4.4. Compound components pattern](#44-compound-components-pattern)
-    - [4.4. Enum vs String literals unions](#45-enum-vs-string-literals-unions)
+    - [4.5. Enum vs String literals unions](#45-enum-vs-string-literals-unions)
+    - [4.6. Enum vs Objects with as const](#46-enum-vs-objects-with-as-const)
   - [5. Versioning](#5-versioning)
 
 ## 1. Branch Naming Convention
@@ -46,9 +47,9 @@ The commit title has a limit of 50 characters. **Description** should be written
 
 Even though the **body** is optional, the developer should always consider adding one so that the project has a more clear and detailed commit history for anyone to follow. Each line of **body** should be wrapped at 72 characters.
 
-### 2.2 Strategy 
+### 2.2 Strategy
 
-- Avoid mixing concerns, commits should be “atomic”. For example, creating two different components should produce two separate commits. 
+- Avoid mixing concerns, commits should be “atomic”. For example, creating two different components should produce two separate commits.
 - Commits should never crash the application. For example, a refactor that changed a payload of a request, needs to be applied to all places in the same commit. It's the same for tests, should be added in the same commit of the feature/fix, etc.
 
 ### 2.3 References
@@ -64,12 +65,12 @@ For more information on how to commit, read the following documentation and blog
 
 ### 3.1. Name Convention
 
-Pull Requests (PRs) should be opened with the following title structure `{ticket}: {description}`, for example: `DTUI-XXX: PR description`.   
-Besides that, the project already includes a PR template (see it under the folder `.github`) that should be correcly filled in. 
+Pull Requests (PRs) should be opened with the following title structure `{ticket}: {description}`, for example: `DTUI-XXX: PR description`.  
+Besides that, the project already includes a PR template (see it under the folder `.github`) that should be correcly filled in.
 
 ### 3.2. Preview Link
 
-After a PR is opened, a deploy to the github pages gets triggered and a Preview Link is added to the PR description. This will enable developers and designers to see the changes and review accordingly. 
+After a PR is opened, a deploy to the github pages gets triggered and a Preview Link is added to the PR description. This will enable developers and designers to see the changes and review accordingly.
 
 ### 3.3. Work in Progress
 
@@ -111,7 +112,7 @@ There is a case where you don't have the specification ready but the component i
 
 ### 4.2. How to build a component from scratch
 
-1. Run ``yarn generate:component``
+1. Run `yarn generate:component`
 
 2. You will be asked for a package name (in kebab-case)
 
@@ -123,9 +124,9 @@ Types and interfaces are very similar, in the last versions of typescript almost
 
 To follow a standard and have everyone on the same page we should use:
 
-``Interfaces``: to define object shapes until you need some feature that is available only on the type alias.
+`Interfaces`: to define object shapes until you need some feature that is available only on the type alias.
 
-``Types``: to "create" a new data type or define an object shape that needs something that only types have (Ex: conditional types, extends primitives, etc).
+`Types`: to "create" a new data type or define an object shape that needs something that only types have (Ex: conditional types, extends primitives, etc).
 
 Also, it has differences to get a better error explanation. You can find the documentation related to the usage below:
 
@@ -138,7 +139,7 @@ Examples of usage:
 type NullableString = string | null;
 
 interface MyInterface {
-    name: NullableString
+  name: NullableString;
 }
 ```
 
@@ -177,10 +178,22 @@ If there isn't a strong need to use enum it should be avoided. An exception of u
 Example:
 
 ```typescript
-enum DecodedCategory { BOOKS = 'B01', MOVIES = 'M01', MUSIC = 'MU01' }
+enum DecodedCategory {
+  BOOKS = 'B01',
+  MOVIES = 'M01',
+  MUSIC = 'MU01',
+}
 ```
 
 Reference: https://contra.com/p/W3ol7m3o-enums-vs-string-literal-unions-in-type-script
+
+### 4.6. Enum vs Objects with as const
+
+Given the objects keeps the base code aligned with the state of JavaScript we are in favor of this approach instead of using enums.
+
+The biggest argument in favour of this format over TypeScript’s enum is that it keeps your codebase aligned with the state of JavaScript, and when/if enums are added to JavaScript then you can move to the additional syntax.
+
+Reference: https://www.typescriptlang.org/docs/handbook/enums.html#objects-vs-enums
 
 ## 5. Versioning
 
