@@ -1,5 +1,16 @@
 # @dt-ui/react-checkbox
 
+## 0.1.0-beta.5
+
+### Minor Changes
+
+- feat: add onClick on Icon
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.10
+
 ## 0.1.0-beta.4
 
 ### Patch Changes

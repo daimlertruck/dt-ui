@@ -1,5 +1,21 @@
 # @dt-ui/react
 
+## 0.1.0-beta.101
+
+### Minor Changes
+
+- feat: add onClick on Icon
+- feat: scrollable tabs
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.10
+  - @dt-ui/react-checkbox@0.1.0-beta.5
+  - @dt-ui/react-progress-bar@0.1.0-beta.3
+  - @dt-ui/react-tabs@0.1.0-beta.3
+
 ## 0.1.0-beta.100
 
 ### Minor Changes
