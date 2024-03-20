@@ -278,6 +278,7 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
       class="emotion-8 emotion-9"
       color="primary"
       data-testid="undefined-button"
+      type="button"
     >
       Button
     </button>

@@ -58,6 +58,7 @@ exports[`<Button /> component renders button html element with the correct title
     class="emotion-0 emotion-1"
     color="primary"
     data-testid="primary-button"
+    type="button"
   >
     Primary
   </button>
@@ -182,6 +183,7 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
     color="primary"
     data-testid="undefined-button"
     disabled=""
+    type="button"
   >
     Button loading
     <div
@@ -296,6 +298,7 @@ exports[`<Button /> component when loading is true renders a spinner light theme
     color="primary"
     data-testid="undefined-button"
     disabled=""
+    type="button"
   >
     Button loading
     <div

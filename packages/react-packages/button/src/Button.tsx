@@ -25,6 +25,7 @@ export const Button = ({
   size = 'medium',
   variant = 'solid',
   color = 'primary',
+  type = 'button',
   ...props
 }: ButtonProps) => {
   const handleButtonClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -42,6 +43,7 @@ export const Button = ({
       onClick={handleButtonClick}
       size={size}
       style={style}
+      type={type}
       variant={variant}
     >
       {children}

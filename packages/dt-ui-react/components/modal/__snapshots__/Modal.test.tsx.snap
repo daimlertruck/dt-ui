@@ -664,6 +664,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
         class="emotion-18 emotion-19"
         color="secondary"
         data-testid="cancel-button"
+        type="button"
       >
         Cancel
       </button>
@@ -671,6 +672,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
         class="emotion-20 emotion-19"
         color="primary"
         data-testid="action-button"
+        type="button"
       >
         Action
       </button>
