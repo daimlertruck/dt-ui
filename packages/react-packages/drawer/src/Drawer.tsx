@@ -1,23 +1,14 @@
 import { useTheme, Global } from '@emotion/react';
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 
-import { IconButton } from '../../../dt-ui-react/components/buttons/icon-button';
-import { CloseIcon } from '../../../dt-ui-react/core';
-
-import {
-  DrawerTitle,
-  DrawerHeader,
-  ScrollEffectContainer,
-  DrawerBody,
-} from './components';
+import { DrawerTitle, DrawerHeader, DrawerBody } from './components';
+import { DrawerContextProvider } from './context/DrawerProvider';
 import {
   GlobalStyle,
   DrawerStyled,
   DrawerBaseProps,
   OverlayStyled,
   MainContainerStyled,
-  DrawerInnerContainerStyled,
-  CloseButtonContainerStyled,
 } from './Drawer.styled';
 
 const animationToMiliseconds = (duration: string) =>
@@ -34,72 +25,55 @@ const Drawer = ({
   dataTestId,
 }: DrawerProps) => {
   const [isTransformed, setIsTransformed] = useState<boolean>(false);
-  const refDrawerContainer = useRef<HTMLDivElement>(null);
   const theme = useTheme();
 
-  const handleClose = useCallback(() => setIsVisible(false), [setIsVisible]);
+  const handleClose = useCallback(() => {
+    setIsTransformed(false);
+    setTimeout(() => {
+      setIsVisible(false);
+    }, animationToMiliseconds(theme.animations.emphasizedDecelerate.timingFunction));
+  }, [setIsVisible, theme.animations.emphasizedDecelerate.timingFunction]);
 
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout;
-
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         handleClose();
       }
     };
 
-    if (isVisible) {
-      setIsTransformed(true);
-      document.addEventListener('keydown', handleKeyDown);
-    } else {
-      timeoutId = setTimeout(() => {
-        const currentContainer = refDrawerContainer.current;
-        if (currentContainer) {
-          currentContainer.scrollTop = 0;
-        }
-        setIsTransformed(false);
-        document.removeEventListener('keydown', handleKeyDown);
-      }, animationToMiliseconds(theme.animations.emphasizedDecelerate.duration));
-    }
+    setIsTransformed(isVisible);
 
-    return () => clearTimeout(timeoutId);
-  }, [handleClose, isVisible, theme.animations.emphasizedDecelerate.duration]);
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [handleClose, isVisible]);
 
   return (
-    <MainContainerStyled
-      data-testid={dataTestId ?? 'drawer-container'}
-      isTransformed={isTransformed}
-      isVisible={isVisible}
-    >
-      {isVisible ? <Global styles={GlobalStyle} /> : null}
+    <DrawerContextProvider handleClose={handleClose}>
+      <MainContainerStyled>
+        {isVisible ? <Global styles={GlobalStyle} /> : null}
 
-      <OverlayStyled
-        data-testid='drawer-overlay'
-        isVisible={isVisible}
-        onClick={handleClose}
-      />
+        <OverlayStyled
+          data-testid='drawer-overlay'
+          isVisible={isTransformed}
+          onClick={handleClose}
+        />
 
-      <DrawerStyled isVisible={isVisible}>
-        <CloseButtonContainerStyled>
-          <IconButton
-            color='default'
-            dataTestId='drawer-close-button'
-            onClick={handleClose}
-          >
-            <CloseIcon />
-          </IconButton>
-        </CloseButtonContainerStyled>
-        <DrawerInnerContainerStyled ref={refDrawerContainer}>
+        <DrawerStyled
+          data-testid={dataTestId ?? 'drawer-content-container'}
+          isVisible={isTransformed}
+        >
           {children}
-        </DrawerInnerContainerStyled>
-      </DrawerStyled>
-    </MainContainerStyled>
+        </DrawerStyled>
+      </MainContainerStyled>
+    </DrawerContextProvider>
   );
 };
 
 Drawer.Title = DrawerTitle;
 Drawer.Header = DrawerHeader;
-Drawer.ScrollEffectContainer = ScrollEffectContainer;
 Drawer.Body = DrawerBody;
 
 export default Drawer;

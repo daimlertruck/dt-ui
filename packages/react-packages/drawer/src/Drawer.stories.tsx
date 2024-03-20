@@ -37,7 +37,6 @@ const Template: StoryFn<DrawerStoryProps> = ({
             <Drawer.Title title={title} />
             <div>{header}</div>
           </Drawer.Header>
-          <Drawer.ScrollEffectContainer />
           <Drawer.Body>
             <div>{body}</div>
           </Drawer.Body>

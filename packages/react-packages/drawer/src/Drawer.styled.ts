@@ -6,27 +6,19 @@ export interface DrawerBaseProps extends BaseProps {
   isVisible: boolean;
 }
 
-interface DrawerStyledProps extends DrawerBaseProps {
-  isTransformed: boolean;
-}
-
 export const GlobalStyle = css`
   body {
     overflow: hidden;
   }
 `;
 
-export const MainContainerStyled = styled.div<DrawerStyledProps>`
-  ${({ isVisible, isTransformed }) => css`
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: ${DRAWER_Z_INDEX};
-    ${isVisible && 'transform: translateX(0);'}
-    ${!isTransformed && 'transform: translateX(100%);'}
-  `}
+export const MainContainerStyled = styled.div`
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: ${DRAWER_Z_INDEX};
 `;
 
 export const OverlayStyled = styled.div<DrawerBaseProps>`
@@ -43,6 +35,9 @@ export const OverlayStyled = styled.div<DrawerBaseProps>`
 
 export const DrawerStyled = styled.div<DrawerBaseProps>`
   ${({ theme, isVisible }) => `
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: ${theme.spacing.xs} 0;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -58,26 +53,7 @@ export const DrawerStyled = styled.div<DrawerBaseProps>`
       border-radius: ${theme.radius['3xs']} ${theme.radius.none}
         ${theme.radius.none} ${theme.radius['3xs']};
       box-shadow: ${theme.shadows.s};
-    }
-  `}
-`;
-
-export const DrawerInnerContainerStyled = styled.div`
-  position: relative;
-  height: 100%;
-  overflow: auto;
-`;
-
-export const CloseButtonContainerStyled = styled.div`
-  ${({ theme }) => `
-    width: 100%;
-    padding: ${theme.spacing.xs};
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    @media only screen and (min-width: ${theme.breakpoints.s}) {
-      padding: ${theme.spacing.s};
+      padding: ${theme.spacing.s} 0;
     }
   `}
 `;

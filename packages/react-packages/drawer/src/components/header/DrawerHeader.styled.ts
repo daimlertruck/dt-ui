@@ -2,19 +2,17 @@ import styled from '@emotion/styled';
 
 export const HeaderStyled = styled.header`
   ${({ theme }) => `
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: ${theme.spacing.none} ${theme.spacing.xs} ${theme.spacing.xs}
-      ${theme.spacing.xs};
-    background-color: ${theme.palette.base.default};
-    border-radius: ${theme.radius['3xs']} ${theme.radius.none}
-      ${theme.radius.none} ${theme.radius.none};
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 ${theme.spacing.xs} ${theme.spacing['2xs']};
+
+    &:has(+.hasScroll) {
+      box-shadow: ${theme.shadows.xs};
+    }
 
     @media only screen and (min-width: ${theme.breakpoints.s}) {
-      padding: ${theme.spacing.none} ${theme.spacing.s} ${theme.spacing.s}
-        ${theme.spacing.s};
+      padding: 0 ${theme.spacing.s} ${theme.spacing['2xs']};
     }
   `}
 `;

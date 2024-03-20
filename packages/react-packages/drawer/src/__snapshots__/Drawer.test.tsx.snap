@@ -8,10 +8,6 @@ exports[`<Drawer /> component renders correctly with children 1`] = `
   top: 0;
   left: 0;
   z-index: 9;
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
 }
 
 .emotion-2 {
@@ -25,6 +21,9 @@ exports[`<Drawer /> component renders correctly with children 1`] = `
 }
 
 .emotion-4 {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 24px 0;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -44,61 +43,13 @@ exports[`<Drawer /> component renders correctly with children 1`] = `
     width: 500px;
     border-radius: 12px 0px 0px 12px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+    padding: 32px 0;
   }
-}
-
-.emotion-6 {
-  width: 100%;
-  padding: 24px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media only screen and (min-width: 600px) {
-  .emotion-6 {
-    padding: 32px;
-  }
-}
-
-.emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  color: #636464;
-}
-
-.emotion-8:hover {
-  color: #323232;
-}
-
-.emotion-10 {
-  position: relative;
-  height: 100%;
-  overflow: auto;
 }
 
 <div>
   <div
     class="emotion-0 emotion-1"
-    data-testid="drawer-container"
   >
     <div
       class="emotion-2 emotion-3"
@@ -106,35 +57,10 @@ exports[`<Drawer /> component renders correctly with children 1`] = `
     />
     <div
       class="emotion-4 emotion-5"
+      data-testid="drawer-content-container"
     >
-      <div
-        class="emotion-6 emotion-7"
-      >
-        <button
-          class="emotion-8 emotion-9"
-          color="default"
-          data-testid="drawer-close-button"
-        >
-          <svg
-            fill="none"
-            height="24"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-              fill="currentColor"
-            />
-          </svg>
-        </button>
-      </div>
-      <div
-        class="emotion-10 emotion-11"
-      >
-        <div>
-          Example content
-        </div>
+      <div>
+        Example content
       </div>
     </div>
   </div>

@@ -25,7 +25,6 @@ export const App = () => {
           <Drawer.Title title='Drawer title' />
           <div>Drawer header content here.</div>
         </Drawer.Header>
-        <Drawer.ScrollEffectContainer />
         <Drawer.Body>
           <div>Drawer body content here.</div>
         </Drawer.Body>
@@ -54,15 +53,11 @@ export const App = () => {
 
 ### Drawer.Header
 
+A Drawer header displays header content and includes a close button. It should wrap the `Drawer.Title`.
+
 | Property   | Type        | Default | Description                     |
 | ---------- | ----------- | ------- | ------------------------------- |
 | `children` | `ReactNode` | -       | Child components to be rendered |
-
-### Drawer.ScrollEffectContainer
-
-| Property | Type | Default | Description |
-| -------- | ---- | ------- | ----------- |
-| -        | -    | -       | -           |
 
 ### Drawer.Body
 
