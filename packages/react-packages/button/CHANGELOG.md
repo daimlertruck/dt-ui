@@ -1,5 +1,11 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.4
+
+### Patch Changes
+
+- fix: change the default type of button
+
 ## 0.1.0-beta.3
 
 ### Patch Changes

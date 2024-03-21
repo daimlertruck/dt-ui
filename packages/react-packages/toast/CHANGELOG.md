@@ -1,5 +1,13 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.21
+
+### Patch Changes
+
+- fix: change the default type of button
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.4
+
 ## 0.1.0-beta.20
 
 ### Patch Changes

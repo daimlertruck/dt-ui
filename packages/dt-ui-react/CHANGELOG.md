@@ -1,5 +1,15 @@
 # @dt-ui/react
 
+## 0.1.0-beta.102
+
+### Patch Changes
+
+- fix: change the default type of button
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.4
+  - @dt-ui/react-empty-state@0.1.0-beta.24
+  - @dt-ui/react-toast@0.1.0-beta.21
+
 ## 0.1.0-beta.101
 
 ### Minor Changes
