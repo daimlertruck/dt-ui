@@ -1,5 +1,11 @@
 # @dt-ui/react-drawer
 
+## 0.1.0-beta.15
+
+### Patch Changes
+
+- refactor: apply correct drawer styles as specified
+
 ## 0.1.0-beta.14
 
 ### Patch Changes
