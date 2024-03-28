@@ -9,7 +9,6 @@ export * from './components/nav';
 export * from './components/nav-container';
 export * from './components/dropdown';
 export * from './components/header';
-export * from './components/profile';
 export * from './components/nav-item';
 export * from './components/grid';
 export * from './components/card';
