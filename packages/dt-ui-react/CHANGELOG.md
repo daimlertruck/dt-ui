@@ -1,5 +1,12 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.34
+
+### Minor Changes
+
+- feat: forward ref from table data cell
+- feat: pass style property
+
 ## 0.1.0-alpha.33
 
 ### Patch Changes
