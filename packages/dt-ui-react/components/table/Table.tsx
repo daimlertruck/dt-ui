@@ -1,4 +1,5 @@
 import { forwardRef } from 'react';
+
 import { BaseProps } from '../../types';
 
 import { TableVariant } from './constants';

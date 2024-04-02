@@ -16,6 +16,7 @@ export const DropdownOption = ({
   children,
   isDisabled,
   onClick,
+  style,
 }: DropdownOptionProps) => {
   const { state, setState, setIsOpen, name } = useDropdownContext();
 
@@ -41,6 +42,7 @@ export const DropdownOption = ({
       disabled={disabled}
       role='option'
       onClick={handleClick}
+      style={style}
     >
       {children}
     </DropdownOptionStyled>

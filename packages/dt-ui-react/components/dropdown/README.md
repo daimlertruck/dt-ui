@@ -45,7 +45,7 @@ export const App = () => {
 | ------------ | --------------------- | ----------------- | ---------------------------------------------------------- |
 | `children`   | `ReactNode`           | -                 | Child components to be rendered                            |
 | `label`      | `string`              | -                 | A text to help users understand the scope of the dropdown. |
-| `style`      | `React.CSSProperties` | -                 | Gives the Box Dropdown css properties                      |
+| `style`      | `React.CSSProperties` | -                 | Gives the Box Dropdown Select css properties               |
 | `dataTestId` | `string`              | `dropdown-select` | Customizable test identifier                               |
 | `isDisabled` | `boolean`             | `false`           | Set the dropdown disabled.                                 |
 | `hasBorder`  | `boolean`             | `true`            | Set a border to the component.                             |
@@ -67,3 +67,4 @@ export const App = () => {
 | `dataTestId` | `string`                   | `dropdown-option-{option.value}` | Customizable test identifier                      |
 | `isDisabled` | `boolean`                  | `false`                          | Set the dropdown disabled.                        |
 | `onClick`    | `(option: string) => void` | -                                | The triggered function when clicked on the option |
+| `style`      | `React.CSSProperties`      | -                                | Gives the Box Dropdown Option css properties      |
