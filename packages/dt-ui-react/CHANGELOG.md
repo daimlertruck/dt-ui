@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.104
+
+### Patch Changes
+
+- fix: drop profile component
+
 ## 0.1.0-beta.103
 
 ### Patch Changes
