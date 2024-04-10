@@ -267,6 +267,8 @@ export type CustomTheme = {
     textField: string;
     dropdown: string;
     message: string;
+    toast: string;
+    tooltip: string;
     progressbar: string;
     accordion: string;
   };

@@ -1,13 +1,15 @@
 import { radius } from './radius';
 
 export const shape = {
+  accordion: radius['none'],
   button: radius['none'],
   checkbox: radius['none'],
-  modal: radius['none'],
   emptyState: radius['none'],
-  textField: radius['none'],
   dropdown: radius['none'],
   message: radius['none'],
+  modal: radius['none'],
   progressbar: radius['none'],
-  accordion: radius['none'],
+  textField: radius['none'],
+  toast: radius['none'],
+  tooltip: radius['none'],
 };

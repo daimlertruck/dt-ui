@@ -25,7 +25,7 @@ export const TooltipContentStyled = styled.div<TooltipContentStyledProps>`
     background-color: ${theme.palette.base.dark};
     box-shadow: ${theme.shadows.s};
     color: ${theme.palette.content.contrast};
-    border-radius: ${theme.spacing['5xs']};
+    border-radius: ${theme.shape.tooltip};
     text-align: left;
     white-space: initial;
     position: absolute;

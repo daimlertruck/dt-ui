@@ -41,7 +41,7 @@ export const ToastStyled = styled.div<ToastStyledProps>`
     background-color: ${theme.palette.base.default};  
     opacity: ${isVisible ? 1 : 0};
     color: ${theme.palette.content.body};
-    border-radius: ${theme.radius['5xs']};
+    border-radius: ${theme.shape.toast};
     box-shadow: ${theme.shadows.s};
   `}
 `;
