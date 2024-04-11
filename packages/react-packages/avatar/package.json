@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-avatar",
-  "version": "0.1.0-beta.16",
+  "version": "0.1.0-beta.17",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -19,8 +19,8 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-core": "0.1.0-beta.13",
-    "@dt-ui/react-tooltip": "0.1.0-beta.16"
+    "@dt-ui/react-core": "0.1.0-beta.14",
+    "@dt-ui/react-tooltip": "0.1.0-beta.17"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",

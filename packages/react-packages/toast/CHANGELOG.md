@@ -1,5 +1,14 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.22
+
+### Patch Changes
+
+- fix: update border radius theme specifications
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.14
+  - @dt-ui/react-button@0.1.0-beta.5
+
 ## 0.1.0-beta.21
 
 ### Patch Changes

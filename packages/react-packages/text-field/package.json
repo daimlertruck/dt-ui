@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-text-field",
-  "version": "0.1.0-beta.3",
+  "version": "0.1.0-beta.4",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -19,10 +19,10 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-core": "0.1.0-beta.13",
-    "@dt-ui/react-spinner": "0.1.0-beta.14",
-    "@dt-ui/react-label-field": "0.1.0-beta.6",
-    "@dt-ui/react-typography": "0.1.0-beta.4"
+    "@dt-ui/react-core": "0.1.0-beta.14",
+    "@dt-ui/react-spinner": "0.1.0-beta.15",
+    "@dt-ui/react-label-field": "0.1.0-beta.7",
+    "@dt-ui/react-typography": "0.1.0-beta.5"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",

@@ -1,5 +1,13 @@
 # @dt-ui/react-label-field
 
+## 0.1.0-beta.7
+
+### Patch Changes
+
+- fix: update border radius theme specifications
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.14
+
 ## 0.1.0-beta.6
 
 ### Patch Changes

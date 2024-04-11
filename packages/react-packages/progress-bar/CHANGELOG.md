@@ -1,5 +1,14 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.4
+
+### Patch Changes
+
+- fix: update border radius theme specifications
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.11
+  - @dt-ui/react-typography@0.1.0-beta.5
+
 ## 0.1.0-beta.3
 
 ### Minor Changes

@@ -1,5 +1,16 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.4
+
+### Patch Changes
+
+- fix: update border radius theme specifications
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.14
+  - @dt-ui/react-label-field@0.1.0-beta.7
+  - @dt-ui/react-spinner@0.1.0-beta.15
+  - @dt-ui/react-typography@0.1.0-beta.5
+
 ## 0.1.0-beta.3
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @dt-ui/react-tag
 
+## 0.1.0-beta.14
+
+### Patch Changes
+
+- fix: update border radius theme specifications
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.14
+
 ## 0.1.0-beta.13
 
 ### Patch Changes

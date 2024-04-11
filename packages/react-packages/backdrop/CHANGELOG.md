@@ -1,5 +1,13 @@
 # @dt-ui/react-backdrop
 
+## 0.1.0-beta.16
+
+### Patch Changes
+
+- fix: update border radius theme specifications
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.14
+
 ## 0.1.0-beta.15
 
 ### Patch Changes

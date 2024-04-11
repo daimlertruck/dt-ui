@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-empty-state",
-  "version": "0.1.0-beta.24",
+  "version": "0.1.0-beta.25",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -19,9 +19,9 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-button": "0.1.0-beta.4",
-    "@dt-ui/react-core": "0.1.0-beta.13",
-    "@dt-ui/react-typography": "0.1.0-beta.4"
+    "@dt-ui/react-button": "0.1.0-beta.5",
+    "@dt-ui/react-core": "0.1.0-beta.14",
+    "@dt-ui/react-typography": "0.1.0-beta.5"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",

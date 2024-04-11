@@ -1,5 +1,14 @@
 # @dt-ui/react-avatar
 
+## 0.1.0-beta.17
+
+### Patch Changes
+
+- fix: update border radius theme specifications
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.14
+  - @dt-ui/react-tooltip@0.1.0-beta.17
+
 ## 0.1.0-beta.16
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.10
+
+### Patch Changes
+
+- fix: update border radius theme specifications
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.14
+  - @dt-ui/react-divider@0.1.0-beta.13
+
 ## 0.1.0-beta.9
 
 ### Patch Changes
