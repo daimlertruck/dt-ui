@@ -1,5 +1,11 @@
 # @dt-ui/react-table
 
+## 0.1.0-beta.8
+
+### Patch Changes
+
+- refactor(Table): remove gallery mode and enable pinned columns
+
 ## 0.1.0-beta.7
 
 ### Patch Changes

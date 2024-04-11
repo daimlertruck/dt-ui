@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react",
-  "version": "0.1.0-beta.105",
+  "version": "0.1.0-beta.106",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
@@ -38,7 +38,7 @@
     "@dt-ui/react-message": "0.1.0-beta.18",
     "@dt-ui/react-progress-bar": "0.1.0-beta.4",
     "@dt-ui/react-spinner": "0.1.0-beta.15",
-    "@dt-ui/react-table": "0.1.0-beta.7",
+    "@dt-ui/react-table": "0.1.0-beta.8",
     "@dt-ui/react-tabs": "0.1.0-beta.4",
     "@dt-ui/react-tag": "0.1.0-beta.14",
     "@dt-ui/react-text-field": "0.1.0-beta.4",
