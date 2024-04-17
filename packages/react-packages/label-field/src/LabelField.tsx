@@ -1,3 +1,4 @@
+import { Typography } from '@dt-ui/react-typography';
 import { CSSProperties } from 'react';
 
 import { LabelFieldStyled } from './LabelField.styled';
@@ -9,6 +10,8 @@ export interface LabelFieldProps {
   isActive?: boolean;
   dataTestId?: string;
   style?: CSSProperties;
+  hasError?: boolean;
+  isRequired?: boolean;
 }
 
 export const LabelField = ({
@@ -18,6 +21,8 @@ export const LabelField = ({
   isActive = false,
   dataTestId,
   style,
+  isRequired,
+  hasError = false,
 }: LabelFieldProps) => {
   const testId = dataTestId ?? 'label-field';
 
@@ -25,11 +30,17 @@ export const LabelField = ({
     <LabelFieldStyled
       data-testid={testId}
       disabled={isDisabled}
+      hasError={hasError}
       htmlFor={forId}
       isActive={isActive}
       style={style}
     >
       {children}
+      {isRequired ? (
+        <Typography color='error.default' element='span' fontStyles='body3'>
+          *
+        </Typography>
+      ) : null}
     </LabelFieldStyled>
   );
 };

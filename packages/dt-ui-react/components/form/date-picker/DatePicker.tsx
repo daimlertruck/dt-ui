@@ -92,8 +92,13 @@ export const DatePicker = ({
 
   return (
     <TextFieldStyled style={style}>
-      <LabelField forId={id} isActive isDisabled={isDisabled}>
-        {label} {required ? '*' : null}
+      <LabelField
+        forId={id}
+        isActive
+        isDisabled={isDisabled}
+        isRequired={required}
+      >
+        {label}
       </LabelField>
       <InputFieldStyled
         disabled={isDisabled}

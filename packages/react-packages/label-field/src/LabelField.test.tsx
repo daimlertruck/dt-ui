@@ -50,4 +50,31 @@ describe('<LabelField /> component', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('it renders a label field as error', () => {
+    const { getByTestId } = render(
+      <>
+        <ProvidedLabelField forId={INPUT_ID} hasError>
+          My Awesome Input
+        </ProvidedLabelField>
+        <input id={INPUT_ID} />
+      </>
+    );
+
+    const LabelField = getByTestId('label-field');
+
+    expect(LabelField).toHaveStyle('color: rgb(255, 74, 74)');
+  });
+
+  it('it renders a label field as required', () => {
+    const { container } = render(
+      <>
+        <ProvidedLabelField forId={INPUT_ID} isRequired>
+          My Awesome Input
+        </ProvidedLabelField>
+        <input id={INPUT_ID} />
+      </>
+    );
+    expect(container).toMatchSnapshot();
+  });
 });

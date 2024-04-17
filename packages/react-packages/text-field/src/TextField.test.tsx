@@ -97,7 +97,7 @@ describe('<TextField /> component', () => {
     );
 
     expect(container.querySelector('label')).toHaveTextContent(
-      'Required text *'
+      'Required text*'
     );
   });
 
@@ -111,7 +111,7 @@ describe('<TextField /> component', () => {
       input.focus();
     });
 
-    expect(label).toHaveStyle('font-size: .75rem');
+    expect(label).toHaveStyle('font-size: 0.75rem');
     expect(label).toHaveStyle('transform: translateY(-45%)');
   });
 
@@ -149,7 +149,7 @@ describe('<TextField /> component', () => {
 
       fireEvent.blur(input, { currentTarget: { value: 'Some value' } });
 
-      expect(label).toHaveStyle('font-size: .75rem');
+      expect(label).toHaveStyle('font-size: 0.75rem');
       expect(label).toHaveStyle('transform: translateY(-45%)');
     });
   });

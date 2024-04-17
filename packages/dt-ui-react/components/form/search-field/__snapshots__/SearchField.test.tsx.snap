@@ -10,14 +10,13 @@ exports[`<SearchField /> component renders SearchField input element with the co
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #636464;
   cursor: inherit;
-  font-size: 1rem;
   left: 15px;
   top: 15px;
   position: absolute;
@@ -93,10 +92,8 @@ exports[`<SearchField /> component renders SearchField input element with the co
       class="emotion-2 emotion-3"
       data-testid="label-field"
       for="Search-for-anything"
-      style="color: rgb(161, 162, 163);"
     >
       Search for anything
-       
     </label>
     <input
       class="emotion-4 emotion-5"

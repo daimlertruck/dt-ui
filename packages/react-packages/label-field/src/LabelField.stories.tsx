@@ -18,5 +18,7 @@ export const Default: StoryObj<LabelFieldProps> = {
     children: 'My Label',
     isActive: false,
     isDisabled: false,
+    isRequired: false,
+    hasError: false,
   },
 };

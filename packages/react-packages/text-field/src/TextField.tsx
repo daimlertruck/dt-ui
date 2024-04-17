@@ -2,7 +2,6 @@ import { BaseProps } from '@dt-ui/react-core';
 import { LabelField } from '@dt-ui/react-label-field';
 import { Spinner } from '@dt-ui/react-spinner';
 import { Typography } from '@dt-ui/react-typography';
-import { useTheme } from '@emotion/react';
 import React, {
   useState,
   useEffect,
@@ -13,7 +12,6 @@ import React, {
 } from 'react';
 
 import {
-  LabelTextRequiredStyled,
   TextFieldStyled,
   InputFieldStyled,
   InputFieldIconStyled,
@@ -60,7 +58,6 @@ export const TextField = ({
   const [hasError, setHasError] = useState(hasErrorProp);
   const [message, setMessage] = useState(messageProp);
   const id = label.replaceAll(' ', '-');
-  const theme = useTheme();
 
   useEffect(() => {
     // Check if there's an initial value coming from props
@@ -110,21 +107,12 @@ export const TextField = ({
     <TextFieldStyled style={style}>
       <LabelField
         forId={id}
+        hasError={hasError ? !!inputValue : false}
         isActive={activeInput}
         isDisabled={isDisabled}
-        style={{
-          color:
-            hasError && !!inputValue
-              ? theme.palette.error.default
-              : theme.palette.content.secondary,
-        }}
+        isRequired={required}
       >
-        {label}{' '}
-        {required ? (
-          <LabelTextRequiredStyled hasError={hasError}>
-            *
-          </LabelTextRequiredStyled>
-        ) : null}
+        {label}
       </LabelField>
 
       {isLoading || !!icon ? (

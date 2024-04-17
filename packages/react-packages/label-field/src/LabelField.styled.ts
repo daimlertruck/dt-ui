@@ -3,15 +3,23 @@ import styled from '@emotion/styled';
 export interface LabelFieldProps {
   isActive: boolean;
   disabled?: boolean;
+  hasError?: boolean;
 }
 
 export const LabelFieldStyled = styled.label<LabelFieldProps>`
-  ${({ theme }) => theme.fontStyles.pSmall}
+  ${({ theme, isActive }) =>
+    isActive ? theme.fontStyles.body3 : theme.fontStyles.body2}
 
-  color: ${({ theme, disabled }) =>
-    disabled ? theme.palette.content.disabled : theme.palette.content.body};
+  color: ${({ theme, disabled, hasError }) => {
+    if (disabled) {
+      return theme.palette.content.disabled;
+    }
+    if (hasError) {
+      return theme.palette.error.default;
+    }
+    return theme.palette.content.body;
+  }};
   cursor: inherit;
-  font-size: ${({ isActive }) => (isActive ? '.75rem' : '1rem')};
   left: 15px;
   top: 15px;
   position: absolute;

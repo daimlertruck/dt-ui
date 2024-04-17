@@ -22,14 +22,13 @@ exports[`<Form /> component renders simple form 1`] = `
 
 .emotion-4 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #636464;
   cursor: inherit;
-  font-size: 1rem;
   left: 15px;
   top: 15px;
   position: absolute;
@@ -72,10 +71,8 @@ exports[`<Form /> component renders simple form 1`] = `
         class="emotion-4 emotion-5"
         data-testid="label-field"
         for="label-1"
-        style="color: rgb(161, 162, 163);"
       >
         label 1
-         
       </label>
       <input
         class="emotion-6 emotion-7"
@@ -92,10 +89,8 @@ exports[`<Form /> component renders simple form 1`] = `
         class="emotion-4 emotion-5"
         data-testid="label-field"
         for="label-2"
-        style="color: rgb(161, 162, 163);"
       >
         label 2
-         
       </label>
       <input
         class="emotion-6 emotion-7"
@@ -163,14 +158,13 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
 
 .emotion-8 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #636464;
   cursor: inherit;
-  font-size: 1rem;
   left: 15px;
   top: 15px;
   position: absolute;
@@ -220,10 +214,8 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
             class="emotion-8 emotion-9"
             data-testid="label-field"
             for="label-1"
-            style="color: rgb(161, 162, 163);"
           >
             label 1
-             
           </label>
           <input
             class="emotion-10 emotion-11"
@@ -291,14 +283,13 @@ exports[`<Form /> component with Form.Group should render a form with display fl
 
 .emotion-8 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #636464;
   cursor: inherit;
-  font-size: 1rem;
   left: 15px;
   top: 15px;
   position: absolute;
@@ -347,10 +338,8 @@ exports[`<Form /> component with Form.Group should render a form with display fl
             class="emotion-8 emotion-9"
             data-testid="label-field"
             for="label-1"
-            style="color: rgb(161, 162, 163);"
           >
             label 1
-             
           </label>
           <input
             class="emotion-10 emotion-11"
@@ -367,10 +356,8 @@ exports[`<Form /> component with Form.Group should render a form with display fl
             class="emotion-8 emotion-9"
             data-testid="label-field"
             for="label-2"
-            style="color: rgb(161, 162, 163);"
           >
             label 2
-             
           </label>
           <input
             class="emotion-10 emotion-11"
@@ -464,14 +451,13 @@ exports[`<Form /> component with Form.Group should render a form with group titl
 
 .emotion-12 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #636464;
   cursor: inherit;
-  font-size: 1rem;
   left: 15px;
   top: 15px;
   position: absolute;
@@ -532,10 +518,8 @@ exports[`<Form /> component with Form.Group should render a form with group titl
             class="emotion-12 emotion-13"
             data-testid="label-field"
             for="label-1"
-            style="color: rgb(161, 162, 163);"
           >
             label 1
-             
           </label>
           <input
             class="emotion-14 emotion-15"
@@ -552,10 +536,8 @@ exports[`<Form /> component with Form.Group should render a form with group titl
             class="emotion-12 emotion-13"
             data-testid="label-field"
             for="label-2"
-            style="color: rgb(161, 162, 163);"
           >
             label 2
-             
           </label>
           <input
             class="emotion-14 emotion-15"

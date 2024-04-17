@@ -10,14 +10,13 @@ exports[`<TextField /> component onBlur event should have error state with error
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #636464;
   cursor: inherit;
-  font-size: 1rem;
   left: 15px;
   top: 15px;
   position: absolute;
@@ -30,6 +29,12 @@ exports[`<TextField /> component onBlur event should have error state with error
 }
 
 .emotion-4 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
   color: #FF4A4A;
 }
 
@@ -56,16 +61,6 @@ exports[`<TextField /> component onBlur event should have error state with error
   padding-left: 15px;
 }
 
-.emotion-10 {
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  color: #FF4A4A;
-}
-
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -74,12 +69,12 @@ exports[`<TextField /> component onBlur event should have error state with error
       class="emotion-2 emotion-3"
       data-testid="label-field"
       for="Some-text"
-      style="color: rgb(161, 162, 163);"
     >
       Some text
-       
       <span
         class="emotion-4 emotion-5"
+        color="error.default"
+        data-testid="typography"
       >
         *
       </span>
@@ -96,7 +91,7 @@ exports[`<TextField /> component onBlur event should have error state with error
       class="emotion-8 emotion-9"
     >
       <span
-        class="emotion-10 emotion-11"
+        class="emotion-4 emotion-5"
         color="error.default"
         data-testid="typography"
       >
@@ -133,14 +128,13 @@ exports[`<TextField /> component renders Loading input 1`] = `
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #636464;
   cursor: inherit;
-  font-size: 1rem;
   left: 15px;
   top: 15px;
   position: absolute;
@@ -211,10 +205,8 @@ exports[`<TextField /> component renders Loading input 1`] = `
       class="emotion-2 emotion-3"
       data-testid="label-field"
       for="My-disabled-input"
-      style="color: rgb(161, 162, 163);"
     >
       My disabled input
-       
     </label>
     <span
       class="emotion-4 emotion-5"
@@ -250,14 +242,13 @@ exports[`<TextField /> component renders disabled input 1`] = `
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #BABBBB;
   cursor: inherit;
-  font-size: 1rem;
   left: 15px;
   top: 15px;
   position: absolute;
@@ -297,10 +288,8 @@ exports[`<TextField /> component renders disabled input 1`] = `
       data-testid="label-field"
       disabled=""
       for="My-disabled-input"
-      style="color: rgb(161, 162, 163);"
     >
       My disabled input
-       
     </label>
     <input
       class="emotion-4 emotion-5"
@@ -324,14 +313,13 @@ exports[`<TextField /> component renders input with side button 1`] = `
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #636464;
   cursor: inherit;
-  font-size: 1rem;
   left: 15px;
   top: 15px;
   position: absolute;
@@ -378,10 +366,8 @@ exports[`<TextField /> component renders input with side button 1`] = `
       class="emotion-2 emotion-3"
       data-testid="label-field"
       for="My-input"
-      style="color: rgb(161, 162, 163);"
     >
       My input
-       
     </label>
     <span
       class="emotion-4 emotion-5"
@@ -413,14 +399,13 @@ exports[`<TextField /> component should render the TextField with error styles a
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #FF4A4A;
   cursor: inherit;
-  font-size: .75rem;
   left: 15px;
   top: 15px;
   position: absolute;
@@ -473,10 +458,8 @@ exports[`<TextField /> component should render the TextField with error styles a
       class="emotion-2 emotion-3"
       data-testid="label-field"
       for="My-Input-with-Error-Message"
-      style="color: rgb(255, 74, 74);"
     >
       My Input with Error Message
-       
     </label>
     <input
       class="emotion-4 emotion-5"
@@ -510,14 +493,13 @@ exports[`<TextField /> component should render the TextField with info message 1
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #636464;
   cursor: inherit;
-  font-size: 1rem;
   left: 15px;
   top: 15px;
   position: absolute;
@@ -570,10 +552,8 @@ exports[`<TextField /> component should render the TextField with info message 1
       class="emotion-2 emotion-3"
       data-testid="label-field"
       for="My-Input-with-info-message"
-      style="color: rgb(161, 162, 163);"
     >
       My Input with info message
-       
     </label>
     <input
       class="emotion-4 emotion-5"

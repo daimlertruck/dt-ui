@@ -10,14 +10,13 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #636464;
   cursor: inherit;
-  font-size: .75rem;
   left: 15px;
   top: 15px;
   position: absolute;
@@ -72,7 +71,6 @@ exports[`<DatePicker /> component onBlur event should render error message when 
       for="Choose-a-date"
     >
       Choose a date
-       
     </label>
     <input
       class="emotion-4 emotion-5"
@@ -107,14 +105,13 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #636464;
   cursor: inherit;
-  font-size: .75rem;
   left: 15px;
   top: 15px;
   position: absolute;
@@ -169,7 +166,6 @@ exports[`<DatePicker /> component onBlur event should render error message when 
       for="Choose-a-date"
     >
       Choose a date
-       
     </label>
     <input
       class="emotion-4 emotion-5"
@@ -204,14 +200,13 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
 
 .emotion-2 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #636464;
   cursor: inherit;
-  font-size: .75rem;
   left: 15px;
   top: 15px;
   position: absolute;
@@ -224,6 +219,16 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
 }
 
 .emotion-4 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #FF4A4A;
+}
+
+.emotion-6 {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -252,11 +257,16 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
       for="Choose-a-date"
     >
       Choose a date
-       
-      *
+      <span
+        class="emotion-4 emotion-5"
+        color="error.default"
+        data-testid="typography"
+      >
+        *
+      </span>
     </label>
     <input
-      class="emotion-4 emotion-5"
+      class="emotion-6 emotion-7"
       id="Choose-a-date"
       max="2025-03-30"
       min="2023-03-30"

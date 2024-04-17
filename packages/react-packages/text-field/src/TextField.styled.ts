@@ -19,7 +19,7 @@ export const InputFieldStyled = styled.input<InputFieldStyledProps>`
     background-color: ${
       disabled ? theme.palette.base.light : theme.palette.base.default
     };
-    border-radius: ${theme.shape.textField};
+    border-radius: ${theme.shape.formField};
 
     // Change border based on input status
     border: ${
