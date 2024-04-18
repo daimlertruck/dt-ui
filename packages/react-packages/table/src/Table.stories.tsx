@@ -3,7 +3,8 @@ import { Tag, TagColor } from '@dt-ui/react-tag';
 import { Tooltip } from '@dt-ui/react-tooltip';
 import { Meta, StoryObj } from '@storybook/react';
 
-import { InfoOutlineIcon } from '../../../dt-ui-react/core';
+import { IconButton } from '../../../dt-ui-react/components/buttons/icon-button';
+import { InfoOutlineIcon, MoreVerticalIcon } from '../../../dt-ui-react/core';
 
 import { TableHeadProps } from './components';
 import { default as Table, TableProps } from './Table';
@@ -16,7 +17,7 @@ const columns = [
   'Phone',
   'Department',
   'Location',
-  'Manager',
+  'Actions',
 ];
 
 const rows = [
@@ -28,7 +29,7 @@ const rows = [
     '+123456789',
     'Engineering',
     'New York',
-    'Alice',
+    '',
   ],
   [
     'Jane Smith',
@@ -38,7 +39,7 @@ const rows = [
     '+987654321',
     'Design',
     'San Francisco',
-    'Bob',
+    '',
   ],
   [
     'Alice Johnson',
@@ -48,7 +49,7 @@ const rows = [
     '+135792468',
     'Management',
     'Los Angeles',
-    'Charlie',
+    '',
   ],
   [
     'Bob Brown',
@@ -58,13 +59,14 @@ const rows = [
     '+246813579',
     'Engineering',
     'Chicago',
-    'David',
+    '',
   ],
 ];
 
 const columnSizes: { [key: string]: string } = {
   Name: '200px',
   Status: '120px',
+  Actions: 'fit-content',
 };
 
 const renderAvatarWithTitle = (title: string) => (
@@ -88,15 +90,20 @@ const renderTag = (content: string) => (
 
 const renderContent = (colIndex: number, content: string) => {
   const columnName = columns[colIndex];
-  if (columnName !== 'Name' && columnName !== 'Status') {
-    return content;
-  }
-
-  return {
+  const cellContent = {
     Name: renderAvatarWithTitle(content),
     Status: renderTag(content),
+    Actions: renderActionsButton(),
   }[columnName];
+
+  return cellContent ?? content;
 };
+
+const renderActionsButton = () => (
+  <IconButton>
+    <MoreVerticalIcon />
+  </IconButton>
+);
 
 const meta: Meta<TableProps & TableHeadProps> = {
   title: 'Data Display/Table',
@@ -196,6 +203,11 @@ export const TableWithPinnedColumns: Meta<TableProps & TableHeadProps> = {
                 <Table.DataCell
                   columnWidth={columnSizes[columns[i]]}
                   key={`column-${columns[i]}-${content}`}
+                  style={{
+                    ...(columns[i] === 'Actions' && {
+                      minWidth: '56px',
+                    }),
+                  }}
                 >
                   {renderContent(i, content)}
                 </Table.DataCell>

@@ -1,7 +1,6 @@
 import { TABLE_HEADER_Z_INDEX } from '@dt-ui/react-core';
 import styled from '@emotion/styled';
 
-import { COLUMN_MIN_WIDTH } from '../../constants';
 import { TextAlign } from '../../types';
 
 interface ColumnHeaderStyled {
@@ -9,8 +8,7 @@ interface ColumnHeaderStyled {
   showBoxShadow?: boolean;
   fixed?: boolean;
   fixedEnd?: boolean;
-  fixedColumnIndex?: number;
-  fixedEndColumnIndex?: number;
+  previousTotalWidth?: number;
 }
 export const ColumnHeaderStyled = styled.th<ColumnHeaderStyled>`
   ${({
@@ -19,8 +17,7 @@ export const ColumnHeaderStyled = styled.th<ColumnHeaderStyled>`
     showBoxShadow = false,
     fixed = false,
     fixedEnd = false,
-    fixedColumnIndex = 0,
-    fixedEndColumnIndex = 0,
+    previousTotalWidth = 0,
   }) => `
     text-align: ${textAlign};
     color: ${theme.palette.content.heading};
@@ -30,10 +27,8 @@ export const ColumnHeaderStyled = styled.th<ColumnHeaderStyled>`
     ${
       (fixed || fixedEnd) &&
       `
-        left: ${fixed ? `${fixedColumnIndex * COLUMN_MIN_WIDTH}px` : 'unset'};
-        right: ${
-          fixedEnd ? `${fixedEndColumnIndex * COLUMN_MIN_WIDTH}px` : 'unset'
-        };
+        left: ${fixed ? `${previousTotalWidth}px` : 'unset'};
+        right: ${fixedEnd ? `${previousTotalWidth}px` : 'unset'};
         position: sticky;
         z-index: ${TABLE_HEADER_Z_INDEX};
         background: ${theme.palette.primary.contrast};

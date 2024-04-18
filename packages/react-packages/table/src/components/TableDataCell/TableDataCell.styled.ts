@@ -1,4 +1,3 @@
-import { TABLE_HEADER_Z_INDEX } from '@dt-ui/react-core';
 import styled from '@emotion/styled';
 
 import { COLUMN_MIN_WIDTH } from '../../constants';
@@ -10,8 +9,7 @@ interface CellStyledProps {
   showBoxShadow?: boolean;
   fixed?: boolean;
   fixedEnd?: boolean;
-  fixedColumnIndex?: number;
-  fixedEndColumnIndex?: number;
+  previousTotalWidth?: number;
 }
 
 export const CellStyled = styled.td<CellStyledProps>`
@@ -22,8 +20,7 @@ export const CellStyled = styled.td<CellStyledProps>`
     showBoxShadow = false,
     fixed = false,
     fixedEnd = false,
-    fixedColumnIndex = 0,
-    fixedEndColumnIndex = 0,
+    previousTotalWidth = 0,
   }) => `
     display: table-cell;
     min-width: ${COLUMN_MIN_WIDTH}px;
@@ -40,21 +37,19 @@ export const CellStyled = styled.td<CellStyledProps>`
     }
 
     ${
-      !!columnWidth &&
-      `
+      !!columnWidth
+        ? `
         width: ${columnWidth};
         max-width: ${columnWidth};
       `
+        : ''
     }
 
     ${
       (fixed || fixedEnd) &&
       `
-        z-index: ${TABLE_HEADER_Z_INDEX};
-        left: ${fixed ? `${fixedColumnIndex * COLUMN_MIN_WIDTH}px` : 'unset'};
-        right: ${
-          fixedEnd ? `${fixedEndColumnIndex * COLUMN_MIN_WIDTH}px` : 'unset'
-        };
+        left: ${fixed ? `${previousTotalWidth}px` : 'unset'};
+        right: ${fixedEnd ? `${previousTotalWidth}px` : 'unset'};
         position: sticky;
         background: ${theme.palette.primary.contrast};
         box-shadow: ${

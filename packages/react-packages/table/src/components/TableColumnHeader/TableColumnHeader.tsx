@@ -27,6 +27,10 @@ export const TableColumnHeader = ({
     (rest as Record<string, string>)['data-column-index']
   );
 
+  const previousTotalWidth = Number(
+    (rest as Record<string, string>)['data-previous-width']
+  );
+
   const fixedColumnIndex = fixedColumns.indexOf(columnIndex);
   const fixedEndColumnIndex = fixedEndColumns.indexOf(columnIndex);
 
@@ -39,6 +43,7 @@ export const TableColumnHeader = ({
       fixedEnd: fixedEndColumnIndex !== -1,
       fixedEndColumnIndex,
       showBoxShadow: showBoxShadow.includes(columnIndex),
+      previousTotalWidth,
     };
   }
 
