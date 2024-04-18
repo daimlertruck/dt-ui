@@ -1,17 +1,18 @@
 import { BaseProps } from '@dt-ui/react-core';
-import {
-  Children,
-  ReactNode,
-  cloneElement,
-  isValidElement,
-  useEffect,
-  useRef,
-  useState,
-} from 'react';
+import { cloneElement, useRef } from 'react';
 
 import { useTableContext } from '../../context';
+import {
+  getColumnsWidths,
+  getFixedColumnPosition,
+  getFixedEndColumnPosition,
+  mapValidChildren,
+} from '../../utils/fixedColumns';
 
 import { RowStyled } from './TableRow.styled';
+
+const SHADOW_COLUMN_LEFT = 0;
+const SHADOW_COLUMN_RIGHT = 1;
 
 export interface TableRowProps extends BaseProps {
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;
@@ -30,86 +31,50 @@ export const TableRow = ({
     setFixedEndColumns,
     fixedColumnCount,
     fixedEndColumnCount,
-    showBoxShadow,
+    isColumnsFixed,
+    setShowBoxShadow,
   } = useTableContext();
-  const fixedColumns: number[] = [];
-  const fixedEndColumns: number[] = [];
-  const [columnWidths, setColumnWidths] = useState<number[]>([]);
   const rowRef = useRef<HTMLTableRowElement>(null);
+  let childrenColumns = children;
 
-  useEffect(() => {
-    if (rowRef?.current && (fixedColumnCount || fixedEndColumnCount)) {
-      const colWidths = [...rowRef.current.children].map(
-        (item) => item.clientWidth
-      );
-      setColumnWidths(colWidths);
-    }
-  }, [fixedColumnCount, fixedEndColumnCount]);
+  if (isColumnsFixed && rowRef.current) {
+    const fixedColumns: number[] = [];
+    const fixedEndColumns: number[] = [];
+    const fixedColumnsShadowIndexes: number[] = [];
 
-  const calculatePreviousWidth = (colIndex: number, stickyEnd = false) => {
-    let previousWidths;
+    const columnsWidths = getColumnsWidths(rowRef.current);
 
-    if (stickyEnd) {
-      previousWidths = columnWidths
-        .reverse()
-        .slice(0, columnWidths.length - 1 - colIndex);
-    } else {
-      previousWidths = columnWidths.slice(0, colIndex);
-    }
+    childrenColumns = mapValidChildren(children, (child, index) => {
+      let fixedPosition = 0;
+      const isFixed = index < fixedColumnCount;
+      const isFixedEnd = index >= columnsLength - fixedEndColumnCount;
 
-    const previousTotalWidth =
-      previousWidths.length > 0 ? previousWidths.reduce((a, b) => a + b) : 0;
-
-    return previousTotalWidth;
-  };
-
-  const calculateFixedColumns = (colIndex: number) => {
-    if (colIndex < fixedColumnCount) {
-      fixedColumns.push(colIndex);
-      showBoxShadow.splice(0, 1, colIndex);
-
-      return calculatePreviousWidth(colIndex);
-    }
-
-    if (colIndex >= columnsLength - fixedEndColumnCount) {
-      if (fixedEndColumns.length === 0) {
-        showBoxShadow.splice(1, 1, colIndex);
+      if (isFixed) {
+        fixedPosition = getFixedColumnPosition(index, columnsWidths);
+        fixedColumns.push(index);
+        fixedColumnsShadowIndexes[SHADOW_COLUMN_LEFT] = index;
       }
-      fixedEndColumns.unshift(colIndex);
-      return calculatePreviousWidth(colIndex, true);
-    }
-  };
 
-  const hasFixedColumns = fixedColumnCount > 0 || fixedEndColumnCount > 0;
+      if (isFixedEnd) {
+        fixedPosition = getFixedEndColumnPosition(index, columnsWidths);
+        fixedEndColumns.unshift(index);
+        fixedColumnsShadowIndexes[SHADOW_COLUMN_RIGHT] =
+          fixedColumnsShadowIndexes[1] ?? index;
+      }
 
-  const renderChildrenWithIndex = () => {
-    const childrenWithIndex = Children.map(
-      children,
-      (child: ReactNode, index: number) => {
-        if (isValidElement(child) && hasFixedColumns) {
-          const previousTotalWidth = calculateFixedColumns(index);
-
-          return cloneElement(child, {
+      return isFixed || isFixedEnd
+        ? cloneElement(child, {
             ...child.props,
             'data-column-index': index,
-            'data-previous-width': previousTotalWidth,
-          });
-        }
-        return child;
-      }
-    );
+            'data-fixed-position': fixedPosition,
+          })
+        : child;
+    });
 
-    if (fixedColumns.length) {
-      setFixedColumns(fixedColumns);
-    }
-
-    if (fixedEndColumns) {
-      setFixedEndColumns(fixedEndColumns);
-    }
-    return childrenWithIndex;
-  };
-
-  const hasStickyColumns = fixedColumnCount > 0 || fixedEndColumnCount > 0;
+    setFixedColumns(fixedColumns);
+    setFixedEndColumns(fixedEndColumns);
+    setShowBoxShadow(fixedColumnsShadowIndexes);
+  }
 
   return (
     <RowStyled
@@ -119,7 +84,7 @@ export const TableRow = ({
       selectableRow={isSelectable}
       style={style}
     >
-      {hasStickyColumns ? renderChildrenWithIndex() : children}
+      {childrenColumns}
     </RowStyled>
   );
 };

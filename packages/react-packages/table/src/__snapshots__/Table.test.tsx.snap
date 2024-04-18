@@ -226,14 +226,13 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         <th
           class="emotion-6 emotion-7"
           data-column-index="0"
-          data-previous-width="0"
+          data-fixed-position="0"
           data-testid="table-column-header"
         >
           Column 1
         </th>
         <th
           class="emotion-8 emotion-7"
-          data-column-index="1"
           data-testid="table-column-header"
         >
           Column 2
@@ -241,7 +240,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         <th
           class="emotion-10 emotion-7"
           data-column-index="2"
-          data-previous-width="0"
+          data-fixed-position="0"
           data-testid="table-column-header"
         >
           Column 3
@@ -249,7 +248,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         <th
           class="emotion-12 emotion-7"
           data-column-index="3"
-          data-previous-width="0"
+          data-fixed-position="0"
           data-testid="table-column-header"
         >
           Column 4
@@ -267,14 +266,13 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         <td
           class="emotion-18 emotion-19"
           data-column-index="0"
-          data-previous-width="0"
+          data-fixed-position="0"
           data-testid="table-data-cell"
         >
           Row 1 - content 1
         </td>
         <td
           class="emotion-20 emotion-19"
-          data-column-index="1"
           data-testid="table-data-cell"
         >
           Row 1 - content 2
@@ -282,7 +280,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         <td
           class="emotion-22 emotion-19"
           data-column-index="2"
-          data-previous-width="0"
+          data-fixed-position="0"
           data-testid="table-data-cell"
         >
           Row 1 - content 3
@@ -290,7 +288,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         <td
           class="emotion-24 emotion-19"
           data-column-index="3"
-          data-previous-width="0"
+          data-fixed-position="0"
           data-testid="table-data-cell"
         >
           Row 1 - content 4
@@ -303,14 +301,13 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         <td
           class="emotion-18 emotion-19"
           data-column-index="0"
-          data-previous-width="0"
+          data-fixed-position="0"
           data-testid="table-data-cell"
         >
           Row 2 - content 1
         </td>
         <td
           class="emotion-20 emotion-19"
-          data-column-index="1"
           data-testid="table-data-cell"
         >
           Row 2 - content 2
@@ -318,7 +315,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         <td
           class="emotion-22 emotion-19"
           data-column-index="2"
-          data-previous-width="0"
+          data-fixed-position="0"
           data-testid="table-data-cell"
         >
           Row 2 - content 3
@@ -326,7 +323,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         <td
           class="emotion-24 emotion-19"
           data-column-index="3"
-          data-previous-width="0"
+          data-fixed-position="0"
           data-testid="table-data-cell"
         >
           Row 2 - content 4
@@ -339,14 +336,13 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         <td
           class="emotion-18 emotion-19"
           data-column-index="0"
-          data-previous-width="0"
+          data-fixed-position="0"
           data-testid="table-data-cell"
         >
           Row 3 - content 1
         </td>
         <td
           class="emotion-20 emotion-19"
-          data-column-index="1"
           data-testid="table-data-cell"
         >
           Row 3 - content 2
@@ -354,7 +350,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         <td
           class="emotion-22 emotion-19"
           data-column-index="2"
-          data-previous-width="0"
+          data-fixed-position="0"
           data-testid="table-data-cell"
         >
           Row 3 - content 3
@@ -362,7 +358,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
         <td
           class="emotion-24 emotion-19"
           data-column-index="3"
-          data-previous-width="0"
+          data-fixed-position="0"
           data-testid="table-data-cell"
         >
           Row 3 - content 4

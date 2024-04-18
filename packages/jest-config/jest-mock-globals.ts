@@ -9,3 +9,11 @@ Object.defineProperty(window, 'matchMedia', {
     dispatchEvent: jest.fn(),
   })),
 });
+
+Object.defineProperty(window, 'IntersectionObserver', {
+  writable: true,
+  value: jest.fn().mockImplementation(() => ({
+    observe: jest.fn(),
+    disconnect: jest.fn(),
+  })),
+});

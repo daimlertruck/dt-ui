@@ -9,7 +9,7 @@ interface CellStyledProps {
   showBoxShadow?: boolean;
   fixed?: boolean;
   fixedEnd?: boolean;
-  previousTotalWidth?: number;
+  fixedPosition?: number;
 }
 
 export const CellStyled = styled.td<CellStyledProps>`
@@ -20,7 +20,7 @@ export const CellStyled = styled.td<CellStyledProps>`
     showBoxShadow = false,
     fixed = false,
     fixedEnd = false,
-    previousTotalWidth = 0,
+    fixedPosition = 0,
   }) => `
     display: table-cell;
     min-width: ${COLUMN_MIN_WIDTH}px;
@@ -48,8 +48,8 @@ export const CellStyled = styled.td<CellStyledProps>`
     ${
       (fixed || fixedEnd) &&
       `
-        left: ${fixed ? `${previousTotalWidth}px` : 'unset'};
-        right: ${fixedEnd ? `${previousTotalWidth}px` : 'unset'};
+        left: ${fixed ? `${fixedPosition}px` : 'unset'};
+        right: ${fixedEnd ? `${fixedPosition}px` : 'unset'};
         position: sticky;
         background: ${theme.palette.primary.contrast};
         box-shadow: ${

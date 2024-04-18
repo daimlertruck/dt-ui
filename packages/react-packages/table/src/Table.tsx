@@ -1,4 +1,5 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { useEffect, useRef, useState } from 'react';
 
 import {
   TableBody,
@@ -9,6 +10,7 @@ import {
 } from './components';
 import { TableContextProvider } from './context';
 import { TableStyled } from './Table.styled';
+import { observeShouldColumnsBeFixed } from './utils/fixedColumns';
 
 export interface TableProps extends BaseProps {
   isFixed?: boolean;
@@ -23,20 +25,38 @@ const Table = ({
   isFixed = false,
   fixedColumnCount = 0,
   fixedEndColumnCount = 0,
-}: TableProps) => (
-  <TableContextProvider
-    fixedColumnCount={fixedColumnCount}
-    fixedEndColumnCount={fixedEndColumnCount}
-  >
-    <TableStyled
-      data-testid={dataTestId ?? 'table'}
-      isFixed={isFixed}
-      style={style}
+}: TableProps) => {
+  const tableRef = useRef<HTMLTableElement>(null);
+
+  const [isColumnsFixed, setIsColumnsFixed] = useState(false);
+
+  useEffect(() => {
+    const observer = observeShouldColumnsBeFixed(
+      tableRef,
+      fixedColumnCount,
+      fixedEndColumnCount,
+      setIsColumnsFixed
+    );
+    return () => observer.disconnect();
+  }, [fixedColumnCount, fixedEndColumnCount]);
+
+  return (
+    <TableContextProvider
+      fixedColumnCount={fixedColumnCount}
+      fixedEndColumnCount={fixedEndColumnCount}
+      isColumnsFixed={isColumnsFixed}
     >
-      {children}
-    </TableStyled>
-  </TableContextProvider>
-);
+      <TableStyled
+        data-testid={dataTestId ?? 'table'}
+        isFixed={isFixed}
+        ref={tableRef}
+        style={style}
+      >
+        {children}
+      </TableStyled>
+    </TableContextProvider>
+  );
+};
 
 Table.Head = TableHead;
 Table.ColumnHeader = TableColumnHeader;

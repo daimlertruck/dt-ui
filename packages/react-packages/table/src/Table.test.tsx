@@ -83,6 +83,16 @@ const renderTableWithProps = (
 };
 
 describe('<Table /> component', () => {
+  let mockIntersectionObserve: jest.SpyInstance;
+
+  beforeEach(() => {
+    mockIntersectionObserve = jest.spyOn(window, 'IntersectionObserver');
+    mockIntersectionObserve.mockImplementationOnce((callback) => {
+      callback([{ isIntersecting: false }]);
+      return { observe: jest.fn(), disconnect: jest.fn() };
+    });
+  });
+
   it('renders a Basic Table', () => {
     const { container } = renderTableWithProps({ isFixed: true });
 

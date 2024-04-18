@@ -11,12 +11,14 @@ interface TableContextState {
   setFixedEndColumns: (columns: number[]) => void;
   showBoxShadow: number[];
   setShowBoxShadow: (columns: number[]) => void;
+  isColumnsFixed: boolean;
 }
 
 interface TableContextProviderProps {
   children: ReactNode;
   fixedColumnCount: number;
   fixedEndColumnCount: number;
+  isColumnsFixed: boolean;
 }
 
 const DEFAULT_VALUE: TableContextState = {
@@ -30,6 +32,7 @@ const DEFAULT_VALUE: TableContextState = {
   setFixedEndColumns: () => null,
   showBoxShadow: [],
   setShowBoxShadow: () => null,
+  isColumnsFixed: false,
 };
 
 export const TableContext = createContext<TableContextState>(DEFAULT_VALUE);
@@ -38,6 +41,7 @@ export const TableContextProvider = ({
   children,
   fixedColumnCount,
   fixedEndColumnCount,
+  isColumnsFixed,
 }: TableContextProviderProps) => {
   const fixedColumnsRef = useRef<number[]>([]);
   const fixedEndColumnsRef = useRef<number[]>([]);
@@ -67,6 +71,7 @@ export const TableContextProvider = ({
     setColumnsLength,
     fixedColumnCount,
     fixedEndColumnCount,
+    isColumnsFixed,
     get fixedColumns() {
       return fixedColumnsRef.current;
     },

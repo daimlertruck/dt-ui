@@ -1,10 +1,8 @@
+import { IconButton, InfoOutlineIcon, MoreVerticalIcon } from '@dt-ui/react';
 import { Avatar, AvatarSize, AvatarType } from '@dt-ui/react-avatar';
 import { Tag, TagColor } from '@dt-ui/react-tag';
 import { Tooltip } from '@dt-ui/react-tooltip';
 import { Meta, StoryObj } from '@storybook/react';
-
-import { IconButton } from '../../../dt-ui-react/components/buttons/icon-button';
-import { InfoOutlineIcon, MoreVerticalIcon } from '../../../dt-ui-react/core';
 
 import { TableHeadProps } from './components';
 import { default as Table, TableProps } from './Table';
@@ -205,7 +203,7 @@ export const TableWithPinnedColumns: Meta<TableProps & TableHeadProps> = {
                   key={`column-${columns[i]}-${content}`}
                   style={{
                     ...(columns[i] === 'Actions' && {
-                      minWidth: '56px',
+                      minWidth: '65px',
                     }),
                   }}
                 >

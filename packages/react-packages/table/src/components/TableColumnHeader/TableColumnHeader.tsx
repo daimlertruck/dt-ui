@@ -27,8 +27,8 @@ export const TableColumnHeader = ({
     (rest as Record<string, string>)['data-column-index']
   );
 
-  const previousTotalWidth = Number(
-    (rest as Record<string, string>)['data-previous-width']
+  const fixedPosition = Number(
+    (rest as Record<string, string>)['data-fixed-position']
   );
 
   const fixedColumnIndex = fixedColumns.indexOf(columnIndex);
@@ -39,11 +39,9 @@ export const TableColumnHeader = ({
   if (fixedColumns?.length || fixedEndColumns?.length) {
     fixedProps = {
       fixed: fixedColumnIndex !== -1,
-      fixedColumnIndex,
       fixedEnd: fixedEndColumnIndex !== -1,
-      fixedEndColumnIndex,
       showBoxShadow: showBoxShadow.includes(columnIndex),
-      previousTotalWidth,
+      fixedPosition,
     };
   }
 

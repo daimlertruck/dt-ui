@@ -8,7 +8,7 @@ interface ColumnHeaderStyled {
   showBoxShadow?: boolean;
   fixed?: boolean;
   fixedEnd?: boolean;
-  previousTotalWidth?: number;
+  fixedPosition?: number;
 }
 export const ColumnHeaderStyled = styled.th<ColumnHeaderStyled>`
   ${({
@@ -17,7 +17,7 @@ export const ColumnHeaderStyled = styled.th<ColumnHeaderStyled>`
     showBoxShadow = false,
     fixed = false,
     fixedEnd = false,
-    previousTotalWidth = 0,
+    fixedPosition = 0,
   }) => `
     text-align: ${textAlign};
     color: ${theme.palette.content.heading};
@@ -27,8 +27,8 @@ export const ColumnHeaderStyled = styled.th<ColumnHeaderStyled>`
     ${
       (fixed || fixedEnd) &&
       `
-        left: ${fixed ? `${previousTotalWidth}px` : 'unset'};
-        right: ${fixedEnd ? `${previousTotalWidth}px` : 'unset'};
+        left: ${fixed ? `${fixedPosition}px` : 'unset'};
+        right: ${fixedEnd ? `${fixedPosition}px` : 'unset'};
         position: sticky;
         z-index: ${TABLE_HEADER_Z_INDEX};
         background: ${theme.palette.primary.contrast};
