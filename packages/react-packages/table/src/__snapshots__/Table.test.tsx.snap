@@ -126,6 +126,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   right: unset;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 1;
   background: #FFFFFF;
   box-shadow: 1px 0 0 0 #EBECED;
 }
@@ -174,6 +175,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   right: 0px;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 1;
   background: #FFFFFF;
   box-shadow: -1px 0 0 0 #EBECED;
 }
@@ -201,6 +203,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   right: 0px;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 1;
   background: #FFFFFF;
   box-shadow: unset;
 }

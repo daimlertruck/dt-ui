@@ -1,3 +1,4 @@
+import { TABLE_STICKY_COLUMN_Z_INDEX } from '@dt-ui/react-core';
 import styled from '@emotion/styled';
 
 import { COLUMN_MIN_WIDTH } from '../../constants';
@@ -51,6 +52,7 @@ export const CellStyled = styled.td<CellStyledProps>`
         left: ${fixed ? `${fixedPosition}px` : 'unset'};
         right: ${fixedEnd ? `${fixedPosition}px` : 'unset'};
         position: sticky;
+        z-index: ${TABLE_STICKY_COLUMN_Z_INDEX};
         background: ${theme.palette.primary.contrast};
         box-shadow: ${
           showBoxShadow
