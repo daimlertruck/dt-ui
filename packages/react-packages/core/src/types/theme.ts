@@ -264,13 +264,13 @@ export type CustomTheme = {
     checkbox: string;
     modal: string;
     emptyState: string;
-    textField: string;
     dropdown: string;
     message: string;
     toast: string;
     tooltip: string;
     progressbar: string;
     accordion: string;
+    formField: string;
   };
   fontFamily: {
     default: string;

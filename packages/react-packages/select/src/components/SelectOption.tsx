@@ -1,0 +1,71 @@
+import { Checkbox } from '@dt-ui/react-checkbox';
+import { BaseProps } from '@dt-ui/react-core';
+import { Icon } from '@dt-ui/react-icon';
+
+import { useSelectContext } from '../context';
+
+import {
+  SelectOptionStyled,
+  SelectOptionContentStyled,
+  CheckIconWrapperStyled,
+} from './SelectOption.styled';
+
+export interface SelectOptionProps extends BaseProps {
+  value: string;
+  label?: string;
+  index: number;
+  disabled?: boolean;
+}
+
+export const SelectOption = ({
+  dataTestId,
+  index,
+  children,
+  style,
+  value,
+  label,
+  disabled,
+}: SelectOptionProps) => {
+  const { getItemProps, isItemHighlighted, isItemSelected, isMulti } =
+    useSelectContext();
+
+  const item = { value: value, label: label, disabled: !!disabled };
+
+  const isSelected = isItemSelected(item);
+
+  const isHighlighted = isItemHighlighted(index);
+
+  return (
+    <SelectOptionStyled
+      data-testid={dataTestId}
+      isHighlighted={isHighlighted}
+      isMulti={isMulti}
+      style={style}
+      {...getItemProps({
+        item,
+        index,
+        'aria-selected': isSelected,
+      })}
+    >
+      {isMulti ? (
+        <Checkbox
+          checkboxId={value}
+          isChecked={isSelected}
+          isDisabled={getItemProps({ item, index })['aria-disabled']}
+          onChange={() => null}
+        >
+          {children || label || value}
+        </Checkbox>
+      ) : (
+        <>
+          <CheckIconWrapperStyled isCheckHidden={!isSelected}>
+            <Icon code='check' size='medium' />
+          </CheckIconWrapperStyled>
+          <SelectOptionContentStyled>
+            {children || label || value}
+          </SelectOptionContentStyled>
+        </>
+      )}
+    </SelectOptionStyled>
+  );
+};

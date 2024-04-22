@@ -12,7 +12,7 @@ export const shape = {
   message: radius['3xs'],
   modal: radius['3xs'],
   progressbar: radius['4xs'],
-  textField: radius['6xs'],
   toast: radius['3xs'],
+  formField: radius['4xs'],
   tooltip: radius['5xs'],
 };

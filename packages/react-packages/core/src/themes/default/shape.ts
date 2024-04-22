@@ -9,7 +9,7 @@ export const shape = {
   message: radius['none'],
   modal: radius['none'],
   progressbar: radius['none'],
-  textField: radius['none'],
   toast: radius['none'],
   tooltip: radius['none'],
+  formField: radius['none'],
 };

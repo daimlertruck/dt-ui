@@ -55,6 +55,7 @@ export * from '@dt-ui/react-table';
 export * from '@dt-ui/react-typography';
 export * from '@dt-ui/react-button';
 export * from '@dt-ui/react-progress-bar';
+export * from '@dt-ui/react-select';
 
 //utils
 export { ListStyleType } from './utils/constants';

@@ -10,7 +10,7 @@ export interface IconProps extends Omit<BaseProps, 'children'> {
   color?: string;
   size?: Size;
   variant?: Variant;
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent<HTMLElement>) => void;
 }
 
 export const Icon = ({
