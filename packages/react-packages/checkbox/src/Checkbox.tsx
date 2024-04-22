@@ -14,17 +14,20 @@ export interface CheckBoxProps extends BaseProps {
   onChange: (evt: ChangeEvent<HTMLInputElement>) => void;
   isChecked?: boolean;
   isDisabled?: boolean;
+  checkboxId?: string | number;
+  value?: string;
 }
 
 export const Checkbox = ({
+  dataTestId = 'checkbox-id',
   onChange,
-  dataTestId,
+  checkboxId,
   children,
   isChecked = false,
   isDisabled = false,
   style,
+  value,
 }: CheckBoxProps) => {
-  const checkboxId = dataTestId ?? 'checkbox-id';
   const theme = useTheme();
 
   const handleOnChangeTrigger = (
@@ -33,30 +36,32 @@ export const Checkbox = ({
     if (isDisabled) {
       return;
     }
+
     onChange?.(event);
   };
 
   return (
-    <CheckboxStyled isChecked={isChecked} isDisabled={isDisabled} style={style}>
+    <CheckboxStyled
+      data-testid={dataTestId}
+      isChecked={isChecked}
+      isDisabled={isDisabled}
+      style={style}
+    >
       <CheckBoxInputWrapper>
         <CheckboxInputStyled
           checked={isChecked}
           data-testid={checkboxId}
           disabled={isDisabled}
-          id={checkboxId}
           onChange={handleOnChangeTrigger}
           type='checkbox'
+          value={value}
         />
         {isChecked ? (
           <Icon code='check' color={theme.palette.content.contrast} />
         ) : null}
       </CheckBoxInputWrapper>
       {children ? (
-        <CheckboxLabelStyled
-          htmlFor={checkboxId}
-          isChecked={isChecked}
-          isDisabled={isDisabled}
-        >
+        <CheckboxLabelStyled isChecked={isChecked} isDisabled={isDisabled}>
           {children}
         </CheckboxLabelStyled>
       ) : null}

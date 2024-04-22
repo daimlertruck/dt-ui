@@ -12,9 +12,10 @@ export interface CheckboxLabelStyledProps {
   isChecked: boolean;
 }
 
-export const CheckboxStyled = styled.div<CheckBoxInputWrapperProps>`
-  display: inline-flex;
+export const CheckboxStyled = styled.label<CheckBoxInputWrapperProps>`
+  display: flex;
   align-items: center;
+  width: 100%;
 
   ${({ theme, isChecked, isDisabled }) => `
     & > div {
@@ -37,7 +38,9 @@ export const CheckboxStyled = styled.div<CheckBoxInputWrapperProps>`
 
 export const CheckBoxInputWrapper = styled.div`
   height: 24px;
+  min-height: 24px;
   width: 24px;
+  min-width: 24px;
   position: relative;
   display: flex;
 `;
@@ -58,8 +61,12 @@ export const CheckboxInputStyled = styled.input`
   }
 `;
 
-export const CheckboxLabelStyled = styled.label<CheckboxLabelStyledProps>`
+export const CheckboxLabelStyled = styled.span<CheckboxLabelStyledProps>`
   user-select: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
 
   ${({ theme, isDisabled }) => `
     padding-left: ${theme.spacing['4xs']};

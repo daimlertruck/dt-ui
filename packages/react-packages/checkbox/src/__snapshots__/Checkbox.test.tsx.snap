@@ -2,14 +2,15 @@
 
 exports[`<CheckBox /> component renders checkbox checked 1`] = `
 .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
 }
 
 .emotion-0>div {
@@ -20,7 +21,9 @@ exports[`<CheckBox /> component renders checkbox checked 1`] = `
 
 .emotion-2 {
   height: 24px;
+  min-height: 24px;
   width: 24px;
+  min-width: 24px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -67,8 +70,9 @@ exports[`<CheckBox /> component renders checkbox checked 1`] = `
 }
 
 <div>
-  <div
+  <label
     class="emotion-0 emotion-1"
+    data-testid="checkbox-id"
   >
     <div
       class="emotion-2 emotion-3"
@@ -76,9 +80,8 @@ exports[`<CheckBox /> component renders checkbox checked 1`] = `
       <input
         checked=""
         class="emotion-4 emotion-5"
-        data-testid="checkbox-id"
-        id="checkbox-id"
         type="checkbox"
+        value=""
       />
       <i
         class="emotion-6 emotion-7"
@@ -88,20 +91,21 @@ exports[`<CheckBox /> component renders checkbox checked 1`] = `
         check
       </i>
     </div>
-  </div>
+  </label>
 </div>
 `;
 
 exports[`<CheckBox /> component renders checkbox disabled 1`] = `
 .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
 }
 
 .emotion-0>div {
@@ -112,7 +116,9 @@ exports[`<CheckBox /> component renders checkbox disabled 1`] = `
 
 .emotion-2 {
   height: 24px;
+  min-height: 24px;
   width: 24px;
+  min-width: 24px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -140,34 +146,35 @@ exports[`<CheckBox /> component renders checkbox disabled 1`] = `
 }
 
 <div>
-  <div
+  <label
     class="emotion-0 emotion-1"
+    data-testid="checkbox-id"
   >
     <div
       class="emotion-2 emotion-3"
     >
       <input
         class="emotion-4 emotion-5"
-        data-testid="checkbox-id"
         disabled=""
-        id="checkbox-id"
         type="checkbox"
+        value=""
       />
     </div>
-  </div>
+  </label>
 </div>
 `;
 
 exports[`<CheckBox /> component renders checkbox with label 1`] = `
 .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
 }
 
 .emotion-0>div {
@@ -183,7 +190,9 @@ exports[`<CheckBox /> component renders checkbox with label 1`] = `
 
 .emotion-2 {
   height: 24px;
+  min-height: 24px;
   width: 24px;
+  min-width: 24px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -215,6 +224,10 @@ exports[`<CheckBox /> component renders checkbox with label 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
   padding-left: 8px;
   font-weight: 400;
   font-size: 0.875rem;
@@ -227,39 +240,39 @@ exports[`<CheckBox /> component renders checkbox with label 1`] = `
 }
 
 <div>
-  <div
+  <label
     class="emotion-0 emotion-1"
+    data-testid="checkbox-id"
   >
     <div
       class="emotion-2 emotion-3"
     >
       <input
         class="emotion-4 emotion-5"
-        data-testid="checkbox-id"
-        id="checkbox-id"
         type="checkbox"
+        value=""
       />
     </div>
-    <label
+    <span
       class="emotion-6 emotion-7"
-      for="checkbox-id"
     >
       Label
-    </label>
-  </div>
+    </span>
+  </label>
 </div>
 `;
 
 exports[`<CheckBox /> component renders checkbox without label 1`] = `
 .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
 }
 
 .emotion-0>div {
@@ -275,7 +288,9 @@ exports[`<CheckBox /> component renders checkbox without label 1`] = `
 
 .emotion-2 {
   height: 24px;
+  min-height: 24px;
   width: 24px;
+  min-width: 24px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -303,19 +318,19 @@ exports[`<CheckBox /> component renders checkbox without label 1`] = `
 }
 
 <div>
-  <div
+  <label
     class="emotion-0 emotion-1"
+    data-testid="checkbox-id"
   >
     <div
       class="emotion-2 emotion-3"
     >
       <input
         class="emotion-4 emotion-5"
-        data-testid="checkbox-id"
-        id="checkbox-id"
         type="checkbox"
+        value=""
       />
     </div>
-  </div>
+  </label>
 </div>
 `;

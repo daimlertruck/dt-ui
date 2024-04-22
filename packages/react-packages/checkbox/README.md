@@ -24,13 +24,14 @@ export const App = () => {
 
 ## Properties
 
-| Property     | Type                                           | Default    | Description                                                                   |
-| ------------ | ---------------------------------------------- | ---------- | ----------------------------------------------------------------------------- |
-| `children`   | `ReactNode`                                    | -          | Child components to be rendered as the label.                                 |
-| `onChange`   | `(evt: ChangeEvent<HTMLInputElement>) => void` | -          | The triggered function when the input change.                                 |
-| `isDisabled` | `boolean`                                      | `false`    | Specifies if the element should be disabled.                                  |
-| `isChecked`  | `boolean`                                      | `false`    | Specifies if the element should be pre-selected (checked) when the page loads |
-| `dataTestId` | `string`                                       | `checkbox` | Customizable test identifier                                                  |
+| Property     | Type                                           | Default       | Description                                                                   |
+| ------------ | ---------------------------------------------- | ------------- | ----------------------------------------------------------------------------- |
+| `children`   | `ReactNode`                                    | -             | Child components to be rendered as the label.                                 |
+| `onChange`   | `(evt: ChangeEvent<HTMLInputElement>) => void` | -             | The triggered function when the input change.                                 |
+| `isDisabled` | `boolean`                                      | `false`       | Specifies if the element should be disabled.                                  |
+| `isChecked`  | `boolean`                                      | `false`       | Specifies if the element should be pre-selected (checked) when the page loads |
+| `dataTestId` | `string`                                       | `checkbox-id` | Customizable test identifier                                                  |
+| `value`      | `string`                                       | -             | Value for the checkbox to hold                                                |
 
 ## Stack
 
