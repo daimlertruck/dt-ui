@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.35
+
+### Patch Changes
+
+- fix: provider theme type
+
 ## 0.1.0-alpha.34
 
 ### Minor Changes
