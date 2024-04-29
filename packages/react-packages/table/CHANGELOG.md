@@ -1,5 +1,15 @@
 # @dt-ui/react-table
 
+## 0.1.0-beta.9
+
+### Patch Changes
+
+- fix: calc sticky column right and left dinamically
+- fix: calc sticky column right and left dinamically
+- fix: show shadows only when scroll is visible
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.15
+
 ## 0.1.0-beta.8
 
 ### Patch Changes

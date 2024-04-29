@@ -1,5 +1,16 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.5
+
+### Patch Changes
+
+- fix: show shadows only when scroll is visible
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.15
+  - @dt-ui/react-label-field@0.1.0-beta.8
+  - @dt-ui/react-spinner@0.1.0-beta.16
+  - @dt-ui/react-typography@0.1.0-beta.6
+
 ## 0.1.0-beta.4
 
 ### Patch Changes

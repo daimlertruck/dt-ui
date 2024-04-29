@@ -1,5 +1,14 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.5
+
+### Patch Changes
+
+- fix: show shadows only when scroll is visible
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.12
+  - @dt-ui/react-typography@0.1.0-beta.6
+
 ## 0.1.0-beta.4
 
 ### Patch Changes

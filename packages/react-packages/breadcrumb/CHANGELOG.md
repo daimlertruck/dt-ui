@@ -1,5 +1,14 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.16
+
+### Patch Changes
+
+- fix: show shadows only when scroll is visible
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.15
+  - @dt-ui/react-tooltip@0.1.0-beta.18
+
 ## 0.1.0-beta.15
 
 ### Patch Changes

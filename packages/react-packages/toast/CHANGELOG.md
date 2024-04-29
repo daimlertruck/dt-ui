@@ -1,5 +1,14 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.23
+
+### Patch Changes
+
+- fix: show shadows only when scroll is visible
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.15
+  - @dt-ui/react-button@0.1.0-beta.6
+
 ## 0.1.0-beta.22
 
 ### Patch Changes

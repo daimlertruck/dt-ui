@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.15
+
+### Patch Changes
+
+- fix: show shadows only when scroll is visible
+
 ## 0.1.0-beta.14
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @dt-ui/react-drawer
 
+## 0.1.0-beta.17
+
+### Patch Changes
+
+- fix: show shadows only when scroll is visible
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.15
+  - @dt-ui/react-typography@0.1.0-beta.6
+
 ## 0.1.0-beta.16
 
 ### Patch Changes

@@ -1,5 +1,15 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.26
+
+### Patch Changes
+
+- fix: show shadows only when scroll is visible
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.15
+  - @dt-ui/react-button@0.1.0-beta.6
+  - @dt-ui/react-typography@0.1.0-beta.6
+
 ## 0.1.0-beta.25
 
 ### Patch Changes
