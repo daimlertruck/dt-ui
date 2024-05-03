@@ -1,5 +1,21 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.6
+
+### Minor Changes
+
+- feat: create select
+- feat: labelField add hasError and required
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.16
+  - @dt-ui/react-label-field@0.1.0-beta.9
+  - @dt-ui/react-spinner@0.1.0-beta.17
+  - @dt-ui/react-typography@0.1.0-beta.7
+
 ## 0.1.0-beta.5
 
 ### Patch Changes

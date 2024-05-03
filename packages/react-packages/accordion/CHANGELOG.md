@@ -1,5 +1,17 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.12
+
+### Minor Changes
+
+- feat: create select
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.16
+  - @dt-ui/react-divider@0.1.0-beta.15
+
 ## 0.1.0-beta.11
 
 ### Patch Changes

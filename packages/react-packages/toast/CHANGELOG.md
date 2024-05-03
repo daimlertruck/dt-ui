@@ -1,5 +1,17 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.24
+
+### Minor Changes
+
+- feat: create select
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.16
+  - @dt-ui/react-button@0.1.0-beta.7
+
 ## 0.1.0-beta.23
 
 ### Patch Changes

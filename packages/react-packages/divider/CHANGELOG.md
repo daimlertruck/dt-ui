@@ -1,5 +1,16 @@
 # @dt-ui/react-divider
 
+## 0.1.0-beta.15
+
+### Minor Changes
+
+- feat: create select
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.16
+
 ## 0.1.0-beta.14
 
 ### Patch Changes

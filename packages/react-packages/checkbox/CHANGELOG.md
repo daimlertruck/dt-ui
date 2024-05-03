@@ -1,5 +1,18 @@
 # @dt-ui/react-checkbox
 
+## 0.1.0-beta.8
+
+### Minor Changes
+
+- feat: create select
+- feat: add checkboxId and value to checkbox
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.16
+  - @dt-ui/react-icon@0.1.0-beta.13
+
 ## 0.1.0-beta.7
 
 ### Patch Changes

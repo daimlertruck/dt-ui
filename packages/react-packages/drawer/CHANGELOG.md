@@ -1,5 +1,17 @@
 # @dt-ui/react-drawer
 
+## 0.1.0-beta.18
+
+### Minor Changes
+
+- feat: create select
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.16
+  - @dt-ui/react-typography@0.1.0-beta.7
+
 ## 0.1.0-beta.17
 
 ### Patch Changes

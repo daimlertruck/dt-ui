@@ -1,5 +1,17 @@
 # @dt-ui/react-tabs
 
+## 0.1.0-beta.6
+
+### Minor Changes
+
+- feat: create select
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.16
+  - @dt-ui/react-icon@0.1.0-beta.13
+
 ## 0.1.0-beta.5
 
 ### Patch Changes

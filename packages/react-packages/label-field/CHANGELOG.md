@@ -1,5 +1,18 @@
 # @dt-ui/react-label-field
 
+## 0.1.0-beta.9
+
+### Minor Changes
+
+- feat: create select
+- feat: labelField add hasError and required
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.16
+  - @dt-ui/react-typography@0.1.0-beta.7
+
 ## 0.1.0-beta.8
 
 ### Patch Changes

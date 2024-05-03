@@ -1,5 +1,17 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.6
+
+### Minor Changes
+
+- feat: create select
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.13
+  - @dt-ui/react-typography@0.1.0-beta.7
+
 ## 0.1.0-beta.5
 
 ### Patch Changes
