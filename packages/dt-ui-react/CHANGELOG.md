@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.109
+
+### Patch Changes
+
+- fix: drop nav and footer components
+
 ## 0.1.0-beta.108
 
 ### Minor Changes
