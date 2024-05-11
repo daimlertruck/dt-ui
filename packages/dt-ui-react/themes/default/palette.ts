@@ -81,7 +81,7 @@ export const palette = {
   },
   content: {
     heading: colors.grey_90,
-    body: colors.grey_60,
+    body: colors.grey_70,
     secondary: colors.grey_50,
     disabled: colors.grey_40,
     contrast: colors.white,
