@@ -12,14 +12,14 @@ export const HeaderStyled = styled.header`
   left: 50%;
   transform: translateX(-50%);
   height: 75px;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.alpha.white};
   z-index: 2;
 
   &:after {
     content: '';
     height: 100%;
     width: 100vw;
-    background-color: ${({ theme }) => theme.colors.blue_500};
+    background-color: ${({ theme }) => theme.colors.alpha.blue_500};
     position: absolute;
     z-index: -1;
     left: 50%;

@@ -35,7 +35,7 @@ export const TableStyled = styled.table<TableStyledProps>`
         border-collapse: collapse;
         border-radius: 3px;
         border-style: hidden; 
-        box-shadow: 0 0 0 1px ${theme.colors.gray_90}; 
+        box-shadow: 0 0 0 1px ${theme.colors.alpha.gray_90}; 
 
         tr:last-of-type td:last-child {
           border-bottom-right-radius: 3px;
@@ -65,7 +65,7 @@ export const TableHeadStyled = styled.thead<TableHeadStyledProps>`
     ${
       variant === TableVariant.Basic &&
       `
-        background-color: ${theme.colors.gray_70};
+        background-color: ${theme.colors.alpha.gray_70};
       `
     }
   `}
@@ -73,8 +73,8 @@ export const TableHeadStyled = styled.thead<TableHeadStyledProps>`
 
 export const RowStyled = styled.tr<RowStyledProps>`
   ${({ theme, selectableRow }) => `
-    background-color: ${theme.colors.white};
-    color: ${theme.colors.gray_300};
+    background-color: ${theme.colors.alpha.white};
+    color: ${theme.colors.alpha.gray_300};
     cursor: ${selectableRow ? 'pointer' : 'auto'};
     transition: all 0.2s ease-in-out;
 
@@ -102,7 +102,7 @@ export const ColumnHeaderStyled = styled.th<{ variant?: TableVariant }>`
       variant === TableVariant.Basic &&
       `
         text-transform: none;
-        border: 1px solid ${theme.colors.gray_90};
+        border: 1px solid ${theme.colors.alpha.gray_90};
         white-space: normal;
 
         &:last-child {
@@ -148,13 +148,13 @@ export const CellStyled = styled.td<CellStyledProps>`
     ${
       variant === TableVariant.Basic &&
       `
-        border: 1px solid ${theme.colors.gray_90};
+        border: 1px solid ${theme.colors.alpha.gray_90};
         text-overflow: unset;
         white-space: normal;
         max-width: unset;
 
         &:first-of-type {
-          border-left: 1px solid ${theme.colors.gray_90};
+          border-left: 1px solid ${theme.colors.alpha.gray_90};
         };
 
         &:nth-of-type(1) {

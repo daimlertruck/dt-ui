@@ -8,7 +8,7 @@ export const NavItemStyled = styled.li<{ matchRoute: boolean }>`
     padding-left: 0px;
 
     a {
-      color: ${theme.colors.white};
+      color: ${theme.colors.alpha.white};
       cursor: pointer;
     }
 

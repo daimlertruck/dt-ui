@@ -18,14 +18,16 @@ export const buttonVariantColors = (
   theme: Theme
 ): Record<ButtonVariant, ColorKeys> => ({
   contained: {
-    color: theme.colors.white,
+    color: theme.colors.alpha.white,
     bgColor: theme.palette.alpha[color],
     hoverBgColor: theme.palette.alpha[`${color}Dark_300` as ContainedColors],
   },
   outlined: {
     color:
-      color === 'neutral' ? theme.colors.gray_200 : theme.palette.alpha[color],
-    bgColor: theme.colors.white,
+      color === 'neutral'
+        ? theme.colors.alpha.gray_200
+        : theme.palette.alpha[color],
+    bgColor: theme.colors.alpha.white,
     hoverBgColor: theme.palette.alpha[`${color}Light_300` as OutlinedColors],
   },
   text: {

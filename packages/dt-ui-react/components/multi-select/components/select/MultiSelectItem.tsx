@@ -103,7 +103,7 @@ export const MultiSelectItem = ({
         </div>
         {!isOpen ? (
           <OutlinedArrowDropDown
-            color={isDisabled ? theme.colors.gray_90 : 'currentColor'}
+            color={isDisabled ? theme.colors.alpha.gray_90 : 'currentColor'}
           />
         ) : (
           <OutlinedArrowDropUp />

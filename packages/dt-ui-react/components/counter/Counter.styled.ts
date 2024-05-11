@@ -11,7 +11,7 @@ export interface CounterStyledProps {
 export const CounterStyled = styled.span<CounterStyledProps>`
   ${({ theme, color, outlined, isLarge }) => `
     ${theme.fontStyles.alpha.tag}
-    color: ${theme.colors.white};
+    color: ${theme.colors.alpha.white};
     border: ${theme.spacing.none};
     align-items: center;
     justify-content: center;
@@ -26,7 +26,7 @@ export const CounterStyled = styled.span<CounterStyledProps>`
       `
         border: 2px solid ${theme.palette.alpha[color]};
         color: ${theme.palette.alpha[color]};
-        background-color: ${theme.colors.white}
+        background-color: ${theme.colors.alpha.white}
       `
     };
   `}

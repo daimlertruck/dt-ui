@@ -26,7 +26,7 @@ export const buttonVariantStyles = (
             ? theme.palette.alpha.neutralLight_100
             : theme.palette.alpha[color]
         };
-        background-color: ${theme.colors.white};
+        background-color: ${theme.colors.alpha.white};
         border-color: ${
           color === 'neutral'
             ? theme.palette.alpha.neutralLight_100

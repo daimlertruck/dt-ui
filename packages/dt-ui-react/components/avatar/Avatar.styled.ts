@@ -22,7 +22,9 @@ export const AvatarStyled = styled.div<AvatarStyledProps>`
       `
         width: ${theme.spacing.large};
         height: ${theme.spacing.large};
-        background: ${isLoading ? theme.colors.gray_90 : theme.colors.white};
+        background: ${
+          isLoading ? theme.colors.alpha.gray_90 : theme.colors.alpha.white
+        };
       `
     };
 
@@ -31,7 +33,7 @@ export const AvatarStyled = styled.div<AvatarStyledProps>`
       `
         width: ${theme.spacing.medium};
         height: ${theme.spacing.medium};
-        background: ${theme.colors.gray_90};
+        background: ${theme.colors.alpha.gray_90};
         margin: 0px 10px;
       `
     }

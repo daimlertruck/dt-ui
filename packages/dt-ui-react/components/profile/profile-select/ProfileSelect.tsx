@@ -29,10 +29,12 @@ export const ProfileSelect = ({
       <Avatar type={AvatarType.Profile} title={title} isLoading={isLoading} />
       {!isMenuOpen ? (
         <ArrowDropDown
-          color={isLoading ? theme.colors.gray_90 : theme.colors.white}
+          color={
+            isLoading ? theme.colors.alpha.gray_90 : theme.colors.alpha.white
+          }
         />
       ) : (
-        <ArrowDropUp color={theme.colors.white} />
+        <ArrowDropUp color={theme.colors.alpha.white} />
       )}
     </ProfileSelectStyled>
   );

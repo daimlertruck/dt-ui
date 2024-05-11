@@ -10,7 +10,10 @@ export interface AvatarProps extends AvatarStyledProps {
   dataTestId?: string;
 }
 
-const COLOR: Record<AvatarType, keyof Theme['colors'] | 'unset' | 'inherit'> = {
+const COLOR: Record<
+  AvatarType,
+  keyof Theme['colors']['alpha'] | 'unset' | 'inherit'
+> = {
   teamMember: 'gray_70',
   profile: 'blue_100',
 };

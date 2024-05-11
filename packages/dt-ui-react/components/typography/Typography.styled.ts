@@ -4,7 +4,7 @@ import { CustomTheme as Theme } from '../../types';
 
 interface TypographyStyledProps {
   color:
-    | keyof Theme['colors']
+    | keyof Theme['colors']['alpha']
     | keyof Theme['palette']['alpha']
     | 'unset'
     | 'inherit';
@@ -17,7 +17,7 @@ export const TypographyStyled = styled.p<TypographyStyledProps>`
     color: ${
       color === 'unset' || color === 'inherit'
         ? color
-        : theme.colors[color as keyof Theme['colors']] ||
+        : theme.colors.alpha[color as keyof Theme['colors']['alpha']] ||
           theme.palette.alpha[color as keyof Theme['palette']['alpha']]
     };
   `};

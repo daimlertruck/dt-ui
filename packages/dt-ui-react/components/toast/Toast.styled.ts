@@ -20,7 +20,7 @@ export const ToastIconStyled = styled.div<ToastIconStyledProps>`
   padding-right: 8px;
   ${({ theme, type }) => `
     background-color: ${theme.palette.alpha[type]};  
-    color: ${theme.colors.white}
+    color: ${theme.colors.alpha.white}
 `}
 `;
 
@@ -37,9 +37,9 @@ export const ToastStyled = styled.div<ToastStyledProps>`
   animation: ${fadeIn} 0.25s ease-in;
   transition: all 0.25s ease-in-out;
   ${({ theme, isVisible }) => `
-    background-color: ${theme.colors.white};  
+    background-color: ${theme.colors.alpha.white};  
     opacity: ${isVisible ? 1 : 0};
-    color: ${theme.colors.gray_300};  
+    color: ${theme.colors.alpha.gray_300};  
   `}
 `;
 
@@ -78,6 +78,6 @@ export const ToastButtonCloseStyled = styled.button`
   line-height: 0;
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.gray_70};
+    background-color: ${({ theme }) => theme.colors.alpha.gray_70};
   }
 `;

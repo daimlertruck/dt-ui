@@ -1,10 +1,13 @@
 import { Theme } from '../..';
 
-import { palette as alphaPalette, colors } from './alpha/palette';
+import {
+  palette as alphaPalette,
+  colors as alphaColors,
+} from './alpha/palette';
 import { fontStyles as alphaFontStyles } from './alpha/typography';
 import { animations } from './animations';
 import { breakpoints } from './breakpoints';
-import { palette } from './palette';
+import { palette, colors } from './palette';
 import { radius } from './radius';
 import { shadows } from './shadows';
 import { shape } from './shape';
@@ -22,7 +25,10 @@ export const theme: Theme = {
     alpha: alphaPalette,
     ...palette,
   },
-  colors,
+  colors: {
+    alpha: alphaColors,
+    ...colors,
+  },
   radius,
   shadows,
   shape,

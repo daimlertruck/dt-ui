@@ -6,7 +6,7 @@ interface SearchFieldIconStyledProps {
 
 export const SearchFieldIconStyled = styled.span<SearchFieldIconStyledProps>`
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.alpha.white};
   cursor: ${({ isLoading }) => (isLoading ? 'default' : 'pointer')};
   display: flex;
   flex-flow: column nowrap;
@@ -18,13 +18,13 @@ export const SearchFieldIconStyled = styled.span<SearchFieldIconStyledProps>`
   width: 35px;
 
   svg {
-    fill: ${({ theme }) => theme.colors.gray_100};
+    fill: ${({ theme }) => theme.colors.alpha.gray_100};
     transition: all 0.2s ease-in-out;
   }
 
   &:hover {
     svg {
-      fill: ${({ theme }) => theme.colors.gray_200};
+      fill: ${({ theme }) => theme.colors.alpha.gray_200};
     }
   }
 `;

@@ -23,14 +23,18 @@ export const itemVariantStyles = (
 ) =>
   ({
     horizontal: css`
-      background-color: ${active ? theme.colors.white : theme.colors.gray_80};
-      color: ${active ? theme.palette.alpha.primary : theme.colors.gray_200};
+      background-color: ${active
+        ? theme.colors.alpha.white
+        : theme.colors.alpha.gray_80};
+      color: ${active
+        ? theme.palette.alpha.primary
+        : theme.colors.alpha.gray_200};
       border-radius: 3px;
       padding: 16px 32px;
     `,
     vertical: css`
       padding: 16px 14px;
-      background-color: ${theme.colors.white};
+      background-color: ${theme.colors.alpha.white};
       box-shadow: ${active
         ? `inset 2px 0px 0px 0px ${
             hasError ? theme.palette.alpha.error : theme.palette.alpha.primary
@@ -40,7 +44,7 @@ export const itemVariantStyles = (
         ? theme.palette.alpha.error
         : active
         ? theme.palette.alpha.primary
-        : theme.colors.gray_100};
+        : theme.colors.alpha.gray_100};
       max-width: 300px;
       overflow: hidden;
       text-align: start;
@@ -48,7 +52,7 @@ export const itemVariantStyles = (
       ${!active &&
       `
         &:hover {
-          background: ${theme.colors.gray_70};
+          background: ${theme.colors.alpha.gray_70};
         }
       `}
     `,

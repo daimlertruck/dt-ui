@@ -35,8 +35,8 @@ const spinnerColors = (theme: Theme): Record<SpinnerTheme, SpinnerColors> => ({
     background: theme.palette.alpha.neutralLight_100,
   },
   light: {
-    main: theme.colors.white,
-    background: hexToRgba(theme.colors.white, 0.4),
+    main: theme.colors.alpha.white,
+    background: hexToRgba(theme.colors.alpha.white, 0.4),
   },
 });
 

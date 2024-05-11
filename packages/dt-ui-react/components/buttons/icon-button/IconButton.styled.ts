@@ -13,7 +13,7 @@ export const IconButtonStyled = styled.button<IconButtonStyledProps>`
     border: none;
     cursor: pointer;
     background-color: transparent;
-    color: ${theme.colors.gray_200};
+    color: ${theme.colors.alpha.gray_200};
 
     &:hover {
       color: ${theme.palette.alpha[color]};

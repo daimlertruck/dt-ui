@@ -37,6 +37,6 @@ export const FooterItemStyled = styled.li`
   white-space: nowrap;
 
   a {
-    color: ${({ theme }) => theme.colors.gray_200};
+    color: ${({ theme }) => theme.colors.alpha.gray_200};
   }
 `;

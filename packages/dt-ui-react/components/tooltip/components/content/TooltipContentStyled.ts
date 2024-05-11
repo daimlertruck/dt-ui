@@ -18,7 +18,7 @@ export const TooltipContentStyled = styled.div<TooltipContentStyledProps>`
     padding: ${theme.spacing.xsmall};
     background-color: ${theme.palette.alpha.primaryDark_400};
     box-shadow: ${theme.shadows[5]};
-    color: ${theme.colors.white};
+    color: ${theme.colors.alpha.white};
     border-radius: 4px;
     text-align: left;
     white-space: initial;

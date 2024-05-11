@@ -10,7 +10,7 @@ export const PillStyled = styled.span<PillStyledProps>`
   ${({ theme, color }) => `
     ${theme.fontStyles.alpha.tag}
     padding: 2px 8px;
-    color: ${theme.colors.white};
+    color: ${theme.colors.alpha.white};
     border: ${theme.spacing.none};
     border-radius: 60px;
     text-transform: uppercase;

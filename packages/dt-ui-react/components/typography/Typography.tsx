@@ -7,7 +7,7 @@ import { TypographyStyled } from './Typography.styled';
 
 export interface TypographyProps extends BaseProps {
   color?:
-    | keyof Theme['colors']
+    | keyof Theme['colors']['alpha']
     | keyof Theme['palette']['alpha']
     | 'unset'
     | 'inherit';

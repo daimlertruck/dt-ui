@@ -29,10 +29,12 @@ export const ArrowStyled = styled.button<ArrowStyledProps>`
     justify-content: center;
     width: 32px;
     height: 32px;
-    background-color: ${theme.colors.white};
+    background-color: ${theme.colors.alpha.white};
     border: none;
     border-radius: 3px;
-    color: ${disabled ? theme.colors.gray_90 : theme.palette.alpha.primary};
+    color: ${
+      disabled ? theme.colors.alpha.gray_90 : theme.palette.alpha.primary
+    };
     cursor: ${disabled ? 'default' : 'pointer'};
   `}
 `;
@@ -45,12 +47,12 @@ export const InputStyled = styled.input<InputStyledProps>`
     margin: 0px;
     width: 50px;
     height: 32px;
-    background-color: ${theme.colors.white};
-    color: ${theme.colors.gray_200};
+    background-color: ${theme.colors.alpha.white};
+    color: ${theme.colors.alpha.gray_200};
     border: ${
       hasError
         ? `2px solid ${theme.palette.alpha.error}`
-        : `1px solid ${theme.colors.gray_90}`
+        : `1px solid ${theme.colors.alpha.gray_90}`
     };
     border-radius: 3px;
 

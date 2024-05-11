@@ -10,7 +10,7 @@ export const OverlayStyled = styled.div`
   width: 100%;
   height: 100%;
   z-index: ${OVERLAY_Z_INDEX};
-  background: ${({ theme }) => hexToRgba(theme.colors.gray_300, 0.6)};
+  background: ${({ theme }) => hexToRgba(theme.colors.alpha.gray_300, 0.6)};
 `;
 
 export const ModalStyled = styled.div`
@@ -28,14 +28,14 @@ export const HeaderStyled = styled.div`
   ${({ theme }) => `
     ${theme.fontStyles.alpha.h5};
     font-weight: 700;
-    color: ${theme.colors.gray_300};
+    color: ${theme.colors.alpha.gray_300};
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: ${theme.spacing.large};
     margin-bottom: ${theme.spacing.none};
     padding-bottom: ${theme.spacing.xmedium};
-    border-bottom: ${`1px solid ${theme.colors.gray_90}`};
+    border-bottom: ${`1px solid ${theme.colors.alpha.gray_90}`};
     text-transform: uppercase;
 
     svg {
@@ -54,6 +54,6 @@ export const FooterStyled = styled.div`
       justify-content: space-between;
       align-item: center;
       padding: ${theme.spacing.xmedium} ${theme.spacing.large};
-      background-color: ${theme.colors.gray_70};
+      background-color: ${theme.colors.alpha.gray_70};
     `}
 `;

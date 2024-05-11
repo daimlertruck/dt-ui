@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const CardStyled = styled.div`
   ${({ theme }) => `
     margin: ${theme.spacing.none};
-    background-color: ${theme.colors.white};
+    background-color: ${theme.colors.alpha.white};
     width: 100%;
     max-width: 530px;
     height: 100%;

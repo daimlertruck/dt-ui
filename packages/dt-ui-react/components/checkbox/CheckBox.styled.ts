@@ -5,7 +5,7 @@ export const CheckboxInputStyled = styled.input`
     appearance: none;
     margin: 0;
     border: 1px solid ${theme.palette.alpha.neutralLight_100};
-    background-color: ${theme.colors.white};
+    background-color: ${theme.colors.alpha.white};
     transform: translateY(-0.075em);
     height: 16px;
     width: 16px;
@@ -19,7 +19,7 @@ export const CheckboxInputStyled = styled.input`
       height: 0.85em;
       clip-path: polygon(28% 38%, 41% 53%, 75% 24%, 86% 38%, 40% 78%, 15% 50%);
       transform: scale(0);
-      box-shadow: inset 1em 1em ${theme.colors.white};
+      box-shadow: inset 1em 1em ${theme.colors.alpha.white};
       background-color: CanvasText;
     }
     
@@ -60,6 +60,6 @@ export const CheckboxLabelStyled = styled.label`
     align-items: center;
     padding-left: 8px;
     ${theme.fontStyles.alpha.p};
-    color: ${theme.colors.gray_200};
+    color: ${theme.colors.alpha.gray_200};
   `}
 `;

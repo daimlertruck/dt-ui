@@ -35,7 +35,7 @@ export const ItemStyled = styled.button<TabItemStyledProps>`
 
 export const PanelStyled = styled.div<TabPanelStyledProps>`
   ${({ visible, theme }) => `
-    background-color: ${theme.colors.white};
+    background-color: ${theme.colors.alpha.white};
     padding: 32px;
     width: 100%;
     ${

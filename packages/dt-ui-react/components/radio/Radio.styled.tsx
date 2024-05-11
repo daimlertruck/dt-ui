@@ -8,7 +8,7 @@ interface GroupStyledProps {
 
 export const RadioInputStyled = styled.input`
   ${({ theme }) => `
-    background: ${theme.colors.white};
+    background: ${theme.colors.alpha.white};
     border: 1px solid ${theme.palette.alpha.neutralLight_100};
     border-radius: 50%;
     width: 16px;
@@ -46,7 +46,7 @@ export const RadioInputStyled = styled.input`
 export const RadioLabelStyled = styled.label`
   ${({ theme }) => `
     ${theme.fontStyles.alpha.p};
-    color: ${theme.colors.gray_200};
+    color: ${theme.colors.alpha.gray_200};
     cursor: inherit;
   `}
 `;
