@@ -1,8 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { ComponentProps } from 'react';
 
-import Select from './Select';
-import { SelectOptionValue } from './types';
+import { Select, SelectOptionValue } from '.';
 
 const options: SelectOptionValue[] = [
   { value: 'opt1', label: 'Option 1', disabled: false },

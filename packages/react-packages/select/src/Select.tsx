@@ -300,4 +300,4 @@ const Select = ({
 
 Select.Option = SelectOption;
 
-export default Select;
+export { Select };

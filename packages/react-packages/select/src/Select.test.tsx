@@ -1,8 +1,7 @@
 import { withProviders } from '@dt-ui/react-core';
 import { render, fireEvent, within } from '@testing-library/react';
 
-import Select from './Select';
-import { SelectOptionValue } from './types';
+import { Select, SelectOptionValue } from '.';
 
 const items: SelectOptionValue[] = [
   { value: 'opt1', label: 'Option 1', disabled: false },
