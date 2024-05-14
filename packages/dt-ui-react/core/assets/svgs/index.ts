@@ -41,3 +41,5 @@ export { default as SearchIcon } from './Search';
 export { default as LeaveIcon } from './Leave';
 export { default as ExpandIcon } from './Expand';
 export { default as CollapseIcon } from './Collapse';
+export { default as DescriptionOutlineIcon } from './DescriptionOutline';
+export { default as ExploreOutlineIcon } from './ExploreOutline';
