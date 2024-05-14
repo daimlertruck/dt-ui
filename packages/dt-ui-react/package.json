@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react",
-  "version": "0.1.0-alpha.35",
+  "version": "0.1.0-alpha.36",
   "exports": {
     ".": "./dist/index.js",
     "./index.css": "./dist/index.css"

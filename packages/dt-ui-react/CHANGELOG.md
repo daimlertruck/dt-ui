@@ -1,5 +1,12 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.36
+
+### Patch Changes
+
+- fix: update palette content body color
+- chore: include the new color keys on theme
+
 ## 0.1.0-alpha.35
 
 ### Patch Changes
