@@ -1,5 +1,11 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.2
+
+### Patch Changes
+
+- fix: export select component
+
 ## 0.1.0-beta.1
 
 ### Minor Changes

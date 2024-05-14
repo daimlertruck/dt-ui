@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.110
+
+### Patch Changes
+
+- fix: export select component
+- Updated dependencies
+  - @dt-ui/react-select@0.1.0-beta.2
+
 ## 0.1.0-beta.109
 
 ### Patch Changes
