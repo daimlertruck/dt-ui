@@ -1,5 +1,15 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.37
+
+### Minor Changes
+
+- feat: add Description and Explore icons
+
+### Patch Changes
+
+- fix: change AllOut icon name and remove opacity
+
 ## 0.1.0-alpha.36
 
 ### Patch Changes
