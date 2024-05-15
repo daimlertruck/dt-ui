@@ -25,7 +25,7 @@ export { default as VisibilityOff } from './VisibilityOff';
 export { default as DeleteIcon } from './Delete';
 export { default as EmailSendIcon } from './EmailSend';
 export { default as InputIcon } from './Input';
-export { default as AllOut } from './AllOut';
+export { default as AllOutOutlineIcon } from './AllOutOutline';
 export { default as Share } from './Share';
 export { default as Timeline } from './Timeline';
 export { default as Check } from './Check';
