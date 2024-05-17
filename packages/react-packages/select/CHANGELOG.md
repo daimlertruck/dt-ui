@@ -1,5 +1,17 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.3
+
+### Minor Changes
+
+- feat: add input props to checkbox
+
+### Patch Changes
+
+- fix: remove repetitive onChange calls when isMulti
+- Updated dependencies
+  - @dt-ui/react-checkbox@0.1.0-beta.9
+
 ## 0.1.0-beta.2
 
 ### Patch Changes

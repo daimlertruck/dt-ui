@@ -1,5 +1,11 @@
 # @dt-ui/react-checkbox
 
+## 0.1.0-beta.9
+
+### Minor Changes
+
+- feat: add input props to checkbox
+
 ## 0.1.0-beta.8
 
 ### Minor Changes
