@@ -188,6 +188,32 @@ describe('<Select /> component', () => {
     expect(onChange).toHaveBeenCalledWith([items[0].value, items[1].value]);
   });
 
+  it('onChange should only be called once when selecting an option', () => {
+    const onChange = jest.fn();
+    const { getByRole } = render(
+      <ProvidedSelect isMulti label='select' onChange={onChange}>
+        {items.map((item, index) => (
+          <ProvidedSelectOption
+            index={index}
+            key={item.value}
+            label={item.label}
+            value={item.value}
+          />
+        ))}
+      </ProvidedSelect>
+    );
+
+    const select = getByRole('combobox');
+
+    fireEvent.click(select);
+    const menu = getByRole('listbox');
+    const optionsEl = within(menu).getAllByRole('option');
+    expect(optionsEl.length).toEqual(5);
+
+    fireEvent.click(optionsEl[0]);
+    expect(onChange).toHaveBeenCalledTimes(1);
+  });
+
   it('Should be able to deselect options in multi selection', () => {
     const onChange = jest.fn();
     const { getByRole } = render(

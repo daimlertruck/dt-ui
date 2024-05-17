@@ -150,9 +150,18 @@ exports[`<Select /> component should render Select 1`] = `
   text-transform: none;
 }
 
+.emotion-16:hover,
+.emotion-16:focus-within {
+  background-color: #ECF7FB;
+}
+
 .emotion-16[aria-disabled="true"] {
   cursor: not-allowed;
   color: #BABBBB;
+}
+
+.emotion-16[aria-disabled="true"]:hover {
+  background-color: #FFFFFF;
 }
 
 .emotion-18 {

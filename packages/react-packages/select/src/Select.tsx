@@ -75,9 +75,9 @@ const Select = ({
   const ref = useRef<HTMLDivElement>(null);
 
   const changeSelectedItems = useCallback(
-    (newItems: SelectOptionValue[]) => {
+    (newItems: SelectOptionValue[], skipOnChangeTrigger = false) => {
       setSelectedItems(newItems);
-      if (onChange) {
+      if (onChange && !skipOnChangeTrigger) {
         onChange(
           isMulti
             ? newItems
@@ -136,12 +136,12 @@ const Select = ({
       !initalOptions ||
       (Array.isArray(initalOptions) && initalOptions.length === 0)
     ) {
-      changeSelectedItems([]);
+      changeSelectedItems([], true);
     } else {
       if (Array.isArray(initalOptions)) {
-        changeSelectedItems(isMulti ? initalOptions : [initalOptions[0]]);
+        changeSelectedItems(isMulti ? initalOptions : [initalOptions[0]], true);
       } else {
-        changeSelectedItems([initalOptions]);
+        changeSelectedItems([initalOptions], true);
       }
     }
   }, [isMulti, initialValue, options, changeSelectedItems]);
@@ -150,13 +150,7 @@ const Select = ({
    * When an option is no longer available, it should also be removed from the selected options
    */
   useEffect(() => {
-    const selectedItemDiffFromAvailableOption =
-      selectedItems.length > 0 && selectedItems[0].value !== options[0].value;
-
-    if (
-      options.length === 1 &&
-      (selectedItems.length === 0 || selectedItemDiffFromAvailableOption)
-    ) {
+    if (options.length === 1 && selectedItems.length === 0) {
       changeSelectedItems([options[0]]);
     }
 

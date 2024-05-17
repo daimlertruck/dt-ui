@@ -12,20 +12,33 @@ interface CheckIconWrapperProps {
 export const SelectOptionStyled = styled.li<SelectOptionProps>`
   display: flex;
 
-  ${({ theme, isHighlighted, isMulti }) => `
+  ${({ theme, isMulti, isHighlighted }) => `
     cursor:pointer;
     align-items: center;
-    padding: ${theme.spacing['4xs']} ${theme.spacing['2xs']};
+    ${!isMulti && `padding: ${theme.spacing['4xs']} ${theme.spacing['2xs']}`};
     gap: ${isMulti ? theme.spacing['4xs'] : theme.spacing['5xs']};
     background-color: ${
-      isHighlighted ? theme.palette.primary.light : theme.palette.base.default
+      isHighlighted && !isMulti
+        ? theme.palette.primary.light
+        : theme.palette.base.default
     };
     color: ${theme.palette.content.body};
     ${theme.fontStyles.body2}
 
+    & > label {
+      ${isMulti && `padding: ${theme.spacing['4xs']} ${theme.spacing['2xs']}`};
+    }
+    
+    &:hover,&:focus-within {
+      background-color: ${theme.palette.primary.light};
+    }
+
     &[aria-disabled="true"] {
       cursor: not-allowed;
       color: ${theme.palette.content.disabled};
+      &:hover {
+        background-color: ${theme.palette.base.default};
+      }
     }
   `}
 `;

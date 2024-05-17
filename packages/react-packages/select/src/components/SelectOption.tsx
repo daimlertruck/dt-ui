@@ -34,25 +34,25 @@ export const SelectOption = ({
   const isSelected = isItemSelected(item);
 
   const isHighlighted = isItemHighlighted(index);
+  const itemProps = getItemProps({ item, index });
 
   return (
     <SelectOptionStyled
+      aria-disabled={itemProps['aria-disabled']}
       data-testid={dataTestId}
       isHighlighted={isHighlighted}
       isMulti={isMulti}
       style={style}
-      {...getItemProps({
-        item,
-        index,
+      {...(!isMulti && {
+        ...itemProps,
         'aria-selected': isSelected,
       })}
     >
       {isMulti ? (
         <Checkbox
-          checkboxId={value}
           isChecked={isSelected}
-          isDisabled={getItemProps({ item, index })['aria-disabled']}
-          onChange={() => null}
+          isDisabled={itemProps['aria-disabled']}
+          {...itemProps}
         >
           {children || label || value}
         </Checkbox>
