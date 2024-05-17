@@ -46,11 +46,11 @@ describe('<CheckBox /> component', () => {
         onChange={onChangeMock}
       />
     );
-    const messageCloseButton = getByRole('checkbox');
+    const checkBox = getByRole('checkbox');
 
-    expect(messageCloseButton).toBeInTheDocument();
+    expect(checkBox).toBeInTheDocument();
 
-    fireEvent.click(messageCloseButton);
+    fireEvent.click(checkBox);
 
     expect(onChangeMock).toHaveBeenCalledTimes(1);
   });
@@ -60,11 +60,11 @@ describe('<CheckBox /> component', () => {
     const { container, getByRole } = render(
       <ProvidedCheckBox isChecked={false} isDisabled onChange={onChangeMock} />
     );
-    const messageCloseButton = getByRole('checkbox');
+    const checkBox = getByRole('checkbox');
 
-    expect(messageCloseButton).toBeInTheDocument();
+    expect(checkBox).toBeInTheDocument();
 
-    fireEvent.click(messageCloseButton);
+    fireEvent.click(checkBox);
 
     expect(onChangeMock).toHaveBeenCalledTimes(0);
     expect(container).toMatchSnapshot();

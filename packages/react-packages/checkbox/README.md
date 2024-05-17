@@ -31,7 +31,10 @@ export const App = () => {
 | `isDisabled` | `boolean`                                      | `false`       | Specifies if the element should be disabled.                                  |
 | `isChecked`  | `boolean`                                      | `false`       | Specifies if the element should be pre-selected (checked) when the page loads |
 | `dataTestId` | `string`                                       | `checkbox-id` | Customizable test identifier                                                  |
-| `value`      | `string`                                       | -             | Value for the checkbox to hold                                                |
+
+### Note
+
+In addition to the above properties, this component also accepts all standard props of an `input` element.
 
 ## Stack
 

@@ -22,6 +22,7 @@ export const CheckboxStyled = styled.label<CheckBoxInputWrapperProps>`
       border-radius: ${theme.shape.checkbox};
       ${checkboxStyles(theme, isChecked, isDisabled)}
     }
+    cursor: ${isDisabled ? 'not-allowed' : 'pointer'};
 
     &:hover > div {
       ${
@@ -74,6 +75,5 @@ export const CheckboxLabelStyled = styled.span<CheckboxLabelStyledProps>`
     color: ${
       isDisabled ? theme.palette.content.disabled : theme.palette.content.body
     };
-    cursor: ${isDisabled ? 'not-allowed' : 'pointer'};
   `}
 `;
