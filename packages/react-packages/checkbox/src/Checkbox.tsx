@@ -19,15 +19,18 @@ export interface CheckBoxProps
 }
 
 export const Checkbox = forwardRef<HTMLInputElement, CheckBoxProps>(
-  ({
-    dataTestId = 'checkbox-id',
-    onChange,
-    children,
-    isChecked = false,
-    isDisabled = false,
-    style,
-    ...rest
-  }: CheckBoxProps) => {
+  (
+    {
+      dataTestId = 'checkbox-id',
+      onChange,
+      children,
+      isChecked = false,
+      isDisabled = false,
+      style,
+      ...rest
+    }: CheckBoxProps,
+    ref
+  ) => {
     const theme = useTheme();
 
     const handleOnChangeTrigger = (
@@ -52,6 +55,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckBoxProps>(
             checked={isChecked}
             disabled={isDisabled}
             onChange={handleOnChangeTrigger}
+            ref={ref}
             type='checkbox'
             {...rest}
           />
