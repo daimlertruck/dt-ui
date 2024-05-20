@@ -1,5 +1,14 @@
 # @dt-ui/react
 
+## 0.1.0-beta.112
+
+### Patch Changes
+
+- fix: checkbox forwardRef needs ref as second param
+- Updated dependencies
+  - @dt-ui/react-checkbox@0.1.0-beta.10
+  - @dt-ui/react-select@0.1.0-beta.4
+
 ## 0.1.0-beta.111
 
 ### Minor Changes

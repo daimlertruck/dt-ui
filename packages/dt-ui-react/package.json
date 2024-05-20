@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react",
-  "version": "0.1.0-beta.111",
+  "version": "0.1.0-beta.112",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
@@ -28,7 +28,7 @@
     "@dt-ui/react-box": "0.1.0-beta.7",
     "@dt-ui/react-breadcrumb": "0.1.0-beta.17",
     "@dt-ui/react-button": "0.1.0-beta.7",
-    "@dt-ui/react-checkbox": "0.1.0-beta.9",
+    "@dt-ui/react-checkbox": "0.1.0-beta.10",
     "@dt-ui/react-core": "0.1.0-beta.16",
     "@dt-ui/react-divider": "0.1.0-beta.15",
     "@dt-ui/react-drawer": "0.1.0-beta.18",
@@ -37,7 +37,7 @@
     "@dt-ui/react-label-field": "0.1.0-beta.9",
     "@dt-ui/react-message": "0.1.0-beta.20",
     "@dt-ui/react-progress-bar": "0.1.0-beta.6",
-    "@dt-ui/react-select": "0.1.0-beta.3",
+    "@dt-ui/react-select": "0.1.0-beta.4",
     "@dt-ui/react-spinner": "0.1.0-beta.17",
     "@dt-ui/react-table": "0.1.0-beta.10",
     "@dt-ui/react-tabs": "0.1.0-beta.6",
