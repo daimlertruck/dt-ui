@@ -1,0 +1,7 @@
+import{j as r}from"./jsx-runtime-CKrituN3.js";import"./index-8Kg4V25X.js";import{P as h}from"./Portal-U_0UEmB3.js";import{r as x}from"./index-CBqU2yxZ.js";import{D as e}from"./Drawer-By0SdtQE.js";import"./_commonjsHelpers-BosuxZz1.js";import"./emotion-element-43c6fea0.browser.esm-CsO0Y6lU.js";import"./extends-DJVMZnyl.js";import"./index-BtM5VmRH.js";import"./index-BAMY2Nnw.js";import"./util-BQ0cylCP.js";import"./index-BDlDW0Uq.js";import"./Typography-C0EWJ3ZN.js";import"./emotion-styled.browser.esm-DhD7UCCJ.js";import"./IconButton-BS2RgPV3.js";import"./Close-CGHfkSk3.js";import"./z-index-C-tE6wDk.js";const w=({body:m,header:p,title:l,...c})=>{const[o,s]=x.useState(!1),d=()=>{s(D=>!D)};return r.jsxs(r.Fragment,{children:[r.jsx("button",{onClick:d,type:"button",children:"Open Drawer"}),r.jsx(h,{isOpen:o,children:r.jsxs(e,{...c,isVisible:o,setIsVisible:s,children:[r.jsxs(e.Header,{children:[r.jsx(e.Title,{title:l}),r.jsx("div",{children:p})]}),r.jsx(e.Body,{children:r.jsx("div",{children:m})})]})})]})},t={args:{body:"Drawer body content here.",header:"Drawer header content here.",title:"Drawer title"}},C={title:"Data Display/Drawer",component:e,render:w};var i,a,n;t.parameters={...t.parameters,docs:{...(i=t.parameters)==null?void 0:i.docs,source:{originalSource:`{
+  args: {
+    body: 'Drawer body content here.',
+    header: 'Drawer header content here.',
+    title: 'Drawer title'
+  }
+}`,...(n=(a=t.parameters)==null?void 0:a.docs)==null?void 0:n.source}}};const F=["Default"];export{t as Default,F as __namedExportsOrder,C as default};
