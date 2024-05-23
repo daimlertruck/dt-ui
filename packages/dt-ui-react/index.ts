@@ -7,7 +7,6 @@ export * from './core';
 export * from './components/buttons';
 export * from './components/dropdown';
 export * from './components/header';
-export * from './components/grid';
 export * from './components/card';
 export * from './components/form';
 export * from './components/link';
