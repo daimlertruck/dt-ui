@@ -1,5 +1,14 @@
 # @dt-ui/react
 
+## 0.1.0-beta.113
+
+### Patch Changes
+
+- refactor: drop grid component
+- refactor: drop DescriptionList components
+- refactor: drop List component
+- refactor: drop Header component
+
 ## 0.1.0-beta.112
 
 ### Patch Changes
