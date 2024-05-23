@@ -13,7 +13,6 @@ export * from './components/form';
 export * from './components/link';
 export * from './components/modal';
 export * from './components/counter';
-export * from './components/list';
 export * from './components/description-list';
 export * from './components/pagination';
 export * from './components/stepper';
