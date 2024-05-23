@@ -13,7 +13,6 @@ export * from './components/form';
 export * from './components/link';
 export * from './components/modal';
 export * from './components/counter';
-export * from './components/description-list';
 export * from './components/pagination';
 export * from './components/stepper';
 export * from './components/radio';
@@ -53,7 +52,6 @@ export * from '@dt-ui/react-progress-bar';
 export * from '@dt-ui/react-select';
 
 //utils
-export { ListStyleType } from './utils/constants';
 export * from './utils/testingUtils';
 
 declare module '@emotion/react' {
