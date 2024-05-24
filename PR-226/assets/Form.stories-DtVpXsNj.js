@@ -1,0 +1,29 @@
+import{j as e}from"./jsx-runtime-CKrituN3.js";import{T as l}from"./TextField-Bq_jTrKh.js";import"./TextField.styled-CpWAB4t-.js";import{r as h}from"./index-CBqU2yxZ.js";import{T as F}from"./TextArea-CYEJbE_C.js";import{T as a}from"./Toggle-BFOjMQJC.js";import{F as r}from"./Form-B2NZFK7x.js";import"./LabelField-PbTpmCmC.js";import"./Typography-hP6P_hwr.js";import"./index-B2rOpc4E.js";import"./index-BbP3371Q.js";import"./index-BAMY2Nnw.js";import"./index-BtM5VmRH.js";import"./_commonjsHelpers-BosuxZz1.js";import"./client-BvKKsruy.js";import"./index-Bl7H5CcN.js";import"./emotion-element-43c6fea0.browser.esm-CsO0Y6lU.js";import"./extends-DJVMZnyl.js";import"./index-BDlDW0Uq.js";import"./emotion-styled.browser.esm-DhD7UCCJ.js";import"./Spinner-DaAX0u3v.js";import"./index-gq_RjDZX.js";import"./Box.styled-B8MVCI1k.js";import"./Spinner.styled-CK0-z1jb.js";import"./Tooltip-BAc1emR9.js";import"./Portal-U_0UEmB3.js";import"./z-index-C-tE6wDk.js";import"./Info-BPeIL3LD.js";const W={title:"Data Display/form/Form",component:r},T=()=>e.jsxs(r,{children:[e.jsx(l,{label:"label 1"}),e.jsx(a,{onChange:()=>console.log(0),children:e.jsx(a.Label,{children:"inactive"})})]}),o=T.bind({});o.args={};const j=({isDisabled:b,title:u,tooltip:g})=>{const[s,x]=h.useState(!1);return e.jsxs(r,{children:[e.jsxs(r.Group,{title:u,tooltip:g,children:[e.jsx(l,{label:"label 1"}),e.jsx(a,{isChecked:s,isDisabled:!0,onChange:()=>x(!s),children:e.jsx(a.Label,{children:"inactive"})})]}),e.jsxs(r.Group,{isDisabled:b,children:[e.jsx(l,{label:"label 2"}),e.jsx(l,{label:"label 3"})]}),e.jsx(r.Group,{children:e.jsx(F,{label:"My area"})})]})},t=j.bind({});t.args={title:"",tooltip:"",isDisabled:!1};var i,n,m;o.parameters={...o.parameters,docs:{...(i=o.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
+  return <Form>
+      <TextField label='label 1' />
+      <Toggle onChange={() => console.log(0)}>
+        <Toggle.Label>inactive</Toggle.Label>
+      </Toggle>
+    </Form>;
+}`,...(m=(n=o.parameters)==null?void 0:n.docs)==null?void 0:m.source}}};var p,c,d;t.parameters={...t.parameters,docs:{...(p=t.parameters)==null?void 0:p.docs,source:{originalSource:`({
+  isDisabled,
+  title,
+  tooltip
+}) => {
+  const [checked, setChecked] = useState(false);
+  return <Form>
+      <Form.Group title={title} tooltip={tooltip}>
+        <TextField label='label 1' />
+        <Toggle isChecked={checked} isDisabled onChange={() => setChecked(!checked)}>
+          <Toggle.Label>inactive</Toggle.Label>
+        </Toggle>
+      </Form.Group>
+      <Form.Group isDisabled={isDisabled}>
+        <TextField label='label 2' />
+        <TextField label='label 3' />
+      </Form.Group>
+      <Form.Group>
+        <TextArea label='My area' />
+      </Form.Group>
+    </Form>;
+}`,...(d=(c=t.parameters)==null?void 0:c.docs)==null?void 0:d.source}}};const X=["Default","FormGroup"];export{o as Default,t as FormGroup,X as __namedExportsOrder,W as default};
