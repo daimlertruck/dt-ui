@@ -10,7 +10,6 @@ export * from './components/card';
 export * from './components/form';
 export * from './components/link';
 export * from './components/modal';
-export * from './components/counter';
 export * from './components/pagination';
 export * from './components/radio';
 export * from './components/multi-select';

@@ -100,7 +100,7 @@ exports[`<Step /> component <Step.Counter /> component renders StepCounter with 
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #636464;
+  color: #F8F9FA;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -116,7 +116,7 @@ exports[`<Step /> component <Step.Counter /> component renders StepCounter with 
   >
     <i
       class="emotion-2 emotion-3"
-      color="#636464"
+      color="#F8F9FA"
       data-testid="icon"
     >
       check
@@ -554,7 +554,7 @@ exports[`<Step /> component render Step renders Step with props correctly 2`] = 
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #636464;
+  color: #F8F9FA;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -583,7 +583,7 @@ exports[`<Step /> component render Step renders Step with props correctly 2`] = 
     >
       <i
         class="emotion-4 emotion-5"
-        color="#636464"
+        color="#F8F9FA"
         data-testid="icon"
       >
         check
