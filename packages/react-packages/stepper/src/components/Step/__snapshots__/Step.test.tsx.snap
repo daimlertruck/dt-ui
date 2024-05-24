@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Step /> component <Step.Counter /> component should render active behaviour 1`] = `
+exports[`<Step /> component <Step.Counter /> component renders StepCounter with props correctly 1`] = `
 .emotion-0 {
   font-weight: 700;
   font-size: 10px;
@@ -60,7 +60,7 @@ exports[`<Step /> component <Step.Counter /> component should render active beha
 </div>
 `;
 
-exports[`<Step /> component <Step.Counter /> component should render completed behaviour 1`] = `
+exports[`<Step /> component <Step.Counter /> component renders StepCounter with props correctly 2`] = `
 .emotion-0 {
   font-weight: 700;
   font-size: 10px;
@@ -88,6 +88,25 @@ exports[`<Step /> component <Step.Counter /> component should render completed b
   background-color: #00677F;
 }
 
+.emotion-2 {
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #636464;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
 <div>
   <span
     class="emotion-0 emotion-1"
@@ -95,26 +114,18 @@ exports[`<Step /> component <Step.Counter /> component should render completed b
     data-testid="counter"
     style="border-width: 1px;"
   >
-    <svg
-      fill="none"
-      height="8"
-      viewBox="0 0 10 8"
-      width="10"
-      xmlns="http://www.w3.org/2000/svg"
+    <i
+      class="emotion-2 emotion-3"
+      color="#636464"
+      data-testid="icon"
     >
-      <path
-        d="M1 4.818 3.857 7 9 1"
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-      />
-    </svg>
+      check
+    </i>
   </span>
 </div>
 `;
 
-exports[`<Step /> component <Step.Counter /> component should render default behaviour 1`] = `
+exports[`<Step /> component <Step.Counter /> component renders StepCounter with props correctly 3`] = `
 .emotion-0 {
   font-weight: 700;
   font-size: 10px;
@@ -139,9 +150,9 @@ exports[`<Step /> component <Step.Counter /> component should render default beh
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #00677F;
-  border: 2px solid #00677F;
-  color: #00677F;
+  background-color: #636464;
+  border: 2px solid #BABBBB;
+  color: #BABBBB;
   background-color: #FFFFFF;
 }
 
@@ -152,19 +163,19 @@ exports[`<Step /> component <Step.Counter /> component should render default beh
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #00677F;
+  color: #BABBBB;
 }
 
 <div>
   <span
     class="emotion-0 emotion-1"
-    color="primary"
+    color="disabled"
     data-testid="counter"
     style="border-width: 1px;"
   >
     <span
       class="emotion-2 emotion-3"
-      color="primary.default"
+      color="content.disabled"
       data-testid="typography"
       style="font-weight: 700;"
     >
@@ -174,7 +185,127 @@ exports[`<Step /> component <Step.Counter /> component should render default beh
 </div>
 `;
 
-exports[`<Step /> component <Step.Label /> component should render active behaviour 1`] = `
+exports[`<Step /> component <Step.Counter /> component renders StepCounter with props correctly 4`] = `
+.emotion-0 {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13.4px;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #FFFFFF;
+  border: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #FF4A4A;
+  border: 2px solid #FF4A4A;
+  color: #FF4A4A;
+  background-color: #FFFFFF;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #FF4A4A;
+}
+
+<div>
+  <span
+    class="emotion-0 emotion-1"
+    color="error"
+    data-testid="counter"
+    style="border-width: 1px;"
+  >
+    <span
+      class="emotion-2 emotion-3"
+      color="error.default"
+      data-testid="typography"
+      style="font-weight: 700;"
+    >
+      1
+    </span>
+  </span>
+</div>
+`;
+
+exports[`<Step /> component <Step.Counter /> component renders StepCounter with props correctly 5`] = `
+.emotion-0 {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13.4px;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #FFFFFF;
+  border: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #FF4A4A;
+  border: 2px solid #FF4A4A;
+  color: #FF4A4A;
+  background-color: #FFFFFF;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #FF4A4A;
+}
+
+<div>
+  <span
+    class="emotion-0 emotion-1"
+    color="error"
+    data-testid="counter"
+    style="border-width: 1px; background-color: rgb(252, 238, 237);"
+  >
+    <span
+      class="emotion-2 emotion-3"
+      color="error.default"
+      data-testid="typography"
+      style="font-weight: 700;"
+    >
+      1
+    </span>
+  </span>
+</div>
+`;
+
+exports[`<Step /> component <Step.Label /> component renders StepCounter with props correctly 1`] = `
 .emotion-0 {
   font-weight: 400;
   font-size: 16px;
@@ -195,7 +326,7 @@ exports[`<Step /> component <Step.Label /> component should render active behavi
 </div>
 `;
 
-exports[`<Step /> component <Step.Label /> component should render completed behaviour 1`] = `
+exports[`<Step /> component <Step.Label /> component renders StepCounter with props correctly 2`] = `
 .emotion-0 {
   font-weight: 400;
   font-size: 16px;
@@ -211,12 +342,12 @@ exports[`<Step /> component <Step.Label /> component should render completed beh
     class="emotion-0 emotion-1"
     color="primary"
   >
-    1
+    Label
   </span>
 </div>
 `;
 
-exports[`<Step /> component <Step.Label /> component should render default behaviour 1`] = `
+exports[`<Step /> component <Step.Label /> component renders StepCounter with props correctly 3`] = `
 .emotion-0 {
   font-weight: 400;
   font-size: 16px;
@@ -224,20 +355,62 @@ exports[`<Step /> component <Step.Label /> component should render default behav
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #BABBBB;
 }
 
 <div>
   <span
     class="emotion-0 emotion-1"
-    color="secondary"
+    color="disabled"
   >
     Label
   </span>
 </div>
 `;
 
-exports[`<Step /> component render active step 1`] = `
+exports[`<Step /> component <Step.Label /> component renders StepCounter with props correctly 4`] = `
+.emotion-0 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #FF4A4A;
+}
+
+<div>
+  <span
+    class="emotion-0 emotion-1"
+    color="error"
+  >
+    Label
+  </span>
+</div>
+`;
+
+exports[`<Step /> component <Step.Label /> component renders StepCounter with props correctly 5`] = `
+.emotion-0 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #FF4A4A;
+}
+
+<div>
+  <span
+    class="emotion-0 emotion-1"
+    color="error"
+  >
+    Label
+  </span>
+</div>
+`;
+
+exports[`<Step /> component render Step renders Step with props correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -329,7 +502,7 @@ exports[`<Step /> component render active step 1`] = `
 </div>
 `;
 
-exports[`<Step /> component render default step 1`] = `
+exports[`<Step /> component render Step renders Step with props correctly 2`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -367,19 +540,25 @@ exports[`<Step /> component render default step 1`] = `
   height: 24px;
   border-radius: 50%;
   background-color: #00677F;
-  border: 2px solid #00677F;
-  color: #00677F;
-  background-color: #FFFFFF;
 }
 
 .emotion-4 {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
-  letter-spacing: normal;
-  margin: 0;
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 1;
   text-transform: none;
-  color: #00677F;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #636464;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
 }
 
 .emotion-6 {
@@ -389,7 +568,7 @@ exports[`<Step /> component render default step 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #7C7C7D;
+  color: #00677F;
 }
 
 <div>
@@ -402,18 +581,17 @@ exports[`<Step /> component render default step 1`] = `
       data-testid="counter"
       style="border-width: 1px;"
     >
-      <span
+      <i
         class="emotion-4 emotion-5"
-        color="primary.default"
-        data-testid="typography"
-        style="font-weight: 700;"
+        color="#636464"
+        data-testid="icon"
       >
-        1
-      </span>
+        check
+      </i>
     </span>
     <span
       class="emotion-6 emotion-7"
-      color="secondary"
+      color="primary"
     >
       Label
     </span>
@@ -421,7 +599,7 @@ exports[`<Step /> component render default step 1`] = `
 </div>
 `;
 
-exports[`<Step /> component render disabled step 1`] = `
+exports[`<Step /> component render Step renders Step with props correctly 3`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -513,7 +691,7 @@ exports[`<Step /> component render disabled step 1`] = `
 </div>
 `;
 
-exports[`<Step /> component render error step 1`] = `
+exports[`<Step /> component render Step renders Step with props correctly 4`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -585,6 +763,98 @@ exports[`<Step /> component render error step 1`] = `
       color="error"
       data-testid="counter"
       style="border-width: 1px;"
+    >
+      <span
+        class="emotion-4 emotion-5"
+        color="error.default"
+        data-testid="typography"
+        style="font-weight: 700;"
+      >
+        1
+      </span>
+    </span>
+    <span
+      class="emotion-6 emotion-7"
+      color="error"
+    >
+      Label
+    </span>
+  </li>
+</div>
+`;
+
+exports[`<Step /> component render Step renders Step with props correctly 5`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13.4px;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #FFFFFF;
+  border: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #FF4A4A;
+  border: 2px solid #FF4A4A;
+  color: #FF4A4A;
+  background-color: #FFFFFF;
+}
+
+.emotion-4 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #FF4A4A;
+}
+
+.emotion-6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #FF4A4A;
+}
+
+<div>
+  <li
+    class="emotion-0 emotion-1"
+  >
+    <span
+      class="emotion-2 emotion-3"
+      color="error"
+      data-testid="counter"
+      style="border-width: 1px; background-color: rgb(252, 238, 237);"
     >
       <span
         class="emotion-4 emotion-5"

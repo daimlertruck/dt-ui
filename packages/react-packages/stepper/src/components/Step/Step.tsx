@@ -1,14 +1,14 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { Icon } from '@dt-ui/react-icon';
 import { Typography } from '@dt-ui/react-typography';
 import { useTheme } from '@emotion/react';
 import { Children, cloneElement, ReactElement, useMemo } from 'react';
 
-import { Check } from '../../../core';
-import { Counter } from '../../counter';
+import { Counter } from '../Counter';
 
 import { LabelStyled, StepStyled } from './Step.styled';
 
-interface BaseStepProps extends Pick<BaseProps, 'children'> {
+export interface BaseStepProps extends Pick<BaseProps, 'children'> {
   isActive?: boolean;
   isCompleted?: boolean;
   isDisabled?: boolean;
@@ -66,7 +66,7 @@ const StepCounter = ({
       }}
     >
       {isCompleted ? (
-        <Check height={8} width={10} />
+        <Icon code='check' color={theme.palette.base.light} size='medium' />
       ) : (
         <Typography
           color={color === 'disabled' ? 'content.disabled' : `${color}.default`}
