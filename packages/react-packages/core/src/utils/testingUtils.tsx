@@ -1,3 +1,6 @@
+import { RenderOptions, render } from '@testing-library/react';
+import { ReactNode } from 'react';
+
 import { Provider } from '../components';
 import { theme } from '../themes';
 
@@ -12,3 +15,17 @@ export const withProviders = <P extends object>(
     );
   };
 };
+
+const customRender = (
+  ui: ReactNode,
+  options?: Omit<RenderOptions, 'wrapper'>
+) => {
+  const Providers = ({ children }: { children: ReactNode }) => {
+    return <Provider theme={theme}>{children}</Provider>;
+  };
+
+  return render(ui, { wrapper: Providers, ...options });
+};
+
+export * from '@testing-library/react';
+export { customRender as render };

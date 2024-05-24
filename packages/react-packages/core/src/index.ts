@@ -11,11 +11,4 @@ export type {
   Orientation,
   PaletteKeys,
 } from './types';
-export {
-  debounce,
-  hexToRgba,
-  useClickOutside,
-  withProviders,
-  renderStatic,
-  getContextualColor,
-} from './utils';
+export * from './utils';
