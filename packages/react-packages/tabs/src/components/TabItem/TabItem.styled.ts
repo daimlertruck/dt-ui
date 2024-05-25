@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { Variant } from '../../Tabs';
+import { Variant } from '../../types';
 
 interface TabItemStyledProps {
   active?: boolean;

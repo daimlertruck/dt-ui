@@ -2,7 +2,8 @@ import { withProviders } from '@dt-ui/react-core';
 import { fireEvent, render } from '@testing-library/react';
 import { Fragment } from 'react';
 
-import { Tabs, Variant } from './Tabs';
+import { Tabs } from './Tabs';
+import { Variant } from './types';
 
 describe('<Tabs /> component', () => {
   afterEach(() => {

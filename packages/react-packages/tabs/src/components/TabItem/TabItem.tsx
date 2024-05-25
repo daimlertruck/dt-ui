@@ -1,7 +1,7 @@
 import { BaseProps } from '@dt-ui/react-core';
 import { useRef } from 'react';
 
-import { Variant } from '../../Tabs';
+import { Variant } from '../../types';
 
 import { TabItemStyled } from './TabItem.styled';
 

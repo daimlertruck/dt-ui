@@ -13,11 +13,10 @@ import {
 
 import { TabItem, TabItemProps } from './components';
 import { TabsStyled } from './Tabs.styled';
+import { Variant } from './types';
 
 const SCROLL_MOVEMENT = 120;
 const SCROLL_OFFSET = 0.5;
-
-export type Variant = 'boxed' | 'book';
 
 export interface TabsProps extends BaseProps {
   activeTab: string;
