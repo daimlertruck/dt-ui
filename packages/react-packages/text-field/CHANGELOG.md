@@ -1,5 +1,11 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.7
+
+### Minor Changes
+
+- feat: update text inputs focus color
+
 ## 0.1.0-beta.6
 
 ### Minor Changes
