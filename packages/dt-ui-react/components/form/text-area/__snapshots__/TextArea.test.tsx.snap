@@ -53,7 +53,8 @@ exports[`<TextArea /> component it should a textarea 1`] = `
 }
 
 .emotion-4:focus {
-  outline: none!important;
+  outline: 1px solid #00677F;
+  border: 1px solid transparent;
 }
 
 .emotion-6 {

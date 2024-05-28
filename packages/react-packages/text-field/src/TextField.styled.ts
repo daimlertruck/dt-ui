@@ -36,6 +36,11 @@ export const InputFieldStyled = styled.input<InputFieldStyledProps>`
     transition: all 0.2s ease-in-out;
     width: 100%;
     height: 53px;
+
+    &:focus {
+      outline: 1px solid ${theme.palette.primary.default};
+      border: 1px solid transparent;
+    }
   `}
 `;
 

@@ -22,7 +22,8 @@ export const TextAreaStyled = styled.textarea`
     padding: 20px 14px 14px 14px;
 
     &:focus {
-      outline: none !important;
+      outline: 1px solid ${theme.palette.primary.default};
+      border: 1px solid transparent;
     }
   `}
 `;

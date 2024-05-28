@@ -1,6 +1,5 @@
 import { withProviders } from '@dt-ui/react-core';
 import { act, render, screen, fireEvent } from '@testing-library/react';
-import React from 'react';
 
 import { TextField } from './TextField';
 
@@ -113,6 +112,8 @@ describe('<TextField /> component', () => {
 
     expect(label).toHaveStyle('font-size: 0.75rem');
     expect(label).toHaveStyle('transform: translateY(-45%)');
+    expect(input).toHaveStyle('outline: 1px solid #00677F;');
+    expect(input).toHaveStyle('border: 1px solid transparent;');
   });
 
   it('renders Loading input', () => {
