@@ -47,6 +47,11 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   height: 53px;
 }
 
+.emotion-4:focus {
+  outline: 1px solid #00677F;
+  border: 1px solid transparent;
+}
+
 .emotion-6 {
   padding-left: 15px;
 }
@@ -140,6 +145,11 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 53px;
+}
+
+.emotion-4:focus {
+  outline: 1px solid #00677F;
+  border: 1px solid transparent;
 }
 
 .emotion-6 {
@@ -245,6 +255,11 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 53px;
+}
+
+.emotion-6:focus {
+  outline: 1px solid #00677F;
+  border: 1px solid transparent;
 }
 
 <div>

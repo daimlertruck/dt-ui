@@ -59,6 +59,11 @@ exports[`<Form /> component renders simple form 1`] = `
   height: 53px;
 }
 
+.emotion-6:focus {
+  outline: 1px solid #00677F;
+  border: 1px solid transparent;
+}
+
 <div>
   <form
     class="emotion-0 emotion-1"
@@ -195,6 +200,11 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   height: 53px;
 }
 
+.emotion-10:focus {
+  outline: 1px solid #00677F;
+  border: 1px solid transparent;
+}
+
 <div>
   <form
     class="emotion-0 emotion-1"
@@ -318,6 +328,11 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 53px;
+}
+
+.emotion-10:focus {
+  outline: 1px solid #00677F;
+  border: 1px solid transparent;
 }
 
 <div>
@@ -486,6 +501,11 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 53px;
+}
+
+.emotion-14:focus {
+  outline: 1px solid #00677F;
+  border: 1px solid transparent;
 }
 
 <div>

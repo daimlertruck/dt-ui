@@ -47,6 +47,11 @@ exports[`<SearchField /> component renders SearchField input element with the co
   height: 53px;
 }
 
+.emotion-4:focus {
+  outline: 1px solid #00677F;
+  border: 1px solid transparent;
+}
+
 .emotion-6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
