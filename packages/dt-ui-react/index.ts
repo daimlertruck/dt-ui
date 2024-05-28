@@ -11,7 +11,6 @@ export * from './components/form';
 export * from './components/link';
 export * from './components/modal';
 export * from './components/pagination';
-export * from './components/radio';
 export * from './components/multi-select';
 
 //independent component packages
@@ -47,6 +46,7 @@ export * from '@dt-ui/react-button';
 export * from '@dt-ui/react-progress-bar';
 export * from '@dt-ui/react-select';
 export * from '@dt-ui/react-stepper';
+export * from '@dt-ui/react-radio';
 
 //utils
 export * from './utils/testingUtils';

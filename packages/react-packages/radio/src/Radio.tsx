@@ -1,29 +1,8 @@
 import { Box } from '@dt-ui/react-box';
-import { BaseProps } from '@dt-ui/react-core';
 import { Children, cloneElement, ReactElement, useMemo } from 'react';
 
-import { Direction } from '../../types';
-
-import {
-  RadioInputStyled,
-  RadioLabelStyled,
-  GroupStyled,
-} from './Radio.styled';
-
-export interface RadioGroupProps extends BaseProps {
-  onChange: React.ChangeEventHandler<HTMLInputElement>;
-  name: string;
-  direction?: Direction;
-}
-
-export interface RadioProps {
-  label: string;
-  value: string;
-  onChange?: React.ChangeEventHandler<HTMLInputElement>;
-  isDefaultChecked?: boolean;
-  isDisabled?: boolean;
-  name?: string;
-}
+import { RadioInputStyled, RadioLabelStyled } from './Radio.styled';
+import { RadioGroupProps, RadioProps } from './types';
 
 export const RadioGroup = ({
   children,
@@ -48,12 +27,12 @@ export const RadioGroup = ({
   );
 
   return (
-    <GroupStyled
+    <Box
       data-testid={dataTestId ?? 'radio-group'}
-      direction={direction}
+      style={{ flexDirection: direction, gap: 12 }}
     >
       {clonedChildren}
-    </GroupStyled>
+    </Box>
   );
 };
 

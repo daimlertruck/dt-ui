@@ -1,11 +1,5 @@
 import styled from '@emotion/styled';
 
-import { Direction } from '../../types';
-
-interface GroupStyledProps {
-  direction: Direction;
-}
-
 export const RadioInputStyled = styled.input`
   ${({ theme }) => `
     background: ${theme.palette.base.default};
@@ -48,14 +42,5 @@ export const RadioLabelStyled = styled.label`
     ${theme.fontStyles.p};
     color: ${theme.palette.content.body};
     cursor: inherit;
-  `}
-`;
-
-export const GroupStyled = styled.div<GroupStyledProps>`
-  ${({ direction }) => `
-    display: flex;
-    flex-direction: ${direction};
-    align-items: center;
-    gap: 12px;
   `}
 `;

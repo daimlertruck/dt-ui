@@ -6,21 +6,6 @@ exports[`<Radio /> component renders Radio group with Radio 1 checked and Radio 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 12px;
-}
-
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -82,11 +67,10 @@ exports[`<Radio /> component renders Radio group with Radio 1 checked and Radio 
 <div>
   <div
     class="emotion-0 emotion-1"
-    data-testid="radio-group"
-    direction="row"
+    style="flex-direction: row; gap: 12px;"
   >
     <div
-      class="emotion-2 emotion-3"
+      class="emotion-0 emotion-1"
       style="flex-direction: row; gap: 8px; cursor: pointer;"
     >
       <input
@@ -105,7 +89,7 @@ exports[`<Radio /> component renders Radio group with Radio 1 checked and Radio 
       </label>
     </div>
     <div
-      class="emotion-2 emotion-3"
+      class="emotion-0 emotion-1"
       style="flex-direction: row; gap: 8px; cursor: pointer;"
     >
       <input
@@ -123,7 +107,7 @@ exports[`<Radio /> component renders Radio group with Radio 1 checked and Radio 
       </label>
     </div>
     <div
-      class="emotion-2 emotion-3"
+      class="emotion-0 emotion-1"
       style="flex-direction: row; gap: 8px; cursor: default;"
     >
       <input

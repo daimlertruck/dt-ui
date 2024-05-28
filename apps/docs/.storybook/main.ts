@@ -74,6 +74,7 @@ const config: StorybookConfig = {
         'toast',
         'tooltip',
         'spinner',
+        'radio',
       ];
 
       config.resolve.alias = {
