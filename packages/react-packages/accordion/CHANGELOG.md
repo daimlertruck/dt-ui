@@ -1,5 +1,14 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.13
+
+### Patch Changes
+
+- test: add test custom render
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.17
+  - @dt-ui/react-divider@0.1.0-beta.16
+
 ## 0.1.0-beta.12
 
 ### Minor Changes

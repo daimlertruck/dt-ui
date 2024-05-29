@@ -1,5 +1,14 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.8
+
+### Patch Changes
+
+- test: add test custom render
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.17
+  - @dt-ui/react-spinner@0.1.0-beta.18
+
 ## 0.1.0-beta.7
 
 ### Minor Changes

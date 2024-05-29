@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.17
+
+### Patch Changes
+
+- test: add test custom render
+
 ## 0.1.0-beta.16
 
 ### Minor Changes

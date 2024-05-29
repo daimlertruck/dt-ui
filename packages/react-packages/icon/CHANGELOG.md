@@ -1,5 +1,13 @@
 # @dt-ui/react-icon
 
+## 0.1.0-beta.14
+
+### Patch Changes
+
+- test: add test custom render
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.17
+
 ## 0.1.0-beta.13
 
 ### Minor Changes

@@ -1,5 +1,14 @@
 # @dt-ui/react-avatar
 
+## 0.1.0-beta.20
+
+### Patch Changes
+
+- test: add test custom render
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.17
+  - @dt-ui/react-tooltip@0.1.0-beta.20
+
 ## 0.1.0-beta.19
 
 ### Minor Changes

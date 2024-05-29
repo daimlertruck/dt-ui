@@ -1,5 +1,15 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.28
+
+### Patch Changes
+
+- test: add test custom render
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.17
+  - @dt-ui/react-button@0.1.0-beta.8
+  - @dt-ui/react-typography@0.1.0-beta.8
+
 ## 0.1.0-beta.27
 
 ### Minor Changes

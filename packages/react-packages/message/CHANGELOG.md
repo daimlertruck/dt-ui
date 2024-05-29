@@ -1,5 +1,14 @@
 # @dt-ui/react-message
 
+## 0.1.0-beta.21
+
+### Patch Changes
+
+- test: add test custom render
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.17
+  - @dt-ui/react-typography@0.1.0-beta.8
+
 ## 0.1.0-beta.20
 
 ### Minor Changes
