@@ -6,7 +6,6 @@ export * from './core';
 // Components
 export * from './components/buttons';
 export * from './components/dropdown';
-export * from './components/card';
 export * from './components/form';
 export * from './components/link';
 export * from './components/pagination';
@@ -47,6 +46,7 @@ export * from '@dt-ui/react-select';
 export * from '@dt-ui/react-stepper';
 export * from '@dt-ui/react-radio';
 export * from '@dt-ui/react-modal';
+export * from '@dt-ui/react-card';
 
 //utils
 export * from './utils/testingUtils';

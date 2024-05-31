@@ -47,6 +47,7 @@ const config: StorybookConfig = {
     if (config.resolve) {
       const components = [
         'modal', 
+        'card',
         'stepper',
         'select',
         'progress-bar',

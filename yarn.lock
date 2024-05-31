@@ -1410,6 +1410,72 @@
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
   integrity sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==
 
+"@dt-ui/react-accordion@0.1.0-beta.13":
+  version "0.1.0-beta.13"
+  resolved "https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/@dt-ui/react-accordion/-/dt-ui-react-accordion-v0.1.0-beta.13.tgz#6e2e328001e291282230b874ea4d5ca3e3111e3e"
+  integrity sha1-bi4ygAHikSgiMLh06k1co+MRHj4=
+  dependencies:
+    "@dt-ui/react-core" "0.1.0-beta.17"
+    "@dt-ui/react-divider" "0.1.0-beta.16"
+
+"@dt-ui/react-avatar@0.1.0-beta.20":
+  version "0.1.0-beta.20"
+  resolved "https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/@dt-ui/react-avatar/-/dt-ui-react-avatar-v0.1.0-beta.20.tgz#e482ba16ec267f00c426c60d446be69b1b715ecd"
+  integrity sha1-5IK6FuwmfwDEJsYNRGvmmxtxXs0=
+  dependencies:
+    "@dt-ui/react-core" "0.1.0-beta.17"
+    "@dt-ui/react-tooltip" "0.1.0-beta.20"
+
+"@dt-ui/react-backdrop@0.1.0-beta.19":
+  version "0.1.0-beta.19"
+  resolved "https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/@dt-ui/react-backdrop/-/dt-ui-react-backdrop-v0.1.0-beta.19.tgz#b6d165b1b52c5ebaf43d0e1d33158190be623f8a"
+  integrity sha1-ttFlsbUsXrr0PQ4dMxWBkL5iP4o=
+  dependencies:
+    "@dt-ui/react-core" "0.1.0-beta.17"
+
+"@dt-ui/react-core@0.1.0-beta.17":
+  version "0.1.0-beta.17"
+  resolved "https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/@dt-ui/react-core/-/dt-ui-react-core-v0.1.0-beta.17.tgz#e4b78a311d41581e438eb8b8706e54dad533bbb0"
+  integrity sha1-5LeKMR1BWB5Djri4cG5U2tUzu7A=
+
+"@dt-ui/react-divider@0.1.0-beta.16":
+  version "0.1.0-beta.16"
+  resolved "https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/@dt-ui/react-divider/-/dt-ui-react-divider-v0.1.0-beta.16.tgz#5be86f9a3e2d52c77895231ca8dd25e42c70d0b8"
+  integrity sha1-W+hvmj4tUsd4lSMcqN0l5Cxw0Lg=
+  dependencies:
+    "@dt-ui/react-core" "0.1.0-beta.17"
+
+"@dt-ui/react-icon@0.1.0-beta.14":
+  version "0.1.0-beta.14"
+  resolved "https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/@dt-ui/react-icon/-/dt-ui-react-icon-v0.1.0-beta.14.tgz#412b4513bf82b6fb262c11fec883639d41758217"
+  integrity sha1-QStFE7+CtvsmLBH+yINjnUF1ghc=
+  dependencies:
+    "@dt-ui/icons" "0.1.0-beta.2"
+    "@dt-ui/react-core" "0.1.0-beta.17"
+
+"@dt-ui/react-stepper@0.1.0-beta.1":
+  version "0.1.0-beta.1"
+  resolved "https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/@dt-ui/react-stepper/-/dt-ui-react-stepper-v0.1.0-beta.1.tgz#bb4bb1ec9868c6d8d5ebf3063d205443942807f4"
+  integrity sha1-u0ux7JhoxtjV6/MGPSBUQ5QoB/Q=
+  dependencies:
+    "@dt-ui/react-core" "0.1.0-beta.17"
+    "@dt-ui/react-icon" "0.1.0-beta.14"
+    "@dt-ui/react-typography" "0.1.0-beta.8"
+
+"@dt-ui/react-tooltip@0.1.0-beta.20":
+  version "0.1.0-beta.20"
+  resolved "https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/@dt-ui/react-tooltip/-/dt-ui-react-tooltip-v0.1.0-beta.20.tgz#f5763947cf934b6f687da116a481c51fb3f7e0b3"
+  integrity sha1-9XY5R8+TS29ofaEWpIHFH7P34LM=
+  dependencies:
+    "@dt-ui/react-core" "0.1.0-beta.17"
+
+"@dt-ui/react-typography@0.1.0-beta.8":
+  version "0.1.0-beta.8"
+  resolved "https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/@dt-ui/react-typography/-/dt-ui-react-typography-v0.1.0-beta.8.tgz#9ac7d230a778679e56e6dd70312de7b831168533"
+  integrity sha1-msfSMKd4Z55W5t1wMS3nuDEWhTM=
+  dependencies:
+    "@dt-ui/react-core" "0.1.0-beta.17"
+
 "@emotion/babel-plugin@^11.11.0":
   version "11.11.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.11.0.tgz#c2d872b6a7767a9d176d007f5b31f7d504bb5d6c"
