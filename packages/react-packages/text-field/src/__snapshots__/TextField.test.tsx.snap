@@ -15,7 +15,7 @@ exports[`<TextField /> component onBlur event should have error state with error
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #FF4A4A;
   cursor: inherit;
   left: 15px;
   top: 15px;

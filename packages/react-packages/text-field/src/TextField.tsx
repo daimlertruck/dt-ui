@@ -87,17 +87,14 @@ export const TextField = ({
   };
 
   const onBlur = (event: ChangeEvent<HTMLInputElement>) => {
-    if (event.currentTarget.value === '') {
+    const isEmptyOrOnlySpaces = event.currentTarget.value.trim().length === 0;
+    if (isEmptyOrOnlySpaces) {
       setActiveInput(false);
 
       if (required && requiredMessage) {
         setHasError(true);
         setMessage(requiredMessage);
       }
-    }
-
-    if (required && !!event.currentTarget.value && !hasError) {
-      setHasError(false);
     }
 
     inputValue.length > 0 ? setActiveInput(true) : setActiveInput(false);
@@ -107,7 +104,7 @@ export const TextField = ({
     <TextFieldStyled style={style}>
       <LabelField
         forId={id}
-        hasError={hasError ? !!inputValue : false}
+        hasError={hasError}
         isActive={activeInput}
         isDisabled={isDisabled}
         isRequired={required}
