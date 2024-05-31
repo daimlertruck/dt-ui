@@ -1,0 +1,5 @@
+import{j as s}from"./jsx-runtime-CKrituN3.js";import{L as i,a as m}from"./Link-B_0vuokx.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";import"./Box.styled-B8MVCI1k.js";import"./emotion-styled.browser.esm-DhD7UCCJ.js";import"./extends-DJVMZnyl.js";import"./emotion-element-43c6fea0.browser.esm-CsO0Y6lU.js";import"./Typography-hP6P_hwr.js";import"./index-B2rOpc4E.js";import"./index-BbP3371Q.js";import"./index-BAMY2Nnw.js";import"./index-BtM5VmRH.js";import"./client-BvKKsruy.js";import"./index-Bl7H5CcN.js";import"./index-BDlDW0Uq.js";import"./Spinner.styled-CK0-z1jb.js";import"./Button.styled-CrKUpX37.js";const E={title:"Data Display/Link",component:i},a=({...p})=>s.jsx(i,{...p}),r=a.bind({});r.args={children:"Redirect to",href:"https://www.google.com/",target:"_blank",textSize:m.Medium,isUnderline:!0,isDisabled:!1};var t,o,e;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:`({
+  ...props
+}) => {
+  return <Link {...props} />;
+}`,...(e=(o=r.parameters)==null?void 0:o.docs)==null?void 0:e.source}}};const R=["Default"];export{r as Default,R as __namedExportsOrder,E as default};
