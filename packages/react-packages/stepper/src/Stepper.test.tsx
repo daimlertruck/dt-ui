@@ -1,6 +1,6 @@
 import { render } from '@dt-ui/react-core';
 
-import Stepper from './Stepper';
+import { Stepper } from '.';
 
 describe('<Stepper /> component', () => {
   describe('render default Stepper', () => {

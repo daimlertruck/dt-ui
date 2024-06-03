@@ -2,7 +2,8 @@ import { Orientation } from '@dt-ui/react-core';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { Step } from './components/Step';
-import Stepper, { StepperProps } from './Stepper';
+
+import { Stepper, StepperProps } from './';
 
 const OrientationOptions = {
   Vertical: 'vertical',

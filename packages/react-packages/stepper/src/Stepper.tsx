@@ -6,7 +6,11 @@ export interface StepperProps extends BaseProps {
   orientation?: Orientation;
 }
 
-const Stepper = ({ children, dataTestId, orientation }: StepperProps) => {
+export const Stepper = ({
+  children,
+  dataTestId,
+  orientation,
+}: StepperProps) => {
   const testId = dataTestId ?? 'default';
   return (
     <StepperStyled data-testid={`${testId}-stepper`} orientation={orientation}>
@@ -14,5 +18,3 @@ const Stepper = ({ children, dataTestId, orientation }: StepperProps) => {
     </StepperStyled>
   );
 };
-
-export default Stepper;
