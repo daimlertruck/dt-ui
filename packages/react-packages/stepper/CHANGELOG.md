@@ -1,5 +1,11 @@
 # @dt-ui/react-stepper
 
+## 0.1.0-beta.2
+
+### Patch Changes
+
+- fix: change default export to naming export
+
 ## 0.1.0-beta.1
 
 ### Patch Changes
