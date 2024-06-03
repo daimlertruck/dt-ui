@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.116
+
+### Patch Changes
+
+- fix: make error state in label match textfield error state When the texfield is in error the label should also be in error state and not only be in error when there is an input. When the TextField is required it should be marked as such when it only has spaces for a better ui experience.
+- Updated dependencies
+  - @dt-ui/react-text-field@0.1.0-beta.9
+
 ## 0.1.0-beta.115
 
 ### Patch Changes
