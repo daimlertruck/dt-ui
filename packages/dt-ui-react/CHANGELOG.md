@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.117
+
+### Patch Changes
+
+- chore: make radio independent pkg
+- Updated dependencies
+  - @dt-ui/react-radio@0.1.0-beta.1
+
 ## 0.1.0-beta.116
 
 ### Patch Changes

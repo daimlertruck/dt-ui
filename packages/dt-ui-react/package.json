@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react",
-  "version": "0.1.0-beta.116",
+  "version": "0.1.0-beta.117",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
@@ -47,7 +47,7 @@
     "@dt-ui/react-toast": "0.1.0-beta.25",
     "@dt-ui/react-tooltip": "0.1.0-beta.20",
     "@dt-ui/react-typography": "0.1.0-beta.8",
-    "@dt-ui/react-radio": "0.1.0-beta.0",
+    "@dt-ui/react-radio": "0.1.0-beta.1",
     "@emotion/server": "^11.4.0",
     "emotion-normalize": "^11.0.1"
   },
