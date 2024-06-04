@@ -1,16 +1,18 @@
-import { Colors, screen, render } from '@dt-ui/react-core';
+import { Colors, withProviders } from '@dt-ui/react-core';
+import { render, screen } from '@testing-library/react';
 
 import { Counter } from '.';
 
 describe('<Counter /> component', () => {
+  const ProvidedCounter = withProviders(Counter);
   it('should render a span html element with the given content', () => {
-    const { container } = render(<Counter>Active</Counter>);
+    const { container } = render(<ProvidedCounter>Active</ProvidedCounter>);
 
     expect(container).toMatchSnapshot();
   });
 
   it('should render properties of a disabled Counter', () => {
-    render(<Counter color='disabled'>Active</Counter>);
+    render(<ProvidedCounter color='disabled'>Active</ProvidedCounter>);
 
     const counterEl = screen.getByTestId('counter');
 
@@ -25,7 +27,7 @@ describe('<Counter /> component', () => {
   `(
     'should have width & height equal to $expectedSize when isLarge is $isLarge ',
     ({ isLarge, expectedSize }: { isLarge: boolean; expectedSize: string }) => {
-      render(<Counter isLarge={isLarge}>1</Counter>);
+      render(<ProvidedCounter isLarge={isLarge}>1</ProvidedCounter>);
 
       const counterEl = screen.getByTestId('counter');
 
@@ -49,7 +51,7 @@ describe('<Counter /> component', () => {
       expectedBorder: string;
       expectedBackgroundColor: string;
     }) => {
-      render(<Counter outlined={outlined}>1</Counter>);
+      render(<ProvidedCounter outlined={outlined}>1</ProvidedCounter>);
 
       const counterEl = screen.getByTestId('counter');
 
@@ -75,9 +77,9 @@ describe('<Counter /> component', () => {
       expectedColor: string;
     }) => {
       render(
-        <Counter outlined={true} color={color}>
+        <ProvidedCounter color={color} outlined>
           2
-        </Counter>
+        </ProvidedCounter>
       );
 
       const counterEl = screen.getByTestId('counter');

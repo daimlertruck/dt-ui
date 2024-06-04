@@ -1,16 +1,18 @@
-import { render } from '@dt-ui/react-core';
+import { withProviders } from '@dt-ui/react-core';
+import { render } from '@testing-library/react';
 
 import { Stepper } from '.';
 
 describe('<Stepper /> component', () => {
+  const ProvidedStepper = withProviders(Stepper);
   describe('render default Stepper', () => {
     it('should render with correct HTML elements', () => {
       const { container } = render(
-        <Stepper>
+        <ProvidedStepper>
           <li>Item 1</li>
           <li>Item 2</li>
           <li>Item 3</li>
-        </Stepper>
+        </ProvidedStepper>
       );
 
       expect(container).toMatchSnapshot();
@@ -20,10 +22,10 @@ describe('<Stepper /> component', () => {
   describe('render Stepper with prop and correct styles', () => {
     it('should render using flex direction column', () => {
       const { container } = render(
-        <Stepper orientation='vertical'>
+        <ProvidedStepper orientation='vertical'>
           <li>Item 1</li>
           <li>Item 2</li>
-        </Stepper>
+        </ProvidedStepper>
       );
 
       expect(container.firstChild).toHaveStyle('flex-direction: column');
@@ -31,10 +33,10 @@ describe('<Stepper /> component', () => {
 
     it('should render using flex direction row', () => {
       const { container } = render(
-        <Stepper orientation='horizontal'>
+        <ProvidedStepper orientation='horizontal'>
           <li>Item 1</li>
           <li>Item 2</li>
-        </Stepper>
+        </ProvidedStepper>
       );
 
       expect(container.firstChild).toHaveStyle('flex-direction: column');

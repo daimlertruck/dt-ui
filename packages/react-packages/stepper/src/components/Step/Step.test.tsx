@@ -1,8 +1,12 @@
-import { render } from '@dt-ui/react-core';
+import { withProviders } from '@dt-ui/react-core';
+import { render } from '@testing-library/react';
 
 import Step, { BaseStepProps } from './Step';
 
 describe('<Step /> component', () => {
+  const ProvidedStep = withProviders(Step);
+  const ProvidedStepCounter = withProviders(Step.Counter);
+  const ProvidedStepLabel = withProviders(Step.Label);
   describe('render Step', () => {
     it.each`
       isActive | isCompleted | isDisabled | isError
@@ -15,15 +19,15 @@ describe('<Step /> component', () => {
       'renders Step with props correctly',
       ({ isActive, isCompleted, isDisabled, isError }: BaseStepProps) => {
         const { container } = render(
-          <Step
+          <ProvidedStep
             isActive={isActive}
             isCompleted={isCompleted}
             isDisabled={isDisabled}
             isError={isError}
           >
-            <Step.Counter>1</Step.Counter>
-            <Step.Label>Label</Step.Label>
-          </Step>
+            <ProvidedStepCounter>1</ProvidedStepCounter>
+            <ProvidedStepLabel>Label</ProvidedStepLabel>
+          </ProvidedStep>
         );
 
         expect(container).toMatchSnapshot();
@@ -43,14 +47,14 @@ describe('<Step /> component', () => {
       'renders StepCounter with props correctly',
       ({ isActive, isCompleted, isDisabled, isError }: BaseStepProps) => {
         const { container } = render(
-          <Step.Counter
+          <ProvidedStepCounter
             isActive={isActive}
             isCompleted={isCompleted}
             isDisabled={isDisabled}
             isError={isError}
           >
             1
-          </Step.Counter>
+          </ProvidedStepCounter>
         );
 
         expect(container).toMatchSnapshot();
@@ -70,14 +74,14 @@ describe('<Step /> component', () => {
       'renders StepCounter with props correctly',
       ({ isActive, isCompleted, isDisabled, isError }: BaseStepProps) => {
         const { container } = render(
-          <Step.Label
+          <ProvidedStepLabel
             isActive={isActive}
             isCompleted={isCompleted}
             isDisabled={isDisabled}
             isError={isError}
           >
             Label
-          </Step.Label>
+          </ProvidedStepLabel>
         );
 
         expect(container).toMatchSnapshot();
