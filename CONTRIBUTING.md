@@ -195,6 +195,15 @@ The biggest argument in favour of this format over TypeScript’s enum is that i
 
 Reference: https://www.typescriptlang.org/docs/handbook/enums.html#objects-vs-enums
 
+### 4.6. Named Exports vs Default Exports
+
+**We should always use named exports for components and utility functions**, as default exports have many downsides.
+Default exports were introduced mostly for easier interoperability with thousands CommonJS modules that were exporting single values. They don’t bring many benefits when used internally in our codebase.
+
+We want to be clear and objective about which components we provide in an assertive way.
+
+Reference: https://stackoverflow.com/a/68665805
+
 ## 5. Versioning
 
 New changes should be tracked using the [Semantic Versioning](https://semver.org/).
