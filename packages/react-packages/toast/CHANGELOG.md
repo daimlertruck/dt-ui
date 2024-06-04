@@ -1,5 +1,14 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.26
+
+### Patch Changes
+
+- fix: remove devDependecy export
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.18
+  - @dt-ui/react-button@0.1.0-beta.9
+
 ## 0.1.0-beta.25
 
 ### Patch Changes

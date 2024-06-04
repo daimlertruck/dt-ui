@@ -1,5 +1,18 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.6
+
+### Patch Changes
+
+- fix: remove devDependecy export
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.18
+  - @dt-ui/react-checkbox@0.1.0-beta.12
+  - @dt-ui/react-icon@0.1.0-beta.15
+  - @dt-ui/react-label-field@0.1.0-beta.11
+  - @dt-ui/react-tooltip@0.1.0-beta.21
+  - @dt-ui/react-typography@0.1.0-beta.9
+
 ## 0.1.0-beta.5
 
 ### Patch Changes

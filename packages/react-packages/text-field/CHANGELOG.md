@@ -1,5 +1,16 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.10
+
+### Patch Changes
+
+- fix: remove devDependecy export
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.18
+  - @dt-ui/react-label-field@0.1.0-beta.11
+  - @dt-ui/react-spinner@0.1.0-beta.19
+  - @dt-ui/react-typography@0.1.0-beta.9
+
 ## 0.1.0-beta.9
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.14
+
+### Patch Changes
+
+- fix: remove devDependecy export
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.18
+  - @dt-ui/react-divider@0.1.0-beta.17
+
 ## 0.1.0-beta.13
 
 ### Patch Changes

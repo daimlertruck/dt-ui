@@ -1,5 +1,15 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.29
+
+### Patch Changes
+
+- fix: remove devDependecy export
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.18
+  - @dt-ui/react-button@0.1.0-beta.9
+  - @dt-ui/react-typography@0.1.0-beta.9
+
 ## 0.1.0-beta.28
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.18
+
+### Patch Changes
+
+- fix: remove devDependecy export
+
 ## 0.1.0-beta.17
 
 ### Patch Changes

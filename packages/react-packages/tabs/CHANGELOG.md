@@ -1,5 +1,14 @@
 # @dt-ui/react-tabs
 
+## 0.1.0-beta.8
+
+### Patch Changes
+
+- fix: remove devDependecy export
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.18
+  - @dt-ui/react-icon@0.1.0-beta.15
+
 ## 0.1.0-beta.7
 
 ### Patch Changes
