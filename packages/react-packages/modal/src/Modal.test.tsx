@@ -1,6 +1,6 @@
 import { Button } from '@dt-ui/react-button';
-import { withProviders, Provider } from '@dt-ui/react-core';
-import { fireEvent, render, screen, within } from '@testing-library/react';
+import { Provider, withProviders } from '@dt-ui/react-core';
+import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
 
 import { Modal, Overlay } from './Modal';
@@ -48,10 +48,8 @@ describe('<Modal/> Component', () => {
     });
 
     it('fires the mock close function when clicking on the x', () => {
-      const closeBtn = within(screen.getByTestId('modal-header')).getByRole(
-        'button'
-      );
-      fireEvent.mouseDown(closeBtn);
+      const closeBtn = screen.getByTestId('close-icon');
+      fireEvent.click(closeBtn);
 
       expect(handleClick).toBeCalledTimes(1);
     });

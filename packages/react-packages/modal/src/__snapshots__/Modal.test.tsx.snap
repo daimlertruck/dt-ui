@@ -168,16 +168,6 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
   cursor: pointer;
 }
 
-.emotion-12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-}
-
 .emotion-14 {
   font-weight: 600;
   font-size: 1.5rem;
@@ -196,22 +186,27 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
 }
 
 .emotion-16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
   color: #636464;
-}
-
-.emotion-16:hover {
-  color: #323232;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .emotion-18 {
@@ -253,7 +248,8 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
       data-testid="modal-header"
     >
       <div
-        class="emotion-12 emotion-13"
+        class="emotion-6 emotion-7"
+        style="justify-content: space-between; flex-direction: row;"
       >
         <h4
           class="emotion-14 emotion-15"
@@ -262,25 +258,13 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
         >
           Title
         </h4>
-        <button
-          aria-label="close modal"
+        <i
           class="emotion-16 emotion-17"
-          color="default"
-          data-testid="icon-button"
+          color="#636464"
+          data-testid="close-icon"
         >
-          <svg
-            fill="none"
-            height="24"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-              fill="currentColor"
-            />
-          </svg>
-        </button>
+          close
+        </i>
       </div>
     </div>
     <div
@@ -404,9 +388,13 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .emotion-8 {
@@ -427,22 +415,27 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
 }
 
 .emotion-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
   color: #636464;
-}
-
-.emotion-10:hover {
-  color: #323232;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .emotion-12 {
@@ -616,6 +609,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
     >
       <div
         class="emotion-6 emotion-7"
+        style="justify-content: space-between; flex-direction: row;"
       >
         <h4
           class="emotion-8 emotion-9"
@@ -624,25 +618,13 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
         >
           Title
         </h4>
-        <button
-          aria-label="close modal"
+        <i
           class="emotion-10 emotion-11"
-          color="default"
-          data-testid="icon-button"
+          color="#636464"
+          data-testid="close-icon"
         >
-          <svg
-            fill="none"
-            height="24"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-              fill="currentColor"
-            />
-          </svg>
-        </button>
+          close
+        </i>
       </div>
       <h5
         class="emotion-12 emotion-9"
