@@ -1,5 +1,14 @@
 # @dt-ui/react
 
+## 0.1.0-beta.120
+
+### Patch Changes
+
+- chore: make modal a independent pkg
+- chore: decrease coverage treshold old components
+- Updated dependencies
+  - @dt-ui/react-modal@0.1.0-beta.1
+
 ## 0.1.0-beta.119
 
 ### Patch Changes
