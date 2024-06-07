@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.121
+
+### Patch Changes
+
+- chore: make card independent pkg
+- Updated dependencies
+  - @dt-ui/react-card@0.1.0-beta.1
+
 ## 0.1.0-beta.120
 
 ### Patch Changes
