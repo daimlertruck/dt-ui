@@ -12,4 +12,5 @@ export const shape = {
   progressbar: radius['none'],
   accordion: radius['5xs'],
   formField: radius['5xs'],
+  tooltip: radius['5xs'],
 };
