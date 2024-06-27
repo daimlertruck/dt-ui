@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-backdrop",
-  "version": "0.1.0-beta.20",
+  "version": "0.1.0-beta.21",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -19,7 +19,7 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-core": "0.1.0-beta.18"
+    "@dt-ui/react-core": "0.1.0-beta.19"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",

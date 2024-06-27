@@ -1,5 +1,13 @@
 # @dt-ui/react-radio
 
+## 0.1.0-beta.3
+
+### Patch Changes
+
+- fix: add shape for tooltip on truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.19
+
 ## 0.1.0-beta.2
 
 ### Patch Changes

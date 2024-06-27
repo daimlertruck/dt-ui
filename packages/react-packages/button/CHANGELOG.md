@@ -1,5 +1,14 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.10
+
+### Patch Changes
+
+- fix: add shape for tooltip on truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.19
+  - @dt-ui/react-spinner@0.1.0-beta.20
+
 ## 0.1.0-beta.9
 
 ### Patch Changes

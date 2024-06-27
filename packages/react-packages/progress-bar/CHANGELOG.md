@@ -1,5 +1,14 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.9
+
+### Patch Changes
+
+- fix: add shape for tooltip on truckapi theme
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.16
+  - @dt-ui/react-typography@0.1.0-beta.10
+
 ## 0.1.0-beta.8
 
 ### Patch Changes

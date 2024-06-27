@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.19
+
+### Patch Changes
+
+- fix: add shape for tooltip on truckapi theme
+
 ## 0.1.0-beta.18
 
 ### Patch Changes

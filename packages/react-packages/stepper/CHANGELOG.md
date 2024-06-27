@@ -1,5 +1,15 @@
 # @dt-ui/react-stepper
 
+## 0.1.0-beta.4
+
+### Patch Changes
+
+- fix: add shape for tooltip on truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.19
+  - @dt-ui/react-icon@0.1.0-beta.16
+  - @dt-ui/react-typography@0.1.0-beta.10
+
 ## 0.1.0-beta.3
 
 ### Patch Changes

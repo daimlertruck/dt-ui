@@ -1,5 +1,13 @@
 # @dt-ui/react-table
 
+## 0.1.0-beta.13
+
+### Patch Changes
+
+- fix: add shape for tooltip on truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.19
+
 ## 0.1.0-beta.12
 
 ### Patch Changes
