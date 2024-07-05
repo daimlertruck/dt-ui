@@ -38,14 +38,12 @@ export const MultiSelectContextProvider = ({
   const [state, dispatch] = useReducer(MultiSelectReducer, DEFAULT_VALUE.state);
   const [isOpen, setIsOpen] = useState(DEFAULT_VALUE.isOpen);
 
-  useEffect(
-    () =>
-      defaultValue &&
+  useEffect(() => {
+    defaultValue &&
       defaultValue.forEach((value) =>
         dispatch({ type: Actions.ADD, payload: value })
-      ),
-    [defaultValue]
-  );
+      );
+  }, [defaultValue]);
 
   return (
     <MultiSelectContext.Provider

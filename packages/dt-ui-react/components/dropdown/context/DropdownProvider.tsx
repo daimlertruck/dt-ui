@@ -43,7 +43,11 @@ export const DropdownContextProvider = ({
   const [state, setState] = useState(defaultValue ?? DEFAULT_VALUE.state);
   const [isOpen, setIsOpen] = useState(DEFAULT_VALUE.isOpen);
 
-  useEffect(() => defaultValue && setState(defaultValue), [defaultValue]);
+  useEffect(() => {
+    if (defaultValue) {
+      setState(defaultValue);
+    }
+  }, [defaultValue]);
 
   return (
     <DropdownContext.Provider
