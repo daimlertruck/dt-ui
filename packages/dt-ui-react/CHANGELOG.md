@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.38
+
+### Patch Changes
+
+- refactor: not return anything from useEffect
+
 ## 0.1.0-alpha.37
 
 ### Minor Changes
