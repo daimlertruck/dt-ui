@@ -1,5 +1,17 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.16
+
+### Minor Changes
+
+- feat: add segmented control component
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.20
+  - @dt-ui/react-divider@0.1.0-beta.19
+
 ## 0.1.0-beta.15
 
 ### Patch Changes

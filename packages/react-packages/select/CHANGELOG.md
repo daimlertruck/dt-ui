@@ -1,5 +1,21 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.8
+
+### Minor Changes
+
+- feat: add segmented control component
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.20
+  - @dt-ui/react-checkbox@0.1.0-beta.14
+  - @dt-ui/react-icon@0.1.0-beta.17
+  - @dt-ui/react-label-field@0.1.0-beta.13
+  - @dt-ui/react-tooltip@0.1.0-beta.23
+  - @dt-ui/react-typography@0.1.0-beta.11
+
 ## 0.1.0-beta.7
 
 ### Patch Changes

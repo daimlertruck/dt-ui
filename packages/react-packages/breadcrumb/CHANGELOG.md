@@ -1,5 +1,17 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.21
+
+### Minor Changes
+
+- feat: add segmented control component
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.20
+  - @dt-ui/react-tooltip@0.1.0-beta.23
+
 ## 0.1.0-beta.20
 
 ### Patch Changes

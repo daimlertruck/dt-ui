@@ -1,5 +1,17 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.28
+
+### Minor Changes
+
+- feat: add segmented control component
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.20
+  - @dt-ui/react-button@0.1.0-beta.11
+
 ## 0.1.0-beta.27
 
 ### Patch Changes

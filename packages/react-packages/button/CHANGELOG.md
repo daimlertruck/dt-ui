@@ -1,5 +1,17 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.11
+
+### Minor Changes
+
+- feat: add segmented control component
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.20
+  - @dt-ui/react-spinner@0.1.0-beta.21
+
 ## 0.1.0-beta.10
 
 ### Patch Changes

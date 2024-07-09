@@ -1,5 +1,17 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.10
+
+### Minor Changes
+
+- feat: add segmented control component
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.17
+  - @dt-ui/react-typography@0.1.0-beta.11
+
 ## 0.1.0-beta.9
 
 ### Patch Changes

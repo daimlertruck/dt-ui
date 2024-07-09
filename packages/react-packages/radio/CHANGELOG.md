@@ -1,5 +1,16 @@
 # @dt-ui/react-radio
 
+## 0.1.0-beta.4
+
+### Minor Changes
+
+- feat: add segmented control component
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.20
+
 ## 0.1.0-beta.3
 
 ### Patch Changes

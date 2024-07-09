@@ -1,5 +1,17 @@
 # @dt-ui/react-tabs
 
+## 0.1.0-beta.10
+
+### Minor Changes
+
+- feat: add segmented control component
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.20
+  - @dt-ui/react-icon@0.1.0-beta.17
+
 ## 0.1.0-beta.9
 
 ### Patch Changes

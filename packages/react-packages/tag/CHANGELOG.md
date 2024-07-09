@@ -1,5 +1,16 @@
 # @dt-ui/react-tag
 
+## 0.1.0-beta.20
+
+### Minor Changes
+
+- feat: add segmented control component
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.20
+
 ## 0.1.0-beta.19
 
 ### Patch Changes
