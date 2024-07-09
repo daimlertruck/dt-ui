@@ -1,4 +1,5 @@
 {
+  "name": "dt-ui",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -25,6 +26,7 @@
     "@turbo/gen": "^1.11.3",
     "eslint-config-custom": "*",
     "prettier": "^2.8.0",
-    "turbo": "latest"
-  }
+    "turbo": "^2.0.6"
+  },
+  "packageManager": "yarn@1.22.19"
 }

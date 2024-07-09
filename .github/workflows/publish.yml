@@ -37,13 +37,13 @@ jobs:
         shell: bash
         run: |
           npm install -g yarn
-          npm install turbo --global
+          npm install turbo@^2.0.6 --global
 
       - name: Get changed packages
         id: get-changed-packages
         run: |
           echo 'result<<CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
-          TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter=[HEAD^1] --filter="!./apps/*" >> $GITHUB_OUTPUT
+          TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter={./packages/*} --filter=[HEAD^1] >> $GITHUB_OUTPUT
           echo 'CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
 
       - name: Set changed packages
@@ -60,8 +60,8 @@ jobs:
       matrix:
         packages: ${{ fromJson(needs.gather-changed-packages.outputs.matrix) }}
         exclude:
-          - packages: "//"
-          - packages: "@dt-ui/docs"
+          - packages: '//'
+          - packages: '@dt-ui/docs'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -69,7 +69,7 @@ jobs:
           ref: ${{ github.ref }}
 
       - name: Setup node and yarn
-        uses: "./.github/actions/yarn-node-install"
+        uses: './.github/actions/yarn-node-install'
         with:
           CACHE_FILE_NAME: ${{ matrix.packages }}
           TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
