@@ -22,6 +22,7 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
+    "@dt-ui/react-segmented-control": "0.1.0-beta.0",
     "@dt-ui/react-modal": "0.1.0-beta.2",
     "@dt-ui/react-card": "0.1.0-beta.2",
     "@dt-ui/react-stepper": "0.1.0-beta.4",

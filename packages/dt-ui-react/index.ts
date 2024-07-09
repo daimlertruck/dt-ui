@@ -47,6 +47,7 @@ export * from '@dt-ui/react-stepper';
 export * from '@dt-ui/react-radio';
 export * from '@dt-ui/react-modal';
 export * from '@dt-ui/react-card';
+export * from '@dt-ui/react-segmented-control';
 
 //utils
 export * from './utils/testingUtils';

@@ -15,4 +15,5 @@ export const shape = {
   toast: radius['3xs'],
   formField: radius['4xs'],
   tooltip: radius['5xs'],
+  segmentedControl: radius.s,
 };

@@ -271,6 +271,7 @@ export type CustomTheme = {
     progressbar: string;
     accordion: string;
     formField: string;
+    segmentedControl: string;
   };
   fontFamily: {
     default: string;

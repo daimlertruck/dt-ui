@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SegmentedControl renders without errors 1`] = `
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4px;
+  border: 1px solid #D3D4D5;
+  border-radius: 0px;
+}
+
+.emotion-2 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.emotion-4 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #636464;
+  border: none;
+  border-radius: 0px;
+  padding: 4px 4px;
+}
+
+.emotion-4:not(:disabled):hover {
+  background-color: #F8F9FA;
+  color: #323232;
+}
+
+.emotion-4:not(:disabled):hover i {
+  color: #323232;
+}
+
+.emotion-4:not(:disabled)[aria-pressed="true"] {
+  background-color: #00677F;
+  color: #FFFFFF;
+}
+
+.emotion-4:not(:disabled)[aria-pressed="true"] i {
+  color: #FFFFFF;
+}
+
+.emotion-4:disabled {
+  color: #BABBBB;
+  cursor: not-allowed;
+}
+
+.emotion-4:disabled i {
+  color: #BABBBB;
+}
+
+.emotion-6 {
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #636464;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="segmented-control"
+    role="group"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      data-testid="tooltip-container"
+    >
+      <button
+        aria-label="List"
+        aria-pressed="false"
+        class="emotion-4 emotion-5"
+        type="button"
+      >
+        <i
+          class="emotion-6 emotion-7"
+          color="#636464"
+          data-testid="icon"
+        >
+          list
+        </i>
+      </button>
+    </div>
+    <div
+      class="emotion-2 emotion-3"
+      data-testid="tooltip-container"
+    >
+      <button
+        aria-label="Gallery"
+        aria-pressed="true"
+        class="emotion-4 emotion-5"
+        type="button"
+      >
+        <i
+          class="emotion-6 emotion-7"
+          color="#636464"
+          data-testid="icon"
+        >
+          grid_view
+        </i>
+      </button>
+    </div>
+  </div>
+</div>
+`;
