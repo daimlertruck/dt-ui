@@ -35,4 +35,5 @@ export const theme: Theme = {
   spacing,
   breakpoints,
   responsiveFontStyles,
+  icons: 'outlined',
 };
