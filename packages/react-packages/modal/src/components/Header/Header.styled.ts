@@ -8,6 +8,7 @@ interface HeaderProps {
 export const HeaderStyled = styled.div<HeaderProps>`
   display: flex;
   flex-direction: column;
+  border-radius: inherit;
 
   ${({ theme, hasBackgroundColor, hasBorder }) => `
     padding: ${theme.spacing.xs};

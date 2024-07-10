@@ -9,6 +9,7 @@ export const FooterStyled = styled.div<FooterProps>`
   display: flex;
   justify-content: end;
   align-items: center;
+  border-radius: inherit;
 
   ${({ theme, hasBackgroundColor, hasBorder }) => `
       background-color: ${
