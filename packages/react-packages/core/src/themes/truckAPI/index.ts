@@ -11,4 +11,5 @@ export const truckAPITheme: CustomTheme = {
   fontStyles,
   palette,
   shape,
+  icons: 'outlined',
 };
