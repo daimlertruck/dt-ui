@@ -6,4 +6,5 @@ export const shape = {
   emptyState: radius['4xs'],
   dropdown: radius['5xs'],
   message: radius['6xs'],
+  tooltip: radius['5xs'],
 };
