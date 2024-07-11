@@ -1,5 +1,14 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.22
+
+### Patch Changes
+
+- fix: tooltip z index
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.21
+  - @dt-ui/react-tooltip@0.1.0-beta.24
+
 ## 0.1.0-beta.21
 
 ### Minor Changes

@@ -1,5 +1,14 @@
 # @dt-ui/react-card
 
+## 0.1.0-beta.4
+
+### Patch Changes
+
+- fix: tooltip z index
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.21
+  - @dt-ui/react-typography@0.1.0-beta.12
+
 ## 0.1.0-beta.3
 
 ### Minor Changes

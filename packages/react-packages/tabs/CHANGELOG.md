@@ -1,5 +1,14 @@
 # @dt-ui/react-tabs
 
+## 0.1.0-beta.11
+
+### Patch Changes
+
+- fix: tooltip z index
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.21
+  - @dt-ui/react-icon@0.1.0-beta.18
+
 ## 0.1.0-beta.10
 
 ### Minor Changes

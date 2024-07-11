@@ -1,5 +1,14 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.17
+
+### Patch Changes
+
+- fix: tooltip z index
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.21
+  - @dt-ui/react-divider@0.1.0-beta.20
+
 ## 0.1.0-beta.16
 
 ### Minor Changes

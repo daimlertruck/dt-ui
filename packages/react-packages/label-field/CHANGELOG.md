@@ -1,5 +1,14 @@
 # @dt-ui/react-label-field
 
+## 0.1.0-beta.14
+
+### Patch Changes
+
+- fix: tooltip z index
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.21
+  - @dt-ui/react-typography@0.1.0-beta.12
+
 ## 0.1.0-beta.13
 
 ### Minor Changes

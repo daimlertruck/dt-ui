@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.21
+
+### Patch Changes
+
+- fix: tooltip z index
+
 ## 0.1.0-beta.20
 
 ### Minor Changes

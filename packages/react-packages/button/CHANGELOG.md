@@ -1,5 +1,14 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.12
+
+### Patch Changes
+
+- fix: tooltip z index
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.21
+  - @dt-ui/react-spinner@0.1.0-beta.22
+
 ## 0.1.0-beta.11
 
 ### Minor Changes

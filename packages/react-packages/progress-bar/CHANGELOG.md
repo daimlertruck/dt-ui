@@ -1,5 +1,14 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.11
+
+### Patch Changes
+
+- fix: tooltip z index
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.18
+  - @dt-ui/react-typography@0.1.0-beta.12
+
 ## 0.1.0-beta.10
 
 ### Minor Changes

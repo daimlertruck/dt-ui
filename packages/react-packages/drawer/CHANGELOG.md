@@ -1,5 +1,14 @@
 # @dt-ui/react-drawer
 
+## 0.1.0-beta.23
+
+### Patch Changes
+
+- fix: tooltip z index
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.21
+  - @dt-ui/react-typography@0.1.0-beta.12
+
 ## 0.1.0-beta.22
 
 ### Minor Changes

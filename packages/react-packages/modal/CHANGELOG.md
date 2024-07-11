@@ -1,5 +1,17 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.4
+
+### Patch Changes
+
+- fix: tooltip z index
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.21
+  - @dt-ui/react-backdrop@0.1.0-beta.23
+  - @dt-ui/react-icon@0.1.0-beta.18
+  - @dt-ui/react-spinner@0.1.0-beta.22
+  - @dt-ui/react-typography@0.1.0-beta.12
+
 ## 0.1.0-beta.3
 
 ### Minor Changes

@@ -1,5 +1,13 @@
 # @dt-ui/react-divider
 
+## 0.1.0-beta.20
+
+### Patch Changes
+
+- fix: tooltip z index
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.21
+
 ## 0.1.0-beta.19
 
 ### Minor Changes

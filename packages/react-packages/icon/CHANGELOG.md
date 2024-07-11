@@ -1,5 +1,13 @@
 # @dt-ui/react-icon
 
+## 0.1.0-beta.18
+
+### Patch Changes
+
+- fix: tooltip z index
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.21
+
 ## 0.1.0-beta.17
 
 ### Minor Changes
