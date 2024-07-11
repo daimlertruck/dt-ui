@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.40
+
+### Minor Changes
+
+- feat: add icon option for truckapi theme
+
 ## 0.1.0-alpha.39
 
 ### Minor Changes
