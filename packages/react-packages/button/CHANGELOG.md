@@ -1,5 +1,17 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.13
+
+### Minor Changes
+
+- feat: add icon option for truckapi theme
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.22
+  - @dt-ui/react-spinner@0.1.0-beta.23
+
 ## 0.1.0-beta.12
 
 ### Patch Changes

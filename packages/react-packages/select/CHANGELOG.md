@@ -1,5 +1,21 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.10
+
+### Minor Changes
+
+- feat: add icon option for truckapi theme
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.22
+  - @dt-ui/react-checkbox@0.1.0-beta.16
+  - @dt-ui/react-icon@0.1.0-beta.19
+  - @dt-ui/react-label-field@0.1.0-beta.15
+  - @dt-ui/react-tooltip@0.1.0-beta.25
+  - @dt-ui/react-typography@0.1.0-beta.13
+
 ## 0.1.0-beta.9
 
 ### Patch Changes

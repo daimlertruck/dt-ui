@@ -1,5 +1,16 @@
 # @dt-ui/react-tag
 
+## 0.1.0-beta.22
+
+### Minor Changes
+
+- feat: add icon option for truckapi theme
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.22
+
 ## 0.1.0-beta.21
 
 ### Patch Changes

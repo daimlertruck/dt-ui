@@ -1,5 +1,18 @@
 # @dt-ui/react-stepper
 
+## 0.1.0-beta.7
+
+### Minor Changes
+
+- feat: add icon option for truckapi theme
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.22
+  - @dt-ui/react-icon@0.1.0-beta.19
+  - @dt-ui/react-typography@0.1.0-beta.13
+
 ## 0.1.0-beta.6
 
 ### Patch Changes

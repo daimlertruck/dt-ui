@@ -1,5 +1,21 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.5
+
+### Minor Changes
+
+- feat: add icon option for truckapi theme
+
+### Patch Changes
+
+- fix: modal border radius
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.22
+  - @dt-ui/react-backdrop@0.1.0-beta.24
+  - @dt-ui/react-icon@0.1.0-beta.19
+  - @dt-ui/react-spinner@0.1.0-beta.23
+  - @dt-ui/react-typography@0.1.0-beta.13
+
 ## 0.1.0-beta.4
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @dt-ui/react-typography
 
+## 0.1.0-beta.13
+
+### Minor Changes
+
+- feat: add icon option for truckapi theme
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.22
+
 ## 0.1.0-beta.12
 
 ### Patch Changes
