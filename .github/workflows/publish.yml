@@ -43,7 +43,7 @@ jobs:
         id: get-changed-packages
         run: |
           echo 'result<<CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
-          TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter={./packages/*} --filter=[HEAD^1] >> $GITHUB_OUTPUT
+          TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter=[..HEAD^1] --filter='!./apps/*'  >> $GITHUB_OUTPUT
           echo 'CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
 
       - name: Set changed packages
