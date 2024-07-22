@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react",
-  "version": "0.1.0-beta.125",
+  "version": "0.1.0-beta.126",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
@@ -35,7 +35,7 @@
     "@dt-ui/react-checkbox": "0.1.0-beta.16",
     "@dt-ui/react-core": "0.1.0-beta.22",
     "@dt-ui/react-divider": "0.1.0-beta.21",
-    "@dt-ui/react-drawer": "0.1.0-beta.24",
+    "@dt-ui/react-drawer": "0.1.0-beta.25",
     "@dt-ui/react-empty-state": "0.1.0-beta.33",
     "@dt-ui/react-icon": "0.1.0-beta.19",
     "@dt-ui/react-label-field": "0.1.0-beta.15",

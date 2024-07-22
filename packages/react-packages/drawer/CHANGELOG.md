@@ -1,5 +1,11 @@
 # @dt-ui/react-drawer
 
+## 0.1.0-beta.25
+
+### Patch Changes
+
+- fix: drawerbody protect ref variable
+
 ## 0.1.0-beta.24
 
 ### Minor Changes
