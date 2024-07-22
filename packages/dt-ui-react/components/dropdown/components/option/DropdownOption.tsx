@@ -41,7 +41,10 @@ export const DropdownOption = ({
       key={option.value}
       disabled={disabled}
       role='option'
-      onClick={handleClick}
+      onClick={(e) => {
+        e.stopPropagation();
+        handleClick();
+      }}
       style={style}
     >
       {children}
