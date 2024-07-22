@@ -6,7 +6,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
-    "@dt-ui/react": ">=0.1.0-alpha.40",
+    "@dt-ui/react": ">=0.1.0-alpha.41",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

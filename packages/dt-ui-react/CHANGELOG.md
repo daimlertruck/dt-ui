@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.41
+
+### Patch Changes
+
+- fix: dropdown option event propagation
+
 ## 0.1.0-alpha.40
 
 ### Minor Changes
