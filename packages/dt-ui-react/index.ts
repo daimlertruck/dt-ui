@@ -5,7 +5,6 @@ export * from './core';
 
 // Components
 export * from './components/buttons';
-export * from './components/dropdown';
 export * from './components/form';
 export * from './components/link';
 export * from './components/pagination';
@@ -48,6 +47,7 @@ export * from '@dt-ui/react-radio';
 export * from '@dt-ui/react-modal';
 export * from '@dt-ui/react-card';
 export * from '@dt-ui/react-segmented-control';
+export * from '@dt-ui/react-dropdown';
 
 //utils
 export * from './utils/testingUtils';

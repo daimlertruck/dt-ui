@@ -1,12 +1,9 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { Icon } from '@dt-ui/react-icon';
 import { Typography } from '@dt-ui/react-typography';
 import { useTheme } from '@emotion/react';
 import { Children, ReactElement, useEffect } from 'react';
 
-import {
-  OutlinedArrowDropDown,
-  OutlinedArrowDropUp,
-} from '../../../../core/assets';
 import { useDropdownContext } from '../../context';
 import { DropdownMenu } from '../menu/DropdownMenu';
 
@@ -93,13 +90,15 @@ export const DropdownSelect = ({
             {!state.value ? 'Select an option' : state.text}
           </Typography>
         </div>
-        {!isOpen ? (
-          <OutlinedArrowDropDown
-            color={isDisabled ? theme.palette.content.disabled : 'currentColor'}
-          />
-        ) : (
-          <OutlinedArrowDropUp />
-        )}
+        <Icon
+          code={isOpen ? 'expand_less' : 'expand_more'}
+          color={
+            !isOpen && isDisabled
+              ? theme.palette.content.disabled
+              : 'currentColor'
+          }
+          size='medium'
+        />
       </SelectDropdownStyled>
       {isOpen ? (
         <DropdownMenu dataTestId={dataTestId}>{children}</DropdownMenu>

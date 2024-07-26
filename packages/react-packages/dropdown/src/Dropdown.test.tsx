@@ -1,8 +1,7 @@
 import { withProviders } from '@dt-ui/react-core';
 import { fireEvent, render, screen, within } from '@testing-library/react';
-import React from 'react';
 
-import { withDropdownProvider } from '../../utils';
+import { withDropdownProvider } from './utils';
 
 import { Dropdown } from '.';
 
@@ -19,18 +18,20 @@ describe('<Dropdown /> component', () => {
   it('renders dropdown correctly', () => {
     render(
       <ProvidedDropdown name='test-dropdown'>
-        <Dropdown.Select label='Label'>
-          {OPTIONS.map((option) => (
-            <Dropdown.Option
-              key={option.value}
-              onClick={mockendFunction}
-              option={option}
-            >
-              {option.text ?? option.value}
-            </Dropdown.Option>
-          ))}
-        </Dropdown.Select>
-        <Dropdown.Detail>A short message.</Dropdown.Detail>
+        <Dropdown.Container>
+          <Dropdown.Select label='Label'>
+            {OPTIONS.map((option) => (
+              <Dropdown.Option
+                key={option.value}
+                onClick={mockendFunction}
+                option={option}
+              >
+                {option.text ?? option.value}
+              </Dropdown.Option>
+            ))}
+          </Dropdown.Select>
+          <Dropdown.Detail>A short message.</Dropdown.Detail>
+        </Dropdown.Container>
       </ProvidedDropdown>
     );
 
@@ -87,6 +88,22 @@ describe('<Dropdown /> component', () => {
   it('renders a dropdown without border', () => {
     const { container } = render(
       <ProvidedDropdown>
+        <Dropdown.Select hasBorder={false} label='Label'>
+          {OPTIONS.map((option) => (
+            <Dropdown.Option key={option.value} option={option}>
+              {option.text ?? option.value}
+            </Dropdown.Option>
+          ))}
+        </Dropdown.Select>
+      </ProvidedDropdown>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('renders a dropdown with default value', () => {
+    const { container } = render(
+      <ProvidedDropdown defaultValue={OPTIONS[1]}>
         <Dropdown.Select hasBorder={false} label='Label'>
           {OPTIONS.map((option) => (
             <Dropdown.Option key={option.value} option={option}>

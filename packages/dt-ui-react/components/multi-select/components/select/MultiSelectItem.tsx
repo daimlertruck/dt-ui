@@ -1,5 +1,6 @@
 import { Box } from '@dt-ui/react-box';
 import { BaseProps } from '@dt-ui/react-core';
+import { DropdownMenu } from '@dt-ui/react-dropdown';
 import { Tag } from '@dt-ui/react-tag';
 import { Typography } from '@dt-ui/react-typography';
 import { useTheme } from '@emotion/react';
@@ -9,7 +10,6 @@ import {
   OutlinedArrowDropDown,
   OutlinedArrowDropUp,
 } from '../../../../core/assets';
-import { DropdownMenu } from '../../../dropdown/components//menu/DropdownMenu';
 import { useMultiSelectContext } from '../../context';
 import { Actions, MultiSelectOptionValue } from '../../types';
 

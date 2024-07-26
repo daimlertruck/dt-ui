@@ -1,5 +1,121 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Dropdown /> component renders a dropdown with default value 1`] = `
+.emotion-0 {
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.emotion-2 {
+  background: #FFFFFF;
+  border: 0;
+  border-radius: 3px;
+  padding: 8px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+  height: 53px;
+  cursor: pointer;
+}
+
+.emotion-2:disabled {
+  pointer-events: none;
+  background-color: #F8F9FA;
+}
+
+.emotion-4 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16.08px;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #636464;
+}
+
+.emotion-6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.44px;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #636464;
+}
+
+.emotion-8 {
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: currentColor;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="dropdown"
+    role="menu"
+  >
+    <button
+      class="emotion-2 emotion-3"
+      data-testid="dropdown-select"
+    >
+      <div
+        style="overflow: hidden;"
+      >
+        <p
+          class="emotion-4 emotion-5"
+          color="content.body"
+          data-testid="typography"
+        >
+          Label
+        </p>
+        <p
+          class="emotion-6 emotion-5"
+          color="content.body"
+          data-testid="typography"
+          style="text-overflow: ellipsis; overflow: hidden;"
+        >
+          Option 2
+        </p>
+      </div>
+      <i
+        class="emotion-8 emotion-9"
+        color="currentColor"
+        data-testid="icon"
+      >
+        expand_more
+      </i>
+    </button>
+  </div>
+</div>
+`;
+
 exports[`<Dropdown /> component renders a dropdown without border 1`] = `
 .emotion-0 {
   margin: 0;
@@ -56,6 +172,25 @@ exports[`<Dropdown /> component renders a dropdown without border 1`] = `
   color: #636464;
 }
 
+.emotion-8 {
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: currentColor;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -85,19 +220,13 @@ exports[`<Dropdown /> component renders a dropdown without border 1`] = `
           Select an option
         </p>
       </div>
-      <svg
+      <i
+        class="emotion-8 emotion-9"
         color="currentColor"
-        fill="none"
-        height="8"
-        viewBox="0 0 12 8"
-        width="12"
-        xmlns="http://www.w3.org/2000/svg"
+        data-testid="icon"
       >
-        <path
-          d="M1.41 0.0898438L6 4.66984L10.59 0.0898438L12 1.49984L6 7.49984L0 1.49984L1.41 0.0898438Z"
-          fill="currentColor"
-        />
-      </svg>
+        expand_more
+      </i>
     </button>
   </div>
 </div>
@@ -160,6 +289,25 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
 }
 
 .emotion-8 {
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: currentColor;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+.emotion-10 {
   background: #FFFFFF;
   border: 1px solid #D3D4D5;
   border-radius: 0px;
@@ -173,7 +321,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
   overflow: auto;
 }
 
-.emotion-10 {
+.emotion-12 {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -187,12 +335,12 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
   overflow-x: hidden;
 }
 
-.emotion-10:hover {
+.emotion-12:hover {
   background: #ECF7FB;
   cursor: pointer;
 }
 
-.emotion-14 {
+.emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -234,32 +382,27 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
           Select an option
         </p>
       </div>
-      <svg
-        fill="none"
-        height="8"
-        viewBox="0 0 12 8"
-        width="12"
-        xmlns="http://www.w3.org/2000/svg"
+      <i
+        class="emotion-8 emotion-9"
+        color="currentColor"
+        data-testid="icon"
       >
-        <path
-          d="M10.59 7.91016L6 3.33016L1.41 7.91016L1.23266e-07 6.50016L6 0.500156L12 6.50016L10.59 7.91016Z"
-          fill="currentColor"
-        />
-      </svg>
+        expand_less
+      </i>
     </button>
     <ul
-      class="emotion-8 emotion-9"
+      class="emotion-10 emotion-11"
       data-testid="dropdown-select-menu"
     >
       <li
-        class="emotion-10 emotion-11"
+        class="emotion-12 emotion-13"
         data-testid="dropdown-option-1"
         role="option"
       >
         Option 1
       </li>
       <li
-        class="emotion-10 emotion-11"
+        class="emotion-12 emotion-13"
         data-testid="dropdown-option-2"
         role="option"
       >
@@ -267,7 +410,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
       </li>
     </ul>
     <div
-      class="emotion-14 emotion-15"
+      class="emotion-16 emotion-17"
       data-testid="dropdown-text"
     >
       A short message.

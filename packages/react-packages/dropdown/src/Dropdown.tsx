@@ -7,9 +7,9 @@ import {
   DropdownOption,
   DropdownSelect,
 } from './components';
-import { DropdownContextProvider } from './context';
-import { BaseDropdownStyled } from './Dropdown.styled';
-import { DropdownOptionValue } from './types';
+import { DropdownStyled } from './Dropdown.styled';
+
+import { DropdownOptionValue, DropdownContextProvider } from '.';
 
 export interface DropdownProps extends BaseProps {
   defaultValue?: DropdownOptionValue;
@@ -24,9 +24,9 @@ const Dropdown = ({
   dataTestId = 'dropdown',
 }: DropdownProps) => (
   <DropdownContextProvider defaultValue={defaultValue} name={name}>
-    <BaseDropdownStyled data-testid={dataTestId} role='menu' style={style}>
+    <DropdownStyled data-testid={dataTestId} role='menu' style={style}>
       {children}
-    </BaseDropdownStyled>
+    </DropdownStyled>
   </DropdownContextProvider>
 );
 

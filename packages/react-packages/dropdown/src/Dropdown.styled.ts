@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const BaseDropdownStyled = styled.div`
+export const DropdownStyled = styled.div`
   ${({ theme, style }) => `
     margin: ${theme.spacing.none};
     display: inline-block;
