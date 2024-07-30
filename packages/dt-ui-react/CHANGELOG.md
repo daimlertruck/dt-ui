@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.127
+
+### Patch Changes
+
+- chore: make dropdown independent pkg
+- Updated dependencies
+  - @dt-ui/react-dropdown@0.1.0-beta.1
+
 ## 0.1.0-beta.126
 
 ### Patch Changes
