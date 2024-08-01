@@ -37,7 +37,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   position: sticky;
   z-index: 2;
   background: #FFFFFF;
-  box-shadow: 1px 0 0 0 #F3F3F3;
+  box-shadow: 1px 0 0 0 #F3F3F5;
 }
 
 .emotion-8 {
@@ -68,7 +68,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   position: sticky;
   z-index: 2;
   background: #FFFFFF;
-  box-shadow: -1px 0 0 0 #F3F3F3;
+  box-shadow: -1px 0 0 0 #F3F3F5;
 }
 
 .emotion-12 {
@@ -112,7 +112,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   display: table-cell;
   min-width: 110px;
   word-break: break-word;
-  border-top: 1px solid #F3F3F3;
+  border-top: 1px solid #F3F3F5;
   padding: 16px;
   text-align: left;
   color: #454545;
@@ -128,7 +128,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   position: sticky;
   z-index: 1;
   background: #FFFFFF;
-  box-shadow: 1px 0 0 0 #F3F3F3;
+  box-shadow: 1px 0 0 0 #F3F3F5;
 }
 
 .emotion-18:first-of-type {
@@ -140,7 +140,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   display: table-cell;
   min-width: 110px;
   word-break: break-word;
-  border-top: 1px solid #F3F3F3;
+  border-top: 1px solid #F3F3F5;
   padding: 16px;
   text-align: left;
   color: #454545;
@@ -161,7 +161,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   display: table-cell;
   min-width: 110px;
   word-break: break-word;
-  border-top: 1px solid #F3F3F3;
+  border-top: 1px solid #F3F3F5;
   padding: 16px;
   text-align: left;
   color: #454545;
@@ -177,7 +177,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   position: sticky;
   z-index: 1;
   background: #FFFFFF;
-  box-shadow: -1px 0 0 0 #F3F3F3;
+  box-shadow: -1px 0 0 0 #F3F3F5;
 }
 
 .emotion-22:first-of-type {
@@ -189,7 +189,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   display: table-cell;
   min-width: 110px;
   word-break: break-word;
-  border-top: 1px solid #F3F3F3;
+  border-top: 1px solid #F3F3F5;
   padding: 16px;
   text-align: left;
   color: #454545;
@@ -417,7 +417,7 @@ exports[`<Table /> component renders a Basic Table without fixed columns 1`] = `
   display: table-cell;
   min-width: 110px;
   word-break: break-word;
-  border-top: 1px solid #F3F3F3;
+  border-top: 1px solid #F3F3F5;
   padding: 16px;
   text-align: left;
   color: #454545;

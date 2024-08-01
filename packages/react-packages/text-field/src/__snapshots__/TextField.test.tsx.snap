@@ -279,7 +279,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
   text-transform: none;
   background-color: #FFFFFF;
   border-radius: 0px;
-  border: 1px solid #F3F3F3;
+  border: 1px solid #F3F3F5;
   color: #C1C1C1;
   min-width: 198px;
   padding: 20px 15px 5px 15px;

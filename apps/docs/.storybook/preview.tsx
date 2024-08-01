@@ -7,7 +7,6 @@ import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 
 import {
   theme as defaultTheme,
-  greenlaneTheme,
   truckAPITheme,
   Provider,
 } from '@dt-ui/react-core';
@@ -21,7 +20,6 @@ export const decorators = [
   withThemeFromJSXProvider({
     themes: {
       Default: defaultTheme,
-      Greenlane: greenlaneTheme,
       TruckAPI: truckAPITheme,
     },
     defaultTheme: 'Default',

@@ -4,7 +4,6 @@ import { ThemeProvider} from '@storybook/theming';
 
 import {
   theme as defaultTheme,
-  greenlaneTheme,
   truckAPITheme
 } from '@dt-ui/react-core';
 
@@ -12,7 +11,6 @@ import {
 
 export const themes = [
   {name: 'Daimler (default)', theme: defaultTheme}, 
-  {name: 'Greenlane', theme: greenlaneTheme},
   {name: 'TruckAPI', theme: truckAPITheme}]
 
 export const getColors = (theme) => Object.entries(theme.palette).reduce(

@@ -286,7 +286,7 @@ exports[`<Button /> component when loading is true renders a spinner light theme
 .emotion-4 {
   width: 32px;
   height: 32px;
-  border: 2px solid undefined;
+  border: 2px solid #838383;
   border-radius: 50%;
   border-top: 2px solid #FFFFFF;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
