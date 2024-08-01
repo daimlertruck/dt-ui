@@ -11,19 +11,20 @@ const getOutlinedButtonStyles = (
     background-color: transparent;
 
     &:hover {
-      color: ${theme.palette.primary.dark};
-      border-color: ${theme.palette.primary.dark};
+      color: ${theme.palette.primary.default};
+      border-color: ${theme.palette.primary.default};
+      background-color: ${theme.palette.primary.light};
     }
 
     &:active {
-      color: ${theme.palette.primary.dark};
-      border-color: ${theme.palette.primary.dark};
+      color: ${theme.palette.primary.default};
+      border-color: ${theme.palette.primary.default};
     }
 
     &:disabled {
       cursor: not-allowed;
-      color: ${theme.palette.primary.medium};
-      border-color: ${theme.palette.primary.medium};
+      color: ${theme.palette.primary.light};
+      border-color: ${theme.palette.primary.light};
     }
   `,
   error: `
@@ -32,8 +33,9 @@ const getOutlinedButtonStyles = (
     border-color: ${theme.palette.error.default};
 
     &:hover {
-      color: ${theme.palette.error.dark};
-      border-color: ${theme.palette.error.dark};
+      color: ${theme.palette.error.default};
+      border-color: ${theme.palette.error.default};
+      background-color: ${theme.palette.error.light};
     }
 
     &:disabled {
@@ -48,17 +50,20 @@ const getOutlinedButtonStyles = (
     background-color: transparent;
     
     &:hover {
-      color: ${theme.palette.secondary.dark};
-      border-color: ${theme.palette.secondary.dark};
+      color: ${theme.palette.secondary.default};
+      border-color: ${theme.palette.secondary.default};
+      background-color: ${theme.palette.secondary.light};
     }
     &:active {
-      color: ${theme.palette.secondary.dark};
-      border-color: ${theme.palette.secondary.dark};
+      color: ${theme.palette.secondary.default};
+      border-color: ${theme.palette.secondary.default};
+      background-color: ${theme.palette.secondary.light};
     }
     &:disabled {
       cursor: not-allowed;
       color: ${theme.palette.secondary.medium};
       border-color: ${theme.palette.secondary.medium};
+      background-color: transparent;
     }
   `,
 });
@@ -71,70 +76,76 @@ export const buttonVariantStyles = (
   if (color === 'contrast') {
     return {
       solid: `
-        color: ${theme.palette.content.heading};
-        background-color: ${theme.palette.base.default};
+        color: ${theme.palette.content.dark};
+        background-color: ${theme.palette.surface.default};
         border-color: ${theme.palette.border.contrast};
 
         &:hover {
-          background-color: ${theme.palette.primary.medium};
-          border-color: ${theme.palette.primary.medium};
+          background-color: ${theme.palette.primary.light};
+          border-color: ${theme.palette.primary.light};
         }
 
         &:disabled {
           cursor: not-allowed;
-          color: ${theme.palette.content.disabled};
-          border-color: ${theme.palette.base.default};
-          background-color: ${theme.palette.base.default};
+          color: ${theme.palette.content.default};
+          border-color: ${theme.palette.content.dark};
+          background-color: ${theme.palette.content.dark};
         }
       `,
-      outlined: `    
-        color: ${theme.palette.content.contrast};
-        border-color: ${theme.palette.border.contrast};
+      outlined: `
+        color: ${theme.palette.primary.contrast};
+        border-color: ${theme.palette.primary.contrast};
         background-color: transparent;
 
         &:hover {
-          color: ${theme.palette.primary.medium};
-          border-color: ${theme.palette.primary.medium};
+          color: ${theme.palette.surface.contrast};
+          border-color: ${theme.palette.surface.contrast};
+          background-color: ${theme.palette.primary.dark};
         }
 
         &:disabled {
           cursor: not-allowed;
-          color: ${theme.palette.content.disabled};
-          border-color: ${theme.palette.border.default};
+          color: ${theme.palette.content.default};
+          border-color: ${theme.palette.content.default};
+          background-color: transparent;
         }
       `,
       text: `
-        color: ${theme.palette.primary.contrast};
+        color: ${theme.palette.surface.light};
         background-color: transparent;
-        
+
         &:hover {
-          color: ${theme.palette.primary.medium};
+          color: ${theme.palette.content.contrast};
+          background-color: ${theme.palette.primary.dark};
         }
-        
+
         &:disabled {
           cursor: not-allowed;
-          color: ${theme.palette.content.disabled};
+          color: ${theme.palette.content.default};
         }
       `,
     }[variant];
   } else {
+    const hoverShade = color === 'primary' ? 'medium' : 'dark';
+    const disabledShade = color === 'primary' ? 'light' : 'medium';
+
     return {
       solid: `
         border-color: ${theme.palette[color].default};
-        color: ${theme.palette[color].contrast};
+        color: ${theme.palette.content.contrast};
         background-color: ${theme.palette[color].default};
         
         &:hover {
-          color: ${theme.palette[color].contrast};
-          background-color: ${theme.palette[color].dark};
-          border-color: ${theme.palette[color].dark};
+          color: ${theme.palette.content.contrast};
+          background-color: ${theme.palette[color][hoverShade]};
+          border-color: ${theme.palette[color][hoverShade]};
         }
 
         &:disabled {
           cursor: not-allowed;
-          color: ${theme.palette[color].contrast};
-          background-color: ${theme.palette[color].medium};
-          border-color: ${theme.palette[color].medium};
+          color: ${theme.palette.content.contrast};
+          background-color: ${theme.palette[color][disabledShade]};
+          border-color: ${theme.palette[color][disabledShade]};
         }
     `,
       outlined: getOutlinedButtonStyles(theme)[color],
@@ -143,12 +154,13 @@ export const buttonVariantStyles = (
         background-color: transparent;
         
         &:hover {
-          color: ${theme.palette[color].dark};
+          color: ${theme.palette[color].default};
+          background-color: ${theme.palette[color].light};
         }
         
         &:disabled {
           cursor: not-allowed;
-          color: ${theme.palette[color].medium};
+          color: ${theme.palette[color][disabledShade]};
         }
     `,
     }[variant];

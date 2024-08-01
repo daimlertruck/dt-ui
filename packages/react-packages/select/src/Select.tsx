@@ -279,7 +279,7 @@ const Select = ({
         {helperMessage ? (
           <HelperSelectFieldMessageStyled>
             <Typography
-              color={hasError ? 'error.default' : 'content.tertiary'}
+              color={hasError ? 'error.default' : 'content.light'}
               element='span'
               fontStyles='body3'
             >

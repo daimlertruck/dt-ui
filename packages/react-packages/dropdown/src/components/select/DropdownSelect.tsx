@@ -77,13 +77,13 @@ export const DropdownSelect = ({
       >
         <div style={{ overflow: 'hidden' }}>
           <Typography
-            color={disabled ? 'content.disabled' : 'content.body'}
+            color={disabled ? 'content.light' : 'content.default'}
             fontStyles='pXXSmall'
           >
             {label}
           </Typography>
           <Typography
-            color={disabled ? 'content.disabled' : 'content.body'}
+            color={disabled ? 'content.light' : 'content.default'}
             fontStyles='pSmall'
             style={{ textOverflow: 'ellipsis', overflow: 'hidden' }}
           >
@@ -93,9 +93,7 @@ export const DropdownSelect = ({
         <Icon
           code={isOpen ? 'expand_less' : 'expand_more'}
           color={
-            !isOpen && isDisabled
-              ? theme.palette.content.disabled
-              : 'currentColor'
+            !isOpen && isDisabled ? theme.palette.content.light : 'currentColor'
           }
           size='medium'
         />

@@ -8,7 +8,7 @@ exports[`<LabelField /> component it renders a disabled label field 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #BABBBB;
+  color: #C1C1C1;
   cursor: inherit;
   left: 15px;
   top: 15px;
@@ -44,7 +44,7 @@ exports[`<LabelField /> component it renders a label field as required 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   cursor: inherit;
   left: 15px;
   top: 15px;
@@ -64,7 +64,7 @@ exports[`<LabelField /> component it renders a label field as required 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF4A4A;
+  color: #FF494A;
 }
 
 <div>
@@ -96,7 +96,7 @@ exports[`<LabelField /> component when the LabelField is active it should render
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   cursor: inherit;
   left: 15px;
   top: 15px;
@@ -131,7 +131,7 @@ exports[`<LabelField /> component when the LabelField is inactive it should rend
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   cursor: inherit;
   left: 15px;
   top: 15px;

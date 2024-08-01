@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const EmptyStateStyled = styled.div`
   ${({ theme }) => `
     padding: ${theme.spacing.l} ${theme.spacing.s};
-    background-color: ${theme.palette.base.light};
+    background-color: ${theme.palette.surface.light};
     flex-direction: column;
     display: flex;
     align-items: center;

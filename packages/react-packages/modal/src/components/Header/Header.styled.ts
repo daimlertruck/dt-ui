@@ -13,7 +13,7 @@ export const HeaderStyled = styled.div<HeaderProps>`
   ${({ theme, hasBackgroundColor, hasBorder }) => `
     padding: ${theme.spacing.xs};
     background-color: ${
-      hasBackgroundColor ? theme.palette.base.light : 'transparent'
+      hasBackgroundColor ? theme.palette.surface.light : 'transparent'
     };
     border-bottom: ${
       hasBorder ? `1px solid ${theme.palette.border.default}` : 'none'
@@ -25,7 +25,7 @@ export const HeaderStyled = styled.div<HeaderProps>`
     }
 
     button {
-      color: ${theme.palette.content.body};
+      color: ${theme.palette.content.default};
     }
 
     svg {

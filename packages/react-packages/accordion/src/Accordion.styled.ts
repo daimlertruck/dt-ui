@@ -12,15 +12,15 @@ interface AccordinStyledProps {
 const accordionBackgroundColors = (
   theme: Theme
 ): Record<AccordionBackgroundColor, string> => ({
-  white: theme.palette.primary.contrast,
-  grey: theme.palette.base.light,
+  white: theme.palette.surface.contrast,
+  grey: theme.palette.surface.default,
 });
 
 const accordionHoverBackgroundColors = (
   theme: Theme
 ): Record<AccordionBackgroundColor, string> => ({
   white: theme.palette.primary.light,
-  grey: theme.palette.secondary.medium,
+  grey: theme.palette.surface.medium,
 });
 
 const accordionBorders = (

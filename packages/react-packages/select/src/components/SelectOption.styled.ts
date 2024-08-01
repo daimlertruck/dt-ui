@@ -20,9 +20,10 @@ export const SelectOptionStyled = styled.li<SelectOptionProps>`
     background-color: ${
       isHighlighted && !isMulti
         ? theme.palette.primary.light
-        : theme.palette.base.default
+        : theme.palette.surface.contrast
     };
-    color: ${theme.palette.content.body};
+
+    color: ${theme.palette.content.default};
     ${theme.fontStyles.body2}
 
     & > label {
@@ -35,9 +36,9 @@ export const SelectOptionStyled = styled.li<SelectOptionProps>`
 
     &[aria-disabled="true"] {
       cursor: not-allowed;
-      color: ${theme.palette.content.disabled};
+      color: ${theme.palette.content.light};
       &:hover {
-        background-color: ${theme.palette.base.default};
+        background-color: ${theme.palette.surface.contrast};
       }
     }
   `}

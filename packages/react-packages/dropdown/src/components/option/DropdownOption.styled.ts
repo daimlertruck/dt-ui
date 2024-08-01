@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const DropdownOptionStyled = styled.li<{ disabled?: boolean }>`
   ${({ theme, disabled }) => `
     ${theme.fontStyles.body2}
-    color: ${theme.palette.content.body};
+    color: ${theme.palette.content.default};
     list-style: none;
     padding: ${theme.spacing['4xs']} ${theme.spacing['2xs']};
     text-overflow: ellipsis;
@@ -11,7 +11,7 @@ export const DropdownOptionStyled = styled.li<{ disabled?: boolean }>`
 
     &:hover {
       background: ${
-        disabled ? theme.palette.base.light : theme.palette.primary.light
+        disabled ? theme.palette.surface.light : theme.palette.primary.light
       };
       cursor: ${disabled ? 'not-allowed' : 'pointer'};
     }
@@ -19,8 +19,8 @@ export const DropdownOptionStyled = styled.li<{ disabled?: boolean }>`
     ${
       disabled &&
       `
-        color: ${theme.palette.content.disabled};
-        background: ${theme.palette.base.light};
+        color: ${theme.palette.content.light};
+        background: ${theme.palette.surface.light};
       `
     }
   `}

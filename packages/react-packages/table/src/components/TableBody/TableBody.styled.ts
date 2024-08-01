@@ -5,7 +5,7 @@ export const TableBodyStyled = styled.tbody`
     display: table-header-group;
     
     tr:hover td {
-      background-color: ${theme.palette.base.light};
+      background-color: ${theme.palette.surface.light};
     }
   `}
 `;

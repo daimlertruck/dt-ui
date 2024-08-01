@@ -20,7 +20,7 @@ export const ToastIconStyled = styled.div<ToastIconStyledProps>`
   padding-right: 8px;
   ${({ theme, type }) => `
     background-color: ${theme.palette[type].default};  
-    color: ${theme.palette[type].contrast}
+    color: ${theme.palette.content.contrast}
 `}
 `;
 
@@ -38,9 +38,9 @@ export const ToastStyled = styled.div<ToastStyledProps>`
   transition: all 0.75s ease-in-out;
   overflow: hidden;
   ${({ theme, isVisible }) => `
-    background-color: ${theme.palette.base.default};  
+    background-color: ${theme.palette.surface.contrast};  
     opacity: ${isVisible ? 1 : 0};
-    color: ${theme.palette.content.body};
+    color: ${theme.palette.content.default};
     border-radius: ${theme.shape.toast};
     box-shadow: ${theme.shadows.s};
   `}
@@ -57,7 +57,7 @@ export const ToastContentStyled = styled.div`
 export const ToastTitleStyled = styled.div`
   ${({ theme }) => `
       ${theme.fontStyles.h6};
-      color: ${theme.palette.content.heading};
+      color: ${theme.palette.content.dark};
       margin-bottom: ${theme.spacing['5xs']};
       text-transform: capitalize;
   `}
@@ -66,7 +66,7 @@ export const ToastTitleStyled = styled.div`
 export const ToastMessageStyled = styled.div`
   ${({ theme }) => `
     ${theme.fontStyles.body2};
-    color: ${theme.palette.content.body};
+    color: ${theme.palette.content.default};
     overflow: hidden;
     word-break: break-word;
     hyphens: auto;
@@ -78,7 +78,7 @@ export const ToastMessageStyled = styled.div`
 
 export const ToastButtonCloseStyled = styled.button`
   ${({ theme }) => `
-    color: ${theme.palette.content.body};
+    color: ${theme.palette.content.default};
     border: 0;
     cursor: pointer;
     background: transparent;
@@ -87,7 +87,7 @@ export const ToastButtonCloseStyled = styled.button`
     line-height: 0;
   
     &:hover {
-      background-color: ${theme.palette.base.light};
+      background-color: ${theme.palette.surface.contrast};
     }
   `}
 `;

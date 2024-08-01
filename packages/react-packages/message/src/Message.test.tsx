@@ -40,7 +40,7 @@ describe('<Message /> component', () => {
       expect(queryByTestId('message')).toHaveStyle(
         `background-color: ${
           type === OMessageType.Default
-            ? theme.palette.base.light
+            ? theme.palette.surface.light
             : theme.palette[type].light
         };`
       );

@@ -111,15 +111,15 @@ exports[`<Link /> component Should render an anchor element with button styles 1
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #004355;
-  border-color: #004355;
+  background-color: #004E64;
+  border-color: #004E64;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
   color: #FFFFFF;
-  background-color: #79AEBF;
-  border-color: #79AEBF;
+  background-color: #CCE3EB;
+  border-color: #CCE3EB;
 }
 
 @media only screen and (min-width: 600px) {

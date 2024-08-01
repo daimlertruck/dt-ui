@@ -29,7 +29,7 @@ export const ModalHeader = ({
       hasBorder={hasBorder}
     >
       <Box style={{ justifyContent: 'space-between', flexDirection: 'row' }}>
-        <Typography color='content.heading' element='h4' fontStyles='h4'>
+        <Typography color='content.dark' element='h4' fontStyles='h4'>
           {title}
         </Typography>
 
@@ -41,7 +41,7 @@ export const ModalHeader = ({
         />
       </Box>
       {subTitle ? (
-        <Typography color='content.body' element='h5' fontStyles='body1'>
+        <Typography color='content.default' element='h5' fontStyles='body1'>
           {subTitle}
         </Typography>
       ) : null}

@@ -1,21 +1,23 @@
 export type CustomTheme = {
   palette: {
-    base: {
+    surface: {
       default: string;
       light: string;
+      medium: string;
       dark: string;
+      contrast: string;
     };
     border: {
       light: string;
       default: string;
+      dark: string;
       contrast: string;
     };
     content: {
-      heading: string;
-      body: string;
-      secondary: string;
-      tertiary: string;
-      disabled: string;
+      default: string;
+      light: string;
+      medium: string;
+      dark: string;
       contrast: string;
     };
     primary: {
@@ -32,48 +34,51 @@ export type CustomTheme = {
       dark: string;
       contrast: string;
     };
+    accent: {
+      default: string;
+      light: string;
+      medium: string;
+      dark: string;
+    };
     error: {
       default: string;
       light: string;
       medium: string;
       dark: string;
-      contrast: string;
     };
     warning: {
       default: string;
       light: string;
       medium: string;
       dark: string;
-      contrast: string;
     };
     success: {
       default: string;
       light: string;
       medium: string;
       dark: string;
-      contrast: string;
     };
     informative: {
       default: string;
       light: string;
       medium: string;
       dark: string;
-      contrast: string;
     };
   };
   colors: {
     black: string;
+    blue: string;
+    blue_05: string;
     blue_10: string;
     blue_20: string;
     blue_30: string;
     blue_40: string;
     blue_50: string;
     blue_60: string;
-    blue_65: string;
     blue_70: string;
     blue_80: string;
     blue_90: string;
-    blue_100: string;
+    grey_05: string;
     grey_10: string;
     grey_20: string;
     grey_30: string;
@@ -83,6 +88,9 @@ export type CustomTheme = {
     grey_70: string;
     grey_80: string;
     grey_90: string;
+    grey_100: string;
+    green: string;
+    green_05: string;
     green_10: string;
     green_20: string;
     green_30: string;
@@ -92,6 +100,8 @@ export type CustomTheme = {
     green_70: string;
     green_80: string;
     green_90: string;
+    red: string;
+    red_05: string;
     red_10: string;
     red_20: string;
     red_30: string;
@@ -102,6 +112,8 @@ export type CustomTheme = {
     red_80: string;
     red_90: string;
     white: string;
+    yellow: string;
+    yellow_05: string;
     yellow_10: string;
     yellow_20: string;
     yellow_30: string;
@@ -111,6 +123,8 @@ export type CustomTheme = {
     yellow_70: string;
     yellow_80: string;
     yellow_90: string;
+    purple: string;
+    purple_05: string;
     purple_10: string;
     purple_20: string;
     purple_30: string;
@@ -120,36 +134,6 @@ export type CustomTheme = {
     purple_70: string;
     purple_80: string;
     purple_90: string;
-    purple_100: string;
-    greenPastel_10: string;
-    greenPastel_20: string;
-    greenPastel_30: string;
-    greenPastel_40: string;
-    greenPastel_50: string;
-    greenPastel_60: string;
-    greenPastel_70: string;
-    greenPastel_80: string;
-    greenPastel_90: string;
-    // Legacy colors
-    blue_200: string;
-    blue_300: string;
-    blue_400: string;
-    blue_500: string;
-    yellow_100: string;
-    yellow_200: string;
-    yellow_300: string;
-    yellow_400: string;
-    grey_100: string;
-    grey_200: string;
-    grey_300: string;
-    red_100: string;
-    red_200: string;
-    red_300: string;
-    red_400: string;
-    green_100: string;
-    green_200: string;
-    green_300: string;
-    green_400: string;
   };
   shadows: {
     none: string;

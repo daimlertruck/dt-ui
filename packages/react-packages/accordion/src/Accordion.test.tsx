@@ -58,7 +58,7 @@ describe('<ProvidedAccordion /> component', () => {
 
     const accordionContainer = screen.getByTestId('accordion-container');
     expect(accordionContainer).toHaveStyle(
-      'background-color: rgb(235, 236, 237);'
+      'background-color: rgb(222, 222, 222);'
     );
   });
 
@@ -85,7 +85,7 @@ describe('<ProvidedAccordion /> component', () => {
 
     const accordionContainer = screen.getByTestId('accordion-container');
     expect(accordionContainer).toHaveStyle(
-      'background-color: rgb(248, 249, 250);'
+      'background-color: rgb(243, 243, 243);'
     );
   });
 });

@@ -13,4 +13,5 @@ export const shape = {
   tooltip: radius['none'],
   formField: radius['none'],
   segmentedControl: radius['none'],
+  card: radius['none'],
 };

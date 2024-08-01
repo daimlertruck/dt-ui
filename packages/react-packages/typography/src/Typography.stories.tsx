@@ -34,7 +34,7 @@ export const Default: Story = {
   args: {
     element: 'h1',
     fontStyles: 'h1',
-    color: 'grey_300',
+    color: 'grey_100',
     children: 'Example text',
     dataTestId: 'typography-story-id',
     style: {},

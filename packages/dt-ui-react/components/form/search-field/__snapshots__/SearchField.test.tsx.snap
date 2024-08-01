@@ -15,7 +15,7 @@ exports[`<SearchField /> component renders SearchField input element with the co
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   cursor: inherit;
   left: 15px;
   top: 15px;
@@ -37,8 +37,8 @@ exports[`<SearchField /> component renders SearchField input element with the co
   text-transform: none;
   background-color: #FFFFFF;
   border-radius: 0px;
-  border: 1px solid #D3D4D5;
-  color: #636464;
+  border: 1px solid #DEDEDE;
+  color: #454545;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -57,7 +57,7 @@ exports[`<SearchField /> component renders SearchField input element with the co
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #F3F3F3;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -79,13 +79,13 @@ exports[`<SearchField /> component renders SearchField input element with the co
 }
 
 .emotion-6 svg {
-  fill: #636464;
+  fill: #454545;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .emotion-6:hover svg {
-  fill: #323232;
+  fill: #292929;
 }
 
 <div>

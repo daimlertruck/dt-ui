@@ -15,7 +15,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   cursor: inherit;
   left: 15px;
   top: 15px;
@@ -37,8 +37,8 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   text-transform: none;
   background-color: #FFFFFF;
   border-radius: 0px;
-  border: 1px solid #FF4A4A;
-  color: #636464;
+  border: 1px solid #FF494A;
+  color: #454545;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -63,7 +63,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF4A4A;
+  color: #FF494A;
 }
 
 <div>
@@ -115,7 +115,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   cursor: inherit;
   left: 15px;
   top: 15px;
@@ -137,8 +137,8 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   text-transform: none;
   background-color: #FFFFFF;
   border-radius: 0px;
-  border: 1px solid #FF4A4A;
-  color: #636464;
+  border: 1px solid #FF494A;
+  color: #454545;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -163,7 +163,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF4A4A;
+  color: #FF494A;
 }
 
 <div>
@@ -215,7 +215,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   cursor: inherit;
   left: 15px;
   top: 15px;
@@ -235,7 +235,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF4A4A;
+  color: #FF494A;
 }
 
 .emotion-6 {
@@ -247,8 +247,8 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   text-transform: none;
   background-color: #FFFFFF;
   border-radius: 0px;
-  border: 1px solid #D3D4D5;
-  color: #636464;
+  border: 1px solid #DEDEDE;
+  color: #454545;
   min-width: 198px;
   padding: 20px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;

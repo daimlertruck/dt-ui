@@ -26,7 +26,7 @@ export const Icon = ({
 
   return (
     <IconStyled
-      color={color ?? theme.palette.content.body}
+      color={color ?? theme.palette.content.default}
       data-testid={dataTestId ?? 'icon'}
       hasClick={!!onClick}
       onClick={onClick}

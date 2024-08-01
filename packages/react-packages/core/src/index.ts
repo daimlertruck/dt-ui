@@ -18,4 +18,5 @@ export {
   withProviders,
   renderStatic,
   getContextualColor,
+  getTextStyles,
 } from './utils';

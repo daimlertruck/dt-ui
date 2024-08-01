@@ -11,7 +11,7 @@ export const RowStyled = styled.tr<RowStyledProps>`
     box-shadow: ${theme.shadows.none};
     padding: ${theme.spacing.none};
     width: 100%;
-    background-color: ${theme.palette.base.default};
+    background-color: ${theme.palette.surface.contrast};
     cursor: ${selectableRow ? 'pointer' : 'auto'};
   `}
 `;

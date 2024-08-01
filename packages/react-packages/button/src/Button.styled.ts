@@ -21,6 +21,7 @@ export const ButtonStyled = styled.button<ButtonStyledProps>`
     border-color 0.2s ease-in-out;
   align-items: center;
   border: 2px solid transparent;
+
   ${({ theme, variant, color, size }) => `
     gap: ${theme.spacing['4xs']};
     border-radius: ${theme.shape.button};

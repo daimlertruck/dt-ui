@@ -118,7 +118,7 @@ export const DatePicker = ({
       {message ? (
         <TextFieldMessageStyled>
           <Typography
-            color={hasError ? 'error.default' : 'content.secondary'}
+            color={hasError ? 'error.default' : 'content.medium'}
             element='span'
             fontStyles='pXXSmall'
           >

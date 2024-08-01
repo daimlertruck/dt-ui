@@ -7,7 +7,7 @@ interface MultiSelectStyledProps {
 
 export const MultiSelectStyled = styled.div<MultiSelectStyledProps>`
   ${({ theme, hasError = false, isDisabled }) => `
-    background: ${theme.palette.base.default};
+    background: ${theme.palette.surface.contrast};
     border: 1px solid ${theme.palette.border.default};
     border-radius: 3px;
     padding: ${theme.spacing.xsmall} ${theme.spacing.xmedium};
@@ -26,7 +26,7 @@ export const MultiSelectStyled = styled.div<MultiSelectStyledProps>`
       isDisabled &&
       `
         pointer-events: none;
-        background-color: ${theme.palette.base.light};
+        background-color: ${theme.palette.surface.light};
       `
     }
   `}

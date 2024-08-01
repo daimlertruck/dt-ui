@@ -31,6 +31,6 @@ export const IconContainerStyled = styled.div`
 
   ${({ theme }) => `
     margin-left: ${theme.spacing['3xs']};
-    color: ${theme.palette.content.secondary}
+    color: ${theme.palette.content.medium}
   `}
 `;

@@ -14,7 +14,7 @@ export const ModalStyled = styled.div`
 
   flex-direction: column;
   ${({ theme }) => `
-      background-color: ${theme.palette.base.default};
+      background-color: ${theme.palette.surface.contrast};
       border-radius: ${theme.shape.modal};
       box-shadow: ${theme.shadows.s};
 

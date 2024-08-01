@@ -12,10 +12,10 @@ export const TextAreaStyled = styled.textarea`
   ${({ theme }) => `
     ${theme.fontStyles.pSmall}
 
-    background-color: ${theme.palette.base.default};
+    background-color: ${theme.palette.surface.contrast};
     border: 1px solid ${theme.palette.border.default};
 
-    color: ${theme.palette.content.body};
+    color: ${theme.palette.content.default};
 
     resize: none;
     width: 100%;

@@ -13,7 +13,7 @@ export interface SpinnerProps extends Omit<BaseProps, 'children'> {
 }
 
 const spinnerTextColor: Record<SpinnerColorScheme, PaletteKeys> = {
-  positive: 'content.body',
+  positive: 'content.default',
   negative: 'content.contrast',
 };
 

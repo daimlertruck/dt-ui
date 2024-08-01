@@ -34,7 +34,7 @@ export const SelectMenuStyled = styled.ul<{ isOpen: boolean }>`
   ${({ isOpen, theme }) => `
     margin-top:${theme.spacing['5xs']};
     padding:  ${theme.spacing['2xs']} ${theme.spacing.none};
-    background-color: ${theme.palette.base.default};
+    background-color: ${theme.palette.surface.contrast};
     display: ${isOpen ? 'block' : 'none'};
     border-radius: ${theme.shape.formField};
   `}
@@ -54,7 +54,7 @@ export const SelectValueStyled = styled.div`
 
   ${({ theme }) => `
     ${theme.fontStyles.body2}
-    color: ${theme.palette.content.body};
+    color: ${theme.palette.content.default};
   `}
 `;
 
@@ -69,13 +69,11 @@ export const SelectContainerStyled = styled.div<SelectFieldStyledProps>`
   ${({ theme, hasError, disabled }) => `
     ${theme.fontStyles.body2}
     color: ${
-      disabled ? theme.palette.content.disabled : theme.palette.content.body
+      disabled ? theme.palette.content.light : theme.palette.content.default
     };
     padding: ${theme.spacing['4xs']} ${theme.spacing['3xs']};
     gap: ${theme.spacing['4xs']} ;
-    background-color: ${
-      disabled ? theme.palette.base.light : theme.palette.base.default
-    };
+    background-color: ${theme.palette.surface.contrast};
     border-radius: ${theme.shape.formField};
     cursor: ${disabled ? 'not-allowed' : 'pointer'};
 
@@ -89,14 +87,16 @@ export const SelectContainerStyled = styled.div<SelectFieldStyledProps>`
     }
   `};
 
-  border: ${({ theme, isActive, hasError }) => {
+  border: ${({ theme, isActive, hasError, disabled }) => {
     if (isActive) {
       return `1px solid ${theme.palette.primary.default}`;
     }
     if (hasError) {
       return `1px solid ${theme.palette.error.default}`;
     }
-    return `1px solid ${theme.palette.border.default}`;
+    return `1px solid ${
+      disabled ? theme.palette.border.light : theme.palette.border.default
+    }`;
   }};
 `;
 

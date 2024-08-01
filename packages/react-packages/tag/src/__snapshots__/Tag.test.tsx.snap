@@ -9,7 +9,7 @@ exports[`<Tag /> component should render the tag with variant outlined, color bl
   height: 18px;
   border: 1px solid #008DFC;
   color: #008DFC;
-  background-color: #E6F5FF;
+  background-color: #E8F4FF;
   border-color: #008DFC;
   display: -webkit-box;
   display: -webkit-flex;
@@ -33,9 +33,9 @@ exports[`<Tag /> component should render the tag with variant outlined, color bl
 }
 
 .emotion-0:hover {
-  border-color: #013C6B;
-  background-color: #E6F5FF;
-  color: #013C6B;
+  border-color: #000E40;
+  background-color: #E8F4FF;
+  color: #000E40;
 }
 
 <div
@@ -57,7 +57,7 @@ exports[`<Tag /> component should render the tag with variant solid, color grey,
   height: 32px;
   border: 0;
   color: #FFFFFF;
-  background-color: #7C7C7D;
+  background-color: #838383;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -80,7 +80,7 @@ exports[`<Tag /> component should render the tag with variant solid, color grey,
 }
 
 .emotion-0:hover {
-  background-color: #323232;
+  background-color: #131313;
   color: #FFFFFF;
 }
 
@@ -103,7 +103,7 @@ exports[`<Tag /> component should render the tag with variant solid, color grey,
   height: 32px;
   border: 0;
   color: #FFFFFF;
-  background-color: #7C7C7D;
+  background-color: #838383;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -125,7 +125,7 @@ exports[`<Tag /> component should render the tag with variant solid, color grey,
 }
 
 .emotion-0:hover {
-  background-color: #323232;
+  background-color: #131313;
   color: #FFFFFF;
 }
 
@@ -140,7 +140,7 @@ exports[`<Tag /> component should render the tag with variant solid, color grey,
 
 .emotion-2:hover {
   background-color: #FFFFFF;
-  color: #323232;
+  color: #131313;
 }
 
 .emotion-2:disabled {
@@ -185,7 +185,7 @@ exports[`<Tag /> component should render the tag with variant solid, color grey,
   height: 32px;
   border: 0;
   color: #FFFFFF;
-  background-color: #D3D4D5;
+  background-color: #C1C1C1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

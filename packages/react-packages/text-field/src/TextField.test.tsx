@@ -137,7 +137,7 @@ describe('<TextField /> component', () => {
 
       fireEvent.blur(input, { currentTarget: { value: '' } });
 
-      expect(input).toHaveStyle('border: 1px solid #FF4A4A');
+      expect(input).toHaveStyle('border: 1px solid #ff494a');
       expect(container).toMatchSnapshot();
     });
 

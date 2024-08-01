@@ -29,13 +29,13 @@ const progressBarColors = (
 ): Record<ProgressBarState, ProgressBarColor> => ({
   active: {
     background: theme.palette.informative.default,
-    helper: theme.palette.content.secondary,
-    percentage: theme.palette.content.body,
+    helper: theme.palette.content.medium,
+    percentage: theme.palette.content.default,
   },
   success: {
     background: theme.palette.success.default,
-    helper: theme.palette.content.secondary,
-    percentage: theme.palette.content.body,
+    helper: theme.palette.content.medium,
+    percentage: theme.palette.content.default,
   },
   error: {
     background: theme.palette.error.default,

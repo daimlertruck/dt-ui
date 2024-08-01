@@ -11,7 +11,7 @@ export const MessageStyled = styled.div<MessageStyledProps>`
     padding: ${theme.spacing['3xs']} ${theme.spacing['2xs']};
     background-color: ${
       type === OMessageType.Default
-        ? theme.palette.base.light
+        ? theme.palette.surface.light
         : theme.palette[type].light
     };
     display: flex;
@@ -55,7 +55,7 @@ export const MessageIconStyled = styled.div<MessageIconStyledProps>`
     display: flex;
     color: ${
       type === 'default'
-        ? theme.palette.content.body
+        ? theme.palette.content.default
         : theme.palette[type].default
     };
   `}
@@ -63,14 +63,14 @@ export const MessageIconStyled = styled.div<MessageIconStyledProps>`
 
 export const MessageButtonCloseStyled = styled.button`
   ${({ theme }) => `
-    color: ${theme.palette.content.body};
+    color: ${theme.palette.content.default};
     border: 0;
     cursor: pointer;
     background: transparent;
     display: flex;
   
     &:hover {
-      background-color: ${theme.palette.base.default};
+      background-color: ${theme.palette.surface.contrast};
     }
   `}
 `;

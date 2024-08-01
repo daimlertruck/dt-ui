@@ -49,7 +49,7 @@ export const Toggle = ({
 Toggle.Label = ({ children, dataTestId }: BaseProps) => {
   return (
     <Typography
-      color='content.body'
+      color='content.default'
       data-testid={dataTestId ?? 'toggle-label'}
       dataTestId='toggle-label'
       element='span'

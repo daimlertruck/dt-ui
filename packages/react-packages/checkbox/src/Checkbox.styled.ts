@@ -73,7 +73,7 @@ export const CheckboxLabelStyled = styled.span<CheckboxLabelStyledProps>`
     padding-left: ${theme.spacing['4xs']};
     ${theme.fontStyles.body2};
     color: ${
-      isDisabled ? theme.palette.content.disabled : theme.palette.content.body
+      isDisabled ? theme.palette.content.light : theme.palette.content.default
     };
   `}
 `;

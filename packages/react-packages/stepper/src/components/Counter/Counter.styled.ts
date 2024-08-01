@@ -10,11 +10,7 @@ export interface CounterStyledProps {
 export const CounterStyled = styled.span<CounterStyledProps>`
   ${({ theme, color, outlined, isLarge }) => `
     ${theme.fontStyles.tag}
-    color: ${
-      color === 'disabled'
-        ? theme.palette.content.contrast
-        : theme.palette[color].contrast
-    };
+    color: ${theme.palette.content.contrast};
     border: ${theme.spacing.none};
     align-items: center;
     justify-content: center;
@@ -24,7 +20,7 @@ export const CounterStyled = styled.span<CounterStyledProps>`
     border-radius: 50%;
     background-color: ${
       color === 'disabled'
-        ? theme.palette.content.body
+        ? theme.palette.content.default
         : theme.palette[color].default
     };
 
@@ -33,15 +29,15 @@ export const CounterStyled = styled.span<CounterStyledProps>`
       `
         border: 2px solid ${
           color === 'disabled'
-            ? theme.palette.content.disabled
+            ? theme.palette.content.light
             : theme.palette[color].default
         };
         color: ${
           color === 'disabled'
-            ? theme.palette.content.disabled
+            ? theme.palette.content.light
             : theme.palette[color].default
         };
-        background-color: ${theme.palette.base.default}
+        background-color: ${theme.palette.surface.contrast}
       `
     };
   `}

@@ -31,7 +31,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   overflow: hidden;
   background-color: #FFFFFF;
   opacity: 1;
-  color: #636464;
+  color: #454545;
   border-radius: 0px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
@@ -48,7 +48,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   align-items: center;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #FF4A4A;
+  background-color: #FF494A;
   color: #FFFFFF;
 }
 
@@ -75,13 +75,13 @@ exports[`<Toast /> component should render a toast with title & message & action
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #323232;
+  color: #292929;
   margin-bottom: 4px;
   text-transform: capitalize;
 }
 
 .emotion-10 {
-  color: #636464;
+  color: #454545;
   border: 0;
   cursor: pointer;
   background: transparent;
@@ -93,7 +93,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 }
 
 .emotion-10:hover {
-  background-color: #F8F9FA;
+  background-color: #FFFFFF;
 }
 
 .emotion-12 {
@@ -103,7 +103,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   overflow: hidden;
   word-break: break-word;
   -webkit-hyphens: auto;
@@ -236,7 +236,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   overflow: hidden;
   background-color: #FFFFFF;
   opacity: 1;
-  color: #636464;
+  color: #454545;
   border-radius: 0px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
@@ -280,13 +280,13 @@ exports[`<Toast /> component should render a toast with title & message & action
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #323232;
+  color: #292929;
   margin-bottom: 4px;
   text-transform: capitalize;
 }
 
 .emotion-10 {
-  color: #636464;
+  color: #454545;
   border: 0;
   cursor: pointer;
   background: transparent;
@@ -298,7 +298,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 }
 
 .emotion-10:hover {
-  background-color: #F8F9FA;
+  background-color: #FFFFFF;
 }
 
 .emotion-12 {
@@ -308,7 +308,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   overflow: hidden;
   word-break: break-word;
   -webkit-hyphens: auto;
@@ -440,7 +440,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   overflow: hidden;
   background-color: #FFFFFF;
   opacity: 1;
-  color: #636464;
+  color: #454545;
   border-radius: 0px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
@@ -484,13 +484,13 @@ exports[`<Toast /> component should render a toast with title & message & action
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #323232;
+  color: #292929;
   margin-bottom: 4px;
   text-transform: capitalize;
 }
 
 .emotion-10 {
-  color: #636464;
+  color: #454545;
   border: 0;
   cursor: pointer;
   background: transparent;
@@ -502,7 +502,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 }
 
 .emotion-10:hover {
-  background-color: #F8F9FA;
+  background-color: #FFFFFF;
 }
 
 .emotion-12 {
@@ -512,7 +512,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   overflow: hidden;
   word-break: break-word;
   -webkit-hyphens: auto;
@@ -645,7 +645,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   overflow: hidden;
   background-color: #FFFFFF;
   opacity: 1;
-  color: #636464;
+  color: #454545;
   border-radius: 0px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
@@ -662,7 +662,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   align-items: center;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #FACC00;
+  background-color: #FFD000;
   color: #FFFFFF;
 }
 
@@ -689,13 +689,13 @@ exports[`<Toast /> component should render a toast with title & message & action
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #323232;
+  color: #292929;
   margin-bottom: 4px;
   text-transform: capitalize;
 }
 
 .emotion-10 {
-  color: #636464;
+  color: #454545;
   border: 0;
   cursor: pointer;
   background: transparent;
@@ -707,7 +707,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 }
 
 .emotion-10:hover {
-  background-color: #F8F9FA;
+  background-color: #FFFFFF;
 }
 
 .emotion-12 {
@@ -717,7 +717,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   overflow: hidden;
   word-break: break-word;
   -webkit-hyphens: auto;
@@ -849,7 +849,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   overflow: hidden;
   background-color: #FFFFFF;
   opacity: 1;
-  color: #636464;
+  color: #454545;
   border-radius: 0px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
@@ -866,7 +866,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   align-items: center;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #FF4A4A;
+  background-color: #FF494A;
   color: #FFFFFF;
 }
 
@@ -893,13 +893,13 @@ exports[`<Toast /> component should render a toast with title & message when typ
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #323232;
+  color: #292929;
   margin-bottom: 4px;
   text-transform: capitalize;
 }
 
 .emotion-10 {
-  color: #636464;
+  color: #454545;
   border: 0;
   cursor: pointer;
   background: transparent;
@@ -911,7 +911,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 }
 
 .emotion-10:hover {
-  background-color: #F8F9FA;
+  background-color: #FFFFFF;
 }
 
 .emotion-12 {
@@ -921,7 +921,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   overflow: hidden;
   word-break: break-word;
   -webkit-hyphens: auto;
@@ -1043,7 +1043,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   overflow: hidden;
   background-color: #FFFFFF;
   opacity: 1;
-  color: #636464;
+  color: #454545;
   border-radius: 0px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
@@ -1087,13 +1087,13 @@ exports[`<Toast /> component should render a toast with title & message when typ
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #323232;
+  color: #292929;
   margin-bottom: 4px;
   text-transform: capitalize;
 }
 
 .emotion-10 {
-  color: #636464;
+  color: #454545;
   border: 0;
   cursor: pointer;
   background: transparent;
@@ -1105,7 +1105,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 }
 
 .emotion-10:hover {
-  background-color: #F8F9FA;
+  background-color: #FFFFFF;
 }
 
 .emotion-12 {
@@ -1115,7 +1115,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   overflow: hidden;
   word-break: break-word;
   -webkit-hyphens: auto;
@@ -1236,7 +1236,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   overflow: hidden;
   background-color: #FFFFFF;
   opacity: 1;
-  color: #636464;
+  color: #454545;
   border-radius: 0px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
@@ -1280,13 +1280,13 @@ exports[`<Toast /> component should render a toast with title & message when typ
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #323232;
+  color: #292929;
   margin-bottom: 4px;
   text-transform: capitalize;
 }
 
 .emotion-10 {
-  color: #636464;
+  color: #454545;
   border: 0;
   cursor: pointer;
   background: transparent;
@@ -1298,7 +1298,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 }
 
 .emotion-10:hover {
-  background-color: #F8F9FA;
+  background-color: #FFFFFF;
 }
 
 .emotion-12 {
@@ -1308,7 +1308,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   overflow: hidden;
   word-break: break-word;
   -webkit-hyphens: auto;
@@ -1430,7 +1430,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   overflow: hidden;
   background-color: #FFFFFF;
   opacity: 1;
-  color: #636464;
+  color: #454545;
   border-radius: 0px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
@@ -1447,7 +1447,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   align-items: center;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #FACC00;
+  background-color: #FFD000;
   color: #FFFFFF;
 }
 
@@ -1474,13 +1474,13 @@ exports[`<Toast /> component should render a toast with title & message when typ
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #323232;
+  color: #292929;
   margin-bottom: 4px;
   text-transform: capitalize;
 }
 
 .emotion-10 {
-  color: #636464;
+  color: #454545;
   border: 0;
   cursor: pointer;
   background: transparent;
@@ -1492,7 +1492,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 }
 
 .emotion-10:hover {
-  background-color: #F8F9FA;
+  background-color: #FFFFFF;
 }
 
 .emotion-12 {
@@ -1502,7 +1502,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   overflow: hidden;
   word-break: break-word;
   -webkit-hyphens: auto;

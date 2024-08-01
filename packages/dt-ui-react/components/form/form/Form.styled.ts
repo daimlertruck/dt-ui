@@ -16,7 +16,7 @@ export const GroupStyled = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  color: ${({ theme }) => theme.palette.content.body};
+  color: ${({ theme }) => theme.palette.content.default};
 `;
 
 export const LabelStyled = styled.div`

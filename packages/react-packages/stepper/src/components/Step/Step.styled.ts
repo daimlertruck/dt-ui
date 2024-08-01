@@ -16,7 +16,7 @@ export const LabelStyled = styled.span<LabelStyledProps>`
     ${theme.fontStyles.pSmall};
     color: ${
       color === 'disabled'
-        ? theme.palette.content.disabled
+        ? theme.palette.content.light
         : theme.palette[color].default
     };
   `}

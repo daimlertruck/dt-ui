@@ -13,7 +13,7 @@ export const FooterStyled = styled.div<FooterProps>`
 
   ${({ theme, hasBackgroundColor, hasBorder }) => `
       background-color: ${
-        hasBackgroundColor ? theme.palette.base.light : 'transparent'
+        hasBackgroundColor ? theme.palette.surface.light : 'transparent'
       };
       border-top: ${
         hasBorder ? `1px solid ${theme.palette.border.default}` : 'none'

@@ -38,7 +38,7 @@ const spinnerColors = (
   },
   negative: {
     main: theme.palette.content.contrast,
-    background: theme.palette.content.secondary,
+    background: theme.palette.content.medium,
   },
 });
 

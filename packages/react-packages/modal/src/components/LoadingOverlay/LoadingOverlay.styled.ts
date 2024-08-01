@@ -9,7 +9,7 @@ export const ModalLoadingOverlayStyled = styled.div`
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: ${hexToRgba(theme.palette.base.light, 0.8)};
+      background-color: ${hexToRgba(theme.palette.surface.light, 0.8)};
       display: flex;
       align-items: center;
       justify-content: center;

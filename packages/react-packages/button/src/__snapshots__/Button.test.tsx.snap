@@ -36,15 +36,15 @@ exports[`<Button /> component renders button html element with the correct title
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #004355;
-  border-color: #004355;
+  background-color: #004E64;
+  border-color: #004E64;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
   color: #FFFFFF;
-  background-color: #79AEBF;
-  border-color: #79AEBF;
+  background-color: #CCE3EB;
+  border-color: #CCE3EB;
 }
 
 @media only screen and (min-width: 600px) {
@@ -132,19 +132,20 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
 }
 
 .emotion-0:hover {
-  color: #004355;
-  border-color: #004355;
+  color: #00677F;
+  border-color: #00677F;
+  background-color: #CCE3EB;
 }
 
 .emotion-0:active {
-  color: #004355;
-  border-color: #004355;
+  color: #00677F;
+  border-color: #00677F;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
-  color: #79AEBF;
-  border-color: #79AEBF;
+  color: #CCE3EB;
+  border-color: #CCE3EB;
 }
 
 @media only screen and (min-width: 600px) {
@@ -251,15 +252,15 @@ exports[`<Button /> component when loading is true renders a spinner light theme
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #004355;
-  border-color: #004355;
+  background-color: #004E64;
+  border-color: #004E64;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
   color: #FFFFFF;
-  background-color: #79AEBF;
-  border-color: #79AEBF;
+  background-color: #CCE3EB;
+  border-color: #CCE3EB;
 }
 
 @media only screen and (min-width: 600px) {
@@ -285,7 +286,7 @@ exports[`<Button /> component when loading is true renders a spinner light theme
 .emotion-4 {
   width: 32px;
   height: 32px;
-  border: 2px solid #A1A2A3;
+  border: 2px solid undefined;
   border-radius: 50%;
   border-top: 2px solid #FFFFFF;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;

@@ -13,7 +13,7 @@ export const TableHeadStyled = styled.thead<TableHeadStyledProps>`
       `
         position: sticky;
         top: 0;
-        background-color: ${theme.palette.base.default};
+        background-color: ${theme.palette.surface.contrast};
         z-index: ${TABLE_HEADER_Z_INDEX};
         box-shadow: ${theme.shadows.xs};
       `

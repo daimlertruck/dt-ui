@@ -17,10 +17,10 @@ exports[`<Radio /> component renders Radio group with Radio 1 checked and Radio 
 
 .emotion-4 {
   background: #FFFFFF;
-  border: 1px solid #D3D4D5;
+  border: 1px solid #DEDEDE;
   border-radius: 50%;
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -28,21 +28,21 @@ exports[`<Radio /> component renders Radio group with Radio 1 checked and Radio 
 }
 
 .emotion-4:disabled {
-  background: #F8F9FA;
   pointer-events: none;
+  cursor: not-allowed;
 }
 
 .emotion-4:disabled+label {
-  color: #BABBBB;
+  color: #C1C1C1;
 }
 
 .emotion-4:checked {
-  border-width: 5px;
+  border-width: 7px;
   border-color: #00677F;
 }
 
 .emotion-4:checked:disabled {
-  border-color: #D3D4D5;
+  border-color: #004E64;
 }
 
 .emotion-4:checked:before {
@@ -60,7 +60,7 @@ exports[`<Radio /> component renders Radio group with Radio 1 checked and Radio 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   cursor: inherit;
 }
 
@@ -108,7 +108,7 @@ exports[`<Radio /> component renders Radio group with Radio 1 checked and Radio 
     </div>
     <div
       class="emotion-0 emotion-1"
-      style="flex-direction: row; gap: 8px; cursor: default;"
+      style="flex-direction: row; gap: 8px; cursor: not-allowed;"
     >
       <input
         class="emotion-4 emotion-5"

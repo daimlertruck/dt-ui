@@ -7,7 +7,7 @@ interface SelectDropdownStyledProps {
 
 export const SelectDropdownStyled = styled.button<SelectDropdownStyledProps>`
   ${({ theme, style, hasBorder = true, hasError = false }) => `
-    background: ${theme.palette.base.default};
+    background: ${theme.palette.surface.contrast};
     border: ${hasBorder ? `1px solid ${theme.palette.border.default}` : '0'};
     border-radius: 3px;
     padding: ${theme.spacing.xsmall} ${hasBorder ? theme.spacing.xmedium : '0'};
@@ -23,7 +23,7 @@ export const SelectDropdownStyled = styled.button<SelectDropdownStyledProps>`
     ${hasError && `border-bottom: 2px solid ${theme.palette.error.default}`};
     &:disabled {
       pointer-events: none;
-      background-color: ${theme.palette.base.light};
+      background-color: ${theme.palette.surface.light};
     }
     
     ${style}

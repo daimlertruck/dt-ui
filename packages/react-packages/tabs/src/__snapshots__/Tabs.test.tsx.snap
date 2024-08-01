@@ -27,7 +27,7 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #636464;
+  color: #454545;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -93,15 +93,15 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
   margin: 0;
   text-transform: none;
   background-color: transparent;
-  border-bottom: 1px solid #D3D4D5;
-  color: #636464;
+  border-bottom: 1px solid #DEDEDE;
+  color: #454545;
   padding: 12px 32px;
   cursor: pointer;
   white-space: nowrap;
 }
 
 .emotion-8:hover {
-  color: #004355;
+  color: #003041;
 }
 
 .emotion-12 {
@@ -122,8 +122,8 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
   margin: 0;
   text-transform: none;
   background-color: transparent;
-  border-bottom: 1px solid #D3D4D5;
-  color: #BABBBB;
+  border-bottom: 1px solid #DEDEDE;
+  color: #C1C1C1;
   padding: 12px 32px;
   cursor: not-allowed;
   white-space: nowrap;
@@ -141,7 +141,7 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
   >
     <i
       class="emotion-2 emotion-3"
-      color="#636464"
+      color="#454545"
       data-testid="left-arrow"
       style="visibility: hidden;"
     >
@@ -188,7 +188,7 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
     </div>
     <i
       class="emotion-2 emotion-3"
-      color="#636464"
+      color="#454545"
       data-testid="right-arrow"
       style="visibility: hidden;"
     >
@@ -225,7 +225,7 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #636464;
+  color: #454545;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -290,7 +290,7 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
   margin: 0;
   text-transform: none;
   background: transparent;
-  color: #636464;
+  color: #454545;
   padding: 12px 32px;
   cursor: pointer;
   white-space: nowrap;
@@ -318,7 +318,7 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
   margin: 0;
   text-transform: none;
   background: transparent;
-  color: #BABBBB;
+  color: #C1C1C1;
   padding: 12px 32px;
   cursor: not-allowed;
   white-space: nowrap;
@@ -336,7 +336,7 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
   >
     <i
       class="emotion-2 emotion-3"
-      color="#636464"
+      color="#454545"
       data-testid="left-arrow"
       style="visibility: hidden;"
     >
@@ -383,7 +383,7 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
     </div>
     <i
       class="emotion-2 emotion-3"
-      color="#636464"
+      color="#454545"
       data-testid="right-arrow"
       style="visibility: hidden;"
     >

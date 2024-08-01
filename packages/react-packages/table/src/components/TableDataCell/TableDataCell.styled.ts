@@ -29,7 +29,7 @@ export const CellStyled = styled.td<CellStyledProps>`
     border-top: 1px solid ${theme.palette.border.light};
     padding: ${theme.spacing['2xs']};
     text-align: ${textAlign};
-    color: ${theme.palette.content.body};
+    color: ${theme.palette.content.default};
     ${theme.fontStyles.body2};
 
     &:first-of-type {

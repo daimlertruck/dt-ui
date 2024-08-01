@@ -42,7 +42,7 @@ exports[`<Select /> component should render Select 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   padding: 8px 12px;
   gap: 8px;
   background-color: #FFFFFF;
@@ -77,7 +77,7 @@ exports[`<Select /> component should render Select 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   cursor: inherit;
   left: 15px;
   top: 15px;
@@ -109,7 +109,7 @@ exports[`<Select /> component should render Select 1`] = `
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #636464;
+  color: #454545;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -141,7 +141,7 @@ exports[`<Select /> component should render Select 1`] = `
   padding: 8px 16px;
   gap: 4px;
   background-color: #FFFFFF;
-  color: #636464;
+  color: #454545;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -152,12 +152,12 @@ exports[`<Select /> component should render Select 1`] = `
 
 .emotion-16:hover,
 .emotion-16:focus-within {
-  background-color: #ECF7FB;
+  background-color: #CCE3EB;
 }
 
 .emotion-16[aria-disabled="true"] {
   cursor: not-allowed;
-  color: #BABBBB;
+  color: #C1C1C1;
 }
 
 .emotion-16[aria-disabled="true"]:hover {
@@ -190,7 +190,7 @@ exports[`<Select /> component should render Select 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #BABBBB;
+  color: #C1C1C1;
 }
 
 <div>
@@ -226,7 +226,7 @@ exports[`<Select /> component should render Select 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#636464"
+            color="#454545"
             data-testid="icon"
           >
             expand_less
@@ -253,7 +253,7 @@ exports[`<Select /> component should render Select 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#636464"
+            color="#454545"
             data-testid="icon"
           >
             check
@@ -277,7 +277,7 @@ exports[`<Select /> component should render Select 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#636464"
+            color="#454545"
             data-testid="icon"
           >
             check
@@ -301,7 +301,7 @@ exports[`<Select /> component should render Select 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#636464"
+            color="#454545"
             data-testid="icon"
           >
             check
@@ -325,7 +325,7 @@ exports[`<Select /> component should render Select 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#636464"
+            color="#454545"
             data-testid="icon"
           >
             check
@@ -349,7 +349,7 @@ exports[`<Select /> component should render Select 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#636464"
+            color="#454545"
             data-testid="icon"
           >
             check
@@ -367,7 +367,7 @@ exports[`<Select /> component should render Select 1`] = `
     >
       <span
         class="emotion-58 emotion-59"
-        color="content.tertiary"
+        color="content.light"
         data-testid="typography"
       >
         you need to make a selection
@@ -419,13 +419,13 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   padding: 8px 12px;
   gap: 8px;
   background-color: #FFFFFF;
   border-radius: 0px;
   cursor: pointer;
-  border: 1px solid #D3D4D5;
+  border: 1px solid #DEDEDE;
 }
 
 .emotion-4:hover,
@@ -454,7 +454,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   cursor: inherit;
   left: 15px;
   top: 15px;
@@ -486,7 +486,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #636464;
+  color: #454545;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -538,7 +538,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#636464"
+            color="#454545"
             data-testid="icon"
           >
             expand_more

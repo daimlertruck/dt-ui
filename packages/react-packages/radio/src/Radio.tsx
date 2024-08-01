@@ -50,7 +50,7 @@ const Radio = ({
       style={{
         flexDirection: 'row',
         gap: 8,
-        cursor: isDisabled ? 'default' : 'pointer',
+        cursor: isDisabled ? 'not-allowed' : 'pointer',
       }}
     >
       <RadioInputStyled

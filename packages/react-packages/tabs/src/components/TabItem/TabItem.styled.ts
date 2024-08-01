@@ -28,7 +28,7 @@ export const TabItemStyled = styled.button<TabItemStyledProps>`
           };`
         : `
           background: ${
-            active ? `${theme.palette.base.default}` : 'transparent'
+            active ? `${theme.palette.surface.contrast}` : 'transparent'
           };`
     }
     
@@ -36,8 +36,8 @@ export const TabItemStyled = styled.button<TabItemStyledProps>`
       active
         ? theme.palette.primary.default
         : disabled
-        ? theme.palette.content.disabled
-        : theme.palette.content.body
+        ? theme.palette.content.light
+        : theme.palette.content.default
     };
     padding: ${theme.spacing['3xs']} ${theme.spacing.s};
     cursor: ${active ? 'default' : disabled ? 'not-allowed' : 'pointer'};
@@ -51,7 +51,7 @@ export const TabItemStyled = styled.button<TabItemStyledProps>`
         ${
           variant === 'book'
             ? `color: ${theme.palette.primary.dark};`
-            : `background: ${theme.palette.base.default};`
+            : `background: ${theme.palette.surface.contrast};`
         }        
       `
     }

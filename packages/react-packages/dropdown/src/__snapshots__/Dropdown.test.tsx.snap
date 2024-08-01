@@ -33,7 +33,7 @@ exports[`<Dropdown /> component renders a dropdown with default value 1`] = `
 
 .emotion-2:disabled {
   pointer-events: none;
-  background-color: #F8F9FA;
+  background-color: #FAFAFA;
 }
 
 .emotion-4 {
@@ -43,7 +43,7 @@ exports[`<Dropdown /> component renders a dropdown with default value 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
 }
 
 .emotion-6 {
@@ -53,7 +53,7 @@ exports[`<Dropdown /> component renders a dropdown with default value 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
 }
 
 .emotion-8 {
@@ -90,14 +90,14 @@ exports[`<Dropdown /> component renders a dropdown with default value 1`] = `
       >
         <p
           class="emotion-4 emotion-5"
-          color="content.body"
+          color="content.default"
           data-testid="typography"
         >
           Label
         </p>
         <p
           class="emotion-6 emotion-5"
-          color="content.body"
+          color="content.default"
           data-testid="typography"
           style="text-overflow: ellipsis; overflow: hidden;"
         >
@@ -149,7 +149,7 @@ exports[`<Dropdown /> component renders a dropdown without border 1`] = `
 
 .emotion-2:disabled {
   pointer-events: none;
-  background-color: #F8F9FA;
+  background-color: #FAFAFA;
 }
 
 .emotion-4 {
@@ -159,7 +159,7 @@ exports[`<Dropdown /> component renders a dropdown without border 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
 }
 
 .emotion-6 {
@@ -169,7 +169,7 @@ exports[`<Dropdown /> component renders a dropdown without border 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
 }
 
 .emotion-8 {
@@ -206,14 +206,14 @@ exports[`<Dropdown /> component renders a dropdown without border 1`] = `
       >
         <p
           class="emotion-4 emotion-5"
-          color="content.body"
+          color="content.default"
           data-testid="typography"
         >
           Label
         </p>
         <p
           class="emotion-6 emotion-5"
-          color="content.body"
+          color="content.default"
           data-testid="typography"
           style="text-overflow: ellipsis; overflow: hidden;"
         >
@@ -242,7 +242,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
 
 .emotion-2 {
   background: #FFFFFF;
-  border: 1px solid #D3D4D5;
+  border: 1px solid #DEDEDE;
   border-radius: 3px;
   padding: 8px 16px;
   position: relative;
@@ -265,7 +265,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
 
 .emotion-2:disabled {
   pointer-events: none;
-  background-color: #F8F9FA;
+  background-color: #FAFAFA;
 }
 
 .emotion-4 {
@@ -275,7 +275,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
 }
 
 .emotion-6 {
@@ -285,7 +285,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
 }
 
 .emotion-8 {
@@ -309,7 +309,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
 
 .emotion-10 {
   background: #FFFFFF;
-  border: 1px solid #D3D4D5;
+  border: 1px solid #DEDEDE;
   border-radius: 0px;
   width: 100%;
   padding: 8px 0;
@@ -328,7 +328,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636464;
+  color: #454545;
   list-style: none;
   padding: 8px 16px;
   text-overflow: ellipsis;
@@ -336,7 +336,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
 }
 
 .emotion-12:hover {
-  background: #ECF7FB;
+  background: #CCE3EB;
   cursor: pointer;
 }
 
@@ -368,14 +368,14 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
       >
         <p
           class="emotion-4 emotion-5"
-          color="content.body"
+          color="content.default"
           data-testid="typography"
         >
           Label
         </p>
         <p
           class="emotion-6 emotion-5"
-          color="content.body"
+          color="content.default"
           data-testid="typography"
           style="text-overflow: ellipsis; overflow: hidden;"
         >

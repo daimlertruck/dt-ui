@@ -46,7 +46,7 @@ exports[`<Avatar /> component renders span html element with the correct content
 }
 
 .emotion-2>*:hover {
-  background-color: #004355;
+  background-color: #003041;
 }
 
 <div>

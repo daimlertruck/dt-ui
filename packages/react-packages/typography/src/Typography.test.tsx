@@ -9,7 +9,7 @@ describe('<Typography /> component', () => {
   it('should render a red h1 html element with the given content', () => {
     const { container } = render(
       <ProvidedTypography
-        color='red_100'
+        color='red_90'
         dataTestId='typography-h1'
         element='h1'
         fontStyles='h4'
@@ -20,7 +20,7 @@ describe('<Typography /> component', () => {
 
     const h1Element = container.querySelector('h1');
     expect(h1Element).toBeInTheDocument();
-    expect(h1Element).toHaveStyle({ color: 'rgb(210, 28, 28)' });
+    expect(h1Element).toHaveStyle({ color: 'rgb(57, 0, 0)' });
   });
 
   it('should render a p html element with the primary color', () => {

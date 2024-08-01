@@ -10,8 +10,8 @@ export const SegmentedControlOptionStyled = styled.button<{
     align-items: center;
     gap: ${theme.spacing['5xs']};
     cursor: pointer;
-    background-color: ${theme.palette.base.default};
-    color: ${theme.palette.content.body};
+    background-color: ${theme.palette.surface.contrast};
+    color: ${theme.palette.content.default};
     border: none;
     border-radius: ${theme.shape.button};
     padding: ${theme.spacing['5xs']} ${
@@ -19,11 +19,11 @@ export const SegmentedControlOptionStyled = styled.button<{
   };
 
     &:not(:disabled):hover {
-      background-color: ${theme.palette.base.light};
-      color: ${theme.palette.content.heading};
+      background-color: ${theme.palette.primary.light};
+      color: ${theme.palette.content.default};
 
       i {
-        color: ${theme.palette.content.heading};
+        color: ${theme.palette.content.dark};
       }
     }
 
@@ -37,11 +37,11 @@ export const SegmentedControlOptionStyled = styled.button<{
     }
 
     &:disabled {
-        color: ${theme.palette.content.disabled};
+        color: ${theme.palette.content.light};
         cursor: not-allowed;
 
         i {
-          color: ${theme.palette.content.disabled};
+          color: ${theme.palette.content.light};
         }
     }
 

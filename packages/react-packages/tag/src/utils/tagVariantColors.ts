@@ -27,7 +27,7 @@ const getColorWithShade = ({
   color,
   shade,
 }: Pick<TagVariantColorsProps, 'color'> & {
-  shade: '90' | '60' | '30' | '10';
+  shade: '90' | 'default' | '30' | '10';
   theme: Theme;
 }) => {
   const { colors, palette } = theme;
@@ -35,10 +35,16 @@ const getColorWithShade = ({
   if (color === 'primary') {
     return {
       '90': palette.primary.dark,
-      '60': palette.primary.default,
+      default: palette.primary.default,
       '30': palette.primary.medium,
       '10': palette.primary.contrast,
     }[shade];
+  }
+
+  if (shade === 'default') {
+    return colors[
+      (color === 'grey' ? 'grey_50' : color) as keyof Theme['colors']
+    ];
   }
 
   const colorWithShade: keyof Theme['colors'] = `${color}_${shade}`;
@@ -61,7 +67,7 @@ export const tagVariantColors = ({
   const colorShade60 = getColorWithShade({
     theme,
     color,
-    shade: '60',
+    shade: 'default',
   });
   const colorShade30 = getColorWithShade({
     theme,

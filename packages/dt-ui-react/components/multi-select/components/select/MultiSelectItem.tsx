@@ -72,12 +72,12 @@ export const MultiSelectItem = ({
         onClick={handleOpenMultiSelect}
       >
         <div style={{ overflow: 'hidden' }}>
-          <Typography color='content.body' fontStyles='pXXSmall'>
+          <Typography color='content.default' fontStyles='pXXSmall'>
             {label}
           </Typography>
           {!state.length ? (
             <Typography
-              color='content.disabled'
+              color='content.light'
               fontStyles='pSmall'
               style={{ textOverflow: 'ellipsis', overflow: 'hidden' }}
             >
@@ -102,7 +102,7 @@ export const MultiSelectItem = ({
         </div>
         {!isOpen ? (
           <OutlinedArrowDropDown
-            color={isDisabled ? theme.palette.content.disabled : 'currentColor'}
+            color={isDisabled ? theme.palette.content.light : 'currentColor'}
           />
         ) : (
           <OutlinedArrowDropUp />

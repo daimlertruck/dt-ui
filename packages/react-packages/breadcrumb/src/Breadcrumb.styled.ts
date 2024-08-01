@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const BreadcrumbStyled = styled.nav`
   ${({ theme }) => `
     ${theme.fontStyles.body2}
-    color: ${theme.palette.content.body};
+    color: ${theme.palette.content.default};
     margin-bottom: ${theme.spacing['3xs']};
     overflow: hidden;
   `}
@@ -51,7 +51,7 @@ export const ItemStyled = styled.li`
     }
 
     svg {
-      color: ${theme.palette.content.body};
+      color: ${theme.palette.content.default};
     }
 
     &:last-child * {

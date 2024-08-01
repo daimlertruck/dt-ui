@@ -12,12 +12,12 @@ export const IconButtonStyled = styled.button<IconButtonStyledProps>`
     border: none;
     cursor: pointer;
     background-color: transparent;
-    color: ${theme.palette.content.body};
+    color: ${theme.palette.content.default};
 
     &:hover {
       color: ${
         color === 'default'
-          ? theme.palette.content.heading
+          ? theme.palette.content.dark
           : theme.palette[color].default
       };
     };

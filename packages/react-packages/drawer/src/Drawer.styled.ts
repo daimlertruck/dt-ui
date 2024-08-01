@@ -26,7 +26,7 @@ export const OverlayStyled = styled.div<DrawerBaseProps>`
     width: 100%;
     height: 100vh;
     position: absolute;
-    background-color: ${theme.palette.base.dark};
+    background-color: ${theme.palette.surface.dark};
     opacity: ${isVisible ? 0.2 : 0};
     transition: opacity ${theme.animations.emphasizedDecelerate.duration}
       ${theme.animations.emphasizedDecelerate.timingFunction};
@@ -43,7 +43,7 @@ export const DrawerStyled = styled.div<DrawerBaseProps>`
     position: absolute;
     top: 0;
     right: 0;
-    background-color: ${theme.palette.base.default};
+    background-color: ${theme.palette.surface.contrast};
     transform: ${isVisible ? 'translateX(0)' : 'translateX(100%)'};
     transition: transform ${theme.animations.emphasizedDecelerate.duration}
       ${theme.animations.emphasizedDecelerate.timingFunction};

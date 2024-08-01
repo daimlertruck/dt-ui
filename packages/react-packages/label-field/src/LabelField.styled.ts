@@ -12,12 +12,12 @@ export const LabelFieldStyled = styled.label<LabelFieldProps>`
 
   color: ${({ theme, disabled, hasError }) => {
     if (disabled) {
-      return theme.palette.content.disabled;
+      return theme.palette.content.light;
     }
     if (hasError) {
       return theme.palette.error.default;
     }
-    return theme.palette.content.body;
+    return theme.palette.content.default;
   }};
   cursor: inherit;
   left: 15px;

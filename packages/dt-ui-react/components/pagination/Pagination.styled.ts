@@ -29,11 +29,11 @@ export const ArrowStyled = styled.button<ArrowStyledProps>`
     justify-content: center;
     width: 32px;
     height: 32px;
-    background-color: ${theme.palette.base.default};
+    background-color: ${theme.palette.surface.contrast};
     border: none;
     border-radius: 3px;
     color: ${
-      disabled ? theme.palette.content.body : theme.palette.primary.default
+      disabled ? theme.palette.content.default : theme.palette.primary.default
     };
     cursor: ${disabled ? 'default' : 'pointer'};
   `}
@@ -47,8 +47,8 @@ export const InputStyled = styled.input<InputStyledProps>`
     margin: 0px;
     width: 50px;
     height: 32px;
-    background-color: ${theme.palette.base.default};
-    color: ${theme.palette.content.body};
+    background-color: ${theme.palette.surface.contrast};
+    color: ${theme.palette.content.default};
     border: ${
       hasError
         ? `2px solid ${theme.palette.error.default}`

@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 export const DropdownMenuStyled = styled.ul`
   ${({ theme }) => `
-    background: ${theme.palette.base.default};
+    background: ${theme.palette.surface.contrast};
     border: 1px solid ${theme.palette.border.default};
     border-radius: ${theme.shape.dropdown};
     width: 100%;
