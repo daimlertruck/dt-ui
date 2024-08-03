@@ -10,7 +10,7 @@ export const colors = {
   blue_80: '#025497',
   blue_90: '#013C6B',
   blue_100: '#002441',
-  grey_10: '#F8F9FA',
+  grey_10: '#F3F3F5',
   grey_20: '#EBECED',
   grey_30: '#D3D4D5',
   grey_40: '#BABBBB',
