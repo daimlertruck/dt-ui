@@ -1,5 +1,19 @@
 # @dt-ui/react-avatar
 
+## 0.1.0-beta.26
+
+### Minor Changes
+
+- feat: update core and semantic colors
+- feat: remove greenlane theme
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.23
+  - @dt-ui/react-tooltip@0.1.0-beta.26
+
 ## 0.1.0-beta.25
 
 ### Minor Changes

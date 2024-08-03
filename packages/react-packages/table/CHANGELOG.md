@@ -1,5 +1,18 @@
 # @dt-ui/react-table
 
+## 0.1.0-beta.17
+
+### Minor Changes
+
+- feat: update core and semantic colors
+- feat: remove greenlane theme
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.23
+
 ## 0.1.0-beta.16
 
 ### Minor Changes

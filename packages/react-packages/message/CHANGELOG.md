@@ -1,5 +1,19 @@
 # @dt-ui/react-message
 
+## 0.1.0-beta.27
+
+### Minor Changes
+
+- feat: update core and semantic colors
+- feat: remove greenlane theme
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.23
+  - @dt-ui/react-typography@0.1.0-beta.14
+
 ## 0.1.0-beta.26
 
 ### Minor Changes

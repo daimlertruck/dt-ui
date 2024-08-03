@@ -1,5 +1,18 @@
 # @dt-ui/react-icon
 
+## 0.1.0-beta.20
+
+### Minor Changes
+
+- feat: update core and semantic colors
+- feat: remove greenlane theme
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.23
+
 ## 0.1.0-beta.19
 
 ### Minor Changes

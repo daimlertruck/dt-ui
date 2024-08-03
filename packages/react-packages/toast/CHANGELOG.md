@@ -1,5 +1,19 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.31
+
+### Minor Changes
+
+- feat: update core and semantic colors
+- feat: remove greenlane theme
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.14
+  - @dt-ui/react-core@0.1.0-beta.23
+
 ## 0.1.0-beta.30
 
 ### Minor Changes

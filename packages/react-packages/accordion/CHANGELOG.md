@@ -1,5 +1,19 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.19
+
+### Minor Changes
+
+- feat: update core and semantic colors
+- feat: remove greenlane theme
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.23
+  - @dt-ui/react-divider@0.1.0-beta.22
+
 ## 0.1.0-beta.18
 
 ### Minor Changes

@@ -1,5 +1,19 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.13
+
+### Minor Changes
+
+- feat: update core and semantic colors
+- feat: remove greenlane theme
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.20
+  - @dt-ui/react-typography@0.1.0-beta.14
+
 ## 0.1.0-beta.12
 
 ### Minor Changes
