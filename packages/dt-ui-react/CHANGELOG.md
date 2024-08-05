@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.42
+
+### Patch Changes
+
+- chore: update theme color
+
 ## 0.1.0-alpha.41
 
 ### Patch Changes
