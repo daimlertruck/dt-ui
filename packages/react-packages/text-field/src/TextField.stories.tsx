@@ -1,41 +1,46 @@
-import { CopyIcon, IconButton } from '@dt-ui/react';
+import { Icon } from '@dt-ui/react-icon';
 import { TextField, TextFieldProps } from '@dt-ui/react-text-field';
-import { Tooltip } from '@dt-ui/react-tooltip';
 import { type Meta, type StoryObj } from '@storybook/react';
-
-const CopyButton = (
-  <Tooltip>
-    <IconButton dataTestId='copy-button' onClick={() => console.log('here')}>
-      <CopyIcon />
-    </IconButton>
-    <Tooltip.Content>Copy to clipboard</Tooltip.Content>
-  </Tooltip>
-);
+import { ReactNode } from 'react';
 
 const TextFieldTypeOptions = {
   Text: 'text',
-  Radio: 'radio',
-  Checkbox: 'checkbox',
-  Button: 'button',
   Date: 'date',
   DatetimeLocal: 'datetime-local',
   Email: 'email',
-  File: 'file',
-  Hidden: 'hidden',
-  Image: 'image',
   Month: 'month',
   Number: 'number',
   Password: 'password',
-  Reset: 'reset',
   Search: 'search',
-  Submit: 'submit',
   Tel: 'tel',
   Time: 'time',
   Url: 'url',
   Week: 'week',
 };
 
-const meta: Meta<TextFieldProps> = {
+type TextFieldPropsWithExtrasProp = TextFieldProps & {
+  extras: 'suffix' | 'prefix' | 'both' | 'none';
+};
+
+const getExtraElements = (
+  extras: 'suffix' | 'prefix' | 'both' | 'none'
+): { extraPrefix?: ReactNode; extraSuffix?: ReactNode } => {
+  switch (extras) {
+    case 'prefix':
+      return { extraPrefix: <Icon code='home_work' /> };
+    case 'suffix':
+      return { extraSuffix: <Icon code='home_work' /> };
+    case 'both':
+      return {
+        extraPrefix: <Icon code='home_work' />,
+        extraSuffix: <Icon code='home_work' />,
+      };
+    default:
+      return {};
+  }
+};
+
+const meta: Meta<TextFieldPropsWithExtrasProp> = {
   component: TextField,
   title: 'Data Display/TextField',
   argTypes: {
@@ -50,36 +55,39 @@ const meta: Meta<TextFieldProps> = {
       },
     },
     maxLength: { control: { type: 'number', min: 1 } },
-    icon: {
-      options: [true, undefined],
+    extras: {
+      options: ['suffix', 'prefix', 'both', 'none'],
       control: {
-        type: 'radio',
-        labels: {
-          true: 'With copy button example',
-          undefined: 'Without copy button example',
-        },
+        type: 'select',
       },
     },
     type: {
       options: TextFieldTypeOptions,
       control: { type: 'select' },
     },
+    variant: {
+      options: {
+        outlined: 'outlined',
+        bottomLine: 'bottomLine',
+      },
+      control: { type: 'select' },
+    },
   },
-  render: ({ onChange, icon, ...props }) => (
+  render: ({ onChange, extras, ...props }) => (
     <TextField
       {...props}
       {...(onChange &&
         ({
           onChange: (data: string) => console.log('data changed: ', data),
         } as unknown as TextFieldProps['onChange']))}
-      {...(icon && { icon: CopyButton })}
+      {...getExtraElements(extras)}
     />
   ),
 };
 
 export default meta;
 
-export const Default: StoryObj<TextFieldProps> = {
+export const Default: StoryObj<TextFieldPropsWithExtrasProp> = {
   args: {
     type: TextFieldTypeOptions.Text,
     name: 'field-name',
@@ -90,9 +98,12 @@ export const Default: StoryObj<TextFieldProps> = {
     required: true,
     requiredMessage: '',
     onChange: undefined,
-    icon: undefined,
     hasError: false,
-    isLoading: false,
-    isDisabled: false,
+    disabled: false,
+    isFloatingLabel: true,
+    readOnly: false,
+    placeholder: 'My field placeholder',
+    variant: 'outlined',
+    extras: 'none',
   },
 };

@@ -71,16 +71,22 @@ exports[`<Select /> component should render Select 1`] = `
 }
 
 .emotion-8 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #838383;
+  cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  cursor: inherit;
-  left: 15px;
-  top: 15px;
+  left: 16px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -217,6 +223,8 @@ exports[`<Select /> component should render Select 1`] = `
           <label
             class="emotion-8 emotion-9"
             data-testid="label-field"
+            for="downshift-:r0:-toggle-button"
+            id="downshift-:r0:-label"
           >
             select
           </label>
@@ -448,16 +456,22 @@ exports[`<Select /> component should render Select as multi select 1`] = `
 }
 
 .emotion-8 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #838383;
+  cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  cursor: inherit;
-  left: 15px;
-  top: 15px;
+  left: 16px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -529,6 +543,8 @@ exports[`<Select /> component should render Select as multi select 1`] = `
           <label
             class="emotion-8 emotion-9"
             data-testid="label-field"
+            for="downshift-:r4:-toggle-button"
+            id="downshift-:r4:-label"
           >
             select
           </label>

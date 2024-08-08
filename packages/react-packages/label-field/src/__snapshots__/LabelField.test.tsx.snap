@@ -2,7 +2,7 @@
 
 exports[`<LabelField /> component it renders a disabled label field 1`] = `
 .emotion-0 {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
@@ -10,8 +10,14 @@ exports[`<LabelField /> component it renders a disabled label field 1`] = `
   text-transform: none;
   color: #C1C1C1;
   cursor: inherit;
-  left: 15px;
-  top: 15px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  left: 16px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -38,16 +44,22 @@ exports[`<LabelField /> component it renders a disabled label field 1`] = `
 
 exports[`<LabelField /> component it renders a label field as required 1`] = `
 .emotion-0 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #838383;
+  cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  cursor: inherit;
-  left: 15px;
-  top: 15px;
+  left: 16px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -90,16 +102,22 @@ exports[`<LabelField /> component it renders a label field as required 1`] = `
 
 exports[`<LabelField /> component when the LabelField is active it should render a small font-size and -45º translation 1`] = `
 .emotion-0 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #838383;
+  cursor: inherit;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  cursor: inherit;
-  left: 15px;
-  top: 15px;
+  left: 16px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(-45%);
   -moz-transform: translateY(-45%);
@@ -125,16 +143,22 @@ exports[`<LabelField /> component when the LabelField is active it should render
 
 exports[`<LabelField /> component when the LabelField is inactive it should render a bigger font-size and 0 translation 1`] = `
 .emotion-0 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #838383;
+  cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  cursor: inherit;
-  left: 15px;
-  top: 15px;
+  left: 16px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);

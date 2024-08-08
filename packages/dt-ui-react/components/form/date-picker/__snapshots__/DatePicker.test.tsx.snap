@@ -2,23 +2,49 @@
 
 exports[`<DatePicker /> component onBlur event should render error message when date is below min 1`] = `
 .emotion-0 {
-  display: block;
-  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
   width: 100%;
   position: relative;
 }
 
+.emotion-0 i {
+  color: #838383;
+}
+
+.emotion-0:has(input[disabled]) i,
+.emotion-0:has(input[disabled]) label>span {
+  color: #C1C1C1;
+}
+
+.emotion-0:has(input[readonly]:not(input[disabled])) label,
+.emotion-0:has(input[readonly]:not(input[disabled])) label>span {
+  color: #838383;
+}
+
 .emotion-2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #FF494A;
+  cursor: inherit;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  cursor: inherit;
-  left: 15px;
-  top: 15px;
+  left: 16px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(-45%);
   -moz-transform: translateY(-45%);
@@ -29,37 +55,103 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 }
 
 .emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-6 {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
+  color: #454545;
   background-color: #FFFFFF;
   border-radius: 0px;
-  border: 1px solid #FF494A;
-  color: #454545;
+  border-style: solid;
+  outline: 0;
+  border-width: 1px;
+  border-color: #C1C1C1;
   min-width: 198px;
-  padding: 20px 15px 5px 15px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: 24px 16px 8px;
   width: 100%;
   height: 53px;
 }
 
-.emotion-4:focus {
-  outline: 1px solid #00677F;
-  border: 1px solid transparent;
+.emotion-6:focus {
+  border-color: #00677F;
 }
 
-.emotion-6 {
-  padding-left: 15px;
+.emotion-6[data-error="true"] {
+  border-color: #FF494A;
+}
+
+.emotion-6[data-error="true"]:focus {
+  border-color: #FF494A;
+}
+
+.emotion-6[readonly]:not([disabled]) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-6:disabled {
+  color: #C1C1C1;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-6:disabled::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled::placeholder {
+  color: transparent;
+}
+
+.emotion-6::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6::placeholder {
+  color: transparent;
 }
 
 .emotion-8 {
+  padding-left: 16px;
+}
+
+.emotion-10 {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -77,19 +169,25 @@ exports[`<DatePicker /> component onBlur event should render error message when 
     >
       Choose a date
     </label>
-    <input
-      class="emotion-4 emotion-5"
-      id="Choose-a-date"
-      min="2023-03-30"
-      name="Choose-a-date"
-      type="date"
-      value="2023-02-01"
-    />
     <div
-      class="emotion-6 emotion-7"
+      class="emotion-4 emotion-5"
+      style="flex-direction: row;"
+    >
+      <input
+        class="emotion-6 emotion-7"
+        data-error="true"
+        id="Choose-a-date"
+        min="2023-03-30"
+        name="Choose-a-date"
+        type="date"
+        value="2023-02-01"
+      />
+    </div>
+    <div
+      class="emotion-8 emotion-9"
     >
       <span
-        class="emotion-8 emotion-9"
+        class="emotion-10 emotion-11"
         color="error.default"
         data-testid="typography"
       >
@@ -102,23 +200,49 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 exports[`<DatePicker /> component onBlur event should render error message when date is higher than max 1`] = `
 .emotion-0 {
-  display: block;
-  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
   width: 100%;
   position: relative;
 }
 
+.emotion-0 i {
+  color: #838383;
+}
+
+.emotion-0:has(input[disabled]) i,
+.emotion-0:has(input[disabled]) label>span {
+  color: #C1C1C1;
+}
+
+.emotion-0:has(input[readonly]:not(input[disabled])) label,
+.emotion-0:has(input[readonly]:not(input[disabled])) label>span {
+  color: #838383;
+}
+
 .emotion-2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #FF494A;
+  cursor: inherit;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  cursor: inherit;
-  left: 15px;
-  top: 15px;
+  left: 16px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(-45%);
   -moz-transform: translateY(-45%);
@@ -129,37 +253,103 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 }
 
 .emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-6 {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
+  color: #454545;
   background-color: #FFFFFF;
   border-radius: 0px;
-  border: 1px solid #FF494A;
-  color: #454545;
+  border-style: solid;
+  outline: 0;
+  border-width: 1px;
+  border-color: #C1C1C1;
   min-width: 198px;
-  padding: 20px 15px 5px 15px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: 24px 16px 8px;
   width: 100%;
   height: 53px;
 }
 
-.emotion-4:focus {
-  outline: 1px solid #00677F;
-  border: 1px solid transparent;
+.emotion-6:focus {
+  border-color: #00677F;
 }
 
-.emotion-6 {
-  padding-left: 15px;
+.emotion-6[data-error="true"] {
+  border-color: #FF494A;
+}
+
+.emotion-6[data-error="true"]:focus {
+  border-color: #FF494A;
+}
+
+.emotion-6[readonly]:not([disabled]) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-6:disabled {
+  color: #C1C1C1;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-6:disabled::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled::placeholder {
+  color: transparent;
+}
+
+.emotion-6::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6::placeholder {
+  color: transparent;
 }
 
 .emotion-8 {
+  padding-left: 16px;
+}
+
+.emotion-10 {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -177,19 +367,25 @@ exports[`<DatePicker /> component onBlur event should render error message when 
     >
       Choose a date
     </label>
-    <input
-      class="emotion-4 emotion-5"
-      id="Choose-a-date"
-      max="2025-03-30"
-      name="Choose-a-date"
-      type="date"
-      value="2026-02-01"
-    />
     <div
-      class="emotion-6 emotion-7"
+      class="emotion-4 emotion-5"
+      style="flex-direction: row;"
+    >
+      <input
+        class="emotion-6 emotion-7"
+        data-error="true"
+        id="Choose-a-date"
+        max="2025-03-30"
+        name="Choose-a-date"
+        type="date"
+        value="2026-02-01"
+      />
+    </div>
+    <div
+      class="emotion-8 emotion-9"
     >
       <span
-        class="emotion-8 emotion-9"
+        class="emotion-10 emotion-11"
         color="error.default"
         data-testid="typography"
       >
@@ -202,23 +398,49 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 exports[`<DatePicker /> component should render date input correctly 1`] = `
 .emotion-0 {
-  display: block;
-  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
   width: 100%;
   position: relative;
 }
 
+.emotion-0 i {
+  color: #838383;
+}
+
+.emotion-0:has(input[disabled]) i,
+.emotion-0:has(input[disabled]) label>span {
+  color: #C1C1C1;
+}
+
+.emotion-0:has(input[readonly]:not(input[disabled])) label,
+.emotion-0:has(input[readonly]:not(input[disabled])) label>span {
+  color: #838383;
+}
+
 .emotion-2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #838383;
+  cursor: inherit;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  cursor: inherit;
-  left: 15px;
-  top: 15px;
+  left: 16px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(-45%);
   -moz-transform: translateY(-45%);
@@ -239,27 +461,93 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
 }
 
 .emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-8 {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
+  color: #454545;
   background-color: #FFFFFF;
   border-radius: 0px;
-  border: 1px solid #DEDEDE;
-  color: #454545;
+  border-style: solid;
+  outline: 0;
+  border-width: 1px;
+  border-color: #C1C1C1;
   min-width: 198px;
-  padding: 20px 15px 5px 15px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: 24px 16px 8px;
   width: 100%;
   height: 53px;
 }
 
-.emotion-6:focus {
-  outline: 1px solid #00677F;
-  border: 1px solid transparent;
+.emotion-8:focus {
+  border-color: #00677F;
+}
+
+.emotion-8[data-error="true"] {
+  border-color: #FF494A;
+}
+
+.emotion-8[data-error="true"]:focus {
+  border-color: #FF494A;
+}
+
+.emotion-8[readonly]:not([disabled]) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-8:disabled {
+  color: #C1C1C1;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-8:disabled::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-8:disabled::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-8:disabled:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-8:disabled::placeholder {
+  color: transparent;
+}
+
+.emotion-8::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-8::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-8:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-8::placeholder {
+  color: transparent;
 }
 
 <div>
@@ -280,15 +568,21 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
         *
       </span>
     </label>
-    <input
+    <div
       class="emotion-6 emotion-7"
-      id="Choose-a-date"
-      max="2025-03-30"
-      min="2023-03-30"
-      name="Choose-a-date"
-      type="date"
-      value=""
-    />
+      style="flex-direction: row;"
+    >
+      <input
+        class="emotion-8 emotion-9"
+        data-error="false"
+        id="Choose-a-date"
+        max="2025-03-30"
+        min="2023-03-30"
+        name="Choose-a-date"
+        type="date"
+        value=""
+      />
+    </div>
   </div>
 </div>
 `;

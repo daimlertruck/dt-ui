@@ -1,28 +1,28 @@
+import { BaseProps } from '@dt-ui/react-core';
 import { Typography } from '@dt-ui/react-typography';
-import { CSSProperties } from 'react';
+import { ComponentPropsWithoutRef } from 'react';
 
 import { LabelFieldStyled } from './LabelField.styled';
 
-export interface LabelFieldProps {
-  children: React.ReactNode;
-  forId: string;
+export interface LabelFieldProps
+  extends ComponentPropsWithoutRef<'label'>,
+    BaseProps {
   isDisabled?: boolean;
   isActive?: boolean;
-  dataTestId?: string;
-  style?: CSSProperties;
   hasError?: boolean;
   isRequired?: boolean;
+  isFloating?: boolean;
 }
 
 export const LabelField = ({
   children,
-  isDisabled,
-  forId,
+  isDisabled = false,
   isActive = false,
   dataTestId,
-  style,
   isRequired,
   hasError = false,
+  isFloating = true,
+  ...rest
 }: LabelFieldProps) => {
   const testId = dataTestId ?? 'label-field';
 
@@ -31,9 +31,9 @@ export const LabelField = ({
       data-testid={testId}
       disabled={isDisabled}
       hasError={hasError}
-      htmlFor={forId}
       isActive={isActive}
-      style={style}
+      isFloating={isFloating}
+      {...rest}
     >
       {children}
       {isRequired ? (

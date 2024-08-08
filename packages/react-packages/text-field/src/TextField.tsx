@@ -1,45 +1,46 @@
+import { Box } from '@dt-ui/react-box';
 import { BaseProps } from '@dt-ui/react-core';
 import { LabelField } from '@dt-ui/react-label-field';
-import { Spinner } from '@dt-ui/react-spinner';
 import { Typography } from '@dt-ui/react-typography';
-import React, {
+import {
   useState,
   useEffect,
-  ChangeEvent,
-  MutableRefObject,
-  HTMLInputTypeAttribute,
   ReactNode,
+  ComponentPropsWithoutRef,
+  RefObject,
+  FocusEvent,
+  ChangeEvent,
 } from 'react';
 
 import {
   TextFieldStyled,
   InputFieldStyled,
-  InputFieldIconStyled,
   TextFieldMessageStyled,
+  InputExtraPrefixStyled,
+  InputExtraSuffixStyled,
 } from './TextField.styled';
 
-export interface TextFieldProps extends BaseProps {
+export interface TextFieldProps
+  extends ComponentPropsWithoutRef<'input'>,
+    BaseProps {
   label: string;
-  isDisabled?: boolean;
-  isLoading?: boolean;
-  type?: HTMLInputTypeAttribute;
+  isFloatingLabel?: boolean;
+  extraPrefix?: ReactNode;
+  extraSuffix?: ReactNode;
   hasError?: boolean;
-  name?: string;
-  required?: boolean;
   requiredMessage?: string;
   initialValue?: string;
-  maxLength?: number;
-  inputRef?: MutableRefObject<HTMLInputElement>;
+  inputRef?: RefObject<HTMLInputElement>;
   message?: string;
-  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
-  icon?: ReactNode;
+  variant?: 'outlined' | 'bottomLine';
 }
 
 export const TextField = ({
-  hasError: hasErrorProp = false,
-  isDisabled,
-  isLoading,
+  hasError = false,
+  extraPrefix,
+  extraSuffix,
   label,
+  isFloatingLabel = true,
   name,
   required,
   requiredMessage,
@@ -47,16 +48,16 @@ export const TextField = ({
   children,
   initialValue,
   inputRef,
-  maxLength,
   message: messageProp = '',
   type = 'text',
-  icon,
+  variant = 'outlined',
+  disabled = false,
   onChange = () => null,
+  ...rest
 }: TextFieldProps) => {
   const [activeInput, setActiveInput] = useState(false);
   const [inputValue, setInputValue] = useState('');
-  const [hasError, setHasError] = useState(hasErrorProp);
-  const [message, setMessage] = useState(messageProp);
+  const [hasRequiredError, setHasRequiredError] = useState(false);
   const id = label.replaceAll(' ', '-');
 
   useEffect(() => {
@@ -70,72 +71,94 @@ export const TextField = ({
     }
   }, [initialValue]);
 
-  useEffect(() => {
-    setHasError(hasErrorProp);
-    setMessage(messageProp);
-  }, [hasErrorProp, initialValue, messageProp, inputValue]);
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
+    setHasRequiredError(false);
+
     if (onChange) {
       onChange(event);
     }
   };
 
-  const onFocus = () => {
+  const onFocus = (event: FocusEvent<HTMLInputElement>) => {
     setActiveInput(true);
+
+    if (rest.onFocus) {
+      rest.onFocus(event);
+    }
   };
 
-  const onBlur = (event: ChangeEvent<HTMLInputElement>) => {
+  const onBlur = (event: FocusEvent<HTMLInputElement>) => {
     const isEmptyOrOnlySpaces = event.currentTarget.value.trim().length === 0;
     if (isEmptyOrOnlySpaces) {
       setActiveInput(false);
 
       if (required && requiredMessage) {
-        setHasError(true);
-        setMessage(requiredMessage);
+        setHasRequiredError(true);
       }
     }
 
     inputValue.length > 0 ? setActiveInput(true) : setActiveInput(false);
+
+    if (rest.onBlur) {
+      rest.onBlur(event);
+    }
   };
 
+  const messageColor = disabled ? 'content.light' : 'content.medium';
+  const showError = hasError || hasRequiredError;
+  const message = hasRequiredError
+    ? requiredMessage ?? messageProp
+    : messageProp;
+
   return (
-    <TextFieldStyled style={style}>
+    <TextFieldStyled
+      hasPrefix={!!extraPrefix}
+      isFloatingLabel={isFloatingLabel}
+      style={style}
+    >
       <LabelField
-        forId={id}
-        hasError={hasError}
-        isActive={activeInput}
-        isDisabled={isDisabled}
+        hasError={showError}
+        htmlFor={id}
+        isActive={activeInput || type === 'date'}
+        isDisabled={disabled}
+        isFloating={isFloatingLabel}
         isRequired={required}
       >
         {label}
       </LabelField>
 
-      {isLoading || !!icon ? (
-        <InputFieldIconStyled>
-          {isLoading ? <Spinner colorScheme='negative' size='small' /> : null}
-          {!isLoading && !!icon && icon}
-        </InputFieldIconStyled>
-      ) : null}
-      <InputFieldStyled
-        disabled={isDisabled}
-        hasError={hasError}
-        id={id}
-        maxLength={maxLength}
-        name={name || id}
-        onBlur={onBlur}
-        onChange={handleChange}
-        onFocus={onFocus}
-        ref={inputRef}
-        required={required}
-        type={type}
-        value={inputValue}
-      />
+      <Box style={{ flexDirection: 'row' }}>
+        {extraPrefix ? (
+          <InputExtraPrefixStyled isFloatingLabel={isFloatingLabel}>
+            {extraPrefix}
+          </InputExtraPrefixStyled>
+        ) : null}
+
+        <InputFieldStyled
+          data-error={showError}
+          disabled={disabled}
+          id={id}
+          isFloatingLabel={isFloatingLabel}
+          name={name ?? id}
+          ref={inputRef}
+          type={type}
+          value={inputValue}
+          variant={variant}
+          {...rest}
+          onBlur={onBlur}
+          onChange={handleChange}
+          onFocus={onFocus}
+        />
+        {extraSuffix ? (
+          <InputExtraSuffixStyled>{extraSuffix}</InputExtraSuffixStyled>
+        ) : null}
+      </Box>
+
       {message ? (
         <TextFieldMessageStyled>
           <Typography
-            color={hasError ? 'error.default' : 'content.medium'}
+            color={showError ? 'error.default' : messageColor}
             element='span'
             fontStyles='body3'
           >

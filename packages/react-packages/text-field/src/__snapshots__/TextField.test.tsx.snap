@@ -2,14 +2,34 @@
 
 exports[`<TextField /> component onBlur event should have error state with error message 1`] = `
 .emotion-0 {
-  display: block;
-  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
   width: 100%;
   position: relative;
 }
 
+.emotion-0 i {
+  color: #838383;
+}
+
+.emotion-0:has(input[disabled]) i,
+.emotion-0:has(input[disabled]) label>span {
+  color: #C1C1C1;
+}
+
+.emotion-0:has(input[readonly]:not(input[disabled])) label,
+.emotion-0:has(input[readonly]:not(input[disabled])) label>span {
+  color: #838383;
+}
+
 .emotion-2 {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
@@ -17,8 +37,14 @@ exports[`<TextField /> component onBlur event should have error state with error
   text-transform: none;
   color: #FF494A;
   cursor: inherit;
-  left: 15px;
-  top: 15px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  left: 16px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -39,31 +65,97 @@ exports[`<TextField /> component onBlur event should have error state with error
 }
 
 .emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-8 {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
+  color: #454545;
   background-color: #FFFFFF;
   border-radius: 0px;
-  border: 1px solid #FF494A;
-  color: #454545;
+  border-style: solid;
+  outline: 0;
+  border-width: 1px;
+  border-color: #C1C1C1;
   min-width: 198px;
-  padding: 20px 15px 5px 15px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: 24px 16px 8px;
   width: 100%;
   height: 53px;
 }
 
-.emotion-6:focus {
-  outline: 1px solid #00677F;
-  border: 1px solid transparent;
+.emotion-8:focus {
+  border-color: #00677F;
 }
 
-.emotion-8 {
-  padding-left: 15px;
+.emotion-8[data-error="true"] {
+  border-color: #FF494A;
+}
+
+.emotion-8[data-error="true"]:focus {
+  border-color: #FF494A;
+}
+
+.emotion-8[readonly]:not([disabled]) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-8:disabled {
+  color: #C1C1C1;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-8:disabled::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-8:disabled::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-8:disabled:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-8:disabled::placeholder {
+  color: transparent;
+}
+
+.emotion-8::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-8::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-8:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-8::placeholder {
+  color: transparent;
+}
+
+.emotion-10 {
+  padding-left: 16px;
 }
 
 <div>
@@ -84,16 +176,21 @@ exports[`<TextField /> component onBlur event should have error state with error
         *
       </span>
     </label>
-    <input
-      class="emotion-6 emotion-7"
-      id="Some-text"
-      name="Some-text"
-      required=""
-      type="text"
-      value=""
-    />
     <div
-      class="emotion-8 emotion-9"
+      class="emotion-6 emotion-7"
+      style="flex-direction: row;"
+    >
+      <input
+        class="emotion-8 emotion-9"
+        data-error="true"
+        id="Some-text"
+        name="Some-text"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="emotion-10 emotion-11"
     >
       <span
         class="emotion-4 emotion-5"
@@ -107,41 +204,51 @@ exports[`<TextField /> component onBlur event should have error state with error
 </div>
 `;
 
-exports[`<TextField /> component renders Loading input 1`] = `
-@keyframes animation-0 {
-  from {
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    -ms-transform: rotate(0);
-    transform: rotate(0);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
+exports[`<TextField /> component renders disabled input 1`] = `
 .emotion-0 {
-  display: block;
-  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
   width: 100%;
   position: relative;
 }
 
+.emotion-0 i {
+  color: #838383;
+}
+
+.emotion-0:has(input[disabled]) i,
+.emotion-0:has(input[disabled]) label>span {
+  color: #C1C1C1;
+}
+
+.emotion-0:has(input[readonly]:not(input[disabled])) label,
+.emotion-0:has(input[readonly]:not(input[disabled])) label>span {
+  color: #838383;
+}
+
 .emotion-2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #C1C1C1;
+  cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  cursor: inherit;
-  left: 15px;
-  top: 15px;
+  left: 16px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -152,14 +259,6 @@ exports[`<TextField /> component renders Loading input 1`] = `
 }
 
 .emotion-4 {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -173,14 +272,213 @@ exports[`<TextField /> component renders Loading input 1`] = `
   align-items: center;
 }
 
+.emotion-6 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #454545;
+  background-color: #FFFFFF;
+  border-radius: 0px;
+  border-style: solid;
+  outline: 0;
+  border-width: 1px;
+  border-color: #C1C1C1;
+  min-width: 198px;
+  padding: 24px 16px 8px;
+  width: 100%;
+  height: 53px;
+}
+
+.emotion-6:focus {
+  border-color: #00677F;
+}
+
+.emotion-6[data-error="true"] {
+  border-color: #FF494A;
+}
+
+.emotion-6[data-error="true"]:focus {
+  border-color: #FF494A;
+}
+
+.emotion-6[readonly]:not([disabled]) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-6:disabled {
+  color: #C1C1C1;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-6:disabled::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled::placeholder {
+  color: transparent;
+}
+
+.emotion-6::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6::placeholder {
+  color: transparent;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <label
+      class="emotion-2 emotion-3"
+      data-testid="label-field"
+      disabled=""
+      for="My-disabled-input"
+    >
+      My disabled input
+    </label>
+    <div
+      class="emotion-4 emotion-5"
+      style="flex-direction: row;"
+    >
+      <input
+        class="emotion-6 emotion-7"
+        data-error="false"
+        disabled=""
+        id="My-disabled-input"
+        name="My-disabled-input"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField /> component renders input with extras suffix and prefix elements 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-0 label {
+  left: 0;
+  padding-left: 48px;
+}
+
+.emotion-0 i {
+  color: #838383;
+}
+
+.emotion-0:has(input[disabled]) i,
+.emotion-0:has(input[disabled]) label>span {
+  color: #C1C1C1;
+}
+
+.emotion-0:has(input[readonly]:not(input[disabled])) label,
+.emotion-0:has(input[readonly]:not(input[disabled])) label>span {
+  color: #838383;
+}
+
+.emotion-2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #838383;
+  cursor: inherit;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  left: 16px;
+  top: 16px;
+  position: absolute;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
+  transition: transform 150ms ease-out,font-size 150ms ease-out;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-6 {
+  position: absolute;
+  left: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6~input {
+  padding-left: 48px;
+}
+
 .emotion-8 {
-  width: 32px;
-  height: 32px;
-  border: 2px solid #838383;
-  border-radius: 50%;
-  border-top: 2px solid #FFFFFF;
-  -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
-  animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #454545;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
 }
 
 .emotion-10 {
@@ -190,192 +488,84 @@ exports[`<TextField /> component renders Loading input 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
+  color: #454545;
   background-color: #FFFFFF;
   border-radius: 0px;
-  border: 1px solid #DEDEDE;
-  color: #454545;
+  border-style: solid;
+  outline: 0;
+  border-width: 1px;
+  border-color: #C1C1C1;
   min-width: 198px;
-  padding: 20px 15px 5px 15px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: 24px 16px 8px;
   width: 100%;
   height: 53px;
 }
 
 .emotion-10:focus {
-  outline: 1px solid #00677F;
-  border: 1px solid transparent;
+  border-color: #00677F;
 }
 
-<div>
-  <div
-    class="emotion-0 emotion-1"
-  >
-    <label
-      class="emotion-2 emotion-3"
-      data-testid="label-field"
-      for="My-disabled-input"
-    >
-      My disabled input
-    </label>
-    <span
-      class="emotion-4 emotion-5"
-    >
-      <div
-        class="emotion-6 emotion-7"
-        data-testid="spinner"
-        style="margin: auto;"
-      >
-        <div
-          class="emotion-8 emotion-9"
-        />
-      </div>
-    </span>
-    <input
-      class="emotion-10 emotion-11"
-      id="My-disabled-input"
-      name="My-disabled-input"
-      type="text"
-      value=""
-    />
-  </div>
-</div>
-`;
-
-exports[`<TextField /> component renders disabled input 1`] = `
-.emotion-0 {
-  display: block;
-  height: auto;
-  width: 100%;
-  position: relative;
+.emotion-10[data-error="true"] {
+  border-color: #FF494A;
 }
 
-.emotion-2 {
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
+.emotion-10[data-error="true"]:focus {
+  border-color: #FF494A;
+}
+
+.emotion-10[readonly]:not([disabled]) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-10:disabled {
   color: #C1C1C1;
-  cursor: inherit;
-  left: 15px;
-  top: 15px;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-10:disabled::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-10:disabled::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-10:disabled:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-10:disabled::placeholder {
+  color: transparent;
+}
+
+.emotion-10::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-10::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-10:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-10::placeholder {
+  color: transparent;
+}
+
+.emotion-12 {
   position: absolute;
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
-  transition: transform 150ms ease-out,font-size 150ms ease-out;
-}
-
-.emotion-4 {
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  background-color: #FFFFFF;
-  border-radius: 0px;
-  border: 1px solid #F3F3F5;
-  color: #C1C1C1;
-  min-width: 198px;
-  padding: 20px 15px 5px 15px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-  height: 53px;
-}
-
-.emotion-4:focus {
-  outline: 1px solid #00677F;
-  border: 1px solid transparent;
-}
-
-<div>
-  <div
-    class="emotion-0 emotion-1"
-  >
-    <label
-      class="emotion-2 emotion-3"
-      data-testid="label-field"
-      disabled=""
-      for="My-disabled-input"
-    >
-      My disabled input
-    </label>
-    <input
-      class="emotion-4 emotion-5"
-      disabled=""
-      id="My-disabled-input"
-      name="My-disabled-input"
-      type="text"
-      value=""
-    />
-  </div>
-</div>
-`;
-
-exports[`<TextField /> component renders input with side button 1`] = `
-.emotion-0 {
-  display: block;
-  height: auto;
-  width: 100%;
-  position: relative;
-}
-
-.emotion-2 {
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  color: #454545;
-  cursor: inherit;
-  left: 15px;
-  top: 15px;
-  position: absolute;
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
-  transition: transform 150ms ease-out,font-size 150ms ease-out;
-}
-
-.emotion-4 {
-  position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 12px;
   width: 24px;
   height: 24px;
 }
 
-.emotion-6 {
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  background-color: #FFFFFF;
-  border-radius: 0px;
-  border: 1px solid #DEDEDE;
-  color: #454545;
-  min-width: 198px;
-  padding: 20px 15px 5px 15px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-  height: 53px;
-}
-
-.emotion-6:focus {
-  outline: 1px solid #00677F;
-  border: 1px solid transparent;
+.emotion-12~input {
+  padding-right: 48px;
 }
 
 <div>
@@ -389,45 +579,419 @@ exports[`<TextField /> component renders input with side button 1`] = `
     >
       My input
     </label>
-    <span
+    <div
       class="emotion-4 emotion-5"
+      style="flex-direction: row;"
     >
-      <button
-        type="button"
+      <span
+        class="emotion-6 emotion-7"
       >
-        My button
-      </button>
-    </span>
-    <input
-      class="emotion-6 emotion-7"
-      id="My-input"
-      name="My-input"
-      type="text"
-      value=""
-    />
+        <i
+          class="emotion-8 emotion-9"
+          color="#454545"
+          data-testid="icon"
+        >
+          home_work
+        </i>
+      </span>
+      <input
+        class="emotion-10 emotion-11"
+        data-error="false"
+        id="My-input"
+        name="My-input"
+        type="text"
+        value=""
+      />
+      <span
+        class="emotion-12 emotion-13"
+      >
+        <i
+          class="emotion-8 emotion-9"
+          color="#454545"
+          data-testid="icon"
+        >
+          home_work
+        </i>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField /> component renders input with variant baseLine 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-0 i {
+  color: #838383;
+}
+
+.emotion-0:has(input[disabled]) i,
+.emotion-0:has(input[disabled]) label>span {
+  color: #C1C1C1;
+}
+
+.emotion-0:has(input[readonly]:not(input[disabled])) label,
+.emotion-0:has(input[readonly]:not(input[disabled])) label>span {
+  color: #838383;
+}
+
+.emotion-2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #838383;
+  cursor: inherit;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  left: 16px;
+  top: 16px;
+  position: absolute;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
+  transition: transform 150ms ease-out,font-size 150ms ease-out;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-6 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #454545;
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 0 0;
+  border-style: solid;
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #C1C1C1;
+  min-width: 198px;
+  padding: 24px 16px 8px;
+  width: 100%;
+  height: 53px;
+}
+
+.emotion-6:focus {
+  border-color: #00677F;
+}
+
+.emotion-6[data-error="true"] {
+  border-color: #FF494A;
+}
+
+.emotion-6[data-error="true"]:focus {
+  border-color: #FF494A;
+}
+
+.emotion-6[readonly]:not([disabled]) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-6:disabled {
+  color: #C1C1C1;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-6:disabled::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled::placeholder {
+  color: transparent;
+}
+
+.emotion-6::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6::placeholder {
+  color: transparent;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <label
+      class="emotion-2 emotion-3"
+      data-testid="label-field"
+      for="My-input"
+    >
+      My input
+    </label>
+    <div
+      class="emotion-4 emotion-5"
+      style="flex-direction: row;"
+    >
+      <input
+        class="emotion-6 emotion-7"
+        data-error="false"
+        id="My-input"
+        name="My-input"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TextField /> component renders input without float label 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-0 i {
+  color: #838383;
+}
+
+.emotion-0:has(input[disabled]) i,
+.emotion-0:has(input[disabled]) label>span {
+  color: #C1C1C1;
+}
+
+.emotion-0:has(input[readonly]:not(input[disabled])) label,
+.emotion-0:has(input[readonly]:not(input[disabled])) label>span {
+  color: #454545;
+}
+
+.emotion-2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #454545;
+  cursor: inherit;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-6 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #454545;
+  background-color: #FFFFFF;
+  border-radius: 0px;
+  border-style: solid;
+  outline: 0;
+  border-width: 1px;
+  border-color: #C1C1C1;
+  min-width: 198px;
+  padding: 16px;
+  width: 100%;
+  height: 53px;
+}
+
+.emotion-6:focus {
+  border-color: #00677F;
+}
+
+.emotion-6[data-error="true"] {
+  border-color: #FF494A;
+}
+
+.emotion-6[data-error="true"]:focus {
+  border-color: #FF494A;
+}
+
+.emotion-6[readonly]:not([disabled]) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-6:disabled {
+  color: #C1C1C1;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-6:disabled::-webkit-input-placeholder {
+  color: #C1C1C1;
+}
+
+.emotion-6:disabled::-moz-placeholder {
+  color: #C1C1C1;
+}
+
+.emotion-6:disabled:-ms-input-placeholder {
+  color: #C1C1C1;
+}
+
+.emotion-6:disabled::placeholder {
+  color: #C1C1C1;
+}
+
+.emotion-6::-webkit-input-placeholder {
+  color: #838383;
+}
+
+.emotion-6::-moz-placeholder {
+  color: #838383;
+}
+
+.emotion-6:-ms-input-placeholder {
+  color: #838383;
+}
+
+.emotion-6::placeholder {
+  color: #838383;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <label
+      class="emotion-2 emotion-3"
+      data-testid="label-field"
+      for="My-input"
+    >
+      My input
+    </label>
+    <div
+      class="emotion-4 emotion-5"
+      style="flex-direction: row;"
+    >
+      <input
+        class="emotion-6 emotion-7"
+        data-error="false"
+        id="My-input"
+        name="My-input"
+        type="text"
+        value=""
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`<TextField /> component should render the TextField with error styles and message 1`] = `
 .emotion-0 {
-  display: block;
-  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
   width: 100%;
   position: relative;
 }
 
+.emotion-0 i {
+  color: #838383;
+}
+
+.emotion-0:has(input[disabled]) i,
+.emotion-0:has(input[disabled]) label>span {
+  color: #C1C1C1;
+}
+
+.emotion-0:has(input[readonly]:not(input[disabled])) label,
+.emotion-0:has(input[readonly]:not(input[disabled])) label>span {
+  color: #838383;
+}
+
 .emotion-2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #FF494A;
+  cursor: inherit;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF494A;
-  cursor: inherit;
-  left: 15px;
-  top: 15px;
+  left: 16px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(-45%);
   -moz-transform: translateY(-45%);
@@ -438,34 +1002,100 @@ exports[`<TextField /> component should render the TextField with error styles a
 }
 
 .emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-6 {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
+  color: #454545;
   background-color: #FFFFFF;
   border-radius: 0px;
-  border: 1px solid #FF494A;
-  color: #454545;
+  border-style: solid;
+  outline: 0;
+  border-width: 1px;
+  border-color: #C1C1C1;
   min-width: 198px;
-  padding: 20px 15px 5px 15px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: 24px 16px 8px;
   width: 100%;
   height: 53px;
 }
 
-.emotion-4:focus {
-  outline: 1px solid #00677F;
-  border: 1px solid transparent;
+.emotion-6:focus {
+  border-color: #00677F;
 }
 
-.emotion-6 {
-  padding-left: 15px;
+.emotion-6[data-error="true"] {
+  border-color: #FF494A;
+}
+
+.emotion-6[data-error="true"]:focus {
+  border-color: #FF494A;
+}
+
+.emotion-6[readonly]:not([disabled]) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-6:disabled {
+  color: #C1C1C1;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-6:disabled::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled::placeholder {
+  color: transparent;
+}
+
+.emotion-6::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6::placeholder {
+  color: transparent;
 }
 
 .emotion-8 {
+  padding-left: 16px;
+}
+
+.emotion-10 {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -486,18 +1116,24 @@ exports[`<TextField /> component should render the TextField with error styles a
     >
       My Input with Error Message
     </label>
-    <input
-      class="emotion-4 emotion-5"
-      id="My-Input-with-Error-Message"
-      name="My-Input-with-Error-Message"
-      type="text"
-      value="Initial Value"
-    />
     <div
-      class="emotion-6 emotion-7"
+      class="emotion-4 emotion-5"
+      style="flex-direction: row;"
+    >
+      <input
+        class="emotion-6 emotion-7"
+        data-error="true"
+        id="My-Input-with-Error-Message"
+        name="My-Input-with-Error-Message"
+        type="text"
+        value="Initial Value"
+      />
+    </div>
+    <div
+      class="emotion-8 emotion-9"
     >
       <span
-        class="emotion-8 emotion-9"
+        class="emotion-10 emotion-11"
         color="error.default"
         data-testid="typography"
       >
@@ -510,23 +1146,49 @@ exports[`<TextField /> component should render the TextField with error styles a
 
 exports[`<TextField /> component should render the TextField with info message 1`] = `
 .emotion-0 {
-  display: block;
-  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
   width: 100%;
   position: relative;
 }
 
+.emotion-0 i {
+  color: #838383;
+}
+
+.emotion-0:has(input[disabled]) i,
+.emotion-0:has(input[disabled]) label>span {
+  color: #C1C1C1;
+}
+
+.emotion-0:has(input[readonly]:not(input[disabled])) label,
+.emotion-0:has(input[readonly]:not(input[disabled])) label>span {
+  color: #838383;
+}
+
 .emotion-2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #838383;
+  cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  cursor: inherit;
-  left: 15px;
-  top: 15px;
+  left: 16px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -537,34 +1199,100 @@ exports[`<TextField /> component should render the TextField with info message 1
 }
 
 .emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-6 {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
+  color: #454545;
   background-color: #FFFFFF;
   border-radius: 0px;
-  border: 1px solid #DEDEDE;
-  color: #454545;
+  border-style: solid;
+  outline: 0;
+  border-width: 1px;
+  border-color: #C1C1C1;
   min-width: 198px;
-  padding: 20px 15px 5px 15px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: 24px 16px 8px;
   width: 100%;
   height: 53px;
 }
 
-.emotion-4:focus {
-  outline: 1px solid #00677F;
-  border: 1px solid transparent;
+.emotion-6:focus {
+  border-color: #00677F;
 }
 
-.emotion-6 {
-  padding-left: 15px;
+.emotion-6[data-error="true"] {
+  border-color: #FF494A;
+}
+
+.emotion-6[data-error="true"]:focus {
+  border-color: #FF494A;
+}
+
+.emotion-6[readonly]:not([disabled]) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-6:disabled {
+  color: #C1C1C1;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-6:disabled::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled::placeholder {
+  color: transparent;
+}
+
+.emotion-6::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6::placeholder {
+  color: transparent;
 }
 
 .emotion-8 {
+  padding-left: 16px;
+}
+
+.emotion-10 {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -585,18 +1313,24 @@ exports[`<TextField /> component should render the TextField with info message 1
     >
       My Input with info message
     </label>
-    <input
-      class="emotion-4 emotion-5"
-      id="My-Input-with-info-message"
-      name="My-Input-with-info-message"
-      type="text"
-      value=""
-    />
     <div
-      class="emotion-6 emotion-7"
+      class="emotion-4 emotion-5"
+      style="flex-direction: row;"
+    >
+      <input
+        class="emotion-6 emotion-7"
+        data-error="false"
+        id="My-Input-with-info-message"
+        name="My-Input-with-info-message"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="emotion-8 emotion-9"
     >
       <span
-        class="emotion-8 emotion-9"
+        class="emotion-10 emotion-11"
         color="content.medium"
         data-testid="typography"
       >

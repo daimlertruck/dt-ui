@@ -20,7 +20,7 @@ export const ColumnHeaderStyled = styled.th<ColumnHeaderStyled>`
     fixedPosition = 0,
   }) => `
     text-align: ${textAlign};
-    color: ${theme.palette.content.heading};
+    color: ${theme.palette.content.dark};
     padding: 0 ${theme.spacing['2xs']} ${theme.spacing['2xs']};
     ${theme.fontStyles.button3};
 

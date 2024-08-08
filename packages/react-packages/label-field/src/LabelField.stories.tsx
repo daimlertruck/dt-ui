@@ -20,5 +20,6 @@ export const Default: StoryObj<LabelFieldProps> = {
     isDisabled: false,
     isRequired: false,
     hasError: false,
+    isFloating: true,
   },
 };

@@ -1,6 +1,5 @@
 import { withProviders } from '@dt-ui/react-core';
 import { render } from '@testing-library/react';
-import React from 'react';
 
 import { LabelField } from './LabelField';
 
@@ -12,7 +11,7 @@ describe('<LabelField /> component', () => {
     it('it should render a small font-size and -45º translation', () => {
       const { container } = render(
         <>
-          <ProvidedLabelField forId={INPUT_ID} isActive>
+          <ProvidedLabelField htmlFor={INPUT_ID} isActive>
             My Awesome Input
           </ProvidedLabelField>
           <input id={INPUT_ID} />
@@ -27,7 +26,7 @@ describe('<LabelField /> component', () => {
     it('it should render a bigger font-size and 0 translation', () => {
       const { container } = render(
         <>
-          <ProvidedLabelField forId={INPUT_ID} isActive={false}>
+          <ProvidedLabelField htmlFor={INPUT_ID} isActive={false}>
             My Awesome Input
           </ProvidedLabelField>
           <input id={INPUT_ID} />
@@ -41,7 +40,7 @@ describe('<LabelField /> component', () => {
   it('it renders a disabled label field', () => {
     const { container } = render(
       <>
-        <ProvidedLabelField forId={INPUT_ID} isDisabled>
+        <ProvidedLabelField htmlFor={INPUT_ID} isDisabled>
           My Awesome Input
         </ProvidedLabelField>
         <input id={INPUT_ID} />
@@ -54,7 +53,7 @@ describe('<LabelField /> component', () => {
   it('it renders a label field as error', () => {
     const { getByTestId } = render(
       <>
-        <ProvidedLabelField forId={INPUT_ID} hasError>
+        <ProvidedLabelField hasError htmlFor={INPUT_ID}>
           My Awesome Input
         </ProvidedLabelField>
         <input id={INPUT_ID} />
@@ -69,7 +68,7 @@ describe('<LabelField /> component', () => {
   it('it renders a label field as required', () => {
     const { container } = render(
       <>
-        <ProvidedLabelField forId={INPUT_ID} isRequired>
+        <ProvidedLabelField htmlFor={INPUT_ID} isRequired>
           My Awesome Input
         </ProvidedLabelField>
         <input id={INPUT_ID} />

@@ -1,27 +1,8 @@
-import { BaseProps } from '@dt-ui/react-core';
-import { LabelField } from '@dt-ui/react-label-field';
-import {
-  TextFieldStyled,
-  InputFieldStyled,
-  TextFieldMessageStyled,
-} from '@dt-ui/react-text-field';
-import { Typography } from '@dt-ui/react-typography';
-import React, {
-  useState,
-  useEffect,
-  ChangeEvent,
-  useRef,
-  InputHTMLAttributes,
-} from 'react';
+import { TextField, TextFieldProps } from '@dt-ui/react-text-field';
+import React, { useState, useEffect, useRef } from 'react';
 
-export interface DatePickerProps
-  extends BaseProps,
-    Omit<InputHTMLAttributes<HTMLInputElement>, 'type' | 'style'> {
-  label: string;
+export interface DatePickerProps extends Omit<TextFieldProps, 'type'> {
   isDisabled?: boolean;
-  hasError?: boolean;
-  initialValue?: string;
-  message?: string | null;
 }
 
 export const DatePicker = ({
@@ -30,7 +11,6 @@ export const DatePicker = ({
   label,
   name,
   required,
-  style,
   children,
   initialValue,
   message: messageProp = '',
@@ -71,62 +51,41 @@ export const DatePicker = ({
     }
   };
 
-  const handleBlur = (event: ChangeEvent<HTMLInputElement>) => {
-    if (!inputRef?.current?.validity.valid) {
+  const handleBlur = () => {
+    if (!inputRef?.current?.validity.valid && inputRef?.current?.value) {
       setHasError(true);
       setMessage('Please enter a valid date');
       return;
     }
 
-    if (event.currentTarget.value === '') {
-      if (required) {
-        setHasError(true);
-        setMessage('This field is required.');
-      }
-    }
-
-    if (required && !!event.currentTarget.value && !hasError) {
-      setHasError(false);
-    }
+    setHasError(false);
+    setMessage('');
   };
 
   return (
-    <TextFieldStyled style={style}>
-      <LabelField
-        forId={id}
-        isActive
-        isDisabled={isDisabled}
-        isRequired={required}
-      >
-        {label}
-      </LabelField>
-      <InputFieldStyled
+    <>
+      <TextField
         disabled={isDisabled}
         hasError={hasError}
         id={id}
+        inputRef={inputRef}
+        isFloatingLabel
+        label={label}
         max={max}
+        message={message}
         min={min}
         name={name || id}
         onBlur={handleBlur}
         onChange={handleChange}
         onFocus={handleFocus}
-        ref={inputRef}
+        required={required}
+        requiredMessage='This field is required.'
         type='date'
         value={inputValue}
+        variant='outlined'
         {...rest}
       />
-      {message ? (
-        <TextFieldMessageStyled>
-          <Typography
-            color={hasError ? 'error.default' : 'content.medium'}
-            element='span'
-            fontStyles='pXXSmall'
-          >
-            {message}
-          </Typography>
-        </TextFieldMessageStyled>
-      ) : null}
       {children}
-    </TextFieldStyled>
+    </>
   );
 };

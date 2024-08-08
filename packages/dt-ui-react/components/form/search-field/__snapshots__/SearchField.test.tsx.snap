@@ -2,23 +2,49 @@
 
 exports[`<SearchField /> component renders SearchField input element with the correct label 1`] = `
 .emotion-0 {
-  display: block;
-  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
   width: 100%;
   position: relative;
 }
 
+.emotion-0 i {
+  color: #838383;
+}
+
+.emotion-0:has(input[disabled]) i,
+.emotion-0:has(input[disabled]) label>span {
+  color: #C1C1C1;
+}
+
+.emotion-0:has(input[readonly]:not(input[disabled])) label,
+.emotion-0:has(input[readonly]:not(input[disabled])) label>span {
+  color: #838383;
+}
+
 .emotion-2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #838383;
+  cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  cursor: inherit;
-  left: 15px;
-  top: 15px;
+  left: 16px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -29,30 +55,96 @@ exports[`<SearchField /> component renders SearchField input element with the co
 }
 
 .emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-6 {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
+  color: #454545;
   background-color: #FFFFFF;
   border-radius: 0px;
-  border: 1px solid #DEDEDE;
-  color: #454545;
+  border-style: solid;
+  outline: 0;
+  border-width: 1px;
+  border-color: #C1C1C1;
   min-width: 198px;
-  padding: 20px 15px 5px 15px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: 24px 16px 8px;
   width: 100%;
   height: 53px;
 }
 
-.emotion-4:focus {
-  outline: 1px solid #00677F;
-  border: 1px solid transparent;
+.emotion-6:focus {
+  border-color: #00677F;
 }
 
-.emotion-6 {
+.emotion-6[data-error="true"] {
+  border-color: #FF494A;
+}
+
+.emotion-6[data-error="true"]:focus {
+  border-color: #FF494A;
+}
+
+.emotion-6[readonly]:not([disabled]) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-6:disabled {
+  color: #C1C1C1;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-6:disabled::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:disabled::placeholder {
+  color: transparent;
+}
+
+.emotion-6::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6::placeholder {
+  color: transparent;
+}
+
+.emotion-8 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -78,13 +170,13 @@ exports[`<SearchField /> component renders SearchField input element with the co
   width: 35px;
 }
 
-.emotion-6 svg {
+.emotion-8 svg {
   fill: #454545;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.emotion-6:hover svg {
+.emotion-8:hover svg {
   fill: #292929;
 }
 
@@ -100,15 +192,21 @@ exports[`<SearchField /> component renders SearchField input element with the co
     >
       Search for anything
     </label>
-    <input
+    <div
       class="emotion-4 emotion-5"
-      id="Search-for-anything"
-      name="Search-for-anything"
-      type="text"
-      value=""
-    />
+      style="flex-direction: row;"
+    >
+      <input
+        class="emotion-6 emotion-7"
+        data-error="false"
+        id="Search-for-anything"
+        name="Search-for-anything"
+        type="text"
+        value=""
+      />
+    </div>
     <span
-      class="emotion-6 emotion-7"
+      class="emotion-8 emotion-9"
     >
       <svg
         height="19"

@@ -47,7 +47,7 @@ const TextArea = ({
 
   return (
     <TextAreaWrapper data-testid={testId}>
-      <LabelField forId={testId} isActive={activeInput}>
+      <LabelField htmlFor={testId} isActive={activeInput}>
         {label}
       </LabelField>
       <TextAreaStyled
