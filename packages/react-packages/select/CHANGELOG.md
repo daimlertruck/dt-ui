@@ -1,5 +1,16 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.12
+
+### Minor Changes
+
+- feat: redesign text field and add new features
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-label-field@0.1.0-beta.17
+
 ## 0.1.0-beta.11
 
 ### Minor Changes

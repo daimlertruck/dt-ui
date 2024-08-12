@@ -1,5 +1,19 @@
 # @dt-ui/react
 
+## 0.1.0-beta.129
+
+### Minor Changes
+
+- feat: redesign text field and add new features
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-label-field@0.1.0-beta.17
+  - @dt-ui/react-select@0.1.0-beta.12
+  - @dt-ui/react-table@0.1.0-beta.18
+  - @dt-ui/react-text-field@0.1.0-beta.16
+
 ## 0.1.0-beta.128
 
 ### Minor Changes
