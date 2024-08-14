@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 export const BreadcrumbStyled = styled.nav`
   ${({ theme }) => theme.fontStyles.alpha.pXSmall}
   color: ${({ theme }) => theme.colors.alpha.gray_100};
-  margin-bottom: 15px;
 `;
 
 export const ListStyled = styled.ul`
