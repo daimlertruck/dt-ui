@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react",
-  "version": "0.1.0-beta.129",
+  "version": "0.1.0-beta.130",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
@@ -31,7 +31,7 @@
     "@dt-ui/react-avatar": "0.1.0-beta.26",
     "@dt-ui/react-backdrop": "0.1.0-beta.25",
     "@dt-ui/react-box": "0.1.0-beta.7",
-    "@dt-ui/react-breadcrumb": "0.1.0-beta.24",
+    "@dt-ui/react-breadcrumb": "0.1.0-beta.25",
     "@dt-ui/react-button": "0.1.0-beta.14",
     "@dt-ui/react-checkbox": "0.1.0-beta.17",
     "@dt-ui/react-core": "0.1.0-beta.23",

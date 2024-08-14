@@ -1,5 +1,11 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.25
+
+### Patch Changes
+
+- refactor: remove margin from breadcrumb
+
 ## 0.1.0-beta.24
 
 ### Minor Changes
