@@ -4,7 +4,6 @@ export const BreadcrumbStyled = styled.nav`
   ${({ theme }) => `
     ${theme.fontStyles.body2}
     color: ${theme.palette.content.default};
-    margin-bottom: ${theme.spacing['3xs']};
     overflow: hidden;
   `}
 `;

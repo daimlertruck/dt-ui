@@ -9,7 +9,6 @@ exports[`<Breadcrumb /> component renders nav element with the correct breadcrum
   margin: 0;
   text-transform: none;
   color: #454545;
-  margin-bottom: 12px;
   overflow: hidden;
 }
 
