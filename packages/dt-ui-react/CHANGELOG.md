@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.43
+
+### Patch Changes
+
+- refactor: remove margin from breadcrumb
+
 ## 0.1.0-alpha.42
 
 ### Patch Changes
