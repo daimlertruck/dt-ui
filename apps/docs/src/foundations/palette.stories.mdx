@@ -7,10 +7,13 @@ import {
   truckAPITheme
 } from '@dt-ui/react-core';
 
+import { greenlaneTheme } from '../../.storybook/themes';
+
 <Meta title='Foundations/Palette' />
 
 export const themes = [
   {name: 'Daimler (default)', theme: defaultTheme}, 
+  {name: 'Greenlane', theme: greenlaneTheme},
   {name: 'TruckAPI', theme: truckAPITheme}]
 
 export const getColors = (theme) => Object.entries(theme.palette).reduce(

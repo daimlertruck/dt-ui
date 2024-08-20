@@ -12,6 +12,7 @@ import {
 } from '@dt-ui/react-core';
 import '@dt-ui/icons/index.css';
 
+import { greenlaneTheme } from './themes';
 import { webFonts } from './webFonts';
 
 const GlobalStyles = () => <Global styles={[...webFonts]} />;
@@ -21,6 +22,7 @@ export const decorators = [
     themes: {
       Default: defaultTheme,
       TruckAPI: truckAPITheme,
+      Greenlane: greenlaneTheme,
     },
     defaultTheme: 'Default',
     Provider,
