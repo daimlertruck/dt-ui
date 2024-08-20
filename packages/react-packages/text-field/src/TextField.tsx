@@ -64,6 +64,7 @@ export const TextField = ({
     // Check if there's an initial value coming from props
     if (!!initialValue) {
       setInputValue(initialValue);
+      setHasRequiredError(false);
     } else {
       setInputValue('');
     }

@@ -1,6 +1,7 @@
 import { withProviders } from '@dt-ui/react-core';
 import { Icon } from '@dt-ui/react-icon';
 import { act, render, screen, fireEvent } from '@testing-library/react';
+import { useState } from 'react';
 
 import { TextField } from './TextField';
 
@@ -179,5 +180,36 @@ describe('<TextField /> component', () => {
     );
 
     expect(container).toMatchSnapshot();
+  });
+
+  it('renders input without required error when initial value is changed', async () => {
+    const StatefulTextField = () => {
+      const [value, setValue] = useState('');
+
+      return (
+        <>
+          <button onClick={() => setValue('new initial value')} type='button'>
+            Set initial value
+          </button>
+          <ProvidedTextField
+            initialValue={value}
+            label='my field'
+            required
+            requiredMessage='required field'
+          />
+        </>
+      );
+    };
+
+    render(<StatefulTextField />);
+
+    fireEvent.focus(screen.getByLabelText('my field*'));
+    fireEvent.blur(screen.getByLabelText('my field*'));
+
+    expect(screen.getByText('required field')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByText('Set initial value'));
+
+    expect(screen.queryByText('required field')).not.toBeInTheDocument();
   });
 });
