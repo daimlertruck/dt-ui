@@ -1,5 +1,11 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.13
+
+### Patch Changes
+
+- fix: solve minor issues with text field component
+
 ## 0.1.0-beta.12
 
 ### Minor Changes

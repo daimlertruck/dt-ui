@@ -1,5 +1,11 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.17
+
+### Patch Changes
+
+- fix: solve minor issues with text field component
+
 ## 0.1.0-beta.16
 
 ### Minor Changes

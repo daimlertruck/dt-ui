@@ -1,5 +1,14 @@
 # @dt-ui/react
 
+## 0.1.0-beta.131
+
+### Patch Changes
+
+- fix: solve minor issues with text field component
+- Updated dependencies
+  - @dt-ui/react-select@0.1.0-beta.13
+  - @dt-ui/react-text-field@0.1.0-beta.17
+
 ## 0.1.0-beta.130
 
 ### Patch Changes
