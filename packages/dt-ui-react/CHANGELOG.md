@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.132
+
+### Patch Changes
+
+- fix: removes required error if initialValue is set
+- Updated dependencies
+  - @dt-ui/react-text-field@0.1.0-beta.18
+
 ## 0.1.0-beta.131
 
 ### Patch Changes
