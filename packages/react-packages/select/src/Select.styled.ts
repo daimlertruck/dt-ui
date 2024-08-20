@@ -71,7 +71,7 @@ export const SelectContainerStyled = styled.div<SelectFieldStyledProps>`
     color: ${
       disabled ? theme.palette.content.light : theme.palette.content.default
     };
-    padding: ${theme.spacing['4xs']} ${theme.spacing['3xs']};
+    padding: ${theme.spacing['4xs']} ${theme.spacing['2xs']};
     gap: ${theme.spacing['4xs']} ;
     background-color: ${theme.palette.surface.contrast};
     border-radius: ${theme.shape.formField};

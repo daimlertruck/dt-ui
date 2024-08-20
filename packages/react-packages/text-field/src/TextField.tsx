@@ -4,12 +4,12 @@ import { LabelField } from '@dt-ui/react-label-field';
 import { Typography } from '@dt-ui/react-typography';
 import {
   useState,
-  useEffect,
   ReactNode,
   ComponentPropsWithoutRef,
   RefObject,
   FocusEvent,
   ChangeEvent,
+  useEffect,
 } from 'react';
 
 import {
@@ -63,10 +63,8 @@ export const TextField = ({
   useEffect(() => {
     // Check if there's an initial value coming from props
     if (!!initialValue) {
-      setActiveInput(true);
       setInputValue(initialValue);
     } else {
-      setActiveInput(false);
       setInputValue('');
     }
   }, [initialValue]);
@@ -81,7 +79,9 @@ export const TextField = ({
   };
 
   const onFocus = (event: FocusEvent<HTMLInputElement>) => {
-    setActiveInput(true);
+    if (!rest.readOnly) {
+      setActiveInput(true);
+    }
 
     if (rest.onFocus) {
       rest.onFocus(event);
@@ -98,8 +98,6 @@ export const TextField = ({
       }
     }
 
-    inputValue.length > 0 ? setActiveInput(true) : setActiveInput(false);
-
     if (rest.onBlur) {
       rest.onBlur(event);
     }
@@ -111,6 +109,8 @@ export const TextField = ({
     ? requiredMessage ?? messageProp
     : messageProp;
 
+  const isActiveInput = activeInput || !!inputValue.trim();
+
   return (
     <TextFieldStyled
       hasPrefix={!!extraPrefix}
@@ -120,7 +120,7 @@ export const TextField = ({
       <LabelField
         hasError={showError}
         htmlFor={id}
-        isActive={activeInput || type === 'date'}
+        isActive={isActiveInput || type === 'date'}
         isDisabled={disabled}
         isFloating={isFloatingLabel}
         isRequired={required}

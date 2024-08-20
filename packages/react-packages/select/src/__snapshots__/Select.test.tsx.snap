@@ -43,7 +43,7 @@ exports[`<Select /> component should render Select 1`] = `
   margin: 0;
   text-transform: none;
   color: #454545;
-  padding: 8px 12px;
+  padding: 8px 16px;
   gap: 8px;
   background-color: #FFFFFF;
   border-radius: 0px;
@@ -428,7 +428,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   margin: 0;
   text-transform: none;
   color: #454545;
-  padding: 8px 12px;
+  padding: 8px 16px;
   gap: 8px;
   background-color: #FFFFFF;
   border-radius: 0px;
