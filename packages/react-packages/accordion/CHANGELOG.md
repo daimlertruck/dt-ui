@@ -1,5 +1,11 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.20
+
+### Patch Changes
+
+- fix: update Accordion styles
+
 ## 0.1.0-beta.19
 
 ### Minor Changes

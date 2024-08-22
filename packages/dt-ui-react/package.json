@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react",
-  "version": "0.1.0-beta.132",
+  "version": "0.1.0-beta.133",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
@@ -27,7 +27,7 @@
     "@dt-ui/react-modal": "0.1.0-beta.6",
     "@dt-ui/react-card": "0.1.0-beta.6",
     "@dt-ui/react-stepper": "0.1.0-beta.8",
-    "@dt-ui/react-accordion": "0.1.0-beta.19",
+    "@dt-ui/react-accordion": "0.1.0-beta.20",
     "@dt-ui/react-avatar": "0.1.0-beta.26",
     "@dt-ui/react-backdrop": "0.1.0-beta.25",
     "@dt-ui/react-box": "0.1.0-beta.7",

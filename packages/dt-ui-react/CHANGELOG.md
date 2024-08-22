@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.133
+
+### Patch Changes
+
+- fix: update Accordion styles
+- Updated dependencies
+  - @dt-ui/react-accordion@0.1.0-beta.20
+
 ## 0.1.0-beta.132
 
 ### Patch Changes
