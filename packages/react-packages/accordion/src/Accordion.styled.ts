@@ -34,7 +34,7 @@ export const AccordionStyled = styled.div<AccordinStyledProps>`
   ${({ theme, backgroundColor, isDisabled, isOpenState }) => `
     position: relative;
     width: 100%;
-    min-width: '248px';
+    min-width: 248px;
     background-color: ${accordionBackgroundColors(theme)[backgroundColor]};
     border-radius: ${theme.shape.accordion};
     box-shadow: ${
