@@ -8,7 +8,6 @@ export * from './components/buttons';
 export * from './components/form';
 export * from './components/link';
 export * from './components/pagination';
-export * from './components/multi-select';
 
 //independent component packages
 export * from '@dt-ui/react-accordion';
@@ -48,9 +47,6 @@ export * from '@dt-ui/react-modal';
 export * from '@dt-ui/react-card';
 export * from '@dt-ui/react-segmented-control';
 export * from '@dt-ui/react-dropdown';
-
-//utils
-export * from './utils/testingUtils';
 
 declare module '@emotion/react' {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
