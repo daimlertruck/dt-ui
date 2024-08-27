@@ -46,6 +46,7 @@ const config: StorybookConfig = {
   viteFinal: async (config: InlineConfig) => {
     if (config.resolve) {
       const components = [
+        'toggle',
         'dropdown',
         'segmented-control',
         'modal',
