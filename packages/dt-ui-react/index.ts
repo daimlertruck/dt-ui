@@ -49,6 +49,7 @@ export * from '@dt-ui/react-segmented-control';
 export * from '@dt-ui/react-dropdown';
 export * from '@dt-ui/react-toggle';
 export * from '@dt-ui/react-date-picker';
+export * from '@dt-ui/react-text-area';
 
 declare module '@emotion/react' {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface

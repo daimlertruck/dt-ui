@@ -13,7 +13,7 @@ export interface TextAreaProps {
   onChange?: (e: ChangeEvent<HTMLTextAreaElement>) => void;
 }
 
-const TextArea = ({
+export const TextArea = ({
   label,
   onChange,
   dataTestId,
@@ -53,7 +53,7 @@ const TextArea = ({
       <TextAreaStyled
         id={testId}
         maxLength={maxLength}
-        name={name || testId}
+        name={name}
         onBlur={handleBlur}
         onChange={handleChange}
         onFocus={handleFocus}
@@ -65,5 +65,3 @@ const TextArea = ({
     </TextAreaWrapper>
   );
 };
-
-export default TextArea;

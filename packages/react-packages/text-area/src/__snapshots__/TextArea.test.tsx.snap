@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<TextArea /> component it should a textarea 1`] = `
+exports[`<TextArea /> component renders input with an value 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -27,18 +27,18 @@ exports[`<TextArea /> component it should a textarea 1`] = `
   color: #838383;
   cursor: inherit;
   font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   left: 16px;
   top: 16.5px;
   position: absolute;
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
+  -webkit-transform: translateY(-45%);
+  -moz-transform: translateY(-45%);
+  -ms-transform: translateY(-45%);
+  transform: translateY(-45%);
   -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
   transition: transform 150ms ease-out,font-size 150ms ease-out;
 }
@@ -76,27 +76,28 @@ exports[`<TextArea /> component it should a textarea 1`] = `
 <div>
   <div
     class="emotion-0 emotion-1"
-    data-testid="my-text-area-textarea"
+    data-testid="my-input-with-prefilled-value-textarea"
   >
     <label
       class="emotion-2 emotion-3"
       data-testid="label-field"
-      for="my-text-area-textarea"
+      for="my-input-with-prefilled-value-textarea"
     >
-      My text area
+      My Input with prefilled value
     </label>
     <textarea
       class="emotion-4 emotion-5"
-      id="my-text-area-textarea"
-      maxlength="200"
-      name="my-text-area-textarea"
-    />
+      id="my-input-with-prefilled-value-textarea"
+      maxlength="120"
+    >
+      Initial Value
+    </textarea>
     <span
       class="emotion-6 emotion-7"
       color="content.medium"
       data-testid="typography"
     >
-      200
+      107
        Characters
     </span>
   </div>
