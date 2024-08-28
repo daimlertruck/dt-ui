@@ -47,6 +47,7 @@ const config: StorybookConfig = {
     if (config.resolve) {
       const components = [
         'toggle',
+        'date-picker',
         'dropdown',
         'segmented-control',
         'modal',

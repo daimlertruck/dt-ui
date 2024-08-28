@@ -1,7 +1,14 @@
 import { TextField, TextFieldProps } from '@dt-ui/react-text-field';
-import React, { useState, useEffect, useRef } from 'react';
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  ComponentPropsWithoutRef,
+} from 'react';
 
-export interface DatePickerProps extends Omit<TextFieldProps, 'type'> {
+export interface DatePickerProps
+  extends Omit<TextFieldProps, 'type'>,
+    ComponentPropsWithoutRef<'input'> {
   isDisabled?: boolean;
 }
 
