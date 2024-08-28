@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-beta.134
+
+### Patch Changes
+
+- refactor: drop multi-select component
+
 ## 0.1.0-beta.133
 
 ### Patch Changes
