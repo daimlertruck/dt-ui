@@ -16,8 +16,8 @@ exports[`<LabelField /> component it renders a disabled label field 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  left: 16px;
-  top: 16.5px;
+  left: 12px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -58,8 +58,8 @@ exports[`<LabelField /> component it renders a label field as required 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  left: 16px;
-  top: 16.5px;
+  left: 12px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -116,8 +116,8 @@ exports[`<LabelField /> component when the LabelField is active it should render
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  left: 16px;
-  top: 16.5px;
+  left: 12px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(-45%);
   -moz-transform: translateY(-45%);
@@ -157,8 +157,8 @@ exports[`<LabelField /> component when the LabelField is inactive it should rend
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  left: 16px;
-  top: 16.5px;
+  left: 12px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);

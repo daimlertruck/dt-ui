@@ -30,10 +30,11 @@ export const App = () => {
 | `maxLength`       | `number`                 | -          | The maximum number of characters that user can enter.                                     |
 | `type`            | `HTMLInputTypeAttribute` | `text`     | Used to specify the type of element to display.                                           |
 | `onChange`        | `function`               | -          | The triggered function when the input change.                                             |
+| `onResetInput`    | `function`               | -          | The triggered function when clicked on the cross icon, when type is search                |
 | `variant`         | `[outlined,bottomLine]`  | `outlined` | Styles the input with outlined or with bottom line                                        |
 | `isFloatingLabel` | `boolean`                | `false`    | Sets the label floating or traditional on top of the input                                |
-| `extraPrefix`     | `ReactNode`              | -          | Component to be rendered on the left side on the input field                              |
-| `extraSuffix`     | `ReactNode`              | -          | Component to be rendered on the right side on the input field                             |
+| `extraPrefix`     | `ExtraComponent`         | -          | Component to be rendered on the left side inside the input field                          |
+| `extraSuffix`     | `ExtraComponent`         | -          | Component to be rendered on the right side inside the input field                         |
 | `...`             | `InputHTMLAttributes`    | -          | All available attributes from native html input                                           |
 
 ## Stack

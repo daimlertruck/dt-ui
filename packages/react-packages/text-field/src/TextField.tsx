@@ -1,38 +1,46 @@
-import { Box } from '@dt-ui/react-box';
 import { BaseProps } from '@dt-ui/react-core';
+import { Icon } from '@dt-ui/react-icon';
 import { LabelField } from '@dt-ui/react-label-field';
 import { Typography } from '@dt-ui/react-typography';
 import {
-  useState,
-  ReactNode,
-  ComponentPropsWithoutRef,
-  RefObject,
-  FocusEvent,
   ChangeEvent,
+  ComponentPropsWithoutRef,
+  FocusEvent,
+  ReactNode,
+  RefObject,
   useEffect,
+  useState,
 } from 'react';
 
 import {
-  TextFieldStyled,
-  InputFieldStyled,
-  TextFieldMessageStyled,
   InputExtraPrefixStyled,
   InputExtraSuffixStyled,
+  InputFieldStyled,
+  InputWrapperStyled,
+  ResetInputIconStyled,
+  TextFieldMessageStyled,
+  TextFieldStyled,
 } from './TextField.styled';
+
+export interface ExtraComponent {
+  onClick?: (text: string) => void;
+  component: ReactNode;
+}
 
 export interface TextFieldProps
   extends ComponentPropsWithoutRef<'input'>,
     BaseProps {
   label: string;
   isFloatingLabel?: boolean;
-  extraPrefix?: ReactNode;
-  extraSuffix?: ReactNode;
+  extraPrefix?: ExtraComponent;
+  extraSuffix?: ExtraComponent;
   hasError?: boolean;
   requiredMessage?: string;
   initialValue?: string;
   inputRef?: RefObject<HTMLInputElement>;
   message?: string;
   variant?: 'outlined' | 'bottomLine';
+  onResetInput?: () => void;
 }
 
 export const TextField = ({
@@ -53,6 +61,7 @@ export const TextField = ({
   variant = 'outlined',
   disabled = false,
   onChange = () => null,
+  onResetInput = () => null,
   ...rest
 }: TextFieldProps) => {
   const [activeInput, setActiveInput] = useState(false);
@@ -104,6 +113,30 @@ export const TextField = ({
     }
   };
 
+  const handleResetInput = () => {
+    setInputValue('');
+    setActiveInput(false);
+
+    onResetInput();
+  };
+
+  const handleResetIconEnter = (event: React.KeyboardEvent<HTMLInputElement>) =>
+    event.code === 'Enter' && handleResetInput();
+
+  const handleExtraPreffixEnter = (
+    event: React.KeyboardEvent<HTMLInputElement>
+  ) =>
+    event.code === 'Enter' &&
+    extraPrefix?.onClick &&
+    extraPrefix.onClick(inputValue);
+
+  const handleExtraSuffixEnter = (
+    event: React.KeyboardEvent<HTMLInputElement>
+  ) =>
+    event.code === 'Enter' &&
+    extraSuffix?.onClick &&
+    extraSuffix.onClick(inputValue);
+
   const messageColor = disabled ? 'content.light' : 'content.medium';
   const showError = hasError || hasRequiredError;
   const message = hasRequiredError
@@ -112,32 +145,48 @@ export const TextField = ({
 
   const isActiveInput = activeInput || !!inputValue.trim();
 
+  const isSearchType = type === 'search';
+
+  const extraPreffixOnClick = extraPrefix?.onClick ? extraPrefix.onClick : null;
+  const extraSuffixOnClick = extraSuffix?.onClick ? extraSuffix.onClick : null;
+
   return (
     <TextFieldStyled
       hasPrefix={!!extraPrefix}
       isFloatingLabel={isFloatingLabel}
       style={style}
     >
-      <LabelField
-        hasError={showError}
-        htmlFor={id}
-        isActive={isActiveInput || type === 'date'}
-        isDisabled={disabled}
-        isFloating={isFloatingLabel}
-        isRequired={required}
-      >
-        {label}
-      </LabelField>
+      {!isActiveInput || !isFloatingLabel || !isSearchType ? (
+        <LabelField
+          hasError={showError}
+          htmlFor={id}
+          isActive={isActiveInput || type === 'date'}
+          isDisabled={disabled}
+          isFloating={isFloatingLabel}
+          isRequired={required}
+        >
+          {label}
+        </LabelField>
+      ) : null}
 
-      <Box style={{ flexDirection: 'row' }}>
-        {extraPrefix ? (
-          <InputExtraPrefixStyled isFloatingLabel={isFloatingLabel}>
-            {extraPrefix}
+      <InputWrapperStyled isFloatingLabel={isFloatingLabel} variant={variant}>
+        {extraPrefix?.component ? (
+          <InputExtraPrefixStyled
+            data-testid='extra-preffix'
+            {...(!!extraPreffixOnClick && {
+              tabIndex: 0,
+              onClick: () => extraPreffixOnClick(inputValue),
+              onKeyDown: handleExtraPreffixEnter,
+            })}
+          >
+            {extraPrefix.component}
           </InputExtraPrefixStyled>
         ) : null}
 
         <InputFieldStyled
+          data-testid='input-field'
           data-error={showError}
+          isSearchType={isSearchType}
           disabled={disabled}
           id={id}
           isFloatingLabel={isFloatingLabel}
@@ -145,16 +194,35 @@ export const TextField = ({
           ref={inputRef}
           type={type}
           value={inputValue}
-          variant={variant}
           {...rest}
           onBlur={onBlur}
           onChange={handleChange}
           onFocus={onFocus}
         />
-        {extraSuffix ? (
-          <InputExtraSuffixStyled>{extraSuffix}</InputExtraSuffixStyled>
+
+        {isSearchType && !!inputValue ? (
+          <ResetInputIconStyled
+            tabIndex={0}
+            onKeyDown={handleResetIconEnter}
+            data-testid='reset-icon'
+          >
+            <Icon onClick={handleResetInput} code='close_small' />
+          </ResetInputIconStyled>
         ) : null}
-      </Box>
+
+        {extraSuffix?.component ? (
+          <InputExtraSuffixStyled
+            data-testid='extra-suffix'
+            {...(!!extraSuffixOnClick && {
+              tabIndex: 0,
+              onClick: () => extraSuffixOnClick(inputValue),
+              onKeyDown: handleExtraSuffixEnter,
+            })}
+          >
+            {extraSuffix.component}
+          </InputExtraSuffixStyled>
+        ) : null}
+      </InputWrapperStyled>
 
       {message ? (
         <TextFieldMessageStyled>
@@ -167,6 +235,7 @@ export const TextField = ({
           </Typography>
         </TextFieldMessageStyled>
       ) : null}
+
       {children}
     </TextFieldStyled>
   );

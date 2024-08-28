@@ -2,6 +2,11 @@ import styled from '@emotion/styled';
 
 export interface InputFieldStyledProps {
   isFloatingLabel: boolean;
+  isSearchType: boolean;
+}
+
+export interface InputWrapperStyledProps {
+  isFloatingLabel: boolean;
   variant: 'outlined' | 'bottomLine';
 }
 
@@ -47,41 +52,127 @@ export const TextFieldStyled = styled.div<{
         }
       }
   `}
+
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
 `;
 
 export const InputFieldStyled = styled.input<InputFieldStyledProps>`
-  ${({ theme, isFloatingLabel, variant }) => `
+  ${({ theme, isFloatingLabel, isSearchType }) => `
     ${theme.fontStyles.body2}
+    border: 0;
+    outline: 0;
+    width: 100%;
+    background-color: inherit;
 
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+    }
+
+    &::placeholder {
+      color: ${isFloatingLabel ? 'transparent' : theme.palette.content.medium};
+    }
+
+    padding: ${
+      isFloatingLabel && !isSearchType
+        ? `${theme.spacing.xs} 0 ${theme.spacing['4xs']} 0`
+        : ''
+    };
+
+  `}
+`;
+
+export const InputExtraPrefixStyled = styled.div<{ isClickable?: boolean }>`
+  ${({ theme, onClick }) => {
+    const isClickable = !!onClick;
+
+    return `
+    display: flex;
+    cursor: ${isClickable ? 'pointer' : 'default'};
+
+    ${
+      isClickable &&
+      `
+        &:hover > i  {
+          color: ${theme.palette.content.dark};
+        }
+      `
+    }
+  
+  `;
+  }}
+`;
+
+export const InputExtraSuffixStyled = styled.div<{ isClickable?: boolean }>`
+  ${({ theme, onClick }) => {
+    const isClickable = !!onClick;
+
+    return `
+    display: flex;
+    cursor: ${isClickable ? 'pointer' : 'default'};
+
+    ${
+      isClickable &&
+      `
+        &:hover > i  {
+          color: ${theme.palette.content.dark};
+        }
+      `
+    }
+  `;
+  }}
+`;
+
+export const TextFieldMessageStyled = styled.div`
+  padding-left: ${({ theme }) => theme.spacing['2xs']};
+`;
+
+export const ResetInputIconStyled = styled.div`
+  ${({ theme }) => `
+    cursor: pointer;
+    display: flex;
+
+    :hover > i {
+      color: ${theme.palette.content.dark}
+    }
+  `}
+`;
+
+export const InputWrapperStyled = styled.div<InputWrapperStyledProps>`
+  ${({ theme, isFloatingLabel, variant }) => `
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 198px;
+    width: 100%;
+    height: 54px;
     color: ${theme.palette.content.default};
-
+    gap: ${theme.spacing['4xs']};
     background-color: ${theme.palette.surface.contrast};
+    padding-inline: ${theme.spacing['3xs']};
+
     border-radius: ${
       variant === 'outlined'
         ? theme.shape.formField
         : `${theme.shape.formField} ${theme.shape.formField} 0 0`
     };
     border-style: solid;
-    outline: 0;
-
     ${variant === 'outlined' ? 'border-width: 1px' : 'border-width: 0 0 1px'};
-    
     border-color: ${theme.palette.border.dark};
 
-    min-width: 198px;
-    padding: ${
-      isFloatingLabel
-        ? `${theme.spacing.xs} ${theme.spacing['2xs']} ${theme.spacing['4xs']}`
-        : theme.spacing['2xs']
-    };
-    width: 100%;
-    height: 53px;
-
-    &:focus {
+    &:has(input:focus) {
       border-color: ${theme.palette.primary.default};
     }
 
-    &[data-error="true"] {
+    &:has(input[data-error="true"]) {
       border-color: ${theme.palette.error.default};
 
       &:focus {
@@ -89,57 +180,20 @@ export const InputFieldStyled = styled.input<InputFieldStyledProps>`
       }
     }
 
-    &[readonly]:not([disabled]) {
+    &:has(input[readonly]:not([disabled])) {
       background-color: ${theme.palette.surface.default};
       color: ${theme.palette.content.medium};
     }
 
-    &:disabled {
+    &:has(input[disabled]), &:has(input[disabled]) > * {
       color: ${theme.palette.content.light};
       background-color: ${theme.palette.surface.light};
       border-color: ${theme.palette.border.default};
       cursor: not-allowed;
 
-      &::placeholder {
-       color: ${isFloatingLabel ? 'transparent' : theme.palette.content.light};
+      input::placeholder {
+        color: ${isFloatingLabel ? 'transparent' : theme.palette.content.light};
       }
     }
-
-    &::placeholder {
-      color: ${isFloatingLabel ? 'transparent' : theme.palette.content.medium};
-    }
   `}
-`;
-
-export const InputExtraPrefixStyled = styled.span<{ isFloatingLabel: boolean }>`
-  ${({ theme }) => `
-  position: absolute;
-  left: 12px;
-  width: 24px;
-  height: 24px;
-
-  ~ input {
-     padding-left: ${theme.spacing.l};
-    }
-  `}
-`;
-
-export const InputExtraSuffixStyled = styled.span`
-  position: absolute;
-  right: 12px;
-  width: 24px;
-  height: 24px;
-
-  ~ input {
-    padding-right: ${({ theme }) => theme.spacing.l};
-  }
-`;
-
-export const InputWrapperStyled = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-export const TextFieldMessageStyled = styled.div`
-  padding-left: ${({ theme }) => theme.spacing['2xs']};
 `;

@@ -1,7 +1,7 @@
 import { Icon } from '@dt-ui/react-icon';
-import { TextField, TextFieldProps } from '@dt-ui/react-text-field';
 import { type Meta, type StoryObj } from '@storybook/react';
-import { ReactNode } from 'react';
+
+import { ExtraComponent, TextField, TextFieldProps } from './TextField';
 
 const TextFieldTypeOptions = {
   Text: 'text',
@@ -22,22 +22,12 @@ type TextFieldPropsWithExtrasProp = TextFieldProps & {
   extras: 'suffix' | 'prefix' | 'both' | 'none';
 };
 
-const getExtraElements = (
-  extras: 'suffix' | 'prefix' | 'both' | 'none'
-): { extraPrefix?: ReactNode; extraSuffix?: ReactNode } => {
-  switch (extras) {
-    case 'prefix':
-      return { extraPrefix: <Icon code='home_work' /> };
-    case 'suffix':
-      return { extraSuffix: <Icon code='home_work' /> };
-    case 'both':
-      return {
-        extraPrefix: <Icon code='home_work' />,
-        extraSuffix: <Icon code='home_work' />,
-      };
-    default:
-      return {};
-  }
+const extraPrefix: ExtraComponent = {
+  component: <Icon code='home_work' size='large' />,
+};
+
+const extraSuffix: ExtraComponent = {
+  component: <Icon code='home_work' size='large' />,
 };
 
 const meta: Meta<TextFieldPropsWithExtrasProp> = {
@@ -73,16 +63,20 @@ const meta: Meta<TextFieldPropsWithExtrasProp> = {
       control: { type: 'select' },
     },
   },
-  render: ({ onChange, extras, ...props }) => (
-    <TextField
-      {...props}
-      {...(onChange &&
-        ({
-          onChange: (data: string) => console.log('data changed: ', data),
-        } as unknown as TextFieldProps['onChange']))}
-      {...getExtraElements(extras)}
-    />
-  ),
+  render: ({ onChange, extras, ...props }) => {
+    return (
+      <TextField
+        {...props}
+        {...(onChange &&
+          ({
+            onChange: (data: string) => console.log('data changed: ', data),
+          } as unknown as TextFieldProps['onChange']))}
+        {...(extras === 'prefix' && { extraPrefix })}
+        {...(extras === 'suffix' && { extraSuffix })}
+        {...(extras === 'both' && { extraSuffix, extraPrefix })}
+      />
+    );
+  },
 };
 
 export default meta;
@@ -105,5 +99,37 @@ export const Default: StoryObj<TextFieldPropsWithExtrasProp> = {
     placeholder: 'My field placeholder',
     variant: 'outlined',
     extras: 'none',
+  },
+};
+
+export const SearchField: StoryObj<TextFieldPropsWithExtrasProp> = {
+  args: {
+    type: TextFieldTypeOptions.Search,
+    isFloatingLabel: false,
+    name: 'search',
+    label: 'Search',
+    extraSuffix: {
+      onClick: (text: string) => console.log('search', text),
+      component: <Icon code='search' />,
+    },
+    onResetInput: () => console.log('reset'),
+  },
+};
+
+export const ChatInputField: StoryObj<TextFieldPropsWithExtrasProp> = {
+  args: {
+    type: TextFieldTypeOptions.Text,
+    isFloatingLabel: false,
+    name: 'chat-box',
+    label: 'Write your sentence',
+    extraSuffix: {
+      onClick: (text: string) => console.log('chat', text),
+      component: <Icon code='send' />,
+    },
+    onKeyDown: (event: React.KeyboardEvent<HTMLInputElement>) => {
+      if (event.code === 'Enter') {
+        console.log('ev', event);
+      }
+    },
   },
 };

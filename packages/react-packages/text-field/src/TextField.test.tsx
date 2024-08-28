@@ -1,6 +1,6 @@
 import { withProviders } from '@dt-ui/react-core';
 import { Icon } from '@dt-ui/react-icon';
-import { act, render, screen, fireEvent } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { useState } from 'react';
 
 import { TextField } from './TextField';
@@ -77,19 +77,17 @@ describe('<TextField /> component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('renders hiddent text input', () => {
-    const { container } = render(
-      <ProvidedTextField label='Hidden text' type='password' />
-    );
+  it('renders hidden text input', () => {
+    render(<ProvidedTextField label='Hidden text' type='password' />);
 
-    expect(container.querySelector('input')).toHaveAttribute(
+    expect(screen.getByTestId('input-field')).toHaveAttribute(
       'type',
       'password'
     );
   });
 
   it('renders required text field', () => {
-    const { container } = render(
+    render(
       <ProvidedTextField
         label='Required text'
         required
@@ -97,54 +95,47 @@ describe('<TextField /> component', () => {
       />
     );
 
-    expect(container.querySelector('label')).toHaveTextContent(
+    expect(screen.getByTestId('label-field')).toHaveTextContent(
       'Required text*'
     );
   });
 
   it('should have active state on focus', () => {
-    const { container } = render(<ProvidedTextField label='Some text' />);
+    render(<ProvidedTextField label='Some text' />);
 
-    const input = container.querySelector('input') as HTMLElement;
-    const label = container.querySelector('label') as HTMLElement;
+    const input = screen.getByRole('textbox');
+    const label = screen.getByTestId('label-field');
 
-    act(() => {
-      input.focus();
-    });
+    fireEvent.focus(input);
 
     expect(label).toHaveStyle('font-size: 0.75rem');
     expect(label).toHaveStyle('transform: translateY(-45%)');
     expect(input).toHaveStyle('outline: 0;');
-    expect(input).toHaveStyle('border-width: 1px;');
-    expect(input).toHaveStyle('border-style: solid');
-    expect(input).toHaveStyle('border-color: #00677F;');
   });
 
   describe('onBlur event', () => {
     it('should have error state with error message', () => {
-      const { container } = render(
+      render(
         <ProvidedTextField
           label='Some text'
           required
           requiredMessage='This field is required.'
         />
       );
-      const input = container.querySelector('input') as HTMLElement;
+      const input = screen.getByRole('textbox');
 
       fireEvent.blur(input, { currentTarget: { value: '' } });
 
-      expect(input).toHaveStyle('border-width: 1px;');
-      expect(input).toHaveStyle('border-style: solid;');
-      expect(input).toHaveStyle('border-color: #ff494a;');
-      expect(container).toMatchSnapshot();
+      expect(input).toHaveStyle('outline: 0;');
+      expect(screen.getByText('This field is required.')).toBeInTheDocument();
     });
 
     it('should have active state', () => {
-      const { container } = render(
+      render(
         <ProvidedTextField initialValue='Value' label='Some text' required />
       );
-      const input = container.querySelector('input') as HTMLElement;
-      const label = container.querySelector('label') as HTMLElement;
+      const input = screen.getByTestId('input-field');
+      const label = screen.getByTestId('label-field');
 
       fireEvent.blur(input, { currentTarget: { value: 'Some value' } });
 
@@ -157,8 +148,8 @@ describe('<TextField /> component', () => {
     const icon = <Icon code='home_work' />;
     const { container } = render(
       <ProvidedTextField
-        extraPrefix={icon}
-        extraSuffix={icon}
+        extraPrefix={{ component: icon }}
+        extraSuffix={{ component: icon }}
         label='My input'
       />
     );
@@ -174,7 +165,7 @@ describe('<TextField /> component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('renders input without float label', () => {
+  it('renders input without floating label', () => {
     const { container } = render(
       <ProvidedTextField isFloatingLabel={false} label='My input' />
     );
@@ -211,5 +202,84 @@ describe('<TextField /> component', () => {
     fireEvent.click(screen.getByText('Set initial value'));
 
     expect(screen.queryByText('required field')).not.toBeInTheDocument();
+  });
+
+  test('should call onClick when extra suffix is clicked', () => {
+    const ProvidedTextField = withProviders(TextField);
+    const handleClick = jest.fn();
+
+    render(
+      <ProvidedTextField
+        label='Search for anything'
+        type='search'
+        extraSuffix={{
+          component: <Icon code='search' />,
+          onClick: handleClick,
+        }}
+      />
+    );
+
+    const input = screen.getByTestId('input-field');
+
+    fireEvent.change(input, {
+      target: { value: 'search' },
+    });
+
+    fireEvent.click(screen.getByTestId('extra-suffix'));
+
+    expect(handleClick).toHaveBeenCalled();
+  });
+
+  test('should call onClick when extra preffix is clicked', () => {
+    const ProvidedTextField = withProviders(TextField);
+    const handleClick = jest.fn();
+
+    render(
+      <ProvidedTextField
+        label='Search for anything'
+        type='search'
+        extraPrefix={{
+          component: <Icon code='search' />,
+          onClick: handleClick,
+        }}
+      />
+    );
+
+    const input = screen.getByTestId('input-field');
+
+    fireEvent.change(input, {
+      target: { value: 'search' },
+    });
+
+    fireEvent.click(screen.getByTestId('extra-preffix'));
+
+    expect(handleClick).toHaveBeenCalled();
+  });
+
+  test('should clear input after reset icon clicked', () => {
+    const ProvidedTextField = withProviders(TextField);
+    const handleClick = jest.fn();
+
+    render(
+      <ProvidedTextField
+        label='Search for anything'
+        type='search'
+        onResetInput={handleClick}
+        extraPrefix={{
+          component: <Icon code='search' />,
+          onClick: jest.fn(),
+        }}
+      />
+    );
+
+    const input = screen.getByTestId('input-field');
+
+    fireEvent.change(input, {
+      target: { value: 'search' },
+    });
+
+    fireEvent.click(screen.getByText('close_small'));
+
+    expect(handleClick).toHaveBeenCalled();
   });
 });

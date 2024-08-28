@@ -40,6 +40,13 @@ exports[`<Form /> component renders simple form 1`] = `
   color: #838383;
 }
 
+.emotion-2 input[type="search"]::-webkit-search-decoration,
+.emotion-2 input[type="search"]::-webkit-search-cancel-button,
+.emotion-2 input[type="search"]::-webkit-search-results-button,
+.emotion-2 input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
 .emotion-4 {
   font-weight: 700;
   font-size: 0.875rem;
@@ -55,8 +62,8 @@ exports[`<Form /> component renders simple form 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  left: 16px;
-  top: 16.5px;
+  left: 12px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -71,13 +78,78 @@ exports[`<Form /> component renders simple form 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 198px;
+  width: 100%;
+  height: 54px;
+  color: #454545;
+  gap: 8px;
+  background-color: #FFFFFF;
+  padding-inline: 12px;
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C1C1C1;
+}
+
+.emotion-6:has(input:focus) {
+  border-color: #00677F;
+}
+
+.emotion-6:has(input[data-error="true"]) {
+  border-color: #FF494A;
+}
+
+.emotion-6:has(input[data-error="true"]):focus {
+  border-color: #FF494A;
+}
+
+.emotion-6:has(input[readonly]:not([disabled])) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-6:has(input[disabled]),
+.emotion-6:has(input[disabled])>* {
+  color: #C1C1C1;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-6:has(input[disabled]) input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:has(input[disabled]) input::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:has(input[disabled]) input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:has(input[disabled])>* input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:has(input[disabled])>* input::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-6:has(input[disabled])>* input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-6:has(input[disabled]) input::placeholder,
+.emotion-6:has(input[disabled])>* input::placeholder {
+  color: transparent;
 }
 
 .emotion-8 {
@@ -87,57 +159,19 @@ exports[`<Form /> component renders simple form 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  background-color: #FFFFFF;
-  border-radius: 0px;
-  border-style: solid;
+  border: 0;
   outline: 0;
-  border-width: 1px;
-  border-color: #C1C1C1;
-  min-width: 198px;
-  padding: 24px 16px 8px;
   width: 100%;
-  height: 53px;
+  background-color: inherit;
+  padding: 24px 0 8px 0;
 }
 
-.emotion-8:focus {
-  border-color: #00677F;
-}
-
-.emotion-8[data-error="true"] {
-  border-color: #FF494A;
-}
-
-.emotion-8[data-error="true"]:focus {
-  border-color: #FF494A;
-}
-
-.emotion-8[readonly]:not([disabled]) {
-  background-color: #F3F3F5;
-  color: #838383;
-}
-
-.emotion-8:disabled {
-  color: #C1C1C1;
-  background-color: #FAFAFA;
-  border-color: #DEDEDE;
-  cursor: not-allowed;
-}
-
-.emotion-8:disabled::-webkit-input-placeholder {
-  color: transparent;
-}
-
-.emotion-8:disabled::-moz-placeholder {
-  color: transparent;
-}
-
-.emotion-8:disabled:-ms-input-placeholder {
-  color: transparent;
-}
-
-.emotion-8:disabled::placeholder {
-  color: transparent;
+.emotion-8 input:-webkit-autofill,
+.emotion-8 input:-webkit-autofill:hover,
+.emotion-8 input:-webkit-autofill:focus,
+.emotion-8 input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .emotion-8::-webkit-input-placeholder {
@@ -173,11 +207,11 @@ exports[`<Form /> component renders simple form 1`] = `
       </label>
       <div
         class="emotion-6 emotion-7"
-        style="flex-direction: row;"
       >
         <input
           class="emotion-8 emotion-9"
           data-error="false"
+          data-testid="input-field"
           id="label-1"
           name="label-1"
           type="text"
@@ -197,11 +231,11 @@ exports[`<Form /> component renders simple form 1`] = `
       </label>
       <div
         class="emotion-6 emotion-7"
-        style="flex-direction: row;"
       >
         <input
           class="emotion-8 emotion-9"
           data-error="false"
+          data-testid="input-field"
           id="label-2"
           name="label-2"
           type="text"
@@ -285,6 +319,13 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   color: #838383;
 }
 
+.emotion-6 input[type="search"]::-webkit-search-decoration,
+.emotion-6 input[type="search"]::-webkit-search-cancel-button,
+.emotion-6 input[type="search"]::-webkit-search-results-button,
+.emotion-6 input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
 .emotion-8 {
   font-weight: 700;
   font-size: 0.875rem;
@@ -300,8 +341,8 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  left: 16px;
-  top: 16.5px;
+  left: 12px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -316,13 +357,78 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 198px;
+  width: 100%;
+  height: 54px;
+  color: #454545;
+  gap: 8px;
+  background-color: #FFFFFF;
+  padding-inline: 12px;
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C1C1C1;
+}
+
+.emotion-10:has(input:focus) {
+  border-color: #00677F;
+}
+
+.emotion-10:has(input[data-error="true"]) {
+  border-color: #FF494A;
+}
+
+.emotion-10:has(input[data-error="true"]):focus {
+  border-color: #FF494A;
+}
+
+.emotion-10:has(input[readonly]:not([disabled])) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-10:has(input[disabled]),
+.emotion-10:has(input[disabled])>* {
+  color: #C1C1C1;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-10:has(input[disabled]) input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-10:has(input[disabled]) input::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-10:has(input[disabled]) input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-10:has(input[disabled])>* input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-10:has(input[disabled])>* input::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-10:has(input[disabled])>* input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-10:has(input[disabled]) input::placeholder,
+.emotion-10:has(input[disabled])>* input::placeholder {
+  color: transparent;
 }
 
 .emotion-12 {
@@ -332,57 +438,19 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  background-color: #FFFFFF;
-  border-radius: 0px;
-  border-style: solid;
+  border: 0;
   outline: 0;
-  border-width: 1px;
-  border-color: #C1C1C1;
-  min-width: 198px;
-  padding: 24px 16px 8px;
   width: 100%;
-  height: 53px;
+  background-color: inherit;
+  padding: 24px 0 8px 0;
 }
 
-.emotion-12:focus {
-  border-color: #00677F;
-}
-
-.emotion-12[data-error="true"] {
-  border-color: #FF494A;
-}
-
-.emotion-12[data-error="true"]:focus {
-  border-color: #FF494A;
-}
-
-.emotion-12[readonly]:not([disabled]) {
-  background-color: #F3F3F5;
-  color: #838383;
-}
-
-.emotion-12:disabled {
-  color: #C1C1C1;
-  background-color: #FAFAFA;
-  border-color: #DEDEDE;
-  cursor: not-allowed;
-}
-
-.emotion-12:disabled::-webkit-input-placeholder {
-  color: transparent;
-}
-
-.emotion-12:disabled::-moz-placeholder {
-  color: transparent;
-}
-
-.emotion-12:disabled:-ms-input-placeholder {
-  color: transparent;
-}
-
-.emotion-12:disabled::placeholder {
-  color: transparent;
+.emotion-12 input:-webkit-autofill,
+.emotion-12 input:-webkit-autofill:hover,
+.emotion-12 input:-webkit-autofill:focus,
+.emotion-12 input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .emotion-12::-webkit-input-placeholder {
@@ -425,11 +493,11 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
           </label>
           <div
             class="emotion-10 emotion-11"
-            style="flex-direction: row;"
           >
             <input
               class="emotion-12 emotion-13"
               data-error="false"
+              data-testid="input-field"
               id="label-1"
               name="label-1"
               type="text"
@@ -513,6 +581,13 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   color: #838383;
 }
 
+.emotion-6 input[type="search"]::-webkit-search-decoration,
+.emotion-6 input[type="search"]::-webkit-search-cancel-button,
+.emotion-6 input[type="search"]::-webkit-search-results-button,
+.emotion-6 input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
 .emotion-8 {
   font-weight: 700;
   font-size: 0.875rem;
@@ -528,8 +603,8 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  left: 16px;
-  top: 16.5px;
+  left: 12px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -544,13 +619,78 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 198px;
+  width: 100%;
+  height: 54px;
+  color: #454545;
+  gap: 8px;
+  background-color: #FFFFFF;
+  padding-inline: 12px;
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C1C1C1;
+}
+
+.emotion-10:has(input:focus) {
+  border-color: #00677F;
+}
+
+.emotion-10:has(input[data-error="true"]) {
+  border-color: #FF494A;
+}
+
+.emotion-10:has(input[data-error="true"]):focus {
+  border-color: #FF494A;
+}
+
+.emotion-10:has(input[readonly]:not([disabled])) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-10:has(input[disabled]),
+.emotion-10:has(input[disabled])>* {
+  color: #C1C1C1;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-10:has(input[disabled]) input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-10:has(input[disabled]) input::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-10:has(input[disabled]) input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-10:has(input[disabled])>* input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-10:has(input[disabled])>* input::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-10:has(input[disabled])>* input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-10:has(input[disabled]) input::placeholder,
+.emotion-10:has(input[disabled])>* input::placeholder {
+  color: transparent;
 }
 
 .emotion-12 {
@@ -560,57 +700,19 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  background-color: #FFFFFF;
-  border-radius: 0px;
-  border-style: solid;
+  border: 0;
   outline: 0;
-  border-width: 1px;
-  border-color: #C1C1C1;
-  min-width: 198px;
-  padding: 24px 16px 8px;
   width: 100%;
-  height: 53px;
+  background-color: inherit;
+  padding: 24px 0 8px 0;
 }
 
-.emotion-12:focus {
-  border-color: #00677F;
-}
-
-.emotion-12[data-error="true"] {
-  border-color: #FF494A;
-}
-
-.emotion-12[data-error="true"]:focus {
-  border-color: #FF494A;
-}
-
-.emotion-12[readonly]:not([disabled]) {
-  background-color: #F3F3F5;
-  color: #838383;
-}
-
-.emotion-12:disabled {
-  color: #C1C1C1;
-  background-color: #FAFAFA;
-  border-color: #DEDEDE;
-  cursor: not-allowed;
-}
-
-.emotion-12:disabled::-webkit-input-placeholder {
-  color: transparent;
-}
-
-.emotion-12:disabled::-moz-placeholder {
-  color: transparent;
-}
-
-.emotion-12:disabled:-ms-input-placeholder {
-  color: transparent;
-}
-
-.emotion-12:disabled::placeholder {
-  color: transparent;
+.emotion-12 input:-webkit-autofill,
+.emotion-12 input:-webkit-autofill:hover,
+.emotion-12 input:-webkit-autofill:focus,
+.emotion-12 input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .emotion-12::-webkit-input-placeholder {
@@ -652,11 +754,11 @@ exports[`<Form /> component with Form.Group should render a form with display fl
           </label>
           <div
             class="emotion-10 emotion-11"
-            style="flex-direction: row;"
           >
             <input
               class="emotion-12 emotion-13"
               data-error="false"
+              data-testid="input-field"
               id="label-1"
               name="label-1"
               type="text"
@@ -676,11 +778,11 @@ exports[`<Form /> component with Form.Group should render a form with display fl
           </label>
           <div
             class="emotion-10 emotion-11"
-            style="flex-direction: row;"
           >
             <input
               class="emotion-12 emotion-13"
               data-error="false"
+              data-testid="input-field"
               id="label-2"
               name="label-2"
               type="text"
@@ -790,6 +892,13 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   color: #838383;
 }
 
+.emotion-10 input[type="search"]::-webkit-search-decoration,
+.emotion-10 input[type="search"]::-webkit-search-cancel-button,
+.emotion-10 input[type="search"]::-webkit-search-results-button,
+.emotion-10 input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
 .emotion-12 {
   font-weight: 700;
   font-size: 0.875rem;
@@ -805,8 +914,8 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  left: 16px;
-  top: 16.5px;
+  left: 12px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -821,13 +930,78 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 198px;
+  width: 100%;
+  height: 54px;
+  color: #454545;
+  gap: 8px;
+  background-color: #FFFFFF;
+  padding-inline: 12px;
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C1C1C1;
+}
+
+.emotion-14:has(input:focus) {
+  border-color: #00677F;
+}
+
+.emotion-14:has(input[data-error="true"]) {
+  border-color: #FF494A;
+}
+
+.emotion-14:has(input[data-error="true"]):focus {
+  border-color: #FF494A;
+}
+
+.emotion-14:has(input[readonly]:not([disabled])) {
+  background-color: #F3F3F5;
+  color: #838383;
+}
+
+.emotion-14:has(input[disabled]),
+.emotion-14:has(input[disabled])>* {
+  color: #C1C1C1;
+  background-color: #FAFAFA;
+  border-color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+.emotion-14:has(input[disabled]) input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-14:has(input[disabled]) input::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-14:has(input[disabled]) input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-14:has(input[disabled])>* input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.emotion-14:has(input[disabled])>* input::-moz-placeholder {
+  color: transparent;
+}
+
+.emotion-14:has(input[disabled])>* input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.emotion-14:has(input[disabled]) input::placeholder,
+.emotion-14:has(input[disabled])>* input::placeholder {
+  color: transparent;
 }
 
 .emotion-16 {
@@ -837,57 +1011,19 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
-  background-color: #FFFFFF;
-  border-radius: 0px;
-  border-style: solid;
+  border: 0;
   outline: 0;
-  border-width: 1px;
-  border-color: #C1C1C1;
-  min-width: 198px;
-  padding: 24px 16px 8px;
   width: 100%;
-  height: 53px;
+  background-color: inherit;
+  padding: 24px 0 8px 0;
 }
 
-.emotion-16:focus {
-  border-color: #00677F;
-}
-
-.emotion-16[data-error="true"] {
-  border-color: #FF494A;
-}
-
-.emotion-16[data-error="true"]:focus {
-  border-color: #FF494A;
-}
-
-.emotion-16[readonly]:not([disabled]) {
-  background-color: #F3F3F5;
-  color: #838383;
-}
-
-.emotion-16:disabled {
-  color: #C1C1C1;
-  background-color: #FAFAFA;
-  border-color: #DEDEDE;
-  cursor: not-allowed;
-}
-
-.emotion-16:disabled::-webkit-input-placeholder {
-  color: transparent;
-}
-
-.emotion-16:disabled::-moz-placeholder {
-  color: transparent;
-}
-
-.emotion-16:disabled:-ms-input-placeholder {
-  color: transparent;
-}
-
-.emotion-16:disabled::placeholder {
-  color: transparent;
+.emotion-16 input:-webkit-autofill,
+.emotion-16 input:-webkit-autofill:hover,
+.emotion-16 input:-webkit-autofill:focus,
+.emotion-16 input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .emotion-16::-webkit-input-placeholder {
@@ -941,11 +1077,11 @@ exports[`<Form /> component with Form.Group should render a form with group titl
           </label>
           <div
             class="emotion-14 emotion-15"
-            style="flex-direction: row;"
           >
             <input
               class="emotion-16 emotion-17"
               data-error="false"
+              data-testid="input-field"
               id="label-1"
               name="label-1"
               type="text"
@@ -965,11 +1101,11 @@ exports[`<Form /> component with Form.Group should render a form with group titl
           </label>
           <div
             class="emotion-14 emotion-15"
-            style="flex-direction: row;"
           >
             <input
               class="emotion-16 emotion-17"
               data-error="false"
+              data-testid="input-field"
               id="label-2"
               name="label-2"
               type="text"

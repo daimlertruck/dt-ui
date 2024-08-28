@@ -32,8 +32,8 @@ exports[`<TextArea /> component renders input with an value 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  left: 16px;
-  top: 16.5px;
+  left: 12px;
+  top: 16px;
   position: absolute;
   -webkit-transform: translateY(-45%);
   -moz-transform: translateY(-45%);

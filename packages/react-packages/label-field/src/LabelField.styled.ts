@@ -28,8 +28,8 @@ const labelColorState = (
 const floatingLabel = (isActive: boolean, theme: Theme) => {
   return `${isActive ? theme.fontStyles.body3 : theme.fontStyles.body2}
 
-  left: 16px;
-  top: 16.5px;
+  left: 12px;
+  top: 16px;
   position: absolute;
 
   transform: ${isActive ? 'translateY(-45%)' : 'translateY(0)'};
