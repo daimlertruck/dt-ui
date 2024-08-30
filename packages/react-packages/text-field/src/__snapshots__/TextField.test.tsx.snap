@@ -44,7 +44,7 @@ exports[`<TextField /> component onBlur event should have error state with error
   margin: 0;
   text-transform: none;
   left: 16px;
-  top: 16px;
+  top: 16.5px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -248,7 +248,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
   margin: 0;
   text-transform: none;
   left: 16px;
-  top: 16px;
+  top: 16.5px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -427,7 +427,7 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
   margin: 0;
   text-transform: none;
   left: 16px;
-  top: 16px;
+  top: 16.5px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -662,7 +662,7 @@ exports[`<TextField /> component renders input with variant baseLine 1`] = `
   margin: 0;
   text-transform: none;
   left: 16px;
-  top: 16px;
+  top: 16.5px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -991,7 +991,7 @@ exports[`<TextField /> component should render the TextField with error styles a
   margin: 0;
   text-transform: none;
   left: 16px;
-  top: 16px;
+  top: 16.5px;
   position: absolute;
   -webkit-transform: translateY(-45%);
   -moz-transform: translateY(-45%);
@@ -1188,7 +1188,7 @@ exports[`<TextField /> component should render the TextField with info message 1
   margin: 0;
   text-transform: none;
   left: 16px;
-  top: 16px;
+  top: 16.5px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);

@@ -44,7 +44,7 @@ exports[`<SearchField /> component renders SearchField input element with the co
   margin: 0;
   text-transform: none;
   left: 16px;
-  top: 16px;
+  top: 16.5px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);

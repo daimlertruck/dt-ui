@@ -17,7 +17,7 @@ exports[`<LabelField /> component it renders a disabled label field 1`] = `
   margin: 0;
   text-transform: none;
   left: 16px;
-  top: 16px;
+  top: 16.5px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -59,7 +59,7 @@ exports[`<LabelField /> component it renders a label field as required 1`] = `
   margin: 0;
   text-transform: none;
   left: 16px;
-  top: 16px;
+  top: 16.5px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -117,7 +117,7 @@ exports[`<LabelField /> component when the LabelField is active it should render
   margin: 0;
   text-transform: none;
   left: 16px;
-  top: 16px;
+  top: 16.5px;
   position: absolute;
   -webkit-transform: translateY(-45%);
   -moz-transform: translateY(-45%);
@@ -158,7 +158,7 @@ exports[`<LabelField /> component when the LabelField is inactive it should rend
   margin: 0;
   text-transform: none;
   left: 16px;
-  top: 16px;
+  top: 16.5px;
   position: absolute;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
