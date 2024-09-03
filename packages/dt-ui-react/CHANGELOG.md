@@ -1,5 +1,12 @@
 # @dt-ui/react
 
+## 0.1.0-beta.135
+
+### Patch Changes
+
+- refactor: drop unused readme file
+- refactor: drop form components
+
 ## 0.1.0-beta.134
 
 ### Patch Changes
