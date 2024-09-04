@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.137
+
+### Patch Changes
+
+- chore: date-picker independent pkg
+- Updated dependencies
+  - @dt-ui/react-date-picker@0.1.0-beta.1
+
 ## 0.1.0-beta.136
 
 ### Patch Changes
