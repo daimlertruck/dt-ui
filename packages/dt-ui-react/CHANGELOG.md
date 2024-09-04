@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.136
+
+### Patch Changes
+
+- chore: toggle independent pkg
+- Updated dependencies
+  - @dt-ui/react-toggle@0.1.0-beta.1
+
 ## 0.1.0-beta.135
 
 ### Patch Changes
