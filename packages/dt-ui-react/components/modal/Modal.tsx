@@ -89,6 +89,7 @@ Modal.ContentTitle = ({ children }: BaseProps) => {
         marginBottom: '8px',
         textTransform: 'none',
         fontWeight: 700,
+        wordBreak: 'break-word',
       }}
     >
       {children}
