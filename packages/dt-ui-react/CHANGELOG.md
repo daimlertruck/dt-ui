@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.44
+
+### Patch Changes
+
+- style: fix break word on modal title
+
 ## 0.1.0-alpha.43
 
 ### Patch Changes
