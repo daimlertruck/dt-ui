@@ -1,0 +1,7 @@
+import{j as e}from"./jsx-runtime-CKrituN3.js";import{L as S}from"./LabelField-Cy5ugnCm.js";import{T as L}from"./Typography-DvHa2txy.js";import{r as n}from"./index-CBqU2yxZ.js";import{T as C,a as D}from"./TextArea.styled-BgdXJPw-.js";import"./emotion-styled.browser.esm-B1le5_Hy.js";import"./extends-DJVMZnyl.js";import"./_commonjsHelpers-BosuxZz1.js";import"./index-CJ73Y9Wi.js";import"./index-BtM5VmRH.js";import"./index-BAMY2Nnw.js";import"./util-BQ0cylCP.js";import"./index-BDlDW0Uq.js";const u=({label:t,onChange:m,dataTestId:h,name:A,value:r,maxLength:c=120})=>{const[l,p]=n.useState(0),[g,a]=n.useState(!1),T=()=>a(!0),j=()=>l>0?a(!0):a(!1),y=i=>{p(i.target.value.length),m&&m(i)};n.useEffect(()=>{r&&(a(!0),p(r.length))},[r]);const o=h??`${t.replaceAll(" ","-").toLocaleLowerCase()}-textarea`;return e.jsxs(C,{"data-testid":o,children:[e.jsx(S,{htmlFor:o,isActive:g,children:t}),e.jsx(D,{id:o,maxLength:c,name:A,onBlur:j,onChange:y,onFocus:T,value:r}),e.jsxs(L,{color:"content.medium",element:"span",fontStyles:"pXSmall",children:[c-l," Characters"]})]})},k={title:"Data Display/TextArea",component:u,argTypes:{},render:({...t})=>e.jsx(u,{...t})},s={args:{label:"Awesome TextArea",maxLength:120,value:""}};var d,x,f;s.parameters={...s.parameters,docs:{...(d=s.parameters)==null?void 0:d.docs,source:{originalSource:`{
+  args: {
+    label: 'Awesome TextArea',
+    maxLength: 120,
+    value: ''
+  }
+}`,...(f=(x=s.parameters)==null?void 0:x.docs)==null?void 0:f.source}}};const q=["Default"];export{s as Default,q as __namedExportsOrder,k as default};
