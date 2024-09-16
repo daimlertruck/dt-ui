@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.45
+
+### Patch Changes
+
+- refactor: remove unnecessary modal useEffect
+
 ## 0.1.0-alpha.44
 
 ### Patch Changes
