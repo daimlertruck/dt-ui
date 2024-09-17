@@ -1,6 +1,8 @@
-import { palette as defaultPalette, colors } from '../default/palette';
+import { Theme, theme as defaultTheme } from '@dt-ui/react';
 
-export const palette = {
+const { palette: defaultPalette, colors } = defaultTheme;
+
+export const palette: Theme['palette'] = {
   ...defaultPalette,
   primary: {
     default: colors.blue,

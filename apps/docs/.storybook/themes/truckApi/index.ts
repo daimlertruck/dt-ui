@@ -1,12 +1,12 @@
-import { CustomTheme } from '../../types';
-import { theme } from '../default/index';
+import { theme as defaultTheme } from '@dt-ui/react';
+import { Theme } from '@emotion/react';
 
 import { palette } from './palette';
 import { shape } from './shape';
 import { fontFamily, fontStyles } from './typography';
 
-export const truckAPITheme: CustomTheme = {
-  ...theme,
+export const truckAPITheme: Theme = {
+  ...defaultTheme,
   fontFamily,
   fontStyles,
   palette,

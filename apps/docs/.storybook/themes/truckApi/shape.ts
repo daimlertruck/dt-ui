@@ -1,8 +1,9 @@
-import { radius } from '../default/radius';
-import { shape as defaulShape } from '../default/shape';
+import { Theme, theme as defaultTheme } from '@dt-ui/react';
 
-export const shape = {
-  ...defaulShape,
+const { shape: defaultShape, radius } = defaultTheme;
+
+export const shape: Theme['shape'] = {
+  ...defaultShape,
   button: radius['5xs'],
   checkbox: radius['6xs'],
   modal: radius['5xs'],
