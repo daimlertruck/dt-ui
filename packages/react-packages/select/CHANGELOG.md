@@ -1,5 +1,13 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.14
+
+### Patch Changes
+
+- fix: update label vertical positioning
+- Updated dependencies
+  - @dt-ui/react-label-field@0.1.0-beta.18
+
 ## 0.1.0-beta.13
 
 ### Patch Changes

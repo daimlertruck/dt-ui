@@ -1,5 +1,16 @@
 # @dt-ui/react
 
+## 0.1.0-beta.138
+
+### Patch Changes
+
+- fix: update label vertical positioning
+- Updated dependencies
+  - @dt-ui/react-date-picker@0.1.0-beta.2
+  - @dt-ui/react-label-field@0.1.0-beta.18
+  - @dt-ui/react-select@0.1.0-beta.14
+  - @dt-ui/react-text-field@0.1.0-beta.19
+
 ## 0.1.0-beta.137
 
 ### Patch Changes

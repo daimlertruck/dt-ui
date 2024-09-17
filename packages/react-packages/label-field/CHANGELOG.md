@@ -1,5 +1,11 @@
 # @dt-ui/react-label-field
 
+## 0.1.0-beta.18
+
+### Patch Changes
+
+- fix: update label vertical positioning
+
 ## 0.1.0-beta.17
 
 ### Minor Changes
