@@ -1,5 +1,43 @@
 # @dt-ui/react
 
+## 0.1.0-beta.139
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.24
+  - @dt-ui/react-accordion@0.1.0-beta.21
+  - @dt-ui/react-avatar@0.1.0-beta.27
+  - @dt-ui/react-backdrop@0.1.0-beta.26
+  - @dt-ui/react-modal@0.1.0-beta.7
+  - @dt-ui/react-breadcrumb@0.1.0-beta.26
+  - @dt-ui/react-button@0.1.0-beta.15
+  - @dt-ui/react-empty-state@0.1.0-beta.35
+  - @dt-ui/react-toast@0.1.0-beta.32
+  - @dt-ui/react-card@0.1.0-beta.7
+  - @dt-ui/react-checkbox@0.1.0-beta.18
+  - @dt-ui/react-select@0.1.0-beta.15
+  - @dt-ui/react-date-picker@0.1.0-beta.3
+  - @dt-ui/react-divider@0.1.0-beta.23
+  - @dt-ui/react-drawer@0.1.0-beta.27
+  - @dt-ui/react-dropdown@0.1.0-beta.3
+  - @dt-ui/react-icon@0.1.0-beta.21
+  - @dt-ui/react-progress-bar@0.1.0-beta.14
+  - @dt-ui/react-segmented-control@0.1.0-beta.5
+  - @dt-ui/react-stepper@0.1.0-beta.9
+  - @dt-ui/react-tabs@0.1.0-beta.14
+  - @dt-ui/react-label-field@0.1.0-beta.19
+  - @dt-ui/react-text-field@0.1.0-beta.20
+  - @dt-ui/react-message@0.1.0-beta.28
+  - @dt-ui/react-radio@0.1.0-beta.8
+  - @dt-ui/react-spinner@0.1.0-beta.25
+  - @dt-ui/react-table@0.1.0-beta.19
+  - @dt-ui/react-tag@0.1.0-beta.24
+  - @dt-ui/react-toggle@0.1.0-beta.2
+  - @dt-ui/react-tooltip@0.1.0-beta.27
+  - @dt-ui/react-typography@0.1.0-beta.15
+
 ## 0.1.0-beta.138
 
 ### Patch Changes

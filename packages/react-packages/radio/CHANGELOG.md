@@ -1,5 +1,13 @@
 # @dt-ui/react-radio
 
+## 0.1.0-beta.8
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.24
+
 ## 0.1.0-beta.7
 
 ### Minor Changes

@@ -1,5 +1,14 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.3
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.24
+  - @dt-ui/react-text-field@0.1.0-beta.20
+
 ## 0.1.0-beta.2
 
 ### Patch Changes

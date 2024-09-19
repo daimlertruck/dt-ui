@@ -1,5 +1,14 @@
 # @dt-ui/react-drawer
 
+## 0.1.0-beta.27
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.24
+  - @dt-ui/react-typography@0.1.0-beta.15
+
 ## 0.1.0-beta.26
 
 ### Minor Changes

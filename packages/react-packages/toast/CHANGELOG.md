@@ -1,5 +1,14 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.32
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.24
+  - @dt-ui/react-button@0.1.0-beta.15
+
 ## 0.1.0-beta.31
 
 ### Minor Changes

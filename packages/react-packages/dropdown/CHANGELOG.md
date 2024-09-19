@@ -1,5 +1,15 @@
 # @dt-ui/react-dropdown
 
+## 0.1.0-beta.3
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.24
+  - @dt-ui/react-icon@0.1.0-beta.21
+  - @dt-ui/react-typography@0.1.0-beta.15
+
 ## 0.1.0-beta.2
 
 ### Minor Changes

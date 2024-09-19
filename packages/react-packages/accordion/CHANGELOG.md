@@ -1,5 +1,14 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.21
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.24
+  - @dt-ui/react-divider@0.1.0-beta.23
+
 ## 0.1.0-beta.20
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.14
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.21
+  - @dt-ui/react-typography@0.1.0-beta.15
+
 ## 0.1.0-beta.13
 
 ### Minor Changes

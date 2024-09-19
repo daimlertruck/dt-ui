@@ -1,5 +1,13 @@
 # @dt-ui/react-tooltip
 
+## 0.1.0-beta.27
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.24
+
 ## 0.1.0-beta.26
 
 ### Minor Changes

@@ -1,5 +1,13 @@
 # @dt-ui/react-icon
 
+## 0.1.0-beta.21
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.24
+
 ## 0.1.0-beta.20
 
 ### Minor Changes

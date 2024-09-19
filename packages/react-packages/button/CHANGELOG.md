@@ -1,5 +1,14 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.15
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.24
+  - @dt-ui/react-spinner@0.1.0-beta.25
+
 ## 0.1.0-beta.14
 
 ### Minor Changes

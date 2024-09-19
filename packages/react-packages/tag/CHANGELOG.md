@@ -1,5 +1,13 @@
 # @dt-ui/react-tag
 
+## 0.1.0-beta.24
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.24
+
 ## 0.1.0-beta.23
 
 ### Minor Changes

@@ -1,5 +1,15 @@
 # @dt-ui/react-stepper
 
+## 0.1.0-beta.9
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.24
+  - @dt-ui/react-icon@0.1.0-beta.21
+  - @dt-ui/react-typography@0.1.0-beta.15
+
 ## 0.1.0-beta.8
 
 ### Minor Changes

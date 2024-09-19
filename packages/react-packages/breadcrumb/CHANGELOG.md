@@ -1,5 +1,14 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.26
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.24
+  - @dt-ui/react-tooltip@0.1.0-beta.27
+
 ## 0.1.0-beta.25
 
 ### Patch Changes

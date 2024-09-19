@@ -1,5 +1,15 @@
 # @dt-ui/react-segmented-control
 
+## 0.1.0-beta.5
+
+### Patch Changes
+
+- refactor: drop truckapi theme
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.24
+  - @dt-ui/react-icon@0.1.0-beta.21
+  - @dt-ui/react-tooltip@0.1.0-beta.27
+
 ## 0.1.0-beta.4
 
 ### Minor Changes
