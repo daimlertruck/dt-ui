@@ -1,5 +1,14 @@
 # @dt-ui/react
 
+## 0.1.0-beta.140
+
+### Patch Changes
+
+- refactor: drop unused story file
+- chore: text-area independent pkg
+- Updated dependencies
+  - @dt-ui/react-text-area@0.1.0-beta.1
+
 ## 0.1.0-beta.139
 
 ### Patch Changes
