@@ -32,6 +32,8 @@ export const Modal = ({
   handleClose,
   hasClickOutside = false,
   isLoading = false,
+  style,
+  dataTestId,
 }: ModalProps) => {
   const ref = useRef(null);
 
@@ -41,7 +43,7 @@ export const Modal = ({
   });
 
   return (
-    <ModalStyled ref={ref}>
+    <ModalStyled data-testid={dataTestId} ref={ref} style={style}>
       {isLoading ? <ModalLoadingOverlay /> : null}
       {children}
     </ModalStyled>
