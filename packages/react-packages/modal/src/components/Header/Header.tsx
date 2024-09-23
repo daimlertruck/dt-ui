@@ -21,12 +21,14 @@ export const ModalHeader = ({
   hasBorder = false,
   title,
   subTitle,
+  style,
 }: ModalHeaderProps) => {
   return (
     <HeaderStyled
       data-testid={dataTestId ?? 'modal-header'}
       hasBackgroundColor={hasBackgroundColor}
       hasBorder={hasBorder}
+      style={style}
     >
       <Box style={{ justifyContent: 'space-between', flexDirection: 'row' }}>
         <Typography color='content.dark' element='h4' fontStyles='h4'>

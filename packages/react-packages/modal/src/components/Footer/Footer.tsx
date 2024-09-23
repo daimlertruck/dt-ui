@@ -12,9 +12,11 @@ export const ModalFooter = ({
   style,
   hasBackgroundColor = false,
   hasBorder = false,
+  dataTestId,
 }: ModalFooterProps) => {
   return (
     <FooterStyled
+      data-testid={dataTestId}
       hasBackgroundColor={hasBackgroundColor}
       hasBorder={hasBorder}
       style={style}
