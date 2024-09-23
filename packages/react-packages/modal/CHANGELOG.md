@@ -1,5 +1,11 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.9
+
+### Minor Changes
+
+- feat: add base props to modal
+
 ## 0.1.0-beta.8
 
 ### Minor Changes
