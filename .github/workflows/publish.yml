@@ -84,12 +84,13 @@ jobs:
           echo "version=$current_version" >> $GITHUB_OUTPUT
 
       - name: Compare package versions
+        continue-on-error: true
         run: |
           published_versions=$(yarn info ${{ matrix.packages }} versions)
           current_version=${{ steps.package-detail.outputs.version }}
           if [[ $published_versions == *"$current_version"* ]]; then
             echo "Version is already published: $current_version"
-            exit 1
+            exit 0
           else
             echo "Publishing the new version: $current_version"
           fi
