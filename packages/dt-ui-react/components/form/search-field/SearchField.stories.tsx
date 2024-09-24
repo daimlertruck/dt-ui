@@ -1,7 +1,7 @@
 import { SearchField } from './SearchField';
 
 export default {
-  title: 'Data Display/form/SearchField',
+  title: 'Data Display/components/form/SearchField',
   component: SearchField,
 };
 
