@@ -43,9 +43,15 @@ jobs:
       - name: Get changed packages
         id: get-changed-packages
         run: |
-          echo 'result<<CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
-          TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter=[..HEAD^1] --filter='!./apps/*'  >> $GITHUB_OUTPUT
-          echo 'CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
+          if [[ "${{ github.event_name }}" != 'workflow_dispatch' ]]; then
+            echo 'result<<CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
+            TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter=[..HEAD^1] --filter='!./apps/*'  >> $GITHUB_OUTPUT
+            echo 'CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
+          else
+            echo 'result<<CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
+            TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter='!./apps/*' >> $GITHUB_OUTPUT
+            echo 'CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
+          fi
 
       - name: Set changed packages
         id: set-changed-packages
