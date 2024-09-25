@@ -59,20 +59,28 @@ jobs:
           unpublished_packages=()
           for package in $packages; do
             directory=$(yarn workspaces --json info | jq -r ".data.\"$package\".location")
-            current_version=$(jq -r '.version' < $directory/package.json)
-            
+            current_version=$(jq -r '.version' < "$directory/package.json")
+
             if [[ "$current_version" == "0.0.0" ]]; then
               echo "Skipping $package as its version is 0.0.0"
               continue
             fi
-            
-            published_versions=$(yarn info $package versions || echo "[]")
-            
+
+            published_versions=$(yarn info "$package" versions || echo "[]")
+      
             if [[ $published_versions != *"$current_version"* ]]; then
               unpublished_packages+=("$package")
             fi
           done
-          echo "result=$(printf '%s\n' \"${unpublished_packages[@]}\" | jq -R . | jq -s .)" >> $GITHUB_OUTPUT
+
+          if [ ${#unpublished_packages[@]} -eq 0 ]; then
+            echo "No unpublished packages."
+            echo "result=[]" >> $GITHUB_OUTPUT
+          else
+            echo "Unpublished packages: ${unpublished_packages[@]}"
+            printf -v result '%s\n' "${unpublished_packages[@]}"
+            echo "result=$(jq -R . <<< \"$result\" | jq -s .)" >> $GITHUB_OUTPUT
+          fi
 
   publish:
     runs-on: self-hosted
