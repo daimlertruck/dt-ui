@@ -19,8 +19,7 @@ jobs:
     if: "contains(github.event.head_commit.message, 'release:') || github.event_name == 'workflow_dispatch'"
     runs-on: self-hosted
     outputs:
-      changed-package: ${{ steps.get-changed-packages.outputs.result }}
-      matrix: ${{ steps.set-changed-packages.outputs.result }}
+      matrix: ${{ steps.filter-unpublished-packages.outputs.result }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -53,12 +52,27 @@ jobs:
             echo 'CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
           fi
 
-      - name: Set changed packages
-        id: set-changed-packages
-        uses: actions/github-script@v6
-        with:
-          script: |
-            return ${{ toJson(fromJson(steps.get-changed-packages.outputs.result).packages) }}
+      - name: Filter unpublished packages
+        id: filter-unpublished-packages
+        run: |
+          packages=$(echo ${{ steps.get-changed-packages.outputs.result }} | jq -r '.packages[]')
+          unpublished_packages=()
+          for package in $packages; do
+            directory=$(yarn workspaces --json info | jq -r ".data.\"$package\".location")
+            current_version=$(jq -r '.version' < $directory/package.json)
+            
+            if [[ "$current_version" == "0.0.0" ]]; then
+              echo "Skipping $package as its version is 0.0.0"
+              continue
+            fi
+            
+            published_versions=$(yarn info $package versions || echo "[]")
+            
+            if [[ $published_versions != *"$current_version"* ]]; then
+              unpublished_packages+=("$package")
+            fi
+          done
+          echo "result=$(printf '%s\n' "${unpublished_packages[@]}" | jq -R . | jq -s .)" >> $GITHUB_OUTPUT
 
   publish:
     runs-on: self-hosted
@@ -89,19 +103,6 @@ jobs:
           current_version=$(cat $directory/package.json | jq -r '.version')
           echo "directory=$directory" >> $GITHUB_OUTPUT
           echo "version=$current_version" >> $GITHUB_OUTPUT
-
-      - name: Compare package versions
-        continue-on-error: true
-        run: |
-          published_versions=$(yarn info ${{ matrix.packages }} versions)
-          current_version=${{ steps.package-detail.outputs.version }}
-          if [[ $published_versions == *"$current_version"* ]]; then
-            echo "Version is already published: $current_version"
-            exit 0
-          else
-            echo "Publishing the new version: $current_version"
-          fi
-        shell: bash
 
       - name: Run build ${{ matrix.packages }}
         run: |
