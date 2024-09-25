@@ -1,5 +1,16 @@
 # @dt-ui/react
 
+## 0.1.0-beta.143
+
+### Minor Changes
+
+- feat: reinstate the form component
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-form@0.1.0-beta.1
+
 ## 0.1.0-beta.142
 
 ### Minor Changes
