@@ -72,7 +72,7 @@ jobs:
               unpublished_packages+=("$package")
             fi
           done
-          echo "result=$(printf '%s\n' "${unpublished_packages[@]}" | jq -R . | jq -s .)" >> $GITHUB_OUTPUT
+          echo "result=$(printf '%s\n' \"${unpublished_packages[@]}\" | jq -R . | jq -s .)" >> $GITHUB_OUTPUT
 
   publish:
     runs-on: self-hosted
