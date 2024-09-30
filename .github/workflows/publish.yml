@@ -78,8 +78,8 @@ jobs:
             echo "result=[]" >> $GITHUB_OUTPUT
           else
             echo "Unpublished packages: ${unpublished_packages[@]}"
-            printf -v result '%s\n' "${unpublished_packages[@]}"
-            echo "result=$(jq -R . <<< \"$result\" | jq -s .)" >> $GITHUB_OUTPUT
+            result=$(printf '%s\n' "${unpublished_packages[@]}" | jq -R . | jq -s .)
+            echo "result=$result" >> $GITHUB_OUTPUT
           fi
 
   publish:
