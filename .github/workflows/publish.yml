@@ -43,28 +43,43 @@ jobs:
         id: get-changed-packages
         run: |
           if [[ "${{ github.event_name }}" != 'workflow_dispatch' ]]; then
-            echo 'result<<CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
-            TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter=[..HEAD^1] --filter='!./apps/*'  >> $GITHUB_OUTPUT
-            echo 'CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
+            TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter=[..HEAD^1] --filter='!./apps/*' > $RUNNER_TEMP/turbo_result.json
           else
-            echo 'result<<CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
-            TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter='!./apps/*' >> $GITHUB_OUTPUT
-            echo 'CHANGESET_DELIMITER' >> $GITHUB_OUTPUT
+            TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter='!./apps/*' > $RUNNER_TEMP/turbo_result.json
           fi
+
+          echo "Turbo build output saved to $RUNNER_TEMP/turbo_result.json"
 
       - name: Filter unpublished packages
         id: filter-unpublished-packages
         run: |
-          packages=$(echo "${{ steps.get-changed-packages.outputs.result }}" | jq -r '.packages[]')
+          touch .npmrc
+          echo "@dt-ui:registry=https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/" >> .npmrc
+          echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:always-auth=true" >> .npmrc
+          echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:_password=${TBLX_NPM_ARTIFACT_TOKEN}" >> .npmrc
+          echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:username=${TBLX_NPM_ARTIFACT_USERNAME}" >> .npmrc
+
+          TURBO_RESULT=$(cat $RUNNER_TEMP/turbo_result.json)
           
+          packages=$(echo "$TURBO_RESULT" | jq -r '.packages[]')
+
           unpublished_packages=()
           
           workspace_info=$(yarn workspaces --json info)
+          parsed_workspace_info=$(echo "$workspace_info" | jq -r '.data | fromjson')
           
           for package in $packages; do
-            parsed_workspace_info=$(echo "$workspace_info" | jq -r '.data | fromjson')
+            echo "Checking package: $package"
             directory=$(echo "$parsed_workspace_info" | jq -r --arg package "$package" '.[$package].location')
             
+            # Debug: directory
+            echo "Directory for $package: $directory"
+            
+            if [[ ! -d "$directory" ]]; then
+              echo "Directory does not exist for package $package: $directory"
+              continue
+            fi
+
             current_version=$(jq -r '.version' < "$directory/package.json")
 
             if [[ "$current_version" == "0.0.0" ]]; then
@@ -85,9 +100,10 @@ jobs:
           else
             echo "Unpublished packages: ${unpublished_packages[@]}"
             result=$(printf '%s\n' "${unpublished_packages[@]}" | jq -R . | jq -s .)
-            echo "result=$result" >> $GITHUB_OUTPUT
+            echo "result<<EOF" >> $GITHUB_OUTPUT
+            echo "$result" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
           fi
-          echo "result=${result}" >> $GITHUB_OUTPUT
 
   publish:
     runs-on: self-hosted
