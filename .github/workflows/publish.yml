@@ -56,9 +56,15 @@ jobs:
         id: filter-unpublished-packages
         run: |
           packages=$(echo "${{ steps.get-changed-packages.outputs.result }}" | jq -r '.packages[]')
+          
           unpublished_packages=()
+          
+          workspace_info=$(yarn workspaces --json info)
+          
           for package in $packages; do
-            directory=$(yarn workspaces --json info | jq -r ".data.\"$package\".location")
+            parsed_workspace_info=$(echo "$workspace_info" | jq -r '.data | fromjson')
+            directory=$(echo "$parsed_workspace_info" | jq -r --arg package "$package" '.[$package].location')
+            
             current_version=$(jq -r '.version' < "$directory/package.json")
 
             if [[ "$current_version" == "0.0.0" ]]; then
