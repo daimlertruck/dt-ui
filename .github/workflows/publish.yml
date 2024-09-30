@@ -55,7 +55,7 @@ jobs:
       - name: Filter unpublished packages
         id: filter-unpublished-packages
         run: |
-          packages=$(echo ${{ steps.get-changed-packages.outputs.result }} | jq -r '.packages[]')
+          packages=$(echo "${{ steps.get-changed-packages.outputs.result }}" | jq -r '.packages[]')
           unpublished_packages=()
           for package in $packages; do
             directory=$(yarn workspaces --json info | jq -r ".data.\"$package\".location")
@@ -81,6 +81,7 @@ jobs:
             result=$(printf '%s\n' "${unpublished_packages[@]}" | jq -R . | jq -s .)
             echo "result=$result" >> $GITHUB_OUTPUT
           fi
+          echo "result=${result}" >> $GITHUB_OUTPUT
 
   publish:
     runs-on: self-hosted
