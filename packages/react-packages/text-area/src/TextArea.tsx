@@ -23,12 +23,14 @@ export const TextArea = ({
 }: TextAreaProps) => {
   const [chars, setChars] = useState(0);
   const [activeInput, setActiveInput] = useState(false);
+  const [inputValue, setInputValue] = useState('');
 
   const handleFocus = () => setActiveInput(true);
   const handleBlur = () =>
     chars > 0 ? setActiveInput(true) : setActiveInput(false);
 
   const handleChange = (evt: ChangeEvent<HTMLTextAreaElement>) => {
+    setInputValue(evt.target.value);
     setChars(evt.target.value.length);
     if (onChange) {
       onChange(evt);
@@ -36,9 +38,12 @@ export const TextArea = ({
   };
 
   useEffect(() => {
-    if (value) {
+    if (!!value) {
+      setInputValue(value);
       setActiveInput(true);
       setChars(value.length);
+    } else {
+      setInputValue('');
     }
   }, [value]);
 
@@ -57,7 +62,7 @@ export const TextArea = ({
         onBlur={handleBlur}
         onChange={handleChange}
         onFocus={handleFocus}
-        value={value}
+        value={inputValue}
       />
       <Typography color='content.medium' element='span' fontStyles='pXSmall'>
         {maxLength - chars} Characters
