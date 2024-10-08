@@ -1,5 +1,16 @@
 # @dt-ui/react
 
+## 0.1.0-beta.144
+
+### Minor Changes
+
+- feat: add text-area input state
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-text-area@0.1.0-beta.2
+
 ## 0.1.0-beta.143
 
 ### Minor Changes
