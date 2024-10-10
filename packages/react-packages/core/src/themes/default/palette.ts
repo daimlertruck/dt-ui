@@ -1,6 +1,6 @@
 import { CustomTheme as Theme } from '../../types/theme';
 
-export const colors = {
+export const colors: Theme['colors'] = {
   black: '#000000',
   blue: '#008DFC',
   blue_05: '#F5FAFF',

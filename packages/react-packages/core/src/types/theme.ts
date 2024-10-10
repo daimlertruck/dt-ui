@@ -123,6 +123,17 @@ export type CustomTheme = {
     yellow_70: string;
     yellow_80: string;
     yellow_90: string;
+    petrol: string;
+    petrol_05: string;
+    petrol_10: string;
+    petrol_20: string;
+    petrol_30: string;
+    petrol_40: string;
+    petrol_50: string;
+    petrol_60: string;
+    petrol_70: string;
+    petrol_80: string;
+    petrol_90: string;
     purple: string;
     purple_05: string;
     purple_10: string;
@@ -134,6 +145,7 @@ export type CustomTheme = {
     purple_70: string;
     purple_80: string;
     purple_90: string;
+    purple_100: string;
   };
   shadows: {
     none: string;
