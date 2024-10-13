@@ -1,14 +1,17 @@
-import { Story } from '@storybook/react';
+import { BaseProps } from '@dt-ui/react-core';
+import type { Meta, StoryFn } from '@storybook/react';
 
 import { usePagination } from './hooks';
-import { Pagination, PaginationInput } from './Pagination';
+import {
+  Pagination,
+  PaginationInput,
+  PaginationInputProps,
+  ContentProps,
+} from './Pagination';
 
-export default {
-  title: 'Data Display/Pagination',
-  component: Pagination,
-};
+type PaginationStoryProps = BaseProps & PaginationInputProps & ContentProps;
 
-const Template: Story = ({ totalPages }) => {
+const Template: StoryFn<PaginationStoryProps> = ({ totalPages }) => {
   const { currentPage, handleChange, handleUserInput } = usePagination();
 
   return (
@@ -35,8 +38,17 @@ const Template: Story = ({ totalPages }) => {
   );
 };
 
-export const Default = Template.bind({});
-
-Default.args = {
-  totalPages: 10,
+const meta: Meta<PaginationStoryProps> = {
+  title: 'Data Display/Pagination',
+  component: Pagination,
+  render: Template,
+  argTypes: {},
 };
+
+export const Default = {
+  args: {
+    totalPages: 10,
+  },
+};
+
+export default meta;

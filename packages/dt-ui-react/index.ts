@@ -6,7 +6,6 @@ export * from './core';
 // Components
 export * from './components/buttons';
 export * from './components/link';
-export * from './components/pagination';
 
 //independent component packages
 export * from '@dt-ui/react-accordion';
@@ -50,6 +49,7 @@ export * from '@dt-ui/react-toggle';
 export * from '@dt-ui/react-date-picker';
 export * from '@dt-ui/react-text-area';
 export * from '@dt-ui/react-form';
+export * from '@dt-ui/react-pagination';
 
 declare module '@emotion/react' {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface

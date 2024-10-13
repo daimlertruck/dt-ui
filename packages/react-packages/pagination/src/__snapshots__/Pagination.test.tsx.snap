@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination /> component should render the pagination content 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 48px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 3px;
+  cursor: default;
+}
+
+.emotion-4 {
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #454545;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+.emotion-6 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.76px;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  text-align: center;
+  padding: 6px 8px;
+  margin: 0px;
+  width: 50px;
+  height: 32px;
+  background-color: #FFFFFF;
+  color: #454545;
+  border: 1px solid #DEDEDE;
+  border-radius: 3px;
+}
+
+.emotion-6:focus {
+  border-bottom: 2px solid #00677F;
+}
+
+.emotion-8 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.76px;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #131313;
+}
+
+.emotion-10 {
+  background-color: transparent;
+  color: #00677F;
+  border: none;
+  cursor: pointer;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="pagination-wrapper"
+  >
+    <button
+      class="emotion-2 emotion-3"
+      data-testid="pagination-previous-item"
+      disabled=""
+      title="Go to previous page"
+    >
+      <i
+        class="emotion-4 emotion-5"
+        color="#454545"
+        data-testid="icon"
+      >
+        arrow_back_ios
+      </i>
+    </button>
+    <input
+      class="emotion-6 emotion-7"
+      data-testid="pagination-input"
+      value="1"
+    />
+    <p
+      class="emotion-8 emotion-9"
+      color="grey_90"
+      data-testid="typography"
+    >
+      of
+       
+      <button
+        class="emotion-10 emotion-11"
+        data-testid="pagination-last-page"
+        title="Go to last page"
+      >
+        3
+      </button>
+    </p>
+    <button
+      class="emotion-12 emotion-3"
+      data-testid="pagination-next-item"
+      title="Go to next page"
+    >
+      <i
+        class="emotion-4 emotion-5"
+        color="#454545"
+        data-testid="icon"
+      >
+        arrow_forward_ios
+      </i>
+    </button>
+  </div>
+</div>
+`;

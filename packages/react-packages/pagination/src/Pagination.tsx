@@ -1,8 +1,7 @@
 import { BaseProps, debounce } from '@dt-ui/react-core';
+import { Icon } from '@dt-ui/react-icon';
 import { Typography } from '@dt-ui/react-typography';
 import React, { useEffect, useMemo, useState } from 'react';
-
-import { ArrowLeftIcon, ArrowRightIcon } from '../../core';
 
 import {
   PaginationStyled,
@@ -59,7 +58,7 @@ Pagination.NextItem = ({ onClick, disabled }: ArrowProps) => {
       onClick={onClick}
       title='Go to next page'
     >
-      <ArrowRightIcon />
+      <Icon code='arrow_forward_ios' size='medium' />
     </ArrowStyled>
   );
 };
@@ -72,7 +71,7 @@ Pagination.PreviousItem = ({ onClick, disabled }: ArrowProps) => {
       onClick={onClick}
       title='Go to previous page'
     >
-      <ArrowLeftIcon />
+      <Icon code='arrow_back_ios' size='medium' />
     </ArrowStyled>
   );
 };

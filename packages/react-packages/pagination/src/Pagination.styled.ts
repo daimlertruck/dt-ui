@@ -26,15 +26,11 @@ export const LastPageStyled = styled.button`
 
 export const ArrowStyled = styled.button<ArrowStyledProps>`
   ${({ theme, disabled }) => `
+    display: flex;
     justify-content: center;
-    width: 32px;
-    height: 32px;
     background-color: ${theme.palette.surface.contrast};
     border: none;
     border-radius: 3px;
-    color: ${
-      disabled ? theme.palette.content.default : theme.palette.primary.default
-    };
     cursor: ${disabled ? 'default' : 'pointer'};
   `}
 `;
