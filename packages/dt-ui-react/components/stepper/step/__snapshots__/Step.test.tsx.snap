@@ -48,7 +48,7 @@ exports[`<Step /> component <Step.Counter /> component should render active beha
       class="emotion-2 emotion-3"
       color="primary"
       data-testid="typography"
-      style="font-weight: 700;"
+      style="font-weight: 700; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;"
     >
       1
     </span>
@@ -156,7 +156,7 @@ exports[`<Step /> component <Step.Counter /> component should render default beh
       class="emotion-2 emotion-3"
       color="primary"
       data-testid="typography"
-      style="font-weight: 700;"
+      style="font-weight: 700; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;"
     >
       1
     </span>
@@ -292,7 +292,7 @@ exports[`<Step /> component render active step 1`] = `
         class="emotion-4 emotion-5"
         color="primary"
         data-testid="typography"
-        style="font-weight: 700;"
+        style="font-weight: 700; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;"
       >
         1
       </span>
@@ -378,7 +378,7 @@ exports[`<Step /> component render default step 1`] = `
         class="emotion-4 emotion-5"
         color="primary"
         data-testid="typography"
-        style="font-weight: 700;"
+        style="font-weight: 700; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;"
       >
         1
       </span>
@@ -464,7 +464,7 @@ exports[`<Step /> component render disabled step 1`] = `
         class="emotion-4 emotion-5"
         color="neutralLight_100"
         data-testid="typography"
-        style="font-weight: 700;"
+        style="font-weight: 700; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;"
       >
         1
       </span>
@@ -550,7 +550,7 @@ exports[`<Step /> component render error step 1`] = `
         class="emotion-4 emotion-5"
         color="error"
         data-testid="typography"
-        style="font-weight: 700;"
+        style="font-weight: 700; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;"
       >
         1
       </span>
