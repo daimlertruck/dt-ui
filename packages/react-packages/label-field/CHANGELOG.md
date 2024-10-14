@@ -1,5 +1,11 @@
 # @dt-ui/react-label-field
 
+## 0.1.0-beta.20
+
+### Minor Changes
+
+- feat: add search functionality to text-field
+
 ## 0.1.0-beta.19
 
 ### Patch Changes

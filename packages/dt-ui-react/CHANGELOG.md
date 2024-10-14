@@ -1,5 +1,21 @@
 # @dt-ui/react
 
+## 0.1.0-beta.145
+
+### Minor Changes
+
+- feat: add search functionality to text-field
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-date-picker@0.1.0-beta.4
+  - @dt-ui/react-form@0.1.0-beta.2
+  - @dt-ui/react-label-field@0.1.0-beta.20
+  - @dt-ui/react-select@0.1.0-beta.16
+  - @dt-ui/react-text-area@0.1.0-beta.3
+  - @dt-ui/react-text-field@0.1.0-beta.21
+
 ## 0.1.0-beta.144
 
 ### Minor Changes

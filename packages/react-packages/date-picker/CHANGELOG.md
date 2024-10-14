@@ -1,5 +1,16 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.4
+
+### Minor Changes
+
+- feat: add search functionality to text-field
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-text-field@0.1.0-beta.21
+
 ## 0.1.0-beta.3
 
 ### Patch Changes

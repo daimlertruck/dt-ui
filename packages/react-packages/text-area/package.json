@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-text-area",
-  "version": "0.1.0-beta.2",
+  "version": "0.1.0-beta.3",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -21,7 +21,7 @@
   "dependencies": {
     "@dt-ui/react-core": "0.1.0-beta.23",
     "@dt-ui/react-typography": "0.1.0-beta.14",
-    "@dt-ui/react-label-field": "0.1.0-beta.18"
+    "@dt-ui/react-label-field": "0.1.0-beta.20"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
