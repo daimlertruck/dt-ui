@@ -72,7 +72,14 @@ const StepCounter = ({
           color={color === 'disabled' ? 'content.light' : `${color}.default`}
           element='span'
           fontStyles='pXXSmall'
-          style={{ fontWeight: 700 }}
+          style={{
+            fontWeight: 700,
+            width: 24,
+            height: 24,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
         >
           {children}
         </Typography>
