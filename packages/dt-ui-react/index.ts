@@ -5,7 +5,6 @@ export * from './core';
 
 // Components
 export * from './components/buttons';
-export * from './components/form';
 export * from './components/link';
 export * from './components/pagination';
 
