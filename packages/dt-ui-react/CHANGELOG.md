@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.46
+
+### Patch Changes
+
+- fix: step style
+
 ## 0.1.0-alpha.45
 
 ### Patch Changes
