@@ -41,3 +41,4 @@ export const App = () => {
 | `children`    | `ReactNode`                  | -               | Child components to be rendered                                                 |
 | `dataTestId`  | `string`                     | default-stepper | Customizable test identifier. This id is concatenated with the -stepper string. |
 | `orientation` | `"vertical" \| "horizontal"` | vertical        | To specify the direction of the step bar.                                       |
+| `style`       | `React.CSSProperties`        | -               | Styles to be used in the Tabs                                                   |
