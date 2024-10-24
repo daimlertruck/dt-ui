@@ -27,7 +27,7 @@ export const globalStyles = (theme: Theme) => css`
     width: 100%;
     min-height: 100vh;
 
-    ${theme.fontStyles.p}
+    ${theme.fontStyles.body1}
   }
 
   a {
