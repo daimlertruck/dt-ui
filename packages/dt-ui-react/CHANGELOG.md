@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.47
+
+### Minor Changes
+
+- feat: allow passing style to stepper
+
 ## 0.1.0-alpha.46
 
 ### Patch Changes
