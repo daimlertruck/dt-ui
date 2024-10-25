@@ -1,5 +1,14 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.23
+
+### Patch Changes
+
+- fix: replace body to correct one
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.26
+  - @dt-ui/react-divider@0.1.0-beta.25
+
 ## 0.1.0-beta.22
 
 ### Patch Changes

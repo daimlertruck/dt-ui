@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-pagination",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0-beta.2",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -19,9 +19,9 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-core": "0.1.0-beta.25",
-    "@dt-ui/react-typography": "0.1.0-beta.16",
-    "@dt-ui/react-icon": "0.1.0-beta.22"
+    "@dt-ui/react-core": "0.1.0-beta.26",
+    "@dt-ui/react-typography": "0.1.0-beta.17",
+    "@dt-ui/react-icon": "0.1.0-beta.23"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",

@@ -1,5 +1,14 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.16
+
+### Patch Changes
+
+- fix: replace body to correct one
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.23
+  - @dt-ui/react-typography@0.1.0-beta.17
+
 ## 0.1.0-beta.15
 
 ### Patch Changes

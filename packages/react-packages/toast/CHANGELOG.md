@@ -1,5 +1,14 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.34
+
+### Patch Changes
+
+- fix: replace body to correct one
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.26
+  - @dt-ui/react-button@0.1.0-beta.17
+
 ## 0.1.0-beta.33
 
 ### Patch Changes

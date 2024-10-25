@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.26
+
+### Patch Changes
+
+- fix: replace body to correct one
+
 ## 0.1.0-beta.25
 
 ### Patch Changes

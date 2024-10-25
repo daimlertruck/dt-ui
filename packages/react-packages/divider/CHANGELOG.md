@@ -1,5 +1,13 @@
 # @dt-ui/react-divider
 
+## 0.1.0-beta.25
+
+### Patch Changes
+
+- fix: replace body to correct one
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.26
+
 ## 0.1.0-beta.24
 
 ### Patch Changes

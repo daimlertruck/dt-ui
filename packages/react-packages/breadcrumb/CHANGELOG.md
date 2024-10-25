@@ -1,5 +1,14 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.28
+
+### Patch Changes
+
+- fix: replace body to correct one
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.26
+  - @dt-ui/react-tooltip@0.1.0-beta.29
+
 ## 0.1.0-beta.27
 
 ### Patch Changes
