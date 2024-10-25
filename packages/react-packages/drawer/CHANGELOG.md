@@ -1,5 +1,14 @@
 # @dt-ui/react-drawer
 
+## 0.1.0-beta.28
+
+### Patch Changes
+
+- chore: add theme colors missing types
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.25
+  - @dt-ui/react-typography@0.1.0-beta.16
+
 ## 0.1.0-beta.27
 
 ### Patch Changes

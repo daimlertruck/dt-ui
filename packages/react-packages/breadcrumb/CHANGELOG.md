@@ -1,5 +1,14 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.27
+
+### Patch Changes
+
+- chore: add theme colors missing types
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.25
+  - @dt-ui/react-tooltip@0.1.0-beta.28
+
 ## 0.1.0-beta.26
 
 ### Patch Changes

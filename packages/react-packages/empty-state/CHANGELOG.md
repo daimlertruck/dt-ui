@@ -1,5 +1,15 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.36
+
+### Patch Changes
+
+- chore: add theme colors missing types
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.25
+  - @dt-ui/react-button@0.1.0-beta.16
+  - @dt-ui/react-typography@0.1.0-beta.16
+
 ## 0.1.0-beta.35
 
 ### Patch Changes

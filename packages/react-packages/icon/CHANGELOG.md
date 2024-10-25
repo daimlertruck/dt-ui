@@ -1,5 +1,13 @@
 # @dt-ui/react-icon
 
+## 0.1.0-beta.22
+
+### Patch Changes
+
+- chore: add theme colors missing types
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.25
+
 ## 0.1.0-beta.21
 
 ### Patch Changes

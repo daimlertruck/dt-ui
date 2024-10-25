@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-toast",
-  "version": "0.1.0-beta.32",
+  "version": "0.1.0-beta.33",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -19,8 +19,8 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-button": "0.1.0-beta.15",
-    "@dt-ui/react-core": "0.1.0-beta.24",
+    "@dt-ui/react-button": "0.1.0-beta.16",
+    "@dt-ui/react-core": "0.1.0-beta.25",
     "react-hot-toast": "^2.3.0"
   },
   "devDependencies": {

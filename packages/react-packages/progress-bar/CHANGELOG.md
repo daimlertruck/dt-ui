@@ -1,5 +1,14 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.15
+
+### Patch Changes
+
+- chore: add theme colors missing types
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.22
+  - @dt-ui/react-typography@0.1.0-beta.16
+
 ## 0.1.0-beta.14
 
 ### Patch Changes

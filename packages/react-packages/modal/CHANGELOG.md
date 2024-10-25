@@ -1,5 +1,17 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.10
+
+### Patch Changes
+
+- chore: add theme colors missing types
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.25
+  - @dt-ui/react-backdrop@0.1.0-beta.27
+  - @dt-ui/react-icon@0.1.0-beta.22
+  - @dt-ui/react-spinner@0.1.0-beta.26
+  - @dt-ui/react-typography@0.1.0-beta.16
+
 ## 0.1.0-beta.9
 
 ### Minor Changes

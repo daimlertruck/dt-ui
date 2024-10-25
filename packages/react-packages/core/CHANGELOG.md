@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.25
+
+### Patch Changes
+
+- chore: add theme colors missing types
+
 ## 0.1.0-beta.24
 
 ### Patch Changes
