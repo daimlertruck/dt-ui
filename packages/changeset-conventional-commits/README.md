@@ -2,6 +2,7 @@
 
 This plugin for changeset is a fork from https://github.com/iamchathu/changeset-conventional-commits you can find all details of the original development there.
 
+Additional modifications &copy; 2024 tb.lx by Daimler Truck.
 Below you can find useful information on how this plugin was modified to meet our own requirements.
 
 ## Install & Build
