@@ -35,7 +35,3 @@ Please check the checkboxes if you can answer the question in an affirmative way
 - [x] Use your common sense and your gut feeling. Is your repository ready to go “public” or "internal"? Do you want your repository to be seen by others? Have you completed the self-assessment with all checkboxes and complied with all requirements? General local legal requirements and/or your entities rules and regulations also apply to GitHub Enterprise, e.g. if you come across a conversation that would imply anti-trust relevance, you would have to address in line with Daimler anti-trust requirements to antitrust@daimler.com. Then you are ready to go. Check this checkbox if you want to go “public” or "internal".
 
 *Please find more Information on our [Wiki](https://wiki.e.corpintra.net/pages/viewpage.action?pageId=284263285) and if you have any questions, post a comment on the [FOSS Wiki](https://wiki.e.corpintra.net/pages/viewpage.action?pageId=284263285).*
-
-
-
-
