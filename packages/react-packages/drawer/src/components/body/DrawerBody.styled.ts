@@ -6,7 +6,7 @@ export const DrawerContentStyled = styled.section`
     overflow: auto;
     padding:  ${theme.spacing['2xs']} ${theme.spacing.xs} 0;
     
-    @media only screen and (min-width: ${theme.breakpoints.s}) {
+    @media only screen and (min-width: ${theme.breakpoints.s}px) {
       padding:  ${theme.spacing['2xs']} ${theme.spacing.s} 0;
     }
   `}

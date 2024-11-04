@@ -28,7 +28,7 @@ export const ButtonStyled = styled.button<ButtonStyledProps>`
     ${buttonSizeStyles(size, theme)}
     ${buttonVariantStyles(variant, theme, color)}
 
-    @media only screen and (min-width: ${theme.breakpoints.s}) {
+    @media only screen and (min-width: ${theme.breakpoints.s}px) {
       width: auto;
     }
   `};

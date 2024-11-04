@@ -232,14 +232,14 @@ export type CustomTheme = {
     };
   };
   breakpoints: {
-    s: string;
-    m: string;
-    l: string;
-    xl: string;
+    s: number;
+    m: number;
+    l: number;
+    xl: number;
     // Legacy
-    md: string;
-    lg: string;
-    xxl: string;
+    md: number;
+    lg: number;
+    xxl: number;
   };
   radius: {
     none: string;

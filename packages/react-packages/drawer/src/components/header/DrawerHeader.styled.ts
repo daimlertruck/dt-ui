@@ -11,7 +11,7 @@ export const HeaderStyled = styled.header`
       box-shadow: ${theme.shadows.xs};
     }
 
-    @media only screen and (min-width: ${theme.breakpoints.s}) {
+    @media only screen and (min-width: ${theme.breakpoints.s}px) {
       padding: 0 ${theme.spacing.s} ${theme.spacing['2xs']};
     }
   `}

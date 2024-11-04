@@ -51,10 +51,10 @@ const getTextResponsiveStyle = (styles: responsiveStyle[]) => {
   return styles
     .map((style) => {
       const minBoundStyle = style.minBound
-        ? ` and (min-width:${breakpoints[style.minBound]})`
+        ? ` and (min-width:${breakpoints[style.minBound]}px)`
         : '';
       const maxBoundStyle = style.maxBound
-        ? ` and (max-width:${breakpoints[style.maxBound]})`
+        ? ` and (max-width:${breakpoints[style.maxBound]}px)`
         : '';
       return `
       @media only screen${minBoundStyle} ${maxBoundStyle} {

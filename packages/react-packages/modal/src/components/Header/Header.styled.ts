@@ -20,7 +20,7 @@ export const HeaderStyled = styled.div<HeaderProps>`
     };
     gap: ${theme.spacing['4xs']};
 
-    @media only screen and (min-width: ${theme.breakpoints.s}) {
+    @media only screen and (min-width: ${theme.breakpoints.s}px) {
       padding-top: ${theme.spacing.s};
     }
 

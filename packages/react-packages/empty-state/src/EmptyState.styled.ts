@@ -14,7 +14,7 @@ export const EmptyStateStyled = styled.div`
     height: 100%;
     gap: ${theme.spacing.xs};
     
-    @media only screen and (min-width: ${theme.breakpoints.s}) {
+    @media only screen and (min-width: ${theme.breakpoints.s}px) {
       padding: ${theme.spacing['2xl']} ${theme.spacing['5xl']};
     }
   `}
@@ -29,7 +29,7 @@ export const EmptyStateContentStyled = styled.div`
   ${({ theme }) => `
       gap: ${theme.spacing['4xs']};
 
-      @media only screen and (min-width: ${theme.breakpoints.s}) {
+      @media only screen and (min-width: ${theme.breakpoints.s}px) {
         gap: ${theme.spacing['3xs']};
       }
   `}

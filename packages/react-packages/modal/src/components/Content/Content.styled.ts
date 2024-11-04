@@ -5,7 +5,7 @@ export const ContentStyled = styled.div`
     padding: ${theme.spacing.xs};
     overflow-y: auto;
 
-    @media only screen and (max-width: ${theme.breakpoints.s}) {
+    @media only screen and (max-width: ${theme.breakpoints.s}px) {
       flex: 1;
       }
     `}

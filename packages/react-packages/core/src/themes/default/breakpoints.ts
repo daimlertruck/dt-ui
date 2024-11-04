@@ -1,11 +1,11 @@
 export const breakpoints = {
-  s: '600px',
-  m: '900px',
-  l: '1200px',
-  xl: '1800px',
+  s: 600,
+  m: 900,
+  l: 1200,
+  xl: 1800,
   // Legacy
-  md: '768px',
-  lg: '992px',
+  md: 768,
+  lg: 992,
   // xl: '1440px',
-  xxl: '1600px',
+  xxl: 1600,
 };

@@ -48,7 +48,7 @@ export const DrawerStyled = styled.div<DrawerBaseProps>`
     transition: transform ${theme.animations.emphasizedDecelerate.duration}
       ${theme.animations.emphasizedDecelerate.timingFunction};
 
-    @media only screen and (min-width: ${theme.breakpoints.s}) {
+    @media only screen and (min-width: ${theme.breakpoints.s}px) {
       width: 500px;
       border-radius: ${theme.radius['3xs']} ${theme.radius.none}
         ${theme.radius.none} ${theme.radius['3xs']};

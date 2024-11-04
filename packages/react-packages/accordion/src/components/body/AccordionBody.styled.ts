@@ -11,7 +11,7 @@ export const BodyStyled = styled.div<BodyStyledProps>`
     
     display: ${isOpenState ? 'block' : 'none'};
 
-    @media only screen and (min-width: ${theme.breakpoints.s}) {
+    @media only screen and (min-width: ${theme.breakpoints.s}px) {
       padding: ${theme.spacing.xs};
       padding-top: ${theme.spacing.none};
     }

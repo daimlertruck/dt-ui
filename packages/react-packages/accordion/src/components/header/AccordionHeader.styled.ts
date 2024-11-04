@@ -9,7 +9,7 @@ export const HeaderStyled = styled.header<HeaderStyled>`
     padding: ${theme.spacing['2xs']};
     cursor: ${isDisabled ? 'not-allowed' : 'pointer'};
    
-    @media (min-width: ${theme.breakpoints.s}) {
+    @media (min-width: ${theme.breakpoints.s}px) {
       padding: ${theme.spacing['xs']};
     }
   `}
