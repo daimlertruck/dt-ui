@@ -1,5 +1,17 @@
 # @dt-ui/react-spinner
 
+## 0.1.0-beta.28
+
+### Minor Changes
+
+- feat: change breakpoints values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.27
+  - @dt-ui/react-typography@0.1.0-beta.18
+
 ## 0.1.0-beta.27
 
 ### Patch Changes

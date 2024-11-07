@@ -1,5 +1,21 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.19
+
+### Minor Changes
+
+- feat: change breakpoints values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.27
+  - @dt-ui/react-checkbox@0.1.0-beta.21
+  - @dt-ui/react-icon@0.1.0-beta.24
+  - @dt-ui/react-label-field@0.1.0-beta.23
+  - @dt-ui/react-tooltip@0.1.0-beta.30
+  - @dt-ui/react-typography@0.1.0-beta.18
+
 ## 0.1.0-beta.18
 
 ### Patch Changes

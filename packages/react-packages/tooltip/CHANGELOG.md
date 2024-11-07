@@ -1,5 +1,16 @@
 # @dt-ui/react-tooltip
 
+## 0.1.0-beta.30
+
+### Minor Changes
+
+- feat: change breakpoints values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.27
+
 ## 0.1.0-beta.29
 
 ### Patch Changes

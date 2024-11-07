@@ -1,5 +1,16 @@
 # @dt-ui/react-divider
 
+## 0.1.0-beta.26
+
+### Minor Changes
+
+- feat: change breakpoints values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.27
+
 ## 0.1.0-beta.25
 
 ### Patch Changes

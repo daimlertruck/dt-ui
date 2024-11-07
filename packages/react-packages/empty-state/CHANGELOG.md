@@ -1,5 +1,18 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.38
+
+### Minor Changes
+
+- feat: change breakpoints values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.18
+  - @dt-ui/react-core@0.1.0-beta.27
+  - @dt-ui/react-typography@0.1.0-beta.18
+
 ## 0.1.0-beta.37
 
 ### Patch Changes

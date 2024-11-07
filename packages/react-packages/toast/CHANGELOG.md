@@ -1,5 +1,17 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.35
+
+### Minor Changes
+
+- feat: change breakpoints values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.18
+  - @dt-ui/react-core@0.1.0-beta.27
+
 ## 0.1.0-beta.34
 
 ### Patch Changes

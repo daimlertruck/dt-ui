@@ -1,5 +1,20 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.12
+
+### Minor Changes
+
+- feat: change breakpoints values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.27
+  - @dt-ui/react-backdrop@0.1.0-beta.29
+  - @dt-ui/react-icon@0.1.0-beta.24
+  - @dt-ui/react-spinner@0.1.0-beta.28
+  - @dt-ui/react-typography@0.1.0-beta.18
+
 ## 0.1.0-beta.11
 
 ### Patch Changes

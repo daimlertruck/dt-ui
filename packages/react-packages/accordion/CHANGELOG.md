@@ -1,5 +1,17 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.24
+
+### Minor Changes
+
+- feat: change breakpoints values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.27
+  - @dt-ui/react-divider@0.1.0-beta.26
+
 ## 0.1.0-beta.23
 
 ### Patch Changes

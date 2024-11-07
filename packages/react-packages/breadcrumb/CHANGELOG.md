@@ -1,5 +1,17 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.29
+
+### Minor Changes
+
+- feat: change breakpoints values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.27
+  - @dt-ui/react-tooltip@0.1.0-beta.30
+
 ## 0.1.0-beta.28
 
 ### Patch Changes

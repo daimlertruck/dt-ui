@@ -1,5 +1,17 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.17
+
+### Minor Changes
+
+- feat: change breakpoints values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.24
+  - @dt-ui/react-typography@0.1.0-beta.18
+
 ## 0.1.0-beta.16
 
 ### Patch Changes

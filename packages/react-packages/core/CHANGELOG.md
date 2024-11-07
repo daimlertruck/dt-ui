@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.27
+
+### Minor Changes
+
+- feat: change breakpoints values
+
 ## 0.1.0-beta.26
 
 ### Patch Changes

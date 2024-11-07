@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-toggle",
-  "version": "0.1.0-beta.4",
+  "version": "0.1.0-beta.5",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -19,8 +19,8 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-core": "0.1.0-beta.26",
-    "@dt-ui/react-typography": "0.1.0-beta.17"
+    "@dt-ui/react-core": "0.1.0-beta.27",
+    "@dt-ui/react-typography": "0.1.0-beta.18"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",

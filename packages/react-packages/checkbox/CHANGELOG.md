@@ -1,5 +1,17 @@
 # @dt-ui/react-checkbox
 
+## 0.1.0-beta.21
+
+### Minor Changes
+
+- feat: change breakpoints values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.27
+  - @dt-ui/react-icon@0.1.0-beta.24
+
 ## 0.1.0-beta.20
 
 ### Patch Changes
