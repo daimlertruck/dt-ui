@@ -21,7 +21,7 @@ export const App = () => {
 | `children`     | `ReactNode`              | -       | Child components to be rendered inside input field.                 |
 | `label`        | `string`                 | -       | A label to help users understand the scope of the text field.       |
 | `initialValue` | `string`                 | -       | Sets the initial value of the text field.                           |
-| `message`      | `string \| null`         | -       | The message to be displayed below the input field.                  |
+| `message`      | `string \| ReactNode \| null`         | -       | The message to be displayed below the input field.                  |
 | `hasError`     | `boolean`                | -       | Set error state for text field.                                     |
 | `isDisabled`   | `boolean`                | -       | Determines the disabled state of input field.                       |
 | `isLoading`    | `boolean`                | -       | If set to true, the text field is disabled and a spinner is showed. |

@@ -31,7 +31,7 @@ export interface TextFieldProps extends BaseProps {
   initialValue?: string;
   maxLength?: number;
   inputRef?: MutableRefObject<HTMLInputElement>;
-  message?: string | null;
+  message?: string | ReactNode | null;
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
   icon?: ReactNode;
 }
