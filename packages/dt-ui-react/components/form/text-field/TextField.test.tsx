@@ -159,4 +159,12 @@ describe('<TextField /> component', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should render the TextField without floating label', () => {
+    render(<ProvidedTextField initialValue='Initial Value' />);
+
+    const label = screen.queryByRole('textbox');
+
+    expect(label).not.toHaveAttribute('label');
+  });
 });

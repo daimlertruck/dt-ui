@@ -37,7 +37,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   border-bottom: 2px solid #D21C1C;
   color: #151617;
   min-width: 198px;
-  padding: 20px 15px 5px 15px;
+  padding: 5px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
@@ -128,7 +128,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   border-bottom: 2px solid #D21C1C;
   color: #151617;
   min-width: 198px;
-  padding: 20px 15px 5px 15px;
+  padding: 5px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
@@ -219,7 +219,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   border-bottom: 1px solid #CCCCCC;
   color: #151617;
   min-width: 198px;
-  padding: 20px 15px 5px 15px;
+  padding: 5px 15px 5px 15px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;

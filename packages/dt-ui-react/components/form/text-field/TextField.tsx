@@ -21,7 +21,7 @@ import {
 } from './TextField.styled';
 
 export interface TextFieldProps extends BaseProps {
-  label: string;
+  label?: string;
   isDisabled?: boolean;
   isLoading?: boolean;
   type?: HTMLInputTypeAttribute;
@@ -57,7 +57,7 @@ export const TextField = ({
   const [inputValue, setInputValue] = useState('');
   const [hasError, setHasError] = useState(hasErrorProp);
   const [message, setMessage] = useState(messageProp);
-  const id = label.replaceAll(' ', '-');
+  const id = label?.replaceAll(' ', '-') as string;
 
   useEffect(() => {
     // Check if there's an initial value coming from props
@@ -109,9 +109,11 @@ export const TextField = ({
 
   return (
     <TextFieldStyled style={style}>
-      <LabelField isActive={activeInput} forId={id} isDisabled={isDisabled}>
-        {label} {required && '*'}
-      </LabelField>
+      {label && (
+        <LabelField isActive={activeInput} forId={id} isDisabled={isDisabled}>
+          {label} {required && '*'}
+        </LabelField>
+      )}
 
       {(hasError || isLoading || !!icon) && (
         <InputFieldIconStyled>
@@ -127,6 +129,7 @@ export const TextField = ({
         id={id}
         name={name || id}
         hasError={hasError}
+        hasLabel={!!label}
         value={inputValue}
         onChange={handleChange}
         onFocus={onFocus}

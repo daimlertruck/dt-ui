@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 
 export interface InputFieldStyledProps {
   hasError: boolean;
+  hasLabel: boolean;
   disabled?: boolean;
 }
 
@@ -13,7 +14,7 @@ export const TextFieldStyled = styled.div`
 `;
 
 export const InputFieldStyled = styled.input<InputFieldStyledProps>`
-  ${({ theme, hasError, disabled }) => `
+  ${({ theme, hasError, disabled, hasLabel }) => `
     ${theme.fontStyles.alpha.pSmall}
 
     background-color: ${
@@ -32,7 +33,7 @@ export const InputFieldStyled = styled.input<InputFieldStyledProps>`
       disabled ? theme.colors.alpha.gray_100 : theme.colors.alpha.gray_300
     };
     min-width: 198px;
-    padding: 20px 15px 5px 15px;
+    padding: ${hasLabel ? '20px' : '5px'} 15px 5px 15px;
     transition: all 0.2s ease-in-out;
     width: 100%;
     height: 53px;
