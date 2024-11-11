@@ -1,5 +1,12 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.48
+
+### Minor Changes
+
+- feat: make test-field label optional
+- feat: allow react node type as text-field message
+
 ## 0.1.0-alpha.47
 
 ### Minor Changes
