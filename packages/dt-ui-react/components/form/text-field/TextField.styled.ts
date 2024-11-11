@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export interface InputFieldStyledProps {
   hasError: boolean;
-  hasLabel: boolean;
+  hasLabel?: boolean;
   disabled?: boolean;
 }
 
