@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.49
+
+### Patch Changes
+
+- fix: input-field styled prop
+
 ## 0.1.0-alpha.48
 
 ### Minor Changes
