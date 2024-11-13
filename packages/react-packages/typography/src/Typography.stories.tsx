@@ -32,6 +32,7 @@ export default meta;
 
 export const Default: Story = {
   args: {
+    id: 'MyID',
     element: 'h1',
     fontStyles: 'h1',
     color: 'grey_100',

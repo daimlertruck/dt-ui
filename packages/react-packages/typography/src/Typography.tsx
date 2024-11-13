@@ -20,6 +20,7 @@ export const Typography = forwardRef<HTMLParagraphElement, TypographyProps>(
       color = 'grey_90',
       dataTestId,
       style,
+      id,
     }: TypographyProps,
     ref
   ) => {
@@ -33,6 +34,7 @@ export const Typography = forwardRef<HTMLParagraphElement, TypographyProps>(
         color={color}
         data-testid={dataTestId ?? 'typography'}
         fontStyles={fonts}
+        id={id}
         ref={ref}
         style={style}
       >
