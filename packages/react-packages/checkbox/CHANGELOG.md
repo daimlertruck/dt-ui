@@ -1,5 +1,17 @@
 # @dt-ui/react-checkbox
 
+## 0.1.0-beta.22
+
+### Minor Changes
+
+- feat: add id to base props
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.28
+  - @dt-ui/react-icon@0.1.0-beta.25
+
 ## 0.1.0-beta.21
 
 ### Minor Changes

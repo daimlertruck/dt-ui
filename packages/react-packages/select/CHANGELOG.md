@@ -1,5 +1,21 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.20
+
+### Minor Changes
+
+- feat: add id to base props
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.28
+  - @dt-ui/react-typography@0.1.0-beta.19
+  - @dt-ui/react-checkbox@0.1.0-beta.22
+  - @dt-ui/react-icon@0.1.0-beta.25
+  - @dt-ui/react-label-field@0.1.0-beta.24
+  - @dt-ui/react-tooltip@0.1.0-beta.31
+
 ## 0.1.0-beta.19
 
 ### Minor Changes

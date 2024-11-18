@@ -1,5 +1,20 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.25
+
+### Minor Changes
+
+- feat: add id to base props
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.28
+  - @dt-ui/react-typography@0.1.0-beta.19
+  - @dt-ui/react-icon@0.1.0-beta.25
+  - @dt-ui/react-label-field@0.1.0-beta.24
+  - @dt-ui/react-spinner@0.1.0-beta.29
+
 ## 0.1.0-beta.24
 
 ### Minor Changes

@@ -1,5 +1,18 @@
 # @dt-ui/react-stepper
 
+## 0.1.0-beta.13
+
+### Minor Changes
+
+- feat: add id to base props
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.28
+  - @dt-ui/react-typography@0.1.0-beta.19
+  - @dt-ui/react-icon@0.1.0-beta.25
+
 ## 0.1.0-beta.12
 
 ### Minor Changes

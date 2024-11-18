@@ -1,5 +1,16 @@
 # @dt-ui/react-radio
 
+## 0.1.0-beta.12
+
+### Minor Changes
+
+- feat: add id to base props
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.28
+
 ## 0.1.0-beta.11
 
 ### Minor Changes

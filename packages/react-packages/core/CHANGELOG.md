@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.28
+
+### Minor Changes
+
+- feat: add id to base props
+
 ## 0.1.0-beta.27
 
 ### Minor Changes

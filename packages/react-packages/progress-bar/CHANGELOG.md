@@ -1,5 +1,17 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.18
+
+### Minor Changes
+
+- feat: add id to base props
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-typography@0.1.0-beta.19
+  - @dt-ui/react-icon@0.1.0-beta.25
+
 ## 0.1.0-beta.17
 
 ### Minor Changes

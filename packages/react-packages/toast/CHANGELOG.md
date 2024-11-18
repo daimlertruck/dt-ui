@@ -1,5 +1,17 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.36
+
+### Minor Changes
+
+- feat: add id to base props
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.28
+  - @dt-ui/react-button@0.1.0-beta.19
+
 ## 0.1.0-beta.35
 
 ### Minor Changes
