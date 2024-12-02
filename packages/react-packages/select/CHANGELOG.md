@@ -1,5 +1,11 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.21
+
+### Patch Changes
+
+- fix: align select value with label
+
 ## 0.1.0-beta.20
 
 ### Minor Changes

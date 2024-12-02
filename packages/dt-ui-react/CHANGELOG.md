@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.151
+
+### Patch Changes
+
+- fix: align select value with label
+- Updated dependencies
+  - @dt-ui/react-select@0.1.0-beta.21
+
 ## 0.1.0-beta.150
 
 ### Patch Changes
