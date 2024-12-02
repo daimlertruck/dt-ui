@@ -23,7 +23,7 @@ exports[`<Select /> component should render Select 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  height: 53px;
+  height: 54px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -43,7 +43,7 @@ exports[`<Select /> component should render Select 1`] = `
   margin: 0;
   text-transform: none;
   color: #454545;
-  padding: 8px 16px;
+  padding: 8px 12px;
   gap: 8px;
   background-color: #FFFFFF;
   border-radius: 0px;
@@ -408,7 +408,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  height: 53px;
+  height: 54px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -428,7 +428,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   margin: 0;
   text-transform: none;
   color: #454545;
-  padding: 8px 16px;
+  padding: 8px 12px;
   gap: 8px;
   background-color: #FFFFFF;
   border-radius: 0px;

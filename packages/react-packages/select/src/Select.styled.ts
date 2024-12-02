@@ -61,7 +61,7 @@ export const SelectValueStyled = styled.div`
 export const SelectContainerStyled = styled.div<SelectFieldStyledProps>`
   transition: all 0.2s ease-in-out;
   width: 100%;
-  height: 53px;
+  height: 54px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +71,7 @@ export const SelectContainerStyled = styled.div<SelectFieldStyledProps>`
     color: ${
       disabled ? theme.palette.content.light : theme.palette.content.default
     };
-    padding: ${theme.spacing['4xs']} ${theme.spacing['2xs']};
+    padding: ${theme.spacing['4xs']} ${theme.spacing['3xs']};
     gap: ${theme.spacing['4xs']} ;
     background-color: ${theme.palette.surface.contrast};
     border-radius: ${theme.shape.formField};
