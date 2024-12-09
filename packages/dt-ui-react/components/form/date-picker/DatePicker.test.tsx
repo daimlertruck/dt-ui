@@ -1,9 +1,11 @@
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, screen } from '@testing-library/react';
 import React from 'react';
 
 import { withProviders } from '../../../utils';
 
 import { DatePicker } from './DatePicker';
+
+const BORDER_BOTTOM_ERROR_STYLE = 'border-bottom: 2px solid #D21C1C';
 
 describe('<DatePicker /> component', () => {
   const ProvidedDatePicker = withProviders(DatePicker);
@@ -95,7 +97,11 @@ describe('<DatePicker /> component', () => {
       const input = container.querySelector('input') as HTMLElement;
 
       fireEvent.blur(input);
-      expect(container).toMatchSnapshot();
+
+      expect(screen.getByText('Please enter a valid date')).toBeVisible();
+      expect(screen.getByLabelText('Choose a date')).toHaveStyle(
+        BORDER_BOTTOM_ERROR_STYLE
+      );
     });
 
     it('should render error message when date is higher than max', () => {
@@ -110,7 +116,31 @@ describe('<DatePicker /> component', () => {
       const input = container.querySelector('input') as HTMLElement;
 
       fireEvent.blur(input);
-      expect(container).toMatchSnapshot();
+
+      expect(screen.getByText('Please enter a valid date')).toBeVisible();
+      expect(screen.getByLabelText('Choose a date')).toHaveStyle(
+        BORDER_BOTTOM_ERROR_STYLE
+      );
+    });
+
+    it('should render error message from prop when date is below min', () => {
+      const { container } = render(
+        <ProvidedDatePicker
+          initialValue='2023-02-01'
+          label='Choose a date'
+          min='2023-03-30'
+          errorMessage='Invalid date.'
+        />
+      );
+
+      const input = container.querySelector('input') as HTMLElement;
+
+      fireEvent.blur(input);
+
+      expect(screen.getByText('Invalid date.')).toBeVisible();
+      expect(screen.getByLabelText('Choose a date')).toHaveStyle(
+        BORDER_BOTTOM_ERROR_STYLE
+      );
     });
   });
 });

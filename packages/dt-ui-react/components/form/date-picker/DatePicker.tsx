@@ -23,6 +23,7 @@ export interface DatePickerProps
   hasError?: boolean;
   initialValue?: string;
   message?: string | null;
+  errorMessage?: string | null;
 }
 
 export const DatePicker = ({
@@ -35,15 +36,17 @@ export const DatePicker = ({
   children,
   initialValue,
   message: messageProp = '',
+  errorMessage,
   onChange,
   max,
   min,
   ...rest
 }: DatePickerProps) => {
+  const initialMessage = hasErrorProp ? errorMessage : messageProp;
   const inputRef = useRef<HTMLInputElement>(null);
   const [inputValue, setInputValue] = useState('');
   const [hasError, setHasError] = useState(hasErrorProp);
-  const [message, setMessage] = useState(messageProp);
+  const [message, setMessage] = useState(initialMessage);
   const id = label.replaceAll(' ', '-');
 
   useEffect(() => {
@@ -53,11 +56,6 @@ export const DatePicker = ({
       setInputValue('');
     }
   }, [initialValue]);
-
-  useEffect(() => {
-    setHasError(hasErrorProp);
-    setMessage(messageProp);
-  }, [hasErrorProp, messageProp]);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
@@ -75,7 +73,9 @@ export const DatePicker = ({
   const handleBlur = (event: ChangeEvent<HTMLInputElement>) => {
     if (!inputRef?.current?.validity.valid) {
       setHasError(true);
-      setMessage('Please enter a valid date');
+
+      setMessage(errorMessage || 'Please enter a valid date');
+
       return;
     }
 
