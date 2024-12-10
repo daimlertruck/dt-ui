@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.50
+
+### Minor Changes
+
+- feat: add errorMessage prop to datepicker
+
 ## 0.1.0-alpha.49
 
 ### Patch Changes
