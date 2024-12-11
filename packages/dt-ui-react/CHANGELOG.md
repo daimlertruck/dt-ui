@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.51
+
+### Minor Changes
+
+- feat: change datepicker logic to be owned by parent
+
 ## 0.1.0-alpha.50
 
 ### Minor Changes
