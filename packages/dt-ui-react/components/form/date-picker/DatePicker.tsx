@@ -1,10 +1,4 @@
-import React, {
-  useState,
-  useEffect,
-  ChangeEvent,
-  useRef,
-  InputHTMLAttributes,
-} from 'react';
+import { useRef, InputHTMLAttributes } from 'react';
 
 import { BaseProps } from '../../../types';
 import { Typography } from '../../typography';
@@ -21,73 +15,32 @@ export interface DatePickerProps
   label: string;
   isDisabled?: boolean;
   hasError?: boolean;
-  initialValue?: string;
+  value?: string;
   message?: string | null;
   errorMessage?: string | null;
 }
 
 export const DatePicker = ({
-  hasError: hasErrorProp = false,
+  hasError = false,
   isDisabled,
   label,
   name,
   required,
   style,
   children,
-  initialValue,
-  message: messageProp = '',
-  errorMessage,
+  value,
+  message = '',
   onChange,
   max,
   min,
   ...rest
 }: DatePickerProps) => {
-  const initialMessage = hasErrorProp ? errorMessage : messageProp;
   const inputRef = useRef<HTMLInputElement>(null);
-  const [inputValue, setInputValue] = useState('');
-  const [hasError, setHasError] = useState(hasErrorProp);
-  const [message, setMessage] = useState(initialMessage);
   const id = label.replaceAll(' ', '-');
-
-  useEffect(() => {
-    if (!!initialValue) {
-      setInputValue(initialValue);
-    } else {
-      setInputValue('');
-    }
-  }, [initialValue]);
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setInputValue(event.target.value);
-    if (onChange) {
-      onChange(event);
-    }
-  };
 
   const handleFocus = () => {
     if (inputRef?.current?.showPicker) {
       inputRef?.current?.showPicker();
-    }
-  };
-
-  const handleBlur = (event: ChangeEvent<HTMLInputElement>) => {
-    if (!inputRef?.current?.validity.valid) {
-      setHasError(true);
-
-      setMessage(errorMessage || 'Please enter a valid date');
-
-      return;
-    }
-
-    if (event.currentTarget.value === '') {
-      if (required) {
-        setHasError(true);
-        setMessage('This field is required.');
-      }
-    }
-
-    if (required && !!event.currentTarget.value && !hasError) {
-      setHasError(false);
     }
   };
 
@@ -105,10 +58,9 @@ export const DatePicker = ({
         id={id}
         name={name || id}
         hasError={hasError}
-        value={inputValue}
-        onChange={handleChange}
+        value={value}
+        onChange={onChange}
         onFocus={handleFocus}
-        onBlur={handleBlur}
         {...rest}
       />
       {message && (

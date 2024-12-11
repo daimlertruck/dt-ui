@@ -6,6 +6,8 @@ import { withProviders } from '../../../utils';
 import { DatePicker } from './DatePicker';
 
 const BORDER_BOTTOM_ERROR_STYLE = 'border-bottom: 2px solid #D21C1C';
+const INPUT_LABEL = 'Choose a date';
+const INPUT_LABEL_REQUIRED = `${INPUT_LABEL} *`;
 
 describe('<DatePicker /> component', () => {
   const ProvidedDatePicker = withProviders(DatePicker);
@@ -13,23 +15,23 @@ describe('<DatePicker /> component', () => {
   it('should render date input correctly', () => {
     const { container } = render(
       <ProvidedDatePicker
-        initialValue=''
-        required={true}
+        value=''
+        required
         label='Choose a date'
         min='2023-03-30'
         max='2025-03-30'
+        onChange={jest.fn()}
       />
     );
 
     expect(container).toMatchSnapshot();
   });
 
-  it('fills input correctly with new value on change Event', () => {
+  it('should call onChange when changing date input value', () => {
     const onChange = jest.fn();
-    const { container } = render(
+    render(
       <ProvidedDatePicker
-        initialValue=''
-        required={true}
+        value=''
         label='Choose a date'
         min='2023-03-30'
         max='2025-03-30'
@@ -37,11 +39,10 @@ describe('<DatePicker /> component', () => {
       />
     );
 
-    const input = container.querySelector('input') as HTMLElement;
+    const input = screen.getByLabelText(INPUT_LABEL);
     fireEvent.change(input, { target: { value: '2023-05-05' } });
 
-    expect(onChange).toHaveBeenCalled();
-    expect(input).toHaveValue('2023-05-05');
+    expect(onChange).toHaveBeenCalledTimes(1);
   });
 
   describe('onFocus event', () => {
@@ -50,97 +51,40 @@ describe('<DatePicker /> component', () => {
         .spyOn(React, 'useRef')
         .mockReturnValue({ current: { showPicker: jest.fn() } });
 
-      const { container } = render(
+      render(
         <ProvidedDatePicker
-          initialValue=''
-          required={true}
+          value=''
           label='Choose a date'
+          required
           min='2023-03-30'
           max='2025-03-30'
+          onChange={jest.fn()}
         />
       );
-      const input = container.querySelector('input') as HTMLElement;
+
+      const input = screen.getByLabelText(INPUT_LABEL_REQUIRED);
       fireEvent.focus(input);
 
-      expect(refSpy).toHaveBeenCalledTimes(1);
+      expect(refSpy).toHaveBeenCalled();
     });
   });
 
-  describe('onBlur event', () => {
-    it('should keep active state on date type input', () => {
-      const { container } = render(
-        <ProvidedDatePicker
-          initialValue=''
-          required={true}
-          label='Choose a date'
-          min='2023-03-30'
-          max='2025-03-30'
-        />
-      );
-      const input = container.querySelector('input') as HTMLElement;
-      const label = container.querySelector('label') as HTMLElement;
+  it('should render error message from prop when hasError is true', () => {
+    render(
+      <ProvidedDatePicker
+        value='2023-02-01'
+        label='Choose a date'
+        min='2023-03-30'
+        message='Invalid date.'
+        hasError
+        onChange={jest.fn()}
+      />
+    );
 
-      fireEvent.blur(input);
+    const input = screen.getByLabelText(INPUT_LABEL);
+    fireEvent.blur(input);
 
-      expect(label).toHaveStyle('transform: translateY(-45%)');
-    });
-
-    it('should render error message when date is below min', () => {
-      const { container } = render(
-        <ProvidedDatePicker
-          initialValue='2023-02-01'
-          label='Choose a date'
-          min='2023-03-30'
-        />
-      );
-
-      const input = container.querySelector('input') as HTMLElement;
-
-      fireEvent.blur(input);
-
-      expect(screen.getByText('Please enter a valid date')).toBeVisible();
-      expect(screen.getByLabelText('Choose a date')).toHaveStyle(
-        BORDER_BOTTOM_ERROR_STYLE
-      );
-    });
-
-    it('should render error message when date is higher than max', () => {
-      const { container } = render(
-        <ProvidedDatePicker
-          initialValue='2026-02-01'
-          label='Choose a date'
-          max='2025-03-30'
-        />
-      );
-
-      const input = container.querySelector('input') as HTMLElement;
-
-      fireEvent.blur(input);
-
-      expect(screen.getByText('Please enter a valid date')).toBeVisible();
-      expect(screen.getByLabelText('Choose a date')).toHaveStyle(
-        BORDER_BOTTOM_ERROR_STYLE
-      );
-    });
-
-    it('should render error message from prop when date is below min', () => {
-      const { container } = render(
-        <ProvidedDatePicker
-          initialValue='2023-02-01'
-          label='Choose a date'
-          min='2023-03-30'
-          errorMessage='Invalid date.'
-        />
-      );
-
-      const input = container.querySelector('input') as HTMLElement;
-
-      fireEvent.blur(input);
-
-      expect(screen.getByText('Invalid date.')).toBeVisible();
-      expect(screen.getByLabelText('Choose a date')).toHaveStyle(
-        BORDER_BOTTOM_ERROR_STYLE
-      );
-    });
+    expect(screen.getByText('Invalid date.')).toBeVisible();
+    expect(input).toHaveStyle(BORDER_BOTTOM_ERROR_STYLE);
   });
 });
