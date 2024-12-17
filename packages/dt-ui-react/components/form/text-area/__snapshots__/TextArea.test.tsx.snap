@@ -54,6 +54,20 @@ exports[`<TextArea /> component it should a textarea 1`] = `
 }
 
 .emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-8 {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.34;
@@ -79,14 +93,25 @@ exports[`<TextArea /> component it should a textarea 1`] = `
       maxlength="200"
       name="my-text-area-textarea"
     />
-    <span
+    <div
       class="emotion-6 emotion-7"
-      color="gray_100"
-      data-testid="typography"
+      style="padding-left: 15px; gap: 16px; align-items: baseline; flex-direction: row; justify-content: space-between; width: 100%;"
     >
-      200
-       Characters
-    </span>
+      <span
+        class="emotion-8 emotion-9"
+        color="gray_100"
+        data-testid="typography"
+      />
+      <span
+        class="emotion-8 emotion-9"
+        color="gray_100"
+        data-testid="typography"
+        style="white-space: nowrap;"
+      >
+        200
+         Characters
+      </span>
+    </div>
   </div>
 </div>
 `;
