@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.52
+
+### Minor Changes
+
+- feat: add helper and error state
+
 ## 0.1.0-alpha.51
 
 ### Minor Changes
