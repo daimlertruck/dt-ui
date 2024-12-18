@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect, useState } from 'react';
+import { ChangeEvent, InputHTMLAttributes, useState } from 'react';
 
 import { ErrorIcon } from '../../../core/assets';
 import { Box } from '../../box';
@@ -11,16 +11,21 @@ import {
   TextAreaWrapper,
 } from './TextArea.styled';
 
-export interface TextAreaProps {
-  label: string;
+type TextAreaChangeEvent = (e: ChangeEvent<HTMLTextAreaElement>) => void;
+
+export interface TextAreaProps
+  extends InputHTMLAttributes<HTMLTextAreaElement> {
+  label?: string;
   name?: string;
   maxLength?: number;
   dataTestId?: string;
   value?: string;
-  onChange?: (e: ChangeEvent<HTMLTextAreaElement>) => void;
   required?: boolean;
   helperText?: string;
   hasError?: boolean;
+  onChange: TextAreaChangeEvent;
+  onFocus?: TextAreaChangeEvent;
+  onBlur?: TextAreaChangeEvent;
 }
 
 const TextArea = ({
@@ -28,42 +33,39 @@ const TextArea = ({
   onChange,
   dataTestId,
   name,
-  value,
+  value = '',
   required,
   helperText,
   hasError = false,
-  maxLength = 120,
+  maxLength,
+  onFocus,
+  onBlur,
+  ...rest
 }: TextAreaProps) => {
-  const [chars, setChars] = useState(0);
-  const [activeInput, setActiveInput] = useState(false);
+  const valueLength = value.length;
+  const hasChars = valueLength > 0;
 
-  const handleFocus = () => setActiveInput(true);
-  const handleBlur = () =>
-    chars > 0 ? setActiveInput(true) : setActiveInput(false);
+  const [activeInput, setActiveInput] = useState(hasChars);
 
-  const handleChange = (evt: ChangeEvent<HTMLTextAreaElement>) => {
-    setChars(evt.target.value.length);
-    if (onChange) {
-      onChange(evt);
-    }
+  const handleFocus = (e: ChangeEvent<HTMLTextAreaElement>) => {
+    setActiveInput(true);
+    onFocus && onFocus(e);
+  };
+  const handleBlur = (e: ChangeEvent<HTMLTextAreaElement>) => {
+    setActiveInput(hasChars);
+    onBlur && onBlur(e);
   };
 
-  useEffect(() => {
-    if (value) {
-      setActiveInput(true);
-      setChars(value.length);
-    }
-  }, [value]);
-
   const testId =
-    dataTestId ?? `${label.replaceAll(' ', '-').toLocaleLowerCase()}-textarea`;
+    dataTestId ?? `${label?.replaceAll(' ', '-').toLocaleLowerCase()}-textarea`;
 
   return (
     <TextAreaWrapper data-testid={testId}>
-      <LabelField isActive={activeInput} forId={testId}>
-        {label}
-        {required && '*'}
-      </LabelField>
+      {label && (
+        <LabelField isActive={activeInput} forId={testId}>
+          {label} {required && '*'}
+        </LabelField>
+      )}
       {hasError && (
         <InputFieldIconStyled>{hasError && <ErrorIcon />}</InputFieldIconStyled>
       )}
@@ -72,10 +74,11 @@ const TextArea = ({
         name={name || testId}
         id={testId}
         onFocus={handleFocus}
-        onChange={handleChange}
+        onChange={onChange}
         onBlur={handleBlur}
         maxLength={maxLength}
         hasError={hasError}
+        {...rest}
       />
       <Box
         style={{
@@ -94,14 +97,17 @@ const TextArea = ({
         >
           {helperText}
         </Typography>
-        <Typography
-          style={{ whiteSpace: 'nowrap' }}
-          element='span'
-          fontStyles='pXSmall'
-          color='gray_100'
-        >
-          {maxLength - chars} Characters
-        </Typography>
+
+        {maxLength && (
+          <Typography
+            style={{ whiteSpace: 'nowrap' }}
+            element='span'
+            fontStyles='pXSmall'
+            color='gray_100'
+          >
+            {maxLength - valueLength} Characters
+          </Typography>
+        )}
       </Box>
     </TextAreaWrapper>
   );

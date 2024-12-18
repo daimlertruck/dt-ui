@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<TextArea /> component it should a textarea 1`] = `
+exports[`<TextArea /> component should render textarea correctly 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -24,14 +24,14 @@ exports[`<TextArea /> component it should a textarea 1`] = `
   margin: 0;
   color: #8B8C8C;
   cursor: inherit;
-  font-size: 1rem;
+  font-size: .75rem;
   left: 15px;
   top: 15px;
   position: absolute;
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
+  -webkit-transform: translateY(-45%);
+  -moz-transform: translateY(-45%);
+  -ms-transform: translateY(-45%);
+  transform: translateY(-45%);
   -webkit-transition: -webkit-transform 150ms ease-out,font-size 150ms ease-out;
   transition: transform 150ms ease-out,font-size 150ms ease-out;
 }
@@ -86,13 +86,16 @@ exports[`<TextArea /> component it should a textarea 1`] = `
       for="my-text-area-textarea"
     >
       My text area
+       
     </label>
     <textarea
       class="emotion-4 emotion-5"
       id="my-text-area-textarea"
       maxlength="200"
       name="my-text-area-textarea"
-    />
+    >
+      description
+    </textarea>
     <div
       class="emotion-6 emotion-7"
       style="padding-left: 15px; gap: 16px; align-items: baseline; flex-direction: row; justify-content: space-between; width: 100%;"
@@ -108,7 +111,7 @@ exports[`<TextArea /> component it should a textarea 1`] = `
         data-testid="typography"
         style="white-space: nowrap;"
       >
-        200
+        189
          Characters
       </span>
     </div>
