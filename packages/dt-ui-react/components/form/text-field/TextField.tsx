@@ -5,6 +5,7 @@ import React, {
   MutableRefObject,
   HTMLInputTypeAttribute,
   ReactNode,
+  InputHTMLAttributes,
 } from 'react';
 
 import { ErrorIcon } from '../../../core/assets';
@@ -20,7 +21,9 @@ import {
   TextFieldMessageStyled,
 } from './TextField.styled';
 
-export interface TextFieldProps extends BaseProps {
+export interface TextFieldProps
+  extends BaseProps,
+    InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   isDisabled?: boolean;
   isLoading?: boolean;
@@ -32,8 +35,8 @@ export interface TextFieldProps extends BaseProps {
   maxLength?: number;
   inputRef?: MutableRefObject<HTMLInputElement>;
   message?: string | ReactNode | null;
-  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
   icon?: ReactNode;
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const TextField = ({
@@ -52,6 +55,7 @@ export const TextField = ({
   type = 'text',
   icon,
   onChange = () => null,
+  ...rest
 }: TextFieldProps) => {
   const [activeInput, setActiveInput] = useState(false);
   const [inputValue, setInputValue] = useState('');
@@ -123,6 +127,7 @@ export const TextField = ({
         </InputFieldIconStyled>
       )}
       <InputFieldStyled
+        {...rest}
         disabled={isDisabled}
         ref={inputRef}
         type={type}

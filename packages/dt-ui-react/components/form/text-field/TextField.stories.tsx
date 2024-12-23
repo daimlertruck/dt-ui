@@ -2,7 +2,7 @@ import { Story } from '@storybook/react';
 
 import { CopyIcon } from '../../../core/assets';
 import { IconButton } from '../../buttons';
-import { Tooltip } from '../../tooltip';
+import { Tooltip, TooltipDirection } from '../../tooltip';
 
 import { TextField, TextFieldProps } from './TextField';
 
@@ -16,7 +16,10 @@ const Template: Story<TextFieldProps> = (props) => {
 };
 
 const copyButton = (
-  <Tooltip content='Copy to clipboard'>
+  <Tooltip>
+    <Tooltip.Content direction={TooltipDirection.Left}>
+      Copy to clipboard
+    </Tooltip.Content>
     <IconButton dataTestId='copy-button' onClick={() => console.log('here')}>
       <CopyIcon />
     </IconButton>
