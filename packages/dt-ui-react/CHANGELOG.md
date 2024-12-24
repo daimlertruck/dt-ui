@@ -1,5 +1,11 @@
 # @dt-ui/react
 
+## 0.1.0-alpha.54
+
+### Minor Changes
+
+- feat: enable all input properties to be passed to TextField
+
 ## 0.1.0-alpha.53
 
 ### Minor Changes
