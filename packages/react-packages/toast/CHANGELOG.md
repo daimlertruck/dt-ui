@@ -1,5 +1,13 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.37
+
+### Patch Changes
+
+- fix(button-styles): update :disabled colors
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.20
+
 ## 0.1.0-beta.36
 
 ### Minor Changes

@@ -1,5 +1,15 @@
 # @dt-ui/react
 
+## 0.1.0-beta.152
+
+### Patch Changes
+
+- fix(button-styles): update :disabled colors
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.20
+  - @dt-ui/react-empty-state@0.1.0-beta.40
+  - @dt-ui/react-toast@0.1.0-beta.37
+
 ## 0.1.0-beta.151
 
 ### Patch Changes

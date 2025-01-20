@@ -1,5 +1,11 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.20
+
+### Patch Changes
+
+- fix(button-styles): update :disabled colors
+
 ## 0.1.0-beta.19
 
 ### Minor Changes
