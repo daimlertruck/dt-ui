@@ -25,6 +25,7 @@ const getOutlinedButtonStyles = (
       cursor: not-allowed;
       color: ${theme.palette.primary.light};
       border-color: ${theme.palette.primary.light};
+      background-color: transparent;
     }
   `,
   error: `
@@ -122,6 +123,7 @@ export const buttonVariantStyles = (
         &:disabled {
           cursor: not-allowed;
           color: ${theme.palette.content.default};
+          background-color: transparent;
         }
       `,
     }[variant];
@@ -161,6 +163,7 @@ export const buttonVariantStyles = (
         &:disabled {
           cursor: not-allowed;
           color: ${theme.palette[color][disabledShade]};
+          background-color: transparent;
         }
     `,
     }[variant];

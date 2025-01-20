@@ -146,6 +146,7 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   cursor: not-allowed;
   color: #CCE3EB;
   border-color: #CCE3EB;
+  background-color: transparent;
 }
 
 @media only screen and (min-width: 600px) {
