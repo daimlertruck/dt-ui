@@ -159,7 +159,15 @@ describe('<TextField /> component', () => {
 
   it('renders input with variant baseLine', () => {
     const { container } = render(
-      <ProvidedTextField label='My input' variant='bottomLine' />
+      <ProvidedTextField label='My input' variant='bottom-line' />
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('renders input with light background color', () => {
+    const { container } = render(
+      <ProvidedTextField backgroundColor='light' label='My input' />
     );
 
     expect(container).toMatchSnapshot();
@@ -210,12 +218,12 @@ describe('<TextField /> component', () => {
 
     render(
       <ProvidedTextField
-        label='Search for anything'
-        type='search'
         extraSuffix={{
           component: <Icon code='search' />,
           onClick: handleClick,
         }}
+        label='Search for anything'
+        type='search'
       />
     );
 
@@ -236,12 +244,12 @@ describe('<TextField /> component', () => {
 
     render(
       <ProvidedTextField
-        label='Search for anything'
-        type='search'
         extraPrefix={{
           component: <Icon code='search' />,
           onClick: handleClick,
         }}
+        label='Search for anything'
+        type='search'
       />
     );
 
@@ -262,13 +270,13 @@ describe('<TextField /> component', () => {
 
     render(
       <ProvidedTextField
-        label='Search for anything'
-        type='search'
-        onResetInput={handleClick}
         extraPrefix={{
           component: <Icon code='search' />,
           onClick: jest.fn(),
         }}
+        label='Search for anything'
+        onResetInput={handleClick}
+        type='search'
       />
     );
 

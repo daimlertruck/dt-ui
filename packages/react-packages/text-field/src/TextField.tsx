@@ -12,6 +12,7 @@ import {
   useState,
 } from 'react';
 
+import { TextFieldVariant, TextFieldBgColor } from './constants';
 import {
   InputExtraPrefixStyled,
   InputExtraSuffixStyled,
@@ -39,7 +40,8 @@ export interface TextFieldProps
   initialValue?: string;
   inputRef?: RefObject<HTMLInputElement>;
   message?: string;
-  variant?: 'outlined' | 'bottomLine';
+  variant?: TextFieldVariant;
+  backgroundColor?: TextFieldBgColor;
   onResetInput?: () => void;
 }
 
@@ -59,6 +61,7 @@ export const TextField = ({
   message: messageProp = '',
   type = 'text',
   variant = 'outlined',
+  backgroundColor = 'contrast',
   disabled = false,
   onChange = () => null,
   onResetInput = () => null,
@@ -169,7 +172,11 @@ export const TextField = ({
         </LabelField>
       ) : null}
 
-      <InputWrapperStyled isFloatingLabel={isFloatingLabel} variant={variant}>
+      <InputWrapperStyled
+        backgroundColor={backgroundColor}
+        isFloatingLabel={isFloatingLabel}
+        variant={variant}
+      >
         {extraPrefix?.component ? (
           <InputExtraPrefixStyled
             data-testid='extra-preffix'
@@ -184,12 +191,12 @@ export const TextField = ({
         ) : null}
 
         <InputFieldStyled
-          data-testid='input-field'
           data-error={showError}
-          isSearchType={isSearchType}
+          data-testid='input-field'
           disabled={disabled}
           id={id}
           isFloatingLabel={isFloatingLabel}
+          isSearchType={isSearchType}
           name={name ?? id}
           ref={inputRef}
           type={type}
@@ -202,11 +209,11 @@ export const TextField = ({
 
         {isSearchType && !!inputValue ? (
           <ResetInputIconStyled
-            tabIndex={0}
-            onKeyDown={handleResetIconEnter}
             data-testid='reset-icon'
+            onKeyDown={handleResetIconEnter}
+            tabIndex={0}
           >
-            <Icon onClick={handleResetInput} code='close_small' />
+            <Icon code='close_small' onClick={handleResetInput} />
           </ResetInputIconStyled>
         ) : null}
 

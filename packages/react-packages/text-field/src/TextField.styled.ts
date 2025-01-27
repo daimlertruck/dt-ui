@@ -1,5 +1,7 @@
 import styled from '@emotion/styled';
 
+import { TextFieldVariant, TextFieldBgColor } from './constants';
+
 export interface InputFieldStyledProps {
   isFloatingLabel: boolean;
   isSearchType: boolean;
@@ -7,7 +9,8 @@ export interface InputFieldStyledProps {
 
 export interface InputWrapperStyledProps {
   isFloatingLabel: boolean;
-  variant: 'outlined' | 'bottomLine';
+  variant: TextFieldVariant;
+  backgroundColor: TextFieldBgColor;
 }
 
 export const TextFieldStyled = styled.div<{
@@ -20,6 +23,7 @@ export const TextFieldStyled = styled.div<{
     gap: ${theme.spacing['5xs']};
     width: 100%;
     position: relative;
+    
 
     ${
       hasPrefix
@@ -68,6 +72,7 @@ export const InputFieldStyled = styled.input<InputFieldStyledProps>`
     outline: 0;
     width: 100%;
     background-color: inherit;
+    
 
 
     input:-webkit-autofill,
@@ -147,7 +152,7 @@ export const ResetInputIconStyled = styled.div`
 `;
 
 export const InputWrapperStyled = styled.div<InputWrapperStyledProps>`
-  ${({ theme, isFloatingLabel, variant }) => `
+  ${({ theme, isFloatingLabel, variant, backgroundColor }) => `
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -156,7 +161,12 @@ export const InputWrapperStyled = styled.div<InputWrapperStyledProps>`
     height: 54px;
     color: ${theme.palette.content.default};
     gap: ${theme.spacing['4xs']};
-    background-color: ${theme.palette.surface.contrast};
+    background-color: ${
+      backgroundColor === 'contrast'
+        ? theme.palette.surface.contrast
+        : theme.palette.surface.light
+    };
+    
     padding-inline: ${theme.spacing['3xs']};
 
     border-radius: ${
