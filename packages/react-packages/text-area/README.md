@@ -14,14 +14,19 @@ export const App = () => {
 
 ## Properties
 
-| Property     | Type              | Default          | Description                                                   |
-| ------------ | ----------------- | ---------------- | ------------------------------------------------------------- |
-| `label`      | `string`          | -                | A label to help users understand the scope of the text area.  |
-| `name`       | `string`          | -                | The attribute to specify the name of the text area.           |
-| `value`      | `string`          | -                | Value of the text area                                        |
-| `dataTestId` | `string`          | `label`-textarea | Customizable test identifier                                  |
-| `maxLength`  | `number`          | 120              | The maximum number of characters that user can enter.         |
-| `onChange`   | `function`        | -                | The triggered function when the input change.                 |
+| Property         | Type                        | Default          | Description                                                                               |
+| ---------------- | --------------------------- | ---------------- | ----------------------------------------------------------------------------------------- |
+| `label`          | `string`                    | -                | A label to help users understand the scope of the text area.                              |
+| `name`           | `string`                    | -                | The attribute to specify the name of the text area.                                       |
+| `value`          | `string`                    | -                | Value of the text area                                                                    |
+| `dataTestId`     | `string`                    | `label`-textarea | Customizable test identifier                                                              |
+| `maxLength`      | `number`                    |                  | The maximum number of characters that user can enter.                                     |
+| `onChange`       | `function`                  | -                | The triggered function when the input change.                                             |
+| `variant`        | `[outlined,bottomLine]`     | `outlined`       | Styles the input with outlined or with bottom line                                        |
+| `hasError`       | `boolean`                   | -                | Set error state for text field.                                                           |
+| `backgroundFill` | `[default, contrast,light]` | `default`        | Styles the input with background color                                                    |
+| `enableResize`   | `boolean`                   | `false`          | Enables the vertical resizing                                                             |
+| `message`        | `string`                    | -                | The message to be displayed below the input field. Useful for hints or to display errors. |
 
 ## Stack
 

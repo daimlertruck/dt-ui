@@ -1,5 +1,6 @@
 import { withProviders } from '@dt-ui/react-core';
-import { act, render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
+import { useState } from 'react';
 
 import { TextArea } from '.';
 
@@ -32,13 +33,15 @@ describe('<TextArea /> component', () => {
   });
 
   it('renders input with max length of 200 characters', () => {
-    const { getByRole } = render(
+    const { getByTestId, getByRole } = render(
       <ProvidedTextArea label='Awesome text area' maxLength={200} />
     );
 
     const textarea = getByRole('textbox');
+    const maxLength = getByTestId('typography');
 
     expect(textarea).toHaveProperty('maxLength', 200);
+    expect(maxLength).toBeVisible();
   });
 
   it('fills input correctly with new value on change Event', () => {
@@ -47,12 +50,12 @@ describe('<TextArea /> component', () => {
       <ProvidedTextArea label='My awesome text area' onChange={onChange} />
     );
 
-    const textareInput = getByRole('textbox');
+    const textareaInput = getByRole('textbox');
 
-    fireEvent.change(textareInput, { target: { value: 'New input value' } });
+    fireEvent.change(textareaInput, { target: { value: 'New input value' } });
 
     expect(onChange).toHaveBeenCalled();
-    expect(textareInput).toHaveValue('New input value');
+    expect(textareaInput).toHaveValue('New input value');
   });
 
   it('should have active state on focus', () => {
@@ -62,17 +65,51 @@ describe('<TextArea /> component', () => {
 
     const textarea = getByRole('textbox');
 
-    act(() => {
-      textarea.focus();
-    });
+    fireEvent.focus(textarea);
 
-    expect(textarea).toHaveStyle('outline: 1px solid #00677F');
     expect(textarea).toHaveStyle('border-width: 1px;');
     expect(textarea).toHaveStyle('border-style: solid');
-    expect(textarea).toHaveStyle('border-color: transparent');
+  });
+
+  it('renders disabled input', () => {
+    const { container } = render(
+      <ProvidedTextArea disabled label='My disabled input' />
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('renders required text field', () => {
+    render(
+      <ProvidedTextArea
+        label='Required text'
+        message='This field is required.'
+        required
+      />
+    );
+
+    const label = screen.getByTestId('label-field');
+
+    expect(label).toHaveTextContent('Required text*');
   });
 
   describe('onBlur event', () => {
+    it('should have error state with error message', () => {
+      render(
+        <ProvidedTextArea
+          label='Some text'
+          message='This field is required.'
+          required
+        />
+      );
+      const input = screen.getByRole('textbox');
+
+      fireEvent.blur(input, { currentTarget: { value: '' } });
+
+      expect(input).toHaveStyle('outline: none;');
+      expect(screen.getByText('This field is required.')).toBeInTheDocument();
+    });
+
     it("should add 'blur' with empty value", () => {
       const { getByRole } = render(
         <ProvidedTextArea label='My awesome text area' />
@@ -98,5 +135,60 @@ describe('<TextArea /> component', () => {
       expect(label).toHaveStyle('font-size: 0.75rem');
       expect(label).toHaveStyle('transform: translateY(-45%)');
     });
+  });
+
+  it('renders input with variant baseLine', () => {
+    const { container } = render(
+      <ProvidedTextArea label='My input' variant='bottom-line' />
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('renders input with resize option', () => {
+    const { container } = render(
+      <ProvidedTextArea enableResize label='My input' />
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('renders input with light background fill', () => {
+    const { container } = render(
+      <ProvidedTextArea backgroundFill='light' label='My input' />
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('renders input without required error when initial value is changed', async () => {
+    const StatefulTextArea = () => {
+      const [value, setValue] = useState('');
+
+      return (
+        <>
+          <button onClick={() => setValue('new initial value')} type='button'>
+            Set initial value
+          </button>
+          <ProvidedTextArea
+            label='my field'
+            message='required field'
+            required
+            value={value}
+          />
+        </>
+      );
+    };
+
+    render(<StatefulTextArea />);
+
+    fireEvent.focus(screen.getByLabelText('my field*'));
+    fireEvent.blur(screen.getByLabelText('my field*'));
+
+    expect(screen.getByText('required field')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByText('Set initial value'));
+
+    expect(screen.queryByText('new initial value')).toBeInTheDocument();
   });
 });
