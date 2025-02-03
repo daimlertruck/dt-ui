@@ -1,5 +1,11 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.26
+
+### Minor Changes
+
+- feat: add option for background color
+
 ## 0.1.0-beta.25
 
 ### Minor Changes

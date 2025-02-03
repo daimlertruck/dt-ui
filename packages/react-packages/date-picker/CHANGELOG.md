@@ -1,5 +1,16 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.9
+
+### Minor Changes
+
+- feat: add option for background color
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-text-field@0.1.0-beta.26
+
 ## 0.1.0-beta.8
 
 ### Minor Changes
