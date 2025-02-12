@@ -5,12 +5,13 @@ import { buttonVariantColors, buttonVariantStyles } from './utils';
 
 export interface ButtonStyledProps {
   isLoading?: boolean;
+  isContrast?: boolean;
   variant: ButtonVariant;
   color: ContainedColors | OutlinedColors;
 }
 
 export const ButtonStyled = styled.button<ButtonStyledProps>`
-  ${({ theme, isLoading, variant, color }) => `
+  ${({ theme, isLoading, isContrast, variant, color }) => `
     ${buttonVariantStyles(variant, theme, color)};
     ${theme.fontStyles.alpha.pSmall}
     font-weight: 700;
@@ -48,6 +49,19 @@ export const ButtonStyled = styled.button<ButtonStyledProps>`
         buttonVariantColors(color, theme)[variant].hoverBgColor ??
         buttonVariantColors(color, theme)[variant].bgColor
       };
+    };
+
+    ${
+      isContrast &&
+      `
+        background-color: transparent;
+        color: ${theme.colors.alpha.white};
+        
+        &:hover {
+          color: ${theme.colors.alpha.white};
+          background-color: ${theme.palette.alpha[color]};
+        };
+      `
     };
   `}
 `;

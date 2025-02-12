@@ -1,5 +1,5 @@
-import { BaseProps } from '../../../types';
-import { Spinner } from '../../spinner';
+import { BaseProps } from '@dt-ui/react';
+import { Spinner } from '@dt-ui/react';
 
 import { ButtonStyled } from './Button.styled';
 import { ContainedColors, OutlinedColors, TextColors } from './constants';
@@ -8,6 +8,7 @@ export type ButtonProps = {
   onClick: () => void;
   isDisabled?: boolean;
   isLoading?: boolean;
+  isContrast?: boolean;
 } & BaseProps &
   (
     | { variant?: 'contained'; color?: ContainedColors }
@@ -23,6 +24,7 @@ export const Button = ({
   dataTestId,
   isDisabled = false,
   isLoading,
+  isContrast,
   color = 'primary',
 }: ButtonProps) => {
   return (
@@ -33,6 +35,7 @@ export const Button = ({
       variant={variant}
       onClick={onClick}
       isLoading={isLoading}
+      isContrast={isContrast}
       data-testid={`${dataTestId}-button`}
     >
       {children}
