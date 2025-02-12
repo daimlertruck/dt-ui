@@ -1,5 +1,5 @@
-import { BaseProps } from '@dt-ui/react';
-import { Spinner } from '@dt-ui/react';
+import { BaseProps } from '../../../types';
+import { Spinner } from '../../spinner';
 
 import { ButtonStyled } from './Button.styled';
 import { ContainedColors, OutlinedColors, TextColors } from './constants';
