@@ -1,4 +1,5 @@
 import { BaseProps, Portal } from '@dt-ui/react-core';
+import React, { useRef, useState, useLayoutEffect } from 'react';
 
 import {
   TooltipBackground,
@@ -24,7 +25,17 @@ export const TooltipContent = ({
   dataTestId,
 }: TooltipContentProps) => {
   const { isVisible } = useTooltipContext();
-  const { top, left } = useTooltipPosition(direction);
+  const tooltipRef = useRef<HTMLDivElement>(null);
+
+  const [tooltipRect, setTooltipRect] = useState(new DOMRect(0, 0, 0, 0));
+
+  useLayoutEffect(() => {
+    if (tooltipRef.current) {
+      setTooltipRect(tooltipRef.current.getBoundingClientRect());
+    }
+  }, [isVisible, children]);
+
+  const position = useTooltipPosition(direction, tooltipRect);
 
   return children ? (
     <Portal isOpen={isVisible}>
@@ -32,10 +43,11 @@ export const TooltipContent = ({
         background={background}
         data-testid={dataTestId ?? 'tooltip-content'}
         direction={direction}
-        left={left}
+        left={position.left}
+        ref={tooltipRef}
         role='tooltip'
         style={style}
-        top={top}
+        top={position.top}
       >
         {children}
       </TooltipContentStyled>

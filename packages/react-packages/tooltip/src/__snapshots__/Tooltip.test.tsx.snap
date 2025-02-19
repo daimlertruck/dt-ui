@@ -77,7 +77,7 @@ exports[`<Tooltip /> component renders a tooltip with the direction as left and 
   position: absolute;
   z-index: 11;
   top: 0px;
-  left: -12px;
+  left: 0px;
   opacity: 80%;
   -webkit-transform: translate(-100%, -50%);
   -moz-transform: translate(-100%, -50%);
@@ -186,7 +186,7 @@ exports[`<Tooltip /> component renders a tooltip with the direction as top and b
   white-space: initial;
   position: absolute;
   z-index: 11;
-  top: -12px;
+  top: 0px;
   left: 0px;
   -webkit-transform: translate(-50%, -100%);
   -moz-transform: translate(-50%, -100%);
