@@ -1,5 +1,13 @@
 # @dt-ui/react-avatar
 
+## 0.1.0-beta.32
+
+### Patch Changes
+
+- fix(tooltip): avoid browser window crop
+- Updated dependencies
+  - @dt-ui/react-tooltip@0.1.0-beta.32
+
 ## 0.1.0-beta.31
 
 ### Minor Changes

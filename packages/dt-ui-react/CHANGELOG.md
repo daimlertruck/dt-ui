@@ -1,5 +1,18 @@
 # @dt-ui/react
 
+## 0.1.0-beta.154
+
+### Patch Changes
+
+- fix(tooltip): avoid browser window crop
+- Updated dependencies
+  - @dt-ui/react-tooltip@0.1.0-beta.32
+  - @dt-ui/react-avatar@0.1.0-beta.32
+  - @dt-ui/react-breadcrumb@0.1.0-beta.31
+  - @dt-ui/react-form@0.1.0-beta.7
+  - @dt-ui/react-segmented-control@0.1.0-beta.10
+  - @dt-ui/react-select@0.1.0-beta.22
+
 ## 0.1.0-beta.153
 
 ### Minor Changes
