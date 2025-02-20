@@ -1,5 +1,13 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.23
+
+### Patch Changes
+
+- fix(DOMRect API): prevent breaking consumers CI/CD pipeline
+- Updated dependencies
+  - @dt-ui/react-tooltip@0.1.0-beta.33
+
 ## 0.1.0-beta.22
 
 ### Patch Changes

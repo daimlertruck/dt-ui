@@ -1,5 +1,18 @@
 # @dt-ui/react
 
+## 0.1.0-beta.155
+
+### Patch Changes
+
+- fix(DOMRect API): prevent breaking consumers CI/CD pipeline
+- Updated dependencies
+  - @dt-ui/react-tooltip@0.1.0-beta.33
+  - @dt-ui/react-avatar@0.1.0-beta.33
+  - @dt-ui/react-breadcrumb@0.1.0-beta.32
+  - @dt-ui/react-form@0.1.0-beta.8
+  - @dt-ui/react-segmented-control@0.1.0-beta.11
+  - @dt-ui/react-select@0.1.0-beta.23
+
 ## 0.1.0-beta.154
 
 ### Patch Changes

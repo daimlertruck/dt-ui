@@ -1,5 +1,11 @@
 # @dt-ui/react-tooltip
 
+## 0.1.0-beta.33
+
+### Patch Changes
+
+- fix(DOMRect API): prevent breaking consumers CI/CD pipeline
+
 ## 0.1.0-beta.32
 
 ### Patch Changes

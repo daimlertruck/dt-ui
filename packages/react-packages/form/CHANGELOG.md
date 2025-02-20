@@ -1,5 +1,13 @@
 # @dt-ui/react-form
 
+## 0.1.0-beta.8
+
+### Patch Changes
+
+- fix(DOMRect API): prevent breaking consumers CI/CD pipeline
+- Updated dependencies
+  - @dt-ui/react-tooltip@0.1.0-beta.33
+
 ## 0.1.0-beta.7
 
 ### Patch Changes
