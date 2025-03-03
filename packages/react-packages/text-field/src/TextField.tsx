@@ -12,7 +12,7 @@ import {
   useState,
 } from 'react';
 
-import { TextFieldVariant, TextFieldBgColor } from './constants';
+import { TextFieldVariant, TextFieldBackgroundFill } from './constants';
 import {
   InputExtraPrefixStyled,
   InputExtraSuffixStyled,
@@ -41,7 +41,7 @@ export interface TextFieldProps
   inputRef?: RefObject<HTMLInputElement>;
   message?: string;
   variant?: TextFieldVariant;
-  backgroundColor?: TextFieldBgColor;
+  backgroundFill?: TextFieldBackgroundFill;
   onResetInput?: () => void;
 }
 
@@ -61,7 +61,7 @@ export const TextField = ({
   message: messageProp = '',
   type = 'text',
   variant = 'outlined',
-  backgroundColor = 'contrast',
+  backgroundFill = 'default',
   disabled = false,
   onChange = () => null,
   onResetInput = () => null,
@@ -173,7 +173,7 @@ export const TextField = ({
       ) : null}
 
       <InputWrapperStyled
-        backgroundColor={backgroundColor}
+        backgroundFill={backgroundFill}
         isFloatingLabel={isFloatingLabel}
         variant={variant}
       >

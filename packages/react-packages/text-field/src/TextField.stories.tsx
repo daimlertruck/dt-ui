@@ -62,8 +62,9 @@ const meta: Meta<TextFieldPropsWithExtrasProp> = {
       },
       control: { type: 'select' },
     },
-    backgroundColor: {
+    backgroundFill: {
       options: {
+        default: 'default',
         contrast: 'contrast',
         light: 'light',
       },
@@ -105,7 +106,7 @@ export const Default: StoryObj<TextFieldPropsWithExtrasProp> = {
     readOnly: false,
     placeholder: 'My field placeholder',
     variant: 'outlined',
-    backgroundColor: 'contrast',
+    backgroundFill: 'default',
     extras: 'none',
   },
 };

@@ -1,3 +1,3 @@
 export type TextFieldVariant = 'outlined' | 'bottom-line';
 
-export type TextFieldBgColor = 'contrast' | 'light';
+export type TextFieldBackgroundFill = 'default' | 'contrast' | 'light';

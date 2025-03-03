@@ -78,7 +78,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   height: 54px;
   color: #454545;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   padding-inline: 12px;
   border-radius: 0px;
   border-style: solid;
@@ -310,7 +310,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   height: 54px;
   color: #454545;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   padding-inline: 12px;
   border-radius: 0px;
   border-style: solid;
@@ -552,7 +552,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   height: 54px;
   color: #454545;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   padding-inline: 12px;
   border-radius: 0px;
   border-style: solid;

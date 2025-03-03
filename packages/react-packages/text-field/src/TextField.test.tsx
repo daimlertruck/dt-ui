@@ -165,9 +165,9 @@ describe('<TextField /> component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('renders input with light background color', () => {
+  it('renders input with light background fill', () => {
     const { container } = render(
-      <ProvidedTextField backgroundColor='light' label='My input' />
+      <ProvidedTextField backgroundFill='light' label='My input' />
     );
 
     expect(container).toMatchSnapshot();

@@ -1,6 +1,10 @@
 import styled from '@emotion/styled';
 
-import { TextFieldVariant, TextFieldBgColor } from './constants';
+import {
+  TextFieldVariant,
+  TextFieldBackgroundFill,
+  getThemedBackgroundFill,
+} from './constants';
 
 export interface InputFieldStyledProps {
   isFloatingLabel: boolean;
@@ -10,7 +14,7 @@ export interface InputFieldStyledProps {
 export interface InputWrapperStyledProps {
   isFloatingLabel: boolean;
   variant: TextFieldVariant;
-  backgroundColor: TextFieldBgColor;
+  backgroundFill: TextFieldBackgroundFill;
 }
 
 export const TextFieldStyled = styled.div<{
@@ -152,7 +156,7 @@ export const ResetInputIconStyled = styled.div`
 `;
 
 export const InputWrapperStyled = styled.div<InputWrapperStyledProps>`
-  ${({ theme, isFloatingLabel, variant, backgroundColor }) => `
+  ${({ theme, isFloatingLabel, variant, backgroundFill }) => `
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -161,11 +165,7 @@ export const InputWrapperStyled = styled.div<InputWrapperStyledProps>`
     height: 54px;
     color: ${theme.palette.content.default};
     gap: ${theme.spacing['4xs']};
-    background-color: ${
-      backgroundColor === 'contrast'
-        ? theme.palette.surface.contrast
-        : theme.palette.surface.light
-    };
+    background-color: ${getThemedBackgroundFill(backgroundFill, theme)};
     
     padding-inline: ${theme.spacing['3xs']};
 

@@ -78,7 +78,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
   height: 54px;
   color: #454545;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   padding-inline: 12px;
   border-radius: 0px;
   border-style: solid;
@@ -291,7 +291,7 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
   height: 54px;
   color: #454545;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   padding-inline: 12px;
   border-radius: 0px;
   border-style: solid;
@@ -478,7 +478,7 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
 </div>
 `;
 
-exports[`<TextField /> component renders input with light background color 1`] = `
+exports[`<TextField /> component renders input with light background fill 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -762,7 +762,7 @@ exports[`<TextField /> component renders input with variant baseLine 1`] = `
   height: 54px;
   color: #454545;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   padding-inline: 12px;
   border-radius: 0px 0px 0 0;
   border-style: solid;
@@ -953,7 +953,7 @@ exports[`<TextField /> component renders input without floating label 1`] = `
   height: 54px;
   color: #454545;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   padding-inline: 12px;
   border-radius: 0px;
   border-style: solid;
@@ -1158,7 +1158,7 @@ exports[`<TextField /> component should render the TextField with error styles a
   height: 54px;
   color: #454545;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   padding-inline: 12px;
   border-radius: 0px;
   border-style: solid;
@@ -1389,7 +1389,7 @@ exports[`<TextField /> component should render the TextField with info message 1
   height: 54px;
   color: #454545;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   padding-inline: 12px;
   border-radius: 0px;
   border-style: solid;

@@ -90,7 +90,7 @@ exports[`<Form /> component renders simple form 1`] = `
   height: 54px;
   color: #454545;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   padding-inline: 12px;
   border-radius: 0px;
   border-style: solid;
@@ -369,7 +369,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   height: 54px;
   color: #454545;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   padding-inline: 12px;
   border-radius: 0px;
   border-style: solid;
@@ -631,7 +631,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   height: 54px;
   color: #454545;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   padding-inline: 12px;
   border-radius: 0px;
   border-style: solid;
@@ -942,7 +942,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   height: 54px;
   color: #454545;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   padding-inline: 12px;
   border-radius: 0px;
   border-style: solid;
