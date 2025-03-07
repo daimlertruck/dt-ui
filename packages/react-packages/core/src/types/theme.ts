@@ -232,11 +232,17 @@ export type CustomTheme = {
     };
   };
   breakpoints: {
+    mq1: number;
+    mq2: number;
+    mq3: number;
+    mq4: number;
+    mq5: number;
+    mq6: number;
+    // Legacy
     s: number;
     m: number;
     l: number;
     xl: number;
-    // Legacy
     md: number;
     lg: number;
     xxl: number;
