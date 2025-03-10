@@ -1,5 +1,13 @@
 # @dt-ui/react-backdrop
 
+## 0.1.0-beta.31
+
+### Patch Changes
+
+- chore: add theme breakpoints
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.29
+
 ## 0.1.0-beta.30
 
 ### Minor Changes

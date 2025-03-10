@@ -1,5 +1,15 @@
 # @dt-ui/react-segmented-control
 
+## 0.1.0-beta.12
+
+### Patch Changes
+
+- chore: add theme breakpoints
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.29
+  - @dt-ui/react-icon@0.1.0-beta.26
+  - @dt-ui/react-tooltip@0.1.0-beta.34
+
 ## 0.1.0-beta.11
 
 ### Patch Changes

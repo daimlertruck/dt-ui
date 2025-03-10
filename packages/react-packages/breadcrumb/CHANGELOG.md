@@ -1,5 +1,14 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.33
+
+### Patch Changes
+
+- chore: add theme breakpoints
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.29
+  - @dt-ui/react-tooltip@0.1.0-beta.34
+
 ## 0.1.0-beta.32
 
 ### Patch Changes

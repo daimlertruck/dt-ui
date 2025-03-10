@@ -1,5 +1,14 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.10
+
+### Patch Changes
+
+- chore: add theme breakpoints
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.29
+  - @dt-ui/react-text-field@0.1.0-beta.27
+
 ## 0.1.0-beta.9
 
 ### Minor Changes

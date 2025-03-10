@@ -1,5 +1,14 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.26
+
+### Patch Changes
+
+- chore: add theme breakpoints
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.29
+  - @dt-ui/react-divider@0.1.0-beta.28
+
 ## 0.1.0-beta.25
 
 ### Minor Changes

@@ -1,5 +1,13 @@
 # @dt-ui/react-radio
 
+## 0.1.0-beta.13
+
+### Patch Changes
+
+- chore: add theme breakpoints
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.29
+
 ## 0.1.0-beta.12
 
 ### Minor Changes

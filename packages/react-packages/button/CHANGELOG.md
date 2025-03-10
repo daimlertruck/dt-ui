@@ -1,5 +1,14 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.21
+
+### Patch Changes
+
+- chore: add theme breakpoints
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.29
+  - @dt-ui/react-spinner@0.1.0-beta.30
+
 ## 0.1.0-beta.20
 
 ### Patch Changes

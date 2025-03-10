@@ -1,5 +1,15 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.41
+
+### Patch Changes
+
+- chore: add theme breakpoints
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.29
+  - @dt-ui/react-button@0.1.0-beta.21
+  - @dt-ui/react-typography@0.1.0-beta.20
+
 ## 0.1.0-beta.40
 
 ### Patch Changes

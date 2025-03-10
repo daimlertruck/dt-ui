@@ -1,5 +1,14 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.19
+
+### Patch Changes
+
+- chore: add theme breakpoints
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.26
+  - @dt-ui/react-typography@0.1.0-beta.20
+
 ## 0.1.0-beta.18
 
 ### Minor Changes

@@ -1,5 +1,15 @@
 # @dt-ui/react-dropdown
 
+## 0.1.0-beta.8
+
+### Patch Changes
+
+- chore: add theme breakpoints
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.29
+  - @dt-ui/react-icon@0.1.0-beta.26
+  - @dt-ui/react-typography@0.1.0-beta.20
+
 ## 0.1.0-beta.7
 
 ### Minor Changes

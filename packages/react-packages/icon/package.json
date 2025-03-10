@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-icon",
-  "version": "0.1.0-beta.25",
+  "version": "0.1.0-beta.26",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@dt-ui/icons": "0.1.0-beta.2",
-    "@dt-ui/react-core": "0.1.0-beta.28"
+    "@dt-ui/react-core": "0.1.0-beta.29"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
