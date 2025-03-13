@@ -1,5 +1,11 @@
 # @dt-ui/react-form
 
+## 0.1.0-beta.10
+
+### Minor Changes
+
+- feat: add backgroundFill
+
 ## 0.1.0-beta.9
 
 ### Patch Changes

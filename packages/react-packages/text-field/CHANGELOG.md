@@ -1,5 +1,11 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.28
+
+### Minor Changes
+
+- feat: add backgroundFill
+
 ## 0.1.0-beta.27
 
 ### Patch Changes

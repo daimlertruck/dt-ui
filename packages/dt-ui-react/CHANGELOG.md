@@ -1,5 +1,18 @@
 # @dt-ui/react
 
+## 0.1.0-beta.157
+
+### Minor Changes
+
+- feat: add backgroundFill
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-date-picker@0.1.0-beta.11
+  - @dt-ui/react-form@0.1.0-beta.10
+  - @dt-ui/react-text-field@0.1.0-beta.28
+
 ## 0.1.0-beta.156
 
 ### Patch Changes
