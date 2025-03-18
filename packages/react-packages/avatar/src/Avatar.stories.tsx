@@ -25,6 +25,7 @@ export default meta;
 
 export const Default: StoryObj<typeof Avatar> = {
   args: {
+    customInitials: '',
     title: 'User Name',
     type: AvatarType.Primary,
     size: AvatarSize.Medium,

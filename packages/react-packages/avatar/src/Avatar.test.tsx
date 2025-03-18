@@ -1,5 +1,5 @@
 import { withProviders } from '@dt-ui/react-core';
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import React from 'react';
 
 import Avatar from './Avatar';
@@ -28,6 +28,7 @@ describe('<Avatar /> component', () => {
   it('renders span html element with the correct content', () => {
     const { container } = render(
       <ProvidedAvatar
+        customInitials='AAAAA'
         size={AvatarSize.Medium}
         title='User Name'
         type={AvatarType.Primary}
@@ -106,5 +107,35 @@ describe('<Avatar /> component', () => {
     const thumbnailImage: HTMLImageElement = screen.getByAltText('User Name');
     expect(thumbnailImage).toBeInTheDocument();
     expect(thumbnailImage.src).toContain(avatarExampleImage);
+  });
+
+  it('renders avatar with custom initials', () => {
+    const { rerender } = render(
+      <ProvidedAvatar
+        customInitials='AB'
+        imageSrc={avatarExampleImage}
+        size={AvatarSize.Medium}
+        title='User Name'
+        type={AvatarType.Primary}
+      />
+    );
+
+    expect(
+      within(screen.getByTestId('avatar')).getByText('AB')
+    ).toBeInTheDocument();
+
+    rerender(
+      <ProvidedAvatar
+        customInitials='ABCCC'
+        imageSrc={avatarExampleImage}
+        size={AvatarSize.Medium}
+        title='User Name'
+        type={AvatarType.Primary}
+      />
+    );
+
+    expect(
+      within(screen.getByTestId('avatar')).getByText('AB')
+    ).toBeInTheDocument();
   });
 });

@@ -26,10 +26,11 @@ export const App = () => {
 
 This component can contain upto two simple characters by passing a string in prop `title`
 
-| Property     | Type               | Default | Description                                                        |
-| ------------ | ------------------ | ------- | ------------------------------------------------------------------ |
-| `title`      | `ReactNode`        | -       | Letter characters shown in the avatar                              |
-| `type`       | `enum<AvatarType>` | primary | You can choose type of the Avatar you want for different use cases |
-| `size`       | `enum<AvatarSize>` | medium  | Sets the Avatar size given the available options                   |
-| `imageSrc`   | `string`           | -       | Optional profile image path (will only work with "Profile" type)   |
-| `dataTestId` | `string`           | avatar  | Avatar test identifier                                             |
+| Property         | Type               | Default | Description                                                         |
+| ---------------- | ------------------ | ------- | ------------------------------------------------------------------- |
+| `title`          | `ReactNode`        | -       | Letter characters shown in the avatar                               |
+| `type`           | `enum<AvatarType>` | primary | You can choose type of the Avatar you want for different use cases  |
+| `size`           | `enum<AvatarSize>` | medium  | Sets the Avatar size given the available options                    |
+| `imageSrc`       | `string`           | -       | Optional profile image path (will only work with "Profile" type)    |
+| `dataTestId`     | `string`           | avatar  | Avatar test identifier                                              |
+| `customInitials` | `string`           | -       | Custom initials will replace avatar name acronym, limited to 2 char |

@@ -11,6 +11,7 @@ export interface AvatarProps extends AvatarStyledProps {
   title: string;
   imageSrc?: string;
   dataTestId?: string;
+  customInitials?: string;
 }
 
 const Avatar = ({
@@ -19,6 +20,7 @@ const Avatar = ({
   size = AvatarSize.Medium,
   imageSrc = '',
   dataTestId,
+  customInitials,
 }: AvatarProps) => {
   const [showThumbnail, setShowThumbnail] = useState(false);
 
@@ -43,7 +45,11 @@ const Avatar = ({
         {type === AvatarType.Profile ? (
           renderProfileImage()
         ) : (
-          <div>{acronymGenerator(title)}</div>
+          <div>
+            {customInitials
+              ? customInitials.substring(0, 2)
+              : acronymGenerator(title)}
+          </div>
         )}
       </AvatarStyled>
       <Tooltip.Content>{title}</Tooltip.Content>
