@@ -1,5 +1,16 @@
 # @dt-ui/react-table
 
+## 0.1.0-beta.25
+
+### Minor Changes
+
+- feat: add spinner size 'extra-small' & update specs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.30
+
 ## 0.1.0-beta.24
 
 ### Patch Changes

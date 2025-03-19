@@ -1,5 +1,17 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.20
+
+### Minor Changes
+
+- feat: add spinner size 'extra-small' & update specs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.27
+  - @dt-ui/react-typography@0.1.0-beta.21
+
 ## 0.1.0-beta.19
 
 ### Patch Changes

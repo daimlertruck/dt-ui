@@ -1,5 +1,17 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.12
+
+### Minor Changes
+
+- feat: add spinner size 'extra-small' & update specs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.30
+  - @dt-ui/react-text-field@0.1.0-beta.29
+
 ## 0.1.0-beta.11
 
 ### Minor Changes

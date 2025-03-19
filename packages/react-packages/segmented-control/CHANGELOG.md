@@ -1,5 +1,18 @@
 # @dt-ui/react-segmented-control
 
+## 0.1.0-beta.13
+
+### Minor Changes
+
+- feat: add spinner size 'extra-small' & update specs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.30
+  - @dt-ui/react-icon@0.1.0-beta.27
+  - @dt-ui/react-tooltip@0.1.0-beta.35
+
 ## 0.1.0-beta.12
 
 ### Patch Changes

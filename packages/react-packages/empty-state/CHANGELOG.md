@@ -1,5 +1,20 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.42
+
+### Minor Changes
+
+- feat: add accent color to button appearance
+- feat: add spinner size 'extra-small' & update specs
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.22
+  - @dt-ui/react-core@0.1.0-beta.30
+  - @dt-ui/react-typography@0.1.0-beta.21
+
 ## 0.1.0-beta.41
 
 ### Patch Changes

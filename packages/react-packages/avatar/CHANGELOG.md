@@ -1,5 +1,17 @@
 # @dt-ui/react-avatar
 
+## 0.1.0-beta.36
+
+### Minor Changes
+
+- feat: add spinner size 'extra-small' & update specs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.30
+  - @dt-ui/react-tooltip@0.1.0-beta.35
+
 ## 0.1.0-beta.35
 
 ### Minor Changes

@@ -1,5 +1,18 @@
 # @dt-ui/react-form
 
+## 0.1.0-beta.11
+
+### Minor Changes
+
+- feat: add spinner size 'extra-small' & update specs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.30
+  - @dt-ui/react-tooltip@0.1.0-beta.35
+  - @dt-ui/react-typography@0.1.0-beta.21
+
 ## 0.1.0-beta.10
 
 ### Minor Changes

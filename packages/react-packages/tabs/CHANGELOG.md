@@ -1,5 +1,17 @@
 # @dt-ui/react-tabs
 
+## 0.1.0-beta.20
+
+### Minor Changes
+
+- feat: add spinner size 'extra-small' & update specs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.30
+  - @dt-ui/react-icon@0.1.0-beta.27
+
 ## 0.1.0-beta.19
 
 ### Patch Changes

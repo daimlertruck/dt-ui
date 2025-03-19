@@ -1,5 +1,17 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.27
+
+### Minor Changes
+
+- feat: add spinner size 'extra-small' & update specs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.30
+  - @dt-ui/react-divider@0.1.0-beta.29
+
 ## 0.1.0-beta.26
 
 ### Patch Changes
