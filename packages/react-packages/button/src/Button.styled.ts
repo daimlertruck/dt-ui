@@ -24,9 +24,23 @@ export const ButtonStyled = styled.button<ButtonStyledProps>`
 
   ${({ theme, variant, color, size }) => `
     gap: ${theme.spacing['4xs']};
-    border-radius: ${theme.shape.button};
+    border-radius: ${theme.shape.button}; 
     ${buttonSizeStyles(size, theme)}
     ${buttonVariantStyles(variant, theme, color)}
+
+    &:focus-visible {
+      ${
+        color === 'contrast'
+          ? `
+          outline: 1px solid ${theme.palette.content.dark};
+          outline-offset: -3px;
+        `
+          : `
+          outline: 3px solid ${theme.palette.border.dark};
+          outline-offset: 1px;
+        `
+      }
+    }
 
     @media only screen and (min-width: ${theme.breakpoints.s}px) {
       width: auto;

@@ -50,7 +50,7 @@ export const Button = ({
       {isLoading ? (
         <Spinner
           colorScheme={variant !== 'solid' ? 'positive' : 'negative'}
-          size='small'
+          size='extra-small'
         />
       ) : null}
     </ButtonStyled>

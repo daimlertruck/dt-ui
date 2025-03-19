@@ -122,6 +122,11 @@ exports[`<Link /> component Should render an anchor element with button styles 1
   border-color: #CCE3EB;
 }
 
+.emotion-0:focus-visible {
+  outline: 3px solid #C1C1C1;
+  outline-offset: 1px;
+}
+
 @media only screen and (min-width: 600px) {
   .emotion-0 {
     width: auto;

@@ -1,10 +1,10 @@
 import { Theme } from '@dt-ui/react-core';
 
-import { ButtonVariant, ButtonColor, ButtonAppearance } from '../constants';
+import { ButtonVariant, ButtonAppearance } from '../constants';
 
 const getOutlinedButtonStyles = (
   theme: Theme
-): Record<ButtonColor, string> => ({
+): Partial<Record<ButtonAppearance, string>> => ({
   primary: `
     color: ${theme.palette.primary.default};
     border-color: ${theme.palette.primary.default};
@@ -67,6 +67,27 @@ const getOutlinedButtonStyles = (
       background-color: transparent;
     }
   `,
+  accent: `
+    color: ${theme.palette.accent.default};
+    border-color: ${theme.palette.accent.default};
+    background-color: transparent;
+    
+    &:hover {
+      color: ${theme.palette.accent.default};
+      border-color: ${theme.palette.accent.default};
+      background-color: ${theme.palette.accent.light};
+    }
+    &:active {
+      color: ${theme.palette.accent.default};
+      border-color: ${theme.palette.accent.default};
+      background-color: ${theme.palette.accent.light};
+    }
+    &:disabled {
+      cursor: not-allowed;
+      color: ${theme.palette.accent.light};
+      border-color: ${theme.palette.accent.light};
+      background-color: transparent;
+    }`,
 });
 
 export const buttonVariantStyles = (
@@ -78,8 +99,8 @@ export const buttonVariantStyles = (
     return {
       solid: `
         color: ${theme.palette.content.dark};
-        background-color: ${theme.palette.surface.default};
-        border-color: ${theme.palette.border.contrast};
+        background-color: ${theme.palette.primary.contrast};
+        border-color: ${theme.palette.primary.contrast};
 
         &:hover {
           background-color: ${theme.palette.primary.light};

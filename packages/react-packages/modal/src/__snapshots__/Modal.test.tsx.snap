@@ -543,6 +543,11 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   background-color: transparent;
 }
 
+.emotion-18:focus-visible {
+  outline: 3px solid #C1C1C1;
+  outline-offset: 1px;
+}
+
 @media only screen and (min-width: 600px) {
   .emotion-18 {
     width: auto;
@@ -593,6 +598,11 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   color: #FFFFFF;
   background-color: #CCE3EB;
   border-color: #CCE3EB;
+}
+
+.emotion-20:focus-visible {
+  outline: 3px solid #C1C1C1;
+  outline-offset: 1px;
 }
 
 @media only screen and (min-width: 600px) {

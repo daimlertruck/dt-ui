@@ -27,7 +27,7 @@ export const Default: Story = {
       control: { type: 'select' },
     },
     color: {
-      options: ['primary', 'secondary', 'error', 'contrast'],
+      options: ['primary', 'secondary', 'error', 'contrast', 'accent'],
       control: { type: 'select' },
     },
     size: {

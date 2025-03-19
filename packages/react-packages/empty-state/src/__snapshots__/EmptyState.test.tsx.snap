@@ -244,6 +244,11 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
   border-color: #CCE3EB;
 }
 
+.emotion-8:focus-visible {
+  outline: 3px solid #C1C1C1;
+  outline-offset: 1px;
+}
+
 @media only screen and (min-width: 600px) {
   .emotion-8 {
     width: auto;

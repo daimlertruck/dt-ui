@@ -47,6 +47,11 @@ exports[`<Button /> component renders button html element with the correct title
   border-color: #CCE3EB;
 }
 
+.emotion-0:focus-visible {
+  outline: 3px solid #C1C1C1;
+  outline-offset: 1px;
+}
+
 @media only screen and (min-width: 600px) {
   .emotion-0 {
     width: auto;
@@ -149,6 +154,11 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   background-color: transparent;
 }
 
+.emotion-0:focus-visible {
+  outline: 3px solid #C1C1C1;
+  outline-offset: 1px;
+}
+
 @media only screen and (min-width: 600px) {
   .emotion-0 {
     width: auto;
@@ -170,8 +180,8 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
 }
 
 .emotion-4 {
-  width: 32px;
-  height: 32px;
+  width: 14px;
+  height: 14px;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
   border-top: 2px solid #00677F;
@@ -264,6 +274,11 @@ exports[`<Button /> component when loading is true renders a spinner light theme
   border-color: #CCE3EB;
 }
 
+.emotion-0:focus-visible {
+  outline: 3px solid #C1C1C1;
+  outline-offset: 1px;
+}
+
 @media only screen and (min-width: 600px) {
   .emotion-0 {
     width: auto;
@@ -285,8 +300,8 @@ exports[`<Button /> component when loading is true renders a spinner light theme
 }
 
 .emotion-4 {
-  width: 32px;
-  height: 32px;
+  width: 14px;
+  height: 14px;
   border: 2px solid #838383;
   border-radius: 50%;
   border-top: 2px solid #FFFFFF;
