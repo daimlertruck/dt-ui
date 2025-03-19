@@ -131,11 +131,11 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
 }
 
 .emotion-8 {
-  width: 64px;
-  height: 64px;
-  border: 2px solid #FFFFFF;
+  width: 58px;
+  height: 58px;
+  border: 4px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #00677F;
+  border-top: 4px solid #00677F;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }

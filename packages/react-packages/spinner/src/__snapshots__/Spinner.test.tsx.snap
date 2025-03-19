@@ -32,11 +32,11 @@ exports[`<Spinner /> component should render the default options correctly 1`] =
 }
 
 .emotion-2 {
-  width: 48px;
-  height: 48px;
-  border: 2px solid #FFFFFF;
+  width: 42px;
+  height: 42px;
+  border: 4px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #00677F;
+  border-top: 4px solid #00677F;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -134,11 +134,11 @@ exports[`<Spinner /> component should render the sizes correctly should render t
 }
 
 .emotion-2 {
-  width: 64px;
-  height: 64px;
-  border: 2px solid #FFFFFF;
+  width: 58px;
+  height: 58px;
+  border: 4px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #00677F;
+  border-top: 4px solid #00677F;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -220,11 +220,11 @@ exports[`<Spinner /> component should render the sizes correctly should render t
 }
 
 .emotion-2 {
-  width: 56px;
-  height: 56px;
-  border: 2px solid #FFFFFF;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #00677F;
+  border-top: 4px solid #00677F;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -290,11 +290,11 @@ exports[`<Spinner /> component should render the sizes correctly should render t
 }
 
 .emotion-2 {
-  width: 32px;
-  height: 32px;
-  border: 2px solid #FFFFFF;
+  width: 28px;
+  height: 28px;
+  border: 4px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #00677F;
+  border-top: 4px solid #00677F;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -408,11 +408,11 @@ exports[`<Spinner /> component should render the small size correctly when the p
 }
 
 .emotion-2 {
-  width: 48px;
-  height: 48px;
-  border: 2px solid #838383;
+  width: 42px;
+  height: 42px;
+  border: 4px solid #838383;
   border-radius: 50%;
-  border-top: 2px solid #FFFFFF;
+  border-top: 4px solid #FFFFFF;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -526,11 +526,11 @@ exports[`<Spinner /> component should render the text helper when prop is provid
 }
 
 .emotion-2 {
-  width: 48px;
-  height: 48px;
-  border: 2px solid #FFFFFF;
+  width: 42px;
+  height: 42px;
+  border: 4px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #00677F;
+  border-top: 4px solid #00677F;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }

@@ -14,7 +14,7 @@ const meta: Meta<typeof Spinner> = {
   },
   argTypes: {
     size: {
-      options: ['small', 'medium', 'large', 'extra-large'],
+      options: ['extra-small', 'small', 'medium', 'large', 'extra-large'],
       control: { type: 'select' },
     },
     colorScheme: {
