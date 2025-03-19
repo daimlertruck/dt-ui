@@ -1,5 +1,16 @@
 # @dt-ui/react
 
+## 0.1.0-beta.158
+
+### Minor Changes
+
+- feat: add customInitias to avatar
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-avatar@0.1.0-beta.35
+
 ## 0.1.0-beta.157
 
 ### Minor Changes
