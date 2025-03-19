@@ -1,5 +1,11 @@
 # @dt-ui/react-text-area
 
+## 0.1.0-beta.10
+
+### Minor Changes
+
+- feat: add options for variant, bgfill, resize, message
+
 ## 0.1.0-beta.9
 
 ### Minor Changes
