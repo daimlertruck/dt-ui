@@ -170,16 +170,16 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
 }
 
 .emotion-14 {
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #292929;
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:1024px) {
   .emotion-14 {
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -400,16 +400,16 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
 }
 
 .emotion-8 {
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #292929;
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:1024px) {
   .emotion-8 {
     font-size: 1.5rem;
     line-height: 1.75rem;

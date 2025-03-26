@@ -43,16 +43,16 @@ exports[`<Card /> component renders div html element with the correct items 1`] 
 }
 
 .emotion-4 {
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #131313;
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:1024px) {
   .emotion-4 {
     font-size: 1.5rem;
     line-height: 1.75rem;

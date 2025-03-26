@@ -839,7 +839,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
 }
 
 .emotion-6 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: normal;

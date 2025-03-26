@@ -59,16 +59,16 @@ exports[`<EmptyState /> component should render Empty State 1`] = `
 }
 
 .emotion-4 {
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #292929;
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:1024px) {
   .emotion-4 {
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -172,16 +172,16 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
 }
 
 .emotion-4 {
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #292929;
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:1024px) {
   .emotion-4 {
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -350,16 +350,16 @@ exports[`<EmptyState /> component should render Empty State with image 1`] = `
 }
 
 .emotion-4 {
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
   color: #292929;
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:1024px) {
   .emotion-4 {
     font-size: 1.5rem;
     line-height: 1.75rem;

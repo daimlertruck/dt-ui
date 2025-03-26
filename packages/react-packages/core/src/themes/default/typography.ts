@@ -16,12 +16,12 @@ interface responsiveStyle {
 }
 
 export const fontStyles = {
-  h1: getTextStyles(700, '3rem', '3.25rem'),
-  h2: getTextStyles(700, '2.5rem', '2.75rem'),
-  h3: getTextStyles(600, '2rem', '2.25rem'),
-  h4: getTextStyles(600, '1.5rem', '1.75rem'),
-  h5: getTextStyles(600, '1.25rem', '1.5rem'),
-  h6: getTextStyles(600, '1rem', '1.5rem'),
+  h1: getTextStyles(700, '2.5rem', '2.75rem'),
+  h2: getTextStyles(700, '2rem', '2.25rem'),
+  h3: getTextStyles(700, '1.5rem', '1.75rem'),
+  h4: getTextStyles(700, '1.25rem', '1.5rem'),
+  h5: getTextStyles(700, '1rem', '1.5rem'),
+  h6: getTextStyles(700, '1rem', '1.5rem'),
   body1Bold: getTextStyles(700, '1rem', '1.5rem'),
   body1: getTextStyles(400, '1rem', '1.5rem'),
   body2Bold: getTextStyles(700, '0.875rem', '1.25rem'),
@@ -67,22 +67,18 @@ const getTextResponsiveStyle = (styles: responsiveStyle[]) => {
 
 export const responsiveFontStyles = {
   h1: getTextResponsiveStyle([
-    {
-      minBound: 'm',
-      fontSize: '3rem',
-      lineHeight: '3.25rem',
-    },
+    { minBound: 'mq4', fontSize: '3rem', lineHeight: '3.25rem' },
   ]),
   h2: getTextResponsiveStyle([
-    { minBound: 'm', fontSize: '2.5rem', lineHeight: '3rem' },
+    { minBound: 'mq4', fontSize: '2.5rem', lineHeight: '2.75rem' },
   ]),
   h3: getTextResponsiveStyle([
-    { minBound: 'm', fontSize: '2rem', lineHeight: '2.5rem' },
+    { minBound: 'mq4', fontSize: '2rem', lineHeight: '2.25rem' },
   ]),
   h4: getTextResponsiveStyle([
-    { minBound: 'm', fontSize: '1.5rem', lineHeight: '1.75rem' },
+    { minBound: 'mq4', fontSize: '1.5rem', lineHeight: '1.75rem' },
   ]),
   h5: getTextResponsiveStyle([
-    { minBound: 'm', fontSize: '1.25rem', lineHeight: '1.5rem' },
+    { minBound: 'mq4', fontSize: '1.25rem', lineHeight: '1.5rem' },
   ]),
 };
