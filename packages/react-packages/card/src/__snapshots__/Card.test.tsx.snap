@@ -22,7 +22,7 @@ exports[`<Card /> component renders div html element with the correct items 1`] 
 
 .emotion-0::after {
   content: '';
-  background-color: #00677F;
+  background-color: #000000;
   border-radius: 4px;
   width: 40px;
   height: 5px;
@@ -49,7 +49,7 @@ exports[`<Card /> component renders div html element with the correct items 1`] 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #131313;
+  color: #292929;
 }
 
 @media only screen and (min-width:1024px) {

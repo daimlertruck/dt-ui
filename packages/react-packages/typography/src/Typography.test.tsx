@@ -20,7 +20,7 @@ describe('<Typography /> component', () => {
 
     const h1Element = container.querySelector('h1');
     expect(h1Element).toBeInTheDocument();
-    expect(h1Element).toHaveStyle({ color: 'rgb(57, 0, 0)' });
+    expect(h1Element).toHaveStyle({ color: 'rgb(109, 0, 0)' });
   });
 
   it('should render a p html element with the primary color', () => {
@@ -30,6 +30,6 @@ describe('<Typography /> component', () => {
 
     const pElement = container.querySelector('p');
     expect(pElement).toBeInTheDocument();
-    expect(pElement).toHaveStyle({ color: 'rgb(0, 103, 127)' });
+    expect(pElement).toHaveStyle({ color: 'rgb(0, 0, 0)' });
   });
 });

@@ -38,11 +38,11 @@ exports[`<Radio /> component renders Radio group with Radio 1 checked and Radio 
 
 .emotion-4:checked {
   border-width: 7px;
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-4:checked:disabled {
-  border-color: #004E64;
+  border-color: #838383;
 }
 
 .emotion-4:checked:before {

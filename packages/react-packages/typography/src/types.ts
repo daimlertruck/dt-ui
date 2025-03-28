@@ -1,3 +1,5 @@
+import { PaletteKeys, Theme } from '@dt-ui/react-core';
+
 export type Elements =
   | 'h1'
   | 'h2'
@@ -9,3 +11,9 @@ export type Elements =
   | 'span'
   | 'label'
   | 'a';
+
+export type Colors =
+  | Extract<keyof Theme['colors'], string>
+  | PaletteKeys
+  | 'unset'
+  | 'inherit';

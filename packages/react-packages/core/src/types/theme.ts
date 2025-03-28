@@ -1,151 +1,35 @@
+import { blue, green, grey, orange, petrol, red } from '../constants';
+
+type ColorKey =
+  | keyof typeof grey
+  | keyof typeof blue
+  | keyof typeof petrol
+  | keyof typeof red
+  | keyof typeof green
+  | keyof typeof orange;
+
 export type CustomTheme = {
   palette: {
-    surface: {
+    [category in
+      | 'surface'
+      | 'border'
+      | 'content'
+      | 'primary'
+      | 'secondary'
+      | 'error'
+      | 'warning'
+      | 'success'
+      | 'informative'
+      | 'accent']: {
       default: string;
       light: string;
       medium: string;
       dark: string;
-      contrast: string;
-    };
-    border: {
-      light: string;
-      default: string;
-      dark: string;
-      contrast: string;
-    };
-    content: {
-      default: string;
-      light: string;
-      medium: string;
-      dark: string;
-      contrast: string;
-    };
-    primary: {
-      default: string;
-      light: string;
-      medium: string;
-      dark: string;
-      contrast: string;
-    };
-    secondary: {
-      default: string;
-      light: string;
-      medium: string;
-      dark: string;
-      contrast: string;
-    };
-    accent: {
-      default: string;
-      light: string;
-      medium: string;
-      dark: string;
-    };
-    error: {
-      default: string;
-      light: string;
-      medium: string;
-      dark: string;
-    };
-    warning: {
-      default: string;
-      light: string;
-      medium: string;
-      dark: string;
-    };
-    success: {
-      default: string;
-      light: string;
-      medium: string;
-      dark: string;
-    };
-    informative: {
-      default: string;
-      light: string;
-      medium: string;
-      dark: string;
+      contrast?: string;
     };
   };
   colors: {
-    black: string;
-    blue: string;
-    blue_05: string;
-    blue_10: string;
-    blue_20: string;
-    blue_30: string;
-    blue_40: string;
-    blue_50: string;
-    blue_60: string;
-    blue_70: string;
-    blue_80: string;
-    blue_90: string;
-    grey_05: string;
-    grey_10: string;
-    grey_20: string;
-    grey_30: string;
-    grey_40: string;
-    grey_50: string;
-    grey_60: string;
-    grey_70: string;
-    grey_80: string;
-    grey_90: string;
-    grey_100: string;
-    green: string;
-    green_05: string;
-    green_10: string;
-    green_20: string;
-    green_30: string;
-    green_40: string;
-    green_50: string;
-    green_60: string;
-    green_70: string;
-    green_80: string;
-    green_90: string;
-    red: string;
-    red_05: string;
-    red_10: string;
-    red_20: string;
-    red_30: string;
-    red_40: string;
-    red_50: string;
-    red_60: string;
-    red_70: string;
-    red_80: string;
-    red_90: string;
-    white: string;
-    yellow: string;
-    yellow_05: string;
-    yellow_10: string;
-    yellow_20: string;
-    yellow_30: string;
-    yellow_40: string;
-    yellow_50: string;
-    yellow_60: string;
-    yellow_70: string;
-    yellow_80: string;
-    yellow_90: string;
-    petrol: string;
-    petrol_05: string;
-    petrol_10: string;
-    petrol_20: string;
-    petrol_30: string;
-    petrol_40: string;
-    petrol_50: string;
-    petrol_60: string;
-    petrol_70: string;
-    petrol_80: string;
-    petrol_90: string;
-    purple: string;
-    purple_05: string;
-    purple_10: string;
-    purple_20: string;
-    purple_30: string;
-    purple_40: string;
-    purple_50: string;
-    purple_60: string;
-    purple_70: string;
-    purple_80: string;
-    purple_90: string;
-    purple_100: string;
+    [key in ColorKey]: string;
   };
   shadows: {
     none: string;

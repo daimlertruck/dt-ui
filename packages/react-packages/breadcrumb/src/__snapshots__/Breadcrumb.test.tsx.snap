@@ -43,12 +43,12 @@ exports[`<Breadcrumb /> component renders nav element with the correct breadcrum
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #00677F;
+  color: #000000;
   cursor: pointer;
 }
 
 .emotion-4:not(:last-child) svg {
-  color: #00677F;
+  color: #000000;
 }
 
 .emotion-4:not(:last-child) * {
@@ -57,11 +57,11 @@ exports[`<Breadcrumb /> component renders nav element with the correct breadcrum
 }
 
 .emotion-4:not(:last-child):hover {
-  color: #003041;
+  color: #454545;
 }
 
 .emotion-4:not(:last-child):hover svg {
-  color: #003041;
+  color: #454545;
 }
 
 .emotion-4 a {

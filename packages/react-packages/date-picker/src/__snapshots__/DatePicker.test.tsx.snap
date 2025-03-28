@@ -42,7 +42,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF494A;
+  color: #FF0000;
   cursor: inherit;
   font-weight: 400;
   font-size: 0.75rem;
@@ -83,19 +83,19 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-4:has(input:focus) {
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -189,7 +189,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF494A;
+  color: #FF0000;
 }
 
 <div>
@@ -274,7 +274,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF494A;
+  color: #FF0000;
   cursor: inherit;
   font-weight: 400;
   font-size: 0.75rem;
@@ -315,19 +315,19 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-4:has(input:focus) {
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -421,7 +421,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF494A;
+  color: #FF0000;
 }
 
 <div>
@@ -532,7 +532,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF494A;
+  color: #FF0000;
 }
 
 .emotion-6 {
@@ -557,19 +557,19 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-6:has(input:focus) {
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-6:has(input[data-error="true"]) {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-6:has(input[data-error="true"]):focus {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-6:has(input[readonly]:not([disabled])) {

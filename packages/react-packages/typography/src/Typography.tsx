@@ -1,12 +1,12 @@
-import { BaseProps, PaletteKeys, Theme } from '@dt-ui/react-core';
+import { BaseProps, Theme } from '@dt-ui/react-core';
 import { useTheme } from '@emotion/react';
 import { forwardRef } from 'react';
 
-import { Elements } from './types';
+import { Colors, Elements } from './types';
 import { TypographyStyled } from './Typography.styled';
 
 export interface TypographyProps extends BaseProps {
-  color?: keyof Theme['colors'] | PaletteKeys | 'unset' | 'inherit';
+  color?: Colors;
   fontStyles?: keyof Theme['fontStyles'];
   element?: Elements;
 }

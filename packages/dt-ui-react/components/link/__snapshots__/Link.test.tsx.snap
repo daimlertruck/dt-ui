@@ -2,7 +2,7 @@
 
 exports[`<Link /> component Should render a disabled html link element 1`] = `
 .emotion-0 {
-  color: #00677F;
+  color: #000000;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   opacity: 0.4;
@@ -29,7 +29,7 @@ exports[`<Link /> component Should render a disabled html link element 1`] = `
 
 exports[`<Link /> component Should render a html link element with the correct title 1`] = `
 .emotion-0 {
-  color: #00677F;
+  color: #000000;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   font-weight: 400;
@@ -53,7 +53,7 @@ exports[`<Link /> component Should render a html link element with the correct t
 
 exports[`<Link /> component Should render a html underlined link element with the correct title 1`] = `
 .emotion-0 {
-  color: #00677F;
+  color: #000000;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   font-weight: 400;
@@ -104,26 +104,26 @@ exports[`<Link /> component Should render an anchor element with button styles 1
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  border-color: #00677F;
+  border-color: #000000;
   color: #FFFFFF;
-  background-color: #00677F;
+  background-color: #000000;
 }
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #004E64;
-  border-color: #004E64;
+  background-color: #838383;
+  border-color: #838383;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
   color: #FFFFFF;
-  background-color: #CCE3EB;
-  border-color: #CCE3EB;
+  background-color: #DEDEDE;
+  border-color: #DEDEDE;
 }
 
 .emotion-0:focus-visible {
-  outline: 3px solid #C1C1C1;
+  outline: 3px solid #131313;
   outline-offset: 1px;
 }
 

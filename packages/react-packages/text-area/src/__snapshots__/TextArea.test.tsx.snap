@@ -17,7 +17,7 @@ exports[`<TextArea /> component renders disabled input 1`] = `
   width: 100%;
   border-style: solid;
   border-width: 0;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-2 {
@@ -66,7 +66,7 @@ exports[`<TextArea /> component renders disabled input 1`] = `
 }
 
 .emotion-4:focus {
-  border: 1px solid #00677F;
+  border: 1px solid #000000;
 }
 
 .emotion-6 {
@@ -133,7 +133,7 @@ exports[`<TextArea /> component renders input with an value 1`] = `
   width: 100%;
   border-style: solid;
   border-width: 0;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-2 {
@@ -182,7 +182,7 @@ exports[`<TextArea /> component renders input with an value 1`] = `
 }
 
 .emotion-4:focus {
-  border: 1px solid #00677F;
+  border: 1px solid #000000;
 }
 
 .emotion-6 {
@@ -249,7 +249,7 @@ exports[`<TextArea /> component renders input with light background fill 1`] = `
   width: 100%;
   border-style: solid;
   border-width: 0;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-2 {
@@ -298,7 +298,7 @@ exports[`<TextArea /> component renders input with light background fill 1`] = `
 }
 
 .emotion-4:focus {
-  border: 1px solid #00677F;
+  border: 1px solid #000000;
 }
 
 .emotion-6 {
@@ -363,7 +363,7 @@ exports[`<TextArea /> component renders input with resize option 1`] = `
   width: 100%;
   border-style: solid;
   border-width: 0;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-2 {
@@ -412,7 +412,7 @@ exports[`<TextArea /> component renders input with resize option 1`] = `
 }
 
 .emotion-4:focus {
-  border: 1px solid #00677F;
+  border: 1px solid #000000;
 }
 
 .emotion-6 {
@@ -477,7 +477,7 @@ exports[`<TextArea /> component renders input with variant baseLine 1`] = `
   width: 100%;
   border-style: solid;
   border-width: 0;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-2 {
@@ -526,7 +526,7 @@ exports[`<TextArea /> component renders input with variant baseLine 1`] = `
 }
 
 .emotion-4:focus {
-  border-bottom: 1px solid #00677F;
+  border-bottom: 1px solid #000000;
 }
 
 .emotion-6 {

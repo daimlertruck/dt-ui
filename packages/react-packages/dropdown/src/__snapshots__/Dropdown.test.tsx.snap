@@ -125,7 +125,7 @@ exports[`<Dropdown /> component renders dropdown correctly 1`] = `
 }
 
 .emotion-14:hover {
-  background: #CCE3EB;
+  background: #DEDEDE;
   cursor: pointer;
 }
 

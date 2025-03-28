@@ -1,8 +1,10 @@
 import { Theme, PaletteKeys, getContextualColor } from '@dt-ui/react-core';
 import styled from '@emotion/styled';
 
+import { Colors } from './types';
+
 interface TypographyStyledProps {
-  color: keyof Theme['colors'] | PaletteKeys | 'unset' | 'inherit';
+  color: Colors;
   fontStyles: keyof Theme['fontStyles'];
 }
 

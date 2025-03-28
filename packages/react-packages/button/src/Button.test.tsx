@@ -29,7 +29,7 @@ describe('<Button /> component', () => {
     );
 
     expect(getByTestId('contrast-button')).toHaveStyle(
-      'color: #292929;background-color: #cce3eb;border-color: #cce3eb;'
+      'color: #292929;background-color: #dedede;border-color: #dedede;'
     );
   });
 

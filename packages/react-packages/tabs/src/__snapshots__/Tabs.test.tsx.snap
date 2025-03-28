@@ -68,8 +68,8 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
   margin: 0;
   text-transform: none;
   background-color: transparent;
-  border-bottom: 2px solid #00677F;
-  color: #00677F;
+  border-bottom: 2px solid #000000;
+  color: #000000;
   padding: 12px 32px;
   cursor: default;
   white-space: nowrap;
@@ -101,7 +101,7 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
 }
 
 .emotion-8:hover {
-  color: #003041;
+  color: #454545;
 }
 
 .emotion-12 {
@@ -266,7 +266,7 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
   margin: 0;
   text-transform: none;
   background: #FFFFFF;
-  color: #00677F;
+  color: #000000;
   padding: 12px 32px;
   cursor: default;
   white-space: nowrap;

@@ -28,7 +28,7 @@ exports[`<Toggle /> component when the toggle is disabled and is checked should 
 }
 
 .emotion-2:checked+label {
-  background: #EAF7EA;
+  background: #EFF5EB;
 }
 
 .emotion-2:checked+label::after {
@@ -137,7 +137,7 @@ exports[`<Toggle /> component when the toggle is disabled and isn't checked shou
 }
 
 .emotion-2:checked+label {
-  background: #EAF7EA;
+  background: #EFF5EB;
 }
 
 .emotion-2:checked+label::after {
@@ -245,7 +245,7 @@ exports[`<Toggle /> component when the toggle isn't disabled and is checked with
 }
 
 .emotion-2:checked+label {
-  background: #21A330;
+  background: #6EA046;
 }
 
 .emotion-2:checked+label::after {
@@ -336,7 +336,7 @@ exports[`<Toggle /> component when the toggle isn't disabled and isn't checked s
 }
 
 .emotion-2:checked+label {
-  background: #21A330;
+  background: #6EA046;
 }
 
 .emotion-2:checked+label::after {

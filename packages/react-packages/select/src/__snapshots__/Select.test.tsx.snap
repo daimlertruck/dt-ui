@@ -48,12 +48,12 @@ exports[`<Select /> component should render Select 1`] = `
   background-color: #FFFFFF;
   border-radius: 0px;
   cursor: pointer;
-  border: 1px solid #00677F;
+  border: 1px solid #000000;
 }
 
 .emotion-4:hover,
 .emotion-4:focus {
-  border: 1px solid #00677F;
+  border: 1px solid #000000;
 }
 
 .emotion-6 {
@@ -158,7 +158,7 @@ exports[`<Select /> component should render Select 1`] = `
 
 .emotion-16:hover,
 .emotion-16:focus-within {
-  background-color: #CCE3EB;
+  background-color: #DEDEDE;
 }
 
 .emotion-16[aria-disabled="true"] {
@@ -438,7 +438,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
 
 .emotion-4:hover,
 .emotion-4:focus {
-  border: 1px solid #00677F;
+  border: 1px solid #000000;
 }
 
 .emotion-6 {

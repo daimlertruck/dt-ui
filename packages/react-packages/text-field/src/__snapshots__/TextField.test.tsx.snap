@@ -83,19 +83,19 @@ exports[`<TextField /> component renders disabled input 1`] = `
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-4:has(input:focus) {
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -296,19 +296,19 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-4:has(input:focus) {
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -561,19 +561,19 @@ exports[`<TextField /> component renders input with light background fill 1`] = 
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-4:has(input:focus) {
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -767,19 +767,19 @@ exports[`<TextField /> component renders input with variant baseLine 1`] = `
   border-radius: 0px 0px 0 0;
   border-style: solid;
   border-width: 0 0 1px;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-4:has(input:focus) {
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -958,19 +958,19 @@ exports[`<TextField /> component renders input without floating label 1`] = `
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-4:has(input:focus) {
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -1122,7 +1122,7 @@ exports[`<TextField /> component should render the TextField with error styles a
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF494A;
+  color: #FF0000;
   cursor: inherit;
   font-weight: 400;
   font-size: 0.75rem;
@@ -1163,19 +1163,19 @@ exports[`<TextField /> component should render the TextField with error styles a
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-4:has(input:focus) {
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -1269,7 +1269,7 @@ exports[`<TextField /> component should render the TextField with error styles a
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF494A;
+  color: #FF0000;
 }
 
 <div>
@@ -1394,19 +1394,19 @@ exports[`<TextField /> component should render the TextField with info message 1
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-4:has(input:focus) {
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {

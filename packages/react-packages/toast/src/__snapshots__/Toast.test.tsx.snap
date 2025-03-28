@@ -48,7 +48,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   align-items: center;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #FF494A;
+  background-color: #FF0000;
   color: #FFFFFF;
 }
 
@@ -457,7 +457,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   align-items: center;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #21A330;
+  background-color: #6EA046;
   color: #FFFFFF;
 }
 
@@ -662,7 +662,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   align-items: center;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #FFD000;
+  background-color: #E69123;
   color: #FFFFFF;
 }
 
@@ -866,7 +866,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   align-items: center;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #FF494A;
+  background-color: #FF0000;
   color: #FFFFFF;
 }
 
@@ -1253,7 +1253,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   align-items: center;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #21A330;
+  background-color: #6EA046;
   color: #FFFFFF;
 }
 
@@ -1447,7 +1447,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   align-items: center;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #FFD000;
+  background-color: #E69123;
   color: #FFFFFF;
 }
 

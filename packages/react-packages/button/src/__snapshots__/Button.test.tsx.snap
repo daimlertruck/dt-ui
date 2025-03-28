@@ -29,26 +29,26 @@ exports[`<Button /> component renders button html element with the correct title
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  border-color: #00677F;
+  border-color: #000000;
   color: #FFFFFF;
-  background-color: #00677F;
+  background-color: #000000;
 }
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #004E64;
-  border-color: #004E64;
+  background-color: #838383;
+  border-color: #838383;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
   color: #FFFFFF;
-  background-color: #CCE3EB;
-  border-color: #CCE3EB;
+  background-color: #DEDEDE;
+  border-color: #DEDEDE;
 }
 
 .emotion-0:focus-visible {
-  outline: 3px solid #C1C1C1;
+  outline: 3px solid #131313;
   outline-offset: 1px;
 }
 
@@ -131,31 +131,31 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  color: #00677F;
-  border-color: #00677F;
+  color: #000000;
+  border-color: #000000;
   background-color: transparent;
 }
 
 .emotion-0:hover {
-  color: #00677F;
-  border-color: #00677F;
-  background-color: #CCE3EB;
+  color: #000000;
+  border-color: #000000;
+  background-color: #DEDEDE;
 }
 
 .emotion-0:active {
-  color: #00677F;
-  border-color: #00677F;
+  color: #000000;
+  border-color: #000000;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
-  color: #CCE3EB;
-  border-color: #CCE3EB;
+  color: #DEDEDE;
+  border-color: #DEDEDE;
   background-color: transparent;
 }
 
 .emotion-0:focus-visible {
-  outline: 3px solid #C1C1C1;
+  outline: 3px solid #131313;
   outline-offset: 1px;
 }
 
@@ -184,7 +184,7 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   height: 14px;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
-  border-top: 2px solid #00677F;
+  border-top: 2px solid #000000;
   -webkit-animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
   animation: animation-0 1s cubic-bezier(0.3, 0.1, 0.25, 0.65) 0s infinite normal none;
 }
@@ -255,26 +255,26 @@ exports[`<Button /> component when loading is true renders a spinner light theme
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  border-color: #00677F;
+  border-color: #000000;
   color: #FFFFFF;
-  background-color: #00677F;
+  background-color: #000000;
 }
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #004E64;
-  border-color: #004E64;
+  background-color: #838383;
+  border-color: #838383;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
   color: #FFFFFF;
-  background-color: #CCE3EB;
-  border-color: #CCE3EB;
+  background-color: #DEDEDE;
+  border-color: #DEDEDE;
 }
 
 .emotion-0:focus-visible {
-  outline: 3px solid #C1C1C1;
+  outline: 3px solid #131313;
   outline-offset: 1px;
 }
 

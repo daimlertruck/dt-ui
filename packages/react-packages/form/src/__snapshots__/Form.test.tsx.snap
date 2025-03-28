@@ -95,19 +95,19 @@ exports[`<Form /> component renders simple form 1`] = `
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-6:has(input:focus) {
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-6:has(input[data-error="true"]) {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-6:has(input[data-error="true"]):focus {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-6:has(input[readonly]:not([disabled])) {
@@ -384,19 +384,19 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-10:has(input:focus) {
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-10:has(input[data-error="true"]) {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-10:has(input[data-error="true"]):focus {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-10:has(input[readonly]:not([disabled])) {
@@ -656,19 +656,19 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-10:has(input:focus) {
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-10:has(input[data-error="true"]) {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-10:has(input[data-error="true"]):focus {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-10:has(input[readonly]:not([disabled])) {
@@ -865,7 +865,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #00677F;
+  color: #000000;
 }
 
 .emotion-8 {
@@ -977,19 +977,19 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #C1C1C1;
+  border-color: #131313;
 }
 
 .emotion-14:has(input:focus) {
-  border-color: #00677F;
+  border-color: #000000;
 }
 
 .emotion-14:has(input[data-error="true"]) {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-14:has(input[data-error="true"]):focus {
-  border-color: #FF494A;
+  border-color: #FF0000;
 }
 
 .emotion-14:has(input[readonly]:not([disabled])) {

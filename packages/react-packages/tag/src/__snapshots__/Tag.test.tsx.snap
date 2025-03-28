@@ -7,10 +7,8 @@ exports[`<Tag /> component should render the tag with variant outlined, color bl
   line-height: 0.875rem;
   padding: 2px 8px;
   height: 18px;
-  border: 1px solid #008DFC;
-  color: #008DFC;
-  background-color: #E8F4FF;
-  border-color: #008DFC;
+  border: 1px solid undefined;
+  background-color: #F5FAFF;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -33,9 +31,9 @@ exports[`<Tag /> component should render the tag with variant outlined, color bl
 }
 
 .emotion-0:hover {
-  border-color: #000E40;
-  background-color: #E8F4FF;
-  color: #000E40;
+  border-color: #00226F;
+  background-color: #F5FAFF;
+  color: #00226F;
 }
 
 <div
@@ -57,7 +55,7 @@ exports[`<Tag /> component should render the tag with variant solid, color grey,
   height: 32px;
   border: 0;
   color: #FFFFFF;
-  background-color: #838383;
+  background-color: #A3A3A3;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -80,7 +78,7 @@ exports[`<Tag /> component should render the tag with variant solid, color grey,
 }
 
 .emotion-0:hover {
-  background-color: #131313;
+  background-color: #292929;
   color: #FFFFFF;
 }
 
@@ -103,7 +101,7 @@ exports[`<Tag /> component should render the tag with variant solid, color grey,
   height: 32px;
   border: 0;
   color: #FFFFFF;
-  background-color: #838383;
+  background-color: #A3A3A3;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -125,7 +123,7 @@ exports[`<Tag /> component should render the tag with variant solid, color grey,
 }
 
 .emotion-0:hover {
-  background-color: #131313;
+  background-color: #292929;
   color: #FFFFFF;
 }
 
@@ -140,7 +138,7 @@ exports[`<Tag /> component should render the tag with variant solid, color grey,
 
 .emotion-2:hover {
   background-color: #FFFFFF;
-  color: #131313;
+  color: #292929;
 }
 
 .emotion-2:disabled {
@@ -185,7 +183,7 @@ exports[`<Tag /> component should render the tag with variant solid, color grey,
   height: 32px;
   border: 0;
   color: #FFFFFF;
-  background-color: #C1C1C1;
+  background-color: #DEDEDE;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -259,7 +257,7 @@ exports[`<Tag /> component should render the tag with variant solid, color prima
   height: 32px;
   border: 0;
   color: #FFFFFF;
-  background-color: #00677F;
+  background-color: #000000;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
