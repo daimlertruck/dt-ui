@@ -12,11 +12,13 @@ export const FormStyled = styled.form`
 `;
 
 export const GroupStyled = styled.div`
-  row-gap: ${({ theme }) => theme.spacing.xmedium};
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  color: ${({ theme }) => theme.palette.content.default};
+  ${({ theme }) => `
+    row-gap: ${theme.spacing.xmedium};
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: ${theme.palette.content.default};
+  `}
 `;
 
 export const LabelStyled = styled.div`
@@ -29,9 +31,15 @@ export const LabelStyled = styled.div`
 export const GroupItemsStyled = styled.div<GroupItemsStyledProps>`
   ${({ theme, disabled }) => `
     display: flex;
-    column-gap: ${theme.spacing.xmedium};
+    gap: ${theme.spacing.xmedium};
     justify-content: stretch;
     align-items: start;
+    flex-direction: column;
+
+    @media only screen and (min-width: ${theme.breakpoints.mq3}px) {
+      flex-direction: row;
+    }
+
     ${
       disabled &&
       `

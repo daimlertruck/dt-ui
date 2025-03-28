@@ -278,8 +278,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 16px;
-  column-gap: 16px;
+  gap: 16px;
   -webkit-box-pack: stretch;
   -ms-flex-pack: stretch;
   -webkit-justify-content: stretch;
@@ -288,8 +287,19 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   opacity: 0.5;
   pointer-events: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .emotion-4 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
 
 .emotion-6 {
@@ -542,8 +552,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 16px;
-  column-gap: 16px;
+  gap: 16px;
   -webkit-box-pack: stretch;
   -ms-flex-pack: stretch;
   -webkit-justify-content: stretch;
@@ -552,6 +561,17 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .emotion-4 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
 
 .emotion-6 {
@@ -853,8 +873,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 16px;
-  column-gap: 16px;
+  gap: 16px;
   -webkit-box-pack: stretch;
   -ms-flex-pack: stretch;
   -webkit-justify-content: stretch;
@@ -863,6 +882,17 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .emotion-8 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
 
 .emotion-10 {
