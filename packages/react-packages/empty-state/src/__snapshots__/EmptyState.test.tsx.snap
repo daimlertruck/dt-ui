@@ -249,7 +249,7 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
   outline-offset: 1px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .emotion-8 {
     width: auto;
   }

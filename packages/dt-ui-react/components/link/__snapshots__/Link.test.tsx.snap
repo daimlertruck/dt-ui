@@ -127,7 +127,7 @@ exports[`<Link /> component Should render an anchor element with button styles 1
   outline-offset: 1px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .emotion-0 {
     width: auto;
   }

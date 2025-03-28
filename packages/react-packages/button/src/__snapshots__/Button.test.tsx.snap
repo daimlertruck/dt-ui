@@ -52,7 +52,7 @@ exports[`<Button /> component renders button html element with the correct title
   outline-offset: 1px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .emotion-0 {
     width: auto;
   }
@@ -159,7 +159,7 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   outline-offset: 1px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .emotion-0 {
     width: auto;
   }
@@ -279,7 +279,7 @@ exports[`<Button /> component when loading is true renders a spinner light theme
   outline-offset: 1px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .emotion-0 {
     width: auto;
   }

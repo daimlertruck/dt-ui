@@ -42,7 +42,7 @@ export const ButtonStyled = styled.button<ButtonStyledProps>`
       }
     }
 
-    @media only screen and (min-width: ${theme.breakpoints.s}px) {
+    @media only screen and (min-width: ${theme.breakpoints.mq3}px) {
       width: auto;
     }
   `};
