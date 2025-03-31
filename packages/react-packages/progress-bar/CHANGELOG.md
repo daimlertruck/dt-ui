@@ -1,5 +1,14 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.21
+
+### Patch Changes
+
+- style: update responsive font styles
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.28
+  - @dt-ui/react-typography@0.1.0-beta.22
+
 ## 0.1.0-beta.20
 
 ### Minor Changes

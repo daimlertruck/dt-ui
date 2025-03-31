@@ -1,5 +1,15 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.43
+
+### Patch Changes
+
+- style: update responsive font styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.31
+  - @dt-ui/react-button@0.1.0-beta.23
+  - @dt-ui/react-typography@0.1.0-beta.22
+
 ## 0.1.0-beta.42
 
 ### Minor Changes

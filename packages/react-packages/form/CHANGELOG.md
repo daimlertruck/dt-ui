@@ -1,5 +1,15 @@
 # @dt-ui/react-form
 
+## 0.1.0-beta.12
+
+### Patch Changes
+
+- style: update responsive font styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.31
+  - @dt-ui/react-tooltip@0.1.0-beta.36
+  - @dt-ui/react-typography@0.1.0-beta.22
+
 ## 0.1.0-beta.11
 
 ### Minor Changes

@@ -1,5 +1,13 @@
 # @dt-ui/react-radio
 
+## 0.1.0-beta.15
+
+### Patch Changes
+
+- style: update responsive font styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.31
+
 ## 0.1.0-beta.14
 
 ### Minor Changes

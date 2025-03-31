@@ -1,5 +1,14 @@
 # @dt-ui/react-tabs
 
+## 0.1.0-beta.21
+
+### Patch Changes
+
+- style: update responsive font styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.31
+  - @dt-ui/react-icon@0.1.0-beta.28
+
 ## 0.1.0-beta.20
 
 ### Minor Changes

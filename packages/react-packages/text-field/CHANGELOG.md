@@ -1,5 +1,17 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.30
+
+### Patch Changes
+
+- style: update responsive font styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.31
+  - @dt-ui/react-icon@0.1.0-beta.28
+  - @dt-ui/react-label-field@0.1.0-beta.27
+  - @dt-ui/react-spinner@0.1.0-beta.32
+  - @dt-ui/react-typography@0.1.0-beta.22
+
 ## 0.1.0-beta.29
 
 ### Minor Changes

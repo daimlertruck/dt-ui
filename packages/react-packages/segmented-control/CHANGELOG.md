@@ -1,5 +1,15 @@
 # @dt-ui/react-segmented-control
 
+## 0.1.0-beta.14
+
+### Patch Changes
+
+- style: update responsive font styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.31
+  - @dt-ui/react-icon@0.1.0-beta.28
+  - @dt-ui/react-tooltip@0.1.0-beta.36
+
 ## 0.1.0-beta.13
 
 ### Minor Changes

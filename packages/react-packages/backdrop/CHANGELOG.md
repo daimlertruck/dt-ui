@@ -1,5 +1,13 @@
 # @dt-ui/react-backdrop
 
+## 0.1.0-beta.33
+
+### Patch Changes
+
+- style: update responsive font styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.31
+
 ## 0.1.0-beta.32
 
 ### Minor Changes

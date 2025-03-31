@@ -1,5 +1,14 @@
 # @dt-ui/react-toggle
 
+## 0.1.0-beta.9
+
+### Patch Changes
+
+- style: update responsive font styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.31
+  - @dt-ui/react-typography@0.1.0-beta.22
+
 ## 0.1.0-beta.8
 
 ### Minor Changes
