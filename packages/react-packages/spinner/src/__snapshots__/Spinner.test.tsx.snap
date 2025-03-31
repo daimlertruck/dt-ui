@@ -45,7 +45,6 @@ exports[`<Spinner /> component should render the default options correctly 1`] =
   <div
     class="emotion-0 emotion-1"
     data-testid="spinner"
-    style="margin: auto;"
   >
     <div
       class="emotion-2 emotion-3"
@@ -147,7 +146,6 @@ exports[`<Spinner /> component should render the sizes correctly should render t
   <div
     class="emotion-0 emotion-1"
     data-testid="spinner"
-    style="margin: auto;"
   >
     <div
       class="emotion-2 emotion-3"
@@ -233,7 +231,6 @@ exports[`<Spinner /> component should render the sizes correctly should render t
   <div
     class="emotion-0 emotion-1"
     data-testid="spinner"
-    style="margin: auto;"
   >
     <div
       class="emotion-2 emotion-3"
@@ -303,7 +300,6 @@ exports[`<Spinner /> component should render the sizes correctly should render t
   <div
     class="emotion-0 emotion-1"
     data-testid="spinner"
-    style="margin: auto;"
   >
     <div
       class="emotion-2 emotion-3"
@@ -421,7 +417,6 @@ exports[`<Spinner /> component should render the small size correctly when the p
   <div
     class="emotion-0 emotion-1"
     data-testid="spinner"
-    style="margin: auto;"
   >
     <div
       class="emotion-2 emotion-3"
@@ -549,7 +544,6 @@ exports[`<Spinner /> component should render the text helper when prop is provid
   <div
     class="emotion-0 emotion-1"
     data-testid="spinner"
-    style="margin: auto;"
   >
     <div
       class="emotion-2 emotion-3"

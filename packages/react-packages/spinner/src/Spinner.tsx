@@ -34,7 +34,7 @@ export const Spinner = ({
 }: SpinnerProps) => {
   const theme = useTheme();
   return (
-    <Box dataTestId={dataTestId} style={{ margin: 'auto', ...style }}>
+    <Box dataTestId={dataTestId} style={{ ...style }}>
       <SpinnerStyled colorScheme={colorScheme} size={size} />
       {loadingText ? (
         <Typography
