@@ -1,5 +1,15 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.41
+
+### Patch Changes
+
+- fix: button loading responsiveness
+- refactor: avoid centring spinner
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.24
+
 ## 0.1.0-beta.40
 
 ### Patch Changes

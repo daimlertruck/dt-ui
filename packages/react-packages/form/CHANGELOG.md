@@ -1,5 +1,11 @@
 # @dt-ui/react-form
 
+## 0.1.0-beta.13
+
+### Patch Changes
+
+- fix: form group responsiveness
+
 ## 0.1.0-beta.12
 
 ### Patch Changes

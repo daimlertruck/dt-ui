@@ -1,5 +1,13 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.14
+
+### Patch Changes
+
+- refactor: avoid centring spinner
+- Updated dependencies
+  - @dt-ui/react-text-field@0.1.0-beta.31
+
 ## 0.1.0-beta.13
 
 ### Patch Changes

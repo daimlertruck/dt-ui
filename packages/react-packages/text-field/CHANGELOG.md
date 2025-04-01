@@ -1,5 +1,13 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.31
+
+### Patch Changes
+
+- refactor: avoid centring spinner
+- Updated dependencies
+  - @dt-ui/react-spinner@0.1.0-beta.33
+
 ## 0.1.0-beta.30
 
 ### Patch Changes

@@ -1,5 +1,15 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.44
+
+### Patch Changes
+
+- fix: button loading responsiveness
+- refactor: avoid centring spinner
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.24
+
 ## 0.1.0-beta.43
 
 ### Patch Changes

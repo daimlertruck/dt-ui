@@ -1,5 +1,14 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.17
+
+### Patch Changes
+
+- fix: button loading responsiveness
+- refactor: avoid centring spinner
+- Updated dependencies
+  - @dt-ui/react-spinner@0.1.0-beta.33
+
 ## 0.1.0-beta.16
 
 ### Patch Changes

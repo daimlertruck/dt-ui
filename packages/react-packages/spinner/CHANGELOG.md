@@ -1,5 +1,11 @@
 # @dt-ui/react-spinner
 
+## 0.1.0-beta.33
+
+### Patch Changes
+
+- refactor: avoid centring spinner
+
 ## 0.1.0-beta.32
 
 ### Patch Changes

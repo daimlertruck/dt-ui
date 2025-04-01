@@ -1,5 +1,24 @@
 # @dt-ui/react
 
+## 0.1.0-beta.162
+
+### Patch Changes
+
+- fix: button loading responsiveness
+- fix: form group responsiveness
+- refactor: avoid centring spinner
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.24
+  - @dt-ui/react-empty-state@0.1.0-beta.44
+  - @dt-ui/react-modal@0.1.0-beta.17
+  - @dt-ui/react-toast@0.1.0-beta.41
+  - @dt-ui/react-form@0.1.0-beta.13
+  - @dt-ui/react-spinner@0.1.0-beta.33
+  - @dt-ui/react-text-field@0.1.0-beta.31
+  - @dt-ui/react-date-picker@0.1.0-beta.14
+
 ## 0.1.0-beta.161
 
 ### Patch Changes

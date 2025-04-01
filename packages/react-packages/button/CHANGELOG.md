@@ -1,5 +1,14 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.24
+
+### Patch Changes
+
+- fix: button loading responsiveness
+- refactor: avoid centring spinner
+- Updated dependencies
+  - @dt-ui/react-spinner@0.1.0-beta.33
+
 ## 0.1.0-beta.23
 
 ### Patch Changes
