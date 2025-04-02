@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.164
+
+### Patch Changes
+
+- chore: add box dependency to dropdown
+- Updated dependencies
+  - @dt-ui/react-dropdown@0.1.0-beta.12
+
 ## 0.1.0-beta.163
 
 ### Minor Changes
