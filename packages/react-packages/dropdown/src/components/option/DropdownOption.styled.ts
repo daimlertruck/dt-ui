@@ -1,8 +1,13 @@
 import styled from '@emotion/styled';
 
-export const DropdownOptionStyled = styled.li<{ disabled?: boolean }>`
-  ${({ theme, disabled }) => `
-    ${theme.fontStyles.body2}
+interface DropdownOptionStyledProps {
+  disabled?: boolean;
+  isSelected?: boolean;
+}
+
+export const DropdownOptionStyled = styled.li<DropdownOptionStyledProps>`
+  ${({ theme, disabled, isSelected }) => `
+    ${theme.fontStyles[isSelected ? 'body2Bold' : 'body2']};
     color: ${theme.palette.content.default};
     list-style: none;
     padding: ${theme.spacing['4xs']} ${theme.spacing['2xs']};

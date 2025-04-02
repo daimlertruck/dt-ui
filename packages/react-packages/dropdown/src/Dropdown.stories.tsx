@@ -1,7 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { ComponentProps } from 'react';
 
-import { Dropdown, DropdownOptionValue } from '.';
+import {
+  Dropdown,
+  DropdownFill,
+  DropdownOptionValue,
+  DropdownVariant,
+} from '.';
 
 const OPTIONS: DropdownOptionValue[] = [
   { text: 'Option 1', value: '1' },
@@ -16,15 +21,36 @@ type CustomDropdownProps = ComponentProps<typeof Dropdown> & {
   hasError: boolean;
   message: string;
   options: DropdownOptionValue[];
+  variant: DropdownVariant;
+  fill: DropdownFill;
+  hasDeselect: boolean;
 };
 
 const meta: Meta<CustomDropdownProps> = {
   title: 'Data Display/Dropdown',
   component: Dropdown,
-  argTypes: {},
+  argTypes: {
+    variant: {
+      options: {
+        outlined: 'outlined',
+        'bottom-line': 'bottom-line',
+      },
+      control: { type: 'select' },
+    },
+    fill: {
+      options: {
+        default: 'default',
+        contrast: 'contrast',
+        light: 'light',
+      },
+      control: { type: 'select' },
+    },
+  },
   render: ({ options, defaultValue, message, ...props }) => (
     <div
-      style={{ height: '300px', padding: '10px', backgroundColor: '#EBECED' }}
+      style={{
+        height: '300px',
+      }}
     >
       <Dropdown defaultValue={defaultValue}>
         <Dropdown.Container>
@@ -35,7 +61,9 @@ const meta: Meta<CustomDropdownProps> = {
               </Dropdown.Option>
             ))}
           </Dropdown.Select>
-          {message ? <Dropdown.Detail>{message}</Dropdown.Detail> : null}
+          {message ? (
+            <Dropdown.Detail {...props}>{message}</Dropdown.Detail>
+          ) : null}
         </Dropdown.Container>
       </Dropdown>
     </div>
@@ -50,6 +78,9 @@ export const Default: StoryObj<CustomDropdownProps> = {
     isDisabled: false,
     hasBorder: true,
     hasError: false,
+    hasDeselect: false,
     message: '',
+    variant: 'outlined',
+    fill: 'default',
   },
 };

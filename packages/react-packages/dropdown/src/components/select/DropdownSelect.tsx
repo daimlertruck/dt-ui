@@ -1,3 +1,4 @@
+import { Box } from '@dt-ui/react-box';
 import { BaseProps } from '@dt-ui/react-core';
 import { Icon } from '@dt-ui/react-icon';
 import { Typography } from '@dt-ui/react-typography';
@@ -5,6 +6,7 @@ import { useTheme } from '@emotion/react';
 import { Children, ReactElement, useEffect } from 'react';
 
 import { useDropdownContext } from '../../context';
+import { DropdownFill, DropdownVariant } from '../../types';
 import { DropdownMenu } from '../menu/DropdownMenu';
 
 import { SelectDropdownStyled } from './DropdownSelect.styled';
@@ -14,6 +16,9 @@ export type DropdownSelectProps = {
   isDisabled?: boolean;
   hasBorder?: boolean;
   hasError?: boolean;
+  hasDeselect?: boolean;
+  variant?: DropdownVariant;
+  fill?: DropdownFill;
 } & BaseProps;
 
 export const DropdownSelect = ({
@@ -24,16 +29,31 @@ export const DropdownSelect = ({
   isDisabled = false,
   hasBorder = true,
   hasError = false,
+  hasDeselect = false,
+  variant = 'outlined',
+  fill = 'default',
 }: DropdownSelectProps) => {
   const { state, setState, isOpen, setIsOpen } = useDropdownContext();
   const theme = useTheme();
 
+  const childCount = Children.count(children);
+  const hasOneChild = childCount === 1;
+  const disabled = isDisabled || hasOneChild;
+  const disabledIconColor = disabled
+    ? theme.palette.content.light
+    : theme.palette.content.default;
+
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
+
     setIsOpen((prev) => !prev);
   };
 
-  const childCount = Children.count(children);
+  const handleDeselectClick = (event: React.MouseEvent<HTMLElement>) => {
+    event.stopPropagation();
+
+    setState({ text: '', value: '' });
+  };
 
   useEffect(() => {
     const hasOption = Children.toArray(children).find(
@@ -46,7 +66,7 @@ export const DropdownSelect = ({
   }, [children, setState, state.value]);
 
   useEffect(() => {
-    if (childCount === 1) {
+    if (hasOneChild) {
       const options = Children.map(
         children,
         (child) => child && (child as ReactElement).props.option
@@ -61,42 +81,52 @@ export const DropdownSelect = ({
         setState(option);
       }
     }
-  }, [childCount, setState, children]);
-
-  const disabled = isDisabled || childCount < 2;
+  }, [hasOneChild, setState, children]);
 
   return (
     <>
       <SelectDropdownStyled
         data-testid={dataTestId}
         disabled={disabled}
+        fill={fill}
         hasBorder={hasBorder}
         hasError={hasError}
+        isOpen={isOpen}
         onClick={handleClick}
         style={style}
+        variant={variant}
       >
         <div style={{ overflow: 'hidden' }}>
           <Typography
             color={disabled ? 'content.light' : 'content.default'}
-            fontStyles='pXXSmall'
+            fontStyles='body3'
           >
             {label}
           </Typography>
           <Typography
             color={disabled ? 'content.light' : 'content.default'}
-            fontStyles='pSmall'
+            fontStyles='body2'
             style={{ textOverflow: 'ellipsis', overflow: 'hidden' }}
           >
             {!state.value ? 'Select an option' : state.text}
           </Typography>
         </div>
-        <Icon
-          code={isOpen ? 'expand_less' : 'expand_more'}
-          color={
-            !isOpen && isDisabled ? theme.palette.content.light : 'currentColor'
-          }
-          size='medium'
-        />
+        <Box style={{ flexDirection: 'row', gap: '0.5rem' }}>
+          {hasDeselect && !!state.value ? (
+            <Icon
+              code='close'
+              color={disabledIconColor}
+              dataTestId='deselect-value'
+              onClick={handleDeselectClick}
+              size='medium'
+            />
+          ) : null}
+          <Icon
+            code={isOpen ? 'expand_less' : 'expand_more'}
+            color={disabledIconColor}
+            size='large'
+          />
+        </Box>
       </SelectDropdownStyled>
       {isOpen ? (
         <DropdownMenu dataTestId={dataTestId}>{children}</DropdownMenu>

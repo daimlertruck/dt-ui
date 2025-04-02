@@ -41,15 +41,18 @@ export const App = () => {
 
 ### Dropdown.Select
 
-| Property     | Type                  | Default           | Description                                                |
-| ------------ | --------------------- | ----------------- | ---------------------------------------------------------- |
-| `children`   | `ReactNode`           | -                 | Child components to be rendered                            |
-| `label`      | `string`              | -                 | A text to help users understand the scope of the dropdown. |
-| `style`      | `React.CSSProperties` | -                 | Gives the Box Dropdown css properties                      |
-| `dataTestId` | `string`              | `dropdown-select` | Customizable test identifier                               |
-| `isDisabled` | `boolean`             | `false`           | Set the dropdown disabled.                                 |
-| `hasBorder`  | `boolean`             | `true`            | Set a border to the component.                             |
-| `hasError`   | `boolean`             | `false`           | Set error state for dropdown                               |
+| Property      | Type                  | Default           | Description                                                |
+| ------------- | --------------------- | ----------------- | ---------------------------------------------------------- |
+| `children`    | `ReactNode`           | -                 | Child components to be rendered                            |
+| `label`       | `string`              | -                 | A text to help users understand the scope of the dropdown. |
+| `style`       | `React.CSSProperties` | -                 | Gives the Box Dropdown css properties                      |
+| `dataTestId`  | `string`              | `dropdown-select` | Customizable test identifier                               |
+| `isDisabled`  | `boolean`             | `false`           | Set the dropdown disabled.                                 |
+| `hasBorder`   | `boolean`             | `true`            | Set a border to the component.                             |
+| `hasError`    | `boolean`             | `false`           | Set error state for dropdown                               |
+| `fill`        | `DropdownFill`        | `default`         | Styles the input with a specific background color          |
+| `variant`     | `DropdownVariant`     | `outlined`        | Styles the input with a specific border                    |
+| `hasDeselect` | `boolean`             | `false`           | Set if dropdown has deselect X button/icon                 |
 
 ### Dropdown.Menu
 
@@ -67,6 +70,15 @@ export const App = () => {
 | `dataTestId` | `string`                                                    | `dropdown-option-{option.value}` | Customizable test identifier                      |
 | `isDisabled` | `boolean`                                                   | `false`                          | Set the dropdown disabled.                        |
 | `onClick`    | `(option: string, name: string, event: MouseEvent) => void` | -                                | The triggered function when clicked on the option |
+
+### Dropdown.Detail
+
+| Property     | Type        | Default         | Description                           |
+| ------------ | ----------- | --------------- | ------------------------------------- |
+| `children`   | `ReactNode` | -               | Child components to be rendered       |
+| `dataTestId` | `string`    | `dropdown-text` | Customizable test identifier          |
+| `isDisabled` | `boolean`   | `false`         | Disable the dropdown detail text      |
+| `hasError`   | `boolean`   | `false`         | Set error state for the dropdown text |
 
 ## Stack
 

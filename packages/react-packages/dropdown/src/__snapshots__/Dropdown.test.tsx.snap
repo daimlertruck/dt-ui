@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Dropdown /> component renders a dropdown with default value 1`] = `
+exports[`<Dropdown /> component renders dropdown correctly 1`] = `
 .emotion-0 {
   margin: 0;
   display: inline-block;
@@ -10,240 +10,6 @@ exports[`<Dropdown /> component renders a dropdown with default value 1`] = `
 
 .emotion-2 {
   background: #FFFFFF;
-  border: 0;
-  border-radius: 3px;
-  padding: 8px 0;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  text-align: left;
-  width: 100%;
-  height: 53px;
-  cursor: pointer;
-}
-
-.emotion-2:disabled {
-  pointer-events: none;
-  background-color: #FAFAFA;
-}
-
-.emotion-4 {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  color: #454545;
-}
-
-.emotion-6 {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  color: #454545;
-}
-
-.emotion-8 {
-  font-family: DTUI-icons-outlined;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16px;
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  font-variation-settings: 'FILL' 0;
-  color: currentColor;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-}
-
-<div>
-  <div
-    class="emotion-0 emotion-1"
-    data-testid="dropdown"
-    role="menu"
-  >
-    <button
-      class="emotion-2 emotion-3"
-      data-testid="dropdown-select"
-    >
-      <div
-        style="overflow: hidden;"
-      >
-        <p
-          class="emotion-4 emotion-5"
-          color="content.default"
-          data-testid="typography"
-        >
-          Label
-        </p>
-        <p
-          class="emotion-6 emotion-5"
-          color="content.default"
-          data-testid="typography"
-          style="text-overflow: ellipsis; overflow: hidden;"
-        >
-          Option 2
-        </p>
-      </div>
-      <i
-        class="emotion-8 emotion-9"
-        color="currentColor"
-        data-testid="icon"
-      >
-        expand_more
-      </i>
-    </button>
-  </div>
-</div>
-`;
-
-exports[`<Dropdown /> component renders a dropdown without border 1`] = `
-.emotion-0 {
-  margin: 0;
-  display: inline-block;
-  position: relative;
-  width: 100%;
-}
-
-.emotion-2 {
-  background: #FFFFFF;
-  border: 0;
-  border-radius: 3px;
-  padding: 8px 0;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  text-align: left;
-  width: 100%;
-  height: 53px;
-  cursor: pointer;
-}
-
-.emotion-2:disabled {
-  pointer-events: none;
-  background-color: #FAFAFA;
-}
-
-.emotion-4 {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  color: #454545;
-}
-
-.emotion-6 {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  color: #454545;
-}
-
-.emotion-8 {
-  font-family: DTUI-icons-outlined;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16px;
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  font-variation-settings: 'FILL' 0;
-  color: currentColor;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-}
-
-<div>
-  <div
-    class="emotion-0 emotion-1"
-    data-testid="dropdown"
-    role="menu"
-  >
-    <button
-      class="emotion-2 emotion-3"
-      data-testid="dropdown-select"
-    >
-      <div
-        style="overflow: hidden;"
-      >
-        <p
-          class="emotion-4 emotion-5"
-          color="content.default"
-          data-testid="typography"
-        >
-          Label
-        </p>
-        <p
-          class="emotion-6 emotion-5"
-          color="content.default"
-          data-testid="typography"
-          style="text-overflow: ellipsis; overflow: hidden;"
-        >
-          Select an option
-        </p>
-      </div>
-      <i
-        class="emotion-8 emotion-9"
-        color="currentColor"
-        data-testid="icon"
-      >
-        expand_more
-      </i>
-    </button>
-  </div>
-</div>
-`;
-
-exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
-.emotion-0 {
-  margin: 0;
-  display: inline-block;
-  position: relative;
-  width: 100%;
-}
-
-.emotion-2 {
-  background: #FFFFFF;
-  border: 1px solid #DEDEDE;
-  border-radius: 3px;
   padding: 8px 16px;
   position: relative;
   display: -webkit-box;
@@ -261,17 +27,26 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
   width: 100%;
   height: 53px;
   cursor: pointer;
+  outline: none;
+  background-color: #F3F3F5;
+  border-width: 1px;
+  border-color: #292929;
+  border-style: solid;
+}
+
+.emotion-2:focus,
+.emotion-2:hover {
+  border-color: #292929;
 }
 
 .emotion-2:disabled {
   pointer-events: none;
-  background-color: #FAFAFA;
 }
 
 .emotion-4 {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -280,8 +55,8 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
 
 .emotion-6 {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -289,10 +64,24 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
 }
 
 .emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-10 {
   font-family: DTUI-icons-outlined;
   font-weight: normal;
   font-style: normal;
-  font-size: 16px;
+  font-size: 24px;
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -300,20 +89,20 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: currentColor;
+  color: #454545;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
 }
 
-.emotion-10 {
+.emotion-12 {
   background: #FFFFFF;
   border: 1px solid #DEDEDE;
   border-radius: 0px;
   width: 100%;
-  padding: 8px 0;
-  margin: 2px 0;
+  padding: 16px 0;
+  margin: 4px 0;
   position: absolute;
   right: 0;
   z-index: 3;
@@ -321,7 +110,7 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
   overflow: auto;
 }
 
-.emotion-12 {
+.emotion-14 {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -335,12 +124,12 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
   overflow-x: hidden;
 }
 
-.emotion-12:hover {
+.emotion-14:hover {
   background: #CCE3EB;
   cursor: pointer;
 }
 
-.emotion-16 {
+.emotion-18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -353,67 +142,91 @@ exports[`<Dropdown /> component renders dropdown menu correctly 1`] = `
   margin-top: 4px;
 }
 
+.emotion-20 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  color: #838383;
+}
+
 <div>
   <div
     class="emotion-0 emotion-1"
     data-testid="dropdown"
     role="menu"
   >
-    <button
-      class="emotion-2 emotion-3"
-      data-testid="dropdown-select"
-    >
+    <div>
+      <button
+        class="emotion-2 emotion-3"
+        data-testid="dropdown-select"
+        fill="default"
+      >
+        <div
+          style="overflow: hidden;"
+        >
+          <p
+            class="emotion-4 emotion-5"
+            color="content.default"
+            data-testid="typography"
+          >
+            Label
+          </p>
+          <p
+            class="emotion-6 emotion-5"
+            color="content.default"
+            data-testid="typography"
+            style="text-overflow: ellipsis; overflow: hidden;"
+          >
+            Select an option
+          </p>
+        </div>
+        <div
+          class="emotion-8 emotion-9"
+          style="flex-direction: row; gap: 0.5rem;"
+        >
+          <i
+            class="emotion-10 emotion-11"
+            color="#454545"
+            data-testid="icon"
+          >
+            expand_less
+          </i>
+        </div>
+      </button>
+      <ul
+        class="emotion-12 emotion-13"
+        data-testid="dropdown-select-menu"
+      >
+        <li
+          class="emotion-14 emotion-15"
+          data-testid="dropdown-option-1"
+          role="option"
+        >
+          Option 1
+        </li>
+        <li
+          class="emotion-14 emotion-15"
+          data-testid="dropdown-option-2"
+          role="option"
+        >
+          Option 2
+        </li>
+      </ul>
       <div
-        style="overflow: hidden;"
+        class="emotion-18 emotion-19"
+        data-testid="dropdown-text"
       >
-        <p
-          class="emotion-4 emotion-5"
-          color="content.default"
+        <span
+          class="emotion-20 emotion-5"
+          color="content.medium"
           data-testid="typography"
         >
-          Label
-        </p>
-        <p
-          class="emotion-6 emotion-5"
-          color="content.default"
-          data-testid="typography"
-          style="text-overflow: ellipsis; overflow: hidden;"
-        >
-          Select an option
-        </p>
+          A short message.
+        </span>
       </div>
-      <i
-        class="emotion-8 emotion-9"
-        color="currentColor"
-        data-testid="icon"
-      >
-        expand_less
-      </i>
-    </button>
-    <ul
-      class="emotion-10 emotion-11"
-      data-testid="dropdown-select-menu"
-    >
-      <li
-        class="emotion-12 emotion-13"
-        data-testid="dropdown-option-1"
-        role="option"
-      >
-        Option 1
-      </li>
-      <li
-        class="emotion-12 emotion-13"
-        data-testid="dropdown-option-2"
-        role="option"
-      >
-        Option 2
-      </li>
-    </ul>
-    <div
-      class="emotion-16 emotion-17"
-      data-testid="dropdown-text"
-    >
-      A short message.
     </div>
   </div>
 </div>
