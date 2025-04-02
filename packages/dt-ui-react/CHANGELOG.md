@@ -1,5 +1,16 @@
 # @dt-ui/react
 
+## 0.1.0-beta.163
+
+### Minor Changes
+
+- feat: add bg fill, variant and deselect
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-dropdown@0.1.0-beta.11
+
 ## 0.1.0-beta.162
 
 ### Patch Changes
