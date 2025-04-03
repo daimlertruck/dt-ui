@@ -14,6 +14,7 @@ interface RenderDropdownProps {
   hasDeselect?: boolean;
   defaultValue?: { text: string; value: string };
   hasError?: boolean;
+  isRequired?: boolean;
   options?: Array<{ text: string; value: string }>;
 }
 
@@ -41,6 +42,7 @@ describe('<Dropdown /> component', () => {
     hasDeselect,
     defaultValue,
     hasError,
+    isRequired,
     options = OPTIONS,
   }: RenderDropdownProps = {}) =>
     render(
@@ -52,6 +54,7 @@ describe('<Dropdown /> component', () => {
             hasDeselect={hasDeselect}
             hasError={hasError}
             isDisabled={isSelectDisabled}
+            isRequired={isRequired}
             label='Label'
             variant={variant}
           >
@@ -217,5 +220,13 @@ describe('<Dropdown /> component', () => {
     fireEvent.click(deselect);
 
     expect(select).toHaveTextContent('Select an option');
+  });
+
+  it('should renders dropdown as required', () => {
+    renderDropdown({ isRequired: true });
+
+    const select = screen.getByTestId(dropdownSelectId);
+
+    expect(select.textContent).toContain('Label*');
   });
 });

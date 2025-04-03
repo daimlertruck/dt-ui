@@ -19,6 +19,7 @@ type CustomDropdownProps = ComponentProps<typeof Dropdown> & {
   isDisabled: boolean;
   hasBorder: boolean;
   hasError: boolean;
+  isRequired: boolean;
   message: string;
   options: DropdownOptionValue[];
   variant: DropdownVariant;
@@ -78,6 +79,7 @@ export const Default: StoryObj<CustomDropdownProps> = {
     isDisabled: false,
     hasBorder: true,
     hasError: false,
+    isRequired: false,
     hasDeselect: false,
     message: '',
     variant: 'outlined',

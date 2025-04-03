@@ -53,6 +53,7 @@ export const App = () => {
 | `fill`        | `DropdownFill`        | `default`         | Styles the input with a specific background color          |
 | `variant`     | `DropdownVariant`     | `outlined`        | Styles the input with a specific border                    |
 | `hasDeselect` | `boolean`             | `false`           | Set if dropdown has deselect X button/icon                 |
+| `isRequired`  | `boolean`             | `false`           | Apply required style to the label field                    |
 
 ### Dropdown.Menu
 

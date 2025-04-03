@@ -14,6 +14,7 @@ import { SelectDropdownStyled } from './DropdownSelect.styled';
 export type DropdownSelectProps = {
   label?: string;
   isDisabled?: boolean;
+  isRequired?: boolean;
   hasBorder?: boolean;
   hasError?: boolean;
   hasDeselect?: boolean;
@@ -27,6 +28,7 @@ export const DropdownSelect = ({
   style,
   dataTestId = 'dropdown-select',
   isDisabled = false,
+  isRequired,
   hasBorder = true,
   hasError = false,
   hasDeselect = false,
@@ -102,6 +104,15 @@ export const DropdownSelect = ({
             fontStyles='body3'
           >
             {label}
+            {isRequired ? (
+              <Typography
+                color='error.default'
+                element='span'
+                fontStyles='body3'
+              >
+                *
+              </Typography>
+            ) : null}
           </Typography>
           <Typography
             color={disabled ? 'content.light' : 'content.default'}
