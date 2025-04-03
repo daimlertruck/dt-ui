@@ -1,5 +1,11 @@
 # @dt-ui/react-dropdown
 
+## 0.1.0-beta.13
+
+### Minor Changes
+
+- feat: add dropdown required
+
 ## 0.1.0-beta.12
 
 ### Patch Changes
