@@ -1,5 +1,14 @@
 # @dt-ui/react-checkbox
 
+## 0.1.0-beta.26
+
+### Patch Changes
+
+- chore: update contexual colors
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.32
+  - @dt-ui/react-icon@0.1.0-beta.29
+
 ## 0.1.0-beta.25
 
 ### Patch Changes

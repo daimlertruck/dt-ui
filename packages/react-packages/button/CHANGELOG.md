@@ -1,5 +1,14 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.25
+
+### Patch Changes
+
+- chore: update contexual colors
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.32
+  - @dt-ui/react-spinner@0.1.0-beta.34
+
 ## 0.1.0-beta.24
 
 ### Patch Changes

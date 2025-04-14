@@ -1,5 +1,13 @@
 # @dt-ui/react-tag
 
+## 0.1.0-beta.32
+
+### Patch Changes
+
+- chore: update contexual colors
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.32
+
 ## 0.1.0-beta.31
 
 ### Patch Changes

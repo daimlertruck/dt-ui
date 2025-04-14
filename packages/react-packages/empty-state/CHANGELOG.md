@@ -1,5 +1,15 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.45
+
+### Patch Changes
+
+- chore: update contexual colors
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.25
+  - @dt-ui/react-core@0.1.0-beta.32
+  - @dt-ui/react-typography@0.1.0-beta.23
+
 ## 0.1.0-beta.44
 
 ### Patch Changes

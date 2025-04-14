@@ -1,5 +1,14 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.15
+
+### Patch Changes
+
+- chore: update contexual colors
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.32
+  - @dt-ui/react-text-field@0.1.0-beta.32
+
 ## 0.1.0-beta.14
 
 ### Patch Changes

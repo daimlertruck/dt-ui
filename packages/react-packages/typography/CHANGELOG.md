@@ -1,5 +1,13 @@
 # @dt-ui/react-typography
 
+## 0.1.0-beta.23
+
+### Patch Changes
+
+- chore: update contexual colors
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.32
+
 ## 0.1.0-beta.22
 
 ### Patch Changes

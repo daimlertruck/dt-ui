@@ -1,5 +1,15 @@
 # @dt-ui/react-dropdown
 
+## 0.1.0-beta.14
+
+### Patch Changes
+
+- chore: update contexual colors
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.32
+  - @dt-ui/react-typography@0.1.0-beta.23
+  - @dt-ui/react-icon@0.1.0-beta.29
+
 ## 0.1.0-beta.13
 
 ### Minor Changes

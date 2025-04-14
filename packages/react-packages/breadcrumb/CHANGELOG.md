@@ -1,5 +1,14 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.36
+
+### Patch Changes
+
+- chore: update contexual colors
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.32
+  - @dt-ui/react-tooltip@0.1.0-beta.37
+
 ## 0.1.0-beta.35
 
 ### Patch Changes

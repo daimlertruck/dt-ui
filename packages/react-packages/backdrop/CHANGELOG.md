@@ -1,5 +1,13 @@
 # @dt-ui/react-backdrop
 
+## 0.1.0-beta.34
+
+### Patch Changes
+
+- chore: update contexual colors
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.32
+
 ## 0.1.0-beta.33
 
 ### Patch Changes
