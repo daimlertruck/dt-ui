@@ -1,0 +1,7 @@
+import{j as e}from"./jsx-runtime-BTCK_S7S.js";import"./index-alWhQwoC.js";import{P as d}from"./Portal-CRlApbYa.js";import{r as m}from"./index-CBqU2yxZ.js";import{B as a,a as c}from"./Backdrop--0H_CVZ1.js";import"./_commonjsHelpers-BosuxZz1.js";import"./index-D_w70K-N.js";import"./emotion-styled.browser.esm-DQrX-Ye0.js";import"./extends-D3DEmvZu.js";import"./index-BAMY2Nnw.js";import"./util-CeDosPPD.js";import"./index-BwrsF4c9.js";import"./z-index-Ds5QkyqS.js";const u=({...r})=>{const[o,l]=m.useState(!1),n=()=>l(!o);return e.jsxs(e.Fragment,{children:[e.jsx("button",{onClick:n,type:"button",children:"Open Backdrop"}),e.jsx(d,{isOpen:o,children:e.jsxs(c,{...r,isOpen:o,children:[e.jsx(e.Fragment,{children:r.children}),e.jsx("button",{onClick:n,type:"button",children:"Close Backdrop"})]})})]})},t={args:{isOpen:!1,type:a.Dark,children:e.jsx("div",{children:"Example content."})}},T={title:"Data Display/Backdrop",component:c,render:u,argTypes:{type:{mapping:a,options:Object.values(a).filter(r=>typeof r=="string"),control:{type:"inline-radio"}},children:{table:{disable:!0}},isOpen:{table:{disable:!0}}}};var s,p,i;t.parameters={...t.parameters,docs:{...(s=t.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: {
+    isOpen: false,
+    type: BackdropType.Dark,
+    children: <div>Example content.</div>
+  }
+}`,...(i=(p=t.parameters)==null?void 0:p.docs)==null?void 0:i.source}}};const C=["Default"];export{t as Default,C as __namedExportsOrder,T as default};
