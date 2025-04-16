@@ -1,0 +1,3 @@
+import{j as t}from"./jsx-runtime-BTCK_S7S.js";import{B as e}from"./index-fXDQo6IV.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";import"./Box.styled-B_R5XVxs.js";import"./emotion-styled.browser.esm-DQrX-Ye0.js";import"./extends-D3DEmvZu.js";const u={title:"Data Display/Box",component:e,argTypes:{element:{control:"text"}},render:({...n})=>t.jsxs(e,{...n,children:[t.jsx("p",{children:"Content 1"}),t.jsx("p",{children:"Content 2"})]})},r={args:{}};var o,s,a;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: {}
+}`,...(a=(s=r.parameters)==null?void 0:s.docs)==null?void 0:a.source}}};const f=["Default"];export{r as Default,f as __namedExportsOrder,u as default};
