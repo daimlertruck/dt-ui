@@ -28,21 +28,25 @@ const config: StorybookConfig = {
     '../../../packages/react-packages/**/*.stories.@(js|jsx|ts|tsx)',
     '../src/**/*.mdx',
   ],
+
   addons: [
     getAbsolutePath('@storybook/addon-links'),
     getAbsolutePath('@storybook/addon-essentials'),
     getAbsolutePath('@storybook/addon-interactions'),
     getAbsolutePath('@storybook/addon-themes'),
   ],
+
   framework: {
-    name: '@storybook/react-vite',
+    name: getAbsolutePath('@storybook/react-vite'),
     options: {},
   },
+
   staticDirs: ['../static'],
+
   docs: {
-    autodocs: true,
     defaultName: 'Specs',
   },
+
   viteFinal: async (config: InlineConfig) => {
     if (config.resolve) {
       const components = [
@@ -97,6 +101,10 @@ const config: StorybookConfig = {
       };
     }
     return config;
+  },
+
+  typescript: {
+    reactDocgen: 'react-docgen-typescript',
   },
 };
 

@@ -54,6 +54,8 @@ const preview: Preview = {
       theme: themes.light,
     },
   },
+
+  tags: ['autodocs']
 };
 
 export default preview;
