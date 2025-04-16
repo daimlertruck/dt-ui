@@ -1,1 +1,0 @@
-import{r as t}from"./index-CBqU2yxZ.js";import{d as i}from"./debounce-BF4Cdv7I.js";import"./jsx-runtime-BTCK_S7S.js";import"./index-alWhQwoC.js";import"./index-D_w70K-N.js";function p(o,r=500){t.useEffect(()=>{const e=i(o,r);return e(),window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[o,r])}export{p as u};
