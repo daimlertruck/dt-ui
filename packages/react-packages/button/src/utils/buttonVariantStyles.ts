@@ -41,8 +41,8 @@ const getOutlinedButtonStyles = (
 
     &:disabled {
       cursor: not-allowed;
-      color: ${theme.palette.error.medium};
-      border-color: ${theme.palette.error.medium};
+      color: ${theme.palette.error.light};
+      border-color: ${theme.palette.error.light};
     }
   `,
   secondary: `
@@ -62,8 +62,8 @@ const getOutlinedButtonStyles = (
     }
     &:disabled {
       cursor: not-allowed;
-      color: ${theme.palette.secondary.medium};
-      border-color: ${theme.palette.secondary.medium};
+      color: ${theme.palette.secondary.light};
+      border-color: ${theme.palette.secondary.light};
       background-color: transparent;
     }
   `,
@@ -99,58 +99,58 @@ export const buttonVariantStyles = (
     return {
       solid: `
         color: ${theme.palette.content.dark};
-        background-color: ${theme.palette.primary.contrast};
-        border-color: ${theme.palette.primary.contrast};
+        background-color: ${theme.palette.surface.contrast};
+        border-color: ${theme.palette.surface.contrast};
 
         &:hover {
-          background-color: ${theme.palette.primary.light};
-          border-color: ${theme.palette.primary.light};
+          background-color: ${theme.palette.secondary.light};
+          border-color: ${theme.palette.secondary.light};
         }
 
         &:disabled {
           cursor: not-allowed;
-          color: ${theme.palette.content.default};
-          border-color: ${theme.palette.content.dark};
-          background-color: ${theme.palette.content.dark};
+          color: ${theme.palette.secondary.medium};
+          border-color: ${theme.palette.surface.contrast};
+          background-color: ${theme.palette.surface.contrast};
         }
       `,
       outlined: `
-        color: ${theme.palette.primary.contrast};
-        border-color: ${theme.palette.primary.contrast};
+        color: ${theme.palette.content.contrast};
+        border-color: ${theme.palette.surface.contrast};
         background-color: transparent;
 
         &:hover {
-          color: ${theme.palette.surface.contrast};
+          color: ${theme.palette.content.dark};
           border-color: ${theme.palette.surface.contrast};
-          background-color: ${theme.palette.primary.dark};
+          background-color: ${theme.palette.surface.contrast};
         }
 
         &:disabled {
           cursor: not-allowed;
-          color: ${theme.palette.content.default};
-          border-color: ${theme.palette.content.default};
+          color: ${theme.palette.secondary.default};
+          border-color: ${theme.palette.secondary.default};
           background-color: transparent;
         }
       `,
       text: `
-        color: ${theme.palette.surface.light};
+        color: ${theme.palette.content.contrast};
         background-color: transparent;
 
         &:hover {
-          color: ${theme.palette.content.contrast};
-          background-color: ${theme.palette.primary.dark};
+          color: ${theme.palette.content.dark};
+          background-color: ${theme.palette.secondary.light};
         }
 
         &:disabled {
           cursor: not-allowed;
-          color: ${theme.palette.content.default};
+          color: ${theme.palette.secondary.medium};
           background-color: transparent;
         }
       `,
     }[variant];
   } else {
-    const hoverShade = color === 'primary' ? 'medium' : 'dark';
-    const disabledShade = color === 'primary' ? 'light' : 'medium';
+    const hoverShade = 'dark';
+    const disabledShade = 'light';
 
     return {
       solid: `

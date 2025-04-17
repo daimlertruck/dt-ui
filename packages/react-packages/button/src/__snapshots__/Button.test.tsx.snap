@@ -36,8 +36,8 @@ exports[`<Button /> component renders button html element with the correct title
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #838383;
-  border-color: #838383;
+  background-color: #454545;
+  border-color: #454545;
 }
 
 .emotion-0:disabled {
@@ -262,8 +262,8 @@ exports[`<Button /> component when loading is true renders a spinner light theme
 
 .emotion-0:hover {
   color: #FFFFFF;
-  background-color: #838383;
-  border-color: #838383;
+  background-color: #454545;
+  border-color: #454545;
 }
 
 .emotion-0:disabled {

@@ -4,7 +4,7 @@ const { shape: defaultShape, radius } = defaultTheme;
 
 export const shape: Theme['shape'] = {
   ...defaultShape,
-  button: radius['5xs'],
+  button: radius['none'],
   checkbox: radius['6xs'],
   modal: radius['5xs'],
   emptyState: radius['4xs'],
