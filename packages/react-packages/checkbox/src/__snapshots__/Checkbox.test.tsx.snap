@@ -17,7 +17,7 @@ exports[`<CheckBox /> component renders checkbox checked 1`] = `
 .emotion-0>div {
   border-radius: 0px;
   border: none;
-  background-color: #000000;
+  background-color: #00677F;
 }
 
 .emotion-2 {

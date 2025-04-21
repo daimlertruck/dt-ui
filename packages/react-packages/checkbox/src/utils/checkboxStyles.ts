@@ -11,7 +11,7 @@ export const checkboxStyles = (
         background-color: ${
           isDisabled
             ? theme.palette.primary.light
-            : theme.palette.primary.default
+            : theme.palette.accent.default
         };
     `;
   }
