@@ -1,5 +1,11 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.33
+
+### Patch Changes
+
+- fix: text field border style
+
 ## 0.1.0-beta.32
 
 ### Patch Changes

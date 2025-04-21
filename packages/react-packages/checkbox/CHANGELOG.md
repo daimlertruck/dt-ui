@@ -1,5 +1,11 @@
 # @dt-ui/react-checkbox
 
+## 0.1.0-beta.27
+
+### Patch Changes
+
+- fix: checkbox style
+
 ## 0.1.0-beta.26
 
 ### Patch Changes

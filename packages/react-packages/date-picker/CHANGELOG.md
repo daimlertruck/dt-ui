@@ -1,5 +1,13 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.16
+
+### Patch Changes
+
+- fix: text field border style
+- Updated dependencies
+  - @dt-ui/react-text-field@0.1.0-beta.33
+
 ## 0.1.0-beta.15
 
 ### Patch Changes

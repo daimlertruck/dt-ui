@@ -1,5 +1,13 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.28
+
+### Patch Changes
+
+- fix: checkbox style
+- Updated dependencies
+  - @dt-ui/react-checkbox@0.1.0-beta.27
+
 ## 0.1.0-beta.27
 
 ### Patch Changes
