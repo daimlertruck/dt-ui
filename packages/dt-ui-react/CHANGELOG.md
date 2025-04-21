@@ -1,5 +1,16 @@
 # @dt-ui/react
 
+## 0.1.0-beta.167
+
+### Patch Changes
+
+- fix: change button styles
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.26
+  - @dt-ui/react-empty-state@0.1.0-beta.46
+  - @dt-ui/react-modal@0.1.0-beta.19
+  - @dt-ui/react-toast@0.1.0-beta.43
+
 ## 0.1.0-beta.166
 
 ### Patch Changes

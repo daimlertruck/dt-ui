@@ -1,5 +1,11 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.19
+
+### Patch Changes
+
+- fix: change button styles
+
 ## 0.1.0-beta.18
 
 ### Patch Changes

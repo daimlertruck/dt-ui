@@ -1,5 +1,13 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.46
+
+### Patch Changes
+
+- fix: change button styles
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.26
+
 ## 0.1.0-beta.45
 
 ### Patch Changes
