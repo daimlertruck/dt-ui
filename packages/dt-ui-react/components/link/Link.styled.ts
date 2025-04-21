@@ -11,7 +11,7 @@ interface LinkStyledProps {
 
 export const LinkStyled = styled.a<LinkStyledProps>`
   ${({ theme, disabled, isUnderline, textSize }) => `
-    color: ${theme.palette.primary.default};
+    color: ${theme.palette.accent.default};
     text-decoration: ${isUnderline ? 'underline' : 'none'};
 
     ${
