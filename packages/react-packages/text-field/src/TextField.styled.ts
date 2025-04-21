@@ -176,7 +176,7 @@ export const InputWrapperStyled = styled.div<InputWrapperStyledProps>`
     };
     border-style: solid;
     ${variant === 'outlined' ? 'border-width: 1px' : 'border-width: 0 0 1px'};
-    border-color: ${theme.palette.border.dark};
+    border-color: ${theme.palette.border.medium};
 
     &:has(input:focus) {
       border-color: ${theme.palette.primary.default};

@@ -83,7 +83,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #131313;
+  border-color: #C1C1C1;
 }
 
 .emotion-4:has(input:focus) {
@@ -315,7 +315,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #131313;
+  border-color: #C1C1C1;
 }
 
 .emotion-4:has(input:focus) {
@@ -557,7 +557,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #131313;
+  border-color: #C1C1C1;
 }
 
 .emotion-6:has(input:focus) {

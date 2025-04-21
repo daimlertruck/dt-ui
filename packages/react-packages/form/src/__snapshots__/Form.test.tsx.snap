@@ -95,7 +95,7 @@ exports[`<Form /> component renders simple form 1`] = `
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #131313;
+  border-color: #C1C1C1;
 }
 
 .emotion-6:has(input:focus) {
@@ -384,7 +384,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #131313;
+  border-color: #C1C1C1;
 }
 
 .emotion-10:has(input:focus) {
@@ -656,7 +656,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #131313;
+  border-color: #C1C1C1;
 }
 
 .emotion-10:has(input:focus) {
@@ -977,7 +977,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   border-radius: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #131313;
+  border-color: #C1C1C1;
 }
 
 .emotion-14:has(input:focus) {
