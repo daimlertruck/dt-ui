@@ -175,6 +175,7 @@ export const buttonVariantStyles = (
       text: `
         color: ${theme.palette[color].default};
         background-color: transparent;
+        border: 0;
         
         &:hover {
           color: ${theme.palette[color].default};

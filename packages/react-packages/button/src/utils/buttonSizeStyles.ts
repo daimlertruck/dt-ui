@@ -13,7 +13,7 @@ export const buttonSizeStyles = (size: ButtonSize, theme: Theme) =>
       padding: ${theme.spacing['3xs']} ${theme.spacing.xs};
     `,
     small: `
-      ${theme.fontStyles.button2}
+      ${theme.fontStyles.button3}
       padding: ${theme.spacing['4xs']} ${theme.spacing['2xs']};
     `,
   }[size]);

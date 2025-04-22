@@ -38,7 +38,7 @@ export const fontStyles = {
   link3: getTextStyles(400, '0.75rem', '1rem'),
   button1: getTextStyles(700, '1rem', '1.5rem'),
   button2: getTextStyles(700, '0.875rem', '1.25rem'),
-  button3: getTextStyles(700, '0.625rem', '0.875rem'),
+  button3: getTextStyles(700, '0.75rem', '1rem'),
   // Legacy
   p: getTextStyles(400, '18px', '24.12px'),
   pSmall: getTextStyles(400, '16px', '21.44px'),
