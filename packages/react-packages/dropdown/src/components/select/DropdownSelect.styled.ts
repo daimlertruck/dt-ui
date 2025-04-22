@@ -27,7 +27,7 @@ export const SelectDropdownStyled = styled.button<SelectDropdownStyledProps>`
     variant = 'outlined',
     fill = 'default',
   }) => {
-    const borderColor = theme.palette.border.dark;
+    const borderColor = theme.palette.border.medium;
     const activeBorderColor = theme.palette.content.dark;
     const errorBorderColor = theme.palette.error.default;
 
