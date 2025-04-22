@@ -1,5 +1,14 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.30
+
+### Patch Changes
+
+- fix: change button text according to ux
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.33
+  - @dt-ui/react-divider@0.1.0-beta.32
+
 ## 0.1.0-beta.29
 
 ### Patch Changes

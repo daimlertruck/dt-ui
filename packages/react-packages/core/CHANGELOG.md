@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.33
+
+### Patch Changes
+
+- fix: change button text according to ux
+
 ## 0.1.0-beta.32
 
 ### Patch Changes

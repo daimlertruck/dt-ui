@@ -1,5 +1,15 @@
 # @dt-ui/react-pagination
 
+## 0.1.0-beta.9
+
+### Patch Changes
+
+- fix: change button text according to ux
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.33
+  - @dt-ui/react-icon@0.1.0-beta.30
+  - @dt-ui/react-typography@0.1.0-beta.24
+
 ## 0.1.0-beta.8
 
 ### Patch Changes

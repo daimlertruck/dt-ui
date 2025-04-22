@@ -1,5 +1,14 @@
 # @dt-ui/react-tabs
 
+## 0.1.0-beta.23
+
+### Patch Changes
+
+- fix: change button text according to ux
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.33
+  - @dt-ui/react-icon@0.1.0-beta.30
+
 ## 0.1.0-beta.22
 
 ### Patch Changes

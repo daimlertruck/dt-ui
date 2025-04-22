@@ -1,5 +1,13 @@
 # @dt-ui/react-divider
 
+## 0.1.0-beta.32
+
+### Patch Changes
+
+- fix: change button text according to ux
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.33
+
 ## 0.1.0-beta.31
 
 ### Patch Changes

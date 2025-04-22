@@ -1,5 +1,14 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.27
+
+### Patch Changes
+
+- fix: change button text according to ux
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.33
+  - @dt-ui/react-spinner@0.1.0-beta.35
+
 ## 0.1.0-beta.26
 
 ### Patch Changes

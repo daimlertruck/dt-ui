@@ -1,5 +1,14 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.23
+
+### Patch Changes
+
+- fix: change button text according to ux
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.30
+  - @dt-ui/react-typography@0.1.0-beta.24
+
 ## 0.1.0-beta.22
 
 ### Patch Changes

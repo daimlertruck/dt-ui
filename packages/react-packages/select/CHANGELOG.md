@@ -1,5 +1,18 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.29
+
+### Patch Changes
+
+- fix: change button text according to ux
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.33
+  - @dt-ui/react-checkbox@0.1.0-beta.28
+  - @dt-ui/react-icon@0.1.0-beta.30
+  - @dt-ui/react-label-field@0.1.0-beta.29
+  - @dt-ui/react-tooltip@0.1.0-beta.38
+  - @dt-ui/react-typography@0.1.0-beta.24
+
 ## 0.1.0-beta.28
 
 ### Patch Changes

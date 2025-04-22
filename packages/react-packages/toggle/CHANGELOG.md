@@ -1,5 +1,14 @@
 # @dt-ui/react-toggle
 
+## 0.1.0-beta.11
+
+### Patch Changes
+
+- fix: change button text according to ux
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.33
+  - @dt-ui/react-typography@0.1.0-beta.24
+
 ## 0.1.0-beta.10
 
 ### Patch Changes

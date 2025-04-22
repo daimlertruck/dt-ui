@@ -1,5 +1,14 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.44
+
+### Patch Changes
+
+- fix: change button text according to ux
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.27
+  - @dt-ui/react-core@0.1.0-beta.33
+
 ## 0.1.0-beta.43
 
 ### Patch Changes

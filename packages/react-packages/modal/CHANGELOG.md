@@ -1,5 +1,17 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.20
+
+### Patch Changes
+
+- fix: change button text according to ux
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.33
+  - @dt-ui/react-backdrop@0.1.0-beta.35
+  - @dt-ui/react-icon@0.1.0-beta.30
+  - @dt-ui/react-spinner@0.1.0-beta.35
+  - @dt-ui/react-typography@0.1.0-beta.24
+
 ## 0.1.0-beta.19
 
 ### Patch Changes
