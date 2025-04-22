@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react",
-  "version": "0.1.0-beta.169",
+  "version": "0.1.0-beta.170",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
@@ -35,7 +35,7 @@
     "@dt-ui/react-date-picker": "0.1.0-beta.17",
     "@dt-ui/react-divider": "0.1.0-beta.32",
     "@dt-ui/react-drawer": "0.1.0-beta.36",
-    "@dt-ui/react-dropdown": "0.1.0-beta.15",
+    "@dt-ui/react-dropdown": "0.1.0-beta.16",
     "@dt-ui/react-empty-state": "0.1.0-beta.47",
     "@dt-ui/react-form": "0.1.0-beta.16",
     "@dt-ui/react-icon": "0.1.0-beta.30",

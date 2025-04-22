@@ -1,5 +1,11 @@
 # @dt-ui/react-dropdown
 
+## 0.1.0-beta.16
+
+### Patch Changes
+
+- fix: dropdown select border color
+
 ## 0.1.0-beta.15
 
 ### Patch Changes
