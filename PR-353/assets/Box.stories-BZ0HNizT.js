@@ -1,3 +1,0 @@
-import{j as r}from"./jsx-runtime-DMAvRu52.js";import{B as t}from"./index-DECWwmT6.js";import"./index-Dl6G-zuu.js";import"./Box.styled-Bx5NRrR7.js";import"./emotion-styled.browser.esm-DpDeK1WQ.js";const d={title:"Data Display/Box",component:t,argTypes:{element:{control:"text"}},render:({...n})=>r.jsxs(t,{...n,children:[r.jsx("p",{children:"Content 1"}),r.jsx("p",{children:"Content 2"})]})},e={args:{}};var o,s,a;e.parameters={...e.parameters,docs:{...(o=e.parameters)==null?void 0:o.docs,source:{originalSource:`{
-  args: {}
-}`,...(a=(s=e.parameters)==null?void 0:s.docs)==null?void 0:a.source}}};const x=["Default"];export{e as Default,x as __namedExportsOrder,d as default};
