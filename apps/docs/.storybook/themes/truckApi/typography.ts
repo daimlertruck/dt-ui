@@ -11,7 +11,7 @@ export const fontStyles = {
   h4: getTextStyles(500, '1.5rem', '1.75rem'),
   h5: getTextStyles(500, '1.25rem', '1.5rem'),
   h6: getTextStyles(500, '1rem', '1.5rem'),
-  button1: getTextStyles(600, '1rem', '1.5rem'),
-  button2: getTextStyles(600, '0.875rem', '1.25rem'),
-  button3: getTextStyles(600, '0.625rem', '0.875rem'),
+  button1: getTextStyles(700, '1rem', '1.5rem'),
+  button2: getTextStyles(700, '0.875rem', '1.25rem'),
+  button3: getTextStyles(700, '0.75rem', '1rem'),
 };

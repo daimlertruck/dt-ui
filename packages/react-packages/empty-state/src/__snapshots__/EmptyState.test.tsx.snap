@@ -208,7 +208,7 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
   -webkit-justify-content: center;
   justify-content: center;
   cursor: pointer;
-  width: 100%;
+  width: auto;
   min-width: 80px;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;

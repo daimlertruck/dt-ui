@@ -11,7 +11,7 @@ exports[`<Button /> component renders button html element with the correct title
   -webkit-justify-content: center;
   justify-content: center;
   cursor: pointer;
-  width: 100%;
+  width: auto;
   min-width: 80px;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
@@ -113,7 +113,7 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   -webkit-justify-content: center;
   justify-content: center;
   cursor: pointer;
-  width: 100%;
+  width: auto;
   min-width: 80px;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
@@ -237,7 +237,7 @@ exports[`<Button /> component when loading is true renders a spinner light theme
   -webkit-justify-content: center;
   justify-content: center;
   cursor: pointer;
-  width: 100%;
+  width: auto;
   min-width: 80px;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;

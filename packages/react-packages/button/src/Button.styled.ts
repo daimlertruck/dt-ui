@@ -15,7 +15,7 @@ export const ButtonStyled = styled.button<ButtonStyledProps>`
   display: flex;
   justify-content: center;
   cursor: pointer;
-  width: 100%;
+  width: auto;
   min-width: 80px;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
     border-color 0.2s ease-in-out;
