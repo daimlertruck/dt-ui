@@ -1,5 +1,11 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.28
+
+### Patch Changes
+
+- fix: button styles
+
 ## 0.1.0-beta.27
 
 ### Patch Changes

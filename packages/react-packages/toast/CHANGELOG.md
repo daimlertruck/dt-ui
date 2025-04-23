@@ -1,5 +1,13 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.45
+
+### Patch Changes
+
+- fix: button styles
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.28
+
 ## 0.1.0-beta.44
 
 ### Patch Changes
