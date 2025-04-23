@@ -48,7 +48,7 @@ describe('<Modal/> Component', () => {
     });
 
     it('fires the mock close function when clicking on the x', () => {
-      const closeBtn = screen.getByTestId('close-icon');
+      const closeBtn = screen.getByTestId('close-button');
       fireEvent.click(closeBtn);
 
       expect(handleClick).toBeCalledTimes(1);

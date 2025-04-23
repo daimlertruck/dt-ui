@@ -1,3 +1,4 @@
+import { IconButton } from '@dt-ui/react';
 import { Box } from '@dt-ui/react-box';
 import { Icon } from '@dt-ui/react-icon';
 import { Typography } from '@dt-ui/react-typography';
@@ -35,12 +36,13 @@ export const ModalHeader = ({
           {title}
         </Typography>
 
-        <Icon
-          code='close'
-          dataTestId='close-icon'
+        <IconButton
+          color='accent'
+          dataTestId='close-button'
           onClick={handleClose}
-          size='large'
-        />
+        >
+          <Icon code='close' size='large' />
+        </IconButton>
       </Box>
       {subTitle ? (
         <Typography color='content.default' element='h5' fontStyles='body1'>

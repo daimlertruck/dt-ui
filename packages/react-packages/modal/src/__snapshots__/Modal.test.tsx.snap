@@ -187,6 +187,25 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
 }
 
 .emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #454545;
+}
+
+.emotion-16:hover {
+  color: #00677F;
+}
+
+.emotion-17 {
   font-family: DTUI-icons-outlined;
   font-weight: normal;
   font-style: normal;
@@ -203,20 +222,15 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
-.emotion-18 {
+.emotion-19 {
   padding: 24px;
   overflow-y: auto;
 }
 
 @media only screen and (max-width: 600px) {
-  .emotion-18 {
+  .emotion-19 {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -258,17 +272,23 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
         >
           Title
         </h4>
-        <i
-          class="emotion-16 emotion-17"
-          color="#454545"
-          data-testid="close-icon"
+        <button
+          class="emotion-16"
+          color="accent"
+          data-testid="close-button"
         >
-          close
-        </i>
+          <i
+            class="emotion-17 emotion-18"
+            color="#454545"
+            data-testid="icon"
+          >
+            close
+          </i>
+        </button>
       </div>
     </div>
     <div
-      class="emotion-18 emotion-19"
+      class="emotion-19 emotion-20"
     >
       Some text here
     </div>
@@ -416,6 +436,25 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
 }
 
 .emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #454545;
+}
+
+.emotion-10:hover {
+  color: #00677F;
+}
+
+.emotion-11 {
   font-family: DTUI-icons-outlined;
   font-weight: normal;
   font-style: normal;
@@ -432,14 +471,9 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
-.emotion-12 {
+.emotion-13 {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -449,20 +483,20 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   color: #454545;
 }
 
-.emotion-14 {
+.emotion-15 {
   padding: 24px;
   overflow-y: auto;
 }
 
 @media only screen and (max-width: 600px) {
-  .emotion-14 {
+  .emotion-15 {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
   }
 }
 
-.emotion-16 {
+.emotion-17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -483,14 +517,14 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
 }
 
 @media only screen and (max-width: 600px) {
-  .emotion-16 {
+  .emotion-17 {
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 }
 
-.emotion-18 {
+.emotion-19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -523,37 +557,37 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   background-color: transparent;
 }
 
-.emotion-18:hover {
+.emotion-19:hover {
   color: #636363;
   border-color: #636363;
   background-color: #C1C1C1;
 }
 
-.emotion-18:active {
+.emotion-19:active {
   color: #636363;
   border-color: #636363;
   background-color: #C1C1C1;
 }
 
-.emotion-18:disabled {
+.emotion-19:disabled {
   cursor: not-allowed;
   color: #C1C1C1;
   border-color: #C1C1C1;
   background-color: transparent;
 }
 
-.emotion-18:focus-visible {
+.emotion-19:focus-visible {
   outline: 3px solid #131313;
   outline-offset: 1px;
 }
 
 @media only screen and (min-width: 768px) {
-  .emotion-18 {
+  .emotion-19 {
     width: auto;
   }
 }
 
-.emotion-20 {
+.emotion-21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -586,26 +620,26 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   background-color: #000000;
 }
 
-.emotion-20:hover {
+.emotion-21:hover {
   color: #FFFFFF;
   background-color: #454545;
   border-color: #454545;
 }
 
-.emotion-20:disabled {
+.emotion-21:disabled {
   cursor: not-allowed;
   color: #FFFFFF;
   background-color: #DEDEDE;
   border-color: #DEDEDE;
 }
 
-.emotion-20:focus-visible {
+.emotion-21:focus-visible {
   outline: 3px solid #131313;
   outline-offset: 1px;
 }
 
 @media only screen and (min-width: 768px) {
-  .emotion-20 {
+  .emotion-21 {
     width: auto;
   }
 }
@@ -633,16 +667,22 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
         >
           Title
         </h4>
-        <i
-          class="emotion-10 emotion-11"
-          color="#454545"
-          data-testid="close-icon"
+        <button
+          class="emotion-10"
+          color="accent"
+          data-testid="close-button"
         >
-          close
-        </i>
+          <i
+            class="emotion-11 emotion-12"
+            color="#454545"
+            data-testid="icon"
+          >
+            close
+          </i>
+        </button>
       </div>
       <h5
-        class="emotion-12 emotion-9"
+        class="emotion-13 emotion-9"
         color="content.default"
         data-testid="typography"
       >
@@ -650,15 +690,15 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
       </h5>
     </div>
     <div
-      class="emotion-14 emotion-15"
+      class="emotion-15 emotion-16"
     >
       Some text here
     </div>
     <div
-      class="emotion-16 emotion-17"
+      class="emotion-17 emotion-18"
     >
       <button
-        class="emotion-18 emotion-19"
+        class="emotion-19 emotion-20"
         color="secondary"
         data-testid="cancel-button"
         type="button"
@@ -666,7 +706,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
         Cancel
       </button>
       <button
-        class="emotion-20 emotion-19"
+        class="emotion-21 emotion-20"
         color="primary"
         data-testid="action-button"
         type="button"
