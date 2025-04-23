@@ -59,11 +59,9 @@ describe('<TextArea /> component', () => {
   });
 
   it('should have active state on focus', () => {
-    const { getByRole } = render(
-      <ProvidedTextArea label='My awesome text area' />
-    );
+    render(<ProvidedTextArea label='My awesome text area' />);
 
-    const textarea = getByRole('textbox');
+    const textarea = screen.getByTestId('textarea-container');
 
     fireEvent.focus(textarea);
 
@@ -111,15 +109,13 @@ describe('<TextArea /> component', () => {
     });
 
     it("should add 'blur' with empty value", () => {
-      const { getByRole } = render(
-        <ProvidedTextArea label='My awesome text area' />
-      );
+      render(<ProvidedTextArea label='My awesome text area' />);
 
-      const textarea = getByRole('textbox');
+      const textarea = screen.getByTestId('textarea-container');
 
       fireEvent.blur(textarea, { currentTarget: { value: '' } });
 
-      expect(textarea).toHaveStyle('border: 1px solid #dedede');
+      expect(textarea).toHaveStyle('border: 1px solid #000000');
     });
 
     it('should have active state', () => {
@@ -135,6 +131,16 @@ describe('<TextArea /> component', () => {
       expect(label).toHaveStyle('font-size: 0.75rem');
       expect(label).toHaveStyle('transform: translateY(-45%)');
     });
+  });
+
+  it('should have hover style', () => {
+    render(<ProvidedTextArea label='My awesome text area' />);
+
+    const textarea = screen.getByTestId('textarea-container');
+
+    fireEvent.mouseOver(textarea, { currentTarget: { value: '' } });
+
+    expect(textarea).toHaveStyle('border: 1px solid #000000');
   });
 
   it('renders input with variant baseLine', () => {

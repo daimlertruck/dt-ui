@@ -7,9 +7,14 @@ import {
 } from './constants';
 
 export interface TextAreaStyledProps {
-  variant: TextAreaVariant;
   backgroundFill: TextAreaBackgroundFill;
   enableResize?: boolean;
+  hasError?: boolean;
+}
+
+interface ContainerStyledProps {
+  variant: TextAreaVariant;
+  backgroundFill: TextAreaBackgroundFill;
   hasError?: boolean;
 }
 
@@ -43,24 +48,30 @@ export const TextAreaMessages = styled.div`
 `;
 
 export const TextAreaStyled = styled.textarea<TextAreaStyledProps>`
-  ${({
-    theme,
-    variant,
-    enableResize = false,
-    hasError = false,
-    backgroundFill: backgroundFill,
-  }) => `
+  ${({ theme, enableResize = false, backgroundFill }) => `
     ${theme.fontStyles.body1}
 
     background-color: ${getThemedBackgroundFill(backgroundFill, theme)};
 
+    border-style: none;
     width: 100%;
-    padding: 20px 14px 14px 14px;
-    margin-top: 5px;
     color: ${theme.palette.content.dark};
     resize: ${enableResize ? 'vertical' : 'none'};
     outline: none;
+  `}
+`;
 
+export const ContainerStyled = styled.div<ContainerStyledProps>`
+  ${({ theme, variant, hasError = false, backgroundFill }) => {
+    const borderColor = hasError
+      ? theme.palette.error.default
+      : theme.palette.primary.default;
+
+    return `
+    background-color: ${getThemedBackgroundFill(backgroundFill, theme)};
+    position: relative;
+    padding: 25px 0px 0px 10px;
+    width: 100%;
 
     ${
       variant === 'outlined'
@@ -70,26 +81,19 @@ export const TextAreaStyled = styled.textarea<TextAreaStyledProps>`
                 ? theme.palette.error.default
                 : theme.palette.border.default
             };
-              &:focus { border: 1px solid ${
-                hasError
-                  ? theme.palette.error.default
-                  : theme.palette.primary.default
-              }};`
-        : `border-radius: ${theme.shape.formField} 
-                            ${theme.shape.formField} 0 0;
+            &:focus-within, &:hover { { border: 1px solid ${borderColor}};
+          `
+        : `border-radius: ${theme.shape.formField} ${theme.shape.formField} 0 0;
             border-bottom: 1px solid ${
               hasError
                 ? theme.palette.error.default
                 : theme.palette.border.default
             };
-              &:focus { border-bottom: 1px solid  ${
-                hasError
-                  ? theme.palette.error.default
-                  : theme.palette.primary.default
-              };}`
+            &:focus-within, &:hover { { border-bottom: 1px solid  ${borderColor}};
+          `
     };
 
     ${variant === 'outlined' ? 'border-width: 1px' : 'border-width: 0 0 1px'};
-
-  `}
+  `;
+  }}
 `;

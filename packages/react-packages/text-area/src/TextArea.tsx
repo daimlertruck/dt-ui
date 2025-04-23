@@ -15,6 +15,7 @@ import {
   TextAreaWrapper,
   TextAreaMessageStyled,
   TextAreaMessages,
+  ContainerStyled,
 } from './TextArea.styled';
 
 export interface TextAreaProps
@@ -24,7 +25,6 @@ export interface TextAreaProps
   name?: string;
   maxLength?: number;
   enableResize?: boolean;
-  dataTestId?: string;
   value?: string;
   variant?: TextAreaVariant;
   backgroundFill?: TextAreaBackgroundFill;
@@ -53,6 +53,7 @@ export const TextArea = ({
   const [activeInput, setActiveInput] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [hasRequiredError, setHasRequiredError] = useState(false);
+
   useEffect(() => {
     if (!!value) {
       setInputValue(value);
@@ -112,26 +113,32 @@ export const TextArea = ({
         isActive={activeInput}
         isDisabled={disabled}
         isRequired={required}
+        style={{ zIndex: 1 }}
       >
         {label}
       </LabelField>
-      <TextAreaStyled
+      <ContainerStyled
         backgroundFill={backgroundFill}
-        data-error={showError}
-        disabled={disabled}
-        enableResize={enableResize}
+        data-testid='textarea-container'
         hasError={showError}
-        id={testId}
-        maxLength={maxLength}
-        name={name}
-        style={style}
-        value={inputValue}
         variant={variant}
-        {...rest}
-        onBlur={onBlur}
-        onChange={handleChange}
-        onFocus={onFocus}
-      />
+      >
+        <TextAreaStyled
+          backgroundFill={backgroundFill}
+          data-error={showError}
+          disabled={disabled}
+          enableResize={enableResize}
+          id={testId}
+          maxLength={maxLength}
+          name={name}
+          style={style}
+          value={inputValue}
+          {...rest}
+          onBlur={onBlur}
+          onChange={handleChange}
+          onFocus={onFocus}
+        />
+      </ContainerStyled>
 
       <TextAreaMessages>
         {message ? (
