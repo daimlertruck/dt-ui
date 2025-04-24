@@ -226,7 +226,7 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  border-color: #000000;
+  border: 0;
   color: #FFFFFF;
   background-color: #000000;
 }
@@ -234,14 +234,12 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
 .emotion-8:hover {
   color: #FFFFFF;
   background-color: #454545;
-  border-color: #454545;
 }
 
 .emotion-8:disabled {
   cursor: not-allowed;
   color: #FFFFFF;
   background-color: #DEDEDE;
-  border-color: #DEDEDE;
 }
 
 .emotion-8:focus-visible {

@@ -1,6 +1,6 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { IconButton } from '@dt-ui/react-icon-button';
 
-import { IconButton } from '../../../../../dt-ui-react/components/buttons/icon-button';
 import { CloseIcon } from '../../../../../dt-ui-react/core';
 import { useDrawerContext } from '../../context/DrawerProvider';
 

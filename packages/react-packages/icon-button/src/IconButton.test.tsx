@@ -1,8 +1,7 @@
 import { withProviders } from '@dt-ui/react-core';
+import { Icon } from '@dt-ui/react-icon';
 import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
-
-import { EditIcon } from '../../../core';
 
 import { IconButton } from './IconButton';
 
@@ -12,7 +11,7 @@ describe('<IconButton /> component', () => {
   it('renders button html element with the an icon', () => {
     const { container } = render(
       <ProvidedIconButton color='primary' onClick={() => null}>
-        <EditIcon />
+        <Icon code='edit' />
       </ProvidedIconButton>
     );
 
@@ -22,7 +21,7 @@ describe('<IconButton /> component', () => {
   it('renders a disabled button html element', () => {
     render(
       <ProvidedIconButton color='primary' isDisabled onClick={() => null}>
-        <EditIcon />
+        <Icon code='edit' />
       </ProvidedIconButton>
     );
 
@@ -39,7 +38,7 @@ describe('<IconButton /> component', () => {
         dataTestId='error-icon-button'
         onClick={callbackFn}
       >
-        <EditIcon />
+        <Icon code='edit' />
       </ProvidedIconButton>
     );
 

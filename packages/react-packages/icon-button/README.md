@@ -8,7 +8,7 @@ This component allows the user to take action by clicking on an Icon.
 import { IconButton, EditIcon } from '@dt-ui/react';
 
 export const App = () => {
-  const handleClick = () => null; //Some action here
+  const handleClick = () => null;
 
   return (
     <IconButton onClick={handleClick} color='primary'>

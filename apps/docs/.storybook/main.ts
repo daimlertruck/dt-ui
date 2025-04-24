@@ -50,6 +50,7 @@ const config: StorybookConfig = {
   viteFinal: async (config: InlineConfig) => {
     if (config.resolve) {
       const components = [
+        'icon-button',
         'pagination',
         'form',
         'toggle',

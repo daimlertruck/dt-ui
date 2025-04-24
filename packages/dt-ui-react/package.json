@@ -22,7 +22,6 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-pagination": "0.1.0-beta.10",
     "@dt-ui/react-accordion": "0.1.0-beta.31",
     "@dt-ui/react-avatar": "0.1.0-beta.40",
     "@dt-ui/react-backdrop": "0.1.0-beta.36",
@@ -39,9 +38,11 @@
     "@dt-ui/react-empty-state": "0.1.0-beta.49",
     "@dt-ui/react-form": "0.1.0-beta.17",
     "@dt-ui/react-icon": "0.1.0-beta.31",
+    "@dt-ui/react-icon-button": "0.1.0-beta.0",
     "@dt-ui/react-label-field": "0.1.0-beta.30",
     "@dt-ui/react-message": "0.1.0-beta.38",
     "@dt-ui/react-modal": "0.1.0-beta.22",
+    "@dt-ui/react-pagination": "0.1.0-beta.10",
     "@dt-ui/react-progress-bar": "0.1.0-beta.24",
     "@dt-ui/react-radio": "0.1.0-beta.18",
     "@dt-ui/react-segmented-control": "0.1.0-beta.17",

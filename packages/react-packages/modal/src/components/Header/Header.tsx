@@ -1,6 +1,6 @@
-import { IconButton } from '@dt-ui/react';
 import { Box } from '@dt-ui/react-box';
 import { Icon } from '@dt-ui/react-icon';
+import { IconButton } from '@dt-ui/react-icon-button';
 import { Typography } from '@dt-ui/react-typography';
 
 import { ModalProps } from '../../Modal';
