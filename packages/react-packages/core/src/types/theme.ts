@@ -168,7 +168,13 @@ export type CustomTheme = {
 
 export type Colors = keyof Pick<
   CustomTheme['palette'],
-  'primary' | 'secondary' | 'error' | 'success' | 'informative' | 'warning'
+  | 'primary'
+  | 'secondary'
+  | 'error'
+  | 'success'
+  | 'informative'
+  | 'warning'
+  | 'accent'
 >;
 
 export type Breakpoints = keyof CustomTheme['breakpoints'];
