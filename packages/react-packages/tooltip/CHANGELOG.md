@@ -1,5 +1,11 @@
 # @dt-ui/react-tooltip
 
+## 0.1.0-beta.40
+
+### Minor Changes
+
+- feat: move icon-button to independent
+
 ## 0.1.0-beta.39
 
 ### Patch Changes

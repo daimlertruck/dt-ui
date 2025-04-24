@@ -1,5 +1,11 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.30
+
+### Patch Changes
+
+- fix: reduce button height
+
 ## 0.1.0-beta.29
 
 ### Patch Changes

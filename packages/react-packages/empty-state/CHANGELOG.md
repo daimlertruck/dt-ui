@@ -1,5 +1,17 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.50
+
+### Minor Changes
+
+- feat: move icon-button to independent
+
+### Patch Changes
+
+- fix: reduce button height
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.30
+
 ## 0.1.0-beta.49
 
 ### Patch Changes

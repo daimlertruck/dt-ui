@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-form",
-  "version": "0.1.0-beta.17",
+  "version": "0.1.0-beta.18",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@dt-ui/react-core": "0.1.0-beta.34",
-    "@dt-ui/react-tooltip": "0.1.0-beta.39",
+    "@dt-ui/react-tooltip": "0.1.0-beta.40",
     "@dt-ui/react-typography": "0.1.0-beta.25"
   },
   "devDependencies": {

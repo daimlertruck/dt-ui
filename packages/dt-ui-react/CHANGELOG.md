@@ -1,5 +1,38 @@
 # @dt-ui/react
 
+## 0.1.0-beta.173
+
+### Minor Changes
+
+- feat: move icon-button to independent
+
+### Patch Changes
+
+- fix: reduce button height
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-drawer@0.1.0-beta.38
+  - @dt-ui/react-empty-state@0.1.0-beta.50
+  - @dt-ui/react-icon@0.1.0-beta.32
+  - @dt-ui/react-icon-button@0.1.0-beta.1
+  - @dt-ui/react-modal@0.1.0-beta.23
+  - @dt-ui/react-tooltip@0.1.0-beta.40
+  - @dt-ui/react-checkbox@0.1.0-beta.30
+  - @dt-ui/react-select@0.1.0-beta.31
+  - @dt-ui/react-dropdown@0.1.0-beta.18
+  - @dt-ui/react-pagination@0.1.0-beta.11
+  - @dt-ui/react-progress-bar@0.1.0-beta.25
+  - @dt-ui/react-segmented-control@0.1.0-beta.18
+  - @dt-ui/react-stepper@0.1.0-beta.21
+  - @dt-ui/react-tabs@0.1.0-beta.25
+  - @dt-ui/react-text-field@0.1.0-beta.36
+  - @dt-ui/react-date-picker@0.1.0-beta.19
+  - @dt-ui/react-avatar@0.1.0-beta.41
+  - @dt-ui/react-breadcrumb@0.1.0-beta.39
+  - @dt-ui/react-form@0.1.0-beta.18
+  - @dt-ui/react-button@0.1.0-beta.30
+  - @dt-ui/react-toast@0.1.0-beta.47
+
 ## 0.1.0-beta.172
 
 ### Patch Changes

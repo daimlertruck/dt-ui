@@ -1,5 +1,13 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.47
+
+### Patch Changes
+
+- fix: reduce button height
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.30
+
 ## 0.1.0-beta.46
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @dt-ui/react-drawer
 
+## 0.1.0-beta.38
+
+### Minor Changes
+
+- feat: move icon-button to independent
+
 ## 0.1.0-beta.37
 
 ### Patch Changes

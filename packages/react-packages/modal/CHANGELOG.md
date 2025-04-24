@@ -1,5 +1,17 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.23
+
+### Minor Changes
+
+- feat: move icon-button to independent
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.32
+  - @dt-ui/react-icon-button@0.1.0-beta.1
+
 ## 0.1.0-beta.22
 
 ### Patch Changes

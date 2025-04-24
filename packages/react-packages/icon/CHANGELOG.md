@@ -1,5 +1,11 @@
 # @dt-ui/react-icon
 
+## 0.1.0-beta.32
+
+### Minor Changes
+
+- feat: move icon-button to independent
+
 ## 0.1.0-beta.31
 
 ### Patch Changes

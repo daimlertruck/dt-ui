@@ -1,5 +1,16 @@
 # @dt-ui/react-stepper
 
+## 0.1.0-beta.21
+
+### Minor Changes
+
+- feat: move icon-button to independent
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.32
+
 ## 0.1.0-beta.20
 
 ### Patch Changes

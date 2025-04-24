@@ -1,5 +1,16 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.39
+
+### Minor Changes
+
+- feat: move icon-button to independent
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-tooltip@0.1.0-beta.40
+
 ## 0.1.0-beta.38
 
 ### Patch Changes

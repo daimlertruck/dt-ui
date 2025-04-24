@@ -1,5 +1,16 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.19
+
+### Minor Changes
+
+- feat: move icon-button to independent
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-text-field@0.1.0-beta.36
+
 ## 0.1.0-beta.18
 
 ### Patch Changes

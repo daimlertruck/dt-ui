@@ -1,5 +1,17 @@
 # @dt-ui/react-segmented-control
 
+## 0.1.0-beta.18
+
+### Minor Changes
+
+- feat: move icon-button to independent
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.32
+  - @dt-ui/react-tooltip@0.1.0-beta.40
+
 ## 0.1.0-beta.17
 
 ### Patch Changes

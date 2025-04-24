@@ -1,5 +1,18 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.31
+
+### Minor Changes
+
+- feat: move icon-button to independent
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.32
+  - @dt-ui/react-tooltip@0.1.0-beta.40
+  - @dt-ui/react-checkbox@0.1.0-beta.30
+
 ## 0.1.0-beta.30
 
 ### Patch Changes
