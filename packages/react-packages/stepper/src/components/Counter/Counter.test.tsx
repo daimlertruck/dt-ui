@@ -65,7 +65,7 @@ describe('<Counter /> component', () => {
 
   it.each`
     color            | expectedColor
-    ${'disabled'}    | ${'#C1C1C1'}
+    ${'disabled'}    | ${'#A3A3A3'}
     ${'informative'} | ${'#008DFC'}
   `(
     'should have border and color equals to $expectedColor when color is $color and outlined is true ',

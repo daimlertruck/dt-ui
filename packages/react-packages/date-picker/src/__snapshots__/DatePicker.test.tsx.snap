@@ -20,7 +20,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 .emotion-0:has(input[disabled]) i,
 .emotion-0:has(input[disabled]) label>span {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-0:has(input[readonly]:not(input[disabled])) label,
@@ -105,7 +105,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 .emotion-4:has(input[disabled]),
 .emotion-4:has(input[disabled])>* {
-  color: #C1C1C1;
+  color: #A3A3A3;
   background-color: #FAFAFA;
   border-color: #DEDEDE;
   cursor: not-allowed;
@@ -252,7 +252,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 .emotion-0:has(input[disabled]) i,
 .emotion-0:has(input[disabled]) label>span {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-0:has(input[readonly]:not(input[disabled])) label,
@@ -337,7 +337,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 
 .emotion-4:has(input[disabled]),
 .emotion-4:has(input[disabled])>* {
-  color: #C1C1C1;
+  color: #A3A3A3;
   background-color: #FAFAFA;
   border-color: #DEDEDE;
   cursor: not-allowed;
@@ -484,7 +484,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
 
 .emotion-0:has(input[disabled]) i,
 .emotion-0:has(input[disabled]) label>span {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-0:has(input[readonly]:not(input[disabled])) label,
@@ -579,7 +579,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
 
 .emotion-6:has(input[disabled]),
 .emotion-6:has(input[disabled])>* {
-  color: #C1C1C1;
+  color: #A3A3A3;
   background-color: #FAFAFA;
   border-color: #DEDEDE;
   cursor: not-allowed;

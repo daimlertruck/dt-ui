@@ -20,7 +20,7 @@ export const palette: Theme['palette'] = {
   },
   content: {
     default: colors.grey_80,
-    light: colors.grey_40,
+    light: colors.grey_50,
     medium: colors.grey_60,
     dark: colors.grey_90,
     contrast: colors.grey_00,

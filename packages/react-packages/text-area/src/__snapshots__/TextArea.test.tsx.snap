@@ -27,7 +27,7 @@ exports[`<TextArea /> component renders disabled input 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #C1C1C1;
+  color: #A3A3A3;
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;

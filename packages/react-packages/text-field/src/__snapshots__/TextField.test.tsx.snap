@@ -20,7 +20,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
 
 .emotion-0:has(input[disabled]) i,
 .emotion-0:has(input[disabled]) label>span {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-0:has(input[readonly]:not(input[disabled])) label,
@@ -42,7 +42,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #C1C1C1;
+  color: #A3A3A3;
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
@@ -105,7 +105,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
 
 .emotion-4:has(input[disabled]),
 .emotion-4:has(input[disabled])>* {
-  color: #C1C1C1;
+  color: #A3A3A3;
   background-color: #FAFAFA;
   border-color: #DEDEDE;
   cursor: not-allowed;
@@ -233,7 +233,7 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
 
 .emotion-0:has(input[disabled]) i,
 .emotion-0:has(input[disabled]) label>span {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-0:has(input[readonly]:not(input[disabled])) label,
@@ -318,7 +318,7 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
 
 .emotion-4:has(input[disabled]),
 .emotion-4:has(input[disabled])>* {
-  color: #C1C1C1;
+  color: #A3A3A3;
   background-color: #FAFAFA;
   border-color: #DEDEDE;
   cursor: not-allowed;
@@ -498,7 +498,7 @@ exports[`<TextField /> component renders input with light background fill 1`] = 
 
 .emotion-0:has(input[disabled]) i,
 .emotion-0:has(input[disabled]) label>span {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-0:has(input[readonly]:not(input[disabled])) label,
@@ -583,7 +583,7 @@ exports[`<TextField /> component renders input with light background fill 1`] = 
 
 .emotion-4:has(input[disabled]),
 .emotion-4:has(input[disabled])>* {
-  color: #C1C1C1;
+  color: #A3A3A3;
   background-color: #FAFAFA;
   border-color: #DEDEDE;
   cursor: not-allowed;
@@ -704,7 +704,7 @@ exports[`<TextField /> component renders input with variant baseLine 1`] = `
 
 .emotion-0:has(input[disabled]) i,
 .emotion-0:has(input[disabled]) label>span {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-0:has(input[readonly]:not(input[disabled])) label,
@@ -789,7 +789,7 @@ exports[`<TextField /> component renders input with variant baseLine 1`] = `
 
 .emotion-4:has(input[disabled]),
 .emotion-4:has(input[disabled])>* {
-  color: #C1C1C1;
+  color: #A3A3A3;
   background-color: #FAFAFA;
   border-color: #DEDEDE;
   cursor: not-allowed;
@@ -910,7 +910,7 @@ exports[`<TextField /> component renders input without floating label 1`] = `
 
 .emotion-0:has(input[disabled]) i,
 .emotion-0:has(input[disabled]) label>span {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-0:has(input[readonly]:not(input[disabled])) label,
@@ -980,39 +980,39 @@ exports[`<TextField /> component renders input without floating label 1`] = `
 
 .emotion-4:has(input[disabled]),
 .emotion-4:has(input[disabled])>* {
-  color: #C1C1C1;
+  color: #A3A3A3;
   background-color: #FAFAFA;
   border-color: #DEDEDE;
   cursor: not-allowed;
 }
 
 .emotion-4:has(input[disabled]) input::-webkit-input-placeholder {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-4:has(input[disabled]) input::-moz-placeholder {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-4:has(input[disabled]) input:-ms-input-placeholder {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-4:has(input[disabled])>* input::-webkit-input-placeholder {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-4:has(input[disabled])>* input::-moz-placeholder {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-4:has(input[disabled])>* input:-ms-input-placeholder {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-4:has(input[disabled]) input::placeholder,
 .emotion-4:has(input[disabled])>* input::placeholder {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-6 {
@@ -1100,7 +1100,7 @@ exports[`<TextField /> component should render the TextField with error styles a
 
 .emotion-0:has(input[disabled]) i,
 .emotion-0:has(input[disabled]) label>span {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-0:has(input[readonly]:not(input[disabled])) label,
@@ -1185,7 +1185,7 @@ exports[`<TextField /> component should render the TextField with error styles a
 
 .emotion-4:has(input[disabled]),
 .emotion-4:has(input[disabled])>* {
-  color: #C1C1C1;
+  color: #A3A3A3;
   background-color: #FAFAFA;
   border-color: #DEDEDE;
   cursor: not-allowed;
@@ -1331,7 +1331,7 @@ exports[`<TextField /> component should render the TextField with info message 1
 
 .emotion-0:has(input[disabled]) i,
 .emotion-0:has(input[disabled]) label>span {
-  color: #C1C1C1;
+  color: #A3A3A3;
 }
 
 .emotion-0:has(input[readonly]:not(input[disabled])) label,
@@ -1416,7 +1416,7 @@ exports[`<TextField /> component should render the TextField with info message 1
 
 .emotion-4:has(input[disabled]),
 .emotion-4:has(input[disabled])>* {
-  color: #C1C1C1;
+  color: #A3A3A3;
   background-color: #FAFAFA;
   border-color: #DEDEDE;
   cursor: not-allowed;
