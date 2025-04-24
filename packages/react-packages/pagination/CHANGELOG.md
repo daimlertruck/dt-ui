@@ -1,5 +1,15 @@
 # @dt-ui/react-pagination
 
+## 0.1.0-beta.10
+
+### Patch Changes
+
+- fix: add accent to colors type
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.34
+  - @dt-ui/react-icon@0.1.0-beta.31
+  - @dt-ui/react-typography@0.1.0-beta.25
+
 ## 0.1.0-beta.9
 
 ### Patch Changes

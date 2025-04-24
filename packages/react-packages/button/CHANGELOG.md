@@ -1,5 +1,14 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.29
+
+### Patch Changes
+
+- fix: add accent to colors type
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.34
+  - @dt-ui/react-spinner@0.1.0-beta.36
+
 ## 0.1.0-beta.28
 
 ### Patch Changes

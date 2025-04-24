@@ -1,5 +1,15 @@
 # @dt-ui/react-text-area
 
+## 0.1.0-beta.14
+
+### Patch Changes
+
+- fix: add accent to colors type
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.34
+  - @dt-ui/react-label-field@0.1.0-beta.30
+  - @dt-ui/react-typography@0.1.0-beta.25
+
 ## 0.1.0-beta.13
 
 ### Patch Changes

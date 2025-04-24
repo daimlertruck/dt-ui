@@ -1,5 +1,15 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.49
+
+### Patch Changes
+
+- fix: add accent to colors type
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.34
+  - @dt-ui/react-button@0.1.0-beta.29
+  - @dt-ui/react-typography@0.1.0-beta.25
+
 ## 0.1.0-beta.48
 
 ### Patch Changes

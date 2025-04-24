@@ -1,5 +1,24 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.22
+
+### Patch Changes
+
+- fix: add accent to colors type
+- test: icon-button hover selector
+- fix: modal close icon hover style
+- fix: increase modal test coverage
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.34
+  - @dt-ui/react@0.1.0-beta.172
+  - @dt-ui/react-backdrop@0.1.0-beta.36
+  - @dt-ui/react-icon@0.1.0-beta.31
+  - @dt-ui/react-spinner@0.1.0-beta.36
+  - @dt-ui/react-typography@0.1.0-beta.25
+
 ## 0.1.0-beta.21
 
 ### Patch Changes

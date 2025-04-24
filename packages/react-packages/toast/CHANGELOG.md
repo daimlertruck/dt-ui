@@ -1,5 +1,14 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.46
+
+### Patch Changes
+
+- fix: add accent to colors type
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.34
+  - @dt-ui/react-button@0.1.0-beta.29
+
 ## 0.1.0-beta.45
 
 ### Patch Changes

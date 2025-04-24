@@ -1,5 +1,14 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.24
+
+### Patch Changes
+
+- fix: add accent to colors type
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.31
+  - @dt-ui/react-typography@0.1.0-beta.25
+
 ## 0.1.0-beta.23
 
 ### Patch Changes

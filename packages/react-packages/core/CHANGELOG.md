@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.34
+
+### Patch Changes
+
+- fix: add accent to colors type
+
 ## 0.1.0-beta.33
 
 ### Patch Changes
