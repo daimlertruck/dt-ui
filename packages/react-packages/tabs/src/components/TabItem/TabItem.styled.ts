@@ -8,7 +8,6 @@ interface TabItemStyledProps {
 }
 
 export const TabItemStyled = styled.button<TabItemStyledProps>`
-  min-height: 50px;
   border: none;
   display: flex;
   align-items: center;
@@ -18,53 +17,36 @@ export const TabItemStyled = styled.button<TabItemStyledProps>`
     ${active ? theme.fontStyles.body2Bold : theme.fontStyles.body2}
 
     ${
-      variant === 'book'
+      variant === 'default'
         ? `
           background-color: transparent;
           border-bottom: ${
             active
-              ? `2px solid ${theme.palette.primary.default}`
+              ? `2px solid ${theme.palette.accent.default}`
               : `1px solid ${theme.palette.border.default}`
           };`
         : `
-          background: ${
-            active ? `${theme.palette.surface.contrast}` : 'transparent'
+          background-color: ${
+            active ? theme.palette.surface.contrast : 'transparent'
           };`
     }
     
     color: ${
-      active
-        ? theme.palette.primary.default
-        : disabled
-        ? theme.palette.content.light
-        : theme.palette.content.default
+      disabled ? theme.palette.content.light : theme.palette.accent.default
     };
     padding: ${theme.spacing['3xs']} ${theme.spacing.s};
     cursor: ${active ? 'default' : disabled ? 'not-allowed' : 'pointer'};
     white-space: nowrap;
-
+    gap: ${theme.spacing['4xs']};
+    
     ${
       !active &&
       !disabled &&
       `
-      &:hover {
-        ${
-          variant === 'book'
-            ? `color: ${theme.palette.primary.dark};`
-            : `background: ${theme.palette.surface.contrast};`
+        &:hover {
+          background-color: ${theme.palette.accent.light};
         }        
       `
     }
-
-    ${
-      disabled &&
-      `
-        opacity: 0.4;
-  
-        &:active {
-          pointer-events: none; 
-        }
-     `
-    };
   `}
 `;

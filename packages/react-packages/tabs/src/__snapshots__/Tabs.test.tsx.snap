@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Tabs /> component should match the snapshot by displaying book variant 1`] = `
+exports[`<Tabs /> component should match the snapshot by displaying contained variant 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -51,7 +51,6 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
 }
 
 .emotion-6 {
-  min-height: 50px;
   border: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -67,16 +66,15 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  background-color: transparent;
-  border-bottom: 2px solid #000000;
-  color: #000000;
+  background-color: #FFFFFF;
+  color: #00677F;
   padding: 12px 32px;
   cursor: default;
   white-space: nowrap;
+  gap: 8px;
 }
 
 .emotion-8 {
-  min-height: 50px;
   border: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -93,19 +91,37 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
   margin: 0;
   text-transform: none;
   background-color: transparent;
-  border-bottom: 1px solid #DEDEDE;
-  color: #454545;
+  color: #00677F;
   padding: 12px 32px;
   cursor: pointer;
   white-space: nowrap;
+  gap: 8px;
 }
 
 .emotion-8:hover {
-  color: #454545;
+  background-color: #CCE3EB;
 }
 
 .emotion-12 {
-  min-height: 50px;
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #454545;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+.emotion-14 {
   border: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -122,16 +138,11 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
   margin: 0;
   text-transform: none;
   background-color: transparent;
-  border-bottom: 1px solid #DEDEDE;
-  color: #C1C1C1;
+  color: #A3A3A3;
   padding: 12px 32px;
   cursor: not-allowed;
   white-space: nowrap;
-  false opacity: 0.4;
-}
-
-.emotion-12:active {
-  pointer-events: none;
+  gap: 8px;
 }
 
 <div>
@@ -143,7 +154,7 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
       class="emotion-2 emotion-3"
       color="#454545"
       data-testid="left-arrow"
-      style="visibility: hidden;"
+      style="display: none;"
     >
       keyboard_arrow_left
     </i>
@@ -154,7 +165,7 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
     >
       <button
         class="emotion-6 emotion-7"
-        data-testid="tab-item-first"
+        data-testid="tab-item-0"
         role="tab"
         tabindex="0"
       >
@@ -162,7 +173,7 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
       </button>
       <button
         class="emotion-8 emotion-7"
-        data-testid="tab-item-second"
+        data-testid="tab-item-1"
         role="tab"
         tabindex="-1"
       >
@@ -170,15 +181,22 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
       </button>
       <button
         class="emotion-8 emotion-7"
-        data-testid="tab-item-third"
+        data-testid="tab-item-2"
         role="tab"
         tabindex="-1"
       >
+        <i
+          class="emotion-12 emotion-3"
+          color="#454545"
+          data-testid="icon"
+        >
+          menu
+        </i>
         Tab 3
       </button>
       <button
-        class="emotion-12 emotion-7"
-        data-testid="tab-item-fourth"
+        class="emotion-14 emotion-7"
+        data-testid="tab-item-3"
         disabled=""
         role="tab"
         tabindex="-1"
@@ -190,7 +208,7 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
       class="emotion-2 emotion-3"
       color="#454545"
       data-testid="right-arrow"
-      style="visibility: hidden;"
+      style="display: none;"
     >
       keyboard_arrow_right
     </i>
@@ -198,7 +216,7 @@ exports[`<Tabs /> component should match the snapshot by displaying book variant
 </div>
 `;
 
-exports[`<Tabs /> component should match the snapshot by displaying boxed variant 1`] = `
+exports[`<Tabs /> component should match the snapshot by displaying default variant 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -249,7 +267,6 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
 }
 
 .emotion-6 {
-  min-height: 50px;
   border: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -265,15 +282,16 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  background: #FFFFFF;
-  color: #000000;
+  background-color: transparent;
+  border-bottom: 2px solid #00677F;
+  color: #00677F;
   padding: 12px 32px;
   cursor: default;
   white-space: nowrap;
+  gap: 8px;
 }
 
 .emotion-8 {
-  min-height: 50px;
   border: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -289,19 +307,39 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  background: transparent;
-  color: #454545;
+  background-color: transparent;
+  border-bottom: 1px solid #DEDEDE;
+  color: #00677F;
   padding: 12px 32px;
   cursor: pointer;
   white-space: nowrap;
+  gap: 8px;
 }
 
 .emotion-8:hover {
-  background: #FFFFFF;
+  background-color: #CCE3EB;
 }
 
 .emotion-12 {
-  min-height: 50px;
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #454545;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+.emotion-14 {
   border: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -317,16 +355,13 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  background: transparent;
-  color: #C1C1C1;
+  background-color: transparent;
+  border-bottom: 1px solid #DEDEDE;
+  color: #A3A3A3;
   padding: 12px 32px;
   cursor: not-allowed;
   white-space: nowrap;
-  false opacity: 0.4;
-}
-
-.emotion-12:active {
-  pointer-events: none;
+  gap: 8px;
 }
 
 <div>
@@ -338,7 +373,7 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
       class="emotion-2 emotion-3"
       color="#454545"
       data-testid="left-arrow"
-      style="visibility: hidden;"
+      style="display: none;"
     >
       keyboard_arrow_left
     </i>
@@ -349,7 +384,7 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
     >
       <button
         class="emotion-6 emotion-7"
-        data-testid="tab-item-first"
+        data-testid="tab-item-0"
         role="tab"
         tabindex="0"
       >
@@ -357,7 +392,7 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
       </button>
       <button
         class="emotion-8 emotion-7"
-        data-testid="tab-item-second"
+        data-testid="tab-item-1"
         role="tab"
         tabindex="-1"
       >
@@ -365,15 +400,22 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
       </button>
       <button
         class="emotion-8 emotion-7"
-        data-testid="tab-item-third"
+        data-testid="tab-item-2"
         role="tab"
         tabindex="-1"
       >
+        <i
+          class="emotion-12 emotion-3"
+          color="#454545"
+          data-testid="icon"
+        >
+          menu
+        </i>
         Tab 3
       </button>
       <button
-        class="emotion-12 emotion-7"
-        data-testid="tab-item-fourth"
+        class="emotion-14 emotion-7"
+        data-testid="tab-item-3"
         disabled=""
         role="tab"
         tabindex="-1"
@@ -385,7 +427,7 @@ exports[`<Tabs /> component should match the snapshot by displaying boxed varian
       class="emotion-2 emotion-3"
       color="#454545"
       data-testid="right-arrow"
-      style="visibility: hidden;"
+      style="display: none;"
     >
       keyboard_arrow_right
     </i>

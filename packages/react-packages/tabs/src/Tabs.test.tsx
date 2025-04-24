@@ -1,33 +1,34 @@
 import { withProviders } from '@dt-ui/react-core';
-import { fireEvent, render } from '@testing-library/react';
+import { Icon } from '@dt-ui/react-icon';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { Fragment } from 'react';
 
 import { Tabs } from './Tabs';
 import { Variant } from './types';
+
+const handleChangeMock = jest.fn();
 
 describe('<Tabs /> component', () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
 
-  it('should match the snapshot by displaying boxed variant', () => {
-    const handleChange = jest.fn();
+  it.each`
+    variant
+    ${'default'}
+    ${'contained'}
+  `(
+    'should match the snapshot by displaying $variant variant',
+    ({ variant }) => {
+      const { container } = renderComponent(handleChangeMock, variant);
 
-    const { container } = renderComponent(handleChange);
+      expect(container).toMatchSnapshot();
+    }
+  );
 
-    expect(container).toMatchSnapshot();
-  });
-
-  it('should match the snapshot by displaying book variant', () => {
-    const handleChange = jest.fn();
-
-    const { container } = renderComponent(handleChange, 'book');
-
-    expect(container).toMatchSnapshot();
-  });
-
-  it('should display side icons', () => {
-    const handleChange = jest.fn();
+  it('should display side icons when scrollable', () => {
+    expect(screen.queryByTestId('left-arrow')).toBeNull();
+    expect(screen.queryByTestId('right-arrow')).toBeNull();
 
     Object.defineProperty(HTMLElement.prototype, 'scrollLeft', {
       writable: true,
@@ -44,76 +45,55 @@ describe('<Tabs /> component', () => {
       value: 100,
     });
 
-    const { getByTestId } = renderComponent(handleChange);
+    renderComponent(handleChangeMock);
 
-    expect(getByTestId('left-arrow')).toHaveStyle({ visibility: 'visible' });
-    expect(getByTestId('right-arrow')).toHaveStyle({ visibility: 'visible' });
+    expect(screen.queryByTestId('left-arrow')).toBeVisible();
+    expect(screen.queryByTestId('right-arrow')).toBeVisible();
   });
 
-  it('should handle scroll after right side icon click', () => {
-    const handleChange = jest.fn();
-    const scroll = jest.fn();
+  it.each`
+    scroll
+    ${'left'}
+    ${'right'}
+  `('should handle scroll after $scroll side icon click', ({ scroll }) => {
+    const scrollMock = jest.fn();
 
     Object.defineProperty(HTMLElement.prototype, 'scroll', {
       writable: true,
-      value: scroll,
+      value: scrollMock,
     });
 
-    const { getByTestId } = renderComponent(handleChange);
+    renderComponent(handleChangeMock);
 
-    fireEvent.click(getByTestId('right-arrow'));
+    const scrollButton = screen.getByTestId(`${scroll}-arrow`);
 
-    expect(scroll).toHaveBeenCalled();
-  });
+    fireEvent.click(scrollButton);
 
-  it('should handle scroll after left side icon click', () => {
-    const handleChange = jest.fn();
-    const scroll = jest.fn();
-
-    Object.defineProperty(HTMLElement.prototype, 'scroll', {
-      writable: true,
-      value: scroll,
-    });
-
-    const { getByTestId } = renderComponent(handleChange);
-
-    fireEvent.click(getByTestId('left-arrow'));
-
-    expect(scroll).toHaveBeenCalled();
+    expect(scrollMock).toHaveBeenCalled();
   });
 
   it('should trigger handle change after item click', () => {
-    const handleChange = jest.fn();
+    const { getByTestId } = renderComponent(handleChangeMock);
 
-    const { getByTestId } = renderComponent(handleChange);
+    fireEvent.click(getByTestId('tab-item-1'));
 
-    fireEvent.click(getByTestId('tab-item-first'));
-
-    expect(handleChange).toHaveBeenCalled();
+    expect(handleChangeMock).toHaveBeenCalledWith(1);
   });
 });
 
 const renderComponent = (
   handleChange: () => void,
-  variant: Variant = 'boxed'
+  variant: Variant = 'default'
 ) => {
   const ProvidedFragment = withProviders(Fragment);
 
   return render(
     <ProvidedFragment>
-      <Tabs activeTab='first' variant={variant}>
-        <Tabs.Item handleChange={handleChange} index='first'>
-          Tab 1
-        </Tabs.Item>
-        <Tabs.Item handleChange={handleChange} index='second'>
-          Tab 2
-        </Tabs.Item>
-        <Tabs.Item handleChange={handleChange} index='third'>
-          Tab 3
-        </Tabs.Item>
-        <Tabs.Item handleChange={handleChange} index='fourth' isDisabled>
-          Tab 4
-        </Tabs.Item>
+      <Tabs activeTab={0} handleChange={handleChange} variant={variant}>
+        <Tabs.Item label='Tab 1' />
+        <Tabs.Item label='Tab 2' />
+        <Tabs.Item icon={<Icon code='menu' />} label='Tab 3' />
+        <Tabs.Item isDisabled label='Tab 4' />
       </Tabs>
     </ProvidedFragment>
   );

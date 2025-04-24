@@ -1,1 +1,1 @@
-export type Variant = 'boxed' | 'book';
+export type Variant = 'default' | 'contained';

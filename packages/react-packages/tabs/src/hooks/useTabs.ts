@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 
-export const useTabs = (initialTab: string) => {
-  const [activeTab, setActiveTab] = useState<string>(initialTab);
+export const useTabs = (initialTab: number = 0) => {
+  const [activeTab, setActiveTab] = useState<number>(initialTab);
   useEffect(() => {
     setActiveTab(initialTab);
   }, [initialTab]);
 
-  const handleChange = (value: string) => {
+  const handleChange = (value: number) => {
     setActiveTab(value);
   };
 

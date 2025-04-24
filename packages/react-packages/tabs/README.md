@@ -7,21 +7,16 @@ If the Tabs run out of space, it will appear horizontal scroll.
 
 ```jsx
 import { Tabs, TabPanel, useTabs } from '@dt-ui/react';
+import { Icon } from '@dt-ui/react-icon';
 
-const { activeTab, handleChange } = useTabs('first');
+const { activeTab, handleChange } = useTabs(0);
 
 return (
   <>
-    <Tabs activeTab={activeTab}>
-      <Tabs.Item index='first' handleChange={handleChange}>
-        Tab 1
-      </Tabs.Item>
-      <Tabs.Item index='second' handleChange={handleChange}>
-        Tab 2
-      </Tabs.Item>
-      <Tabs.Item index='third' handleChange={handleChange} disabled={true}>
-        Tab 3
-      </Tabs.Item>
+    <Tabs activeTab={activeTab} handleChange={handleChange}>
+      <Tabs.Item icon={<Icon code='menu' />} label='Tab 1' />
+      <Tabs.Item label='Tab 2' />
+      <Tabs.Item label='Tab 3' isDisabled />
     </Tabs>
   </>
 );
@@ -31,24 +26,23 @@ return (
 
 ### Tabs
 
-| Property     | Type                  | Default | Description                     |
-| ------------ | --------------------- | ------- | ------------------------------- |
-| `children`   | `ReactNode`           | -       | Child components to be rendered |
-| `dataTestId` | `string`              | -       | Customizable test identifier    |
-| `style`      | `React.CSSProperties` | -       | Styles to be used in the Tabs   |
-| `activeTab`  | `string`              | -       | Represents the active tab       |
-| `variant`    | `book` / `boxed`      | -       | Defines type of tab             |
+| Property       | Type                    | Default   | Description                               |
+| -------------- | ----------------------- | --------- | ----------------------------------------- |
+| `children`     | `ReactNode`             | -         | Child components to be rendered           |
+| `dataTestId`   | `string`                | `tabs`    | Customizable test identifier              |
+| `style`        | `React.CSSProperties`   | -         | Styles to be used in the Tabs             |
+| `activeTab`    | `number`                | -         | Represents the active tab                 |
+| `variant`      | `default` / `contained` | `default` | Defines type of tab                       |
+| `handleChange` | `function`              | -         | When triggered, it changes the active tab |
 
 ### Tabs.Item
 
-| Property | Type | Default | Description |
-| -------- | ---- | ------- | ----------- |
-
-| `children` | `ReactNode` | - | Child components to be rendered |
-| `dataTestId` | `string` | - | Customizable test identifier |
-| `isDisabled` | `string` | - | Determines the disabled state of the tab |
-| `handleChange` | `function` | - | When clicked, this tab represents the active one |
-| `index` | `string` | - | The tab identifier |
+| Property     | Type        | Default | Description                              |
+| ------------ | ----------- | ------- | ---------------------------------------- |
+| `label`      | `string`    | -       | Defines the tab label                    |
+| `icon`       | `ReactNode` | -       | Defines the tab icon                     |
+| `dataTestId` | `string`    | -       | Customizable test identifier             |
+| `isDisabled` | `string`    | -       | Determines the disabled state of the tab |
 
 ## Stack
 

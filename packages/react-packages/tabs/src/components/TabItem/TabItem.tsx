@@ -1,25 +1,28 @@
 import { BaseProps } from '@dt-ui/react-core';
-import { useRef } from 'react';
+import { ReactNode, useRef } from 'react';
 
 import { Variant } from '../../types';
 
 import { TabItemStyled } from './TabItem.styled';
 
 export interface TabItemProps extends BaseProps {
-  activeTab?: string;
+  activeTab?: number;
   variant?: Variant;
-  index: string;
-  handleChange: (value: string) => void;
+  index?: number;
   isDisabled?: boolean;
+  label: string;
+  icon?: ReactNode;
+  handleChange?: (value: number) => void;
 }
 
 export const TabItem = ({
   activeTab,
-  children,
   dataTestId,
   isDisabled,
   index,
-  variant = 'boxed',
+  variant,
+  label,
+  icon,
   handleChange,
 }: TabItemProps) => {
   const ref = useRef<HTMLButtonElement>(null);
@@ -48,7 +51,7 @@ export const TabItem = ({
       });
     }
 
-    handleChange(index);
+    handleChange!(index!);
   };
 
   return (
@@ -60,9 +63,10 @@ export const TabItem = ({
       ref={ref}
       role='tab'
       tabIndex={activeTab === index ? 0 : -1}
-      variant={variant}
+      variant={variant!}
     >
-      {children}
+      {icon}
+      {label}
     </TabItemStyled>
   );
 };

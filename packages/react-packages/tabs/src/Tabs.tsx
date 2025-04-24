@@ -19,16 +19,18 @@ const SCROLL_MOVEMENT = 120;
 const SCROLL_OFFSET = 0.5;
 
 export interface TabsProps extends BaseProps {
-  activeTab: string;
+  activeTab: number;
   variant?: Variant;
+  handleChange: (value: number) => void;
 }
 
 export const Tabs = ({
   children,
-  dataTestId,
   style,
   activeTab,
-  variant = 'boxed',
+  dataTestId = 'tabs',
+  variant = 'default',
+  handleChange,
 }: TabsProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [isLeftSideOverflowing, setIsLeftSideOverflowing] = useState(false);
@@ -36,17 +38,19 @@ export const Tabs = ({
 
   const clonedChildren = useMemo(
     () =>
-      Children.map(children as ReactElement<TabItemProps>, (child) => {
+      Children.map(children as ReactElement<TabItemProps>, (child, index) => {
         return (
           child &&
           cloneElement(child, {
             ...child.props,
             activeTab,
             variant,
+            index,
+            handleChange,
           })
         );
       }),
-    [children, activeTab, variant]
+    [children, activeTab, variant, handleChange]
   );
 
   const handleScroll = (scrollOffset: number) => {
@@ -84,11 +88,13 @@ export const Tabs = ({
         dataTestId='left-arrow'
         onClick={() => handleScroll(-SCROLL_MOVEMENT)}
         style={{
-          visibility: isLeftSideOverflowing ? 'visible' : 'hidden',
+          ...(!isLeftSideOverflowing && {
+            display: 'none',
+          }),
         }}
       />
       <TabsStyled
-        data-testid={dataTestId ? dataTestId : 'tabs'}
+        data-testid={dataTestId}
         ref={ref}
         role='tablist'
         style={style}
@@ -100,7 +106,9 @@ export const Tabs = ({
         dataTestId='right-arrow'
         onClick={() => handleScroll(SCROLL_MOVEMENT)}
         style={{
-          visibility: isRightSideOverflowing ? 'visible' : 'hidden',
+          ...(!isRightSideOverflowing && {
+            display: 'none',
+          }),
         }}
       />
     </Box>
