@@ -14,7 +14,7 @@ export const IconButtonStyled = styled.button<IconButtonStyledProps>`
     background-color: transparent;
     color: ${theme.palette.content.default};
 
-    &:hover {
+    &:hover > i {
       color: ${
         color === 'default'
           ? theme.palette.content.dark
