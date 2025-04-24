@@ -25,7 +25,7 @@ export const ButtonStyled = styled.button<ButtonStyledProps>`
   ${({ theme, variant, color, size }) => `
     gap: ${theme.spacing['4xs']};
     border-radius: ${theme.shape.button}; 
-    ${buttonSizeStyles(size, theme)}
+    ${buttonSizeStyles(size, theme, variant === 'outlined')};
     ${buttonVariantStyles(variant, theme, color)}
 
     &:focus-visible {

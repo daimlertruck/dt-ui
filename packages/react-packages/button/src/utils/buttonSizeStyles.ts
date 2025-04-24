@@ -2,18 +2,28 @@ import { Theme } from '@dt-ui/react-core';
 
 import { ButtonSize } from '../constants';
 
-export const buttonSizeStyles = (size: ButtonSize, theme: Theme) =>
+export const buttonSizeStyles = (
+  size: ButtonSize,
+  theme: Theme,
+  isOutline: boolean
+) =>
   ({
     large: `
       ${theme.fontStyles.button1}
-      padding: ${theme.spacing['2xs']} ${theme.spacing.s};
+      padding: ${
+        isOutline ? `calc(${theme.spacing['2xs']} - 2px)` : theme.spacing['2xs']
+      }  ${theme.spacing.s};
     `,
     medium: `
       ${theme.fontStyles.button2}
-      padding: ${theme.spacing['3xs']} ${theme.spacing.xs};
+      padding: ${
+        isOutline ? `calc(${theme.spacing['3xs']} - 2px)` : theme.spacing['3xs']
+      } ${theme.spacing.xs};
     `,
     small: `
       ${theme.fontStyles.button3}
-      padding: ${theme.spacing['4xs']} ${theme.spacing['2xs']};
+      padding: ${
+        isOutline ? `calc(${theme.spacing['4xs']} - 2px)` : theme.spacing['4xs']
+      } ${theme.spacing['2xs']};
     `,
   }[size]);

@@ -29,7 +29,7 @@ exports[`<Button /> component renders button html element with the correct title
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  border-color: #000000;
+  border: 0;
   color: #FFFFFF;
   background-color: #000000;
 }
@@ -37,14 +37,12 @@ exports[`<Button /> component renders button html element with the correct title
 .emotion-0:hover {
   color: #FFFFFF;
   background-color: #454545;
-  border-color: #454545;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
   color: #FFFFFF;
   background-color: #DEDEDE;
-  border-color: #DEDEDE;
 }
 
 .emotion-0:focus-visible {
@@ -130,7 +128,7 @@ exports[`<Button /> component when loading is true renders a spinner dark theme 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  padding: 12px 24px;
+  padding: calc(12px - 2px) 24px;
   color: #000000;
   border-color: #000000;
   background-color: transparent;
@@ -255,7 +253,7 @@ exports[`<Button /> component when loading is true renders a spinner light theme
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  border-color: #000000;
+  border: 0;
   color: #FFFFFF;
   background-color: #000000;
 }
@@ -263,14 +261,12 @@ exports[`<Button /> component when loading is true renders a spinner light theme
 .emotion-0:hover {
   color: #FFFFFF;
   background-color: #454545;
-  border-color: #454545;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
   color: #FFFFFF;
   background-color: #DEDEDE;
-  border-color: #DEDEDE;
 }
 
 .emotion-0:focus-visible {

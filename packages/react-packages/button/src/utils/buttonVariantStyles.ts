@@ -100,17 +100,15 @@ export const buttonVariantStyles = (
       solid: `
         color: ${theme.palette.content.dark};
         background-color: ${theme.palette.surface.contrast};
-        border-color: ${theme.palette.surface.contrast};
+        border: 0;
 
         &:hover {
           background-color: ${theme.palette.secondary.light};
-          border-color: ${theme.palette.secondary.light};
         }
 
         &:disabled {
           cursor: not-allowed;
           color: ${theme.palette.secondary.medium};
-          border-color: ${theme.palette.surface.contrast};
           background-color: ${theme.palette.surface.contrast};
         }
       `,
@@ -154,21 +152,19 @@ export const buttonVariantStyles = (
 
     return {
       solid: `
-        border-color: ${theme.palette[color].default};
+        border: 0;
         color: ${theme.palette.content.contrast};
         background-color: ${theme.palette[color].default};
         
         &:hover {
           color: ${theme.palette.content.contrast};
           background-color: ${theme.palette[color][hoverShade]};
-          border-color: ${theme.palette[color][hoverShade]};
         }
 
         &:disabled {
           cursor: not-allowed;
           color: ${theme.palette.content.contrast};
           background-color: ${theme.palette[color][disabledShade]};
-          border-color: ${theme.palette[color][disabledShade]};
         }
     `,
       outlined: getOutlinedButtonStyles(theme)[color],

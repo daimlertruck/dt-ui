@@ -104,7 +104,7 @@ exports[`<Link /> component Should render an anchor element with button styles 1
   margin: 0;
   text-transform: none;
   padding: 12px 24px;
-  border-color: #000000;
+  border: 0;
   color: #FFFFFF;
   background-color: #000000;
 }
@@ -112,14 +112,12 @@ exports[`<Link /> component Should render an anchor element with button styles 1
 .emotion-0:hover {
   color: #FFFFFF;
   background-color: #454545;
-  border-color: #454545;
 }
 
 .emotion-0:disabled {
   cursor: not-allowed;
   color: #FFFFFF;
   background-color: #DEDEDE;
-  border-color: #DEDEDE;
 }
 
 .emotion-0:focus-visible {
