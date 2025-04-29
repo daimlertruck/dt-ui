@@ -1,5 +1,52 @@
 # @dt-ui/react
 
+## 0.1.0-beta.174
+
+### Minor Changes
+
+- feat: improve Tabs component and apply new colors
+
+### Patch Changes
+
+- fix: change content.light contextual color
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.35
+  - @dt-ui/react-date-picker@0.1.0-beta.20
+  - @dt-ui/react-form@0.1.0-beta.19
+  - @dt-ui/react-label-field@0.1.0-beta.31
+  - @dt-ui/react-radio@0.1.0-beta.19
+  - @dt-ui/react-segmented-control@0.1.0-beta.19
+  - @dt-ui/react-select@0.1.0-beta.32
+  - @dt-ui/react-stepper@0.1.0-beta.22
+  - @dt-ui/react-text-area@0.1.0-beta.15
+  - @dt-ui/react-text-field@0.1.0-beta.37
+  - @dt-ui/react-toggle@0.1.0-beta.13
+  - @dt-ui/react-accordion@0.1.0-beta.32
+  - @dt-ui/react-avatar@0.1.0-beta.42
+  - @dt-ui/react-backdrop@0.1.0-beta.37
+  - @dt-ui/react-modal@0.1.0-beta.24
+  - @dt-ui/react-breadcrumb@0.1.0-beta.40
+  - @dt-ui/react-button@0.1.0-beta.31
+  - @dt-ui/react-empty-state@0.1.0-beta.51
+  - @dt-ui/react-toast@0.1.0-beta.48
+  - @dt-ui/react-card@0.1.0-beta.18
+  - @dt-ui/react-checkbox@0.1.0-beta.31
+  - @dt-ui/react-divider@0.1.0-beta.34
+  - @dt-ui/react-drawer@0.1.0-beta.39
+  - @dt-ui/react-dropdown@0.1.0-beta.19
+  - @dt-ui/react-icon@0.1.0-beta.33
+  - @dt-ui/react-pagination@0.1.0-beta.12
+  - @dt-ui/react-progress-bar@0.1.0-beta.26
+  - @dt-ui/react-tabs@0.1.0-beta.26
+  - @dt-ui/react-icon-button@0.1.0-beta.2
+  - @dt-ui/react-message@0.1.0-beta.39
+  - @dt-ui/react-spinner@0.1.0-beta.37
+  - @dt-ui/react-table@0.1.0-beta.30
+  - @dt-ui/react-tag@0.1.0-beta.35
+  - @dt-ui/react-tooltip@0.1.0-beta.41
+  - @dt-ui/react-typography@0.1.0-beta.26
+
 ## 0.1.0-beta.173
 
 ### Minor Changes

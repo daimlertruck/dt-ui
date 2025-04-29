@@ -1,5 +1,18 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.24
+
+### Patch Changes
+
+- fix: change content.light contextual color
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.35
+  - @dt-ui/react-backdrop@0.1.0-beta.37
+  - @dt-ui/react-icon@0.1.0-beta.33
+  - @dt-ui/react-icon-button@0.1.0-beta.2
+  - @dt-ui/react-spinner@0.1.0-beta.37
+  - @dt-ui/react-typography@0.1.0-beta.26
+
 ## 0.1.0-beta.23
 
 ### Minor Changes

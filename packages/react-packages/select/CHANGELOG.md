@@ -1,5 +1,18 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.32
+
+### Patch Changes
+
+- fix: change content.light contextual color
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.35
+  - @dt-ui/react-label-field@0.1.0-beta.31
+  - @dt-ui/react-checkbox@0.1.0-beta.31
+  - @dt-ui/react-icon@0.1.0-beta.33
+  - @dt-ui/react-tooltip@0.1.0-beta.41
+  - @dt-ui/react-typography@0.1.0-beta.26
+
 ## 0.1.0-beta.31
 
 ### Minor Changes

@@ -1,5 +1,14 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.48
+
+### Patch Changes
+
+- fix: change content.light contextual color
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.35
+  - @dt-ui/react-button@0.1.0-beta.31
+
 ## 0.1.0-beta.47
 
 ### Patch Changes

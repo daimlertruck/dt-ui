@@ -1,5 +1,15 @@
 # @dt-ui/react-segmented-control
 
+## 0.1.0-beta.19
+
+### Patch Changes
+
+- fix: change content.light contextual color
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.35
+  - @dt-ui/react-icon@0.1.0-beta.33
+  - @dt-ui/react-tooltip@0.1.0-beta.41
+
 ## 0.1.0-beta.18
 
 ### Minor Changes

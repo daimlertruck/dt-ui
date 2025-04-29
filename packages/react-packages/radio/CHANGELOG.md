@@ -1,5 +1,13 @@
 # @dt-ui/react-radio
 
+## 0.1.0-beta.19
+
+### Patch Changes
+
+- fix: change content.light contextual color
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.35
+
 ## 0.1.0-beta.18
 
 ### Patch Changes

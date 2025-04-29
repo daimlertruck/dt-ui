@@ -1,5 +1,13 @@
 # @dt-ui/react-tag
 
+## 0.1.0-beta.35
+
+### Patch Changes
+
+- fix: change content.light contextual color
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.35
+
 ## 0.1.0-beta.34
 
 ### Patch Changes

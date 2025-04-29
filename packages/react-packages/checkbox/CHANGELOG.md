@@ -1,5 +1,14 @@
 # @dt-ui/react-checkbox
 
+## 0.1.0-beta.31
+
+### Patch Changes
+
+- fix: change content.light contextual color
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.35
+  - @dt-ui/react-icon@0.1.0-beta.33
+
 ## 0.1.0-beta.30
 
 ### Minor Changes

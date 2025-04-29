@@ -1,5 +1,18 @@
 # @dt-ui/react-tabs
 
+## 0.1.0-beta.26
+
+### Minor Changes
+
+- feat: improve Tabs component and apply new colors
+
+### Patch Changes
+
+- fix: change content.light contextual color
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.35
+  - @dt-ui/react-icon@0.1.0-beta.33
+
 ## 0.1.0-beta.25
 
 ### Minor Changes

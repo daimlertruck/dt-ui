@@ -1,5 +1,15 @@
 # @dt-ui/react-pagination
 
+## 0.1.0-beta.12
+
+### Patch Changes
+
+- fix: change content.light contextual color
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.35
+  - @dt-ui/react-icon@0.1.0-beta.33
+  - @dt-ui/react-typography@0.1.0-beta.26
+
 ## 0.1.0-beta.11
 
 ### Minor Changes
