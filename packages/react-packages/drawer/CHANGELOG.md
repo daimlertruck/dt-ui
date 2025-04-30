@@ -1,5 +1,11 @@
 # @dt-ui/react-drawer
 
+## 0.1.0-beta.40
+
+### Patch Changes
+
+- fix: circular dependencies
+
 ## 0.1.0-beta.39
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @dt-ui/react-tooltip
 
+## 0.1.0-beta.42
+
+### Patch Changes
+
+- fix: circular dependencies
+
 ## 0.1.0-beta.41
 
 ### Patch Changes

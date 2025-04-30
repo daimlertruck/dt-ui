@@ -1,5 +1,19 @@
 # @dt-ui/react
 
+## 0.1.0-beta.176
+
+### Patch Changes
+
+- fix: circular dependencies
+- Updated dependencies
+  - @dt-ui/react-drawer@0.1.0-beta.40
+  - @dt-ui/react-tooltip@0.1.0-beta.42
+  - @dt-ui/react-avatar@0.1.0-beta.43
+  - @dt-ui/react-breadcrumb@0.1.0-beta.41
+  - @dt-ui/react-form@0.1.0-beta.20
+  - @dt-ui/react-segmented-control@0.1.0-beta.20
+  - @dt-ui/react-select@0.1.0-beta.33
+
 ## 0.1.0-beta.175
 
 ### Patch Changes

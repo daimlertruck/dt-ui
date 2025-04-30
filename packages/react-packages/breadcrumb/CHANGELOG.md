@@ -1,5 +1,13 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.41
+
+### Patch Changes
+
+- fix: circular dependencies
+- Updated dependencies
+  - @dt-ui/react-tooltip@0.1.0-beta.42
+
 ## 0.1.0-beta.40
 
 ### Patch Changes

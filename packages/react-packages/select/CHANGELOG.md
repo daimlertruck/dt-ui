@@ -1,5 +1,13 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.33
+
+### Patch Changes
+
+- fix: circular dependencies
+- Updated dependencies
+  - @dt-ui/react-tooltip@0.1.0-beta.42
+
 ## 0.1.0-beta.32
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @dt-ui/react-form
 
+## 0.1.0-beta.20
+
+### Patch Changes
+
+- fix: circular dependencies
+- Updated dependencies
+  - @dt-ui/react-tooltip@0.1.0-beta.42
+
 ## 0.1.0-beta.19
 
 ### Patch Changes
