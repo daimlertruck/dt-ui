@@ -2,14 +2,14 @@
 
 exports[`<Link /> component Should render a disabled html link element 1`] = `
 .emotion-0 {
-  color: #00677F;
+  color: #000000;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   opacity: 0.4;
   pointer-events: none;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -29,12 +29,12 @@ exports[`<Link /> component Should render a disabled html link element 1`] = `
 
 exports[`<Link /> component Should render a html link element with the correct title 1`] = `
 .emotion-0 {
-  color: #00677F;
+  color: #000000;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -53,12 +53,12 @@ exports[`<Link /> component Should render a html link element with the correct t
 
 exports[`<Link /> component Should render a html underlined link element with the correct title 1`] = `
 .emotion-0 {
-  color: #00677F;
+  color: #000000;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21.44px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

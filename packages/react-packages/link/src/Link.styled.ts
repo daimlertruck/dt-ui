@@ -1,7 +1,7 @@
 import { ButtonStyled } from '@dt-ui/react-button';
 import styled from '@emotion/styled';
 
-import { LinkTextSize } from './constants';
+import { LinkTextSize } from '.';
 
 interface LinkStyledProps {
   isUnderline: boolean;
@@ -11,7 +11,7 @@ interface LinkStyledProps {
 
 export const LinkStyled = styled.a<LinkStyledProps>`
   ${({ theme, disabled, isUnderline, textSize }) => `
-    color: ${theme.palette.accent.default};
+    color: ${theme.palette.primary.default};
     text-decoration: ${isUnderline ? 'underline' : 'none'};
 
     ${
@@ -26,21 +26,21 @@ export const LinkStyled = styled.a<LinkStyledProps>`
     ${
       textSize == LinkTextSize.Large &&
       `
-        ${theme.fontStyles.p}
+        ${theme.fontStyles.body1Bold}
       `
     };
 
     ${
       textSize == LinkTextSize.Medium &&
       `
-        ${theme.fontStyles.pSmall}
+        ${theme.fontStyles.body2Bold}
       `
     };
 
     ${
       textSize == LinkTextSize.Small &&
       `
-        ${theme.fontStyles.pXXSmall}
+        ${theme.fontStyles.body3Bold}
       `
     };
   `}

@@ -3,9 +3,6 @@ import { Theme as CustomTheme } from '@dt-ui/react-core';
 // Core styles
 export * from './core';
 
-// Components
-export * from './components/link';
-
 //independent component packages
 export * from '@dt-ui/react-accordion';
 export * from '@dt-ui/react-avatar';
@@ -50,6 +47,7 @@ export * from '@dt-ui/react-text-area';
 export * from '@dt-ui/react-form';
 export * from '@dt-ui/react-pagination';
 export * from '@dt-ui/react-icon-button';
+export * from '@dt-ui/react-link';
 
 declare module '@emotion/react' {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface

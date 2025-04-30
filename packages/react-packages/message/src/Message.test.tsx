@@ -1,7 +1,6 @@
 import { withProviders, theme } from '@dt-ui/react-core';
+import { Link } from '@dt-ui/react-link';
 import { fireEvent, render } from '@testing-library/react';
-
-import { Link } from '../../../dt-ui-react/components/link';
 
 import { Message } from './Message';
 import { MessageType, OMessageType } from './types';

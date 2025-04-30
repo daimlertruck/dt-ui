@@ -1,10 +1,9 @@
-import { ButtonSize } from '@dt-ui/react-button';
 import { BaseProps } from '@dt-ui/react-core';
 import { forwardRef } from 'react';
 
-import { LinkTextSize } from './constants';
-import { LinkType } from './constants/types';
 import { ButtonLinkStyled, LinkStyled } from './Link.styled';
+
+import { LinkTextSize, LinkType } from '.';
 
 export interface LinkProps
   extends BaseProps,
@@ -37,7 +36,7 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
           <ButtonLinkStyled
             data-testid={dataTestId ?? 'link-button'}
             ref={ref}
-            size={textSize as ButtonSize}
+            size={textSize as LinkTextSize}
             style={style}
             variant='solid'
             {...rest}

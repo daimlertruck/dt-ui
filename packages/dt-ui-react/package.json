@@ -16,12 +16,10 @@
     "build": "tsup",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "dev": "tsup --watch",
-    "lint": "eslint --cache .",
-    "test": "jest",
-    "test:report": "open ./jest-coverage/lcov-report/index.html",
-    "test:update:snapshot": "jest -u"
+    "lint": "eslint --cache ."
   },
   "dependencies": {
+    "@dt-ui/react-link": "0.1.0-beta.0",
     "@dt-ui/react-accordion": "0.1.0-beta.32",
     "@dt-ui/react-avatar": "0.1.0-beta.43",
     "@dt-ui/react-backdrop": "0.1.0-beta.37",

@@ -1,6 +1,5 @@
+import { Link, LinkTextSize } from '@dt-ui/react-link';
 import { Meta, StoryObj } from '@storybook/react';
-
-import { Link, LinkTextSize } from '../../../dt-ui-react/components/link';
 
 import { Message, MessageProps } from './Message';
 import { OMessageType } from './types';
