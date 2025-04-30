@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.175
+
+### Patch Changes
+
+- fix: text overflow on textarea label
+- Updated dependencies
+  - @dt-ui/react-text-area@0.1.0-beta.16
+
 ## 0.1.0-beta.174
 
 ### Minor Changes
