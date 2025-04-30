@@ -186,7 +186,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
       class="emotion-2 emotion-3"
       data-testid="label-field"
       disabled=""
-      for="My-disabled-input"
+      for="my-disabled-input"
     >
       My disabled input
     </label>
@@ -198,8 +198,8 @@ exports[`<TextField /> component renders disabled input 1`] = `
         data-error="false"
         data-testid="input-field"
         disabled=""
-        id="My-disabled-input"
-        name="My-disabled-input"
+        id="my-disabled-input"
+        name="my-disabled-input"
         type="text"
         value=""
       />
@@ -433,7 +433,7 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
     <label
       class="emotion-2 emotion-3"
       data-testid="label-field"
-      for="My-input"
+      for="my-input"
     >
       My input
     </label>
@@ -456,8 +456,8 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
         class="emotion-10 emotion-11"
         data-error="false"
         data-testid="input-field"
-        id="My-input"
-        name="My-input"
+        id="my-input"
+        name="my-input"
         type="text"
         value=""
       />
@@ -663,7 +663,7 @@ exports[`<TextField /> component renders input with light background fill 1`] = 
     <label
       class="emotion-2 emotion-3"
       data-testid="label-field"
-      for="My-input"
+      for="my-input"
     >
       My input
     </label>
@@ -674,8 +674,8 @@ exports[`<TextField /> component renders input with light background fill 1`] = 
         class="emotion-6 emotion-7"
         data-error="false"
         data-testid="input-field"
-        id="My-input"
-        name="My-input"
+        id="my-input"
+        name="my-input"
         type="text"
         value=""
       />
@@ -869,7 +869,7 @@ exports[`<TextField /> component renders input with variant baseLine 1`] = `
     <label
       class="emotion-2 emotion-3"
       data-testid="label-field"
-      for="My-input"
+      for="my-input"
     >
       My input
     </label>
@@ -880,8 +880,8 @@ exports[`<TextField /> component renders input with variant baseLine 1`] = `
         class="emotion-6 emotion-7"
         data-error="false"
         data-testid="input-field"
-        id="My-input"
-        name="My-input"
+        id="my-input"
+        name="my-input"
         type="text"
         value=""
       />
@@ -1059,7 +1059,7 @@ exports[`<TextField /> component renders input without floating label 1`] = `
     <label
       class="emotion-2 emotion-3"
       data-testid="label-field"
-      for="My-input"
+      for="my-input"
     >
       My input
     </label>
@@ -1070,8 +1070,8 @@ exports[`<TextField /> component renders input without floating label 1`] = `
         class="emotion-6 emotion-7"
         data-error="false"
         data-testid="input-field"
-        id="My-input"
-        name="My-input"
+        id="my-input"
+        name="my-input"
         type="text"
         value=""
       />
@@ -1279,7 +1279,7 @@ exports[`<TextField /> component should render the TextField with error styles a
     <label
       class="emotion-2 emotion-3"
       data-testid="label-field"
-      for="My-Input-with-Error-Message"
+      for="my-input-with-error-message"
     >
       My Input with Error Message
     </label>
@@ -1290,8 +1290,8 @@ exports[`<TextField /> component should render the TextField with error styles a
         class="emotion-6 emotion-7"
         data-error="true"
         data-testid="input-field"
-        id="My-Input-with-Error-Message"
-        name="My-Input-with-Error-Message"
+        id="my-input-with-error-message"
+        name="my-input-with-error-message"
         type="text"
         value="Initial Value"
       />
@@ -1510,7 +1510,7 @@ exports[`<TextField /> component should render the TextField with info message 1
     <label
       class="emotion-2 emotion-3"
       data-testid="label-field"
-      for="My-Input-with-info-message"
+      for="my-input-with-info-message"
     >
       My Input with info message
     </label>
@@ -1521,8 +1521,8 @@ exports[`<TextField /> component should render the TextField with info message 1
         class="emotion-6 emotion-7"
         data-error="false"
         data-testid="input-field"
-        id="My-Input-with-info-message"
-        name="My-Input-with-info-message"
+        id="my-input-with-info-message"
+        name="my-input-with-info-message"
         type="text"
         value=""
       />

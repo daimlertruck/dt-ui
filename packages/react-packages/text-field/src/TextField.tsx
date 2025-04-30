@@ -52,6 +52,7 @@ export const TextField = ({
   label,
   isFloatingLabel = true,
   name,
+  id,
   required,
   requiredMessage,
   style,
@@ -70,7 +71,7 @@ export const TextField = ({
   const [activeInput, setActiveInput] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [hasRequiredError, setHasRequiredError] = useState(false);
-  const id = label.replaceAll(' ', '-');
+  const textFieldId = id ?? label.replaceAll(' ', '-').toLowerCase();
 
   useEffect(() => {
     // Check if there's an initial value coming from props
@@ -162,7 +163,7 @@ export const TextField = ({
       {!isActiveInput || !isFloatingLabel || !isSearchType ? (
         <LabelField
           hasError={showError}
-          htmlFor={id}
+          htmlFor={textFieldId}
           isActive={isActiveInput || type === 'date'}
           isDisabled={disabled}
           isFloating={isFloatingLabel}
@@ -194,10 +195,10 @@ export const TextField = ({
           data-error={showError}
           data-testid='input-field'
           disabled={disabled}
-          id={id}
+          id={textFieldId}
           isFloatingLabel={isFloatingLabel}
           isSearchType={isSearchType}
-          name={name ?? id}
+          name={name ?? textFieldId}
           ref={inputRef}
           type={type}
           value={inputValue}

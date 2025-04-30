@@ -37,6 +37,24 @@ describe('<TextField /> component', () => {
     expect(hasInputValue(input, 'Initial Value')).toBe(true);
   });
 
+  it('renders input with a custom id', () => {
+    render(
+      <ProvidedTextField
+        id='my-id'
+        initialValue='Initial Value'
+        label='My Input with prefilled value'
+      />
+    );
+
+    expect(screen.getByTestId('input-field')).toHaveAttribute('id', 'my-id');
+  });
+
+  it('renders input with a default id', () => {
+    render(<ProvidedTextField initialValue='Initial Value' label='My Input' />);
+
+    expect(screen.getByTestId('input-field')).toHaveAttribute('id', 'my-input');
+  });
+
   it('fills input correctly with new value on change Event', () => {
     const { input } = renderInput();
     fireEvent.change(input, { target: { value: 'New input value' } });

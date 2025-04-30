@@ -94,6 +94,7 @@ export const Default: StoryObj<TextFieldPropsWithExtrasProp> = {
     type: TextFieldTypeOptions.Text,
     name: 'field-name',
     label: 'My label',
+    id: '',
     message: 'Additional info',
     initialValue: '',
     maxLength: undefined,
