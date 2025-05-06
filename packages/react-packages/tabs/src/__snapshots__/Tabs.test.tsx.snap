@@ -48,6 +48,7 @@ exports[`<Tabs /> component should match the snapshot by displaying contained va
   -ms-flex-direction: row;
   flex-direction: row;
   overflow: hidden;
+  width: 100%;
 }
 
 .emotion-6 {
@@ -264,6 +265,8 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
   -ms-flex-direction: row;
   flex-direction: row;
   overflow: hidden;
+  width: 100%;
+  margin-bottom: -1px;
 }
 
 .emotion-6 {
@@ -308,8 +311,7 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
   margin: 0;
   text-transform: none;
   background-color: transparent;
-  border-bottom: 1px solid #DEDEDE;
-  color: #00677F;
+  false color: #00677F;
   padding: 12px 32px;
   cursor: pointer;
   white-space: nowrap;
@@ -356,8 +358,7 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
   margin: 0;
   text-transform: none;
   background-color: transparent;
-  border-bottom: 1px solid #DEDEDE;
-  color: #A3A3A3;
+  false color: #A3A3A3;
   padding: 12px 32px;
   cursor: not-allowed;
   white-space: nowrap;
@@ -367,7 +368,7 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
 <div>
   <div
     class="emotion-0 emotion-1"
-    style="flex-direction: row;"
+    style="flex-direction: row; border-bottom: 1px solid #DEDEDE;"
   >
     <i
       class="emotion-2 emotion-3"

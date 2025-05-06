@@ -1,6 +1,7 @@
 import { Box } from '@dt-ui/react-box';
 import { BaseProps, useDebounceResize } from '@dt-ui/react-core';
 import { Icon } from '@dt-ui/react-icon';
+import { useTheme } from '@emotion/react';
 import {
   Children,
   cloneElement,
@@ -35,6 +36,8 @@ export const Tabs = ({
   const ref = useRef<HTMLDivElement>(null);
   const [isLeftSideOverflowing, setIsLeftSideOverflowing] = useState(false);
   const [isRightSideOverflowing, setIsRightSideOverflowing] = useState(false);
+
+  const theme = useTheme();
 
   const clonedChildren = useMemo(
     () =>
@@ -82,7 +85,14 @@ export const Tabs = ({
   useDebounceResize(() => calculateIfIsOverflowing());
 
   return (
-    <Box style={{ flexDirection: 'row' }}>
+    <Box
+      style={{
+        flexDirection: 'row',
+        ...(variant === 'default' && {
+          borderBottom: `1px solid ${theme.palette.border.default}`,
+        }),
+      }}
+    >
       <Icon
         code='keyboard_arrow_left'
         dataTestId='left-arrow'
@@ -98,6 +108,7 @@ export const Tabs = ({
         ref={ref}
         role='tablist'
         style={style}
+        variant={variant}
       >
         {clonedChildren}
       </TabsStyled>

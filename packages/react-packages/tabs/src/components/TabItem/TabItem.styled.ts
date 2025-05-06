@@ -13,18 +13,16 @@ export const TabItemStyled = styled.button<TabItemStyledProps>`
   align-items: center;
 
   ${({ theme, active, disabled, variant }) => `
-
     ${active ? theme.fontStyles.body2Bold : theme.fontStyles.body2}
-
     ${
       variant === 'default'
         ? `
           background-color: transparent;
-          border-bottom: ${
-            active
-              ? `2px solid ${theme.palette.accent.default}`
-              : `1px solid ${theme.palette.border.default}`
-          };`
+          ${
+            active &&
+            `border-bottom: 2px solid ${theme.palette.accent.default};`
+          }
+          `
         : `
           background-color: ${
             active ? theme.palette.surface.contrast : 'transparent'
