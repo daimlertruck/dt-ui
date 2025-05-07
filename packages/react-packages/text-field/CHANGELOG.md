@@ -1,5 +1,11 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.38
+
+### Patch Changes
+
+- fix: text field custom id
+
 ## 0.1.0-beta.37
 
 ### Patch Changes

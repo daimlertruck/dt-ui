@@ -1,5 +1,14 @@
 # @dt-ui/react
 
+## 0.1.0-beta.177
+
+### Patch Changes
+
+- fix: text field custom id
+- Updated dependencies
+  - @dt-ui/react-text-field@0.1.0-beta.38
+  - @dt-ui/react-date-picker@0.1.0-beta.21
+
 ## 0.1.0-beta.176
 
 ### Patch Changes
