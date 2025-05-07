@@ -19,8 +19,9 @@ export const TabItemStyled = styled.button<TabItemStyledProps>`
         ? `
           background-color: transparent;
           ${
-            active &&
-            `border-bottom: 2px solid ${theme.palette.accent.default};`
+            active
+              ? `border-bottom: 2px solid ${theme.palette.accent.default};`
+              : ''
           }
           `
         : `

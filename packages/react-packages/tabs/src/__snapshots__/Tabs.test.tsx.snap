@@ -311,7 +311,7 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
   margin: 0;
   text-transform: none;
   background-color: transparent;
-  false color: #00677F;
+  color: #00677F;
   padding: 12px 32px;
   cursor: pointer;
   white-space: nowrap;
@@ -358,7 +358,7 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
   margin: 0;
   text-transform: none;
   background-color: transparent;
-  false color: #A3A3A3;
+  color: #A3A3A3;
   padding: 12px 32px;
   cursor: not-allowed;
   white-space: nowrap;
