@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.179
+
+### Patch Changes
+
+- fix: change tabs styled border logic
+- Updated dependencies
+  - @dt-ui/react-tabs@0.1.0-beta.28
+
 ## 0.1.0-beta.178
 
 ### Minor Changes
