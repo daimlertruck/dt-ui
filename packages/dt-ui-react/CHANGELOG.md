@@ -1,5 +1,16 @@
 # @dt-ui/react
 
+## 0.1.0-beta.178
+
+### Minor Changes
+
+- feat: add border bottom to tab default
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-tabs@0.1.0-beta.27
+
 ## 0.1.0-beta.177
 
 ### Patch Changes
