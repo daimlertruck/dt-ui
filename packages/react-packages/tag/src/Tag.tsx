@@ -1,5 +1,6 @@
 import { BaseProps } from '@dt-ui/react-core';
-import { forwardRef } from 'react';
+import { Tooltip, TooltipBackground } from '@dt-ui/react-tooltip';
+import { forwardRef, useEffect, useRef, useState } from 'react';
 
 import { CloseIcon } from '../../../dt-ui-react/core/assets';
 
@@ -13,8 +14,17 @@ export type TagProps = {
   size?: TagSize;
   isDisabled?: boolean;
   isClickable?: boolean;
-  onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
-  onClose?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (
+    event:
+      | React.MouseEvent<HTMLDivElement>
+      | React.KeyboardEvent<HTMLDivElement>
+  ) => void;
+  onClose?: (
+    event:
+      | React.MouseEvent<HTMLButtonElement>
+      | React.KeyboardEvent<HTMLButtonElement>
+  ) => void;
+  tooltipVariant?: TooltipBackground;
 } & BaseProps;
 
 export const Tag = forwardRef<HTMLDivElement, TagProps>(
@@ -31,6 +41,7 @@ export const Tag = forwardRef<HTMLDivElement, TagProps>(
       isDisabled = false,
       onClick,
       onClose,
+      tooltipVariant = 'opacity',
     },
     ref
   ) => {
@@ -40,7 +51,11 @@ export const Tag = forwardRef<HTMLDivElement, TagProps>(
       !isDisabled && (!!onClick || isClickable || isDismissible);
     const hasClickableStyle = !isDismissible && hasHoverStyle;
 
-    const handleClickTag = (event: React.MouseEvent<HTMLDivElement>) => {
+    const handleClickTag = (
+      event:
+        | React.MouseEvent<HTMLDivElement>
+        | React.KeyboardEvent<HTMLDivElement>
+    ) => {
       if (isDisabled || isDismissible) {
         return;
       }
@@ -48,38 +63,72 @@ export const Tag = forwardRef<HTMLDivElement, TagProps>(
       onClick?.(event);
     };
 
-    return (
-      <TagStyled
-        aria-disabled={isDisabled}
-        border={border}
-        color={color}
-        data-testid={dataTestIdName}
-        hasHover={hasHoverStyle}
-        isClickable={hasClickableStyle}
-        isDisabled={isDisabled}
-        isDismissible={isDismissible}
-        onClick={handleClickTag}
-        ref={ref}
-        size={size}
-        style={style}
-        variant={variant}
-      >
-        {children}
+    const cellRef = useRef<HTMLDivElement>(null);
+    const [isOverflow, setIsOverflow] = useState(false);
 
-        {isDismissible ? (
-          <TagButtonCloseStyled
-            aria-disabled={isDisabled}
-            color={color}
-            data-testid={`${dataTestIdName}-close-button`}
-            disabled={isDisabled}
-            hasHover={hasHoverStyle}
-            onClick={onClose}
-            variant={variant}
-          >
-            <CloseIcon height={12} width={12} />
-          </TagButtonCloseStyled>
-        ) : null}
-      </TagStyled>
+    const handleClickOnEnterKey = (
+      event: React.KeyboardEvent<HTMLDivElement>
+    ) => {
+      if (event.code === 'Enter') {
+        handleClickTag(event);
+      }
+    };
+
+    const handleCloseOnEnterKey = (
+      event: React.KeyboardEvent<HTMLButtonElement>
+    ) => {
+      if (event.code === 'Enter') {
+        onClose?.(event);
+      }
+    };
+
+    useEffect(() => {
+      if (cellRef.current) {
+        const { current } = cellRef;
+
+        setIsOverflow(current.scrollWidth > current.clientWidth);
+      }
+    }, [children]);
+
+    return (
+      <Tooltip>
+        <TagStyled
+          aria-disabled={isDisabled}
+          border={border}
+          color={color}
+          data-testid={dataTestIdName}
+          hasHover={hasHoverStyle}
+          isClickable={hasClickableStyle}
+          isDisabled={isDisabled}
+          isDismissible={isDismissible}
+          onClick={handleClickTag}
+          {...(isClickable && { onKeyDown: handleClickOnEnterKey })}
+          ref={ref}
+          size={size}
+          style={style}
+          {...(isClickable && { tabIndex: 0 })}
+          variant={variant}
+        >
+          <span ref={cellRef}>{children}</span>
+
+          {isDismissible ? (
+            <TagButtonCloseStyled
+              aria-disabled={isDisabled}
+              color={color}
+              data-testid={`${dataTestIdName}-close-button`}
+              disabled={isDisabled}
+              onClick={onClose}
+              onKeyDown={handleCloseOnEnterKey}
+              tabIndex={0}
+            >
+              <CloseIcon height={12} width={12} />
+            </TagButtonCloseStyled>
+          ) : null}
+        </TagStyled>
+        <Tooltip.Content background={tooltipVariant}>
+          {isOverflow ? children : ''}
+        </Tooltip.Content>
+      </Tooltip>
     );
   }
 );

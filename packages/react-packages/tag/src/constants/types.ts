@@ -2,12 +2,11 @@ import { ComponentSize } from '@dt-ui/react-core';
 
 export type TagColor =
   | 'primary'
-  | 'blue'
-  | 'grey'
-  | 'green'
-  | 'red'
-  | 'yellow'
-  | 'purple';
+  | 'secondary'
+  | 'informative'
+  | 'warning'
+  | 'success'
+  | 'error';
 
 export type TagVariant = 'solid' | 'outlined';
 

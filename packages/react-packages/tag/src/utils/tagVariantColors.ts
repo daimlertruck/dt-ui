@@ -22,34 +22,34 @@ interface TagVariantColorsProps {
   isDisabled: boolean;
 }
 
-const getColorWithShade = ({
-  theme,
-  color,
-  shade,
-}: Pick<TagVariantColorsProps, 'color'> & {
-  shade: '90' | 'default' | '30' | '10';
-  theme: Theme;
-}) => {
-  const { colors, palette } = theme;
+const getColors = (
+  variant: TagVariant,
+  theme: Theme,
+  isDisabled: boolean,
+  color: TagColor
+) => {
+  const resolvedColor = (
+    color === 'primary' ? 'accent' : color
+  ) as keyof typeof theme.palette;
 
-  if (color === 'primary') {
+  if (variant === 'solid') {
+    const palette = theme.palette[resolvedColor];
+
     return {
-      '90': palette.primary.dark,
-      default: palette.primary.default,
-      '30': palette.primary.medium,
-      '10': palette.primary.contrast,
-    }[shade];
+      bgColor: isDisabled ? palette.light : palette.default,
+      hoveredBgColor: palette.dark,
+    };
   }
 
-  if (shade === 'default') {
-    return colors[
-      (color === 'grey' ? 'grey_50' : color) as keyof Theme['colors']
-    ];
+  if (variant === 'outlined') {
+    const palette = theme.palette[resolvedColor];
+    return {
+      bgColor: palette.light,
+      hoveredBgColor: palette.medium,
+      borderTextColor: isDisabled ? palette.medium : palette.default,
+      hoveredBorderTextColor: palette.dark,
+    };
   }
-
-  const colorWithShade: keyof Theme['colors'] = `${color}_${shade}`;
-
-  return colors[colorWithShade];
 };
 
 export const tagVariantColors = ({
@@ -59,51 +59,29 @@ export const tagVariantColors = ({
   hasHover,
   isDisabled,
 }: TagVariantColorsProps): TagVariantColors => {
-  const colorShade90 = getColorWithShade({
-    theme,
-    color,
-    shade: '90',
-  });
-  const colorShade60 = getColorWithShade({
-    theme,
-    color,
-    shade: 'default',
-  });
-  const colorShade30 = getColorWithShade({
-    theme,
-    color,
-    shade: '30',
-  });
-  const colorShade10 = getColorWithShade({
-    theme,
-    color,
-    shade: '10',
-  });
-
-  const colorWithDisabled = isDisabled ? colorShade30 : colorShade60;
+  const colors = getColors(variant, theme, isDisabled, color);
 
   return {
     solid: {
       border: theme.spacing.none,
       color: theme.palette.content.contrast,
-      backgroundColor: colorWithDisabled,
+      backgroundColor: colors?.bgColor,
       ...(hasHover && {
         '&:hover': {
-          backgroundColor: colorShade90,
+          backgroundColor: colors?.hoveredBgColor,
           color: theme.palette.content.contrast,
         },
       }),
     },
     outlined: {
-      border: `1px solid ${colorShade60}`,
-      color: colorWithDisabled,
-      backgroundColor: colorShade10,
-      borderColor: colorWithDisabled,
+      border: `1px solid ${colors?.borderTextColor}`,
+      color: colors?.borderTextColor,
+      backgroundColor: colors?.bgColor,
       ...(hasHover && {
         '&:hover': {
-          borderColor: colorShade90,
-          backgroundColor: colorShade10,
-          color: colorShade90,
+          borderColor: colors?.hoveredBorderTextColor,
+          color: colors?.hoveredBorderTextColor,
+          backgroundColor: colors?.hoveredBgColor,
         },
       }),
     },

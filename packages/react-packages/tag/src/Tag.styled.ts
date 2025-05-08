@@ -1,9 +1,7 @@
 import styled from '@emotion/styled';
 
 import { TagBorder, TagColor, TagSize, TagVariant } from './constants';
-import { tagCloseButtonColorStyles } from './TagCloseButton.styled';
-import { tagSizeStyles } from './TagSizes.styled';
-import { tagVariantColors } from './utils/tagVariantColors';
+import { tagVariantColors, tagSizeStyles } from './utils';
 
 interface TagStyledProps {
   hasHover: boolean;
@@ -14,11 +12,6 @@ interface TagStyledProps {
   color: TagColor;
   border: TagBorder;
   size: TagSize;
-}
-
-interface TagButtonCloseStyledProps
-  extends Pick<TagStyledProps, 'hasHover' | 'variant' | 'color'> {
-  disabled: boolean;
 }
 
 export const TagStyled = styled.div<TagStyledProps>(
@@ -42,29 +35,39 @@ export const TagStyled = styled.div<TagStyledProps>(
     maxWidth: 'max-content',
     gap: theme.spacing['5xs'],
     borderRadius: theme.radius[border === 'rounded' ? 's' : 'none'],
+    width: '150px',
+
+    ['> :first-child']: {
+      whiteSpace: 'nowrap',
+      display: 'block',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+    },
 
     ...((isClickable || isDismissible) && { userSelect: 'none' }),
     ...(isClickable && { cursor: 'pointer' }),
     ...(isDisabled && { cursor: 'not-allowed' }),
+
+    ['&:focus-visible']: {
+      outline: `2px solid ${theme.palette.border.dark}`,
+      outlineOffset: '1px',
+    },
   })
 );
 
-export const TagButtonCloseStyled = styled.button<TagButtonCloseStyledProps>`
-  ${({ theme, variant, color, hasHover, disabled }) => ({
-    ...tagCloseButtonColorStyles({
-      theme,
-      variant,
-      color,
-      hasHover,
-      isDisabled: disabled,
-    }),
-
+export const TagButtonCloseStyled = styled.button`
+  ${({ theme }) => ({
+    backgroundColor: 'transparent',
+    color: 'currentColor',
     display: 'inherit',
     border: 0,
     cursor: 'pointer',
 
-    borderRadius: theme.radius['2xs'],
-
     ['&:disabled']: { cursor: 'not-allowed' },
+
+    ['&:focus-visible']: {
+      outline: `2px solid ${theme.palette.border.dark}`,
+      outlineOffset: '1px',
+    },
   })}
 `;

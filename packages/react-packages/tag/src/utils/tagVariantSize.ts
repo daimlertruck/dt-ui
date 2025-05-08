@@ -1,6 +1,6 @@
 import { Theme } from '@emotion/react';
 
-import { TagSize } from './constants';
+import { TagSize } from '../constants';
 
 export const tagSizeStyles = (theme: Theme, size: TagSize) =>
   ({

@@ -17,14 +17,18 @@ const TagSizeOptions = {
   Medium: 'medium',
 };
 
+const TooltipBackground = {
+  Opacity: 'opacity',
+  Full: 'full',
+};
+
 const TagColorOptions = {
   Primary: 'primary',
-  Blue: 'blue',
-  Grey: 'grey',
-  Green: 'green',
-  Red: 'red',
-  Yellow: 'yellow',
-  Purple: 'purple',
+  Secondary: 'secondary',
+  Informative: 'informative',
+  Warning: 'warning',
+  Success: 'success',
+  Error: 'error',
 };
 
 const meta: Meta<TagProps> = {
@@ -52,20 +56,24 @@ const meta: Meta<TagProps> = {
       },
     },
     variant: {
-      options: TagVariantOptions,
+      options: Object.values(TagVariantOptions),
       control: { type: 'radio' },
     },
     border: {
-      options: TagBorderOptions,
+      options: Object.values(TagBorderOptions),
       control: { type: 'radio' },
     },
     size: {
-      options: TagSizeOptions,
+      options: Object.values(TagSizeOptions),
       control: { type: 'radio' },
     },
     color: {
-      options: TagColorOptions,
+      options: Object.values(TagColorOptions),
       control: { type: 'select' },
+    },
+    tooltipVariant: {
+      options: Object.values(TooltipBackground),
+      control: { type: 'radio' },
     },
   },
   render: ({ onClick, onClose, ...props }) => (
@@ -94,6 +102,7 @@ export const Default: StoryObj<TagProps> = {
     size: 'small',
     color: 'primary',
     border: 'squared',
+    tooltipVariant: 'opacity',
     isClickable: false,
     isDisabled: false,
     onClick: undefined,

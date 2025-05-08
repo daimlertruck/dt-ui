@@ -58,12 +58,12 @@ describe('<Tag /> component', () => {
   );
 
   it.each`
-    variant       | color        | border       | size        | isClickable | isDisabled | onClick      | onClose
-    ${'solid'}    | ${'primary'} | ${'rounded'} | ${'medium'} | ${false}    | ${false}   | ${undefined} | ${undefined}
-    ${'outlined'} | ${'blue'}    | ${'squared'} | ${'small'}  | ${true}     | ${false}   | ${undefined} | ${undefined}
-    ${'solid'}    | ${'grey'}    | ${'rounded'} | ${'medium'} | ${false}    | ${false}   | ${jest.fn()} | ${undefined}
-    ${'solid'}    | ${'grey'}    | ${'rounded'} | ${'medium'} | ${false}    | ${false}   | ${undefined} | ${jest.fn()}
-    ${'solid'}    | ${'grey'}    | ${'rounded'} | ${'medium'} | ${false}    | ${true}    | ${jest.fn()} | ${jest.fn()}
+    variant       | color            | border       | size        | isClickable | isDisabled | onClick      | onClose
+    ${'solid'}    | ${'primary'}     | ${'rounded'} | ${'medium'} | ${false}    | ${false}   | ${undefined} | ${undefined}
+    ${'outlined'} | ${'secondary'}   | ${'squared'} | ${'small'}  | ${true}     | ${false}   | ${undefined} | ${undefined}
+    ${'solid'}    | ${'informative'} | ${'rounded'} | ${'medium'} | ${false}    | ${false}   | ${jest.fn()} | ${undefined}
+    ${'solid'}    | ${'warning'}     | ${'rounded'} | ${'medium'} | ${false}    | ${false}   | ${undefined} | ${jest.fn()}
+    ${'solid'}    | ${'error'}       | ${'rounded'} | ${'medium'} | ${false}    | ${true}    | ${jest.fn()} | ${jest.fn()}
   `(
     'should render the tag with variant $variant, color $color, border $border, size $size, isClickable as $isClickable, isDisabled as $isDisabled, onClick and onClose',
     ({
