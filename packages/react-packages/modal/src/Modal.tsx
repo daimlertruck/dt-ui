@@ -6,8 +6,7 @@ import { ModalContent, ModalFooter, ModalHeader } from './components';
 import { ModalStyled } from './Modal.styled';
 
 export interface ModalProps extends BaseProps {
-  handleClose: () => void;
-  hasClickOutside?: boolean;
+  onClickOutside?: () => void;
 }
 
 export const Overlay = forwardRef<HTMLDivElement, BackdropProps>(
@@ -24,16 +23,15 @@ export const Overlay = forwardRef<HTMLDivElement, BackdropProps>(
 
 export const Modal = ({
   children,
-  handleClose,
-  hasClickOutside = false,
+  onClickOutside,
   style,
   dataTestId,
 }: ModalProps) => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useClickOutside({
-    ref: hasClickOutside ? ref : ({} as RefObject<Element>),
-    handler: handleClose,
+    ref: ref as RefObject<Element>,
+    handler: onClickOutside ?? (() => {}),
   });
 
   return (

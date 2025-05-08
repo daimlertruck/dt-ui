@@ -1,24 +1,22 @@
 import { Box } from '@dt-ui/react-box';
+import { BaseProps } from '@dt-ui/react-core';
 import { Icon } from '@dt-ui/react-icon';
 import { IconButton } from '@dt-ui/react-icon-button';
 import { Typography } from '@dt-ui/react-typography';
 
-import { ModalProps } from '../../Modal';
-
 import { HeaderStyled } from './Header.styled';
 
-export interface ModalHeaderProps extends ModalProps {
-  hasBackgroundColor?: boolean;
+export interface ModalHeaderProps extends Omit<BaseProps, 'children'> {
   hasBorder?: boolean;
   title: string;
   subTitle?: string;
   closeIconLabel?: string;
+  onClose: () => void;
 }
 
 export const ModalHeader = ({
   dataTestId,
-  handleClose,
-  hasBackgroundColor = false,
+  onClose,
   hasBorder = false,
   title,
   subTitle,
@@ -27,7 +25,6 @@ export const ModalHeader = ({
   return (
     <HeaderStyled
       data-testid={dataTestId ?? 'modal-header'}
-      hasBackgroundColor={hasBackgroundColor}
       hasBorder={hasBorder}
       style={style}
     >
@@ -36,11 +33,7 @@ export const ModalHeader = ({
           {title}
         </Typography>
 
-        <IconButton
-          color='accent'
-          dataTestId='close-button'
-          onClick={handleClose}
-        >
+        <IconButton color='accent' dataTestId='close-button' onClick={onClose}>
           <Icon code='close' size='large' />
         </IconButton>
       </Box>

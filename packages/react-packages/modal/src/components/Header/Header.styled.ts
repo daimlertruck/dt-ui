@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 interface HeaderProps {
-  hasBackgroundColor: boolean;
   hasBorder: boolean;
 }
 
@@ -10,11 +9,9 @@ export const HeaderStyled = styled.div<HeaderProps>`
   flex-direction: column;
   border-radius: inherit;
 
-  ${({ theme, hasBackgroundColor, hasBorder }) => `
+  ${({ theme, hasBorder }) => `
     padding: ${theme.spacing.xs};
-    background-color: ${
-      hasBackgroundColor ? theme.palette.surface.light : 'transparent'
-    };
+
     border-bottom: ${
       hasBorder ? `1px solid ${theme.palette.border.default}` : 'none'
     };

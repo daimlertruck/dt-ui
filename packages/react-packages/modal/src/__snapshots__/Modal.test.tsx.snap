@@ -105,7 +105,6 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
   flex-direction: column;
   border-radius: inherit;
   padding: 24px;
-  background-color: transparent;
   border-bottom: none;
   gap: 8px;
 }
@@ -383,7 +382,6 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   flex-direction: column;
   border-radius: inherit;
   padding: 24px;
-  background-color: transparent;
   border-bottom: none;
   gap: 8px;
 }

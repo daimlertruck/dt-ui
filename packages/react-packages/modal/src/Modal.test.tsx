@@ -14,9 +14,9 @@ describe('<Modal/> Component', () => {
     beforeEach(() => {
       render(
         <ProvidedOverlay dataTestId='modal-overlay' isOpen>
-          <Modal handleClose={handleClick}>
+          <Modal onClickOutside={handleClick}>
             <Modal.Header
-              handleClose={handleClick}
+              onClose={handleClick}
               subTitle='Sub Title'
               title='Title'
             />
@@ -84,9 +84,7 @@ describe('<Modal/> Component', () => {
       render(
         <>
           <ProvidedOverlay dataTestId='modal-overlay' isOpen>
-            <Modal handleClose={handleClick} hasClickOutside>
-              Content
-            </Modal>
+            <Modal onClickOutside={handleClick}>Content</Modal>
           </ProvidedOverlay>
           <div>outside</div>
         </>
@@ -101,9 +99,7 @@ describe('<Modal/> Component', () => {
       render(
         <>
           <ProvidedOverlay dataTestId='modal-overlay' isOpen>
-            <Modal handleClose={handleClick} hasClickOutside={false}>
-              Content
-            </Modal>
+            <Modal>Content</Modal>
           </ProvidedOverlay>
           <div>outside</div>
         </>
@@ -120,7 +116,7 @@ describe('<Modal/> Component', () => {
     render(
       <Provider>
         <Overlay isOpen ref={modalRef}>
-          <Modal handleClose={handleClick}>Content</Modal>
+          <Modal>Content</Modal>
         </Overlay>
       </Provider>
     );
@@ -133,8 +129,8 @@ describe('<Modal/> Component', () => {
       render(
         <>
           <ProvidedOverlay dataTestId='modal-overlay' isOpen>
-            <Modal handleClose={handleClick} hasClickOutside>
-              <Modal.Header handleClose={handleClick} title='Title' />
+            <Modal onClickOutside={handleClick}>
+              <Modal.Header onClose={handleClick} title='Title' />
               <Modal.Content isLoading>Some text here</Modal.Content>
             </Modal>
           </ProvidedOverlay>

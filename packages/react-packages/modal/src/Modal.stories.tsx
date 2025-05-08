@@ -10,7 +10,6 @@ type ModalStoryProps = {
   hasHeaderBackgroundColor: boolean;
   hasFooterBorder: boolean;
   hasFooterBackgroundColor: boolean;
-  hasClickOutside: boolean;
   actionTitle: string;
   content: string;
 } & ModalProps &
@@ -22,7 +21,6 @@ const Template: StoryFn<ModalStoryProps> = ({
   content,
   title,
   subTitle,
-  hasClickOutside,
   hasHeaderBorder,
   hasHeaderBackgroundColor,
   hasFooterBorder,
@@ -37,11 +35,11 @@ const Template: StoryFn<ModalStoryProps> = ({
         Click me
       </button>
       <Overlay isOpen={isModalOpen}>
-        <Modal handleClose={toggleModal} hasClickOutside={hasClickOutside}>
+        <Modal onClickOutside={toggleModal}>
           <Modal.Header
-            handleClose={toggleModal}
             hasBackgroundColor={hasHeaderBackgroundColor}
             hasBorder={hasHeaderBorder}
+            onClose={toggleModal}
             subTitle={subTitle}
             title={title}
           />
@@ -101,10 +99,8 @@ const meta: Meta<ModalStoryProps> = {
       defaultValue: { summary: false },
       description: 'Add background color to Footer',
     },
-    hasClickOutside: {
-      control: { type: 'boolean' },
-      defaultValue: { summary: false },
-      description: 'Enables click outside to trigger close action',
+    onClickOutside: {
+      description: 'Enables click outside to trigger close an action',
     },
     isLoading: {
       control: { type: 'boolean' },
@@ -124,7 +120,6 @@ export const Default = {
     hasHeaderBackgroundColor: false,
     hasFooterBorder: false,
     hasFooterBackgroundColor: false,
-    hasClickOutside: false,
     isLoading: false,
   },
 };
