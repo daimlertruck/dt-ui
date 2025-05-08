@@ -1,7 +1,7 @@
 import { Button } from '@dt-ui/react-button';
 import { Meta, StoryFn } from '@storybook/react';
 
-import { ModalHeaderProps } from './components';
+import { ModalHeaderProps, ModalContentProps } from './components';
 import { useModal } from './hooks';
 import { Modal, ModalProps, Overlay } from './Modal';
 
@@ -14,7 +14,8 @@ type ModalStoryProps = {
   actionTitle: string;
   content: string;
 } & ModalProps &
-  ModalHeaderProps;
+  ModalHeaderProps &
+  ModalContentProps;
 
 const Template: StoryFn<ModalStoryProps> = ({
   actionTitle,
@@ -36,11 +37,7 @@ const Template: StoryFn<ModalStoryProps> = ({
         Click me
       </button>
       <Overlay isOpen={isModalOpen}>
-        <Modal
-          handleClose={toggleModal}
-          hasClickOutside={hasClickOutside}
-          isLoading={isLoading}
-        >
+        <Modal handleClose={toggleModal} hasClickOutside={hasClickOutside}>
           <Modal.Header
             handleClose={toggleModal}
             hasBackgroundColor={hasHeaderBackgroundColor}
@@ -49,7 +46,7 @@ const Template: StoryFn<ModalStoryProps> = ({
             title={title}
           />
           {content ? (
-            <Modal.Content>
+            <Modal.Content isLoading={isLoading}>
               <p>{content}</p>
             </Modal.Content>
           ) : null}
@@ -65,7 +62,11 @@ const Template: StoryFn<ModalStoryProps> = ({
             >
               Cancel
             </Button>
-            <Button dataTestId='action' onClick={() => null}>
+            <Button
+              dataTestId='action'
+              isDisabled={isLoading}
+              onClick={() => null}
+            >
               {actionTitle}
             </Button>
           </Modal.Footer>

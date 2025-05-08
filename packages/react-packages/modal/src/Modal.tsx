@@ -2,18 +2,12 @@ import { Backdrop, BackdropProps } from '@dt-ui/react-backdrop';
 import { BaseProps, Portal, useClickOutside } from '@dt-ui/react-core';
 import { forwardRef, RefObject, useRef } from 'react';
 
-import {
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalLoadingOverlay,
-} from './components';
+import { ModalContent, ModalFooter, ModalHeader } from './components';
 import { ModalStyled } from './Modal.styled';
 
 export interface ModalProps extends BaseProps {
   handleClose: () => void;
   hasClickOutside?: boolean;
-  isLoading?: boolean;
 }
 
 export const Overlay = forwardRef<HTMLDivElement, BackdropProps>(
@@ -27,24 +21,23 @@ export const Overlay = forwardRef<HTMLDivElement, BackdropProps>(
     );
   }
 );
+
 export const Modal = ({
   children,
   handleClose,
   hasClickOutside = false,
-  isLoading = false,
   style,
   dataTestId,
 }: ModalProps) => {
   const ref = useRef(null);
 
   useClickOutside({
-    ref: hasClickOutside && !isLoading ? ref : ({} as RefObject<Element>),
+    ref: hasClickOutside ? ref : ({} as RefObject<Element>),
     handler: handleClose,
   });
 
   return (
     <ModalStyled data-testid={dataTestId} ref={ref} style={style}>
-      {isLoading ? <ModalLoadingOverlay /> : null}
       {children}
     </ModalStyled>
   );

@@ -133,9 +133,9 @@ describe('<Modal/> Component', () => {
       render(
         <>
           <ProvidedOverlay dataTestId='modal-overlay' isOpen>
-            <Modal handleClose={handleClick} hasClickOutside isLoading>
+            <Modal handleClose={handleClick} hasClickOutside>
               <Modal.Header handleClose={handleClick} title='Title' />
-              <Modal.Content>Some text here</Modal.Content>
+              <Modal.Content isLoading>Some text here</Modal.Content>
             </Modal>
           </ProvidedOverlay>
           <div>outside</div>
@@ -147,10 +147,10 @@ describe('<Modal/> Component', () => {
       expect(screen.getByTestId('modal-overlay')).toMatchSnapshot();
     });
 
-    it('should not fire handle close function when clicking outside', () => {
+    it('should fire handle close function when clicking outside', () => {
       fireEvent.mouseDown(screen.getAllByText('outside')[0]);
 
-      expect(handleClick).toBeCalledTimes(0);
+      expect(handleClick).toBeCalledTimes(1);
     });
   });
 });
