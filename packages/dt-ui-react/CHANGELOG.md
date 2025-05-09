@@ -1,5 +1,15 @@
 # @dt-ui/react
 
+## 0.1.0-beta.180
+
+### Patch Changes
+
+- fix: modal loading position
+- refactor: change modal on click outside prop
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-modal@0.1.0-beta.25
+
 ## 0.1.0-beta.179
 
 ### Patch Changes
