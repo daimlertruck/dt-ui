@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.181
+
+### Patch Changes
+
+- fix: broadcrumb color
+- Updated dependencies
+  - @dt-ui/react-breadcrumb@0.1.0-beta.42
+
 ## 0.1.0-beta.180
 
 ### Patch Changes
