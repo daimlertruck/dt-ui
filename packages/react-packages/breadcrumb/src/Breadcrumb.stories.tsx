@@ -1,6 +1,5 @@
+import { Icon } from '@dt-ui/react-icon';
 import { Meta, StoryObj } from '@storybook/react';
-
-import { ViewAgendaIcon } from '../../../dt-ui-react/core';
 
 import { Breadcrumb, BreadcrumbProps } from './Breadcrumb';
 
@@ -23,7 +22,9 @@ const meta: Meta<BreadcrumbProps> = {
       <Breadcrumb separator={separator}>
         {breadcrumbs.map((breadcrumb) => (
           <Breadcrumb.Item key={breadcrumb.name}>
-            {breadcrumb.showIcon ? <ViewAgendaIcon /> : null}
+            {breadcrumb.showIcon ? (
+              <Icon code='view_agenda' color='primary' />
+            ) : null}
             <a href='/'>{breadcrumb.name}</a>
           </Breadcrumb.Item>
         ))}
