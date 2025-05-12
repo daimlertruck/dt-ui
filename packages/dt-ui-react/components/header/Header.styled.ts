@@ -8,7 +8,7 @@ export const HeaderStyled = styled.header`
   justify-content: space-between;
   top: ${({ theme }) => theme.spacing.none};
   width: 90%;
-  max-width: ${({ theme }) => theme.breakpoints.xxl};
+  max-width: ${({ theme }) => theme.breakpoints.xxl}px;
   left: 50%;
   transform: translateX(-50%);
   height: 75px;

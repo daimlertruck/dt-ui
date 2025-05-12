@@ -13,7 +13,7 @@ export const StepperStyled = styled.ul<StepperStyledProps>`
   list-style: none;
 
   ${({ theme, orientation = 'vertical' }) => `
-    @media only screen and (min-width: ${theme.breakpoints.md}) {
+    @media only screen and (min-width: ${theme.breakpoints.md}px) {
       flex-direction: ${orientation === 'horizontal' ? 'row' : 'column'}
     }
   `}

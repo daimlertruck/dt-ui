@@ -315,14 +315,20 @@ export type CustomTheme = {
     tag: string;
   };
   breakpoints: {
-    s: string;
-    m: string;
-    l: string;
-    xl: string;
+    mq1: number;
+    mq2: number;
+    mq3: number;
+    mq4: number;
+    mq5: number;
+    mq6: number;
     // Legacy
-    md: string;
-    lg: string;
-    xxl: string;
+    s: number;
+    m: number;
+    l: number;
+    xl: number;
+    md: number;
+    lg: number;
+    xxl: number;
   };
   fontFamily: {
     default: string;

@@ -14,16 +14,16 @@ export const GridStyled = styled.div<GridStyledProps>`
     width: 100%;
 
     /* Small screen specific styles */
-    @media only screen and (max-width: ${theme.breakpoints.md}) {
+    @media only screen and (max-width: ${theme.breakpoints.md}px) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   
     /* Mid screen specific styles */
-    @media only screen and (min-width: ${theme.breakpoints.md}) {
+    @media only screen and (min-width: ${theme.breakpoints.md}px}) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-    @media only screen and (min-width: ${theme.breakpoints.lg}) {
+    @media only screen and (min-width: ${theme.breakpoints.lg}px}) {
       grid-template-columns: ${gridTemplateColumns};
     }
   `}

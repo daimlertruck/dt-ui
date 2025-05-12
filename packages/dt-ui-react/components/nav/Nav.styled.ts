@@ -10,7 +10,7 @@ export const NavListStyled = styled.ul`
   justify-content: space-between;
   gap: 48px;
 
-  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}) {
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
     gap: 20px;
   }
 `;

@@ -11,7 +11,7 @@ export const FooterStyled = styled.footer<FooterStyledProps>`
     flex-wrap: nowrap;
     align-items: center;
     justify-content: start;
-    max-width: ${theme.breakpoints.xxl};
+    max-width:  ${theme.breakpoints.xxl}px;
     width: 90%;
     bottom: 0;
     margin-top: auto;
