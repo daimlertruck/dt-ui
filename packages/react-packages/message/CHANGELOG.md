@@ -1,5 +1,13 @@
 # @dt-ui/react-message
 
+## 0.1.0-beta.40
+
+### Patch Changes
+
+- chore: link independent pkg
+- Updated dependencies
+  - @dt-ui/react-link@0.1.0-beta.1
+
 ## 0.1.0-beta.39
 
 ### Patch Changes

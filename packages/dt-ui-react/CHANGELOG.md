@@ -1,5 +1,15 @@
 # @dt-ui/react
 
+## 0.1.0-beta.182
+
+### Patch Changes
+
+- chore: link independent pkg
+- refactor: drop unused util function
+- Updated dependencies
+  - @dt-ui/react-link@0.1.0-beta.1
+  - @dt-ui/react-message@0.1.0-beta.40
+
 ## 0.1.0-beta.181
 
 ### Patch Changes
