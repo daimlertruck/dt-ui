@@ -24,7 +24,6 @@ const resolveComponentsPath = (components: string[]): PathAlias =>
 
 const config: StorybookConfig = {
   stories: [
-    '../../../packages/dt-ui-react/**/*.stories.@(js|jsx|ts|tsx)',
     '../../../packages/react-packages/**/*.stories.@(js|jsx|ts|tsx)',
     '../src/**/*.mdx',
   ],
