@@ -1,5 +1,16 @@
 # @dt-ui/react
 
+## 0.1.0-beta.183
+
+### Minor Changes
+
+- feat: update tag according to designs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-tag@0.1.0-beta.36
+
 ## 0.1.0-beta.182
 
 ### Patch Changes
