@@ -14,16 +14,6 @@ describe('<Link /> component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('Should render a html underlined link element with the correct title', () => {
-    const { container } = render(
-      <ProvidedLink href='/' isUnderline>
-        Redirect To
-      </ProvidedLink>
-    );
-
-    expect(container).toMatchSnapshot();
-  });
-
   it('Should render a disabled html link element', () => {
     const { container } = render(
       <ProvidedLink href='/' isDisabled>
@@ -34,9 +24,9 @@ describe('<Link /> component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('Should render an anchor element with button styles', () => {
+  it('Should render an html link element as secondary', () => {
     const { container } = render(
-      <ProvidedLink href='/' type='button'>
+      <ProvidedLink href='/' variant='secondary'>
         Redirect To
       </ProvidedLink>
     );

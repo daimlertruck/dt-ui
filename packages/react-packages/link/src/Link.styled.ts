@@ -1,27 +1,39 @@
-import { ButtonStyled } from '@dt-ui/react-button';
 import styled from '@emotion/styled';
 
-import { LinkTextSize } from '.';
+import { LinkTextSize, LinkVariant } from '.';
 
 interface LinkStyledProps {
-  isUnderline: boolean;
   disabled?: boolean;
   textSize?: string;
+  variant?: LinkVariant;
 }
 
 export const LinkStyled = styled.a<LinkStyledProps>`
-  ${({ theme, disabled, isUnderline, textSize }) => `
-    color: ${theme.palette.primary.default};
-    text-decoration: ${isUnderline ? 'underline' : 'none'};
+  ${({ theme, disabled, textSize, variant = 'primary' }) => `
+    color: ${theme.palette[variant].default};
+    text-decoration: none;
 
     ${
       disabled &&
       `
-        opacity: 0.4;
-        pointer-events: none;
-    
+        color: ${theme.palette[variant].light};
+        cursor: not-allowed;
       `
     };
+
+    ${
+      !disabled &&
+      `
+        &:hover {
+          text-decoration: underline;
+        }
+      `
+    };
+
+    &:focus-visible {
+      outline: 2px solid ${theme.palette.border.dark};
+    }
+    
 
     ${
       textSize == LinkTextSize.Large &&
@@ -45,5 +57,3 @@ export const LinkStyled = styled.a<LinkStyledProps>`
     };
   `}
 `;
-
-export const ButtonLinkStyled = ButtonStyled.withComponent('a');

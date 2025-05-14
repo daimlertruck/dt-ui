@@ -1,1 +1,1 @@
-export type LinkType = 'button' | 'text';
+export type LinkVariant = 'primary' | 'secondary';

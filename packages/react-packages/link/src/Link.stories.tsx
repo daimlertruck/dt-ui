@@ -1,10 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import { LinkTextSize, LinkType } from './constants';
+import { LinkTextSize } from './constants';
 
 import { Link, LinkProps } from '.';
 
-const TYPES: LinkType[] = ['button', 'text'];
 const TEXT_SIZES = ['small', 'medium', 'large'];
 
 const meta: Meta<LinkProps> = {
@@ -17,20 +16,17 @@ const meta: Meta<LinkProps> = {
     textSize: {
       options: TEXT_SIZES,
       control: { type: 'select' },
-    },
-    type: {
-      options: TYPES,
-      control: { type: 'select' },
-    },
-    isUnderline: {
-      control: { type: 'boolean' },
-      defaultValue: { summary: false },
-      description: 'Add bottom border to Header',
+      description: 'Sets the size of text',
     },
     isDisabled: {
       control: { type: 'boolean' },
       defaultValue: { summary: false },
-      description: 'Add bottom border to Header',
+      description: 'Sets the link disabled',
+    },
+    variant: {
+      options: ['primary', 'secondary'],
+      control: { type: 'select' },
+      description: 'Sets the link variant',
     },
   },
   render: ({ ...props }) => {
@@ -46,8 +42,7 @@ export const Default: StoryObj<LinkProps> = {
     href: 'https://www.google.com/',
     target: '_blank',
     textSize: LinkTextSize.Medium,
-    isUnderline: true,
     isDisabled: false,
-    type: 'text',
+    variant: 'primary',
   },
 };

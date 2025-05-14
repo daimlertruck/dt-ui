@@ -1,18 +1,17 @@
 import { BaseProps } from '@dt-ui/react-core';
 import { forwardRef } from 'react';
 
-import { ButtonLinkStyled, LinkStyled } from './Link.styled';
+import { LinkStyled } from './Link.styled';
 
-import { LinkTextSize, LinkType } from '.';
+import { LinkTextSize, LinkVariant } from '.';
 
 export interface LinkProps
   extends BaseProps,
     React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  isUnderline?: boolean;
   isDisabled?: boolean;
   onClick?: () => void;
   textSize?: string;
-  type?: LinkType;
+  variant?: LinkVariant;
 }
 
 export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
@@ -20,45 +19,29 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
     {
       isDisabled,
       children,
-      isUnderline = true,
       textSize = LinkTextSize.Medium,
       dataTestId,
       onClick,
+      variant,
+      href,
       style,
-      type = 'text',
       ...rest
     },
     ref
   ) => {
     return (
-      <>
-        {type === 'button' ? (
-          <ButtonLinkStyled
-            data-testid={dataTestId ?? 'link-button'}
-            ref={ref}
-            size={textSize as LinkTextSize}
-            style={style}
-            variant='solid'
-            {...rest}
-            color='primary'
-          >
-            {children}
-          </ButtonLinkStyled>
-        ) : (
-          <LinkStyled
-            data-testid={dataTestId ?? 'link'}
-            disabled={isDisabled}
-            isUnderline={isUnderline}
-            onClick={onClick}
-            ref={ref}
-            style={style}
-            textSize={textSize}
-            {...rest}
-          >
-            {children}
-          </LinkStyled>
-        )}
-      </>
+      <LinkStyled
+        data-testid={dataTestId ?? 'link'}
+        disabled={isDisabled}
+        ref={ref}
+        style={style}
+        textSize={textSize}
+        variant={variant}
+        {...(!isDisabled && { href, onClick })}
+        {...rest}
+      >
+        {children}
+      </LinkStyled>
     );
   }
 );

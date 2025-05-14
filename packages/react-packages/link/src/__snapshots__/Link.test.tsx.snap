@@ -3,10 +3,10 @@
 exports[`<Link /> component Should render a disabled html link element 1`] = `
 .emotion-0 {
   color: #000000;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  opacity: 0.4;
-  pointer-events: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #DEDEDE;
+  cursor: not-allowed;
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -15,12 +15,15 @@ exports[`<Link /> component Should render a disabled html link element 1`] = `
   text-transform: none;
 }
 
+.emotion-0:focus-visible {
+  outline: 2px solid #131313;
+}
+
 <div>
   <a
     class="emotion-0 emotion-1"
     data-testid="link"
     disabled=""
-    href="/"
   >
     Redirect To
   </a>
@@ -30,112 +33,62 @@ exports[`<Link /> component Should render a disabled html link element 1`] = `
 exports[`<Link /> component Should render a html link element with the correct title 1`] = `
 .emotion-0 {
   color: #000000;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-}
-
-<div>
-  <a
-    class="emotion-0 emotion-1"
-    data-testid="link"
-    href="/"
-  >
-    Redirect To
-  </a>
-</div>
-`;
-
-exports[`<Link /> component Should render a html underlined link element with the correct title 1`] = `
-.emotion-0 {
-  color: #000000;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-}
-
-<div>
-  <a
-    class="emotion-0 emotion-1"
-    data-testid="link"
-    href="/"
-  >
-    Redirect To
-  </a>
-</div>
-`;
-
-exports[`<Link /> component Should render an anchor element with button styles 1`] = `
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  cursor: pointer;
-  width: auto;
-  min-width: 80px;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: 2px solid transparent;
-  gap: 8px;
-  border-radius: 0px;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  padding: 12px 24px;
-  border: 0;
-  color: #FFFFFF;
-  background-color: #000000;
 }
 
 .emotion-0:hover {
-  color: #FFFFFF;
-  background-color: #454545;
-}
-
-.emotion-0:disabled {
-  cursor: not-allowed;
-  color: #FFFFFF;
-  background-color: #DEDEDE;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-0:focus-visible {
-  outline: 3px solid #131313;
-  outline-offset: 1px;
-}
-
-@media only screen and (min-width: 768px) {
-  .emotion-0 {
-    width: auto;
-  }
+  outline: 2px solid #131313;
 }
 
 <div>
   <a
     class="emotion-0 emotion-1"
-    color="primary"
-    data-testid="link-button"
+    data-testid="link"
+    href="/"
+  >
+    Redirect To
+  </a>
+</div>
+`;
+
+exports[`<Link /> component Should render an html link element as secondary 1`] = `
+.emotion-0 {
+  color: #636363;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:focus-visible {
+  outline: 2px solid #131313;
+}
+
+<div>
+  <a
+    class="emotion-0 emotion-1"
+    data-testid="link"
     href="/"
   >
     Redirect To
