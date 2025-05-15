@@ -1,5 +1,16 @@
 # @dt-ui/react-message
 
+## 0.1.0-beta.41
+
+### Minor Changes
+
+- feat: update link according to design
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-link@0.1.0-beta.2
+
 ## 0.1.0-beta.40
 
 ### Patch Changes
