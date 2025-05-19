@@ -27,13 +27,17 @@ export const LinkStyled = styled.a<LinkStyledProps>`
         &:hover {
           text-decoration: underline;
         }
+
+        &:active {
+          color: ${theme.palette[variant].dark};
+          text-decoration: none;
+        }
       `
     };
 
     &:focus-visible {
       outline: 2px solid ${theme.palette.border.dark};
     }
-    
 
     ${
       textSize == LinkTextSize.Large &&
