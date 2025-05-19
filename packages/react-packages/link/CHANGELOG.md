@@ -1,5 +1,11 @@
 # @dt-ui/react-link
 
+## 0.1.0-beta.3
+
+### Minor Changes
+
+- feat: add active state to link
+
 ## 0.1.0-beta.2
 
 ### Minor Changes

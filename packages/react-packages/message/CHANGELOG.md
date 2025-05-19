@@ -1,5 +1,16 @@
 # @dt-ui/react-message
 
+## 0.1.0-beta.42
+
+### Minor Changes
+
+- feat: add active state to link
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-link@0.1.0-beta.3
+
 ## 0.1.0-beta.41
 
 ### Minor Changes
