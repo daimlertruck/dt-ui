@@ -1,25 +1,30 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { useState } from 'react';
 
 import { Toggle, ToggleProps } from './Toggle';
+
+const ToggleComponent = (props: ToggleProps) => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleClick = () => {
+    setIsChecked((prev) => !prev);
+  };
+
+  return <Toggle {...props} isChecked={isChecked} onClick={handleClick} />;
+};
 
 const meta: Meta<ToggleProps> = {
   title: 'Data Display/Toggle',
   component: Toggle,
   argTypes: {},
-  render: ({ ...props }) => (
-    <Toggle {...props}>
-      <Toggle.Label>Toggle</Toggle.Label>
-    </Toggle>
-  ),
+  render: ({ ...props }) => <ToggleComponent {...props} />,
 };
 
 export default meta;
 
 export const Default: StoryObj<ToggleProps> = {
   args: {
-    isChecked: false,
     isDisabled: false,
-    checkedColor: 'success',
-    uncheckedColor: 'secondary',
+    label: 'Toggle',
   },
 };

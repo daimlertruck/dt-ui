@@ -1,6 +1,5 @@
 import { withProviders } from '@dt-ui/react-core';
-import { render } from '@testing-library/react';
-import React from 'react';
+import { render, fireEvent } from '@testing-library/react';
 
 import { Toggle } from './Toggle';
 
@@ -8,55 +7,99 @@ describe('<Toggle /> component', () => {
   const ProvidedToggle = withProviders(Toggle);
   const LABEL = 'Toggle';
 
-  describe('when the toggle is disabled and is checked', () => {
-    it('should render a toggle with grey 400 bg color and light grey label color', () => {
-      const { container } = render(
-        <ProvidedToggle isChecked isDisabled onChange={() => null}>
-          <Toggle.Label>{LABEL}</Toggle.Label>
-        </ProvidedToggle>
-      );
-
-      expect(container).toMatchSnapshot();
-    });
-  });
-
-  describe("when the toggle is disabled and isn't checked", () => {
-    it('should render a toggle with 300 grey bg color and light grey label color', () => {
-      const { container } = render(
-        <ProvidedToggle isChecked={false} isDisabled onChange={() => null}>
-          <Toggle.Label>{LABEL}</Toggle.Label>
-        </ProvidedToggle>
-      );
-
-      expect(container).toMatchSnapshot();
-    });
-  });
-
-  describe("when the toggle isn't disabled and is checked with default state", () => {
-    it('should render a toggle with green color and a label', () => {
-      const { container } = render(
-        <ProvidedToggle isChecked isDisabled={false} onChange={() => null}>
-          {LABEL}
-        </ProvidedToggle>
-      );
-
-      expect(container).toMatchSnapshot();
-    });
-  });
-
-  describe("when the toggle isn't disabled and isn't checked", () => {
-    it('should render a toggle with 400 grey and a label', () => {
+  it.each`
+    isChecked    | isDisabled   | label        | description
+    ${true}      | ${true}      | ${LABEL}     | ${'disabled and checked'}
+    ${false}     | ${true}      | ${LABEL}     | ${'disabled and not checked'}
+    ${true}      | ${false}     | ${LABEL}     | ${'checked'}
+    ${undefined} | ${undefined} | ${undefined} | ${'on default state'}
+  `(
+    'should render a toggle $description',
+    ({ isChecked, isDisabled, label }) => {
       const { container } = render(
         <ProvidedToggle
-          isChecked={false}
-          isDisabled={false}
-          onChange={() => null}
-        >
-          {LABEL}
-        </ProvidedToggle>
+          isChecked={isChecked}
+          isDisabled={isDisabled}
+          label={label}
+          onClick={() => null}
+        />
       );
 
       expect(container).toMatchSnapshot();
+    }
+  );
+
+  it('should trigger onClick event after mouse click', () => {
+    const onClick = jest.fn();
+    const { getByTestId } = render(
+      <ProvidedToggle
+        isChecked={false}
+        isDisabled={false}
+        label={LABEL}
+        onClick={onClick}
+      />
+    );
+
+    getByTestId('toggle').click();
+
+    expect(onClick).toHaveBeenCalled();
+  });
+
+  it('should not call onClick event after mouse click', () => {
+    const onClick = jest.fn();
+    const { getByTestId } = render(
+      <ProvidedToggle
+        isChecked={false}
+        isDisabled
+        label={LABEL}
+        onClick={onClick}
+      />
+    );
+
+    getByTestId('toggle').click();
+
+    expect(onClick).not.toHaveBeenCalled();
+  });
+
+  it('should not call onClick event after Enter key is pressed', () => {
+    const onClick = jest.fn();
+    const { getByTestId } = render(
+      <ProvidedToggle
+        isChecked={false}
+        isDisabled
+        label={LABEL}
+        onClick={onClick}
+      />
+    );
+
+    fireEvent.keyDown(getByTestId('toggle'), {
+      key: 'Enter',
+      code: 'Enter',
+      keyCode: 13,
+      charCode: 13,
     });
+
+    expect(onClick).not.toHaveBeenCalled();
+  });
+
+  it('should call onClick event after Enter key is pressed', () => {
+    const onClick = jest.fn();
+    const { getByTestId } = render(
+      <ProvidedToggle
+        isChecked={false}
+        isDisabled={false}
+        label={LABEL}
+        onClick={onClick}
+      />
+    );
+
+    fireEvent.keyDown(getByTestId('toggle'), {
+      key: 'Enter',
+      code: 'Enter',
+      keyCode: 13,
+      charCode: 13,
+    });
+
+    expect(onClick).toHaveBeenCalled();
   });
 });

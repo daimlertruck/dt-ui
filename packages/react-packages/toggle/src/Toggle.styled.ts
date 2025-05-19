@@ -1,80 +1,81 @@
-import { Colors } from '@dt-ui/react-core';
 import styled from '@emotion/styled';
 
-interface ToggleStyledProps {
-  checkedColor: Colors;
-  uncheckedColor: Colors;
+interface ToggleWrapperStyledProps {
+  hasLabel: boolean;
 }
-export const ToggleWrapperStyled = styled.div`
-  position: relative;
-  display: flex;
-  gap: 4px;
-  align-items: center;
+
+const TOGGLE_WIDTH = 48;
+const TOGGLE_RADIUS = 20;
+
+export const ToggleWrapperStyled = styled.div<ToggleWrapperStyledProps>`
+  ${({ theme, hasLabel }) => `
+    display: flex;
+    gap: ${hasLabel ? theme.spacing['5xs'] : theme.spacing.none};
+    border-radius: ${TOGGLE_RADIUS}px;
+    align-items: center;
+    width: fit-content;
+
+    :focus-visible {
+      outline: 2px solid ${theme.palette.primary.default};
+      outline-offset: 2px;
+    }
+  `};
 `;
 
 export const ToggleSwitchStyled = styled.label`
-  position: absolute;
-  width: 40px;
-  height: 20px;
-  border-radius: 10px;
-  background: ${({ theme }) => theme.palette.surface.contrast};
-  cursor: pointer;
-  &::after {
-    content: '';
-    display: block;
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-    margin: 2px;
-    background: #ffffff;
-    transition: 0.2s;
-  }
-`;
-
-export const ToggleCheckBoxStyled = styled.input<ToggleStyledProps>`
-  opacity: 0;
-  z-index: 1;
-  border-radius: 15px;
-  width: 40px;
-  height: 20px;
-  cursor: pointer;
-
-  &:disabled {
-    cursor: auto;
-  }
-
-  &:checked + label {
-    ${({ theme, disabled, checkedColor }) =>
-      `
-      background: ${
-        disabled
-          ? theme.palette[checkedColor].light
-          : theme.palette[checkedColor].default
-      };
-    `}
+  ${({ theme }) => `
+    position: relative;
+    width: ${TOGGLE_WIDTH}px;
+    height: 24px;
+    border-radius: ${TOGGLE_RADIUS}px;
+    transition: background 0.3s ease;
 
     &::after {
       content: '';
-      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
       border-radius: 50%;
-      width: 16px;
-      height: 16px;
-      margin-left: 22px;
-      transition: 0.2s;
+      background: ${theme.colors.grey_00};
+      transition: transform 0.3s ease;
+      margin: 2px;
     }
-  }
-  &:disabled ~ span {
-    color: ${({ theme }) => theme.palette.content.light};
-  }
+  `};
+`;
 
-  &:not(:checked) + label {
-    ${({ theme, disabled, uncheckedColor }) =>
-      `
+export const ToggleCheckBoxStyled = styled.input`
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+
+  ${({ theme, disabled }) => `
+    & + label {
       background: ${
-        disabled
-          ? theme.palette[uncheckedColor].light
-          : theme.palette[uncheckedColor].default
+        disabled ? theme.palette.surface.default : theme.palette.surface.medium
       };
-    `}
-  }
+      cursor: ${disabled ? 'not-allowed' : 'pointer'};
+    }
+
+    &:checked + label {
+      background: ${
+        disabled ? theme.palette.accent.light : theme.palette.accent.default
+      };
+    }
+
+    &:checked + label::after {
+      transform: translateX(${TOGGLE_WIDTH / 2}px);
+    }
+
+    & ~ span {
+      ${theme.fontStyles.body2};
+      cursor: ${disabled ? 'not-allowed' : 'pointer'};
+      color: ${
+        disabled ? theme.palette.content.light : theme.palette.content.default
+      };
+      user-select: none;
+    }
+  `}
 `;

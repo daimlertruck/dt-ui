@@ -1,6 +1,5 @@
-import { BaseProps, Colors } from '@dt-ui/react-core';
-import { Typography } from '@dt-ui/react-typography';
-import { ChangeEvent } from 'react';
+import { BaseProps } from '@dt-ui/react-core';
+import { MouseEvent, KeyboardEvent } from 'react';
 
 import {
   ToggleCheckBoxStyled,
@@ -9,54 +8,58 @@ import {
 } from './Toggle.styled';
 
 export interface ToggleProps extends BaseProps {
-  onChange: (evt: ChangeEvent<HTMLInputElement>) => void;
   dataTestId?: string;
   isDisabled?: boolean;
   isChecked?: boolean;
-  checkedColor?: Colors;
-  uncheckedColor?: Colors;
+  label?: string;
+  onClick: (
+    evt: MouseEvent<HTMLDivElement> | KeyboardEvent<HTMLDivElement>
+  ) => void;
 }
 
 export const Toggle = ({
-  onChange,
   dataTestId,
-  children,
-  checkedColor = 'success',
-  uncheckedColor = 'secondary',
+  label,
   isDisabled = false,
   isChecked = false,
+  onClick,
 }: ToggleProps) => {
   const testId = dataTestId ?? 'toggle';
   const checkboxId = `${testId}-checkbox-id`;
 
+  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (isDisabled) {
+      return;
+    }
+    onClick(event);
+  };
+
+  const handleEnterClick = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (isDisabled) {
+      return;
+    }
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      onClick(event);
+    }
+  };
+
   return (
-    <ToggleWrapperStyled data-testid={testId}>
+    <ToggleWrapperStyled
+      data-testid={testId}
+      hasLabel={!!label}
+      onClick={handleClick}
+      onKeyDown={handleEnterClick}
+      tabIndex={isDisabled ? -1 : 0}
+    >
       <ToggleCheckBoxStyled
         checked={isChecked}
-        checkedColor={checkedColor}
         disabled={isDisabled}
         id={checkboxId}
-        onChange={onChange}
         type='checkbox'
-        uncheckedColor={uncheckedColor}
       />
-      <ToggleSwitchStyled htmlFor={checkboxId} />
-      {children}
+      <ToggleSwitchStyled />
+      <span>{label}</span>
     </ToggleWrapperStyled>
-  );
-};
-
-Toggle.Label = ({ children, dataTestId }: BaseProps) => {
-  return (
-    <Typography
-      color='content.default'
-      data-testid={dataTestId ?? 'toggle-label'}
-      dataTestId='toggle-label'
-      element='span'
-      fontStyles='pXXSmall'
-      style={{ fontWeight: 700 }}
-    >
-      {children}
-    </Typography>
   );
 };

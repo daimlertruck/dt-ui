@@ -1,6 +1,6 @@
 # Toggle Package
 
-Toggle switch gives control over a feature or option that can be turned on or off. 
+Toggle switch gives control over a feature or option that can be turned on or off.
 
 ## Toggle Usage
 
@@ -11,25 +11,23 @@ import { Toggle } from '@dt-ui/react';
 export const App = () => {
   const [checked, setChecked] = React.useState(true);
 
-  const handleChange = (evt: React.ChangeEvent<HTMLInputElement>) => {
-    setChecked(evt.target.checked);
+  const handleClick = () => {
+    setIsChecked((prev) => !prev);
   };
 
-  return <Toggle isChecked={checked} onChange={handleChange} />;
+  return <Toggle isChecked={checked} onClick={handleClick} />;
 };
 ```
 
 ## Properties
 
-| Property         | Type                                           | Default | Description                                                                   |
-| ---------------- | ---------------------------------------------- | ------- | ----------------------------------------------------------------------------- |
-| `label`          | `string`                                       | -       | A label to help users understand the scope of the toggle.                     |
-| `onChange`       | `(evt: ChangeEvent<HTMLInputElement>) => void` | -       | The triggered function when the input change.                                 |
-| `dataTestId`     | `string`                                       | toggle  | Toggle test identifier                                                        |
-| `isDisabled`     | `boolean`                                      | `false` | Specifies if the element should be disabled.                                  |
-| `isChecked`      | `boolean`                                      | `false` | Specifies if the element should be pre-selected (checked) when the page loads |
-| `checkedColor`   | `string`                                       | `green` | Specifies the color for the checked state                                     |
-| `uncheckedColor` | `string`                                       | `grey`  | Specifies the color for the unchecked state   
+| Property     | Type                                              | Default | Description                                                                   |
+| ------------ | ------------------------------------------------- | ------- | ----------------------------------------------------------------------------- |
+| `label`      | `string`                                          | -       | A label to help users understand the scope of the toggle.                     |
+| `onClick`    | `(evt: React.MouseEvent<HTMLDivElement>) => void` | -       | The triggered function when the input whole toggle is clicked.                |
+| `dataTestId` | `string`                                          | toggle  | Toggle test identifier                                                        |
+| `isDisabled` | `boolean`                                         | `false` | Specifies if the element should be disabled.                                  |
+| `isChecked`  | `boolean`                                         | `false` | Specifies if the element should be pre-selected (checked) when the page loads |
 
 ## Stack
 

@@ -1,90 +1,198 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Toggle /> component when the toggle is disabled and is checked should render a toggle with grey 400 bg color and light grey label color 1`] = `
+exports[`<Toggle /> component should render a toggle checked 1`] = `
 .emotion-0 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   gap: 4px;
+  border-radius: 20px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.emotion-0:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
 }
 
 .emotion-2 {
   opacity: 0;
-  z-index: 1;
-  border-radius: 15px;
-  width: 40px;
-  height: 20px;
-  cursor: pointer;
+  width: 0;
+  height: 0;
+  position: absolute;
 }
 
-.emotion-2:disabled {
-  cursor: auto;
+.emotion-2+label {
+  background: #DEDEDE;
+  cursor: pointer;
 }
 
 .emotion-2:checked+label {
-  background: #EFF5EB;
+  background: #00677F;
 }
 
 .emotion-2:checked+label::after {
-  content: '';
-  display: block;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  margin-left: 22px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transform: translateX(24px);
+  -moz-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
 }
 
-.emotion-2:disabled~span {
-  color: #A3A3A3;
-}
-
-.emotion-2:not(:checked)+label {
-  background: #C1C1C1;
+.emotion-2~span {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  cursor: pointer;
+  color: #454545;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .emotion-4 {
-  position: absolute;
-  width: 40px;
-  height: 20px;
-  border-radius: 10px;
-  background: #FFFFFF;
-  cursor: pointer;
+  position: relative;
+  width: 48px;
+  height: 24px;
+  border-radius: 20px;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .emotion-4::after {
   content: '';
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  width: 16px;
-  height: 16px;
+  background: #FFFFFF;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
   margin: 2px;
-  background: #ffffff;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.emotion-6 {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  color: #454545;
 }
 
 <div>
   <div
     class="emotion-0 emotion-1"
     data-testid="toggle"
+    tabindex="0"
+  >
+    <input
+      checked=""
+      class="emotion-2 emotion-3"
+      id="toggle-checkbox-id"
+      type="checkbox"
+    />
+    <label
+      class="emotion-4 emotion-5"
+    />
+    <span>
+      Toggle
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<Toggle /> component should render a toggle disabled and checked 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  border-radius: 20px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.emotion-0:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.emotion-2 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.emotion-2+label {
+  background: #F3F3F5;
+  cursor: not-allowed;
+}
+
+.emotion-2:checked+label {
+  background: #CCE3EB;
+}
+
+.emotion-2:checked+label::after {
+  -webkit-transform: translateX(24px);
+  -moz-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+
+.emotion-2~span {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  cursor: not-allowed;
+  color: #A3A3A3;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-4 {
+  position: relative;
+  width: 48px;
+  height: 24px;
+  border-radius: 20px;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+.emotion-4::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  margin: 2px;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-testid="toggle"
+    tabindex="-1"
   >
     <input
       checked=""
@@ -95,105 +203,102 @@ exports[`<Toggle /> component when the toggle is disabled and is checked should 
     />
     <label
       class="emotion-4 emotion-5"
-      for="toggle-checkbox-id"
     />
-    <span
-      class="emotion-6 emotion-7"
-      color="content.default"
-      data-testid="toggle-label"
-      style="font-weight: 700;"
-    >
+    <span>
       Toggle
     </span>
   </div>
 </div>
 `;
 
-exports[`<Toggle /> component when the toggle is disabled and isn't checked should render a toggle with 300 grey bg color and light grey label color 1`] = `
+exports[`<Toggle /> component should render a toggle disabled and not checked 1`] = `
 .emotion-0 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   gap: 4px;
+  border-radius: 20px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.emotion-0:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
 }
 
 .emotion-2 {
   opacity: 0;
-  z-index: 1;
-  border-radius: 15px;
-  width: 40px;
-  height: 20px;
-  cursor: pointer;
+  width: 0;
+  height: 0;
+  position: absolute;
 }
 
-.emotion-2:disabled {
-  cursor: auto;
+.emotion-2+label {
+  background: #F3F3F5;
+  cursor: not-allowed;
 }
 
 .emotion-2:checked+label {
-  background: #EFF5EB;
+  background: #CCE3EB;
 }
 
 .emotion-2:checked+label::after {
-  content: '';
-  display: block;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  margin-left: 22px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transform: translateX(24px);
+  -moz-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
 }
 
-.emotion-2:disabled~span {
+.emotion-2~span {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  cursor: not-allowed;
   color: #A3A3A3;
-}
-
-.emotion-2:not(:checked)+label {
-  background: #C1C1C1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .emotion-4 {
-  position: absolute;
-  width: 40px;
-  height: 20px;
-  border-radius: 10px;
-  background: #FFFFFF;
-  cursor: pointer;
+  position: relative;
+  width: 48px;
+  height: 24px;
+  border-radius: 20px;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .emotion-4::after {
   content: '';
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  width: 16px;
-  height: 16px;
+  background: #FFFFFF;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
   margin: 2px;
-  background: #ffffff;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.emotion-6 {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16.08px;
-  letter-spacing: normal;
-  margin: 0;
-  text-transform: none;
-  color: #454545;
 }
 
 <div>
   <div
     class="emotion-0 emotion-1"
     data-testid="toggle"
+    tabindex="-1"
   >
     <input
       class="emotion-2 emotion-3"
@@ -203,186 +308,102 @@ exports[`<Toggle /> component when the toggle is disabled and isn't checked shou
     />
     <label
       class="emotion-4 emotion-5"
-      for="toggle-checkbox-id"
     />
-    <span
-      class="emotion-6 emotion-7"
-      color="content.default"
-      data-testid="toggle-label"
-      style="font-weight: 700;"
-    >
+    <span>
       Toggle
     </span>
   </div>
 </div>
 `;
 
-exports[`<Toggle /> component when the toggle isn't disabled and is checked with default state should render a toggle with green color and a label 1`] = `
+exports[`<Toggle /> component should render a toggle on default state 1`] = `
 .emotion-0 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  gap: 4px;
+  gap: 0;
+  border-radius: 20px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.emotion-0:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
 }
 
 .emotion-2 {
   opacity: 0;
-  z-index: 1;
-  border-radius: 15px;
-  width: 40px;
-  height: 20px;
-  cursor: pointer;
+  width: 0;
+  height: 0;
+  position: absolute;
 }
 
-.emotion-2:disabled {
-  cursor: auto;
+.emotion-2+label {
+  background: #DEDEDE;
+  cursor: pointer;
 }
 
 .emotion-2:checked+label {
-  background: #6EA046;
+  background: #00677F;
 }
 
 .emotion-2:checked+label::after {
-  content: '';
-  display: block;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  margin-left: 22px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transform: translateX(24px);
+  -moz-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
 }
 
-.emotion-2:disabled~span {
-  color: #A3A3A3;
-}
-
-.emotion-2:not(:checked)+label {
-  background: #636363;
+.emotion-2~span {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
+  cursor: pointer;
+  color: #454545;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .emotion-4 {
-  position: absolute;
-  width: 40px;
-  height: 20px;
-  border-radius: 10px;
-  background: #FFFFFF;
-  cursor: pointer;
+  position: relative;
+  width: 48px;
+  height: 24px;
+  border-radius: 20px;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .emotion-4::after {
   content: '';
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  width: 16px;
-  height: 16px;
+  background: #FFFFFF;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
   margin: 2px;
-  background: #ffffff;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 <div>
   <div
     class="emotion-0 emotion-1"
     data-testid="toggle"
-  >
-    <input
-      checked=""
-      class="emotion-2 emotion-3"
-      id="toggle-checkbox-id"
-      type="checkbox"
-    />
-    <label
-      class="emotion-4 emotion-5"
-      for="toggle-checkbox-id"
-    />
-    Toggle
-  </div>
-</div>
-`;
-
-exports[`<Toggle /> component when the toggle isn't disabled and isn't checked should render a toggle with 400 grey and a label 1`] = `
-.emotion-0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 4px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-2 {
-  opacity: 0;
-  z-index: 1;
-  border-radius: 15px;
-  width: 40px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.emotion-2:disabled {
-  cursor: auto;
-}
-
-.emotion-2:checked+label {
-  background: #6EA046;
-}
-
-.emotion-2:checked+label::after {
-  content: '';
-  display: block;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  margin-left: 22px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.emotion-2:disabled~span {
-  color: #A3A3A3;
-}
-
-.emotion-2:not(:checked)+label {
-  background: #636363;
-}
-
-.emotion-4 {
-  position: absolute;
-  width: 40px;
-  height: 20px;
-  border-radius: 10px;
-  background: #FFFFFF;
-  cursor: pointer;
-}
-
-.emotion-4::after {
-  content: '';
-  display: block;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  margin: 2px;
-  background: #ffffff;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-<div>
-  <div
-    class="emotion-0 emotion-1"
-    data-testid="toggle"
+    tabindex="0"
   >
     <input
       class="emotion-2 emotion-3"
@@ -391,9 +412,8 @@ exports[`<Toggle /> component when the toggle isn't disabled and isn't checked s
     />
     <label
       class="emotion-4 emotion-5"
-      for="toggle-checkbox-id"
     />
-    Toggle
+    <span />
   </div>
 </div>
 `;
