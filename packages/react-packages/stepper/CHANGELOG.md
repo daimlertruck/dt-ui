@@ -1,5 +1,16 @@
 # @dt-ui/react-stepper
 
+## 0.1.0-beta.23
+
+### Minor Changes
+
+- feat: implement IconButton contrast and size
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.34
+
 ## 0.1.0-beta.22
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @dt-ui/react-tooltip
 
+## 0.1.0-beta.43
+
+### Minor Changes
+
+- feat: implement IconButton contrast and size
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon-button@0.1.0-beta.3
+
 ## 0.1.0-beta.42
 
 ### Patch Changes

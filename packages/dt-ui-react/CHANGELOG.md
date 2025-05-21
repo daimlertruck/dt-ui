@@ -1,5 +1,34 @@
 # @dt-ui/react
 
+## 0.1.0-beta.186
+
+### Minor Changes
+
+- feat: implement IconButton contrast and size
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.34
+  - @dt-ui/react-icon-button@0.1.0-beta.3
+  - @dt-ui/react-modal@0.1.0-beta.26
+  - @dt-ui/react-breadcrumb@0.1.0-beta.43
+  - @dt-ui/react-checkbox@0.1.0-beta.32
+  - @dt-ui/react-select@0.1.0-beta.34
+  - @dt-ui/react-dropdown@0.1.0-beta.20
+  - @dt-ui/react-pagination@0.1.0-beta.13
+  - @dt-ui/react-progress-bar@0.1.0-beta.27
+  - @dt-ui/react-segmented-control@0.1.0-beta.21
+  - @dt-ui/react-stepper@0.1.0-beta.23
+  - @dt-ui/react-tabs@0.1.0-beta.29
+  - @dt-ui/react-text-field@0.1.0-beta.39
+  - @dt-ui/react-date-picker@0.1.0-beta.22
+  - @dt-ui/react-drawer@0.1.0-beta.41
+  - @dt-ui/react-tooltip@0.1.0-beta.43
+  - @dt-ui/react-avatar@0.1.0-beta.44
+  - @dt-ui/react-form@0.1.0-beta.21
+  - @dt-ui/react-tag@0.1.0-beta.37
+
 ## 0.1.0-beta.185
 
 ### Minor Changes

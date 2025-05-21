@@ -1,5 +1,11 @@
 # @dt-ui/react-icon
 
+## 0.1.0-beta.34
+
+### Minor Changes
+
+- feat: implement IconButton contrast and size
+
 ## 0.1.0-beta.33
 
 ### Patch Changes

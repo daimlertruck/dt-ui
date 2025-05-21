@@ -1,5 +1,17 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.26
+
+### Minor Changes
+
+- feat: implement IconButton contrast and size
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.34
+  - @dt-ui/react-icon-button@0.1.0-beta.3
+
 ## 0.1.0-beta.25
 
 ### Patch Changes

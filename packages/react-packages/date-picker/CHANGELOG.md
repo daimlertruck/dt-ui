@@ -1,5 +1,16 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.22
+
+### Minor Changes
+
+- feat: implement IconButton contrast and size
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-text-field@0.1.0-beta.39
+
 ## 0.1.0-beta.21
 
 ### Patch Changes

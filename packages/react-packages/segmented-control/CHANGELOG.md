@@ -1,5 +1,17 @@
 # @dt-ui/react-segmented-control
 
+## 0.1.0-beta.21
+
+### Minor Changes
+
+- feat: implement IconButton contrast and size
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.34
+  - @dt-ui/react-tooltip@0.1.0-beta.43
+
 ## 0.1.0-beta.20
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @dt-ui/react-tabs
 
+## 0.1.0-beta.29
+
+### Minor Changes
+
+- feat: implement IconButton contrast and size
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.34
+
 ## 0.1.0-beta.28
 
 ### Patch Changes
