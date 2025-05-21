@@ -1,5 +1,16 @@
 # @dt-ui/react
 
+## 0.1.0-beta.187
+
+### Minor Changes
+
+- feat: update toggle styling
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-toggle@0.1.0-beta.14
+
 ## 0.1.0-beta.186
 
 ### Minor Changes

@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react",
-  "version": "0.1.0-beta.186",
+  "version": "0.1.0-beta.187",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
@@ -53,7 +53,7 @@
     "@dt-ui/react-text-area": "0.1.0-beta.16",
     "@dt-ui/react-text-field": "0.1.0-beta.39",
     "@dt-ui/react-toast": "0.1.0-beta.48",
-    "@dt-ui/react-toggle": "0.1.0-beta.13",
+    "@dt-ui/react-toggle": "0.1.0-beta.14",
     "@dt-ui/react-tooltip": "0.1.0-beta.43",
     "@dt-ui/react-typography": "0.1.0-beta.26",
     "@emotion/server": "^11.4.0",
