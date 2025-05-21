@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<IconButton /> component renders button html element with the an icon 1`] = `
+exports[`<IconButton /> component should have style if variant is contrast and isDisabled is false 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11,13 +11,22 @@ exports[`<IconButton /> component renders button html element with the an icon 1
   -ms-flex-align: center;
   align-items: center;
   border: none;
-  cursor: pointer;
   background-color: transparent;
-  color: #454545;
+  cursor: pointer;
 }
 
-.emotion-0:hover>i {
-  color: #000000;
+.emotion-0 i {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.emotion-0:not(:disabled)>i:hover,
+.emotion-0:not(:disabled)>i:active {
+  color: #73AEC2;
+}
+
+.emotion-0:focus-visible {
+  outline: 2px solid #000000;
 }
 
 .emotion-2 {
@@ -42,8 +51,201 @@ exports[`<IconButton /> component renders button html element with the an icon 1
 <div>
   <button
     class="emotion-0 emotion-1"
-    color="primary"
     data-testid="icon-button"
+  >
+    <i
+      class="emotion-2 emotion-3"
+      color="#454545"
+      data-testid="icon"
+    >
+      edit
+    </i>
+  </button>
+</div>
+`;
+
+exports[`<IconButton /> component should have style if variant is contrast and isDisabled is true 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.emotion-0 i {
+  font-size: 24px;
+  color: #454545;
+}
+
+.emotion-0:not(:disabled)>i:hover,
+.emotion-0:not(:disabled)>i:active {
+  color: #73AEC2;
+}
+
+.emotion-0:focus-visible {
+  outline: 2px solid #000000;
+}
+
+.emotion-2 {
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #454545;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+<div>
+  <button
+    class="emotion-0 emotion-1"
+    data-testid="icon-button"
+    disabled=""
+  >
+    <i
+      class="emotion-2 emotion-3"
+      color="#454545"
+      data-testid="icon"
+    >
+      edit
+    </i>
+  </button>
+</div>
+`;
+
+exports[`<IconButton /> component should have style if variant is default and isDisabled is false 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.emotion-0 i {
+  font-size: 24px;
+  color: #454545;
+}
+
+.emotion-0:not(:disabled)>i:hover,
+.emotion-0:not(:disabled)>i:active {
+  color: #00677F;
+}
+
+.emotion-0:focus-visible {
+  outline: 2px solid #000000;
+}
+
+.emotion-2 {
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #454545;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+<div>
+  <button
+    class="emotion-0 emotion-1"
+    data-testid="icon-button"
+  >
+    <i
+      class="emotion-2 emotion-3"
+      color="#454545"
+      data-testid="icon"
+    >
+      edit
+    </i>
+  </button>
+</div>
+`;
+
+exports[`<IconButton /> component should have style if variant is default and isDisabled is true 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.emotion-0 i {
+  font-size: 24px;
+  color: #A3A3A3;
+}
+
+.emotion-0:not(:disabled)>i:hover,
+.emotion-0:not(:disabled)>i:active {
+  color: #00677F;
+}
+
+.emotion-0:focus-visible {
+  outline: 2px solid #000000;
+}
+
+.emotion-2 {
+  font-family: DTUI-icons-outlined;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  font-variation-settings: 'FILL' 0;
+  color: #454545;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+<div>
+  <button
+    class="emotion-0 emotion-1"
+    data-testid="icon-button"
+    disabled=""
   >
     <i
       class="emotion-2 emotion-3"

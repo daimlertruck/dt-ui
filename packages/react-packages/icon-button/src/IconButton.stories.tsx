@@ -3,31 +3,48 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import { IconButton, IconButtonProps } from './IconButton';
 
+const variantOptions = ['contrast', 'default'];
+
+const sizeOptions = ['extra-small', 'small', 'medium', 'large', 'extra-large'];
+
 const meta: Meta<IconButtonProps> = {
-  title: 'Data Display/IconButton',
   component: IconButton,
+  title: 'Data Display/IconButton',
   argTypes: {
-    color: {
-      mapping: ['error', 'primary'],
-      options: Object.values(['error', 'primary']).filter(
-        (x) => typeof x === 'string'
-      ),
+    isDisabled: {
+      control: 'boolean',
+    },
+    variant: {
+      options: variantOptions,
+      control: { type: 'select' },
+    },
+    size: {
+      options: sizeOptions,
       control: { type: 'select' },
     },
   },
-  render: (...props) => {
+  render: (props) => {
     return (
-      <IconButton {...props}>
-        <Icon code='edit' />
-      </IconButton>
+      <div
+        style={{
+          backgroundColor: props.variant === 'default' ? 'white' : 'black',
+        }}
+      >
+        <IconButton {...props}>
+          <Icon code='edit' />
+        </IconButton>
+      </div>
     );
   },
 };
+
 export default meta;
 
 export const Default: StoryObj<IconButtonProps> = {
   args: {
-    color: 'primary',
     onClick: () => null,
+    isDisabled: false,
+    variant: 'default',
+    size: 'large',
   },
 };

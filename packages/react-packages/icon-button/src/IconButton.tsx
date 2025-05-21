@@ -1,16 +1,17 @@
-import { BaseProps, Colors } from '@dt-ui/react-core';
+import { BaseProps, ComponentSize } from '@dt-ui/react-core';
+import { ComponentPropsWithoutRef } from 'react';
 
+import { IconButtonVariant } from './constants';
 import { IconButtonStyled } from './IconButton.styled';
 
-export interface IconButtonProps extends BaseProps {
+export interface IconButtonProps
+  extends ComponentPropsWithoutRef<'button'>,
+    BaseProps {
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  onMouseDown?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  onMouseUp?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  onMouseOver?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  onMouseEnter?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  color?: Colors | 'default';
   isDisabled?: boolean;
   ariaLabel?: string;
+  variant?: IconButtonVariant;
+  size?: ComponentSize;
 }
 
 export const IconButton = ({
@@ -18,14 +19,16 @@ export const IconButton = ({
   dataTestId,
   isDisabled,
   ariaLabel,
+  variant,
+  size,
   onClick,
-  onMouseDown,
-  onMouseUp,
-  onMouseOver,
-  onMouseEnter,
-  color = 'primary',
+  ...props
 }: IconButtonProps) => {
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (isDisabled) {
+      return;
+    }
+
     e.preventDefault();
     e.stopPropagation();
     onClick && onClick(e);
@@ -34,14 +37,12 @@ export const IconButton = ({
   return (
     <IconButtonStyled
       aria-label={ariaLabel}
-      color={color}
       data-testid={dataTestId ? dataTestId : 'icon-button'}
       disabled={isDisabled}
       onClick={handleClick}
-      onMouseDown={onMouseDown}
-      onMouseEnter={onMouseEnter}
-      onMouseOver={onMouseOver}
-      onMouseUp={onMouseUp}
+      size={size}
+      variant={variant}
+      {...props}
     >
       {children}
     </IconButtonStyled>

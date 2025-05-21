@@ -1,50 +1,92 @@
 import { withProviders } from '@dt-ui/react-core';
 import { Icon } from '@dt-ui/react-icon';
 import { fireEvent, render, screen } from '@testing-library/react';
-import React from 'react';
 
-import { IconButton } from './IconButton';
+import { IconButton, IconButtonProps } from './IconButton';
+
+const handleClickMock = jest.fn();
 
 describe('<IconButton /> component', () => {
   const ProvidedIconButton = withProviders(IconButton);
 
-  it('renders button html element with the an icon', () => {
+  const renderComponent = (props?: IconButtonProps) => {
     const { container } = render(
-      <ProvidedIconButton color='primary' onClick={() => null}>
-        <Icon code='edit' />
+      <ProvidedIconButton {...props} onClick={handleClickMock}>
+        <Icon code='edit' dataTestId='icon' />
       </ProvidedIconButton>
     );
 
-    expect(container).toMatchSnapshot();
+    return {
+      button: screen.getByTestId('icon-button'),
+      icon: screen.getByTestId('icon'),
+      container,
+    };
+  };
+
+  beforeEach(() => {
+    jest.clearAllMocks();
   });
 
-  it('renders a disabled button html element', () => {
-    render(
-      <ProvidedIconButton color='primary' isDisabled onClick={() => null}>
-        <Icon code='edit' />
-      </ProvidedIconButton>
-    );
+  it('renders with custom aria-label', () => {
+    renderComponent({ ariaLabel: 'edit button' });
 
-    const disabledButton = screen.getByTestId('icon-button');
-    expect(disabledButton).toBeDisabled();
+    const button = screen.getByLabelText('edit button');
+
+    expect(button).toBeVisible();
   });
 
-  it('triggers the IconButton action correctly', () => {
-    const callbackFn = jest.fn();
+  it('calls onClick when clicked', () => {
+    const { button } = renderComponent();
 
-    render(
-      <ProvidedIconButton
-        color='error'
-        dataTestId='error-icon-button'
-        onClick={callbackFn}
-      >
-        <Icon code='edit' />
-      </ProvidedIconButton>
-    );
+    expect(button).toHaveStyle('cursor: pointer');
 
-    const button = screen.getByTestId('error-icon-button');
     fireEvent.click(button);
 
-    expect(callbackFn).toBeCalledTimes(1);
+    expect(handleClickMock).toHaveBeenCalledTimes(1);
   });
+
+  it('does not call onClick if disabled and has cursor not-allowed', () => {
+    const { button } = renderComponent({ isDisabled: true });
+
+    expect(button).toHaveStyle('cursor: not-allowed');
+
+    fireEvent.click(button);
+
+    expect(handleClickMock).toHaveBeenCalledTimes(0);
+  });
+
+  it.each`
+    size             | fontSize
+    ${'extra-small'} | ${12}
+    ${'small'}       | ${16}
+    ${'medium'}      | ${20}
+    ${'large'}       | ${24}
+    ${'extra-large'} | ${32}
+  `(
+    'should have correct font size when size is $size',
+    ({ size, fontSize }) => {
+      const { icon } = renderComponent({ size });
+
+      expect(icon).toHaveStyle({ fontSize: `${fontSize}px` });
+    }
+  );
+
+  it.each`
+    variant       | isDisabled
+    ${'default'}  | ${false}
+    ${'default'}  | ${true}
+    ${'contrast'} | ${false}
+    ${'contrast'} | ${true}
+  `(
+    'should have style if variant is $variant and isDisabled is $isDisabled',
+    ({ variant, color, isDisabled }) => {
+      const { container } = renderComponent({
+        variant,
+        color,
+        isDisabled,
+      });
+
+      expect(container).toMatchSnapshot();
+    }
+  );
 });

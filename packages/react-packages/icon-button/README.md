@@ -11,7 +11,7 @@ export const App = () => {
   const handleClick = () => null;
 
   return (
-    <IconButton onClick={handleClick} color='primary'>
+    <IconButton onClick={handleClick}>
       <EditIcon />
     </IconButton>
   );
@@ -22,14 +22,11 @@ export const App = () => {
 
 ### IconButton
 
-| Property       | Type                                             | Default   | Description                                                       |
-| -------------- | ------------------------------------------------ | --------- | ----------------------------------------------------------------- |
-| `children`     | `ReactNode`                                      | -         | Icon component to be rendered                                     |
-| `onClick`      | `function`                                       | -         | The triggered function when clicked on the button                 |
-| `dataTestId`   | `string`                                         | button    | Customizable test identifier                                      |
-| `isDisabled`   | `boolean`                                        | false     | Determines the disabled state of the button                       |
-| `color`        | `string`                                         | `primary` | Determines the hover color of the icon                            |
-| `onMouseOver`  | `(event: React.MouseEvent<HTMLElement>) => void` | -         | The triggered function when the mouse overs the button            |
-| `onMouseEnter` | `(event: React.MouseEvent<HTMLElement>) => void` | -         | Trigger function when mouse enters the boundary of button element |
-
-Note: the main color of the icon should be defined directly on it (e.g. `<EditIcon color='red' />`)
+| Property     | Type                | Default   | Description                                       |
+| ------------ | ------------------- | --------- | ------------------------------------------------- |
+| `children`   | `ReactNode`         | -         | Icon component to be rendered                     |
+| `onClick`    | `function`          | -         | The triggered function when clicked on the button |
+| `dataTestId` | `string`            | button    | Customizable test identifier                      |
+| `isDisabled` | `boolean`           | false     | Determines the disabled state of the button       |
+| `variant`    | `IconButtonVariant` | `default` | Determines the variant of the icon                |
+| `size`       | `ComponentSize`     | `large`   | Determines the size of the icon                   |

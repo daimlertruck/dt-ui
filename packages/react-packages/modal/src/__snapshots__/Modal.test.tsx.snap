@@ -164,13 +164,22 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
   -ms-flex-align: center;
   align-items: center;
   border: none;
-  cursor: pointer;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.emotion-10 i {
+  font-size: 24px;
   color: #454545;
 }
 
-.emotion-10:hover>i {
+.emotion-10:not(:disabled)>i:hover,
+.emotion-10:not(:disabled)>i:active {
   color: #00677F;
+}
+
+.emotion-10:focus-visible {
+  outline: 2px solid #000000;
 }
 
 .emotion-12 {
@@ -441,13 +450,22 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border: none;
-  cursor: pointer;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.emotion-10 i {
+  font-size: 24px;
   color: #454545;
 }
 
-.emotion-10:hover>i {
+.emotion-10:not(:disabled)>i:hover,
+.emotion-10:not(:disabled)>i:active {
   color: #00677F;
+}
+
+.emotion-10:focus-visible {
+  outline: 2px solid #000000;
 }
 
 .emotion-12 {

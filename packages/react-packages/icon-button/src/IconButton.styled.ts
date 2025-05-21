@@ -1,33 +1,72 @@
-import { Colors } from '@dt-ui/react-core';
+import { ComponentSize } from '@dt-ui/react-core';
 import styled from '@emotion/styled';
 
+import { IconButtonVariant } from './constants';
+
 export interface IconButtonStyledProps {
-  color: Colors | 'default';
+  variant?: IconButtonVariant;
+  size?: ComponentSize;
 }
 
-export const IconButtonStyled = styled.button<IconButtonStyledProps>`
-  ${({ theme, color, disabled }) => `
-    display: flex;
-    align-items: center;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: ${theme.palette.content.default};
+const iconButtonSizeStyles: Record<ComponentSize, string> = {
+  'extra-small': `
+    font-size: 12px;
+  `,
+  small: `
+    font-size: 16px;
+  `,
+  medium: `
+    font-size: 20px;
+  `,
+  large: `
+    font-size: 24px;
+  `,
+  'extra-large': `
+    font-size: 32px;
+  `,
+};
 
-    &:hover > i {
-      color: ${
-        color === 'default'
-          ? theme.palette.content.dark
-          : theme.palette[color].default
-      };
+export const IconButtonStyled = styled.button<IconButtonStyledProps>(
+  ({ theme, disabled, variant = 'default', size = 'large' }) => {
+    const isDefaultVariant = variant === 'default';
+
+    const baseColor = () => {
+      if (disabled) {
+        return isDefaultVariant
+          ? theme.palette.content.light
+          : theme.palette.content.default;
+      }
+
+      return isDefaultVariant
+        ? theme.palette.content.default
+        : theme.palette.content.contrast;
     };
-    
-    ${
-      disabled &&
-      `
-        opacity: 0.4;
-        pointer-events: none;
-      `
-    }
-  `}
-`;
+
+    const hoverColor = isDefaultVariant
+      ? theme.palette.accent.default
+      : theme.palette.accent.medium;
+
+    return `
+      display: flex;
+      align-items: center;
+      border: none;
+      background-color: transparent;
+      cursor: ${disabled ? 'not-allowed' : 'pointer'};
+
+      i {
+        ${iconButtonSizeStyles[size]};
+        color: ${baseColor()};
+      }
+
+      &:not(:disabled) > i {
+        &:hover, &:active {
+          color: ${hoverColor};
+        }
+      }
+
+      &:focus-visible {
+        outline: 2px solid ${theme.palette.primary.default};
+      }
+    `;
+  }
+);
