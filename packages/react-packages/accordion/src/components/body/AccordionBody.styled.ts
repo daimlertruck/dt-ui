@@ -6,14 +6,20 @@ interface BodyStyledProps {
 
 export const BodyStyled = styled.div<BodyStyledProps>`
   ${({ theme, isOpenState }) => `
-    padding: ${theme.spacing['2xs']};
-    padding-top: ${theme.spacing.none};
+    ${theme.fontStyles.body1};
+    display: grid;
+    grid-template-rows: ${isOpenState ? '1fr' : '0fr'};
+    transition: grid-template-rows 0.3s ease-in-out, padding 0.3s ease-in-out;
+    color: ${theme.palette.content.dark};
     
-    display: ${isOpenState ? 'block' : 'none'};
-
-    @media only screen and (min-width: ${theme.breakpoints.s}px) {
-      padding: ${theme.spacing.xs};
-      padding-top: ${theme.spacing.none};
+    padding: 0 ${theme.spacing['2xs']} ${
+    isOpenState ? theme.spacing['2xs'] : 0
+  };
+      
+    & > div {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
     }
   `}
 `;

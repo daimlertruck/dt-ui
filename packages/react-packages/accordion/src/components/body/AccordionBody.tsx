@@ -13,10 +13,11 @@ export const AccordionBody = ({
   style,
 }: AccordionBodyProps) => (
   <BodyStyled
+    aria-expanded={isOpenState}
     data-testid={dataTestId ?? 'accordion-body'}
     isOpenState={isOpenState}
     style={style}
   >
-    {children}
+    <div>{children}</div>
   </BodyStyled>
 );
