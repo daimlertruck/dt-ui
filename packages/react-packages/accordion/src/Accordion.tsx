@@ -1,58 +1,58 @@
 import { BaseProps } from '@dt-ui/react-core';
-import { ReactNode, useEffect, useState } from 'react';
+import { KeyboardEvent, ReactNode, useEffect, useState } from 'react';
 
-import { AccordionStyled, DisabledOverlay } from './Accordion.styled';
+import { AccordionStyled } from './Accordion.styled';
 import { AccordionHeader, AccordionBody } from './components';
-import { AccordionBackgroundColor } from './constants';
 
 export interface AccordionBaseProps extends BaseProps {
-  isOpen: boolean;
+  isOpen?: boolean;
   headerContent: ReactNode;
-  backgroundColor?: AccordionBackgroundColor;
+  hasBackground?: boolean;
   isDisabled?: boolean;
+  hasBorderBottom?: boolean;
+  className?: string;
 }
 
 const Accordion = ({
-  isOpen,
+  isOpen = false,
   headerContent,
-  backgroundColor = AccordionBackgroundColor.White,
+  hasBackground = true,
+  hasBorderBottom = false,
   isDisabled = false,
   children,
   dataTestId,
   style,
+  className,
 }: AccordionBaseProps) => {
   const [isOpenState, setIsOpenState] = useState(isOpen);
-
-  const toggleOpen = (isOpen: boolean) => setIsOpenState(isOpen);
-
-  useEffect(() => {
-    toggleOpen(isOpen);
-  }, [isOpen]);
 
   const handleHeaderClick = () => {
     if (isDisabled) {
       return;
     }
 
-    toggleOpen(!isOpenState);
+    setIsOpenState((prev) => !prev);
   };
 
-  const handleHeaderKeyPress = (event: { key: string }) => {
+  const handleHeaderKeyPress = (event: KeyboardEvent<HTMLDivElement>) => {
     if (event.key === 'Enter') {
       handleHeaderClick();
     }
   };
 
+  useEffect(() => {
+    setIsOpenState(isOpen);
+  }, [isOpen]);
+
   return (
     <AccordionStyled
-      backgroundColor={backgroundColor}
+      className={className}
       data-testid={dataTestId ?? 'accordion-container'}
+      hasBackground={hasBackground}
+      hasBorderBottom={hasBorderBottom}
       isDisabled={isDisabled}
-      isOpenState={isOpenState}
       style={style}
     >
-      {isDisabled ? <DisabledOverlay /> : null}
-
       <AccordionHeader
         handleHeaderClick={handleHeaderClick}
         handleHeaderKeyPress={handleHeaderKeyPress}

@@ -1,91 +1,71 @@
 import { withProviders } from '@dt-ui/react-core';
 import { render, screen, fireEvent } from '@testing-library/react';
 
-import { AccordionBackgroundColor } from './constants';
+import { AccordionBaseProps } from './Accordion';
 
 import { Accordion } from '.';
 
-describe('<ProvidedAccordion /> component', () => {
+describe('<Accordion /> component', () => {
   const ProvidedAccordion = withProviders(Accordion);
 
-  it('renders correctly the closed accordion', () => {
+  const renderComponent = (props?: Partial<AccordionBaseProps>) => {
     const { container } = render(
-      <ProvidedAccordion headerContent='Header Content' isOpen={false}>
-        <div>Accordion Body</div>
-      </ProvidedAccordion>
-    );
-
-    expect(container).toMatchSnapshot();
-  });
-
-  it('renders correctly the opened accordion', () => {
-    render(
-      <ProvidedAccordion headerContent='Header Content' isOpen>
+      <ProvidedAccordion {...props} headerContent='Header Content'>
         <div>Body Content</div>
       </ProvidedAccordion>
     );
 
-    expect(screen.getByText('Header Content')).toBeInTheDocument();
-    expect(screen.getByText('Body Content')).toBeInTheDocument();
-  });
+    return {
+      container,
+      header: screen.getByTestId('accordion-header'),
+      body: screen.getByTestId('accordion-body'),
+    };
+  };
 
-  it('toggles open/close when clicking the header', () => {
-    render(
-      <ProvidedAccordion headerContent='Header Content' isOpen={false}>
-        Accordion Body
-      </ProvidedAccordion>
-    );
+  it('should toggle open/close when clicking/key pressing the header', () => {
+    const { header, body } = renderComponent();
 
-    const header = screen.getByTestId('accordion-header');
-
-    fireEvent.click(header);
-    expect(screen.getByTestId('accordion-body')).toHaveStyle('display: block');
+    expect(body).toHaveStyle({ gridTemplateRows: '0fr' });
+    expect(body).toHaveAttribute('aria-expanded', 'false');
 
     fireEvent.click(header);
-    expect(screen.getByTestId('accordion-body')).toHaveStyle('display: none');
+
+    expect(body).toHaveStyle({ gridTemplateRows: '1fr' });
+    expect(body).toHaveAttribute('aria-expanded', 'true');
+
+    fireEvent.keyDown(header, { key: 'Enter' });
+
+    expect(body).toHaveAttribute('aria-expanded', 'false');
+
+    fireEvent.keyDown(header, { key: 'Space' });
+
+    expect(body).toHaveAttribute('aria-expanded', 'false');
   });
 
-  it('applies correct background color', () => {
-    render(
-      <ProvidedAccordion
-        backgroundColor={AccordionBackgroundColor.Grey}
-        headerContent='Header Content'
-        isOpen={false}
-      >
-        Accordion Body
-      </ProvidedAccordion>
-    );
+  it('should not toggle when disabled', () => {
+    const { header, body } = renderComponent({
+      isDisabled: true,
+    });
+    expect(body).toHaveAttribute('aria-expanded', 'false');
 
-    const accordionContainer = screen.getByTestId('accordion-container');
-    expect(accordionContainer).toHaveStyle(
-      'background-color: rgb(222, 222, 222);'
-    );
+    fireEvent.click(header);
+
+    expect(body).toHaveAttribute('aria-expanded', 'false');
   });
 
-  it('applies showIcon prop as false', () => {
-    render(
-      <ProvidedAccordion headerContent='Header Content' isOpen={false}>
-        Accordion Body
-      </ProvidedAccordion>
-    );
+  it.each`
+    hasBackground | hasBorderBottom
+    ${false}      | ${false}
+    ${true}       | ${true}
+  `(
+    'should render with correct style when hasBackground is $hasBackground and hasBorderBottom is $hasBorderBottom',
+    ({ hasBackground, hasBorderBottom }) => {
+      const { container } = renderComponent({
+        hasBackground,
+        hasBorderBottom,
+      });
 
-    expect(screen.queryByTestId('accordion-icon')).toBeNull();
-  });
-
-  it('applies isDisabled prop', () => {
-    render(
-      <ProvidedAccordion
-        headerContent='Header Content'
-        isDisabled
-        isOpen={false}
-      >
-        Accordion Body
-      </ProvidedAccordion>
-    );
-
-    const accordionContainer = screen.getByTestId('accordion-container');
-    expect(accordionContainer).toHaveStyle(
-      'background-color: rgb(243, 243, 245);'
-    );
-  });
+      expect(container).toMatchSnapshot();
+    }
+  );
 });

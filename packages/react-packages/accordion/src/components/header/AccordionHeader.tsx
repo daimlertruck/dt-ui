@@ -1,20 +1,13 @@
 import { BaseProps } from '@dt-ui/react-core';
+import { Icon } from '@dt-ui/react-icon';
+import { useTheme } from '@emotion/react';
+import { KeyboardEvent } from 'react';
 
-import {
-  UnfoldMoreIcon,
-  UnfoldLessIcon,
-} from '../../../../../dt-ui-react/core';
-
-import {
-  ChildrenContainerStyled,
-  FlexContainerStyled,
-  HeaderStyled,
-  IconContainerStyled,
-} from './AccordionHeader.styled';
+import { HeaderStyled } from './AccordionHeader.styled';
 
 export interface AccordionHeaderProps extends BaseProps {
   handleHeaderClick: () => void;
-  handleHeaderKeyPress: (event: { key: string }) => void;
+  handleHeaderKeyPress: (e: KeyboardEvent<HTMLDivElement>) => void;
   isOpenState: boolean;
   isDisabled: boolean;
 }
@@ -27,22 +20,25 @@ export const AccordionHeader = ({
   children,
   dataTestId,
   style,
-}: AccordionHeaderProps) => (
-  <HeaderStyled
-    aria-disabled={isDisabled}
-    data-testid={dataTestId ?? 'accordion-header'}
-    isDisabled={isDisabled}
-    onClick={handleHeaderClick}
-    onKeyDown={handleHeaderKeyPress}
-    role='button'
-    style={style}
-    tabIndex={isDisabled ? -1 : 0}
-  >
-    <FlexContainerStyled>
-      <ChildrenContainerStyled>{children}</ChildrenContainerStyled>
-      <IconContainerStyled>
-        {isOpenState ? <UnfoldLessIcon /> : <UnfoldMoreIcon />}
-      </IconContainerStyled>
-    </FlexContainerStyled>
-  </HeaderStyled>
-);
+}: AccordionHeaderProps) => {
+  const theme = useTheme();
+
+  return (
+    <HeaderStyled
+      aria-disabled={isDisabled}
+      data-testid={dataTestId ?? 'accordion-header'}
+      onClick={handleHeaderClick}
+      onKeyDown={handleHeaderKeyPress}
+      role='button'
+      style={style}
+      tabIndex={isDisabled ? -1 : 0}
+    >
+      {children}
+      <Icon
+        code={isOpenState ? 'unfold_less' : 'unfold_more'}
+        color={theme.palette.content.dark}
+        size='large'
+      />
+    </HeaderStyled>
+  );
+};
