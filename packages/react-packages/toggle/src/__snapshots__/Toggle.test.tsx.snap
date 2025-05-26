@@ -53,7 +53,7 @@ exports[`<Toggle /> component should render a toggle checked 1`] = `
   margin: 0;
   text-transform: none;
   cursor: pointer;
-  color: #454545;
+  color: #292929;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -369,7 +369,7 @@ exports[`<Toggle /> component should render a toggle on default state 1`] = `
   margin: 0;
   text-transform: none;
   cursor: pointer;
-  color: #454545;
+  color: #292929;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

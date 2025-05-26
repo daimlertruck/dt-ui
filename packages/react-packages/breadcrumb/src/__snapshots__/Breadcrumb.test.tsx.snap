@@ -8,7 +8,7 @@ exports[`<Breadcrumb /> component renders nav element with the correct breadcrum
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #636363;
+  color: #454545;
   overflow: hidden;
 }
 
@@ -69,7 +69,7 @@ exports[`<Breadcrumb /> component renders nav element with the correct breadcrum
 }
 
 .emotion-4 svg {
-  color: #636363;
+  color: #454545;
 }
 
 .emotion-4:last-child * {

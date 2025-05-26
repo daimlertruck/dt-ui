@@ -62,7 +62,7 @@ describe('<LabelField /> component', () => {
 
     const LabelField = getByTestId('label-field');
 
-    expect(LabelField).toHaveStyle('color: rgb(255, 0, 0)');
+    expect(LabelField).toHaveStyle('color: rgb(160, 0, 0)');
   });
 
   it('it renders a label field as required', () => {

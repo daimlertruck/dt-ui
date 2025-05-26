@@ -38,7 +38,7 @@ export const ToggleSwitchStyled = styled.label`
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background: ${theme.colors.grey_00};
+      background: ${theme.palette.content.contrast};
       transition: transform 0.3s ease;
       margin: 2px;
     }

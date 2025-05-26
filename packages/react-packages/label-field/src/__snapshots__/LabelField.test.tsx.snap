@@ -76,7 +76,7 @@ exports[`<LabelField /> component it renders a label field as required 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF0000;
+  color: #A00000;
 }
 
 <div>

@@ -42,7 +42,7 @@ exports[`<Select /> component should render Select 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
+  color: #292929;
   padding: 8px 12px;
   gap: 8px;
   background-color: #FFFFFF;
@@ -115,7 +115,7 @@ exports[`<Select /> component should render Select 1`] = `
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #454545;
+  color: #292929;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -147,7 +147,7 @@ exports[`<Select /> component should render Select 1`] = `
   padding: 8px 16px;
   gap: 4px;
   background-color: #FFFFFF;
-  color: #454545;
+  color: #292929;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -234,7 +234,7 @@ exports[`<Select /> component should render Select 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#454545"
+            color="#292929"
             data-testid="icon"
           >
             expand_less
@@ -261,7 +261,7 @@ exports[`<Select /> component should render Select 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#454545"
+            color="#292929"
             data-testid="icon"
           >
             check
@@ -285,7 +285,7 @@ exports[`<Select /> component should render Select 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#454545"
+            color="#292929"
             data-testid="icon"
           >
             check
@@ -309,7 +309,7 @@ exports[`<Select /> component should render Select 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#454545"
+            color="#292929"
             data-testid="icon"
           >
             check
@@ -333,7 +333,7 @@ exports[`<Select /> component should render Select 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#454545"
+            color="#292929"
             data-testid="icon"
           >
             check
@@ -357,7 +357,7 @@ exports[`<Select /> component should render Select 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#454545"
+            color="#292929"
             data-testid="icon"
           >
             check
@@ -427,7 +427,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
+  color: #292929;
   padding: 8px 12px;
   gap: 8px;
   background-color: #FFFFFF;
@@ -500,7 +500,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #454545;
+  color: #292929;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -554,7 +554,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#454545"
+            color="#292929"
             data-testid="icon"
           >
             expand_more

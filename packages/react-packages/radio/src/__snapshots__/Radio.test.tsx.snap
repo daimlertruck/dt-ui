@@ -60,7 +60,7 @@ exports[`<Radio /> component renders Radio group with Radio 1 checked and Radio 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
+  color: #292929;
   cursor: inherit;
 }
 

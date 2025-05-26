@@ -7,8 +7,8 @@ exports[`<Tag /> component should render the tag with variant outlined, color se
   line-height: 0.875rem;
   padding: 2px 8px;
   height: 18px;
-  border: 1px solid #636363;
-  color: #636363;
+  border: 1px solid #454545;
+  color: #454545;
   background-color: #C1C1C1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -33,9 +33,9 @@ exports[`<Tag /> component should render the tag with variant outlined, color se
 }
 
 .emotion-0:hover {
-  border-color: #292929;
-  color: #292929;
-  background-color: #A3A3A3;
+  border-color: #131313;
+  color: #131313;
+  background-color: #838383;
 }
 
 .emotion-0>:first-child {
@@ -72,7 +72,7 @@ exports[`<Tag /> component should render the tag with variant solid, color error
   height: 32px;
   border: 0;
   color: #FFFFFF;
-  background-color: #FFECE7;
+  background-color: #FFCBC0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

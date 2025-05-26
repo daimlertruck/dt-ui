@@ -44,7 +44,7 @@ exports[`SegmentedControl renders without errors 1`] = `
   gap: 4px;
   cursor: pointer;
   background-color: #FFFFFF;
-  color: #454545;
+  color: #292929;
   border: none;
   border-radius: 0px;
   padding: 4px 4px;
@@ -52,11 +52,11 @@ exports[`SegmentedControl renders without errors 1`] = `
 
 .emotion-4:not(:disabled):hover {
   background-color: #DEDEDE;
-  color: #454545;
+  color: #292929;
 }
 
 .emotion-4:not(:disabled):hover i {
-  color: #292929;
+  color: #131313;
 }
 
 .emotion-4:not(:disabled)[aria-pressed="true"] {
@@ -89,7 +89,7 @@ exports[`SegmentedControl renders without errors 1`] = `
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #454545;
+  color: #292929;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -114,7 +114,7 @@ exports[`SegmentedControl renders without errors 1`] = `
       >
         <i
           class="emotion-6 emotion-7"
-          color="#454545"
+          color="#292929"
           data-testid="icon"
         >
           list
@@ -133,7 +133,7 @@ exports[`SegmentedControl renders without errors 1`] = `
       >
         <i
           class="emotion-6 emotion-7"
-          color="#454545"
+          color="#292929"
           data-testid="icon"
         >
           grid_view

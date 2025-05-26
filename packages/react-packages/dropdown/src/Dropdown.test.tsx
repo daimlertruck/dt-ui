@@ -152,7 +152,7 @@ describe('<Dropdown /> component', () => {
       'typography'
     );
 
-    expect(select).toHaveStyle('border-color: #ff0000;');
+    expect(select).toHaveStyle('border-color: #a00000;');
     expect(dropdownText).toHaveAttribute('color', 'error.default');
   });
 

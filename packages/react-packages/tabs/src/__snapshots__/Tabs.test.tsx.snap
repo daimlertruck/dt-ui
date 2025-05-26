@@ -27,7 +27,7 @@ exports[`<Tabs /> component should match the snapshot by displaying contained va
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #454545;
+  color: #292929;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -115,7 +115,7 @@ exports[`<Tabs /> component should match the snapshot by displaying contained va
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #454545;
+  color: #292929;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -153,7 +153,7 @@ exports[`<Tabs /> component should match the snapshot by displaying contained va
   >
     <i
       class="emotion-2 emotion-3"
-      color="#454545"
+      color="#292929"
       data-testid="left-arrow"
       style="display: none;"
     >
@@ -188,7 +188,7 @@ exports[`<Tabs /> component should match the snapshot by displaying contained va
       >
         <i
           class="emotion-12 emotion-3"
-          color="#454545"
+          color="#292929"
           data-testid="icon"
         >
           menu
@@ -207,7 +207,7 @@ exports[`<Tabs /> component should match the snapshot by displaying contained va
     </div>
     <i
       class="emotion-2 emotion-3"
-      color="#454545"
+      color="#292929"
       data-testid="right-arrow"
       style="display: none;"
     >
@@ -244,7 +244,7 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #454545;
+  color: #292929;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -334,7 +334,7 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #454545;
+  color: #292929;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -372,7 +372,7 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
   >
     <i
       class="emotion-2 emotion-3"
-      color="#454545"
+      color="#292929"
       data-testid="left-arrow"
       style="display: none;"
     >
@@ -407,7 +407,7 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
       >
         <i
           class="emotion-12 emotion-3"
-          color="#454545"
+          color="#292929"
           data-testid="icon"
         >
           menu
@@ -426,7 +426,7 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
     </div>
     <i
       class="emotion-2 emotion-3"
-      color="#454545"
+      color="#292929"
       data-testid="right-arrow"
       style="display: none;"
     >

@@ -57,7 +57,7 @@ exports[`<Accordion /> component should render with correct style when hasBackgr
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #292929;
+  color: #131313;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -75,7 +75,7 @@ exports[`<Accordion /> component should render with correct style when hasBackgr
   grid-template-rows: 0fr;
   -webkit-transition: grid-template-rows 0.3s ease-in-out,padding 0.3s ease-in-out;
   transition: grid-template-rows 0.3s ease-in-out,padding 0.3s ease-in-out;
-  color: #292929;
+  color: #131313;
   padding: 0 16px 0;
 }
 
@@ -100,7 +100,7 @@ exports[`<Accordion /> component should render with correct style when hasBackgr
       Header Content
       <i
         class="emotion-4 emotion-5"
-        color="#292929"
+        color="#131313"
         data-testid="icon"
       >
         unfold_more
@@ -178,7 +178,7 @@ exports[`<Accordion /> component should render with correct style when hasBackgr
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #292929;
+  color: #131313;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -196,7 +196,7 @@ exports[`<Accordion /> component should render with correct style when hasBackgr
   grid-template-rows: 0fr;
   -webkit-transition: grid-template-rows 0.3s ease-in-out,padding 0.3s ease-in-out;
   transition: grid-template-rows 0.3s ease-in-out,padding 0.3s ease-in-out;
-  color: #292929;
+  color: #131313;
   padding: 0 16px 0;
 }
 
@@ -221,7 +221,7 @@ exports[`<Accordion /> component should render with correct style when hasBackgr
       Header Content
       <i
         class="emotion-4 emotion-5"
-        color="#292929"
+        color="#131313"
         data-testid="icon"
       >
         unfold_more

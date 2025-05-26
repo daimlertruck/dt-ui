@@ -42,7 +42,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF0000;
+  color: #A00000;
   cursor: inherit;
   font-weight: 400;
   font-size: 0.75rem;
@@ -76,7 +76,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   min-width: 198px;
   width: 100%;
   height: 54px;
-  color: #454545;
+  color: #292929;
   gap: 8px;
   background-color: #F3F3F5;
   padding-inline: 12px;
@@ -91,11 +91,11 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -189,7 +189,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF0000;
+  color: #A00000;
 }
 
 <div>
@@ -274,7 +274,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF0000;
+  color: #A00000;
   cursor: inherit;
   font-weight: 400;
   font-size: 0.75rem;
@@ -308,7 +308,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   min-width: 198px;
   width: 100%;
   height: 54px;
-  color: #454545;
+  color: #292929;
   gap: 8px;
   background-color: #F3F3F5;
   padding-inline: 12px;
@@ -323,11 +323,11 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -421,7 +421,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF0000;
+  color: #A00000;
 }
 
 <div>
@@ -532,7 +532,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF0000;
+  color: #A00000;
 }
 
 .emotion-6 {
@@ -550,7 +550,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
   min-width: 198px;
   width: 100%;
   height: 54px;
-  color: #454545;
+  color: #292929;
   gap: 8px;
   background-color: #F3F3F5;
   padding-inline: 12px;
@@ -565,11 +565,11 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
 }
 
 .emotion-6:has(input[data-error="true"]) {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-6:has(input[data-error="true"]):focus {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-6:has(input[readonly]:not([disabled])) {

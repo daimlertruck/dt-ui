@@ -41,7 +41,7 @@ exports[`<Pagination /> component should render the pagination content 1`] = `
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #454545;
+  color: #292929;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -61,7 +61,7 @@ exports[`<Pagination /> component should render the pagination content 1`] = `
   width: 50px;
   height: 32px;
   background-color: #FFFFFF;
-  color: #454545;
+  color: #292929;
   border: 1px solid #DEDEDE;
   border-radius: 3px;
 }
@@ -115,7 +115,7 @@ exports[`<Pagination /> component should render the pagination content 1`] = `
     >
       <i
         class="emotion-4 emotion-5"
-        color="#454545"
+        color="#292929"
         data-testid="icon"
       >
         arrow_back_ios
@@ -148,7 +148,7 @@ exports[`<Pagination /> component should render the pagination content 1`] = `
     >
       <i
         class="emotion-4 emotion-5"
-        color="#454545"
+        color="#292929"
         data-testid="icon"
       >
         arrow_forward_ios

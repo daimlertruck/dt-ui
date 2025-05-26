@@ -76,7 +76,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
   min-width: 198px;
   width: 100%;
   height: 54px;
-  color: #454545;
+  color: #292929;
   gap: 8px;
   background-color: #F3F3F5;
   padding-inline: 12px;
@@ -91,11 +91,11 @@ exports[`<TextField /> component renders disabled input 1`] = `
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -289,7 +289,7 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
   min-width: 198px;
   width: 100%;
   height: 54px;
-  color: #454545;
+  color: #292929;
   gap: 8px;
   background-color: #F3F3F5;
   padding-inline: 12px;
@@ -304,11 +304,11 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -373,7 +373,7 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #454545;
+  color: #292929;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -446,7 +446,7 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
       >
         <i
           class="emotion-8 emotion-9"
-          color="#454545"
+          color="#292929"
           data-testid="icon"
         >
           home_work
@@ -467,7 +467,7 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
       >
         <i
           class="emotion-8 emotion-9"
-          color="#454545"
+          color="#292929"
           data-testid="icon"
         >
           home_work
@@ -554,7 +554,7 @@ exports[`<TextField /> component renders input with light background fill 1`] = 
   min-width: 198px;
   width: 100%;
   height: 54px;
-  color: #454545;
+  color: #292929;
   gap: 8px;
   background-color: #FAFAFA;
   padding-inline: 12px;
@@ -569,11 +569,11 @@ exports[`<TextField /> component renders input with light background fill 1`] = 
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -760,7 +760,7 @@ exports[`<TextField /> component renders input with variant baseLine 1`] = `
   min-width: 198px;
   width: 100%;
   height: 54px;
-  color: #454545;
+  color: #292929;
   gap: 8px;
   background-color: #F3F3F5;
   padding-inline: 12px;
@@ -775,11 +775,11 @@ exports[`<TextField /> component renders input with variant baseLine 1`] = `
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -915,7 +915,7 @@ exports[`<TextField /> component renders input without floating label 1`] = `
 
 .emotion-0:has(input[readonly]:not(input[disabled])) label,
 .emotion-0:has(input[readonly]:not(input[disabled])) label>span {
-  color: #454545;
+  color: #292929;
 }
 
 .emotion-0 input[type="search"]::-webkit-search-decoration,
@@ -932,7 +932,7 @@ exports[`<TextField /> component renders input without floating label 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
+  color: #292929;
   cursor: inherit;
 }
 
@@ -951,7 +951,7 @@ exports[`<TextField /> component renders input without floating label 1`] = `
   min-width: 198px;
   width: 100%;
   height: 54px;
-  color: #454545;
+  color: #292929;
   gap: 8px;
   background-color: #F3F3F5;
   padding-inline: 12px;
@@ -966,11 +966,11 @@ exports[`<TextField /> component renders input without floating label 1`] = `
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -1122,7 +1122,7 @@ exports[`<TextField /> component should render the TextField with error styles a
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF0000;
+  color: #A00000;
   cursor: inherit;
   font-weight: 400;
   font-size: 0.75rem;
@@ -1156,7 +1156,7 @@ exports[`<TextField /> component should render the TextField with error styles a
   min-width: 198px;
   width: 100%;
   height: 54px;
-  color: #454545;
+  color: #292929;
   gap: 8px;
   background-color: #F3F3F5;
   padding-inline: 12px;
@@ -1171,11 +1171,11 @@ exports[`<TextField /> component should render the TextField with error styles a
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {
@@ -1269,7 +1269,7 @@ exports[`<TextField /> component should render the TextField with error styles a
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #FF0000;
+  color: #A00000;
 }
 
 <div>
@@ -1387,7 +1387,7 @@ exports[`<TextField /> component should render the TextField with info message 1
   min-width: 198px;
   width: 100%;
   height: 54px;
-  color: #454545;
+  color: #292929;
   gap: 8px;
   background-color: #F3F3F5;
   padding-inline: 12px;
@@ -1402,11 +1402,11 @@ exports[`<TextField /> component should render the TextField with info message 1
 }
 
 .emotion-4:has(input[data-error="true"]) {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[data-error="true"]):focus {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-4:has(input[readonly]:not([disabled])) {

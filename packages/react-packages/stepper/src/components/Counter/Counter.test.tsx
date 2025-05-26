@@ -17,7 +17,7 @@ describe('<Counter /> component', () => {
     const counterEl = screen.getByTestId('counter');
 
     expect(counterEl).toHaveStyleRule('color', '#FFFFFF');
-    expect(counterEl).toHaveStyleRule('background-color', '#454545');
+    expect(counterEl).toHaveStyleRule('background-color', '#292929');
   });
 
   it.each`

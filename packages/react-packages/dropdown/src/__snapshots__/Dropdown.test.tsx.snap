@@ -30,13 +30,13 @@ exports[`<Dropdown /> component renders dropdown correctly 1`] = `
   outline: none;
   background-color: #F3F3F5;
   border-width: 1px;
-  border-color: #292929;
+  border-color: #131313;
   border-style: solid;
 }
 
 .emotion-2:focus,
 .emotion-2:hover {
-  border-color: #292929;
+  border-color: #131313;
 }
 
 .emotion-2:disabled {
@@ -50,7 +50,7 @@ exports[`<Dropdown /> component renders dropdown correctly 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
+  color: #292929;
 }
 
 .emotion-6 {
@@ -60,7 +60,7 @@ exports[`<Dropdown /> component renders dropdown correctly 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
+  color: #292929;
 }
 
 .emotion-8 {
@@ -89,7 +89,7 @@ exports[`<Dropdown /> component renders dropdown correctly 1`] = `
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #454545;
+  color: #292929;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -117,7 +117,7 @@ exports[`<Dropdown /> component renders dropdown correctly 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
+  color: #292929;
   list-style: none;
   padding: 8px 16px;
   text-overflow: ellipsis;
@@ -189,7 +189,7 @@ exports[`<Dropdown /> component renders dropdown correctly 1`] = `
         >
           <i
             class="emotion-10 emotion-11"
-            color="#454545"
+            color="#292929"
             data-testid="icon"
           >
             expand_less

@@ -8,26 +8,32 @@ type ColorKey =
   | keyof typeof green
   | keyof typeof orange;
 
-export type CustomTheme = {
-  palette: {
-    [category in
-      | 'surface'
-      | 'border'
-      | 'content'
-      | 'primary'
-      | 'secondary'
-      | 'error'
-      | 'warning'
-      | 'success'
-      | 'informative'
-      | 'accent']: {
-      default: string;
-      light: string;
-      medium: string;
-      dark: string;
-      contrast?: string;
-    };
+type Palette = {
+  [category in 'surface' | 'border' | 'content']: {
+    default: string;
+    light: string;
+    medium: string;
+    dark: string;
+    contrast: string;
   };
+} & {
+  [category in
+    | 'primary'
+    | 'secondary'
+    | 'error'
+    | 'warning'
+    | 'success'
+    | 'informative'
+    | 'accent']: {
+    default: string;
+    light: string;
+    medium: string;
+    dark: string;
+  };
+};
+
+export type CustomTheme = {
+  palette: Palette;
   colors: {
     [key in ColorKey]: string;
   };

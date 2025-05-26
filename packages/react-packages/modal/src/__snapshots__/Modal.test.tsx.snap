@@ -116,7 +116,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
 }
 
 .emotion-4 button {
-  color: #454545;
+  color: #292929;
 }
 
 .emotion-4 svg {
@@ -144,7 +144,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #292929;
+  color: #131313;
 }
 
 @media only screen and (min-width:1024px) {
@@ -170,7 +170,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
 
 .emotion-10 i {
   font-size: 24px;
-  color: #454545;
+  color: #292929;
 }
 
 .emotion-10:not(:disabled)>i:hover,
@@ -194,7 +194,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #454545;
+  color: #292929;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -273,7 +273,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
         >
           <i
             class="emotion-12 emotion-13"
-            color="#454545"
+            color="#292929"
             data-testid="icon"
           >
             close
@@ -402,7 +402,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
 }
 
 .emotion-4 button {
-  color: #454545;
+  color: #292929;
 }
 
 .emotion-4 svg {
@@ -430,7 +430,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #292929;
+  color: #131313;
 }
 
 @media only screen and (min-width:1024px) {
@@ -456,7 +456,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
 
 .emotion-10 i {
   font-size: 24px;
-  color: #454545;
+  color: #292929;
 }
 
 .emotion-10:not(:disabled)>i:hover,
@@ -480,7 +480,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   word-wrap: normal;
   white-space: nowrap;
   font-variation-settings: 'FILL' 0;
-  color: #454545;
+  color: #292929;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -494,7 +494,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
+  color: #292929;
 }
 
 .emotion-16 {
@@ -567,20 +567,20 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   margin: 0;
   text-transform: none;
   padding: calc(12px - 2px) 24px;
-  color: #636363;
-  border-color: #636363;
+  color: #454545;
+  border-color: #454545;
   background-color: transparent;
 }
 
 .emotion-20:hover {
-  color: #636363;
-  border-color: #636363;
+  color: #454545;
+  border-color: #454545;
   background-color: #C1C1C1;
 }
 
 .emotion-20:active {
-  color: #636363;
-  border-color: #636363;
+  color: #454545;
+  border-color: #454545;
   background-color: #C1C1C1;
 }
 
@@ -687,7 +687,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
         >
           <i
             class="emotion-12 emotion-13"
-            color="#454545"
+            color="#292929"
             data-testid="icon"
           >
             close

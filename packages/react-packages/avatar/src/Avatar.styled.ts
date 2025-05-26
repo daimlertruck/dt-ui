@@ -59,7 +59,7 @@ export const AvatarStyled = styled.div<AvatarStyledProps>`
     switch (type) {
       case AvatarType.Primary:
         styles += `
-          color: ${theme.palette.primary.contrast};
+          color: ${theme.palette.content.contrast};
           
           & > * {
             background-color: ${theme.palette.primary.default};
@@ -73,7 +73,7 @@ export const AvatarStyled = styled.div<AvatarStyledProps>`
 
       case AvatarType.Secondary:
         styles += `
-          color: ${theme.palette.secondary.contrast};
+          color: ${theme.palette.content.contrast};
           
           & > * {
             background-color: ${theme.palette.secondary.default};
@@ -90,7 +90,7 @@ export const AvatarStyled = styled.div<AvatarStyledProps>`
           color: ${theme.palette.primary.default};
           
           & > * {
-            background-color: ${theme.palette.primary.contrast};
+            background-color: ${theme.palette.content.contrast};
 
             &:hover {
               background-color: ${theme.palette.primary.light};

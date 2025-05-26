@@ -75,7 +75,7 @@ exports[`<TextArea /> component renders disabled input 1`] = `
   background-color: #F3F3F5;
   border-style: none;
   width: 100%;
-  color: #292929;
+  color: #131313;
   resize: none;
   outline: none;
   padding-right: 10px;
@@ -209,7 +209,7 @@ exports[`<TextArea /> component renders input with an value 1`] = `
   background-color: #F3F3F5;
   border-style: none;
   width: 100%;
-  color: #292929;
+  color: #131313;
   resize: none;
   outline: none;
   padding-right: 10px;
@@ -343,7 +343,7 @@ exports[`<TextArea /> component renders input with light background fill 1`] = `
   background-color: #FAFAFA;
   border-style: none;
   width: 100%;
-  color: #292929;
+  color: #131313;
   resize: none;
   outline: none;
   padding-right: 10px;
@@ -475,7 +475,7 @@ exports[`<TextArea /> component renders input with resize option 1`] = `
   background-color: #F3F3F5;
   border-style: none;
   width: 100%;
-  color: #292929;
+  color: #131313;
   resize: vertical;
   outline: none;
   padding-right: 10px;
@@ -607,7 +607,7 @@ exports[`<TextArea /> component renders input with variant baseLine 1`] = `
   background-color: #F3F3F5;
   border-style: none;
   width: 100%;
-  color: #292929;
+  color: #131313;
   resize: none;
   outline: none;
   padding-right: 10px;

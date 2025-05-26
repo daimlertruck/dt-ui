@@ -65,7 +65,7 @@ exports[`<EmptyState /> component should render Empty State 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #292929;
+  color: #131313;
 }
 
 @media only screen and (min-width:1024px) {
@@ -82,7 +82,7 @@ exports[`<EmptyState /> component should render Empty State 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
+  color: #292929;
 }
 
 <div>
@@ -178,7 +178,7 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #292929;
+  color: #131313;
 }
 
 @media only screen and (min-width:1024px) {
@@ -195,7 +195,7 @@ exports[`<EmptyState /> component should render Empty State with a Button 1`] = 
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
+  color: #292929;
 }
 
 .emotion-8 {
@@ -354,7 +354,7 @@ exports[`<EmptyState /> component should render Empty State with image 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #292929;
+  color: #131313;
 }
 
 @media only screen and (min-width:1024px) {
@@ -371,7 +371,7 @@ exports[`<EmptyState /> component should render Empty State with image 1`] = `
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
-  color: #454545;
+  color: #292929;
 }
 
 <div>

@@ -19,10 +19,10 @@ export const palette: Theme['palette'] = {
     contrast: colors.grey_00,
   },
   content: {
-    default: colors.grey_80,
+    default: colors.grey_90,
     light: colors.grey_50,
     medium: colors.grey_60,
-    dark: colors.grey_90,
+    dark: colors.grey_100,
     contrast: colors.grey_00,
   },
   border: {
@@ -37,14 +37,12 @@ export const palette: Theme['palette'] = {
     light: colors.grey_30,
     medium: colors.grey_60,
     dark: colors.grey_80,
-    contrast: colors.grey_00,
   },
   secondary: {
-    default: colors.grey_70,
+    default: colors.grey_80,
     light: colors.grey_40,
-    medium: colors.grey_50,
-    dark: colors.grey_90,
-    contrast: colors.grey_00,
+    medium: colors.grey_60,
+    dark: colors.grey_100,
   },
   accent: {
     default: colors.petrol_00,
@@ -71,9 +69,9 @@ export const palette: Theme['palette'] = {
     dark: colors.orange_60,
   },
   error: {
-    default: colors.red_00,
-    light: colors.red_20,
+    default: colors.red_80,
+    light: colors.red_30,
     medium: colors.red_40,
-    dark: colors.red_70,
+    dark: colors.red_90,
   },
 };

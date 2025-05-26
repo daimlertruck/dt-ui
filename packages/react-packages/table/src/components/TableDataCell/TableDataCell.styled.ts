@@ -53,7 +53,7 @@ export const CellStyled = styled.td<CellStyledProps>`
         right: ${fixedEnd ? `${fixedPosition}px` : 'unset'};
         position: sticky;
         z-index: ${TABLE_STICKY_COLUMN_Z_INDEX};
-        background: ${theme.palette.primary.contrast};
+        background: ${theme.palette.content.contrast};
         box-shadow: ${
           showBoxShadow
             ? `${fixedEnd ? '-1px' : '1px'} 0 0 0 ${theme.palette.border.light}`

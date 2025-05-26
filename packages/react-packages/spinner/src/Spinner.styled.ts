@@ -43,7 +43,7 @@ const spinnerColors = (
 ): Record<SpinnerColorScheme, SpinnerColors> => ({
   positive: {
     main: theme.palette.primary.default,
-    background: theme.palette.primary.contrast,
+    background: theme.palette.content.contrast,
   },
   negative: {
     main: theme.palette.content.contrast,

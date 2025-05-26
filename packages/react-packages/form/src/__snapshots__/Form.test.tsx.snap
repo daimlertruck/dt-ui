@@ -88,7 +88,7 @@ exports[`<Form /> component renders simple form 1`] = `
   min-width: 198px;
   width: 100%;
   height: 54px;
-  color: #454545;
+  color: #292929;
   gap: 8px;
   background-color: #F3F3F5;
   padding-inline: 12px;
@@ -103,11 +103,11 @@ exports[`<Form /> component renders simple form 1`] = `
 }
 
 .emotion-6:has(input[data-error="true"]) {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-6:has(input[data-error="true"]):focus {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-6:has(input[readonly]:not([disabled])) {
@@ -270,7 +270,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  color: #454545;
+  color: #292929;
 }
 
 .emotion-4 {
@@ -377,7 +377,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   min-width: 198px;
   width: 100%;
   height: 54px;
-  color: #454545;
+  color: #292929;
   gap: 8px;
   background-color: #F3F3F5;
   padding-inline: 12px;
@@ -392,11 +392,11 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
 }
 
 .emotion-10:has(input[data-error="true"]) {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-10:has(input[data-error="true"]):focus {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-10:has(input[readonly]:not([disabled])) {
@@ -544,7 +544,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  color: #454545;
+  color: #292929;
 }
 
 .emotion-4 {
@@ -649,7 +649,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   min-width: 198px;
   width: 100%;
   height: 54px;
-  color: #454545;
+  color: #292929;
   gap: 8px;
   background-color: #F3F3F5;
   padding-inline: 12px;
@@ -664,11 +664,11 @@ exports[`<Form /> component with Form.Group should render a form with display fl
 }
 
 .emotion-10:has(input[data-error="true"]) {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-10:has(input[data-error="true"]):focus {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-10:has(input[readonly]:not([disabled])) {
@@ -839,7 +839,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  color: #454545;
+  color: #292929;
 }
 
 .emotion-4 {
@@ -970,7 +970,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   min-width: 198px;
   width: 100%;
   height: 54px;
-  color: #454545;
+  color: #292929;
   gap: 8px;
   background-color: #F3F3F5;
   padding-inline: 12px;
@@ -985,11 +985,11 @@ exports[`<Form /> component with Form.Group should render a form with group titl
 }
 
 .emotion-14:has(input[data-error="true"]) {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-14:has(input[data-error="true"]):focus {
-  border-color: #FF0000;
+  border-color: #A00000;
 }
 
 .emotion-14:has(input[readonly]:not([disabled])) {
