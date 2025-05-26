@@ -1,5 +1,16 @@
 # @dt-ui/react
 
+## 0.1.0-beta.188
+
+### Minor Changes
+
+- feat: implement accordion new UI
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-accordion@0.1.0-beta.33
+
 ## 0.1.0-beta.187
 
 ### Minor Changes

@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react",
-  "version": "0.1.0-beta.187",
+  "version": "0.1.0-beta.188",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@dt-ui/react-link": "0.1.0-beta.3",
-    "@dt-ui/react-accordion": "0.1.0-beta.32",
+    "@dt-ui/react-accordion": "0.1.0-beta.33",
     "@dt-ui/react-avatar": "0.1.0-beta.44",
     "@dt-ui/react-backdrop": "0.1.0-beta.37",
     "@dt-ui/react-box": "0.1.0-beta.7",
