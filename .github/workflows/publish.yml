@@ -56,18 +56,18 @@ jobs:
           touch .npmrc
           echo "@dt-ui:registry=https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/" >> .npmrc
           echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:always-auth=true" >> .npmrc
-          echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:_password=${TBLX_NPM_ARTIFACT_TOKEN}" >> .npmrc
+          echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:_authToken=${TBLX_NPM_ARTIFACT_TOKEN}" >> .npmrc
           echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:username=${TBLX_NPM_ARTIFACT_USERNAME}" >> .npmrc
 
           TURBO_RESULT=$(cat $RUNNER_TEMP/turbo_result.json)
-          
+
           packages=$(echo "$TURBO_RESULT" | jq -r '.packages[]')
 
           unpublished_packages=()
-          
+
           workspace_info=$(yarn workspaces --json info)
           parsed_workspace_info=$(echo "$workspace_info" | jq -r '.data | fromjson')
-          
+
           for package in $packages; do
             echo "Checking package: $package"
             directory=$(echo "$parsed_workspace_info" | jq -r --arg package "$package" '.[$package].location')
@@ -88,7 +88,7 @@ jobs:
             fi
 
             published_versions=$(yarn info "$package" versions || echo "[]")
-      
+
             if [[ $published_versions != *"$current_version"* ]]; then
               unpublished_packages+=("$package")
             fi
