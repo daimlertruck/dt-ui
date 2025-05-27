@@ -15,7 +15,7 @@ inputs:
   NODE_VERSION:
     description: The node version to be installed
     required: false
-    default: "18"
+    default: '18'
 
 runs:
   using: composite
@@ -28,7 +28,7 @@ runs:
         echo "auto-install-peers = true" >> .npmrc
         echo "@dt-ui:registry=https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/" >> .npmrc
         echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:always-auth=true" >> .npmrc
-        echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:_password=${{ inputs.TBLX_NPM_ARTIFACT_TOKEN }}" >> .npmrc
+        echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:_authToken=${{ inputs.TBLX_NPM_ARTIFACT_TOKEN }}" >> .npmrc
         echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:username=${{ inputs.TBLX_NPM_ARTIFACT_USERNAME }}" >> .npmrc
 
     # Install Node
