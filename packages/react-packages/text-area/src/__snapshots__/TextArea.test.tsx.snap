@@ -78,6 +78,7 @@ exports[`<TextArea /> component renders disabled input 1`] = `
   color: #292929;
   resize: none;
   outline: none;
+  padding-right: 10px;
 }
 
 .emotion-8 {
@@ -211,6 +212,7 @@ exports[`<TextArea /> component renders input with an value 1`] = `
   color: #292929;
   resize: none;
   outline: none;
+  padding-right: 10px;
 }
 
 .emotion-8 {
@@ -344,6 +346,7 @@ exports[`<TextArea /> component renders input with light background fill 1`] = `
   color: #292929;
   resize: none;
   outline: none;
+  padding-right: 10px;
 }
 
 .emotion-8 {
@@ -475,6 +478,7 @@ exports[`<TextArea /> component renders input with resize option 1`] = `
   color: #292929;
   resize: vertical;
   outline: none;
+  padding-right: 10px;
 }
 
 .emotion-8 {
@@ -606,6 +610,7 @@ exports[`<TextArea /> component renders input with variant baseLine 1`] = `
   color: #292929;
   resize: none;
   outline: none;
+  padding-right: 10px;
 }
 
 .emotion-8 {

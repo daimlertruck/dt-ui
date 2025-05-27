@@ -29,9 +29,7 @@ export const TextAreaWrapper = styled.div`
     border-style: solid;
     border-width: 0;
     border-color: ${theme.palette.border.dark};
-    
-    
-    `}
+  `}
 `;
 
 export const TextAreaMessageStyled = styled.div`
@@ -58,6 +56,7 @@ export const TextAreaStyled = styled.textarea<TextAreaStyledProps>`
     color: ${theme.palette.content.dark};
     resize: ${enableResize ? 'vertical' : 'none'};
     outline: none;
+    padding-right: 10px;
   `}
 `;
 
