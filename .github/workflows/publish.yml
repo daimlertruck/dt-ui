@@ -144,7 +144,7 @@ jobs:
           yarn pack
         working-directory: ${{ steps.package-detail.outputs.directory }}
 
-      - uses: jfrog/setup-jfrog-cli@v3
+      - uses: jfrog/setup-jfrog-cli@v4
         env:
           JF_URL: ${{ secrets.ARTIFACTORY_URL }}
           JF_USER: ${{ secrets.TBLX_NPM_ARTIFACT_USERNAME }}
