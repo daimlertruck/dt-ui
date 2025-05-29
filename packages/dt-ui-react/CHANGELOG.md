@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.189
+
+### Patch Changes
+
+- fix: text-area container spacing
+- Updated dependencies
+  - @dt-ui/react-text-area@0.1.0-beta.17
+
 ## 0.1.0-beta.188
 
 ### Minor Changes

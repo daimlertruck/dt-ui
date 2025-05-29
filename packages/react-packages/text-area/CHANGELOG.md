@@ -1,5 +1,11 @@
 # @dt-ui/react-text-area
 
+## 0.1.0-beta.17
+
+### Patch Changes
+
+- fix: text-area container spacing
+
 ## 0.1.0-beta.16
 
 ### Patch Changes
