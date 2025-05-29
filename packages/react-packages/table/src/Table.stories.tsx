@@ -33,7 +33,7 @@ const rows = [
     'Jane Smith',
     'jane@example.com',
     'Designer',
-    'grey',
+    'yellow',
     '+987654321',
     'Design',
     'San Francisco',
@@ -43,7 +43,7 @@ const rows = [
     'Alice Johnson',
     'alice@example.com',
     'Manager',
-    'yellow',
+    'grey',
     '+135792468',
     'Management',
     'Los Angeles',
@@ -74,17 +74,26 @@ const renderAvatarWithTitle = (title: string) => (
   </div>
 );
 
-const renderTag = (content: string) => (
-  <Tag border='rounded' color={content as TagColor} size='small'>
+const renderTag = (content: string) => {
+  const tagColor =
     {
+      green: 'success',
+      yellow: 'warning',
+      grey: 'secondary',
+    }[content] || 'secondary';
+
+  return (
+    <Tag border='rounded' color={tagColor as TagColor} size='small'>
       {
-        green: 'ACTIVE',
-        yellow: 'PENDING',
-        grey: 'DEACTIVATED',
-      }[content]
-    }
-  </Tag>
-);
+        {
+          green: 'ACTIVE',
+          yellow: 'PENDING',
+          grey: 'DEACTIVATED',
+        }[content]
+      }
+    </Tag>
+  );
+};
 
 const renderContent = (colIndex: number, content: string) => {
   const columnName = columns[colIndex];
