@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-select",
-  "version": "0.1.0-beta.34",
+  "version": "0.1.0-beta.35",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -19,12 +19,12 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-checkbox": "0.1.0-beta.32",
-    "@dt-ui/react-core": "0.1.0-beta.35",
-    "@dt-ui/react-icon": "0.1.0-beta.34",
-    "@dt-ui/react-label-field": "0.1.0-beta.31",
-    "@dt-ui/react-tooltip": "0.1.0-beta.43",
-    "@dt-ui/react-typography": "0.1.0-beta.26",
+    "@dt-ui/react-checkbox": "0.1.0-beta.33",
+    "@dt-ui/react-core": "0.1.0-beta.36",
+    "@dt-ui/react-icon": "0.1.0-beta.35",
+    "@dt-ui/react-label-field": "0.1.0-beta.32",
+    "@dt-ui/react-tooltip": "0.1.0-beta.44",
+    "@dt-ui/react-typography": "0.1.0-beta.27",
     "downshift": "^9.0.4"
   },
   "devDependencies": {

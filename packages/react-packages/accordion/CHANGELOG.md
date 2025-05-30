@@ -1,5 +1,15 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.34
+
+### Patch Changes
+
+- chore: update contextual colors
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.36
+  - @dt-ui/react-icon@0.1.0-beta.35
+  - @dt-ui/react-divider@0.1.0-beta.35
+
 ## 0.1.0-beta.33
 
 ### Minor Changes

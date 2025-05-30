@@ -1,5 +1,18 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.27
+
+### Patch Changes
+
+- chore: update contextual colors
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.36
+  - @dt-ui/react-icon@0.1.0-beta.35
+  - @dt-ui/react-icon-button@0.1.0-beta.4
+  - @dt-ui/react-spinner@0.1.0-beta.38
+  - @dt-ui/react-backdrop@0.1.0-beta.38
+  - @dt-ui/react-typography@0.1.0-beta.27
+
 ## 0.1.0-beta.26
 
 ### Minor Changes

@@ -1,5 +1,18 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.35
+
+### Patch Changes
+
+- chore: update contextual colors
+- Updated dependencies
+  - @dt-ui/react-checkbox@0.1.0-beta.33
+  - @dt-ui/react-core@0.1.0-beta.36
+  - @dt-ui/react-icon@0.1.0-beta.35
+  - @dt-ui/react-label-field@0.1.0-beta.32
+  - @dt-ui/react-tooltip@0.1.0-beta.44
+  - @dt-ui/react-typography@0.1.0-beta.27
+
 ## 0.1.0-beta.34
 
 ### Minor Changes

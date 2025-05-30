@@ -1,5 +1,15 @@
 # @dt-ui/react-stepper
 
+## 0.1.0-beta.24
+
+### Patch Changes
+
+- chore: update contextual colors
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.36
+  - @dt-ui/react-icon@0.1.0-beta.35
+  - @dt-ui/react-typography@0.1.0-beta.27
+
 ## 0.1.0-beta.23
 
 ### Minor Changes

@@ -1,5 +1,14 @@
 # @dt-ui/react-table
 
+## 0.1.0-beta.31
+
+### Patch Changes
+
+- fix: table storybook
+- chore: update contextual colors
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.36
+
 ## 0.1.0-beta.30
 
 ### Patch Changes

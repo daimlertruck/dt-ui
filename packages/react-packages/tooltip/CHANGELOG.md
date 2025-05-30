@@ -1,5 +1,14 @@
 # @dt-ui/react-tooltip
 
+## 0.1.0-beta.44
+
+### Patch Changes
+
+- chore: update contextual colors
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.36
+  - @dt-ui/react-icon-button@0.1.0-beta.4
+
 ## 0.1.0-beta.43
 
 ### Minor Changes

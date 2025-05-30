@@ -1,5 +1,14 @@
 # @dt-ui/react-label-field
 
+## 0.1.0-beta.32
+
+### Patch Changes
+
+- chore: update contextual colors
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.36
+  - @dt-ui/react-typography@0.1.0-beta.27
+
 ## 0.1.0-beta.31
 
 ### Patch Changes

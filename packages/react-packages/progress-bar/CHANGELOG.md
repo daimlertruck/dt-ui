@@ -1,5 +1,14 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.28
+
+### Patch Changes
+
+- chore: update contextual colors
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.35
+  - @dt-ui/react-typography@0.1.0-beta.27
+
 ## 0.1.0-beta.27
 
 ### Minor Changes
