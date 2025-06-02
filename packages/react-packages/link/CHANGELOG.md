@@ -1,5 +1,11 @@
 # @dt-ui/react-link
 
+## 0.1.0-beta.5
+
+### Minor Changes
+
+- feat: add icon to link
+
 ## 0.1.0-beta.4
 
 ### Patch Changes

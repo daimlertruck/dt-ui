@@ -1,5 +1,16 @@
 # @dt-ui/react-message
 
+## 0.1.0-beta.44
+
+### Minor Changes
+
+- feat: add icon to link
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-link@0.1.0-beta.5
+
 ## 0.1.0-beta.43
 
 ### Patch Changes
