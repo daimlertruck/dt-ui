@@ -12,6 +12,9 @@ export const LinkStyled = styled.a<LinkStyledProps>`
   ${({ theme, disabled, textSize, variant = 'primary' }) => `
     color: ${theme.palette[variant].default};
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: ${theme.spacing['5xs']};
 
     ${
       disabled &&
@@ -24,7 +27,7 @@ export const LinkStyled = styled.a<LinkStyledProps>`
     ${
       !disabled &&
       `
-        &:hover {
+        &:hover > span {
           text-decoration: underline;
         }
 
@@ -36,7 +39,7 @@ export const LinkStyled = styled.a<LinkStyledProps>`
     };
 
     &:focus-visible {
-      outline: 2px solid ${theme.palette.border.dark};
+      outline: 2px solid ${theme.palette.primary.default};
     }
 
     ${

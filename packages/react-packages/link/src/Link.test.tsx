@@ -33,4 +33,14 @@ describe('<Link /> component', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('Should render an html link element with Icon', () => {
+    const { container } = render(
+      <ProvidedLink href='/' icon='10k' variant='secondary'>
+        Redirect To
+      </ProvidedLink>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });

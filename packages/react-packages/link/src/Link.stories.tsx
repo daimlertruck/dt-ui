@@ -1,3 +1,4 @@
+import { codes } from '@dt-ui/icons';
 import { Meta, StoryObj } from '@storybook/react';
 
 import { LinkTextSize } from './constants';
@@ -27,6 +28,11 @@ const meta: Meta<LinkProps> = {
       options: ['primary', 'secondary'],
       control: { type: 'select' },
       description: 'Sets the link variant',
+    },
+    icon: {
+      options: Object.keys(codes),
+      control: { type: 'select' },
+      description: 'Adds an Icon to the link',
     },
   },
   render: ({ ...props }) => {

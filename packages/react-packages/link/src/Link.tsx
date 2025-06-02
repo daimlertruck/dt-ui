@@ -1,4 +1,6 @@
+import { Code } from '@dt-ui/icons';
 import { BaseProps } from '@dt-ui/react-core';
+import { Icon } from '@dt-ui/react-icon';
 import { forwardRef } from 'react';
 
 import { LinkStyled } from './Link.styled';
@@ -10,8 +12,9 @@ export interface LinkProps
     React.AnchorHTMLAttributes<HTMLAnchorElement> {
   isDisabled?: boolean;
   onClick?: () => void;
-  textSize?: string;
+  textSize?: LinkTextSize;
   variant?: LinkVariant;
+  icon?: Code;
 }
 
 export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
@@ -25,6 +28,7 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
       variant,
       href,
       style,
+      icon,
       ...rest
     },
     ref
@@ -40,7 +44,8 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
         {...(!isDisabled && { href, onClick })}
         {...rest}
       >
-        {children}
+        <span>{children}</span>
+        {icon ? <Icon code={icon} color='inherit' size={textSize} /> : null}
       </LinkStyled>
     );
   }
