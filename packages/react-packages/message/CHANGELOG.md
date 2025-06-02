@@ -1,5 +1,13 @@
 # @dt-ui/react-message
 
+## 0.1.0-beta.46
+
+### Patch Changes
+
+- refactor: repalce enum with type
+- Updated dependencies
+  - @dt-ui/react-link@0.1.0-beta.7
+
 ## 0.1.0-beta.45
 
 ### Patch Changes

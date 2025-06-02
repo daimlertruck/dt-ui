@@ -1,5 +1,11 @@
 # @dt-ui/react-link
 
+## 0.1.0-beta.7
+
+### Patch Changes
+
+- refactor: repalce enum with type
+
 ## 0.1.0-beta.6
 
 ### Patch Changes
