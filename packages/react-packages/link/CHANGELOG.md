@@ -1,5 +1,11 @@
 # @dt-ui/react-link
 
+## 0.1.0-beta.6
+
+### Patch Changes
+
+- fix: link build
+
 ## 0.1.0-beta.5
 
 ### Minor Changes
