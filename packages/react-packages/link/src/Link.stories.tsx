@@ -1,8 +1,6 @@
 import { codes } from '@dt-ui/icons';
 import { Meta, StoryObj } from '@storybook/react';
 
-import { LinkTextSize } from './constants';
-
 import { Link, LinkProps } from '.';
 
 const TEXT_SIZES = ['small', 'medium', 'large'];
@@ -14,7 +12,7 @@ const meta: Meta<LinkProps> = {
     children: { control: 'text' },
     target: { control: 'text' },
     href: { control: 'text' },
-    textSize: {
+    size: {
       options: TEXT_SIZES,
       control: { type: 'select' },
       description: 'Sets the size of text',
@@ -47,7 +45,7 @@ export const Default: StoryObj<LinkProps> = {
     children: 'Redirect to',
     href: 'https://www.google.com/',
     target: '_blank',
-    textSize: LinkTextSize.Medium,
+    size: 'medium',
     isDisabled: false,
     variant: 'primary',
   },

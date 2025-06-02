@@ -14,13 +14,13 @@ export const App = () => {
 
 ## Properties
 
-| Property     | Type           | Default               | Description                                     |
-| ------------ | -------------- | --------------------- | ----------------------------------------------- |
-| `children`   | `ReactNode`    | -                     | Child components to be rendered                 |
-| `dataTestId` | `string`       | tag                   | Customizable test identifier                    |
-| `onClick`    | `function`     | -                     | The triggered function when the Link is clicked |
-| `isDisabled` | `boolean`      | `false`               | Specifies if the element should be disabled     |
-| `textSize`   | `LinkTextSize` | `LinkTextSize.Medium` | Specifies the text size of the element          |
+| Property     | Type        | Default  | Description                                     |
+| ------------ | ----------- | -------- | ----------------------------------------------- |
+| `children`   | `ReactNode` | -        | Child components to be rendered                 |
+| `dataTestId` | `string`    | tag      | Customizable test identifier                    |
+| `onClick`    | `function`  | -        | The triggered function when the Link is clicked |
+| `isDisabled` | `boolean`   | `false`  | Specifies if the element should be disabled     |
+| `size`       | `LinkSize`  | `medium` | Specifies the text size of the element          |
 
 This component inherits all native anchor properties. [Learn more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a).
 

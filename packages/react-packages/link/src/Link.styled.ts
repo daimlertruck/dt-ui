@@ -1,15 +1,15 @@
 import styled from '@emotion/styled';
 
-import { LinkTextSize, LinkVariant } from '.';
+import { LinkSize, LinkVariant } from '.';
 
 interface LinkStyledProps {
   disabled?: boolean;
-  textSize?: string;
+  size?: LinkSize;
   variant?: LinkVariant;
 }
 
 export const LinkStyled = styled.a<LinkStyledProps>`
-  ${({ theme, disabled, textSize, variant = 'primary' }) => `
+  ${({ theme, disabled, size, variant = 'primary' }) => `
     color: ${theme.palette[variant].default};
     text-decoration: none;
     display: inline-flex;
@@ -43,21 +43,21 @@ export const LinkStyled = styled.a<LinkStyledProps>`
     }
 
     ${
-      textSize == LinkTextSize.Large &&
+      size == 'large' &&
       `
         ${theme.fontStyles.body1Bold}
       `
     };
 
     ${
-      textSize == LinkTextSize.Medium &&
+      size == 'medium' &&
       `
         ${theme.fontStyles.body2Bold}
       `
     };
 
     ${
-      textSize == LinkTextSize.Small &&
+      size == 'small' &&
       `
         ${theme.fontStyles.body3Bold}
       `

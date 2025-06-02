@@ -19,7 +19,7 @@ export const App = () => {
       <Message.Title>{title}</Message.Title>
       <Message.Description>{description}</Message.Description>
       <Message.Action>
-        <Link textSize={LinkTextSize.Small} href='/'>
+        <Link textSize='small' href='/'>
           View action
         </Link>
       </Message.Action>

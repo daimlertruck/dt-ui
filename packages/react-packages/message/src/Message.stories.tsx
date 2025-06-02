@@ -1,4 +1,4 @@
-import { Link, LinkTextSize } from '@dt-ui/react-link';
+import { Link } from '@dt-ui/react-link';
 import { Meta, StoryObj } from '@storybook/react';
 
 import { Message, MessageProps } from './Message';
@@ -42,7 +42,7 @@ const meta: Meta<MessageStory> = {
       ) : null}
       {hasActions ? (
         <Message.Action>
-          <Link href='#' textSize={LinkTextSize.Small}>
+          <Link href='#' textSize='small'>
             View action
           </Link>
         </Message.Action>
