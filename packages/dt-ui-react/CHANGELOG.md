@@ -1,5 +1,21 @@
 # @dt-ui/react
 
+## 0.1.0-beta.194
+
+### Minor Changes
+
+- feat: add mobile breakpoint for button
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.33
+  - @dt-ui/react-empty-state@0.1.0-beta.53
+  - @dt-ui/react-modal@0.1.0-beta.28
+  - @dt-ui/react-link@0.1.0-beta.8
+  - @dt-ui/react-message@0.1.0-beta.47
+  - @dt-ui/react-toast@0.1.0-beta.50
+
 ## 0.1.0-beta.193
 
 ### Patch Changes

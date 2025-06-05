@@ -1,5 +1,16 @@
 # @dt-ui/react-link
 
+## 0.1.0-beta.8
+
+### Minor Changes
+
+- feat: add mobile breakpoint for button
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.33
+
 ## 0.1.0-beta.7
 
 ### Patch Changes

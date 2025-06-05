@@ -1,5 +1,11 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.33
+
+### Minor Changes
+
+- feat: add mobile breakpoint for button
+
 ## 0.1.0-beta.32
 
 ### Patch Changes

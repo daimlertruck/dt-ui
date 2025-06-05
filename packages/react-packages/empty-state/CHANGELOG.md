@@ -1,5 +1,16 @@
 # @dt-ui/react-empty-state
 
+## 0.1.0-beta.53
+
+### Minor Changes
+
+- feat: add mobile breakpoint for button
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.33
+
 ## 0.1.0-beta.52
 
 ### Patch Changes

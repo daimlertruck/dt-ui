@@ -1,5 +1,16 @@
 # @dt-ui/react-message
 
+## 0.1.0-beta.47
+
+### Minor Changes
+
+- feat: add mobile breakpoint for button
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-link@0.1.0-beta.8
+
 ## 0.1.0-beta.46
 
 ### Patch Changes

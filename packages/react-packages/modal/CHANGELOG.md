@@ -1,5 +1,11 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.28
+
+### Minor Changes
+
+- feat: add mobile breakpoint for button
+
 ## 0.1.0-beta.27
 
 ### Patch Changes
