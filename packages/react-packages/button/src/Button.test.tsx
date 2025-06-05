@@ -92,4 +92,16 @@ describe('<Button /> component', () => {
       expect(container).toMatchSnapshot();
     });
   });
+
+  test('should have media query rule', () => {
+    const { container } = render(
+      <ProvidedButton onClick={() => null} variant='outlined'>
+        Button loading
+      </ProvidedButton>
+    );
+
+    expect(container.firstChild).toHaveStyleRule('width', '100%', {
+      media: '(max-width: 480px)',
+    });
+  });
 });

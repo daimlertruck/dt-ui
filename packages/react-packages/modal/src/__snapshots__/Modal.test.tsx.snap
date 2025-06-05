@@ -596,9 +596,9 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   outline-offset: 1px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 480px) {
   .emotion-20 {
-    width: auto;
+    width: 100%;
   }
 }
 
@@ -651,9 +651,9 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   outline-offset: 1px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 480px) {
   .emotion-22 {
-    width: auto;
+    width: 100%;
   }
 }
 
