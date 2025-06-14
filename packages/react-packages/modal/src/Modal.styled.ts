@@ -15,7 +15,6 @@ export const ModalStyled = styled.div`
   flex-direction: column;
   ${({ theme }) => `
       background-color: ${theme.palette.surface.contrast};
-      border-radius: ${theme.shape.modal};
       box-shadow: ${theme.shadows.s};
 
       @media only screen and (min-width: ${theme.breakpoints.s}px)  {

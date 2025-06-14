@@ -7,7 +7,6 @@ export const shape = {
   emptyState: radius['none'],
   dropdown: radius['none'],
   message: radius['none'],
-  modal: radius['none'],
   progressbar: radius['none'],
   toast: radius['none'],
   tooltip: radius['none'],
