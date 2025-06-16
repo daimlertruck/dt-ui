@@ -18,23 +18,26 @@ export const ModalStyled = styled.div`
       border-radius: ${theme.shape.modal};
       box-shadow: ${theme.shadows.s};
 
-      @media only screen and (min-width: ${theme.breakpoints.s}px)  {
-        min-width: 30%;
+      @media only screen and (min-width: ${theme.breakpoints.mq3}px)  {
+        max-width: 100%;
         height: auto;
         width: auto;
         justify-content: normal;
       }
 
-      @media only screen and (min-width: ${theme.breakpoints.s}px) and (max-width: ${theme.breakpoints.m}px) {
+      @media only screen and (min-width: ${theme.breakpoints.mq3}px) and (max-width: ${theme.breakpoints.mq4}px) {
         max-width: 80%;
+        min-width: 650px;
       }
 
-      @media only screen and (min-width: ${theme.breakpoints.m}px) and (max-width: ${theme.breakpoints.xl}px) {
+      @media only screen and (min-width: ${theme.breakpoints.mq4}px) and (max-width: ${theme.breakpoints.mq6}px) {
         max-width: 60%;
+        min-width: 650px;
       }
 
-      @media only screen and (min-width: ${theme.breakpoints.xl}px) {
+      @media only screen and (min-width: ${theme.breakpoints.mq6}px) {
         max-width: 50%;
+        min-width: 650px;
       }
   `}
 `;
