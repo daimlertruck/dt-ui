@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react",
-  "version": "0.1.0-beta.194",
+  "version": "0.1.0-beta.195",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
@@ -39,7 +39,7 @@
     "@dt-ui/react-icon-button": "0.1.0-beta.4",
     "@dt-ui/react-label-field": "0.1.0-beta.32",
     "@dt-ui/react-message": "0.1.0-beta.47",
-    "@dt-ui/react-modal": "0.1.0-beta.28",
+    "@dt-ui/react-modal": "0.1.0-beta.29",
     "@dt-ui/react-pagination": "0.1.0-beta.14",
     "@dt-ui/react-progress-bar": "0.1.0-beta.28",
     "@dt-ui/react-radio": "0.1.0-beta.20",

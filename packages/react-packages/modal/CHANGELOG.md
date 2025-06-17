@@ -1,5 +1,11 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.29
+
+### Patch Changes
+
+- fix: modal min width
+
 ## 0.1.0-beta.28
 
 ### Minor Changes
