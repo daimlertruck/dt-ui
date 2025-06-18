@@ -205,7 +205,7 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
 }
 
 .emotion-14 {
-  padding: 32px;
+  padding: 24px;
   overflow-y: auto;
   position: relative;
 }
@@ -504,7 +504,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
 }
 
 .emotion-16 {
-  padding: 32px;
+  padding: 24px;
   overflow-y: auto;
   position: relative;
 }

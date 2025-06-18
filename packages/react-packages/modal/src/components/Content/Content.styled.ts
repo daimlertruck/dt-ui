@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const ContentStyled = styled.div`
   ${({ theme }) => `
-    padding: ${theme.spacing.s};
+    padding: ${theme.spacing.xs};
     overflow-y: auto;
     position: relative;
 
