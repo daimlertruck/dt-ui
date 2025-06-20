@@ -1,5 +1,13 @@
 # @dt-ui/react
 
+## 0.1.0-beta.196
+
+### Patch Changes
+
+- fix: modal content spacing
+- Updated dependencies
+  - @dt-ui/react-modal@0.1.0-beta.30
+
 ## 0.1.0-beta.195
 
 ### Patch Changes
