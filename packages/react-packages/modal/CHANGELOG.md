@@ -1,5 +1,11 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.31
+
+### Patch Changes
+
+- fix: modal default width
+
 ## 0.1.0-beta.30
 
 ### Patch Changes
