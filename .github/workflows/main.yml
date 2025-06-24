@@ -1,4 +1,4 @@
-name: Continous Integration & Version and Tag
+name: Continuous Integration & Version and Tag
 
 env:
   TBLX_NPM_ARTIFACT_TOKEN: ${{ secrets.TBLX_NPM_ARTIFACT_TOKEN }}
@@ -16,7 +16,7 @@ on:
       - main
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.head_commit.id || github.ref }}
+  group: ${{ github.workflow }}-${{ github.sha }}
   cancel-in-progress: true
 
 jobs:
@@ -51,9 +51,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup node and yarn
-        uses: "./.github/actions/yarn-node-install"
+        uses: './.github/actions/yarn-node-install'
         with:
-          CACHE_FILE_NAME: "global"
+          CACHE_FILE_NAME: 'global'
           TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
           TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
 
@@ -63,31 +63,116 @@ jobs:
   tests:
     runs-on: self-hosted
     if: "!contains(github.event.head_commit.message, 'release:')"
+    needs: lint
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup node and yarn
-        uses: "./.github/actions/yarn-node-install"
+        uses: './.github/actions/yarn-node-install'
         with:
-          CACHE_FILE_NAME: "global"
+          CACHE_FILE_NAME: 'global'
           TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
           TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
 
       - name: Run Tests
         run: yarn test
 
-  build:
+  blackduck-scan:
     runs-on: self-hosted
     if: "!contains(github.event.head_commit.message, 'release:')"
+    timeout-minutes: 30
+    needs: tests
+    env:
+      BLACKDUCK_URL: ${{ vars.BLACKDUCK_URL }}
+      BLACKDUCK_PROJECT: ${{ vars.BLACKDUCK_PROJECT_NAME }}
+      BLACKDUCK_TOKEN: ${{ secrets.BLACKDUCK_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup node and yarn
-        uses: "./.github/actions/yarn-node-install"
+        uses: './.github/actions/yarn-node-install'
         with:
-          CACHE_FILE_NAME: "global"
+          CACHE_FILE_NAME: 'global'
+          TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
+          TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
+
+      - name: Set up Java 11
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: temurin
+
+      - name: Extract version
+        id: pkg
+        run: |
+          echo "VERSION=$(jq -r .version packages/dt-ui-react/package.json)" >> $GITHUB_OUTPUT
+
+      - name: Versions Cleanup
+        run: |
+          # Get the bearer token to communicate with the API
+          echo "Fetching bearer token..."
+          bearer_token=$(
+            curl -s -X POST \
+              -H "Authorization: token $BLACKDUCK_TOKEN" \
+              $BLACKDUCK_URL/api/tokens/authenticate |
+              jq -er .bearerToken
+          )
+
+          # Get the project base URL
+          echo "Fetching base project URL for $BLACKDUCK_PROJECT..."
+          base_url=$(
+            curl -s -X GET \
+              -H "Authorization: Bearer ${bearer_token}" \
+              "$BLACKDUCK_URL/api/projects?q=name:$BLACKDUCK_PROJECT" |
+              jq -er ".items[0]._meta.href"
+          )
+
+          # List the versions and maybe delete the oldest one if needed
+          echo "Base project URL for $BLACKDUCK_PROJECT is ${base_url}, now listing versions..."
+          version_to_delete=$(
+            curl -s -X GET \
+              -H "Authorization: Bearer ${bearer_token}" \
+              "${base_url}/versions" |
+              jq -r '.items |= sort_by(.createdAt) | if .totalCount >= 10 then .items[0]._meta.href else "" end'
+          )
+
+          if [[ -z $version_to_delete ]]; then
+            echo "No version to delete, doing nothing."
+          else
+            echo "The limit of versions has been reached, going to delete version ${version_to_delete}."
+            curl -s -X DELETE \
+              -H "Authorization: Bearer ${bearer_token}" \
+              "${version_to_delete}"
+          fi
+
+      - name: Run Blackduck Scan
+        uses: blackduck-inc/black-duck-security-scan@v2
+        env:
+          DETECT_PROJECT_NAME: ${{ env.BLACKDUCK_PROJECT }}
+          DETECT_PROJECT_VERSION_NAME: ${{ steps.pkg.outputs.VERSION }}
+        with:
+          blackducksca_url: ${{ env.BLACKDUCK_URL }}
+          blackducksca_token: ${{ env.BLACKDUCK_TOKEN }}
+          blackducksca_scan_failure_severities: 'BLOCKER,CRITICAL'
+          blackducksca_scan_full: ${{ github.ref == 'refs/heads/main' }}
+          blackducksca_prComment_enabled: true
+          detect_args: '--logging.level.detect=DEBUG --detect.blackduck.rapid.compare.mode=ALL --detect.yarn.dependency.types.excluded=NON_PRODUCTION'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  build:
+    runs-on: self-hosted
+    if: "!contains(github.event.head_commit.message, 'release:')"
+    needs: blackduck-scan
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup node and yarn
+        uses: './.github/actions/yarn-node-install'
+        with:
+          CACHE_FILE_NAME: 'global'
           TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
           TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
 
@@ -95,7 +180,7 @@ jobs:
         run: yarn run turbo build --filter='./packages/*'
 
   generate-version-tag:
-    needs: [check-fixups, tests, build, lint]
+    needs: [check-fixups, lint, tests, blackduck-scan, build]
     runs-on: self-hosted
     if: github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, 'release:')
     steps:
@@ -107,9 +192,9 @@ jobs:
           token: ${{ secrets.PU_ACCESS_TOKEN }}
 
       - name: Setup node and yarn
-        uses: "./.github/actions/yarn-node-install"
+        uses: './.github/actions/yarn-node-install'
         with:
-          CACHE_FILE_NAME: "global"
+          CACHE_FILE_NAME: 'global'
           TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
           TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
 
