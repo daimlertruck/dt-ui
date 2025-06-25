@@ -1,5 +1,15 @@
 # @dt-ui/react-drawer
 
+## 0.1.0-beta.43
+
+### Patch Changes
+
+- chore: review OSS files
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.37
+  - @dt-ui/react-icon-button@0.1.0-beta.5
+  - @dt-ui/react-typography@0.1.0-beta.28
+
 ## 0.1.0-beta.42
 
 ### Patch Changes

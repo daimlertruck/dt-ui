@@ -1,5 +1,18 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.32
+
+### Patch Changes
+
+- chore: review OSS files
+- Updated dependencies
+  - @dt-ui/react-backdrop@0.1.0-beta.39
+  - @dt-ui/react-core@0.1.0-beta.37
+  - @dt-ui/react-icon@0.1.0-beta.36
+  - @dt-ui/react-icon-button@0.1.0-beta.5
+  - @dt-ui/react-spinner@0.1.0-beta.39
+  - @dt-ui/react-typography@0.1.0-beta.28
+
 ## 0.1.0-beta.31
 
 ### Patch Changes

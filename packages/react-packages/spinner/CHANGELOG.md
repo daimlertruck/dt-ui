@@ -1,5 +1,15 @@
 # @dt-ui/react-spinner
 
+## 0.1.0-beta.39
+
+### Patch Changes
+
+- chore: review OSS files
+- Updated dependencies
+  - @dt-ui/react-box@0.1.0-beta.8
+  - @dt-ui/react-core@0.1.0-beta.37
+  - @dt-ui/react-typography@0.1.0-beta.28
+
 ## 0.1.0-beta.38
 
 ### Patch Changes

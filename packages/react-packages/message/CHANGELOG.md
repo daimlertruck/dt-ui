@@ -1,5 +1,15 @@
 # @dt-ui/react-message
 
+## 0.1.0-beta.48
+
+### Patch Changes
+
+- chore: review OSS files
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.37
+  - @dt-ui/react-link@0.1.0-beta.9
+  - @dt-ui/react-typography@0.1.0-beta.28
+
 ## 0.1.0-beta.47
 
 ### Minor Changes

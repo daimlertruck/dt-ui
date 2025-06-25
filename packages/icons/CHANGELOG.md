@@ -1,5 +1,11 @@
 # @dt-ui/icons
 
+## 0.1.0-beta.3
+
+### Patch Changes
+
+- chore: review OSS files
+
 ## 0.1.0-beta.2
 
 ### Patch Changes

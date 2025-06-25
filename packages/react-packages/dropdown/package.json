@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-dropdown",
-  "version": "0.1.0-beta.21",
+  "version": "0.1.0-beta.22",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js"
@@ -20,10 +20,10 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-box": "0.1.0-beta.7",
-    "@dt-ui/react-core": "0.1.0-beta.36",
-    "@dt-ui/react-icon": "0.1.0-beta.35",
-    "@dt-ui/react-typography": "0.1.0-beta.27"
+    "@dt-ui/react-box": "0.1.0-beta.8",
+    "@dt-ui/react-core": "0.1.0-beta.37",
+    "@dt-ui/react-icon": "0.1.0-beta.36",
+    "@dt-ui/react-typography": "0.1.0-beta.28"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",

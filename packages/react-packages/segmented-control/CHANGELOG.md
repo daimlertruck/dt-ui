@@ -1,5 +1,15 @@
 # @dt-ui/react-segmented-control
 
+## 0.1.0-beta.23
+
+### Patch Changes
+
+- chore: review OSS files
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.37
+  - @dt-ui/react-icon@0.1.0-beta.36
+  - @dt-ui/react-tooltip@0.1.0-beta.45
+
 ## 0.1.0-beta.22
 
 ### Patch Changes

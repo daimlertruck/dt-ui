@@ -1,5 +1,17 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.41
+
+### Patch Changes
+
+- chore: review OSS files
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.37
+  - @dt-ui/react-icon@0.1.0-beta.36
+  - @dt-ui/react-label-field@0.1.0-beta.33
+  - @dt-ui/react-spinner@0.1.0-beta.39
+  - @dt-ui/react-typography@0.1.0-beta.28
+
 ## 0.1.0-beta.40
 
 ### Patch Changes

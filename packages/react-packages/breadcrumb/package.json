@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-breadcrumb",
-  "version": "0.1.0-beta.44",
+  "version": "0.1.0-beta.45",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js"
@@ -20,9 +20,9 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-core": "0.1.0-beta.36",
-    "@dt-ui/react-tooltip": "0.1.0-beta.44",
-    "@dt-ui/react-icon": "0.1.0-beta.35"
+    "@dt-ui/react-core": "0.1.0-beta.37",
+    "@dt-ui/react-tooltip": "0.1.0-beta.45",
+    "@dt-ui/react-icon": "0.1.0-beta.36"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",

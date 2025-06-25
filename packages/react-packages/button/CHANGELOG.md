@@ -1,5 +1,14 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.34
+
+### Patch Changes
+
+- chore: review OSS files
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.37
+  - @dt-ui/react-spinner@0.1.0-beta.39
+
 ## 0.1.0-beta.33
 
 ### Minor Changes

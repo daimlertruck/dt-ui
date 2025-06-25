@@ -1,5 +1,15 @@
 # @dt-ui/react-tabs
 
+## 0.1.0-beta.31
+
+### Patch Changes
+
+- chore: review OSS files
+- Updated dependencies
+  - @dt-ui/react-box@0.1.0-beta.8
+  - @dt-ui/react-core@0.1.0-beta.37
+  - @dt-ui/react-icon@0.1.0-beta.36
+
 ## 0.1.0-beta.30
 
 ### Patch Changes

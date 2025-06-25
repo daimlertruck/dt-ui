@@ -1,5 +1,14 @@
 # @dt-ui/react-toggle
 
+## 0.1.0-beta.16
+
+### Patch Changes
+
+- chore: review OSS files
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.37
+  - @dt-ui/react-typography@0.1.0-beta.28
+
 ## 0.1.0-beta.15
 
 ### Patch Changes

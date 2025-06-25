@@ -1,5 +1,14 @@
 # @dt-ui/react-avatar
 
+## 0.1.0-beta.46
+
+### Patch Changes
+
+- chore: review OSS files
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.37
+  - @dt-ui/react-tooltip@0.1.0-beta.45
+
 ## 0.1.0-beta.45
 
 ### Patch Changes

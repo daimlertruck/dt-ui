@@ -1,5 +1,14 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.51
+
+### Patch Changes
+
+- chore: review OSS files
+- Updated dependencies
+  - @dt-ui/react-button@0.1.0-beta.34
+  - @dt-ui/react-core@0.1.0-beta.37
+
 ## 0.1.0-beta.50
 
 ### Minor Changes

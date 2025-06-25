@@ -1,5 +1,15 @@
 # @dt-ui/react-pagination
 
+## 0.1.0-beta.15
+
+### Patch Changes
+
+- chore: review OSS files
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.37
+  - @dt-ui/react-icon@0.1.0-beta.36
+  - @dt-ui/react-typography@0.1.0-beta.28
+
 ## 0.1.0-beta.14
 
 ### Patch Changes

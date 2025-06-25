@@ -1,5 +1,11 @@
 # @dt-ui/react-box
 
+## 0.1.0-beta.8
+
+### Patch Changes
+
+- chore: review OSS files
+
 ## 0.1.0-beta.7
 
 ### Patch Changes

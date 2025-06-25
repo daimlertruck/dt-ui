@@ -1,5 +1,16 @@
 # @dt-ui/react-dropdown
 
+## 0.1.0-beta.22
+
+### Patch Changes
+
+- chore: review OSS files
+- Updated dependencies
+  - @dt-ui/react-box@0.1.0-beta.8
+  - @dt-ui/react-core@0.1.0-beta.37
+  - @dt-ui/react-icon@0.1.0-beta.36
+  - @dt-ui/react-typography@0.1.0-beta.28
+
 ## 0.1.0-beta.21
 
 ### Patch Changes

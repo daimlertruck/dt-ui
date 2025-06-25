@@ -1,5 +1,13 @@
 # @dt-ui/react-icon-button
 
+## 0.1.0-beta.5
+
+### Patch Changes
+
+- chore: review OSS files
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.37
+
 ## 0.1.0-beta.4
 
 ### Patch Changes
