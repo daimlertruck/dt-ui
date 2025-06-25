@@ -72,6 +72,4 @@ Follows [semantic versioning](https://semver.org/)
 
 ## &copy; License
 
-Licensed under [Daimler Inner Source License (ISL)](LICENSE.md)
-
-For more info, see [Daimler FOSS](https://git.t3.daimlertruck.com/tbf/daimler-inner-source-license)
+Licensed under [MIT License](LICENSE.md)

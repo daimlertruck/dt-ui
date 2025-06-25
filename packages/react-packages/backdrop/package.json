@@ -1,6 +1,7 @@
 {
   "name": "@dt-ui/react-backdrop",
   "version": "0.1.0-beta.38",
+  "license": "MIT",
   "exports": {
     ".": "./dist/index.js"
   },

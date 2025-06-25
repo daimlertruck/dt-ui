@@ -1,7 +1,7 @@
 MIT License
 
 Based on changeset-conventional-commits work by Chathu Vishawjith. 
-Additional modifications &copy; 2024 tb.lx by Daimler Truck.
+Additional modifications &copy; 2025 tb.lx by Daimler Truck.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

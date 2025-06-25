@@ -2,6 +2,7 @@
   "name": "jest-config",
   "version": "0.0.0",
   "main": "jest.config.ts",
+  "license": "MIT",
   "private": true,
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.2",

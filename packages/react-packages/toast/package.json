@@ -1,6 +1,7 @@
 {
   "name": "@dt-ui/react-toast",
   "version": "0.1.0-beta.50",
+  "license": "MIT",
   "exports": {
     ".": "./dist/index.js"
   },

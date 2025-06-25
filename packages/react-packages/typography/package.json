@@ -1,6 +1,7 @@
 {
   "name": "@dt-ui/react-typography",
   "version": "0.1.0-beta.27",
+  "license": "MIT",
   "exports": {
     ".": "./dist/index.js"
   },

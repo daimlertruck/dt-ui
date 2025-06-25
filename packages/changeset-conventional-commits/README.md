@@ -2,7 +2,7 @@
 
 This plugin for changeset is a fork from https://github.com/iamchathu/changeset-conventional-commits you can find all details of the original development there.
 
-Additional modifications &copy; 2024 tb.lx by Daimler Truck.
+Additional modifications &copy; 2025 tb.lx by Daimler Truck.
 Below you can find useful information on how this plugin was modified to meet our own requirements.
 
 ## Install & Build
@@ -96,3 +96,7 @@ This method will be resposible for:
 Take in mind that this library is a plugin to complement and acomplish what we want to achieve with changeset.
 The methods here fill the gaps that aren't provided by changeset out-of-the-box like **automatically generate changesets based on conventional commits** and the **tagging and commit files** only for affected packages. 
 Actually the changeset has a cli command for tagging, but it tags every single package in the monorepo.
+
+## &copy; License
+
+Licensed under [MIT License](LICENSE.md)

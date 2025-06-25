@@ -1,6 +1,7 @@
 {
   "name": "@dt-ui/react-stepper",
   "version": "0.1.0-beta.24",
+  "license": "MIT",
   "exports": {
     ".": "./dist/index.js"
   },

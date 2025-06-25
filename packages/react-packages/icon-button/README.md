@@ -30,3 +30,7 @@ export const App = () => {
 | `isDisabled` | `boolean`           | false     | Determines the disabled state of the button       |
 | `variant`    | `IconButtonVariant` | `default` | Determines the variant of the icon                |
 | `size`       | `ComponentSize`     | `large`   | Determines the size of the icon                   |
+
+## &copy; License
+
+Licensed under [MIT License](LICENSE.md)

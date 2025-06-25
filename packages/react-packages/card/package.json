@@ -1,6 +1,7 @@
 {
   "name": "@dt-ui/react-card",
   "version": "0.1.0-beta.19",
+  "license": "MIT",
   "exports": {
     ".": "./dist/index.js"
   },

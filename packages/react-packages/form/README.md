@@ -52,3 +52,7 @@ export const App = () => {
 | `title`    | `string`    | -       | Title to be shown at the top of the group                                                                                                 |
 | `disabled` | `boolean`   | -       | If group is disabled, a opacity is set and the pointer events set to none                                                                 |
 | `tooltip`  | `string`    | -       | If a string is passed to this prop, a info svg will be rendered wrapped in a tooltip. The tooltip content will be the value of this prop. |
+
+## &copy; License
+
+Licensed under [MIT License](LICENSE.md)
