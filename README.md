@@ -1,7 +1,14 @@
-# DT-UI - Design System Library
+<div align="center">
+<img src="dtui.png" width="55" style="vertical-align: middle;" />
 
-This is DT-UI component library for Daimler Truck Multi-brand Design System. 
+# DT-UI
+</div>
+
+**Daimler Truck Design System Library**
+
+Component library for Daimler Truck Multi-brand Design System.<br> 
 It contains UI components, brand themes, examples and documentation.
+
 
 #### **DT-UI provides:**
 
