@@ -2,13 +2,13 @@
 <img src="dtui.png" width="55" style="vertical-align: middle;" />
 
 # DT-UI
+
 </div>
 
 **Daimler Truck Design System Library**
 
-Component library for Daimler Truck Multi-brand Design System.<br> 
+Component library for Daimler Truck Multi-brand Design System.<br>
 It contains UI components, brand themes, examples and documentation.
-
 
 #### **DT-UI provides:**
 
@@ -178,7 +178,6 @@ To propose a new feature:
   Use [GitHub's "reactions" feature](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/)
   instead.
 - Provide additional information promptly if requested by maintainers.
-
 
 ## &copy; License
 
