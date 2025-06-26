@@ -17,7 +17,7 @@ concurrency:
 jobs:
   gather-changed-packages:
     if: "contains(github.event.head_commit.message, 'release:') || github.event_name == 'workflow_dispatch'"
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.filter-unpublished-packages.outputs.result }}
     steps:
@@ -106,7 +106,7 @@ jobs:
           fi
 
   publish:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     needs: [gather-changed-packages]
     strategy:
       matrix:

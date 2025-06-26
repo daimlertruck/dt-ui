@@ -21,7 +21,7 @@ concurrency:
 
 jobs:
   check-fixups:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'release:')"
     steps:
       - name: Checkout repository
@@ -44,7 +44,7 @@ jobs:
           fi
 
   lint:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'release:')"
     steps:
       - name: Checkout repository
@@ -61,7 +61,7 @@ jobs:
         run: yarn lint
 
   tests:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'release:')"
     needs: lint
     steps:
@@ -79,7 +79,7 @@ jobs:
         run: yarn test
 
   blackduck-scan:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'release:')"
     timeout-minutes: 30
     needs: tests
@@ -162,7 +162,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'release:')"
     needs: blackduck-scan
     steps:
@@ -181,7 +181,7 @@ jobs:
 
   generate-version-tag:
     needs: [check-fixups, lint, tests, blackduck-scan, build]
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, 'release:')
     steps:
       - name: Checkout branch
@@ -189,7 +189,7 @@ jobs:
         with:
           ref: ${{ github.ref }}
           fetch-depth: 0
-          token: ${{ secrets.PU_ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup node and yarn
         uses: './.github/actions/yarn-node-install'
