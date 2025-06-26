@@ -20,12 +20,16 @@
     "lint": "turbo run lint",
     "release": "turbo run build --filter=docs^... && changeset publish",
     "test": "turbo run test",
-    "test:update": "turbo run test -- -u"
+    "test:update": "turbo run test -- -u",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@turbo/gen": "^1.11.3",
     "eslint-config-custom": "*",
+    "husky": "^9.1.7",
     "prettier": "^2.8.0",
     "turbo": "^2.0.6"
   },

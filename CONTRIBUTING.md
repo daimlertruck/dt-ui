@@ -41,9 +41,9 @@ New branches should follow the name pattern `{type}/{ticket}/{description-in-keb
 
 A [Developer Certificate of Origin (DCO)](https://developercertificate.org/) is a simple mechanism that authors use to affirm they have the right to contribute their code under the project’s license.
 
-Every Commit you submit needs a `Signed-off-by: Your Name <you@example.com>` trailer. The easiest way to achieve this is by adding the `-s` / `--signoff` flag to `git commit`. For ease of convenience, we also provide a Husky hook which hat will automatically append a DCO “Signed-off-by” trailer to every commit message if one isn’t already present.
+Every Commit you submit needs a `Signed-off-by: Your Name <you@example.com>` trailer. The easiest way to achieve this is by adding the `-s` / `--signoff` flag to `git commit`. For ease of convenience, we also provide a Husky hook which will automatically append a DCO “Signed-off-by” trailer to every commit message if one isn’t already present.
 
-By submitting commits with a valid `Signed-off-by` line, you agree that your contribution is covered by the MIT license. 
+By submitting commits with a valid `Signed-off-by` line, you agree that your contribution is covered by the MIT license.
 
 ### 2.2 Message Convention
 
@@ -268,7 +268,6 @@ For more information on Storybook and Docs, read the following documentation and
 - https://medium.com/storybookjs/storybook-docs-sneak-peak-5be78445094a
 - https://storybook.js.org/tutorials/design-systems-for-developers/react/en/document/
 - https://storybook.js.org/blog/structuring-your-storybook/
-
 
 ## 5. Versioning & Publishing Packages
 

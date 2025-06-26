@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Lint commit message
+npx --no -- commitlint --edit "$1"
+
+# Append DCO trailer if missing
+MSG_FILE="$1"
+DCO_LINE="Signed-off-by: $(git config user.name) <$(git config user.email)>"
+
+if ! grep -qE '^Signed-off-by:' "$MSG_FILE"; then
+  if command -v git >/dev/null 2>&1 && git interpret-trailers --help >/dev/null 2>&1; then
+    git interpret-trailers --in-place \
+      --trailer "$DCO_LINE" \
+      "$MSG_FILE"
+  else
+    printf "\n%s\n" "$DCO_LINE" >>"$MSG_FILE"
+  fi
+fi
