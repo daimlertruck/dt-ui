@@ -27,7 +27,7 @@ import {
   SelectActionContainerStyled,
   SelectValueStyled,
 } from './Select.styled';
-import { SelectOptionValue } from './types';
+import { SelectOptionValue, SelectFill, SelectVariant } from './types';
 
 export interface SelectProps extends BaseProps {
   helperText?: string;
@@ -38,6 +38,8 @@ export interface SelectProps extends BaseProps {
   isRequired?: boolean;
   errorMessage?: string;
   isDisabled?: boolean;
+  variant?: SelectVariant;
+  fill?: SelectFill;
   onChange?: (value: string[] | string) => void;
 }
 
@@ -68,6 +70,8 @@ const Select = ({
   errorMessage,
   children,
   isDisabled,
+  variant = 'outlined',
+  fill = 'default',
   onChange,
 }: SelectProps) => {
   const [selectedItems, setSelectedItems] = useState<SelectOptionValue[]>([]);
@@ -230,8 +234,11 @@ const Select = ({
         <SelectFieldStyled>
           <SelectContainerStyled
             {...getToggleButtonProps({ disabled })}
+            data-testid='select-container'
+            fill={fill}
             hasError={hasError}
-            isActive={isOpen}
+            isOpen={isOpen}
+            variant={variant}
           >
             <SelectValueContainerStyled>
               <LabelField

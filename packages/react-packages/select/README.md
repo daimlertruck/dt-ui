@@ -45,6 +45,8 @@ export const App = () => {
 | `onChange`     | `function`           | -       | The triggered function when the selected option changes.              |
 | `isMulti`      | `boolean`            | false   | Toggles the Select between multi selection and single selection       |
 | `children`     | `React node`         | -       | Child components to be rendered. Useful to pass the list of options   |
+| `fill`        | `DropdownFill`        | `default` | Styles the input with a specific background color                   |
+| `variant`     | `DropdownVariant`     | `outlined`| Styles the input with a specific border                             |
 
 ### Select.Option
 

@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { ComponentProps } from 'react';
 
+import { SelectFill, SelectVariant } from './types';
+
 import { Select, SelectOptionValue } from '.';
 
 const options: SelectOptionValue[] = [
@@ -19,16 +21,26 @@ type Story = StoryObj<CustomSelectProps>;
 
 type CustomSelectProps = ComponentProps<typeof Select> & {
   options: SelectOptionValue[];
+  variant: SelectVariant;
+  fill: SelectFill;
 };
 
 const meta: Meta<CustomSelectProps> = {
   title: 'Data Display/Select',
   component: Select,
-  argTypes: {},
+  argTypes: {
+    helperText: { control: 'text' },
+    variant: {
+      options: ['outlined', 'bottom-line'],
+      control: { type: 'select' },
+    },
+    fill: {
+      options: ['default', 'contrast', 'light'],
+      control: { type: 'select' },
+    },
+  },
   render: ({ options, ...props }) => (
-    <div
-      style={{ height: '500px', padding: '10px', backgroundColor: '#EBECED' }}
-    >
+    <div style={{ height: '500px', padding: '10px' }}>
       <Select {...props}>
         {options.map((item, index) => (
           <Select.Option
@@ -50,7 +62,7 @@ export const Default: Story = {
   args: {
     options: options,
     label: 'My label',
-    helperText: 'Some message',
+    helperText: '',
     errorMessage: '',
     isMulti: false,
     isRequired: false,

@@ -281,4 +281,59 @@ describe('<Select /> component', () => {
     expect(onChange).toHaveBeenCalledWith([]);
     expect(queryByTestId('clear-selection')).not.toBeInTheDocument();
   });
+
+  it.each`
+    variant          | expectedBorderWidth
+    ${'outlined'}    | ${'border-width: 1px'}
+    ${'bottom-line'} | ${'border-width: 0 0 1px'}
+  `(
+    'renders select with $variant variant with correct border width',
+    ({ variant, expectedBorderWidth }) => {
+      const { getByTestId } = render(
+        <ProvidedSelect label='select' variant={variant}>
+          {items.map((item, index) => (
+            <ProvidedSelectOption
+              index={index}
+              key={item.value}
+              label={item.label}
+              value={item.value}
+            />
+          ))}
+        </ProvidedSelect>
+      );
+
+      const select = getByTestId('select-container');
+
+      expect(select).toHaveStyle(expectedBorderWidth);
+    }
+  );
+
+  it.each`
+    fill          | expectedBackgroundColor
+    ${'light'}    | ${'#FAFAFA'}
+    ${'contrast'} | ${'#FFFFFF'}
+    ${'default'}  | ${'#F3F3F5'}
+  `(
+    'renders select with $fill background fill',
+    ({ fill, expectedBackgroundColor }) => {
+      const { getByTestId } = render(
+        <ProvidedSelect fill={fill} label='select'>
+          {items.map((item, index) => (
+            <ProvidedSelectOption
+              index={index}
+              key={item.value}
+              label={item.label}
+              value={item.value}
+            />
+          ))}
+        </ProvidedSelect>
+      );
+
+      const select = getByTestId('select-container');
+
+      expect(select).toHaveStyle(
+        `background-color: ${expectedBackgroundColor}`
+      );
+    }
+  );
 });
