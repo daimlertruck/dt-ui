@@ -1,15 +1,26 @@
-import { DROPDOWN_MENU_Z_INDEX } from '@dt-ui/react-core';
+import { DROPDOWN_MENU_Z_INDEX, Theme } from '@dt-ui/react-core';
 import styled from '@emotion/styled';
+
+import { SelectFill, SelectVariant } from './types';
 
 export const SelectStyled = styled.div`
   position: relative;
 `;
 
-export interface SelectFieldStyledProps {
+export interface SelectContainerStyledProps {
   hasError: boolean;
   disabled?: boolean;
-  isActive: boolean;
+  isOpen?: boolean;
+  variant?: SelectVariant;
+  fill?: SelectFill;
 }
+
+const getThemedBackgroundFill = (fill: SelectFill, theme: Theme) =>
+  ({
+    default: theme.palette.surface.default,
+    contrast: theme.palette.surface.contrast,
+    light: theme.palette.surface.light,
+  }[fill]);
 
 export const SelectFieldStyled = styled.div`
   display: flex;
@@ -37,6 +48,7 @@ export const SelectMenuStyled = styled.ul<{ isOpen: boolean }>`
     background-color: ${theme.palette.surface.contrast};
     display: ${isOpen ? 'block' : 'none'};
     border-radius: ${theme.shape.formField};
+    box-shadow: ${theme.shadows.s};
   `}
 `;
 
@@ -58,7 +70,7 @@ export const SelectValueStyled = styled.div`
   `}
 `;
 
-export const SelectContainerStyled = styled.div<SelectFieldStyledProps>`
+export const SelectContainerStyled = styled.div<SelectContainerStyledProps>`
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 54px;
@@ -66,38 +78,38 @@ export const SelectContainerStyled = styled.div<SelectFieldStyledProps>`
   align-items: center;
   justify-content: center;
 
-  ${({ theme, hasError, disabled }) => `
+  ${({
+    theme,
+    hasError,
+    disabled,
+    isOpen = false,
+    variant = 'outlined',
+    fill = 'default',
+  }) => `
     ${theme.fontStyles.body2}
     color: ${
       disabled ? theme.palette.content.light : theme.palette.content.default
     };
     padding: ${theme.spacing['4xs']} ${theme.spacing['3xs']};
     gap: ${theme.spacing['4xs']} ;
-    background-color: ${theme.palette.surface.contrast};
+    background-color: ${getThemedBackgroundFill(fill, theme)};
     border-radius: ${theme.shape.formField};
     cursor: ${disabled ? 'not-allowed' : 'pointer'};
 
-    &:hover, &:focus {
-      ${
-        !disabled &&
-        `border: 1px solid ${
-          hasError ? theme.palette.error.default : theme.palette.primary.default
-        };`
+    border-width: ${variant === 'outlined' ? '1px' : '0 0 1px'};
+      border-color: ${
+        isOpen ? theme.palette.content.dark : theme.palette.border.medium
       };
-    }
-  `};
+      border-style: solid;
 
-  border: ${({ theme, isActive, hasError, disabled }) => {
-    if (isActive) {
-      return `1px solid ${theme.palette.primary.default}`;
-    }
-    if (hasError) {
-      return `1px solid ${theme.palette.error.default}`;
-    }
-    return `1px solid ${
-      disabled ? theme.palette.border.light : theme.palette.border.default
-    }`;
-  }};
+      &:focus, &:hover {
+        border-color: ${
+          hasError ? theme.palette.error.default : theme.palette.content.dark
+        };
+      }
+
+      ${hasError && `border-color: ${theme.palette.error.default}`};
+  `};
 `;
 
 export const SelectActionContainerStyled = styled.div`

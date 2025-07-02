@@ -5,8 +5,8 @@ interface SelectOptionProps {
   isMulti: boolean;
 }
 
-interface CheckIconWrapperProps {
-  isCheckHidden: boolean;
+interface SelectOptionContentProps {
+  isSelected?: boolean;
 }
 
 export const SelectOptionStyled = styled.li<SelectOptionProps>`
@@ -44,15 +44,13 @@ export const SelectOptionStyled = styled.li<SelectOptionProps>`
   `}
 `;
 
-export const SelectOptionContentStyled = styled.div`
+export const SelectOptionContentStyled = styled.div<SelectOptionContentProps>`
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
-`;
 
-export const CheckIconWrapperStyled = styled.div<CheckIconWrapperProps>`
-  display: flex;
-
-  ${({ isCheckHidden }) => isCheckHidden && 'visibility: hidden;'};
+  ${({ theme, isSelected }) => `
+    ${theme.fontStyles[isSelected ? 'body2Bold' : 'body2']};
+  `}
 `;

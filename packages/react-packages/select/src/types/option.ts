@@ -3,3 +3,7 @@ export type SelectOptionValue = {
   value: string;
   disabled?: boolean;
 };
+
+export type SelectVariant = 'outlined' | 'bottom-line';
+
+export type SelectFill = 'default' | 'contrast' | 'light';

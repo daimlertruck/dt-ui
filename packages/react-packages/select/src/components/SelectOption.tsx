@@ -1,13 +1,11 @@
 import { Checkbox } from '@dt-ui/react-checkbox';
 import { BaseProps } from '@dt-ui/react-core';
-import { Icon } from '@dt-ui/react-icon';
 
 import { useSelectContext } from '../context';
 
 import {
   SelectOptionStyled,
   SelectOptionContentStyled,
-  CheckIconWrapperStyled,
 } from './SelectOption.styled';
 
 export interface SelectOptionProps extends BaseProps {
@@ -57,14 +55,9 @@ export const SelectOption = ({
           {children || label || value}
         </Checkbox>
       ) : (
-        <>
-          <CheckIconWrapperStyled isCheckHidden={!isSelected}>
-            <Icon code='check' size='medium' />
-          </CheckIconWrapperStyled>
-          <SelectOptionContentStyled>
-            {children || label || value}
-          </SelectOptionContentStyled>
-        </>
+        <SelectOptionContentStyled isSelected={isSelected}>
+          {children || label || value}
+        </SelectOptionContentStyled>
       )}
     </SelectOptionStyled>
   );

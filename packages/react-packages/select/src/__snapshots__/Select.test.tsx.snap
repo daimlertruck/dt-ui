@@ -45,15 +45,17 @@ exports[`<Select /> component should render Select 1`] = `
   color: #292929;
   padding: 8px 12px;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   border-radius: 0px;
   cursor: pointer;
-  border: 1px solid #000000;
+  border-width: 1px;
+  border-color: #131313;
+  border-style: solid;
 }
 
-.emotion-4:hover,
-.emotion-4:focus {
-  border: 1px solid #000000;
+.emotion-4:focus,
+.emotion-4:hover {
+  border-color: #131313;
 }
 
 .emotion-6 {
@@ -132,6 +134,7 @@ exports[`<Select /> component should render Select 1`] = `
   background-color: #FFFFFF;
   display: block;
   border-radius: 0px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
 .emotion-16 {
@@ -171,25 +174,23 @@ exports[`<Select /> component should render Select 1`] = `
 }
 
 .emotion-18 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  visibility: hidden;
-}
-
-.emotion-22 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  margin: 0;
+  text-transform: none;
 }
 
-.emotion-56 {
+.emotion-36 {
   padding-left: 16px;
 }
 
-.emotion-58 {
+.emotion-38 {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -213,6 +214,8 @@ exports[`<Select /> component should render Select 1`] = `
         aria-haspopup="listbox"
         aria-labelledby="downshift-:r0:-label"
         class="emotion-4 emotion-5"
+        data-testid="select-container"
+        fill="default"
         id="downshift-:r0:-toggle-button"
         role="combobox"
         tabindex="0"
@@ -259,17 +262,6 @@ exports[`<Select /> component should render Select 1`] = `
         <div
           class="emotion-18 emotion-19"
         >
-          <i
-            class="emotion-12 emotion-13"
-            color="#292929"
-            data-testid="icon"
-          >
-            check
-          </i>
-        </div>
-        <div
-          class="emotion-22 emotion-23"
-        >
           Option 1
         </div>
       </li>
@@ -282,17 +274,6 @@ exports[`<Select /> component should render Select 1`] = `
       >
         <div
           class="emotion-18 emotion-19"
-        >
-          <i
-            class="emotion-12 emotion-13"
-            color="#292929"
-            data-testid="icon"
-          >
-            check
-          </i>
-        </div>
-        <div
-          class="emotion-22 emotion-23"
         >
           Option 2
         </div>
@@ -307,17 +288,6 @@ exports[`<Select /> component should render Select 1`] = `
         <div
           class="emotion-18 emotion-19"
         >
-          <i
-            class="emotion-12 emotion-13"
-            color="#292929"
-            data-testid="icon"
-          >
-            check
-          </i>
-        </div>
-        <div
-          class="emotion-22 emotion-23"
-        >
           A text message to see how big labels will be handled
         </div>
       </li>
@@ -330,17 +300,6 @@ exports[`<Select /> component should render Select 1`] = `
       >
         <div
           class="emotion-18 emotion-19"
-        >
-          <i
-            class="emotion-12 emotion-13"
-            color="#292929"
-            data-testid="icon"
-          >
-            check
-          </i>
-        </div>
-        <div
-          class="emotion-22 emotion-23"
         >
           Option 3
         </div>
@@ -355,26 +314,15 @@ exports[`<Select /> component should render Select 1`] = `
         <div
           class="emotion-18 emotion-19"
         >
-          <i
-            class="emotion-12 emotion-13"
-            color="#292929"
-            data-testid="icon"
-          >
-            check
-          </i>
-        </div>
-        <div
-          class="emotion-22 emotion-23"
-        >
           Option 4
         </div>
       </li>
     </ul>
     <div
-      class="emotion-56 emotion-57"
+      class="emotion-36 emotion-37"
     >
       <span
-        class="emotion-58 emotion-59"
+        class="emotion-38 emotion-39"
         color="content.light"
         data-testid="typography"
       >
@@ -430,15 +378,17 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   color: #292929;
   padding: 8px 12px;
   gap: 8px;
-  background-color: #FFFFFF;
+  background-color: #F3F3F5;
   border-radius: 0px;
   cursor: pointer;
-  border: 1px solid #DEDEDE;
+  border-width: 1px;
+  border-color: #C1C1C1;
+  border-style: solid;
 }
 
-.emotion-4:hover,
-.emotion-4:focus {
-  border: 1px solid #000000;
+.emotion-4:focus,
+.emotion-4:hover {
+  border-color: #131313;
 }
 
 .emotion-6 {
@@ -517,6 +467,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   background-color: #FFFFFF;
   display: none;
   border-radius: 0px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
 <div>
@@ -533,6 +484,8 @@ exports[`<Select /> component should render Select as multi select 1`] = `
         aria-haspopup="listbox"
         aria-labelledby="downshift-:r4:-label"
         class="emotion-4 emotion-5"
+        data-testid="select-container"
+        fill="default"
         id="downshift-:r4:-toggle-button"
         role="combobox"
         tabindex="0"
