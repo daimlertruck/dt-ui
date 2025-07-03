@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react",
-  "version": "0.1.0-beta.198",
+  "version": "0.1.0-beta.199",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js",
@@ -44,7 +44,7 @@
     "@dt-ui/react-progress-bar": "0.1.0-beta.29",
     "@dt-ui/react-radio": "0.1.0-beta.21",
     "@dt-ui/react-segmented-control": "0.1.0-beta.23",
-    "@dt-ui/react-select": "0.1.0-beta.36",
+    "@dt-ui/react-select": "0.1.0-beta.37",
     "@dt-ui/react-spinner": "0.1.0-beta.39",
     "@dt-ui/react-stepper": "0.1.0-beta.25",
     "@dt-ui/react-table": "0.1.0-beta.32",

@@ -1,5 +1,11 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.37
+
+### Minor Changes
+
+- feat: add select variant and bg fill
+
 ## 0.1.0-beta.36
 
 ### Patch Changes
