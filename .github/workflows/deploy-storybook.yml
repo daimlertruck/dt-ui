@@ -11,15 +11,15 @@ on:
     branches:
       - main
     paths:
-      - "packages/dt-ui-react/**"
-      - "packages/react-packages/**"
-      - "apps/docs/**"
+      - 'packages/dt-ui-react/**'
+      - 'packages/react-packages/**'
+      - 'apps/docs/**'
 
   pull_request:
     paths:
-      - "packages/dt-ui-react/**"
-      - "packages/react-packages/**"
-      - "apps/docs/**"
+      - 'packages/dt-ui-react/**'
+      - 'packages/react-packages/**'
+      - 'apps/docs/**'
 
 jobs:
   build-storybook:
@@ -30,12 +30,12 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'release:')"
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup node and yarn
-        uses: "./.github/actions/yarn-node-install"
+        uses: './.github/actions/yarn-node-install'
         with:
-          CACHE_FILE_NAME: "global"
+          CACHE_FILE_NAME: 'global'
           TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
           TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
 
@@ -45,9 +45,9 @@ jobs:
           yarn build
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          path: "./apps/docs/storybook-static"
+          path: './apps/docs/storybook-static'
           name: storybook-static
 
   deploy-storybook:
@@ -55,7 +55,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -82,7 +82,7 @@ jobs:
           name: storybook-static
           path: ${{ github.workspace }}/PR-${{ github.event.number }}
 
-      # Not perfect, but should solve the issue. 
+      # Not perfect, but should solve the issue.
       # See: https://github.com/storybookjs/storybook/issues/20564
       - name: Create .nojekyll file
         run: |
@@ -108,22 +108,34 @@ jobs:
     needs: deploy-storybook
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Check PR Description
         id: check_pr_description
         run: |
-          PR_VIEW_OUTPUT=$(curl --request GET --url "${{ github.server_url }}/api/v3/repos/${{ github.repository }}/pulls/${{ github.event.number }}" --header "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" | jq -r '.body')
+          # Get PR details using GitHub API
+          PR_VIEW_OUTPUT=$(curl -s \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.number }}" \
+            | jq -r '.body // ""')
 
+          # Check if preview link already exists
           if echo "$PR_VIEW_OUTPUT" | grep -q "/pages/.*/PR-${{ github.event.number }}"; then
             echo "Preview Link is already in the description."
             exit 0
-          else 
-            NEW_BODY=$(jq -n --arg string "$PR_VIEW_OUTPUT" '($string + "\n\n${{ github.server_url }}/pages/${{ github.repository }}/PR-${{ github.event.number }}")')
-          curl --request PATCH \
-            --url "${{ github.server_url }}/api/v3/repos/${{ github.repository }}/pulls/${{ github.event.number }}" \
-            --header "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            --data-raw '{ "body":'"$NEW_BODY"' }'
+          else
+            # Create new body with preview link
+            PREVIEW_LINK="https://${{ github.repository_owner }}.github.io/${{ github.repository }}/PR-${{ github.event.number }}"
+            NEW_BODY=$(jq -n --arg current "$PR_VIEW_OUTPUT" --arg link "$PREVIEW_LINK" '$current + "\n\n" + $link')
+            
+            # Update PR description
+            curl -s \
+              -X PATCH \
+              -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              -H "Accept: application/vnd.github.v3+json" \
+              "https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.number }}" \
+              -d "{\"body\": $NEW_BODY}"
           fi
 
   delete_previews:
@@ -131,7 +143,7 @@ jobs:
     if: github.event_name == 'push' && !contains(github.event.head_commit.message, 'release:')
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
