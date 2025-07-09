@@ -3,6 +3,7 @@
 exports[`<Select /> component should render Select 1`] = `
 .emotion-0 {
   position: relative;
+  width: 100%;
 }
 
 .emotion-2 {
@@ -129,6 +130,8 @@ exports[`<Select /> component should render Select 1`] = `
   position: absolute;
   z-index: 3;
   width: 100%;
+  max-height: 180px;
+  overflow: auto;
   margin-top: 4px;
   padding: 16px 0;
   background-color: #FFFFFF;
@@ -336,6 +339,7 @@ exports[`<Select /> component should render Select 1`] = `
 exports[`<Select /> component should render Select as multi select 1`] = `
 .emotion-0 {
   position: relative;
+  width: 100%;
 }
 
 .emotion-2 {
@@ -462,6 +466,8 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   position: absolute;
   z-index: 3;
   width: 100%;
+  max-height: 180px;
+  overflow: auto;
   margin-top: 4px;
   padding: 16px 0;
   background-color: #FFFFFF;
