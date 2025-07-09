@@ -5,6 +5,7 @@ import { SelectFill, SelectVariant } from './types';
 
 export const SelectStyled = styled.div`
   position: relative;
+  width: 100%;
 `;
 
 export interface SelectContainerStyledProps {
@@ -41,6 +42,8 @@ export const SelectMenuStyled = styled.ul<{ isOpen: boolean }>`
   position: absolute;
   z-index: ${DROPDOWN_MENU_Z_INDEX};
   width: 100%;
+  max-height: 180px;
+  overflow: auto;
 
   ${({ isOpen, theme }) => `
     margin-top:${theme.spacing['5xs']};
