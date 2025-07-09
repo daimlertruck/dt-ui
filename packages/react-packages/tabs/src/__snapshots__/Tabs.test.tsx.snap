@@ -39,6 +39,10 @@ exports[`<Tabs /> component should match the snapshot by displaying contained va
   user-select: none;
 }
 
+.emotion-2:hover {
+  color: #00677F;
+}
+
 .emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -254,6 +258,10 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.emotion-2:hover {
+  color: #00677F;
 }
 
 .emotion-4 {

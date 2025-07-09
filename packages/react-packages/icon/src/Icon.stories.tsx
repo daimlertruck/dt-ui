@@ -19,6 +19,13 @@ const meta: Meta<IconProps> = {
       options: ['small', 'medium', 'large'],
       control: { type: 'radio' },
     },
+    onClick: {
+      action: 'clicked',
+      control: { type: 'boolean' },
+    },
+    isDisabled: {
+      control: 'boolean',
+    },
   },
   parameters: {
     controls: {
@@ -37,5 +44,7 @@ export const Default: StoryObj<IconProps> = {
     size: 'large',
     variant: 'outlined',
     color: 'black',
+    onClick: () => null,
+    isDisabled: false,
   },
 };
