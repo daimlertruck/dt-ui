@@ -29,19 +29,30 @@ import {
 } from './Select.styled';
 import { SelectOptionValue, SelectFill, SelectVariant } from './types';
 
-export interface SelectProps extends BaseProps {
+interface BaseSelectProps extends BaseProps {
   helperText?: string;
   hasError?: boolean;
-  initialValue?: string[] | string;
   label: string;
-  isMulti?: boolean;
   isRequired?: boolean;
   errorMessage?: string;
   isDisabled?: boolean;
   variant?: SelectVariant;
   fill?: SelectFill;
-  onChange?: (value: string[] | string) => void;
 }
+
+interface SingleSelectProps extends BaseSelectProps {
+  isMulti?: false;
+  initialValue?: string;
+  onChange?: (value: string) => void;
+}
+
+interface MultiSelectProps extends BaseSelectProps {
+  isMulti: true;
+  initialValue?: string[];
+  onChange?: (value: string[]) => void;
+}
+
+export type SelectProps = SingleSelectProps | MultiSelectProps;
 
 const createOptionObject = (element: ReactElement): SelectOptionValue => {
   return {
@@ -82,13 +93,15 @@ const Select = ({
     (newItems: SelectOptionValue[], skipOnChangeTrigger = false) => {
       setSelectedItems(newItems);
       if (onChange && !skipOnChangeTrigger) {
-        onChange(
-          isMulti
-            ? newItems
-                .map((newSelectedItem) => newSelectedItem.value)
-                .filter((value): value is string => Boolean(value))
-            : newItems[0]?.value || ''
-        );
+        if (isMulti) {
+          const values = newItems
+            .map((newSelectedItem) => newSelectedItem.value)
+            .filter((value) => Boolean(value));
+          (onChange as (value: string[]) => void)(values);
+        } else {
+          const value = newItems[0]?.value || '';
+          (onChange as (value: string) => void)(value);
+        }
       }
     },
     [setSelectedItems, isMulti, onChange]
