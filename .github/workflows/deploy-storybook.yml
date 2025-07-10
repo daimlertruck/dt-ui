@@ -120,23 +120,24 @@ jobs:
             "https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.number }}" \
             | jq -r '.body // ""')
 
+          PREVIEW_LINK="https://${{ github.repository_owner }}.github.io/${{ github.repository }}/PR-${{ github.event.number }}"
+
           # Check if preview link already exists
-          if echo "$PR_VIEW_OUTPUT" | grep -q "/pages/.*/PR-${{ github.event.number }}"; then
+          if echo "$PR_VIEW_OUTPUT" | grep -Fq "$PREVIEW_LINK"; then
             echo "Preview Link is already in the description."
             exit 0
-          else
-            # Create new body with preview link
-            PREVIEW_LINK="https://${{ github.repository_owner }}.github.io/${{ github.repository }}/PR-${{ github.event.number }}"
-            NEW_BODY=$(jq -n --arg current "$PR_VIEW_OUTPUT" --arg link "$PREVIEW_LINK" '$current + "\n\n" + $link')
-            
-            # Update PR description
-            curl -s \
-              -X PATCH \
-              -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-              -H "Accept: application/vnd.github.v3+json" \
-              "https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.number }}" \
-              -d "{\"body\": $NEW_BODY}"
           fi
+
+          # Create new body with preview link
+          NEW_BODY=$(jq -n --arg current "$PR_VIEW_OUTPUT" --arg link "$PREVIEW_LINK" '$current + "\n\n" + $link')
+            
+          # Update PR description
+          curl -s \
+            -X PATCH \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.number }}" \
+            -d "{\"body\": $NEW_BODY}"
 
   delete_previews:
     runs-on: ubuntu-latest
