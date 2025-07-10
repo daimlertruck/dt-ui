@@ -1,5 +1,11 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.38
+
+### Patch Changes
+
+- fix: select-field styles
+
 ## 0.1.0-beta.37
 
 ### Minor Changes
