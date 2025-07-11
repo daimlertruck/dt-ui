@@ -11,6 +11,7 @@ export interface IconProps extends Omit<BaseProps, 'children'> {
   size?: Size;
   variant?: Variant;
   onClick?: (e: React.MouseEvent<HTMLElement>) => void;
+  isDisabled?: boolean;
 }
 
 export const Icon = ({
@@ -21,15 +22,27 @@ export const Icon = ({
   style,
   variant = 'outlined',
   onClick,
+  isDisabled,
 }: IconProps) => {
   const theme = useTheme();
+
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (isDisabled) {
+      return;
+    }
+
+    e.preventDefault();
+    e.stopPropagation();
+    onClick && onClick(e);
+  };
 
   return (
     <IconStyled
       color={color ?? theme.palette.content.default}
       data-testid={dataTestId ?? 'icon'}
+      disabled={isDisabled}
       hasClick={!!onClick}
-      onClick={onClick}
+      onClick={handleClick}
       size={size}
       style={style}
       variant={variant}
