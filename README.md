@@ -5,9 +5,9 @@
 
 </div>
 
-**Daimler Truck Design System Library**
+**Daimler Truck Digital Design System Library**
 
-Component library for Daimler Truck Multi-brand Design System.<br>
+Component library for Daimler Truck Digital Design System.<br>
 It contains UI components, brand themes, examples and documentation.
 
 #### **DT-UI provides:**
