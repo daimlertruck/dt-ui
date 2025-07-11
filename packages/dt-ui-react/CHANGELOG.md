@@ -1,5 +1,16 @@
 # @dt-ui/react
 
+## 0.1.0-beta.201
+
+### Minor Changes
+
+- feat: add conditional props to select field
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-select@0.1.0-beta.39
+
 ## 0.1.0-beta.200
 
 ### Patch Changes
