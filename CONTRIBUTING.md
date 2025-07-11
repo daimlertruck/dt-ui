@@ -1,6 +1,6 @@
 # Coding Standards and Guidelines
 
-This guide is intended to support the developers by providing a set of programming conventions, style and best practices to follow on DT-UI Design System.
+This guide is intended to support the developers by providing a set of programming conventions, style and best practices to follow on DT-UI Daimler Truck Digital Design System.
 
 - [Coding Standards and Guidelines](#coding-standards-and-guidelines)
   - [1. Branch Naming Convention](#1-branch-naming-convention)
