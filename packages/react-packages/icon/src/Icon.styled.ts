@@ -7,16 +7,19 @@ interface IconStyledProps {
   size: Size;
   variant: Variant;
   hasClick: boolean;
+  disabled?: boolean;
 }
 
 const fontSize: Record<Size, string> = {
-  small: '12px',
-  medium: '16px',
+  'extra-small': '12px',
+  small: '16px',
+  medium: '20px',
   large: '24px',
+  'extra-large': '32px',
 };
 
 export const IconStyled = styled.i<IconStyledProps>`
-  ${({ size, theme, variant, color, hasClick }) => `
+  ${({ size, theme, variant, color, hasClick, disabled }) => `
     font-family: DTUI-icons-${theme.icons};
     font-weight: normal;
     font-style: normal;
@@ -28,7 +31,7 @@ export const IconStyled = styled.i<IconStyledProps>`
     word-wrap: normal;
     white-space: nowrap;
     font-variation-settings: 'FILL' ${variant === 'filled' ? 1 : 0};
-    color: ${color};
+    color: ${disabled ? theme.palette.content.light : color};
 
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
@@ -44,8 +47,14 @@ export const IconStyled = styled.i<IconStyledProps>`
     ${
       hasClick &&
       `
-        cursor: pointer;
+        cursor: ${disabled ? 'not-allowed' : 'pointer'};
         user-select: none;
+
+        &:not(:disabled) > i {
+          &:hover, &:active {
+            color: ${theme.palette.accent.default};
+          }
+        }
       `
     };
   `}
