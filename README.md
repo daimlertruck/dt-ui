@@ -1,16 +1,15 @@
 <div align="center">
-<img src="dtui.png" width="55" style="vertical-align: middle;" />
-
-# DT-UI
-
+<img src="dt-dds-banner.png" width="100%" style="vertical-align: middle;" />
 </div>
 
-**Daimler Truck Digital Design System Library**
+<br/>
 
-Component library for Daimler Truck Digital Design System.<br>
-It contains UI components, brand themes, examples and documentation.
+<div align="center">Component library for Daimler Truck Digital Design System.<br>
+It contains UI components, brand themes, examples and documentation.</div>
 
-#### **DT-UI provides:**
+#
+
+#### **DT-DDS provides:**
 
 - A unified group of utility functions commonly used, and spread across different projects
 - A unified group of reusable UI components commonly used, and spread across different projects
@@ -23,13 +22,13 @@ It contains UI components, brand themes, examples and documentation.
 
 #### **Documentation via:**
 
-- [Storybook/Developer documentation](https://daimlertruck.github.io/daimlertruck/dt-ui/)
+- [Storybook/Developer documentation](https://daimlertruck.github.io/DT-DDS/)
 - [Figma (private design files)](https://www.figma.com/file/RdxGI4OUcKDRfBRPmBJXbW/DT_UI-Design-System)
 - [Confluence (private docs)](https://con.t3.daimlertruck.com/display/DTUI/DT+Design+System+Home)
 
 ## 📦 Installation
 
-At the moment, DT-UI is available as an npm package, `@dt-ui/react`, for React and frameworks using React, like NextJS (compatible with Server-side rendering).
+At the moment, DT-DDS is available as an npm package, `@dt-ui/react`, for React and frameworks using React, like NextJS (compatible with Server-side rendering).
 
 ### Setup
 
@@ -77,7 +76,7 @@ yarn add @emotion/css @emotion/react @emotion/styled
 
 ## 🔨 Usage
 
-Import the DT UI global styles in the root component.
+Import the DT-DDS global styles in the root component.
 
 ```tsx
 import '@dt-ui/react/index.css';
@@ -109,7 +108,7 @@ For now, there is only available one theme (the default one).
 - Clone the repo
 - `yarn` for package install
 
-### ⚙️ DT-UI current stack
+### ⚙️ DT-DDS current stack
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [React](https://reactjs.org/) — JavaScript library for user interfaces
@@ -159,17 +158,17 @@ See the [contributing guidelines](CONTRIBUTING.md).
 
 If you've encountered a bug in our project, please follow these steps to report it:
 
-1. **Search Existing Issues:** Before creating a new issue, please search the [existing issues](https://github.com/daimlertruck/dt-ui/issues) to check if the bug has already been reported. If you find a similar issue, you can add a comment to provide additional details.
+1. **Search Existing Issues:** Before creating a new issue, please search the [existing issues](https://github.com/daimlertruck/DT-DDS/issues) to check if the bug has already been reported. If you find a similar issue, you can add a comment to provide additional details.
 
-2. **Create a New Issue:** If you couldn't find an existing issue, [create a new issue](https://github.com/daimlertruck/dt-ui/issues/new/choose) and use the "Bug Report" template. Provide as much detail as possible, including steps to reproduce, expected behavior, and actual behavior. Screenshots, error messages, and relevant code snippets are highly appreciated.
+2. **Create a New Issue:** If you couldn't find an existing issue, [create a new issue](https://github.com/daimlertruck/DT-DDS/issues/new/choose) and use the "Bug Report" template. Provide as much detail as possible, including steps to reproduce, expected behavior, and actual behavior. Screenshots, error messages, and relevant code snippets are highly appreciated.
 
 ### Feature Requests
 
 To propose a new feature:
 
-1. **Search Existing Requests:** First, search the [existing issues](https://github.com/daimlertruck/dt-ui/issues) to see if the feature has already been suggested. You can upvote and add your insights to existing feature requests.
+1. **Search Existing Requests:** First, search the [existing issues](https://github.com/daimlertruck/DT-DDS/issues) to see if the feature has already been suggested. You can upvote and add your insights to existing feature requests.
 
-2. **Create a New Issue:** If your feature idea hasn't been proposed yet, [create a new issue](https://github.com/daimlertruck/dt-ui/issues/new/choose) and use the "Feature request" template.
+2. **Create a New Issue:** If your feature idea hasn't been proposed yet, [create a new issue](https://github.com/daimlertruck/DT-DDS/issues/new/choose) and use the "Feature request" template.
 
 ### Issue Etiquette
 
