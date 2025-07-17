@@ -1,5 +1,14 @@
 # @dt-ui/react-spinner
 
+## 0.1.0-beta.40
+
+### Patch Changes
+
+- chore: update theme font-styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.38
+  - @dt-ui/react-typography@0.1.0-beta.29
+
 ## 0.1.0-beta.39
 
 ### Patch Changes

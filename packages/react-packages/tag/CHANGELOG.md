@@ -1,5 +1,14 @@
 # @dt-ui/react-tag
 
+## 0.1.0-beta.40
+
+### Patch Changes
+
+- chore: update theme font-styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.38
+  - @dt-ui/react-tooltip@0.1.0-beta.46
+
 ## 0.1.0-beta.39
 
 ### Patch Changes

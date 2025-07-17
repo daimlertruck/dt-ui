@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.38
+
+### Patch Changes
+
+- chore: update theme font-styles
+
 ## 0.1.0-beta.37
 
 ### Patch Changes

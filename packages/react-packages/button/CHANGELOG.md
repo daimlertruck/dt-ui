@@ -1,5 +1,14 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.35
+
+### Patch Changes
+
+- chore: update theme font-styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.38
+  - @dt-ui/react-spinner@0.1.0-beta.40
+
 ## 0.1.0-beta.34
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @dt-ui/react-tooltip
 
+## 0.1.0-beta.46
+
+### Patch Changes
+
+- chore: update theme font-styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.38
+  - @dt-ui/react-icon-button@0.1.0-beta.6
+
 ## 0.1.0-beta.45
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @dt-ui/react-tabs
 
+## 0.1.0-beta.32
+
+### Patch Changes
+
+- chore: update theme font-styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.38
+  - @dt-ui/react-icon@0.1.0-beta.37
+
 ## 0.1.0-beta.31
 
 ### Patch Changes

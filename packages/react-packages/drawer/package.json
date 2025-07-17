@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-drawer",
-  "version": "0.1.0-beta.43",
+  "version": "0.1.0-beta.44",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js"
@@ -20,9 +20,9 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-core": "0.1.0-beta.37",
-    "@dt-ui/react-icon-button": "0.1.0-beta.5",
-    "@dt-ui/react-typography": "0.1.0-beta.28"
+    "@dt-ui/react-core": "0.1.0-beta.38",
+    "@dt-ui/react-icon-button": "0.1.0-beta.6",
+    "@dt-ui/react-typography": "0.1.0-beta.29"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",

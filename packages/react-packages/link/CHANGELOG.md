@@ -1,5 +1,15 @@
 # @dt-ui/react-link
 
+## 0.1.0-beta.10
+
+### Patch Changes
+
+- chore: update theme font-styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.38
+  - @dt-ui/react-button@0.1.0-beta.35
+  - @dt-ui/react-icon@0.1.0-beta.37
+
 ## 0.1.0-beta.9
 
 ### Patch Changes

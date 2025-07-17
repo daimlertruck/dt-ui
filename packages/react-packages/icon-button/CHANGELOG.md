@@ -1,5 +1,13 @@
 # @dt-ui/react-icon-button
 
+## 0.1.0-beta.6
+
+### Patch Changes
+
+- chore: update theme font-styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.38
+
 ## 0.1.0-beta.5
 
 ### Patch Changes

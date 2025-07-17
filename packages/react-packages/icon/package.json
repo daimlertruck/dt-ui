@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-icon",
-  "version": "0.1.0-beta.36",
+  "version": "0.1.0-beta.37",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js"
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@dt-ui/icons": "0.1.0-beta.3",
-    "@dt-ui/react-core": "0.1.0-beta.37"
+    "@dt-ui/react-core": "0.1.0-beta.38"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",

@@ -1,5 +1,18 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.40
+
+### Patch Changes
+
+- chore: update theme font-styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.38
+  - @dt-ui/react-checkbox@0.1.0-beta.35
+  - @dt-ui/react-icon@0.1.0-beta.37
+  - @dt-ui/react-tooltip@0.1.0-beta.46
+  - @dt-ui/react-label-field@0.1.0-beta.34
+  - @dt-ui/react-typography@0.1.0-beta.29
+
 ## 0.1.0-beta.39
 
 ### Minor Changes

@@ -1,5 +1,15 @@
 # @dt-ui/react-drawer
 
+## 0.1.0-beta.44
+
+### Patch Changes
+
+- chore: update theme font-styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.38
+  - @dt-ui/react-icon-button@0.1.0-beta.6
+  - @dt-ui/react-typography@0.1.0-beta.29
+
 ## 0.1.0-beta.43
 
 ### Patch Changes

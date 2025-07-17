@@ -1,5 +1,14 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.25
+
+### Patch Changes
+
+- chore: update theme font-styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.38
+  - @dt-ui/react-text-field@0.1.0-beta.42
+
 ## 0.1.0-beta.24
 
 ### Patch Changes

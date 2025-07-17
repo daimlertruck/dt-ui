@@ -1,5 +1,17 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.42
+
+### Patch Changes
+
+- chore: update theme font-styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.38
+  - @dt-ui/react-icon@0.1.0-beta.37
+  - @dt-ui/react-label-field@0.1.0-beta.34
+  - @dt-ui/react-spinner@0.1.0-beta.40
+  - @dt-ui/react-typography@0.1.0-beta.29
+
 ## 0.1.0-beta.41
 
 ### Patch Changes

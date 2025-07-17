@@ -1,5 +1,15 @@
 # @dt-ui/react-form
 
+## 0.1.0-beta.24
+
+### Patch Changes
+
+- chore: update theme font-styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.38
+  - @dt-ui/react-tooltip@0.1.0-beta.46
+  - @dt-ui/react-typography@0.1.0-beta.29
+
 ## 0.1.0-beta.23
 
 ### Patch Changes

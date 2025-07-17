@@ -1,5 +1,15 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.36
+
+### Patch Changes
+
+- chore: update theme font-styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.38
+  - @dt-ui/react-divider@0.1.0-beta.37
+  - @dt-ui/react-icon@0.1.0-beta.37
+
 ## 0.1.0-beta.35
 
 ### Patch Changes

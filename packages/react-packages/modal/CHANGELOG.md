@@ -1,5 +1,18 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.33
+
+### Patch Changes
+
+- chore: update theme font-styles
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.38
+  - @dt-ui/react-backdrop@0.1.0-beta.40
+  - @dt-ui/react-icon@0.1.0-beta.37
+  - @dt-ui/react-icon-button@0.1.0-beta.6
+  - @dt-ui/react-spinner@0.1.0-beta.40
+  - @dt-ui/react-typography@0.1.0-beta.29
+
 ## 0.1.0-beta.32
 
 ### Patch Changes
