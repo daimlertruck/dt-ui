@@ -17,7 +17,7 @@ export const Icon = ({
   code,
   color,
   dataTestId,
-  size = 'large',
+  size = 'l',
   style,
   variant = 'outlined',
   onClick,

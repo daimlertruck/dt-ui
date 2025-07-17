@@ -129,13 +129,13 @@ export const DropdownSelect = ({
               color={disabledIconColor}
               dataTestId='deselect-value'
               onClick={handleDeselectClick}
-              size='medium'
+              size='s'
             />
           ) : null}
           <Icon
             code={isOpen ? 'expand_less' : 'expand_more'}
             color={disabledIconColor}
-            size='large'
+            size='l'
           />
         </Box>
       </SelectDropdownStyled>

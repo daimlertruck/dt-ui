@@ -81,12 +81,10 @@ export const ProgressBar = ({
         <Icon
           code='check_circle'
           color={theme.palette.success.default}
-          size='medium'
+          size='s'
         />
       ),
-      error: (
-        <Icon code='error' color={theme.palette.error.default} size='medium' />
-      ),
+      error: <Icon code='error' color={theme.palette.error.default} size='s' />,
     } as const;
 
     let content = (

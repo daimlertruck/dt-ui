@@ -19,11 +19,23 @@ describe('Icon component tests', () => {
     expect(container.querySelector('i')).toHaveStyle('color: red');
   });
 
-  it('applies the specified font size in the Icon component', () => {
-    const { container } = render(<ProvidedIcon code={CODE} size='small' />);
+  it.each`
+    size    | fontSize
+    ${'xs'} | ${'12px'}
+    ${'s'}  | ${'16px'}
+    ${'m'}  | ${'20px'}
+    ${'l'}  | ${'24px'}
+    ${'xl'} | ${'32px'}
+  `(
+    'applies the font size $fontSize in the Icon component when size is $size',
+    ({ size, fontSize }) => {
+      const { container } = render(<ProvidedIcon code={CODE} size={size} />);
 
-    expect(container.querySelector('i')).toHaveStyle('font-size: 12px');
-  });
+      expect(container.querySelector('i')).toHaveStyle(
+        `font-size: ${fontSize}`
+      );
+    }
+  );
 
   it('applies the filled style in the Icon component', () => {
     const { container } = render(<ProvidedIcon code={CODE} variant='filled' />);
