@@ -66,6 +66,7 @@ export const App = () => {
 
 | Property     | Type                                                        | Default                          | Description                                       |
 | ------------ | ----------------------------------------------------------- | -------------------------------- | ------------------------------------------------- |
+| `style`      | `React.CSSProperties`                                       | -                                | Gives the Dropdown option css properties          |
 | `children`   | `ReactNode`                                                 | -                                | Child components to be rendered                   |
 | `option`     | `DropdownOptionValue`                                       | -                                | The option object.                                |
 | `dataTestId` | `string`                                                    | `dropdown-option-{option.value}` | Customizable test identifier                      |
