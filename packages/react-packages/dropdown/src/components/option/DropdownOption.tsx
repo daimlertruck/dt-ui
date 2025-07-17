@@ -21,6 +21,7 @@ export const DropdownOption = ({
   dataTestId,
   option,
   children,
+  style,
   isDisabled,
   onClick,
 }: DropdownOptionProps) => {
@@ -51,6 +52,7 @@ export const DropdownOption = ({
       key={option.value}
       onClick={handleClick}
       role='option'
+      style={style}
     >
       {children}
     </DropdownOptionStyled>
