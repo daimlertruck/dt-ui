@@ -276,15 +276,12 @@ const Select = ({
                     code='close'
                     dataTestId='clear-selection'
                     onClick={clearSelection}
-                    size='medium'
+                    size='s'
                   />
                   <Tooltip.Content>Clear all</Tooltip.Content>
                 </Tooltip>
               ) : null}
-              <Icon
-                code={isOpen ? 'expand_less' : 'expand_more'}
-                size='medium'
-              />
+              <Icon code={isOpen ? 'expand_less' : 'expand_more'} size='s' />
             </SelectActionContainerStyled>
           </SelectContainerStyled>
         </SelectFieldStyled>

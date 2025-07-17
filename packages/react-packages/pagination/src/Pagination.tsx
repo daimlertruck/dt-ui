@@ -58,7 +58,7 @@ Pagination.NextItem = ({ onClick, disabled }: ArrowProps) => {
       onClick={onClick}
       title='Go to next page'
     >
-      <Icon code='arrow_forward_ios' size='medium' />
+      <Icon code='arrow_forward_ios' size='s' />
     </ArrowStyled>
   );
 };
@@ -71,7 +71,7 @@ Pagination.PreviousItem = ({ onClick, disabled }: ArrowProps) => {
       onClick={onClick}
       title='Go to previous page'
     >
-      <Icon code='arrow_back_ios' size='medium' />
+      <Icon code='arrow_back_ios' size='s' />
     </ArrowStyled>
   );
 };

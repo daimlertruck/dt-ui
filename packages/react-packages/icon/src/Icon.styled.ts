@@ -9,10 +9,12 @@ interface IconStyledProps {
   hasClick: boolean;
 }
 
-const fontSize: Record<Size, string> = {
-  small: '12px',
-  medium: '16px',
-  large: '24px',
+export const fontSize: Record<Size, string> = {
+  xs: '12px',
+  s: '16px',
+  m: '20px',
+  l: '24px',
+  xl: '32px',
 };
 
 export const IconStyled = styled.i<IconStyledProps>`

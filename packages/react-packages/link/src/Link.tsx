@@ -5,7 +5,7 @@ import { forwardRef } from 'react';
 
 import { LinkStyled } from './Link.styled';
 
-import { LinkSize, LinkVariant } from '.';
+import { iconSize, LinkSize, LinkVariant } from '.';
 
 export interface LinkProps
   extends BaseProps,
@@ -45,7 +45,9 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
         {...rest}
       >
         <span>{children}</span>
-        {icon ? <Icon code={icon} color='inherit' size={size} /> : null}
+        {icon ? (
+          <Icon code={icon} color='inherit' size={iconSize[size]} />
+        ) : null}
       </LinkStyled>
     );
   }

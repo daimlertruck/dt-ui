@@ -37,7 +37,7 @@ export const AccordionHeader = ({
       <Icon
         code={isOpenState ? 'unfold_less' : 'unfold_more'}
         color={theme.palette.content.dark}
-        size='large'
+        size='l'
       />
     </HeaderStyled>
   );
