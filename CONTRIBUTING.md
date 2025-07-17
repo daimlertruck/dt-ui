@@ -1,6 +1,6 @@
 # Coding Standards and Guidelines
 
-This guide is intended to support the developers by providing a set of programming conventions, style and best practices to follow on DT-UI Daimler Truck Digital Design System.
+This guide is intended to support the developers by providing a set of programming conventions, style and best practices to follow on DT-DDS.
 
 - [Coding Standards and Guidelines](#coding-standards-and-guidelines)
   - [1. Branch Naming Convention](#1-branch-naming-convention)
@@ -17,7 +17,7 @@ This guide is intended to support the developers by providing a set of programmi
       - [3.4.1 Continuation of Pull Request](#341-continuation-of-pull-request)
       - [3.4.2 Merging the Pull Request](#342-merging-the-pull-request)
   - [4. Code Standards & Good Practices](#4-code-standards--good-practices)
-    - [4.1. Start developing on DT-UI](#41-start-developing-on-dt-ui)
+    - [4.1. Start developing on DT-DDS](#41-start-developing-on-DT-DDS)
     - [4.2. Library Compilation](#42-library-compilation)
     - [4.3. How to build a component from scratch](#43-how-to-build-a-component-from-scratch)
     - [4.4. When to use Types / Interfaces](#44-when-to-use-types--interfaces)
@@ -113,7 +113,7 @@ After all of this, the branch is ready to be merged using `rebase and merge`.
 
 It is important to follow certain coding guidelines and standards to maintain consistency across the project's code base.
 
-### 4.1. Start developing on DT-UI
+### 4.1. Start developing on DT-DDS
 
 Only create a new component if the design specification is ready and approved in the contributors sync, the component spec's to be found on [Figma](https://www.figma.com/file/HMNEjcZa01vPjEaBbB0vtF/DT_UI?type=design&node-id=48%3A8967&mode=design&t=UTbLy7JmqDqrFuWC-1).
 
@@ -239,7 +239,7 @@ Reference: https://stackoverflow.com/a/68665805
 
 ### 4.9. Developer Documentation
 
-DT-UI developer documentation is built with Storybook. Storybook documentation is composed by:
+DT-DDS developer documentation is built with Storybook. Storybook documentation is composed by:
 
 - Documentation pages
 - Component stories
