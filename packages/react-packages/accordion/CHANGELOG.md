@@ -1,5 +1,17 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.37
+
+### Minor Changes
+
+- feat: add new icon font sizes
+
+### Patch Changes
+
+- fix: change accordion export
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.38
+
 ## 0.1.0-beta.36
 
 ### Patch Changes

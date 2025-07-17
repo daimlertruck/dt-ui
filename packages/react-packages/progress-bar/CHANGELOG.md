@@ -1,5 +1,16 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.31
+
+### Minor Changes
+
+- feat: add new icon font sizes
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.38
+
 ## 0.1.0-beta.30
 
 ### Patch Changes

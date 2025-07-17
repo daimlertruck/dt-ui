@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-date-picker",
-  "version": "0.1.0-beta.25",
+  "version": "0.1.0-beta.26",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js"
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@dt-ui/react-core": "0.1.0-beta.38",
-    "@dt-ui/react-text-field": "0.1.0-beta.42"
+    "@dt-ui/react-text-field": "0.1.0-beta.43"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",

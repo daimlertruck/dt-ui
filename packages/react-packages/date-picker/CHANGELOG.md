@@ -1,5 +1,16 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.26
+
+### Minor Changes
+
+- feat: add new icon font sizes
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-text-field@0.1.0-beta.43
+
 ## 0.1.0-beta.25
 
 ### Patch Changes

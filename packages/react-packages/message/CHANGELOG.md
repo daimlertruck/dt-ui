@@ -1,5 +1,16 @@
 # @dt-ui/react-message
 
+## 0.1.0-beta.50
+
+### Minor Changes
+
+- feat: add new icon font sizes
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-link@0.1.0-beta.11
+
 ## 0.1.0-beta.49
 
 ### Patch Changes

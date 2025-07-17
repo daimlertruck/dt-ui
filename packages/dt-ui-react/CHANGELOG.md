@@ -1,5 +1,33 @@
 # @dt-ui/react
 
+## 0.1.0-beta.203
+
+### Minor Changes
+
+- feat: add new icon font sizes
+
+### Patch Changes
+
+- fix: change accordion export
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-accordion@0.1.0-beta.37
+  - @dt-ui/react-dropdown@0.1.0-beta.24
+  - @dt-ui/react-icon@0.1.0-beta.38
+  - @dt-ui/react-link@0.1.0-beta.11
+  - @dt-ui/react-modal@0.1.0-beta.34
+  - @dt-ui/react-pagination@0.1.0-beta.17
+  - @dt-ui/react-progress-bar@0.1.0-beta.31
+  - @dt-ui/react-segmented-control@0.1.0-beta.25
+  - @dt-ui/react-select@0.1.0-beta.41
+  - @dt-ui/react-stepper@0.1.0-beta.27
+  - @dt-ui/react-breadcrumb@0.1.0-beta.47
+  - @dt-ui/react-checkbox@0.1.0-beta.36
+  - @dt-ui/react-tabs@0.1.0-beta.33
+  - @dt-ui/react-text-field@0.1.0-beta.43
+  - @dt-ui/react-date-picker@0.1.0-beta.26
+  - @dt-ui/react-message@0.1.0-beta.50
+
 ## 0.1.0-beta.202
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.47
+
+### Minor Changes
+
+- feat: add new icon font sizes
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.38
+
 ## 0.1.0-beta.46
 
 ### Patch Changes

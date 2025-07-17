@@ -1,5 +1,16 @@
 # @dt-ui/react-stepper
 
+## 0.1.0-beta.27
+
+### Minor Changes
+
+- feat: add new icon font sizes
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.38
+
 ## 0.1.0-beta.26
 
 ### Patch Changes
