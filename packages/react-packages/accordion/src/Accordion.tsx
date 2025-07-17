@@ -13,7 +13,7 @@ export interface AccordionBaseProps extends BaseProps {
   className?: string;
 }
 
-const Accordion = ({
+export const Accordion = ({
   isOpen = false,
   headerContent,
   hasBackground = true,
@@ -66,5 +66,3 @@ const Accordion = ({
     </AccordionStyled>
   );
 };
-
-export default Accordion;
