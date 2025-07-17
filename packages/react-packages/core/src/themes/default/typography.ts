@@ -16,8 +16,8 @@ interface responsiveStyle {
 }
 
 export const fontStyles = {
-  h1: getTextStyles(700, '2.5rem', '2.75rem'),
-  h2: getTextStyles(700, '2rem', '2.25rem'),
+  h1: getTextStyles(700, '2.5rem', '3rem'),
+  h2: getTextStyles(700, '2rem', '2.5rem'),
   h3: getTextStyles(700, '1.5rem', '1.75rem'),
   h4: getTextStyles(700, '1.25rem', '1.5rem'),
   h5: getTextStyles(700, '1rem', '1.5rem'),
