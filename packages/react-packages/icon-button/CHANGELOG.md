@@ -1,5 +1,16 @@
 # @dt-ui/react-icon-button
 
+## 0.1.0-beta.7
+
+### Minor Changes
+
+- feat: update shadow theme values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.39
+
 ## 0.1.0-beta.6
 
 ### Patch Changes

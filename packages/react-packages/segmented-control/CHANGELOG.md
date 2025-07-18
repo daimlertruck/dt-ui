@@ -1,5 +1,18 @@
 # @dt-ui/react-segmented-control
 
+## 0.1.0-beta.26
+
+### Minor Changes
+
+- feat: update shadow theme values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.39
+  - @dt-ui/react-tooltip@0.1.0-beta.47
+  - @dt-ui/react-icon@0.1.0-beta.39
+
 ## 0.1.0-beta.25
 
 ### Minor Changes

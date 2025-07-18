@@ -1,5 +1,18 @@
 # @dt-ui/react-dropdown
 
+## 0.1.0-beta.26
+
+### Minor Changes
+
+- feat: update shadow theme values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.39
+  - @dt-ui/react-icon@0.1.0-beta.39
+  - @dt-ui/react-typography@0.1.0-beta.30
+
 ## 0.1.0-beta.25
 
 ### Patch Changes

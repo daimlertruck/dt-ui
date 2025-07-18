@@ -1,5 +1,17 @@
 # @dt-ui/react-toast
 
+## 0.1.0-beta.53
+
+### Minor Changes
+
+- feat: update shadow theme values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.39
+  - @dt-ui/react-button@0.1.0-beta.36
+
 ## 0.1.0-beta.52
 
 ### Patch Changes

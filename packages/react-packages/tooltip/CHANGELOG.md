@@ -1,5 +1,17 @@
 # @dt-ui/react-tooltip
 
+## 0.1.0-beta.47
+
+### Minor Changes
+
+- feat: update shadow theme values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.39
+  - @dt-ui/react-icon-button@0.1.0-beta.7
+
 ## 0.1.0-beta.46
 
 ### Patch Changes

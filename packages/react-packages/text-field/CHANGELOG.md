@@ -1,5 +1,20 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.44
+
+### Minor Changes
+
+- feat: update shadow theme values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.39
+  - @dt-ui/react-icon@0.1.0-beta.39
+  - @dt-ui/react-label-field@0.1.0-beta.35
+  - @dt-ui/react-spinner@0.1.0-beta.41
+  - @dt-ui/react-typography@0.1.0-beta.30
+
 ## 0.1.0-beta.43
 
 ### Minor Changes

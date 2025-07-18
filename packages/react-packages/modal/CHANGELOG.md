@@ -1,5 +1,21 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.35
+
+### Minor Changes
+
+- feat: update shadow theme values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.39
+  - @dt-ui/react-backdrop@0.1.0-beta.41
+  - @dt-ui/react-icon@0.1.0-beta.39
+  - @dt-ui/react-icon-button@0.1.0-beta.7
+  - @dt-ui/react-spinner@0.1.0-beta.41
+  - @dt-ui/react-typography@0.1.0-beta.30
+
 ## 0.1.0-beta.34
 
 ### Minor Changes

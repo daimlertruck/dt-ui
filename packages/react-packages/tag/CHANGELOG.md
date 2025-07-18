@@ -1,5 +1,17 @@
 # @dt-ui/react-tag
 
+## 0.1.0-beta.41
+
+### Minor Changes
+
+- feat: update shadow theme values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.39
+  - @dt-ui/react-tooltip@0.1.0-beta.47
+
 ## 0.1.0-beta.40
 
 ### Patch Changes

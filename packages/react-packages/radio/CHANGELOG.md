@@ -1,5 +1,16 @@
 # @dt-ui/react-radio
 
+## 0.1.0-beta.23
+
+### Minor Changes
+
+- feat: update shadow theme values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.39
+
 ## 0.1.0-beta.22
 
 ### Patch Changes

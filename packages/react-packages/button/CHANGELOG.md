@@ -1,5 +1,17 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.36
+
+### Minor Changes
+
+- feat: update shadow theme values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.39
+  - @dt-ui/react-spinner@0.1.0-beta.41
+
 ## 0.1.0-beta.35
 
 ### Patch Changes

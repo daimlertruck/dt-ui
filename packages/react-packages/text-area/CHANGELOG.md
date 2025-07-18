@@ -1,5 +1,18 @@
 # @dt-ui/react-text-area
 
+## 0.1.0-beta.21
+
+### Minor Changes
+
+- feat: update shadow theme values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.39
+  - @dt-ui/react-label-field@0.1.0-beta.35
+  - @dt-ui/react-typography@0.1.0-beta.30
+
 ## 0.1.0-beta.20
 
 ### Patch Changes

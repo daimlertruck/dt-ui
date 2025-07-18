@@ -1,5 +1,17 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.27
+
+### Minor Changes
+
+- feat: update shadow theme values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.39
+  - @dt-ui/react-text-field@0.1.0-beta.44
+
 ## 0.1.0-beta.26
 
 ### Minor Changes

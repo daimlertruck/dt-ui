@@ -1,5 +1,17 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.32
+
+### Minor Changes
+
+- feat: update shadow theme values
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.39
+  - @dt-ui/react-typography@0.1.0-beta.30
+
 ## 0.1.0-beta.31
 
 ### Minor Changes

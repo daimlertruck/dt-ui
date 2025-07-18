@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 0.1.0-beta.39
+
+### Minor Changes
+
+- feat: update shadow theme values
+
 ## 0.1.0-beta.38
 
 ### Patch Changes
