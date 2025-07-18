@@ -1,5 +1,11 @@
 # @dt-ui/react-dropdown
 
+## 0.1.0-beta.25
+
+### Patch Changes
+
+- fix: add style to dropdown props
+
 ## 0.1.0-beta.24
 
 ### Minor Changes
