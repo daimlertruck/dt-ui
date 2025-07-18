@@ -10,7 +10,7 @@ exports[`<Accordion /> component should render with correct style when hasBackgr
 
 .emotion-0:hover {
   background-color: #F3F3F5;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 2px 0px rgba(16, 20, 40, 0.05);
 }
 
 .emotion-2 {
@@ -131,7 +131,7 @@ exports[`<Accordion /> component should render with correct style when hasBackgr
 
 .emotion-0:hover {
   background-color: #F3F3F5;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 2px 0px rgba(16, 20, 40, 0.05);
 }
 
 .emotion-2 {

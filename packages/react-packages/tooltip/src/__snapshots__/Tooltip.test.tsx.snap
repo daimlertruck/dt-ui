@@ -15,7 +15,7 @@ exports[`<Tooltip /> component renders a tooltip with the direction as bottom an
   overflow-wrap: break-word;
   padding: 8px;
   background-color: #131313;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(16, 20, 40, 0.1);
   color: #FFFFFF;
   border-radius: 0px;
   text-align: left;
@@ -69,7 +69,7 @@ exports[`<Tooltip /> component renders a tooltip with the direction as left and 
   overflow-wrap: break-word;
   padding: 8px;
   background-color: #131313;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(16, 20, 40, 0.1);
   color: #FFFFFF;
   border-radius: 0px;
   text-align: left;
@@ -124,7 +124,7 @@ exports[`<Tooltip /> component renders a tooltip with the direction as right and
   overflow-wrap: break-word;
   padding: 8px;
   background-color: #131313;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(16, 20, 40, 0.1);
   color: #FFFFFF;
   border-radius: 0px;
   text-align: left;
@@ -179,7 +179,7 @@ exports[`<Tooltip /> component renders a tooltip with the direction as top and b
   overflow-wrap: break-word;
   padding: 8px;
   background-color: #131313;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(16, 20, 40, 0.1);
   color: #FFFFFF;
   border-radius: 0px;
   text-align: left;

@@ -137,7 +137,7 @@ exports[`<Select /> component should render Select 1`] = `
   background-color: #FFFFFF;
   display: block;
   border-radius: 0px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(16, 20, 40, 0.1);
 }
 
 .emotion-16 {
@@ -473,7 +473,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   background-color: #FFFFFF;
   display: none;
   border-radius: 0px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(16, 20, 40, 0.1);
 }
 
 <div>

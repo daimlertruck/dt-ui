@@ -1,12 +1,14 @@
+const shadowBase = '16, 20, 40';
+
 export const shadows = {
   none: 'none',
-  xs: '0px 1px 2px 0px rgba(0, 0, 0, 0.05)',
-  s: '0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1)',
-  m: '0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1)',
-  l: '0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1)',
-  xl: '0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1)',
-  '2xl': '0px 25px 50px -12px rgba(0, 0, 0, 0.25)',
-  inner: '0px 2px 4px 0px rgba(0, 0, 0, 0.05)',
+  xs: `0px 1px 2px 0px rgba(${shadowBase}, 0.05)`,
+  s: `0px 1px 3px 0px rgba(${shadowBase}, 0.1)`,
+  m: `0px 4px 8px -2px rgba(${shadowBase}, 0.1)`,
+  l: `0px 12px 16px -4px rgba(${shadowBase}, 0.08)`,
+  xl: `0px 20px 24px -4px rgba(${shadowBase}, 0.08)`,
+  '2xl': `0px 24px 48px -12px rgba(${shadowBase}, 0.18)`,
+  inner: `0px 2px 4px 0px rgba(${shadowBase}, 0.08)`,
   // Legacy
   0: 'none',
   0.5: '1px 1px 3px 1px rgba(0, 0, 0, 0.1)',

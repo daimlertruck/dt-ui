@@ -33,7 +33,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   opacity: 1;
   color: #292929;
   border-radius: 0px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(16, 20, 40, 0.1);
 }
 
 .emotion-2 {
@@ -238,7 +238,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   opacity: 1;
   color: #292929;
   border-radius: 0px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(16, 20, 40, 0.1);
 }
 
 .emotion-2 {
@@ -442,7 +442,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   opacity: 1;
   color: #292929;
   border-radius: 0px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(16, 20, 40, 0.1);
 }
 
 .emotion-2 {
@@ -647,7 +647,7 @@ exports[`<Toast /> component should render a toast with title & message & action
   opacity: 1;
   color: #292929;
   border-radius: 0px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(16, 20, 40, 0.1);
 }
 
 .emotion-2 {
@@ -851,7 +851,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   opacity: 1;
   color: #292929;
   border-radius: 0px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(16, 20, 40, 0.1);
 }
 
 .emotion-2 {
@@ -1045,7 +1045,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   opacity: 1;
   color: #292929;
   border-radius: 0px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(16, 20, 40, 0.1);
 }
 
 .emotion-2 {
@@ -1238,7 +1238,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   opacity: 1;
   color: #292929;
   border-radius: 0px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(16, 20, 40, 0.1);
 }
 
 .emotion-2 {
@@ -1432,7 +1432,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
   opacity: 1;
   color: #292929;
   border-radius: 0px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(16, 20, 40, 0.1);
 }
 
 .emotion-2 {
