@@ -184,12 +184,19 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, 'release:')
     steps:
+      - name: Generate CI_BOT Token
+        id: ci-bot-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.CI_BOT_ID }}
+          private-key: ${{ secrets.CI_BOT_PRIVATE_KEY }}
+
       - name: Checkout branch
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ steps.ci-bot-token.outputs.token }}
 
       - name: Setup node and yarn
         uses: './.github/actions/yarn-node-install'
