@@ -41,7 +41,7 @@ exports[`<Message /> component should render a Message with title & description,
 .emotion-4 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -167,7 +167,7 @@ exports[`<Message /> component should render a Message with title & description,
 .emotion-6 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -316,7 +316,7 @@ exports[`<Message /> component should render a Message with title & description,
 .emotion-6 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -459,7 +459,7 @@ exports[`<Message /> component should render a Message with title & description,
 .emotion-6 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -602,7 +602,7 @@ exports[`<Message /> component should render a Message with title & description,
 .emotion-6 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

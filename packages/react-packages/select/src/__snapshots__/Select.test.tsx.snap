@@ -39,7 +39,7 @@ exports[`<Select /> component should render Select 1`] = `
   justify-content: center;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -76,7 +76,7 @@ exports[`<Select /> component should render Select 1`] = `
 .emotion-8 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -84,7 +84,7 @@ exports[`<Select /> component should render Select 1`] = `
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -156,7 +156,7 @@ exports[`<Select /> component should render Select 1`] = `
   color: #292929;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -183,7 +183,7 @@ exports[`<Select /> component should render Select 1`] = `
   width: 100%;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -375,7 +375,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   justify-content: center;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -412,7 +412,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
 .emotion-8 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -420,7 +420,7 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

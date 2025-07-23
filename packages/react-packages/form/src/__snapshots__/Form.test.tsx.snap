@@ -50,7 +50,7 @@ exports[`<Form /> component renders simple form 1`] = `
 .emotion-4 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -58,7 +58,7 @@ exports[`<Form /> component renders simple form 1`] = `
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -175,7 +175,7 @@ exports[`<Form /> component renders simple form 1`] = `
 .emotion-8 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -361,7 +361,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
 .emotion-8 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -369,7 +369,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -486,7 +486,7 @@ exports[`<Form /> component with Form.Group should render a disabled form group 
 .emotion-12 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -654,7 +654,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
 .emotion-8 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -662,7 +662,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -779,7 +779,7 @@ exports[`<Form /> component with Form.Group should render a form with display fl
 .emotion-12 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -997,7 +997,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
 .emotion-12 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1005,7 +1005,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1122,7 +1122,7 @@ exports[`<Form /> component with Form.Group should render a form with group titl
 .emotion-16 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

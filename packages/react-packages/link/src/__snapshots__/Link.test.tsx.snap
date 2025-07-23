@@ -18,7 +18,7 @@ exports[`<Link /> component Should render a disabled html link element 1`] = `
   cursor: not-allowed;
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -57,7 +57,7 @@ exports[`<Link /> component Should render a html link element with the correct t
   gap: 4px;
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -107,7 +107,7 @@ exports[`<Link /> component Should render an html link element as secondary 1`] 
   gap: 4px;
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -157,7 +157,7 @@ exports[`<Link /> component Should render an html link element with Icon 1`] = `
   gap: 4px;
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

@@ -38,7 +38,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -46,7 +46,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -163,7 +163,7 @@ exports[`<TextField /> component renders disabled input 1`] = `
 .emotion-6 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -272,7 +272,7 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -280,7 +280,7 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -424,7 +424,7 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
 .emotion-10 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -558,7 +558,7 @@ exports[`<TextField /> component renders input with light background fill 1`] = 
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -566,7 +566,7 @@ exports[`<TextField /> component renders input with light background fill 1`] = 
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -683,7 +683,7 @@ exports[`<TextField /> component renders input with light background fill 1`] = 
 .emotion-6 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -785,7 +785,7 @@ exports[`<TextField /> component renders input with variant baseLine 1`] = `
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -793,7 +793,7 @@ exports[`<TextField /> component renders input with variant baseLine 1`] = `
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -910,7 +910,7 @@ exports[`<TextField /> component renders input with variant baseLine 1`] = `
 .emotion-6 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1012,7 +1012,7 @@ exports[`<TextField /> component renders input without floating label 1`] = `
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1122,7 +1122,7 @@ exports[`<TextField /> component renders input without floating label 1`] = `
 .emotion-6 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1223,7 +1223,7 @@ exports[`<TextField /> component should render the TextField with error styles a
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1348,7 +1348,7 @@ exports[`<TextField /> component should render the TextField with error styles a
 .emotion-6 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1475,7 +1475,7 @@ exports[`<TextField /> component should render the TextField with info message 1
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1483,7 +1483,7 @@ exports[`<TextField /> component should render the TextField with info message 1
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1600,7 +1600,7 @@ exports[`<TextField /> component should render the TextField with info message 1
 .emotion-6 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

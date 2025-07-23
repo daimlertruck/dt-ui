@@ -99,7 +99,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 .emotion-12 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -304,7 +304,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 .emotion-12 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -508,7 +508,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 .emotion-12 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -713,7 +713,7 @@ exports[`<Toast /> component should render a toast with title & message & action
 .emotion-12 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -917,7 +917,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 .emotion-12 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1111,7 +1111,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 .emotion-12 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1304,7 +1304,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 .emotion-12 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -1498,7 +1498,7 @@ exports[`<Toast /> component should render a toast with title & message when typ
 .emotion-12 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

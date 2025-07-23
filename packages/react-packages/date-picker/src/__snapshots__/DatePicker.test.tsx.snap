@@ -38,7 +38,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -163,7 +163,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 .emotion-6 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -291,7 +291,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -416,7 +416,7 @@ exports[`<DatePicker /> component onBlur event should render error message when 
 .emotion-6 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -544,7 +544,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -679,7 +679,7 @@ exports[`<DatePicker /> component should render date input correctly 1`] = `
 .emotion-8 {
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

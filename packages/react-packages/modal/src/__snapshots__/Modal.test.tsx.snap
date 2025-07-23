@@ -452,7 +452,7 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
 .emotion-14 {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

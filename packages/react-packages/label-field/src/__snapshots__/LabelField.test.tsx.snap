@@ -4,7 +4,7 @@ exports[`<LabelField /> component it renders a disabled label field 1`] = `
 .emotion-0 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -12,7 +12,7 @@ exports[`<LabelField /> component it renders a disabled label field 1`] = `
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -46,7 +46,7 @@ exports[`<LabelField /> component it renders a label field as required 1`] = `
 .emotion-0 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -54,7 +54,7 @@ exports[`<LabelField /> component it renders a label field as required 1`] = `
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -104,7 +104,7 @@ exports[`<LabelField /> component when the LabelField is active it should render
 .emotion-0 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -145,7 +145,7 @@ exports[`<LabelField /> component when the LabelField is inactive it should rend
 .emotion-0 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -153,7 +153,7 @@ exports[`<LabelField /> component when the LabelField is inactive it should rend
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

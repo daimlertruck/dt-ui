@@ -232,7 +232,7 @@ exports[`<CheckBox /> component renders checkbox with label 1`] = `
   padding-left: 8px;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
