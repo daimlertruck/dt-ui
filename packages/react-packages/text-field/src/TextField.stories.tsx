@@ -23,11 +23,11 @@ type TextFieldPropsWithExtrasProp = TextFieldProps & {
 };
 
 const extraPrefix: ExtraComponent = {
-  component: <Icon code='home_work' size='large' />,
+  component: <Icon code='home_work' size='l' />,
 };
 
 const extraSuffix: ExtraComponent = {
-  component: <Icon code='home_work' size='large' />,
+  component: <Icon code='home_work' size='l' />,
 };
 
 const meta: Meta<TextFieldPropsWithExtrasProp> = {

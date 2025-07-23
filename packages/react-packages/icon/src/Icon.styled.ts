@@ -6,7 +6,6 @@ interface IconStyledProps {
   color: string;
   size: Size;
   variant: Variant;
-  hasClick: boolean;
 }
 
 export const fontSize: Record<Size, string> = {
@@ -18,7 +17,7 @@ export const fontSize: Record<Size, string> = {
 };
 
 export const IconStyled = styled.i<IconStyledProps>`
-  ${({ size, theme, variant, color, hasClick }) => `
+  ${({ size, theme, variant, color }) => `
     font-family: DTUI-icons-${theme.icons};
     font-weight: normal;
     font-style: normal;
@@ -42,13 +41,5 @@ export const IconStyled = styled.i<IconStyledProps>`
   
     /* Support for IE. */
     font-feature-settings: 'liga';
-
-    ${
-      hasClick &&
-      `
-        cursor: pointer;
-        user-select: none;
-      `
-    };
   `}
 `;

@@ -16,7 +16,8 @@ describe('Icon component tests', () => {
   it('applies the specified color in the Icon component', () => {
     const { container } = render(<ProvidedIcon code={CODE} color='red' />);
 
-    expect(container.querySelector('i')).toHaveStyle('color: red');
+    const iconElement = container.querySelector('i');
+    expect(iconElement).toHaveStyleRule('color', 'red');
   });
 
   it.each`
