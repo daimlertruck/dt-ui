@@ -1,0 +1,52 @@
+name: 'DX Deployment Registration'
+description: 'Register deployments in DX system'
+
+inputs:
+  token:
+    description: 'API key for DX service'
+    required: true
+  serviceName:
+    description: 'Name of the service being deployed'
+    required: true
+  url:
+    description: 'DX URL endpoint'
+    required: false
+    default: 'https://tblx.getdx.net/api/deployments.create'
+  retryAttempts:
+    description: 'Number of retry attempts for API calls'
+    required: false
+    default: '3'
+  retryMaxTime:
+    description: 'Maximum time for retries in seconds'
+    required: false
+    default: '2'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Register deployment in DX
+      shell: bash
+      run: |
+        # https://stackoverflow.com/a/72103511
+        set -Eeuo pipefail
+        
+        # Transforms GitHub repository URL into 'owner/repo' format
+        REPOSITORY_PATH="$(git remote get-url origin | sed -E 's/.*github.com[:/]([^/]+\/[^/]+)(\.git)?$/\1/')"
+        CURRENT_RUN_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+        
+        JSON=$(cat <<-END
+          {
+            "deployed_at": $(date +%s),
+            "service": "${{ inputs.serviceName }}",
+            "repository": "$REPOSITORY_PATH",
+            "source_name": "GitHub",
+            "source_url": "$CURRENT_RUN_URL",
+            "commit_sha": "${{ github.sha }}",
+          }
+        END
+        )
+        
+        curl -sS --retry ${{ inputs.retryAttempts }} --retry-max-time ${{ inputs.retryMaxTime }} -X POST ${{ inputs.url }} \
+          -H "Content-Type: application/json" \
+          -H "Authorization: Bearer ${{ inputs.token }}" \
+          --data "$JSON"

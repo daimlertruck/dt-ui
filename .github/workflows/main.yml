@@ -218,3 +218,16 @@ jobs:
           yarn changesets:ci
           git push origin ${{ github.ref }}
           git push origin --tags
+
+  publish-to-dx:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Publish to DX
+        uses: './.github/actions/dx-deployment-registration '
+        with:
+          token: ${{ secrets.DX_API_KEY }}
+          serviceName: ${{ vars.DX_CONSUMERS_SERVICE_NAME }}
