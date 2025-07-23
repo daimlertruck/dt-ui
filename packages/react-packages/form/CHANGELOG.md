@@ -1,5 +1,19 @@
 # @dt-ui/react-form
 
+## 0.1.0-beta.26
+
+### Minor Changes
+
+- feat: add text field hover and focus
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+  - @dt-ui/react-tooltip@0.1.0-beta.48
+  - @dt-ui/react-typography@0.1.0-beta.31
+
 ## 0.1.0-beta.25
 
 ### Minor Changes

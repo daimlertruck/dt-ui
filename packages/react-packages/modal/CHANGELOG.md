@@ -1,5 +1,18 @@
 # @dt-ui/react-modal
 
+## 0.1.0-beta.36
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+  - @dt-ui/react-backdrop@0.1.0-beta.42
+  - @dt-ui/react-icon@0.1.0-beta.40
+  - @dt-ui/react-icon-button@0.1.0-beta.8
+  - @dt-ui/react-spinner@0.1.0-beta.42
+  - @dt-ui/react-typography@0.1.0-beta.31
+
 ## 0.1.0-beta.35
 
 ### Minor Changes

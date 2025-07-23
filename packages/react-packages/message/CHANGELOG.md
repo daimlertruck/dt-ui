@@ -1,5 +1,15 @@
 # @dt-ui/react-message
 
+## 0.1.0-beta.52
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+  - @dt-ui/react-link@0.1.0-beta.13
+  - @dt-ui/react-typography@0.1.0-beta.31
+
 ## 0.1.0-beta.51
 
 ### Minor Changes

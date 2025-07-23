@@ -1,6 +1,6 @@
 {
   "name": "@dt-ui/react-button",
-  "version": "0.1.0-beta.36",
+  "version": "0.1.0-beta.37",
   "license": "MIT",
   "exports": {
     ".": "./dist/index.js"
@@ -20,8 +20,8 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-core": "0.1.0-beta.39",
-    "@dt-ui/react-spinner": "0.1.0-beta.41"
+    "@dt-ui/react-core": "0.1.0-beta.40",
+    "@dt-ui/react-spinner": "0.1.0-beta.42"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",

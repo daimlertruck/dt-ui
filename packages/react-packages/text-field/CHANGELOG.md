@@ -1,5 +1,21 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.45
+
+### Minor Changes
+
+- feat: add text field hover and focus
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+  - @dt-ui/react-label-field@0.1.0-beta.36
+  - @dt-ui/react-icon@0.1.0-beta.40
+  - @dt-ui/react-spinner@0.1.0-beta.42
+  - @dt-ui/react-typography@0.1.0-beta.31
+
 ## 0.1.0-beta.44
 
 ### Minor Changes

@@ -1,5 +1,14 @@
 # @dt-ui/react-button
 
+## 0.1.0-beta.37
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+  - @dt-ui/react-spinner@0.1.0-beta.42
+
 ## 0.1.0-beta.36
 
 ### Minor Changes

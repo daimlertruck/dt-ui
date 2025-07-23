@@ -1,5 +1,14 @@
 # @dt-ui/react-tabs
 
+## 0.1.0-beta.35
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+  - @dt-ui/react-icon@0.1.0-beta.40
+
 ## 0.1.0-beta.34
 
 ### Minor Changes

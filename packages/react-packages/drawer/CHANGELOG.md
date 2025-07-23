@@ -1,5 +1,15 @@
 # @dt-ui/react-drawer
 
+## 0.1.0-beta.46
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+  - @dt-ui/react-icon-button@0.1.0-beta.8
+  - @dt-ui/react-typography@0.1.0-beta.31
+
 ## 0.1.0-beta.45
 
 ### Minor Changes

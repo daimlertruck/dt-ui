@@ -1,5 +1,19 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.28
+
+### Minor Changes
+
+- feat: add text field hover and focus
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+- Updated dependencies
+  - @dt-ui/react-text-field@0.1.0-beta.45
+  - @dt-ui/react-core@0.1.0-beta.40
+
 ## 0.1.0-beta.27
 
 ### Minor Changes

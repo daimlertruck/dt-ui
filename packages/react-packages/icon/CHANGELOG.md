@@ -1,5 +1,13 @@
 # @dt-ui/react-icon
 
+## 0.1.0-beta.40
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+
 ## 0.1.0-beta.39
 
 ### Minor Changes

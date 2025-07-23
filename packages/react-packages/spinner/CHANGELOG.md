@@ -1,5 +1,14 @@
 # @dt-ui/react-spinner
 
+## 0.1.0-beta.42
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+  - @dt-ui/react-typography@0.1.0-beta.31
+
 ## 0.1.0-beta.41
 
 ### Minor Changes

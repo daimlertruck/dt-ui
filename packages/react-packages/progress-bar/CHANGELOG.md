@@ -1,5 +1,14 @@
 # @dt-ui/react-progress-bar
 
+## 0.1.0-beta.33
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.40
+  - @dt-ui/react-typography@0.1.0-beta.31
+
 ## 0.1.0-beta.32
 
 ### Minor Changes

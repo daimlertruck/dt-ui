@@ -1,5 +1,14 @@
 # @dt-ui/react-toggle
 
+## 0.1.0-beta.19
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+  - @dt-ui/react-typography@0.1.0-beta.31
+
 ## 0.1.0-beta.18
 
 ### Minor Changes

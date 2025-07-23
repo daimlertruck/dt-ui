@@ -1,5 +1,15 @@
 # @dt-ui/react-breadcrumb
 
+## 0.1.0-beta.49
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+  - @dt-ui/react-icon@0.1.0-beta.40
+  - @dt-ui/react-tooltip@0.1.0-beta.48
+
 ## 0.1.0-beta.48
 
 ### Minor Changes

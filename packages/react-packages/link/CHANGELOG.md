@@ -1,5 +1,15 @@
 # @dt-ui/react-link
 
+## 0.1.0-beta.13
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+  - @dt-ui/react-button@0.1.0-beta.37
+  - @dt-ui/react-icon@0.1.0-beta.40
+
 ## 0.1.0-beta.12
 
 ### Minor Changes

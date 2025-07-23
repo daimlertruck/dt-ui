@@ -1,5 +1,15 @@
 # @dt-ui/react-segmented-control
 
+## 0.1.0-beta.27
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+  - @dt-ui/react-icon@0.1.0-beta.40
+  - @dt-ui/react-tooltip@0.1.0-beta.48
+
 ## 0.1.0-beta.26
 
 ### Minor Changes

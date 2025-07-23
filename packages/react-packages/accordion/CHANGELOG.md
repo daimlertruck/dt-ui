@@ -1,5 +1,15 @@
 # @dt-ui/react-accordion
 
+## 0.1.0-beta.39
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+  - @dt-ui/react-divider@0.1.0-beta.39
+  - @dt-ui/react-icon@0.1.0-beta.40
+
 ## 0.1.0-beta.38
 
 ### Minor Changes

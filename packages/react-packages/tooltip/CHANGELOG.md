@@ -1,5 +1,14 @@
 # @dt-ui/react-tooltip
 
+## 0.1.0-beta.48
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+  - @dt-ui/react-icon-button@0.1.0-beta.8
+
 ## 0.1.0-beta.47
 
 ### Minor Changes

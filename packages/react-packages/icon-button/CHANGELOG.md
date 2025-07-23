@@ -1,5 +1,13 @@
 # @dt-ui/react-icon-button
 
+## 0.1.0-beta.8
+
+### Patch Changes
+
+- refactor: theme typography values
+- Updated dependencies
+  - @dt-ui/react-core@0.1.0-beta.40
+
 ## 0.1.0-beta.7
 
 ### Minor Changes
