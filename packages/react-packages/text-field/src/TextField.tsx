@@ -175,6 +175,8 @@ export const TextField = ({
 
       <InputWrapperStyled
         backgroundFill={backgroundFill}
+        data-testid='input-wrapper'
+        hasError={showError}
         isFloatingLabel={isFloatingLabel}
         variant={variant}
       >

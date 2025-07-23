@@ -15,6 +15,7 @@ export interface InputWrapperStyledProps {
   isFloatingLabel: boolean;
   variant: TextFieldVariant;
   backgroundFill: TextFieldBackgroundFill;
+  hasError: boolean;
 }
 
 export const TextFieldStyled = styled.div<{
@@ -156,7 +157,16 @@ export const ResetInputIconStyled = styled.div`
 `;
 
 export const InputWrapperStyled = styled.div<InputWrapperStyledProps>`
-  ${({ theme, isFloatingLabel, variant, backgroundFill }) => `
+  ${({ theme, isFloatingLabel, variant, backgroundFill, hasError }) => {
+    const borderColor = hasError
+      ? theme.palette.error.default
+      : theme.palette.border.medium;
+
+    const borderFocusColor = hasError
+      ? theme.palette.error.default
+      : theme.palette.border.dark;
+
+    return `
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -169,26 +179,17 @@ export const InputWrapperStyled = styled.div<InputWrapperStyledProps>`
     
     padding-inline: ${theme.spacing['3xs']};
 
-    border-radius: ${
+    ${
       variant === 'outlined'
-        ? theme.shape.formField
-        : `${theme.shape.formField} ${theme.shape.formField} 0 0`
+        ? `border-radius: ${theme.shape.formField};
+            border: 1px solid ${borderColor};
+            &:focus-within, &:hover { { border: 1px solid ${borderFocusColor}};
+          `
+        : `border-radius: ${theme.shape.formField} ${theme.shape.formField} 0 0;
+            border-bottom: 1px solid ${borderColor};
+            &:focus-within, &:hover { { border-bottom: 1px solid  ${borderFocusColor}};
+          `
     };
-    border-style: solid;
-    ${variant === 'outlined' ? 'border-width: 1px' : 'border-width: 0 0 1px'};
-    border-color: ${theme.palette.border.medium};
-
-    &:has(input:focus) {
-      border-color: ${theme.palette.primary.default};
-    }
-
-    &:has(input[data-error="true"]) {
-      border-color: ${theme.palette.error.default};
-
-      &:focus {
-        border-color: ${theme.palette.error.default};
-      }
-    }
 
     &:has(input[readonly]:not([disabled])) {
       background-color: ${theme.palette.surface.default};
@@ -205,5 +206,6 @@ export const InputWrapperStyled = styled.div<InputWrapperStyledProps>`
         color: ${isFloatingLabel ? 'transparent' : theme.palette.content.light};
       }
     }
-  `}
+  `;
+  }}
 `;
