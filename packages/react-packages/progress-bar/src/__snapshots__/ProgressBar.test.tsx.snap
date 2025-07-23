@@ -644,6 +644,16 @@ exports[`<ProgressBar /> component should render with different info prop should
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-10:hover,
+.emotion-10:active {
+  color: #00677F;
 }
 
 <div>
@@ -842,6 +852,16 @@ exports[`<ProgressBar /> component should render with different info prop should
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-12:hover,
+.emotion-12:active {
+  color: #00677F;
 }
 
 <div>

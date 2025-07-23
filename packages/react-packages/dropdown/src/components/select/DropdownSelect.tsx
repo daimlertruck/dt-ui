@@ -1,6 +1,7 @@
 import { Box } from '@dt-ui/react-box';
 import { BaseProps } from '@dt-ui/react-core';
 import { Icon } from '@dt-ui/react-icon';
+import { IconButton } from '@dt-ui/react-icon-button';
 import { Typography } from '@dt-ui/react-typography';
 import { useTheme } from '@emotion/react';
 import { Children, ReactElement, useEffect } from 'react';
@@ -124,13 +125,14 @@ export const DropdownSelect = ({
         </div>
         <Box style={{ flexDirection: 'row', gap: '0.5rem' }}>
           {hasDeselect && !!state.value ? (
-            <Icon
-              code='close'
-              color={disabledIconColor}
-              dataTestId='deselect-value'
-              onClick={handleDeselectClick}
-              size='s'
-            />
+            <IconButton onClick={handleDeselectClick}>
+              <Icon
+                code='close'
+                color={disabledIconColor}
+                dataTestId='deselect-value'
+                size='s'
+              />
+            </IconButton>
           ) : null}
           <Icon
             code={isOpen ? 'expand_less' : 'expand_more'}

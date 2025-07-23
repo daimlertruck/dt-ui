@@ -378,6 +378,16 @@ exports[`<TextField /> component renders input with extras suffix and prefix ele
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-8:hover,
+.emotion-8:active {
+  color: #00677F;
 }
 
 .emotion-10 {

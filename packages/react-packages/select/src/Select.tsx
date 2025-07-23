@@ -1,5 +1,6 @@
 import { BaseProps, useClickOutside } from '@dt-ui/react-core';
 import { Icon } from '@dt-ui/react-icon';
+import { IconButton } from '@dt-ui/react-icon-button';
 import { LabelField } from '@dt-ui/react-label-field';
 import { Tooltip } from '@dt-ui/react-tooltip';
 import { Typography } from '@dt-ui/react-typography';
@@ -272,12 +273,9 @@ const Select = ({
             <SelectActionContainerStyled>
               {isMulti && hasSelectedItems ? (
                 <Tooltip>
-                  <Icon
-                    code='close'
-                    dataTestId='clear-selection'
-                    onClick={clearSelection}
-                    size='s'
-                  />
+                  <IconButton onClick={clearSelection}>
+                    <Icon code='close' dataTestId='clear-selection' size='s' />
+                  </IconButton>
                   <Tooltip.Content>Clear all</Tooltip.Content>
                 </Tooltip>
               ) : null}

@@ -22,6 +22,8 @@ export const App = () => {
 | `variant`    | 'outlined' \| 'filled' | 'outlined' | Specifies the icon filling variant.                                                        |
 | `dataTestId` | `string`               | 'icon'     | Customizable test identifier.                                                              |
 | `style`      | `React.CSSProperties`  | -          | Additional styles to apply to the icon.                                                    |
+| `isDisabled` | `boolean`              | false      | Determines the disabled state of the button                                                |
+
 
 ## Stack
 

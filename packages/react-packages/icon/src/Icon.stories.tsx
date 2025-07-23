@@ -21,6 +21,9 @@ const meta: Meta<IconProps> = {
       options: Object.keys(fontSize),
       control: { type: 'radio' },
     },
+    isDisabled: {
+      control: 'boolean',
+    },
   },
   parameters: {
     controls: {
@@ -39,5 +42,6 @@ export const Default: StoryObj<IconProps> = {
     size: 'l',
     variant: 'outlined',
     color: 'black',
+    isDisabled: false,
   },
 };

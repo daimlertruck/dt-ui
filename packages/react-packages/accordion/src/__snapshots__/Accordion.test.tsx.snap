@@ -62,6 +62,16 @@ exports[`<Accordion /> component should render with correct style when hasBackgr
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-4:hover,
+.emotion-4:active {
+  color: #00677F;
 }
 
 .emotion-6 {
@@ -183,6 +193,16 @@ exports[`<Accordion /> component should render with correct style when hasBackgr
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-4:hover,
+.emotion-4:active {
+  color: #00677F;
 }
 
 .emotion-6 {

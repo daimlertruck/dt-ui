@@ -16,7 +16,8 @@ describe('Icon component tests', () => {
   it('applies the specified color in the Icon component', () => {
     const { container } = render(<ProvidedIcon code={CODE} color='red' />);
 
-    expect(container.querySelector('i')).toHaveStyle('color: red');
+    const iconElement = container.querySelector('i');
+    expect(iconElement).toHaveStyleRule('color', 'red');
   });
 
   it.each`
@@ -44,4 +45,29 @@ describe('Icon component tests', () => {
       "font-variation-settings: 'FILL' 1"
     );
   });
+
+  it('applies disabled style in the Icon component', () => {
+    const { container } = render(<ProvidedIcon code={CODE} isDisabled />);
+    const iconElement = container.querySelector('i');
+
+    expect(iconElement).toHaveStyle('color: #A3A3A3');
+    expect(iconElement).toHaveAttribute('disabled');
+  });
+
+  it.each`
+    variant       | isDisabled
+    ${'outlined'} | ${false}
+    ${'outlined'} | ${false}
+    ${'filled'}   | ${false}
+    ${'filled'}   | ${true}
+  `(
+    'should have style if variant is $variant and isDisabled is $isDisabled',
+    ({ variant, isDisabled }) => {
+      const { container } = render(
+        <ProvidedIcon code={CODE} isDisabled={isDisabled} variant={variant} />
+      );
+
+      expect(container).toMatchSnapshot();
+    }
+  );
 });

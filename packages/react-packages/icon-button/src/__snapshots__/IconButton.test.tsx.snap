@@ -46,6 +46,16 @@ exports[`<IconButton /> component should have style if variant is contrast and i
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-2:hover,
+.emotion-2:active {
+  color: #00677F;
 }
 
 <div>
@@ -110,6 +120,16 @@ exports[`<IconButton /> component should have style if variant is contrast and i
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-2:hover,
+.emotion-2:active {
+  color: #00677F;
 }
 
 <div>
@@ -175,6 +195,16 @@ exports[`<IconButton /> component should have style if variant is default and is
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-2:hover,
+.emotion-2:active {
+  color: #00677F;
 }
 
 <div>
@@ -239,6 +269,16 @@ exports[`<IconButton /> component should have style if variant is default and is
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-2:hover,
+.emotion-2:active {
+  color: #00677F;
 }
 
 <div>

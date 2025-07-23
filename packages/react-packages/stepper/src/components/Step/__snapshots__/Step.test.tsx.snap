@@ -105,6 +105,16 @@ exports[`<Step /> component <Step.Counter /> component renders StepCounter with 
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-2:hover,
+.emotion-2:active {
+  color: #00677F;
 }
 
 <div>
@@ -559,6 +569,16 @@ exports[`<Step /> component render Step renders Step with props correctly 2`] = 
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-4:hover,
+.emotion-4:active {
+  color: #00677F;
 }
 
 .emotion-6 {

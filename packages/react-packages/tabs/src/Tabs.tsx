@@ -1,6 +1,7 @@
 import { Box } from '@dt-ui/react-box';
 import { BaseProps, useDebounceResize } from '@dt-ui/react-core';
 import { Icon } from '@dt-ui/react-icon';
+import { IconButton } from '@dt-ui/react-icon-button';
 import { useTheme } from '@emotion/react';
 import {
   Children,
@@ -93,16 +94,13 @@ export const Tabs = ({
         }),
       }}
     >
-      <Icon
-        code='keyboard_arrow_left'
-        dataTestId='left-arrow'
-        onClick={() => handleScroll(-SCROLL_MOVEMENT)}
-        style={{
-          ...(!isLeftSideOverflowing && {
-            display: 'none',
-          }),
-        }}
-      />
+      <IconButton onClick={() => handleScroll(-SCROLL_MOVEMENT)}>
+        <Icon
+          code='keyboard_arrow_left'
+          dataTestId='left-arrow'
+          style={{ ...(!isLeftSideOverflowing && { display: 'none' }) }}
+        />
+      </IconButton>
       <TabsStyled
         data-testid={dataTestId}
         ref={ref}
@@ -112,16 +110,13 @@ export const Tabs = ({
       >
         {clonedChildren}
       </TabsStyled>
-      <Icon
-        code='keyboard_arrow_right'
-        dataTestId='right-arrow'
-        onClick={() => handleScroll(SCROLL_MOVEMENT)}
-        style={{
-          ...(!isRightSideOverflowing && {
-            display: 'none',
-          }),
-        }}
-      />
+      <IconButton onClick={() => handleScroll(SCROLL_MOVEMENT)}>
+        <Icon
+          code='keyboard_arrow_right'
+          dataTestId='right-arrow'
+          style={{ ...(!isRightSideOverflowing && { display: 'none' }) }}
+        />
+      </IconButton>
     </Box>
   );
 };

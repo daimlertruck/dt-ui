@@ -1,5 +1,6 @@
 import { BaseProps } from '@dt-ui/react-core';
 import { Icon } from '@dt-ui/react-icon';
+import { IconButton } from '@dt-ui/react-icon-button';
 import { LabelField } from '@dt-ui/react-label-field';
 import { Typography } from '@dt-ui/react-typography';
 import {
@@ -214,7 +215,9 @@ export const TextField = ({
             onKeyDown={handleResetIconEnter}
             tabIndex={0}
           >
-            <Icon code='close_small' onClick={handleResetInput} />
+            <IconButton onClick={handleResetInput}>
+              <Icon code='close_small' />
+            </IconButton>
           </ResetInputIconStyled>
         ) : null}
 

@@ -123,6 +123,16 @@ exports[`<Select /> component should render Select 1`] = `
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-12:hover,
+.emotion-12:active {
+  color: #00677F;
 }
 
 .emotion-14 {
@@ -459,6 +469,16 @@ exports[`<Select /> component should render Select as multi select 1`] = `
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-12:hover,
+.emotion-12:active {
+  color: #00677F;
 }
 
 .emotion-14 {

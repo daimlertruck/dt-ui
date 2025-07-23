@@ -180,6 +180,16 @@ exports[`<Modal/> Component handle loading state renders modal with loading over
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-12:hover,
+.emotion-12:active {
+  color: #00677F;
 }
 
 .emotion-14 {
@@ -447,6 +457,16 @@ exports[`<Modal/> Component handle modal actions renders modal correctly 1`] = `
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-12:hover,
+.emotion-12:active {
+  color: #00677F;
 }
 
 .emotion-14 {

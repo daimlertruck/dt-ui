@@ -68,6 +68,16 @@ exports[`<CheckBox /> component renders checkbox checked 1`] = `
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-6:hover,
+.emotion-6:active {
+  color: #00677F;
 }
 
 <div>

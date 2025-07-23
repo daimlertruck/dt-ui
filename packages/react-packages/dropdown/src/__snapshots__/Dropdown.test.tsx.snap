@@ -94,6 +94,16 @@ exports[`<Dropdown /> component renders dropdown correctly 1`] = `
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-10:hover,
+.emotion-10:active {
+  color: #00677F;
 }
 
 .emotion-12 {

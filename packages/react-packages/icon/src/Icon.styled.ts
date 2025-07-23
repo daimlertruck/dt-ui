@@ -6,7 +6,7 @@ interface IconStyledProps {
   color: string;
   size: Size;
   variant: Variant;
-  hasClick: boolean;
+  disabled?: boolean;
 }
 
 export const fontSize: Record<Size, string> = {
@@ -18,7 +18,7 @@ export const fontSize: Record<Size, string> = {
 };
 
 export const IconStyled = styled.i<IconStyledProps>`
-  ${({ size, theme, variant, color, hasClick }) => `
+  ${({ size, theme, variant, color, disabled }) => `
     font-family: DTUI-icons-${theme.icons};
     font-weight: normal;
     font-style: normal;
@@ -30,7 +30,7 @@ export const IconStyled = styled.i<IconStyledProps>`
     word-wrap: normal;
     white-space: nowrap;
     font-variation-settings: 'FILL' ${variant === 'filled' ? 1 : 0};
-    color: ${color};
+    color: ${disabled ? theme.palette.content.light : color};
 
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
@@ -43,12 +43,13 @@ export const IconStyled = styled.i<IconStyledProps>`
     /* Support for IE. */
     font-feature-settings: 'liga';
 
-    ${
-      hasClick &&
-      `
-        cursor: pointer;
-        user-select: none;
-      `
-    };
+    cursor: ${disabled ? 'not-allowed' : 'pointer'};
+    user-select: none;
+
+      &:hover, &:active {
+        color: ${
+          !disabled ? theme.palette.accent.default : theme.palette.content.light
+        };
+      }
   `}
 `;
