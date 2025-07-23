@@ -67,7 +67,7 @@ exports[`<Accordion /> component should render with correct style when hasBackgr
 .emotion-6 {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -188,7 +188,7 @@ exports[`<Accordion /> component should render with correct style when hasBackgr
 .emotion-6 {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

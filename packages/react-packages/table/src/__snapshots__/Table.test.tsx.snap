@@ -118,7 +118,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   color: #292929;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -146,7 +146,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   color: #292929;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -167,7 +167,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   color: #292929;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -195,7 +195,7 @@ exports[`<Table /> component renders a Basic Table 1`] = `
   color: #292929;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -423,7 +423,7 @@ exports[`<Table /> component renders a Basic Table without fixed columns 1`] = `
   color: #292929;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

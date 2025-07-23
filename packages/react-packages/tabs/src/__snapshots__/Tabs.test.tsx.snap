@@ -63,7 +63,7 @@ exports[`<Tabs /> component should match the snapshot by displaying contained va
   align-items: center;
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -87,7 +87,7 @@ exports[`<Tabs /> component should match the snapshot by displaying contained va
   align-items: center;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -134,7 +134,7 @@ exports[`<Tabs /> component should match the snapshot by displaying contained va
   align-items: center;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -281,7 +281,7 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
   align-items: center;
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -306,7 +306,7 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
   align-items: center;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -353,7 +353,7 @@ exports[`<Tabs /> component should match the snapshot by displaying default vari
   align-items: center;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

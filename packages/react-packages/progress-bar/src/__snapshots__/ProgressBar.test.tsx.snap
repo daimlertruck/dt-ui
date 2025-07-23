@@ -171,7 +171,7 @@ exports[`<ProgressBar /> component should render the label when prop is provided
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;

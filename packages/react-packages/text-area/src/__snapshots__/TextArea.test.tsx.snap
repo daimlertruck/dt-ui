@@ -23,7 +23,7 @@ exports[`<TextArea /> component renders disabled input 1`] = `
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -31,7 +31,7 @@ exports[`<TextArea /> component renders disabled input 1`] = `
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -68,7 +68,7 @@ exports[`<TextArea /> component renders disabled input 1`] = `
 .emotion-6 {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -157,7 +157,7 @@ exports[`<TextArea /> component renders input with an value 1`] = `
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -202,7 +202,7 @@ exports[`<TextArea /> component renders input with an value 1`] = `
 .emotion-6 {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -291,7 +291,7 @@ exports[`<TextArea /> component renders input with light background fill 1`] = `
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -299,7 +299,7 @@ exports[`<TextArea /> component renders input with light background fill 1`] = `
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -336,7 +336,7 @@ exports[`<TextArea /> component renders input with light background fill 1`] = `
 .emotion-6 {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -423,7 +423,7 @@ exports[`<TextArea /> component renders input with resize option 1`] = `
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -431,7 +431,7 @@ exports[`<TextArea /> component renders input with resize option 1`] = `
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -468,7 +468,7 @@ exports[`<TextArea /> component renders input with resize option 1`] = `
 .emotion-6 {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -555,7 +555,7 @@ exports[`<TextArea /> component renders input with variant baseLine 1`] = `
 .emotion-2 {
   font-weight: 700;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -563,7 +563,7 @@ exports[`<TextArea /> component renders input with variant baseLine 1`] = `
   cursor: inherit;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
@@ -600,7 +600,7 @@ exports[`<TextArea /> component renders input with variant baseLine 1`] = `
 .emotion-6 {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
   letter-spacing: normal;
   margin: 0;
   text-transform: none;
