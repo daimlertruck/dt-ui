@@ -123,12 +123,25 @@ describe('<TextField /> component', () => {
 
     const input = screen.getByRole('textbox');
     const label = screen.getByTestId('label-field');
+    const inputWrapper = screen.getByTestId('input-wrapper');
 
     fireEvent.focus(input);
 
     expect(label).toHaveStyle('font-size: 0.75rem');
     expect(label).toHaveStyle('transform: translateY(-45%)');
     expect(input).toHaveStyle('outline: 0;');
+    expect(inputWrapper).toHaveStyle('border-width: 1px;');
+    expect(inputWrapper).toHaveStyle('border-style: solid');
+  });
+
+  it('should have hover style', () => {
+    render(<ProvidedTextField label='Some text' />);
+
+    const inputWrapper = screen.getByTestId('input-wrapper');
+
+    fireEvent.mouseOver(inputWrapper, { currentTarget: { value: '' } });
+
+    expect(inputWrapper).toHaveStyle('border: 1px solid #131313;');
   });
 
   describe('onBlur event', () => {
@@ -231,7 +244,6 @@ describe('<TextField /> component', () => {
   });
 
   test('should call onClick when extra suffix is clicked', () => {
-    const ProvidedTextField = withProviders(TextField);
     const handleClick = jest.fn();
 
     render(
@@ -257,7 +269,6 @@ describe('<TextField /> component', () => {
   });
 
   test('should call onClick when extra preffix is clicked', () => {
-    const ProvidedTextField = withProviders(TextField);
     const handleClick = jest.fn();
 
     render(
@@ -283,7 +294,6 @@ describe('<TextField /> component', () => {
   });
 
   test('should clear input after reset icon clicked', () => {
-    const ProvidedTextField = withProviders(TextField);
     const handleClick = jest.fn();
 
     render(
