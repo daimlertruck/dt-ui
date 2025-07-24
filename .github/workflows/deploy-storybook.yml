@@ -120,7 +120,7 @@ jobs:
             "https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.number }}" \
             | jq -r '.body // ""')
 
-          PREVIEW_LINK="https://${{ github.repository_owner }}.github.io/${{ github.repository }}/PR-${{ github.event.number }}"
+          PREVIEW_LINK="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/PR-${{ github.event.number }}"
 
           # Check if preview link already exists
           if echo "$PR_VIEW_OUTPUT" | grep -Fq "$PREVIEW_LINK"; then
