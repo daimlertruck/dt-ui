@@ -1,5 +1,13 @@
 # @dt-ui/react-dropdown
 
+## 0.1.0-beta.28
+
+### Patch Changes
+
+- refactor: drop icon funcional state
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.41
+
 ## 0.1.0-beta.27
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @dt-ui/react-icon
 
+## 0.1.0-beta.41
+
+### Patch Changes
+
+- refactor: drop icon funcional state
+
 ## 0.1.0-beta.40
 
 ### Patch Changes

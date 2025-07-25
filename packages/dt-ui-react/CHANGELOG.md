@@ -1,5 +1,28 @@
 # @dt-ui/react
 
+## 0.1.0-beta.207
+
+### Patch Changes
+
+- refactor: drop icon funcional state
+- Updated dependencies
+  - @dt-ui/react-dropdown@0.1.0-beta.28
+  - @dt-ui/react-icon@0.1.0-beta.41
+  - @dt-ui/react-select@0.1.0-beta.44
+  - @dt-ui/react-tabs@0.1.0-beta.36
+  - @dt-ui/react-text-field@0.1.0-beta.46
+  - @dt-ui/react-accordion@0.1.0-beta.40
+  - @dt-ui/react-breadcrumb@0.1.0-beta.50
+  - @dt-ui/react-checkbox@0.1.0-beta.39
+  - @dt-ui/react-link@0.1.0-beta.14
+  - @dt-ui/react-message@0.1.0-beta.53
+  - @dt-ui/react-modal@0.1.0-beta.37
+  - @dt-ui/react-pagination@0.1.0-beta.20
+  - @dt-ui/react-progress-bar@0.1.0-beta.34
+  - @dt-ui/react-segmented-control@0.1.0-beta.28
+  - @dt-ui/react-stepper@0.1.0-beta.30
+  - @dt-ui/react-date-picker@0.1.0-beta.29
+
 ## 0.1.0-beta.206
 
 ### Minor Changes

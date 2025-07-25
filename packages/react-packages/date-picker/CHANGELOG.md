@@ -1,5 +1,13 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.29
+
+### Patch Changes
+
+- refactor: drop icon funcional state
+- Updated dependencies
+  - @dt-ui/react-text-field@0.1.0-beta.46
+
 ## 0.1.0-beta.28
 
 ### Minor Changes

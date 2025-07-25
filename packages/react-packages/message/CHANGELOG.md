@@ -1,5 +1,13 @@
 # @dt-ui/react-message
 
+## 0.1.0-beta.53
+
+### Patch Changes
+
+- refactor: drop icon funcional state
+- Updated dependencies
+  - @dt-ui/react-link@0.1.0-beta.14
+
 ## 0.1.0-beta.52
 
 ### Patch Changes

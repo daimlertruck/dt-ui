@@ -1,5 +1,14 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.44
+
+### Patch Changes
+
+- refactor: drop icon funcional state
+- Updated dependencies
+  - @dt-ui/react-icon@0.1.0-beta.41
+  - @dt-ui/react-checkbox@0.1.0-beta.39
+
 ## 0.1.0-beta.43
 
 ### Patch Changes
