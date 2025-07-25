@@ -68,4 +68,15 @@ describe('<Accordion /> component', () => {
       expect(container).toMatchSnapshot();
     }
   );
+
+  it('should have id property', () => {
+    renderComponent({
+      id: 'accordion-id',
+    });
+
+    expect(screen.getByTestId('accordion-container')).toHaveAttribute(
+      'id',
+      'accordion-id'
+    );
+  });
 });

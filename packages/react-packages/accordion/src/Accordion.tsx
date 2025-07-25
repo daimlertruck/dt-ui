@@ -11,6 +11,7 @@ export interface AccordionBaseProps extends BaseProps {
   isDisabled?: boolean;
   hasBorderBottom?: boolean;
   className?: string;
+  id?: string;
 }
 
 export const Accordion = ({
@@ -23,6 +24,7 @@ export const Accordion = ({
   dataTestId,
   style,
   className,
+  id,
 }: AccordionBaseProps) => {
   const [isOpenState, setIsOpenState] = useState(isOpen);
 
@@ -50,6 +52,7 @@ export const Accordion = ({
       data-testid={dataTestId ?? 'accordion-container'}
       hasBackground={hasBackground}
       hasBorderBottom={hasBorderBottom}
+      id={id}
       isDisabled={isDisabled}
       style={style}
     >
