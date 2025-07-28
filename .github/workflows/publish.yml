@@ -43,7 +43,7 @@ jobs:
         id: get-changed-packages
         run: |
           if [[ "${{ github.event_name }}" != 'workflow_dispatch' ]]; then
-            TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter=[..HEAD^1] --filter='!./apps/*' > $RUNNER_TEMP/turbo_result.json
+            TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter=[HEAD^1] --filter='!./apps/*' > $RUNNER_TEMP/turbo_result.json
           else
             TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter='!./apps/*' > $RUNNER_TEMP/turbo_result.json
           fi
