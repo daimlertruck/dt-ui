@@ -1,5 +1,13 @@
 # @dt-ui/react-date-picker
 
+## 0.1.0-beta.30
+
+### Patch Changes
+
+- chore: fix pkg deps versions
+- Updated dependencies
+  - @dt-ui/react-text-field@0.1.0-beta.47
+
 ## 0.1.0-beta.29
 
 ### Patch Changes

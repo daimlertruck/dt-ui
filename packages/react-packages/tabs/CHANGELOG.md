@@ -1,5 +1,11 @@
 # @dt-ui/react-tabs
 
+## 0.1.0-beta.37
+
+### Patch Changes
+
+- chore: fix pkg deps versions
+
 ## 0.1.0-beta.36
 
 ### Patch Changes

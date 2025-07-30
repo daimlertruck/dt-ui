@@ -1,5 +1,17 @@
 # @dt-ui/react
 
+## 0.1.0-beta.208
+
+### Patch Changes
+
+- chore: fix pkg deps versions
+- Updated dependencies
+  - @dt-ui/react-dropdown@0.1.0-beta.29
+  - @dt-ui/react-select@0.1.0-beta.45
+  - @dt-ui/react-tabs@0.1.0-beta.37
+  - @dt-ui/react-text-field@0.1.0-beta.47
+  - @dt-ui/react-date-picker@0.1.0-beta.30
+
 ## 0.1.0-beta.207
 
 ### Patch Changes

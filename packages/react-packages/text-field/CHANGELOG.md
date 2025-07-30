@@ -1,5 +1,11 @@
 # @dt-ui/react-text-field
 
+## 0.1.0-beta.47
+
+### Patch Changes
+
+- chore: fix pkg deps versions
+
 ## 0.1.0-beta.46
 
 ### Patch Changes

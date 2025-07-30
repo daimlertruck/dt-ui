@@ -1,5 +1,11 @@
 # @dt-ui/react-dropdown
 
+## 0.1.0-beta.29
+
+### Patch Changes
+
+- chore: fix pkg deps versions
+
 ## 0.1.0-beta.28
 
 ### Patch Changes

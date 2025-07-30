@@ -1,5 +1,11 @@
 # @dt-ui/react-select
 
+## 0.1.0-beta.45
+
+### Patch Changes
+
+- chore: fix pkg deps versions
+
 ## 0.1.0-beta.44
 
 ### Patch Changes
