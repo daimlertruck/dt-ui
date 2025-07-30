@@ -15,7 +15,7 @@ inputs:
   NODE_VERSION:
     description: The node version to be installed
     required: false
-    default: '18'
+    default: '20'
 
 runs:
   using: composite
@@ -33,7 +33,7 @@ runs:
 
     # Install Node
     - name: Setup Node.js environment
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.NODE_VERSION }}
 
@@ -46,7 +46,7 @@ runs:
 
     # Create a cache from yarn.lock so we can skip the dependency installation if needed
     - id: cache-node_modules
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         # A list of files, directories, and wildcard patterns to cache and restore
         path: |
