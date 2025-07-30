@@ -2485,6 +2485,13 @@
     find-up "^4.1.0"
     fs-extra "^8.1.0"
 
+"@manypkg/find-root@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@manypkg/find-root/-/find-root-3.1.0.tgz#dde5798a08fb2d0e05ee8ba3b745134532cc7b74"
+  integrity sha512-BcSqCyKhBVZ5YkSzOiheMCV41kqAFptW6xGqYSTjkVTl9XQpr+pqHhwgGCOHQtjDCv7Is6EFyA14Sm5GVbVABA==
+  dependencies:
+    "@manypkg/tools" "^2.1.0"
+
 "@manypkg/get-packages@^1.1.3":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@manypkg/get-packages/-/get-packages-1.1.3.tgz#e184db9bba792fa4693de4658cfb1463ac2c9c47"
@@ -2505,6 +2512,14 @@
     "@manypkg/find-root" "^2.2.0"
     "@manypkg/tools" "^1.1.0"
 
+"@manypkg/get-packages@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@manypkg/get-packages/-/get-packages-3.1.0.tgz#c97510b6386cab9c4a59e4a7fc2757753ef18865"
+  integrity sha512-0TbBVyvPrP7xGYBI/cP8UP+yl/z+HtbTttAD7FMAJgn/kXOTwh5/60TsqP9ZYY710forNfyV0N8P/IE/ujGZJg==
+  dependencies:
+    "@manypkg/find-root" "^3.1.0"
+    "@manypkg/tools" "^2.1.0"
+
 "@manypkg/tools@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@manypkg/tools/-/tools-1.1.0.tgz#730b4c0df78be7f0ce232a417f3c26023884a55c"
@@ -2514,6 +2529,15 @@
     globby "^11.0.0"
     jju "^1.4.0"
     read-yaml-file "^1.1.0"
+
+"@manypkg/tools@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@manypkg/tools/-/tools-2.1.0.tgz#e5a67b2ddb7cc34d304a0e5d23e8633008eebf20"
+  integrity sha512-0FOIepYR4ugPYaHwK7hDeHDkfPOBVvayt9QpvRbi2LT/h2b0GaE/gM9Gag7fsnyYyNaTZ2IGyOuVg07IYepvYQ==
+  dependencies:
+    jju "^1.4.0"
+    js-yaml "^4.1.0"
+    tinyglobby "^0.2.13"
 
 "@mdx-js/react@^3.0.0":
   version "3.1.0"
@@ -6107,6 +6131,11 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "2.1.1"
 
+fdir@^6.4.4:
+  version "6.4.6"
+  resolved "https://registry.yarnpkg.com/fdir/-/fdir-6.4.6.tgz#2b268c0232697063111bbf3f64810a2a741ba281"
+  integrity sha512-hiFoqpyZcfNm1yc4u8oWCf9A2c4D3QjCrks3zmoVKVxpQRzmPNar1hUJcBG2RQHvEVGDN+Jm81ZheVLAQMK6+w==
+
 figures@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/figures/-/figures-3.2.0.tgz#625c18bd293c604dc4a8ddb2febf0c88341746af"
@@ -8830,6 +8859,11 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3, picomatch@^2.3.1:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
+picomatch@^4.0.2:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-4.0.3.tgz#796c76136d1eead715db1e7bad785dedd695a042"
+  integrity sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==
+
 pify@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
@@ -10224,6 +10258,14 @@ tinyexec@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/tinyexec/-/tinyexec-1.0.1.tgz#70c31ab7abbb4aea0a24f55d120e5990bfa1e0b1"
   integrity sha512-5uC6DDlmeqiOwCPmK9jMSdOuZTh8bU39Ys6yidB+UTt5hfZUPGAypSgFRiEp+jbi9qH40BLDvy85jIU88wKSqw==
+
+tinyglobby@^0.2.13:
+  version "0.2.14"
+  resolved "https://registry.yarnpkg.com/tinyglobby/-/tinyglobby-0.2.14.tgz#5280b0cf3f972b050e74ae88406c0a6a58f4079d"
+  integrity sha512-tX5e7OM1HnYr2+a2C/4V0htOcSQcoSTH9KgJnVvNm5zm/cyEWKJ7j7YutsH9CxMdtOkkLFy2AHrMci9IM8IPZQ==
+  dependencies:
+    fdir "^6.4.4"
+    picomatch "^4.0.2"
 
 tinygradient@^1.1.5:
   version "1.1.5"

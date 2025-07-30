@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "🔍 checking workspace→package version consistency…"
+
+npm run check-pkg-deps || {
+  echo "\n\x1b[31mCommit aborted:\x1b[0m internal package version missmatch detected."
+  exit 1
+}

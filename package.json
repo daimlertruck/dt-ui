@@ -21,12 +21,14 @@
     "release": "turbo run build --filter=docs^... && changeset publish",
     "test": "turbo run test",
     "test:update": "turbo run test -- -u",
-    "prepare": "husky"
+    "prepare": "husky",
+    "check-pkg-deps": "node scripts/check-pkg-deps/index.cjs"
   },
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
+    "@manypkg/get-packages": "^3.1.0",
     "@turbo/gen": "^1.11.3",
     "eslint-config-custom": "*",
     "husky": "^9.1.7",
