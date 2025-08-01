@@ -1,4 +1,4 @@
-import { Colors, withProviders } from '@dt-ui/react-core';
+import { Colors, withProviders } from '@dt-dds/react-core';
 import { render, screen } from '@testing-library/react';
 
 import { Counter } from '.';

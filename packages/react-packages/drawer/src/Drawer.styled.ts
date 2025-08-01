@@ -1,4 +1,4 @@
-import { BaseProps, DRAWER_Z_INDEX } from '@dt-ui/react-core';
+import { BaseProps, DRAWER_Z_INDEX } from '@dt-dds/react-core';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 

@@ -5,7 +5,7 @@ This package defines a divider between components
 ## Usage
 
 ```jsx
-import { Divider } from '@dt-ui/react';
+import { Divider } from '@dt-dds/react';
 
 export const App = () => {
   return <Divider />;

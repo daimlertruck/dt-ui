@@ -1,8 +1,8 @@
-import { BaseProps } from '@dt-ui/react-core';
-import { Tooltip } from '@dt-ui/react-tooltip';
+import { BaseProps } from '@dt-dds/react-core';
+import { Tooltip } from '@dt-dds/react-tooltip';
 import { Children, ReactNode, cloneElement, isValidElement } from 'react';
 
-import { ArrowRightIcon } from '../../../dt-ui-react/core';
+import { ArrowRightIcon } from '../../../dt-dds-react/core';
 
 import {
   BreadcrumbStyled,

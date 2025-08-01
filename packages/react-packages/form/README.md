@@ -5,7 +5,7 @@ The Form component is used to gather user input and submit it to the backend. It
 ## Usage
 
 ```jsx
-import { Form, TextField } from '@dt-ui/react';
+import { Form, TextField } from '@dt-dds/react';
 
 export const App = () => {
   return (
@@ -19,7 +19,7 @@ export const App = () => {
 Also, you can use form groups to group a bunch of fields.
 
 ```jsx
-import { Form, TextField } from '@dt-ui/react';
+import { Form, TextField } from '@dt-dds/react';
 
 export const App = () => {
   return (

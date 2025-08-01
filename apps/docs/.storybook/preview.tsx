@@ -5,11 +5,8 @@ import type { Preview } from '@storybook/react';
 import { themes } from '@storybook/theming';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 
-import {
-  theme as defaultTheme,
-  Provider,
-} from '@dt-ui/react-core';
-import '@dt-ui/icons/index.css';
+import { theme as defaultTheme, Provider } from '@dt-dds/react-core';
+import '@dt-dds/icons/index.css';
 
 import { greenlaneTheme, truckAPITheme } from './themes';
 import { webFonts } from './webFonts';
@@ -55,7 +52,7 @@ const preview: Preview = {
     },
   },
 
-  tags: ['autodocs']
+  tags: ['autodocs'],
 };
 
 export default preview;

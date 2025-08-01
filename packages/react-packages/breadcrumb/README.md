@@ -5,7 +5,7 @@ This component allows the user to configure its history navigation using breadcr
 ## Usage
 
 ```jsx
-import { Breadcrumb } from '@dt-ui/react';
+import { Breadcrumb } from '@dt-dds/react';
 
 export const App = () => {
   const breadcrumbs = [

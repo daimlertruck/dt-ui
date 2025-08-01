@@ -1,4 +1,4 @@
-import { TextField, TextFieldProps } from '@dt-ui/react-text-field';
+import { TextField, TextFieldProps } from '@dt-dds/react-text-field';
 import React, {
   useState,
   useEffect,

@@ -1,4 +1,4 @@
-import { PaletteKeys, Theme } from '@dt-ui/react-core';
+import { PaletteKeys, Theme } from '@dt-dds/react-core';
 
 export type Elements =
   | 'h1'

@@ -1,7 +1,7 @@
-import { Button } from '@dt-ui/react-button';
-import { Meta, StoryObj } from '@storybook/react';
+import { Button } from '@dt-dds/react-button';
+import { Meta, StoryObj } from '@storybook/react-vite';
 
-import { NoDataIcon } from '../../../dt-ui-react/core';
+import { NoDataIcon } from '../../../dt-dds-react/core';
 
 import { EmptyState, EmptyStateContentProps } from '.';
 

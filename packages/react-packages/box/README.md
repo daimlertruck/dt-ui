@@ -5,7 +5,7 @@ This package serves as a wrapper for most of the CSS utility needs.
 ## Box Usage
 
 ```jsx
-import { Box } from '@dt-ui/react';
+import { Box } from '@dt-dds/react';
 
 export const App = () => {
   return (

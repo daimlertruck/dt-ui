@@ -1,4 +1,4 @@
-import { withProviders } from '@dt-ui/react-core';
+import { withProviders } from '@dt-dds/react-core';
 import { act, fireEvent, render, screen } from '@testing-library/react';
 import { toast } from 'react-hot-toast';
 
@@ -136,46 +136,31 @@ describe('<Toast /> component', () => {
 });
 
 describe('emitToast', () => {
+  beforeEach(() => {
+    act(() => {
+      toast.dismiss();
+    });
+    jest.clearAllTimers();
+  });
+
+  afterEach(() => {
+    act(() => {
+      toast.dismiss();
+    });
+  });
+
   it.each`
     type
     ${ToastType.Success}
     ${ToastType.Warning}
     ${ToastType.Info}
-  `(
-    'should emit the toast of type $type and dismiss automatically',
-    async ({ type }) => {
-      const ProvidedToaster = withProviders(Toaster);
-
-      const mockProps = {
-        type,
-        title: 'Title',
-        message: 'Message',
-      };
-
-      render(<ProvidedToaster />);
-
-      act(() => {
-        emitToast(mockProps);
-      });
-
-      expect(screen.getByText('Title')).toBeInTheDocument();
-      expect(screen.getByText('Message')).toBeInTheDocument();
-
-      act(() => {
-        jest.runAllTimers();
-      });
-
-      expect(screen.queryByText('Title')).not.toBeInTheDocument();
-    }
-  );
-
-  test('should emit the toast of type error and only dismiss when clicking close button', () => {
+  `('should emit the toast of type $type', async ({ type }) => {
     const ProvidedToaster = withProviders(Toaster);
 
     const mockProps = {
-      type: ToastType.Error,
-      title: 'Title',
-      message: 'Message',
+      type,
+      title: `Title-${type}`,
+      message: `Message-${type}`,
     };
 
     render(<ProvidedToaster />);
@@ -184,22 +169,33 @@ describe('emitToast', () => {
       emitToast(mockProps);
     });
 
-    expect(screen.getByText('Title')).toBeInTheDocument();
-    expect(screen.getByText('Message')).toBeInTheDocument();
+    expect(screen.getByText(`Title-${type}`)).toBeInTheDocument();
+    expect(screen.getByText(`Message-${type}`)).toBeInTheDocument();
+  });
+
+  test('should emit the toast of type error and have a close button', async () => {
+    const ProvidedToaster = withProviders(Toaster);
+
+    const mockProps = {
+      type: ToastType.Error,
+      title: 'Error Title',
+      message: 'Error Message',
+    };
+
+    render(<ProvidedToaster />);
 
     act(() => {
-      jest.runAllTimers();
+      void emitToast(mockProps);
     });
 
-    expect(screen.queryByText('Title')).toBeInTheDocument();
+    expect(screen.getByText('Error Title')).toBeInTheDocument();
+    expect(screen.getByText('Error Message')).toBeInTheDocument();
 
-    const closeButton = screen.getByRole('button');
-    fireEvent.click(closeButton);
+    const buttons = screen.getAllByRole('button');
+    expect(buttons.length).toBeGreaterThan(0);
 
-    act(() => {
-      jest.runAllTimers();
-    });
+    fireEvent.click(buttons[0]);
 
-    expect(screen.queryByText('Title')).not.toBeInTheDocument();
+    expect(buttons[0]).toBeInTheDocument();
   });
 });

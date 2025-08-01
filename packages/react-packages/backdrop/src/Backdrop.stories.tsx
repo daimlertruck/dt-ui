@@ -1,5 +1,5 @@
-import { Portal } from '@dt-ui/react-core';
-import { Meta, StoryFn } from '@storybook/react';
+import { Portal } from '@dt-dds/react-core';
+import { Meta, StoryFn } from '@storybook/react-vite';
 import { useState } from 'react';
 
 import { Backdrop, BackdropProps } from './Backdrop';

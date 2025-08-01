@@ -7,13 +7,13 @@ The Icons Package simplifies the process of integrating Material Icons into the 
 1. Install the package. Example using yarn:
 
 ```
-yarn add @dt-ui/icons
+yarn add @dt-dds/icons
 ```
 
 2. Import the css file into your application:
 
 ```
-import '@dt-ui/icons/index.css';
+import '@dt-dds/icons/index.css';
 ```
 
 3. Create your icon element like:
@@ -55,7 +55,7 @@ Where:
 
 You can learn more on how to customize the usage of the fonts in [Material Symbols Developer Docs](https://developers.google.com/fonts/docs/material_symbols).
 
-In DT-UI, we are currently supporting two font-family keys:
+In DT-DDS, we are currently supporting two font-family keys:
 
 - **DTUI-icons-outlined**
 - **DTUI-icons-rounded**

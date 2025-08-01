@@ -1,5 +1,5 @@
-import { BaseProps } from '@dt-ui/react-core';
-import { Icon } from '@dt-ui/react-icon';
+import { BaseProps } from '@dt-dds/react-core';
+import { Icon } from '@dt-dds/react-icon';
 import { useTheme } from '@emotion/react';
 import { ChangeEvent, ComponentPropsWithRef, forwardRef } from 'react';
 

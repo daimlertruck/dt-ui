@@ -1,6 +1,6 @@
-import { BaseProps, debounce } from '@dt-ui/react-core';
-import { Icon } from '@dt-ui/react-icon';
-import { Typography } from '@dt-ui/react-typography';
+import { BaseProps, debounce } from '@dt-dds/react-core';
+import { Icon } from '@dt-dds/react-icon';
+import { Typography } from '@dt-dds/react-typography';
 import React, { useEffect, useMemo, useState } from 'react';
 
 import {

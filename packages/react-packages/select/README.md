@@ -5,7 +5,7 @@ A Select is designed to gather input from users by offering a selection from a p
 ## Select Usage
 
 ```jsx
-import { Select, SelectOptionValue } from '@dt-ui/react-select';
+import { Select, SelectOptionValue } from '@dt-dds/react-select';
 
 const items: SelectOptionValue[] = [
   { value: 'value1', label: 'Value 1' },
@@ -32,21 +32,21 @@ export const App = () => {
 
 ## Select
 
-| Property       | Type                 | Default | Description                                                           |
-| -------------- | -------------------- | ------- | --------------------------------------------------------------------- |
-| `label`        | `string`             | -       | A label to help users understand the scope of the select field.       |
-| `initialValue` | `string \| string[]` | []      | Sets the initial value of the select field.                           |
-| `helperText`   | `string`             | -       | The message to be displayed below the select field. Useful for hints. |
-| `hasError`     | `boolean`            | false   | Set error state for select field.                                     |
-| `isDisabled`   | `boolean`            | false   | Determines the disabled state of the select field.                    |
-| `isRequired`   | `boolean`            | -       | Set the state of the select field to required.                        |
-| `errorMessage` | `string`             | -       | The error message to show when hasError is true                       |
-| `style`        | `CSSProperties`      | -       | Add css style directly to the select field.                           |
-| `onChange`     | `function`           | -       | The triggered function when the selected option changes.              |
-| `isMulti`      | `boolean`            | false   | Toggles the Select between multi selection and single selection       |
-| `children`     | `React node`         | -       | Child components to be rendered. Useful to pass the list of options   |
-| `fill`        | `DropdownFill`        | `default` | Styles the input with a specific background color                   |
-| `variant`     | `DropdownVariant`     | `outlined`| Styles the input with a specific border                             |
+| Property       | Type                 | Default    | Description                                                           |
+| -------------- | -------------------- | ---------- | --------------------------------------------------------------------- |
+| `label`        | `string`             | -          | A label to help users understand the scope of the select field.       |
+| `initialValue` | `string \| string[]` | []         | Sets the initial value of the select field.                           |
+| `helperText`   | `string`             | -          | The message to be displayed below the select field. Useful for hints. |
+| `hasError`     | `boolean`            | false      | Set error state for select field.                                     |
+| `isDisabled`   | `boolean`            | false      | Determines the disabled state of the select field.                    |
+| `isRequired`   | `boolean`            | -          | Set the state of the select field to required.                        |
+| `errorMessage` | `string`             | -          | The error message to show when hasError is true                       |
+| `style`        | `CSSProperties`      | -          | Add css style directly to the select field.                           |
+| `onChange`     | `function`           | -          | The triggered function when the selected option changes.              |
+| `isMulti`      | `boolean`            | false      | Toggles the Select between multi selection and single selection       |
+| `children`     | `React node`         | -          | Child components to be rendered. Useful to pass the list of options   |
+| `fill`         | `DropdownFill`       | `default`  | Styles the input with a specific background color                     |
+| `variant`      | `DropdownVariant`    | `outlined` | Styles the input with a specific border                               |
 
 ### Select.Option
 

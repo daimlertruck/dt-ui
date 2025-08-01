@@ -1,8 +1,8 @@
-import { IconButton } from '@dt-ui/react-icon-button';
+import { IconButton } from '@dt-dds/react-icon-button';
 import styled from '@emotion/styled';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 
-import { DeleteIcon } from '../../../dt-ui-react/core';
+import { DeleteIcon } from '../../../dt-dds-react/core';
 
 import { TooltipContainerProps } from './components/container';
 import { TooltipContentProps } from './components/content';

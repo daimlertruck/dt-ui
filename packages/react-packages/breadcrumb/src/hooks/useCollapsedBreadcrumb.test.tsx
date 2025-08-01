@@ -1,4 +1,4 @@
-import { BaseProps, withProviders } from '@dt-ui/react-core';
+import { BaseProps, withProviders } from '@dt-dds/react-core';
 import { renderHook, act } from '@testing-library/react';
 import { ReactNode } from 'react';
 

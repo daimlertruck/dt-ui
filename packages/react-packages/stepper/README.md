@@ -7,7 +7,7 @@ By default, for screens smaller than our `theme.breakpoints.md` the stepper orie
 ## Stepper Usage
 
 ```jsx
-import { Stepper, Step } from '@dt-ui/react';
+import { Stepper, Step } from '@dt-dds/react';
 
 export const App = () => {
   const options = ['API version definition', 'Specifications', 'Review'];

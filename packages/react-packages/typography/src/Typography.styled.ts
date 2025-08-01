@@ -1,4 +1,4 @@
-import { Theme, PaletteKeys, getContextualColor } from '@dt-ui/react-core';
+import { Theme, PaletteKeys, getContextualColor } from '@dt-dds/react-core';
 import styled from '@emotion/styled';
 
 import { Colors } from './types';

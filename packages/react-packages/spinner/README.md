@@ -5,7 +5,7 @@ The spinner package works as a progress indicator to inform users about the stat
 ## Usage
 
 ```jsx
-import { Spinner } from '@dt-ui/react-spinner';
+import { Spinner } from '@dt-dds/react-spinner';
 
 export const App = () => {
   return (

@@ -1,5 +1,5 @@
-import { BaseProps } from '@dt-ui/react-core';
-import { Typography } from '@dt-ui/react-typography';
+import { BaseProps } from '@dt-dds/react-core';
+import { Typography } from '@dt-dds/react-typography';
 
 import { EmptyStateStyled, EmptyStateContentStyled } from './EmptyState.styled';
 

@@ -1,4 +1,4 @@
-import { ComponentSize } from '@dt-ui/react-core';
+import { ComponentSize } from '@dt-dds/react-core';
 
 export type ButtonVariant = 'solid' | 'outlined' | 'text';
 

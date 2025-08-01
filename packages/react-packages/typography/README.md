@@ -5,7 +5,7 @@ Typography is an essential aspect of design, influencing how users perceive and 
 ## Typography Usage
 
 ```jsx
-import { Typography } from '@dt-ui/react-typography';
+import { Typography } from '@dt-dds/react-typography';
 
 export const App = () => {
   return (

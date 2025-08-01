@@ -1,4 +1,4 @@
-import { Orientation } from '@dt-ui/react-core';
+import { Orientation } from '@dt-dds/react-core';
 import styled from '@emotion/styled';
 
 interface StepperStyledProps {

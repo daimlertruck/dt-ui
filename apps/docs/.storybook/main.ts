@@ -12,7 +12,7 @@ type PathAlias = {
 
 const resolveComponentsPath = (components: string[]): PathAlias =>
   components.reduce((acc: PathAlias, curr: string) => {
-    const keyName = `@dt-ui/react-${curr}`;
+    const keyName = `@dt-dds/react-${curr}`;
     return {
       ...acc,
       [keyName]: path.resolve(
@@ -94,9 +94,9 @@ const config: StorybookConfig = {
       config.resolve.alias = {
         ...config.resolve.alias,
         '@storybook/blocks': getAbsolutePath('@storybook/blocks'),
-        '@dt-ui/react': path.resolve(
+        '@dt-dds/react': path.resolve(
           __dirname,
-          `../../../packages/dt-ui-react/index.ts`
+          `../../../packages/dt-dds-react/index.ts`
         ),
         ...resolveComponentsPath(components),
       };

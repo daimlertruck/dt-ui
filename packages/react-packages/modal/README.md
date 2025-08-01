@@ -11,7 +11,7 @@ import {
   Overlay,
   TextField,
   useModal,
-} from '@dt-ui/react';
+} from '@dt-dds/react';
 
 export const App = () => {
   const { isModalOpen, toggleModal } = useModal(); // Handles modal open state
@@ -21,7 +21,7 @@ export const App = () => {
   return (
     <>
       <button onClick={toggleModal}>Click me</button>
-      
+
       <Overlay isOpen={isModalOpen}>
         <Modal onClickOutside={toggleModal}>
           <Modal.Header onClose={toggleModal}>Title</Modal.Header>
@@ -52,59 +52,59 @@ export const App = () => {
 
 Component that determines the main display as well as sets the background.
 
-| Property   | Type        | Default | Description                                                   |
-| ---------- | ----------- | ------- | ------------------------------------------------------------- |
-| `children` | `ReactNode` | -       | Child components to be rendered                               |
-| `isOpen`   | `boolean`   | false   | Determines if the component is open or close                  |
-| `ref`      | `RefObject` | -       | Provides a way to access DOM node or React element reference. |
-| `dataTestId` | `string`  | -       | Customizable test identifier          |
+| Property     | Type        | Default | Description                                                   |
+| ------------ | ----------- | ------- | ------------------------------------------------------------- |
+| `children`   | `ReactNode` | -       | Child components to be rendered                               |
+| `isOpen`     | `boolean`   | false   | Determines if the component is open or close                  |
+| `ref`        | `RefObject` | -       | Provides a way to access DOM node or React element reference. |
+| `dataTestId` | `string`    | -       | Customizable test identifier                                  |
 
 ### Modal
 
 Main modal container that sets the modal dimensions and receives the content children. This component also uses the `useClickOutside` hook to handle the close of the modal everytime the user click outside of the content.
 
-| Property          | Type         | Default | Description                                                                     |
-| ----------------- | ------------ | ------- | ------------------------------------------------------------------------------- |
-| `children`        | `ReactNode`  | -       | Child components to be rendered                                                 |
-| `onClickOutside`  | `() => void` | -       | Enables and Handles the close action of the modal when user clicks outside of the component |
-| `style`      | `React.CSSProperties` | -     | Gives the Modal css properties |
-| `dataTestId`      | `string`     | -       | Customizable test identifier          |
+| Property         | Type                  | Default | Description                                                                                 |
+| ---------------- | --------------------- | ------- | ------------------------------------------------------------------------------------------- |
+| `children`       | `ReactNode`           | -       | Child components to be rendered                                                             |
+| `onClickOutside` | `() => void`          | -       | Enables and Handles the close action of the modal when user clicks outside of the component |
+| `style`          | `React.CSSProperties` | -       | Gives the Modal css properties                                                              |
+| `dataTestId`     | `string`              | -       | Customizable test identifier                                                                |
 
 ### Modal.Header
 
 Header information (for example, the 'x' close button).
 
-| Property      | Type         | Default | Description                                       |
-| ------------- | ------------ | ------- | ------------------------------------------------- |
-| `onClose`     | `() => void` | -       | Handles the close action of the 'x' button        |
-| `style`       | `React.CSSProperties` | -       | Gives css properties to the Modal Header |
-| `hasBorder`   | `boolean`             | `true`  | Set a border bottom to Modal Header |
-| `title`       | `string`              | -       | Text to be presented as title of the Modal Header |
-| `subTitle`    | `string`              | -       | Text to be presented as sub title of the Modal Header |
-| `dataTestId`  | `string`              | -       | Customizable test identifier          |
+| Property     | Type                  | Default | Description                                           |
+| ------------ | --------------------- | ------- | ----------------------------------------------------- |
+| `onClose`    | `() => void`          | -       | Handles the close action of the 'x' button            |
+| `style`      | `React.CSSProperties` | -       | Gives css properties to the Modal Header              |
+| `hasBorder`  | `boolean`             | `true`  | Set a border bottom to Modal Header                   |
+| `title`      | `string`              | -       | Text to be presented as title of the Modal Header     |
+| `subTitle`   | `string`              | -       | Text to be presented as sub title of the Modal Header |
+| `dataTestId` | `string`              | -       | Customizable test identifier                          |
 
 ### Modal.Content
 
 Main content of the modal.
 
-| Property   | Type        | Default | Description                     |
-| ---------- | ----------- | ------- | ------------------------------- |
-| `children` | `ReactNode` | -       | Child components to be rendered |
-| `style`       | `React.CSSProperties` | -       | Gives css properties to the Modal content |
-| `isLoading` | `boolean` | -       | If set to true, a spinner is showed over the content of the modal |
-| `dataTestId`| `string`  | -       | Customizable test identifier          |
+| Property     | Type                  | Default | Description                                                       |
+| ------------ | --------------------- | ------- | ----------------------------------------------------------------- |
+| `children`   | `ReactNode`           | -       | Child components to be rendered                                   |
+| `style`      | `React.CSSProperties` | -       | Gives css properties to the Modal content                         |
+| `isLoading`  | `boolean`             | -       | If set to true, a spinner is showed over the content of the modal |
+| `dataTestId` | `string`              | -       | Customizable test identifier                                      |
 
 ### Modal.Footer
 
 Footer Actions (for example, the 'Cancel' button)
 
-| Property   | Type                  | Default | Description                           |
-| ---------- | --------------------- | ------- | ------------------------------------- |
-| `children` | `ReactNode`           | -       | Child components to be rendered       |
-| `style`    | `React.CSSProperties` | -       | Gives the Modal Footer css properties |
-| `hasBackgroundColor`| `boolean`    | `true`  | Set a BackgroundColor to Modal Footer |
-| `title`    | `string`              | -       | Text to be presented as title of the Modal Footer |
-| `dataTestId`| `string`  | -       | Customizable test identifier          |
+| Property             | Type                  | Default | Description                                       |
+| -------------------- | --------------------- | ------- | ------------------------------------------------- |
+| `children`           | `ReactNode`           | -       | Child components to be rendered                   |
+| `style`              | `React.CSSProperties` | -       | Gives the Modal Footer css properties             |
+| `hasBackgroundColor` | `boolean`             | `true`  | Set a BackgroundColor to Modal Footer             |
+| `title`              | `string`              | -       | Text to be presented as title of the Modal Footer |
+| `dataTestId`         | `string`              | -       | Customizable test identifier                      |
 
 ## Stack
 

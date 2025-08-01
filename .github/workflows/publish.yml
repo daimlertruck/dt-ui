@@ -1,9 +1,5 @@
 name: Publish
 
-env:
-  TBLX_NPM_ARTIFACT_TOKEN: ${{ secrets.TBLX_NPM_ARTIFACT_TOKEN }}
-  TBLX_NPM_ARTIFACT_USERNAME: ${{ secrets.TBLX_NPM_ARTIFACT_USERNAME }}
-
 on:
   push:
     branches:
@@ -29,9 +25,9 @@ jobs:
 
       - name: Setup node
         id: setup-node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install yarn and turbo
         shell: bash
@@ -47,20 +43,12 @@ jobs:
           else
             TURBO_TELEMETRY_MESSAGE_DISABLED=1 npx -y turbo build --dry-run=json --filter='!./apps/*' > $RUNNER_TEMP/turbo_result.json
           fi
-
           echo "Turbo build output saved to $RUNNER_TEMP/turbo_result.json"
 
-      - name: Filter unpublished packages
+      - name: Filter unpublished @dt-dds packages on npmjs
         id: filter-unpublished-packages
         run: |
-          touch .npmrc
-          echo "@dt-ui:registry=https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/" >> .npmrc
-          echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:always-auth=true" >> .npmrc
-          echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:_authToken=${TBLX_NPM_ARTIFACT_TOKEN}" >> .npmrc
-          echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:username=${TBLX_NPM_ARTIFACT_USERNAME}" >> .npmrc
-
           TURBO_RESULT=$(cat $RUNNER_TEMP/turbo_result.json)
-
           packages=$(echo "$TURBO_RESULT" | jq -r '.packages[]')
 
           unpublished_packages=()
@@ -69,28 +57,37 @@ jobs:
           parsed_workspace_info=$(echo "$workspace_info" | jq -r '.data | fromjson')
 
           for package in $packages; do
+            # Only consider @dt-dds scoped packages (skip others)
+            if [[ "$package" != @dt-dds/* ]]; then
+              echo "Skipping non-@dt-dds package: $package"
+              continue
+            fi
+
             echo "Checking package: $package"
             directory=$(echo "$parsed_workspace_info" | jq -r --arg package "$package" '.[$package].location')
-            
-            # Debug: directory
-            echo "Directory for $package: $directory"
-            
+
             if [[ ! -d "$directory" ]]; then
               echo "Directory does not exist for package $package: $directory"
               continue
             fi
 
             current_version=$(jq -r '.version' < "$directory/package.json")
-
             if [[ "$current_version" == "0.0.0" ]]; then
               echo "Skipping $package as its version is 0.0.0"
               continue
             fi
 
-            published_versions=$(yarn info "$package" versions || echo "[]")
+            # Query public npmjs for existing versions
+            published_versions=$(npm view "$package" versions --json 2>/dev/null || echo "[]")
+            if ! echo "$published_versions" | jq empty >/dev/null 2>&1; then
+              published_versions="[]"
+            fi
 
-            if [[ $published_versions != *"$current_version"* ]]; then
+            if ! echo "$published_versions" | grep -q "\"$current_version\""; then
+              echo "Version $current_version of $package is not published on npmjs.org"
               unpublished_packages+=("$package")
+            else
+              echo "$package@$current_version already published on npmjs.org"
             fi
           done
 
@@ -113,7 +110,7 @@ jobs:
         packages: ${{ fromJson(needs.gather-changed-packages.outputs.matrix) }}
         exclude:
           - packages: '//'
-          - packages: '@dt-ui/docs'
+          - packages: '@dt-dds/docs'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -124,8 +121,6 @@ jobs:
         uses: './.github/actions/yarn-node-install'
         with:
           CACHE_FILE_NAME: ${{ matrix.packages }}
-          TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
-          TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
 
       - name: Set package directory and version
         id: package-detail
@@ -144,11 +139,10 @@ jobs:
           yarn pack
         working-directory: ${{ steps.package-detail.outputs.directory }}
 
-      - uses: jfrog/setup-jfrog-cli@v4
+      - name: Publish to npmjs.org
         env:
-          JF_URL: ${{ secrets.ARTIFACTORY_URL }}
-          JF_USER: ${{ secrets.TBLX_NPM_ARTIFACT_USERNAME }}
-          JF_PASSWORD: ${{ secrets.TBLX_NPM_ARTIFACT_PASSWORD }}
-
-      - name: Publish to Artifactory
-        run: jf rt u ${{ steps.package-detail.outputs.directory }}/*.tgz DTUI_NPM_LOCAL/${{ matrix.packages }}/-/ --flat=true
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          cd "${{ steps.package-detail.outputs.directory }}"
+          echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" > .npmrc
+          npm publish --access public

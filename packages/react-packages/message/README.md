@@ -7,7 +7,7 @@ Furthermore, it can be used to add an action like a link, by passing it as a chi
 ## Usage
 
 ```jsx
-import { Message } from '@dt-ui/react';
+import { Message } from '@dt-dds/react';
 
 export const App = () => {
   const title = 'Some Title';

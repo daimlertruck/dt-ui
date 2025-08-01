@@ -5,7 +5,7 @@ The `<label>` represents a caption for an item in a user interface.
 ## LabelField Usage
 
 ```jsx
-import { LabelField } from '@dt-ui/react';
+import { LabelField } from '@dt-dds/react';
 
 export const App = () => {
   const INPUT_ID = 'input-id';
