@@ -5,7 +5,7 @@ An accordion is a vertically stacked list of headers that reveal or hide associa
 ## Accordion Usage
 
 ```jsx
-import { Accordion } from '@dt-ui/react';
+import { Accordion } from '@dt-dds/react';
 
 export const App = () => {
   const headerCustomContent = <>Header content here.</>;
@@ -20,16 +20,16 @@ export const App = () => {
 
 ## Properties
 
-| Property        | Type                  | Default             | Description                                                 |
-| --------------- | --------------------- | ------------------- | ----------------------------------------------------------- |
-| `isOpen`        | `boolean`             | false               | Boolean value to define if the accordion is open or closed  |
-| `hasBackground` | `boolean`             | false               | Sets the Accordion background color                         |
-| `headerContent` | `ReactNode`           | -                   | Child component to be rendered on the accordion header      |
-| `isDisabled`    | `boolean`             | false               | Boolean value to define if the Accordion is disabled or not |
-| `children`      | `ReactNode`           | -                   | Child component to be rendered on the accordion body        |
-| `dataTestId`    | `string`              | accordion-container | Accordion test identifier                                   |
-| `style`         | `React.CSSProperties` | -                   | Gives the Accordion CSS properties                          |
-| `hasBorderBottom`| `boolean`             | false               | Sets the Accordion border-bottom                            |
+| Property          | Type                  | Default             | Description                                                 |
+| ----------------- | --------------------- | ------------------- | ----------------------------------------------------------- |
+| `isOpen`          | `boolean`             | false               | Boolean value to define if the accordion is open or closed  |
+| `hasBackground`   | `boolean`             | false               | Sets the Accordion background color                         |
+| `headerContent`   | `ReactNode`           | -                   | Child component to be rendered on the accordion header      |
+| `isDisabled`      | `boolean`             | false               | Boolean value to define if the Accordion is disabled or not |
+| `children`        | `ReactNode`           | -                   | Child component to be rendered on the accordion body        |
+| `dataTestId`      | `string`              | accordion-container | Accordion test identifier                                   |
+| `style`           | `React.CSSProperties` | -                   | Gives the Accordion CSS properties                          |
+| `hasBorderBottom` | `boolean`             | false               | Sets the Accordion border-bottom                            |
 
 ### Stack
 

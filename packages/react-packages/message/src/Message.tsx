@@ -1,5 +1,5 @@
-import { BaseProps } from '@dt-ui/react-core';
-import { Typography } from '@dt-ui/react-typography';
+import { BaseProps } from '@dt-dds/react-core';
+import { Typography } from '@dt-dds/react-typography';
 import { SVGProps, ReactElement } from 'react';
 
 import {
@@ -8,7 +8,7 @@ import {
   ErrorIcon,
   InfoIcon,
   WarningIcon,
-} from '../../../dt-ui-react/core';
+} from '../../../dt-dds-react/core';
 
 import {
   MessageStyled,

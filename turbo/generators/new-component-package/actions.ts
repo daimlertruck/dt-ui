@@ -31,18 +31,18 @@ export const modifyDTUIReacAddNewPackageAction: PlopTypes.ModifyActionConfig[] =
   [
     {
       type: 'modify',
-      path: `${packagesPath}/dt-ui-react/index.ts`,
+      path: `${packagesPath}/dt-dds-react/index.ts`,
       templateFile: '',
       pattern:
         /(\/\/independent component packages\s*\n)(export[\s\S]*?)\n\s*\n/,
-      template: "$1$2\nexport * from '@dt-ui/react-{{ packageName }}';\n\n",
+      template: "$1$2\nexport * from '@dt-dds/react-{{ packageName }}';\n\n",
     },
     {
       type: 'modify',
-      path: `${packagesPath}/dt-ui-react/package.json`,
+      path: `${packagesPath}/dt-dds-react/package.json`,
       templateFile: '',
       pattern: /("dependencies":\s*{)([\s\S]*?)(\n\s*}\n)/,
       template:
-        '$1\n    "@dt-ui/react-{{ packageName }}": "{{ packageVersion }}",$2$3',
+        '$1\n    "@dt-dds/react-{{ packageName }}": "{{ packageVersion }}",$2$3',
     },
   ];

@@ -5,7 +5,7 @@ A drawer is a component that slides in from the side of the screen. It is typica
 ## Usage
 
 ```jsx
-import { Drawer } from '@dt-ui/react';
+import { Drawer } from '@dt-dds/react';
 
 export const App = () => {
   const [isDrawerVisible, setIsDrawerVisible] = useState(props.isVisible);

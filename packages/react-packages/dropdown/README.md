@@ -5,7 +5,7 @@ The Dropdown Menu provide the users with a list of options on temporary surfaces
 ## Dropdown Usage
 
 ```jsx
-import { Dropdown } from '@dt-ui/react';
+import { Dropdown } from '@dt-dds/react';
 
 const OPTIONS = [
   { text: 'Option 1', value: '1' },

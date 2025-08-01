@@ -1,6 +1,6 @@
-import { BaseProps } from '@dt-ui/react-core';
-import { LabelField } from '@dt-ui/react-label-field';
-import { Typography } from '@dt-ui/react-typography';
+import { BaseProps } from '@dt-dds/react-core';
+import { LabelField } from '@dt-dds/react-label-field';
+import { Typography } from '@dt-dds/react-typography';
 import {
   ChangeEvent,
   ComponentPropsWithoutRef,

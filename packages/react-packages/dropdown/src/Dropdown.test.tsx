@@ -1,4 +1,4 @@
-import { withProviders } from '@dt-ui/react-core';
+import { withProviders } from '@dt-dds/react-core';
 import { fireEvent, render, screen, within } from '@testing-library/react';
 
 import { withDropdownProvider } from './utils';

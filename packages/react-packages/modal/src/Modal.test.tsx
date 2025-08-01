@@ -1,5 +1,5 @@
-import { Button } from '@dt-ui/react-button';
-import { Provider, withProviders } from '@dt-ui/react-core';
+import { Button } from '@dt-dds/react-button';
+import { Provider, withProviders } from '@dt-dds/react-core';
 import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
 

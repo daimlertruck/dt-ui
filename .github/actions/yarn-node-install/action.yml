@@ -20,17 +20,6 @@ inputs:
 runs:
   using: composite
   steps:
-    # Create .npmrc file
-    - name: Create .npmrc file
-      shell: bash
-      run: |
-        touch .npmrc
-        echo "auto-install-peers = true" >> .npmrc
-        echo "@dt-ui:registry=https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/" >> .npmrc
-        echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:always-auth=true" >> .npmrc
-        echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:_authToken=${{ inputs.TBLX_NPM_ARTIFACT_TOKEN }}" >> .npmrc
-        echo "//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:username=${{ inputs.TBLX_NPM_ARTIFACT_USERNAME }}" >> .npmrc
-
     # Install Node
     - name: Setup Node.js environment
       uses: actions/setup-node@v4
@@ -53,7 +42,7 @@ runs:
           ~/.yarn
           **/node_modules
         # An explicit key for restoring and saving the cache
-        key: ${{ inputs.CACHE_FILE_NAME }}-node-v${{ inputs.NODE_VERSION }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}-${{ hashFiles('packages/dt-ui-react/package.json') }}
+        key: ${{ inputs.CACHE_FILE_NAME }}-node-v${{ inputs.NODE_VERSION }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}-${{ hashFiles('packages/dt-dds-react/package.json') }}
         restore-keys: |
           ${{ inputs.CACHE_FILE_NAME }}-node-v${{ inputs.NODE_VERSION }}-deps-
 

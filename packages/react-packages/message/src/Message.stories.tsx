@@ -1,5 +1,5 @@
-import { Link } from '@dt-ui/react-link';
-import { Meta, StoryObj } from '@storybook/react';
+import { Link } from '@dt-dds/react-link';
+import { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Message, MessageProps } from './Message';
 import { OMessageType } from './types';

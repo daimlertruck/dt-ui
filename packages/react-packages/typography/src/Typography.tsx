@@ -1,4 +1,4 @@
-import { BaseProps, Theme } from '@dt-ui/react-core';
+import { BaseProps, Theme } from '@dt-dds/react-core';
 import { useTheme } from '@emotion/react';
 import { forwardRef } from 'react';
 

@@ -1,4 +1,4 @@
-import { TOOLTIP_Z_INDEX } from '@dt-ui/react-core';
+import { TOOLTIP_Z_INDEX } from '@dt-dds/react-core';
 import styled from '@emotion/styled';
 
 import {

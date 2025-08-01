@@ -1,5 +1,5 @@
-import { withProviders, theme } from '@dt-ui/react-core';
-import { Link } from '@dt-ui/react-link';
+import { withProviders, theme } from '@dt-dds/react-core';
+import { Link } from '@dt-dds/react-link';
 import { fireEvent, render } from '@testing-library/react';
 
 import { Message } from './Message';

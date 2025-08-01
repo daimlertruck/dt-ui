@@ -5,7 +5,7 @@ The Pagination component enables the user to select a specific page from a range
 ## Pagination Usage
 
 ```jsx
-import { Pagination, PaginationInput, usePagination } from '@dt-ui/react';
+import { Pagination, PaginationInput, usePagination } from '@dt-dds/react';
 const totalPages = 10;
 
 const { currentPage, handleChange, handleUserInput } = usePagination();

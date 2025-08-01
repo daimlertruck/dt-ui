@@ -1,4 +1,4 @@
-import { DROPDOWN_MENU_Z_INDEX } from '@dt-ui/react-core';
+import { DROPDOWN_MENU_Z_INDEX } from '@dt-dds/react-core';
 import styled from '@emotion/styled';
 
 export const DropdownMenuStyled = styled.ul`

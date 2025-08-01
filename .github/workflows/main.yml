@@ -1,10 +1,8 @@
 name: Continuous Integration & Version and Tag
 
 env:
-  TBLX_NPM_ARTIFACT_TOKEN: ${{ secrets.TBLX_NPM_ARTIFACT_TOKEN }}
-  TBLX_NPM_ARTIFACT_USERNAME: ${{ secrets.TBLX_NPM_ARTIFACT_USERNAME }}
-  GIT_FAKE_EMAIL: dt-ui@daimlertruck.com
-  GIT_FAKE_USER: dt-ui
+  GIT_FAKE_EMAIL: dt-dds@daimlertruck.com
+  GIT_FAKE_USER: dt-dds
 
 on:
   push:
@@ -54,8 +52,6 @@ jobs:
         uses: './.github/actions/yarn-node-install'
         with:
           CACHE_FILE_NAME: 'global'
-          TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
-          TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
 
       - name: Run Lint
         run: yarn lint
@@ -72,8 +68,6 @@ jobs:
         uses: './.github/actions/yarn-node-install'
         with:
           CACHE_FILE_NAME: 'global'
-          TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
-          TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
 
       - name: Run Tests
         run: yarn test
@@ -107,7 +101,7 @@ jobs:
       - name: Extract version
         id: pkg
         run: |
-          echo "VERSION=$(jq -r .version packages/dt-ui-react/package.json)" >> $GITHUB_OUTPUT
+          echo "VERSION=$(jq -r .version packages/dt-dds-react/package.json)" >> $GITHUB_OUTPUT
 
       - name: Versions Cleanup
         run: |
@@ -157,7 +151,7 @@ jobs:
           blackducksca_token: ${{ env.BLACKDUCK_TOKEN }}
           blackducksca_scan_failure_severities: 'BLOCKER,CRITICAL'
           blackducksca_scan_full: ${{ github.ref == 'refs/heads/main' }}
-          blackducksca_prComment_enabled: true
+          blackducksca_prComment_enabled: false
           detect_args: '--logging.level.detect=DEBUG --detect.blackduck.rapid.compare.mode=ALL --detect.project.version.phase=RELEASED  --detect.project.version.distribution=OPENSOURCE --detect.yarn.dependency.types.excluded=NON_PRODUCTION'
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -173,8 +167,6 @@ jobs:
         uses: './.github/actions/yarn-node-install'
         with:
           CACHE_FILE_NAME: 'global'
-          TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
-          TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
 
       - name: Run Build
         run: yarn run turbo build --filter='./packages/*'
@@ -202,8 +194,6 @@ jobs:
         uses: './.github/actions/yarn-node-install'
         with:
           CACHE_FILE_NAME: 'global'
-          TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
-          TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
 
       - name: Setup fake credentials
         run: |

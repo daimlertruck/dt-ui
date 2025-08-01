@@ -1,5 +1,5 @@
-import { Button } from '@dt-ui/react-button';
-import { Meta, StoryFn } from '@storybook/react';
+import { Button } from '@dt-dds/react-button';
+import { Meta, StoryFn } from '@storybook/react-vite';
 
 import { ModalHeaderProps, ModalContentProps } from './components';
 import { useModal } from './hooks';

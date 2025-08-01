@@ -5,7 +5,7 @@ Counters can be used to display a circular element containing number or other co
 ## Usage
 
 ```jsx
-import { Counter } from '@dt-ui/react';
+import { Counter } from '@dt-dds/react';
 
 export const App = () => {
   return (

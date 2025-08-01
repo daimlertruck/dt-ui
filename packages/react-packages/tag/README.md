@@ -5,7 +5,7 @@ Tags can be used to display states (Active, Cancelled...) in lists, tables, etc.
 ## Tag Usage
 
 ```jsx
-import { Tag } from '@dt-ui/react-tag';
+import { Tag } from '@dt-dds/react-tag';
 
 export const App = () => {
   return <Tag>Active</Tag>;

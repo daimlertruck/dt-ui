@@ -1,4 +1,4 @@
-import { DROPDOWN_MENU_Z_INDEX, Theme } from '@dt-ui/react-core';
+import { DROPDOWN_MENU_Z_INDEX, Theme } from '@dt-dds/react-core';
 import styled from '@emotion/styled';
 
 import { SelectFill, SelectVariant } from './types';
