@@ -1,4 +1,4 @@
-import { BaseProps } from '@dt-ui/react-core';
+import { BaseProps } from '@dt-dds/react-core';
 import { MouseEvent } from 'react';
 
 import { useTooltipContext } from '../../context';
@@ -16,7 +16,7 @@ export const TooltipContainer = ({
 }: TooltipContainerProps) => {
   const { setIsVisible, setContainerRectProperties } = useTooltipContext();
 
-  let hideTooltipTimeout: NodeJS.Timeout;
+  let hideTooltipTimeout: ReturnType<typeof setTimeout>;
 
   const showTooltip = (e: MouseEvent<HTMLDivElement>) => {
     clearTimeout(hideTooltipTimeout);

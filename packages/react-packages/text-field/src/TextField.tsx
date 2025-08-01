@@ -1,8 +1,8 @@
-import { BaseProps } from '@dt-ui/react-core';
-import { Icon } from '@dt-ui/react-icon';
-import { IconButton } from '@dt-ui/react-icon-button';
-import { LabelField } from '@dt-ui/react-label-field';
-import { Typography } from '@dt-ui/react-typography';
+import { BaseProps } from '@dt-dds/react-core';
+import { Icon } from '@dt-dds/react-icon';
+import { IconButton } from '@dt-dds/react-icon-button';
+import { LabelField } from '@dt-dds/react-label-field';
+import { Typography } from '@dt-dds/react-typography';
 import {
   ChangeEvent,
   ComponentPropsWithoutRef,

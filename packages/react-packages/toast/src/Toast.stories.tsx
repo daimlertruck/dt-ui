@@ -1,6 +1,6 @@
-import { Button } from '@dt-ui/react-button';
-import { Portal } from '@dt-ui/react-core';
-import type { Meta, StoryObj } from '@storybook/react';
+import { Button } from '@dt-dds/react-button';
+import { Portal } from '@dt-dds/react-core';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { ToasterProps } from 'react-hot-toast';
 
 import { ToastType } from './constants';

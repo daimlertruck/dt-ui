@@ -1,5 +1,5 @@
-import { Icon } from '@dt-ui/react-icon';
-import { Typography } from '@dt-ui/react-typography';
+import { Icon } from '@dt-dds/react-icon';
+import { Typography } from '@dt-dds/react-typography';
 import { useTheme } from '@emotion/react';
 
 import { MAX_PROGRESS_BAR_VALUE, MIN_PROGRESS_BAR_VALUE } from './constants';

@@ -6,8 +6,8 @@ If the Tabs run out of space, it will appear horizontal scroll.
 ## Usage
 
 ```jsx
-import { Tabs, TabPanel, useTabs } from '@dt-ui/react';
-import { Icon } from '@dt-ui/react-icon';
+import { Tabs, TabPanel, useTabs } from '@dt-dds/react';
+import { Icon } from '@dt-dds/react-icon';
 
 const { activeTab, handleChange } = useTabs(0);
 

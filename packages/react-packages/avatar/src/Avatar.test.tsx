@@ -1,4 +1,4 @@
-import { withProviders } from '@dt-ui/react-core';
+import { withProviders } from '@dt-dds/react-core';
 import { render, screen, within } from '@testing-library/react';
 import React from 'react';
 

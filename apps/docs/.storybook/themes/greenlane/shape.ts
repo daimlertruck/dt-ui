@@ -1,4 +1,4 @@
-import { theme } from '@dt-ui/react-core';
+import { theme } from '@dt-dds/react-core';
 
 const { shape: defaultShape, radius } = theme;
 

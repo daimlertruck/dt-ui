@@ -1,4 +1,4 @@
-import { Theme } from '@dt-ui/react-core';
+import { Theme } from '@dt-dds/react-core';
 
 export const checkboxStyles = (
   theme: Theme,

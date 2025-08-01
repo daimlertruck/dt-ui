@@ -1,5 +1,5 @@
-import { Backdrop, BackdropProps } from '@dt-ui/react-backdrop';
-import { BaseProps, Portal, useClickOutside } from '@dt-ui/react-core';
+import { Backdrop, BackdropProps } from '@dt-dds/react-backdrop';
+import { BaseProps, Portal, useClickOutside } from '@dt-dds/react-core';
 import { forwardRef, RefObject, useRef } from 'react';
 
 import { ModalContent, ModalFooter, ModalHeader } from './components';

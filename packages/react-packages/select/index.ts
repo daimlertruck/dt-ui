@@ -1,4 +1,4 @@
-import { Theme as CustomTheme } from '@dt-ui/react-core';
+import { Theme as CustomTheme } from '@dt-dds/react-core';
 
 export * from './src';
 

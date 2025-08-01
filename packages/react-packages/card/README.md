@@ -5,7 +5,7 @@ Cards contains content and actions about a single subject.
 ## Usage
 
 ```jsx
-import { Card } from '@dt-ui/react';
+import { Card } from '@dt-dds/react';
 
 export const App = () => {
   return (

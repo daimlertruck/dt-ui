@@ -5,7 +5,7 @@ This package provides a customizable and stylized Icon component for use in Reac
 ## Icon Usage
 
 ```jsx
-import { Icon } from '@dt-ui/react-icon';
+import { Icon } from '@dt-dds/react-icon';
 
 export const App = () => {
   return <Icon code='warning' />;

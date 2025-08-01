@@ -1,4 +1,5 @@
-import { withProviders } from '@dt-ui/react-core';
+import { withProviders } from '@dt-dds/react-core';
+import { theme } from '@dt-dds/react-core';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { useState } from 'react';
 
@@ -115,7 +116,9 @@ describe('<TextArea /> component', () => {
 
       fireEvent.blur(textarea, { currentTarget: { value: '' } });
 
-      expect(textarea).toHaveStyle('border: 1px solid #000000');
+      expect(textarea).toHaveStyle(
+        `border: 1px solid ${theme.palette.border.default}`
+      );
     });
 
     it('should have active state', () => {
@@ -140,7 +143,9 @@ describe('<TextArea /> component', () => {
 
     fireEvent.mouseOver(textarea, { currentTarget: { value: '' } });
 
-    expect(textarea).toHaveStyle('border: 1px solid #000000');
+    expect(textarea).toHaveStyle(
+      `border: 1px solid ${theme.palette.primary.default}`
+    );
   });
 
   it('renders input with variant baseLine', () => {

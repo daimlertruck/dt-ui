@@ -1,4 +1,4 @@
-import { BaseProps, Orientation } from '@dt-ui/react-core';
+import { BaseProps, Orientation } from '@dt-dds/react-core';
 
 import { StepperStyled } from './Stepper.styled';
 

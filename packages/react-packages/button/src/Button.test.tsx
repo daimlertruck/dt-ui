@@ -1,4 +1,4 @@
-import { withProviders } from '@dt-ui/react-core';
+import { withProviders, theme } from '@dt-dds/react-core';
 import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
 
@@ -29,7 +29,7 @@ describe('<Button /> component', () => {
     );
 
     expect(getByTestId('contrast-button')).toHaveStyle(
-      'color: rgb(19, 19, 19);background-color: rgb(193, 193, 193);'
+      `color: ${theme.palette.content.dark};background-color: ${theme.palette.surface.contrast};`
     );
   });
 

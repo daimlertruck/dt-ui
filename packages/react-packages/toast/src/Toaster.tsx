@@ -1,4 +1,4 @@
-import { useMedia } from '@dt-ui/react-core';
+import { useMedia } from '@dt-dds/react-core';
 import { useTheme } from '@emotion/react';
 import { Children, cloneElement, ReactElement, ReactNode } from 'react';
 import {

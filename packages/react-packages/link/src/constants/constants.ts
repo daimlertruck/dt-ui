@@ -1,4 +1,4 @@
-import { IconProps } from '@dt-ui/react-icon';
+import { IconProps } from '@dt-dds/react-icon';
 
 import { LinkSize } from './types';
 

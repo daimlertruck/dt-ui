@@ -5,7 +5,7 @@ The progress bar works as a progress indicator to inform users about the status 
 ## ProgressBar Usage
 
 ```jsx
-import { ProgressBar } from '@dt-ui/react-progress-bar';
+import { ProgressBar } from '@dt-dds/react-progress-bar';
 
 export const App = () => {
   return (

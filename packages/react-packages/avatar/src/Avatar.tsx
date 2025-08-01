@@ -1,7 +1,7 @@
-import { Tooltip } from '@dt-ui/react-tooltip';
+import { Tooltip } from '@dt-dds/react-tooltip';
 import React, { useState } from 'react';
 
-import { AvatarThumbnail } from '../../../dt-ui-react/core';
+import { AvatarThumbnail } from '../../../dt-dds-react/core';
 
 import { AvatarStyled, AvatarStyledProps } from './Avatar.styled';
 import { AvatarType, AvatarSize } from './constants';

@@ -1,5 +1,5 @@
-import { BaseProps } from '@dt-ui/react-core';
-import type { Meta, StoryFn } from '@storybook/react';
+import { BaseProps } from '@dt-dds/react-core';
+import type { Meta, StoryFn } from '@storybook/react-vite';
 
 import { usePagination } from './hooks';
 import {

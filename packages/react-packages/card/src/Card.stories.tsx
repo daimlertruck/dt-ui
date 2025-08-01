@@ -1,6 +1,6 @@
-import { BaseProps } from '@dt-ui/react-core';
-import { Typography } from '@dt-ui/react-typography';
-import type { Meta, StoryObj } from '@storybook/react';
+import { BaseProps } from '@dt-dds/react-core';
+import { Typography } from '@dt-dds/react-typography';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Card } from '.';
 

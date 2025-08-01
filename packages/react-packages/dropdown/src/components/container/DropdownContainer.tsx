@@ -1,4 +1,4 @@
-import { BaseProps, useClickOutside } from '@dt-ui/react-core';
+import { BaseProps, useClickOutside } from '@dt-dds/react-core';
 import { useRef } from 'react';
 
 import { useDropdownContext } from '../../context';

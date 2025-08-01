@@ -1,9 +1,9 @@
-import { BaseProps, useClickOutside } from '@dt-ui/react-core';
-import { Icon } from '@dt-ui/react-icon';
-import { IconButton } from '@dt-ui/react-icon-button';
-import { LabelField } from '@dt-ui/react-label-field';
-import { Tooltip } from '@dt-ui/react-tooltip';
-import { Typography } from '@dt-ui/react-typography';
+import { BaseProps, useClickOutside } from '@dt-dds/react-core';
+import { Icon } from '@dt-dds/react-icon';
+import { IconButton } from '@dt-dds/react-icon-button';
+import { LabelField } from '@dt-dds/react-label-field';
+import { Tooltip } from '@dt-dds/react-tooltip';
+import { Typography } from '@dt-dds/react-typography';
 import { useSelect } from 'downshift';
 import {
   useRef,
@@ -213,14 +213,20 @@ const Select = ({
       let newSelectedItems: SelectOptionValue[] = [];
 
       if (!isMulti) {
-        newSelectedItems = [selectedItem];
+        if (selectedItem) {
+          newSelectedItems = [selectedItem];
+        }
       } else {
-        if (selectedItems.includes(selectedItem)) {
-          newSelectedItems = selectedItems.filter(
-            (item) => item !== selectedItem
-          );
+        if (selectedItem) {
+          if (selectedItems.includes(selectedItem)) {
+            newSelectedItems = selectedItems.filter(
+              (item) => item !== selectedItem
+            );
+          } else {
+            newSelectedItems = [...selectedItems, selectedItem];
+          }
         } else {
-          newSelectedItems = [...selectedItems, selectedItem];
+          newSelectedItems = selectedItems;
         }
       }
 

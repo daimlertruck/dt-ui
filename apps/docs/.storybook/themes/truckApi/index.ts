@@ -1,4 +1,4 @@
-import { theme as defaultTheme } from '@dt-ui/react';
+import { theme as defaultTheme } from '@dt-dds/react';
 import { Theme } from '@emotion/react';
 
 import { palette } from './palette';

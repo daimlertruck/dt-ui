@@ -1,4 +1,4 @@
-import { BaseProps } from '@dt-ui/react-core';
+import { BaseProps } from '@dt-dds/react-core';
 import { DetailedHTMLProps, TdHTMLAttributes } from 'react';
 
 import { useTableContext } from '../../context';

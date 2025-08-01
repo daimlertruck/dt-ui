@@ -1,4 +1,4 @@
-import { Theme } from '@dt-ui/react-core';
+import { Theme } from '@dt-dds/react-core';
 import styled from '@emotion/styled';
 
 import { DropdownFill, DropdownVariant } from '../../types';

@@ -1,5 +1,5 @@
 {
-  "name": "@dt-ui/react-box",
+  "name": "@dt-dds/react-box",
   "version": "0.1.0-beta.8",
   "license": "MIT",
   "exports": {
@@ -33,7 +33,7 @@
     "@types/react-dom": "^18.0.4",
     "babel-loader": "^8.3.0",
     "eslint-config-custom": "*",
-    "eslint-plugin-storybook": "^0.6.12",
+    "eslint-plugin-storybook": "^9.1.0",
     "jest-config": "*",
     "react": "^18.1.0",
     "react-dom": "^18.2.0",

@@ -1,4 +1,4 @@
-import { Spinner } from '@dt-ui/react-spinner';
+import { Spinner } from '@dt-dds/react-spinner';
 
 import { ModalLoadingOverlayStyled } from './LoadingOverlay.styled';
 

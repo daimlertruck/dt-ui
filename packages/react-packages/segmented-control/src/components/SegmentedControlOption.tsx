@@ -1,7 +1,7 @@
-import { Code } from '@dt-ui/icons';
-import { BaseProps } from '@dt-ui/react-core';
-import { Icon } from '@dt-ui/react-icon';
-import { Tooltip } from '@dt-ui/react-tooltip';
+import { Code } from '@dt-dds/icons';
+import { BaseProps } from '@dt-dds/react-core';
+import { Icon } from '@dt-dds/react-icon';
+import { Tooltip } from '@dt-dds/react-tooltip';
 
 import { useSegmentedControlContext } from '../context';
 

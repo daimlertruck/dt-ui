@@ -1,8 +1,8 @@
-import { Box } from '@dt-ui/react-box';
-import { BaseProps } from '@dt-ui/react-core';
-import { Icon } from '@dt-ui/react-icon';
-import { IconButton } from '@dt-ui/react-icon-button';
-import { Typography } from '@dt-ui/react-typography';
+import { Box } from '@dt-dds/react-box';
+import { BaseProps } from '@dt-dds/react-core';
+import { Icon } from '@dt-dds/react-icon';
+import { IconButton } from '@dt-dds/react-icon-button';
+import { Typography } from '@dt-dds/react-typography';
 import { useTheme } from '@emotion/react';
 import { Children, ReactElement, useEffect } from 'react';
 
