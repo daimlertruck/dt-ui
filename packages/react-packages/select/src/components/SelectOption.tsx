@@ -1,5 +1,5 @@
-import { Checkbox } from '@dt-ui/react-checkbox';
-import { BaseProps } from '@dt-ui/react-core';
+import { Checkbox } from '@dt-dds/react-checkbox';
+import { BaseProps } from '@dt-dds/react-core';
 
 import { useSelectContext } from '../context';
 

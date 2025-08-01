@@ -127,10 +127,10 @@ To make the core library code work across all browsers, we need to compile the r
 
 Running `yarn build` from the root of the Turborepo will run the `build` command defined in each package's `package.json` file. Turborepo runs each `build` in parallel and caches & hashes the output to speed up future builds.
 
-For `dt-ui-react`, you should see a folder `dt-ui-react/dist` which contains the compiled output.
+For `dt-dds-react`, you should see a folder `dt-dds-react/dist` which contains the compiled output.
 
 ```bash
-dt-ui-react
+dt-dds-react
 └── dist
     ├── index.d.ts  <-- Types
     ├── index.js    <-- CommonJS version
@@ -149,7 +149,7 @@ Components are independent packages that should be created in the workspace `pac
 
 3. A component package with a boilerplate will be created in the workspace `react-packages` 🎉
 
-4. All the integration with storybook and `dt-ui-react` main library will be provided automatically.
+4. All the integration with storybook and `dt-dds-react` main library will be provided automatically.
 
 ### 4.4. When to use Types / Interfaces
 
@@ -337,7 +337,7 @@ Those commands will be responsible to:
 - Commit generated `CHANGELOG.md` files and updated `package.json` files, adding the summary: `release: version packages`
   - Adds git-tag for the new packages version and push changes.
 
-🛠 Finally after versioning and tagging, the pack and publish is done in the pipeline in the step `BuildAndPublish` by running the following commands for the `@dt-ui/react` package:
+🛠 Finally after versioning and tagging, the pack and publish is done in the pipeline in the step `BuildAndPublish` by running the following commands for the `@dt-dds/react` package:
 
 - `yarn install`
 - `yarn build`

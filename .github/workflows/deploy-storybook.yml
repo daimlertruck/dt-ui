@@ -1,23 +1,21 @@
 name: Build and Deploy Storybook
 
 env:
-  TBLX_NPM_ARTIFACT_TOKEN: ${{ secrets.TBLX_NPM_ARTIFACT_TOKEN }}
-  TBLX_NPM_ARTIFACT_USERNAME: ${{ secrets.TBLX_NPM_ARTIFACT_USERNAME }}
-  GIT_FAKE_EMAIL: dt-ui@daimlertruck.com
-  GIT_FAKE_USER: dt-ui
+  GIT_FAKE_EMAIL: dt-dds@daimlertruck.com
+  GIT_FAKE_USER: dt-dds
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'packages/dt-ui-react/**'
+      - 'packages/dt-dds-react/**'
       - 'packages/react-packages/**'
       - 'apps/docs/**'
 
   pull_request:
     paths:
-      - 'packages/dt-ui-react/**'
+      - 'packages/dt-dds-react/**'
       - 'packages/react-packages/**'
       - 'apps/docs/**'
 
@@ -36,8 +34,6 @@ jobs:
         uses: './.github/actions/yarn-node-install'
         with:
           CACHE_FILE_NAME: 'global'
-          TBLX_NPM_ARTIFACT_TOKEN: $TBLX_NPM_ARTIFACT_TOKEN
-          TBLX_NPM_ARTIFACT_USERNAME: $TBLX_NPM_ARTIFACT_USERNAME
 
       - name: Build Storybook
         run: |

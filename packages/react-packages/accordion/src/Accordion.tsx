@@ -1,4 +1,4 @@
-import { BaseProps } from '@dt-ui/react-core';
+import { BaseProps } from '@dt-dds/react-core';
 import { KeyboardEvent, ReactNode, useEffect, useState } from 'react';
 
 import { AccordionStyled } from './Accordion.styled';

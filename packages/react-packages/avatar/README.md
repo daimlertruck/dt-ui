@@ -5,7 +5,7 @@ Avatars can be used to display circular user profile in user menu, tables etc.
 ## Avatar Usage
 
 ```jsx
-import { Avatar, AvatarType, AvatarSize } from '@dt-ui/react';
+import { Avatar, AvatarType, AvatarSize } from '@dt-dds/react';
 
 export const App = () => {
   return (

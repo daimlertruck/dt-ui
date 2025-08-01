@@ -1,5 +1,5 @@
-import { Code } from '@dt-ui/icons';
-import { BaseProps } from '@dt-ui/react-core';
+import { Code } from '@dt-dds/icons';
+import { BaseProps } from '@dt-dds/react-core';
 import { useTheme } from '@emotion/react';
 
 import { IconStyled } from './Icon.styled';

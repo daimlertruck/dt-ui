@@ -14,7 +14,7 @@ export const newComponentPackageGenerator = (plop: PlopTypes.NodePlopAPI) =>
         type: 'input',
         name: 'packageName',
         message:
-          'What is the name of the package without suffix "@dt-ui/react-" e.g, box, accordion, empty-state.',
+          'What is the name of the package without suffix "@dt-dds/react-" e.g, box, accordion, empty-state.',
         validate: (input: string) => {
           if (input.includes(' ')) {
             return 'package name cannot include spaces';

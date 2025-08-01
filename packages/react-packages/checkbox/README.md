@@ -5,7 +5,7 @@ A checkbox toggles between checked and unchecked states, enabling users to make 
 ## Checkbox Usage
 
 ```jsx
-import { Checkbox } from '@dt-ui/react-checkbox';
+import { Checkbox } from '@dt-dds/react-checkbox';
 
 export const App = () => {
   const [checked, setChecked] = React.useState(true);

@@ -1,6 +1,6 @@
-import { BaseProps } from '@dt-ui/react-core';
-import { Icon } from '@dt-ui/react-icon';
-import { Typography } from '@dt-ui/react-typography';
+import { BaseProps } from '@dt-dds/react-core';
+import { Icon } from '@dt-dds/react-icon';
+import { Typography } from '@dt-dds/react-typography';
 import { useTheme } from '@emotion/react';
 import { Children, cloneElement, ReactElement, useMemo } from 'react';
 

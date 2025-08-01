@@ -5,7 +5,7 @@ The link component is used as a navigational element to navigate users to anothe
 ## Link Usage
 
 ```jsx
-import { Link } from '@dt-ui/react-link';
+import { Link } from '@dt-dds/react-link';
 
 export const App = () => {
   return <Link href='/'>Some text</Link>;

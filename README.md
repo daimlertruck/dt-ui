@@ -28,50 +28,10 @@ It contains UI components, brand themes, examples and documentation.</div>
 
 ## 📦 Installation
 
-At the moment, DT-DDS is available as an npm package, `@dt-ui/react`, for React and frameworks using React, like NextJS (compatible with Server-side rendering).
-
-### Setup
-
-#### Get your API key from Artifactory (private installs only)
-
-Go to **Edit Profile** page in [Artifactory](https://art.t3.daimlertruck.com/). You can find an **API key** field in the **Authentication Settings** section.
-
-If the API key field is empty, you can click on the button to generate the key.
-
-#### Create `.npmrc` file
-
-Inside your project root folder create a file
+`@dt-dds/react` uses CSS-IN-JS behind the scenes. You'll also need to add Emotion as a project dependency.
 
 ```bash
-touch .npmrc
-```
-
-#### **Configuring the npm Client for a Scope Registry**
-
-Scopes can be associated with a separate registry. This allows you to seamlessly use a mix of packages from the public npm registry and one or more private registries. You need to paste the following into the .npmrc file instead:
-
-```
-@dt-ui:registry=https://art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/
-//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:_password=<BASE64_PASSWORD>
-//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:username=<USERNAME>
-//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:email=youremail@daimlertruck.com
-//art.t3.daimlertruck.com/artifactory/api/npm/DTUI_NPM_LOCAL/:always-auth=true
-```
-
-Encode your `<apiKey>` to `<BASE64_PASSWORD>` using an appropriate [encoding tool like this one](https://www.base64encode.org).
-
-### Install DT UI package
-
-```bash
-yarn add @dt-ui/react
-```
-
-### Install package dependencies
-
-`@dt-ui/react` uses CSS-IN-JS behind the scenes. You'll need to add Emotion as a project dependency.
-
-```bash
-yarn add @emotion/css @emotion/react @emotion/styled
+yarn add @dt-dds/react @emotion/css @emotion/react @emotion/styled
 ```
 
 ## 🔨 Usage
@@ -79,13 +39,13 @@ yarn add @emotion/css @emotion/react @emotion/styled
 Import the DT-DDS global styles in the root component.
 
 ```tsx
-import '@dt-ui/react/index.css';
+import '@dt-dds/react/index.css';
 ```
 
 And wrap your code in a `ThemeProvider` component to make it available to all components.
 
 ```tsx
-import { Provider as ThemeProvider, theme } from '@dt-ui/react';
+import { Provider as ThemeProvider, theme } from '@dt-dds/react';
 
 function App() {
   return <ThemeProvider theme={theme}>
@@ -94,7 +54,7 @@ function App() {
 }
 ```
 
-For now, there is only available one theme (the default one).
+We provide a default Daimler Truck theme, available under the package `react-core/themes`
 
 ## ⌨️ Development
 

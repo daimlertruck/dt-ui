@@ -1,5 +1,5 @@
-import { Icon } from '@dt-ui/react-icon';
-import { type Meta, type StoryObj } from '@storybook/react';
+import { Icon } from '@dt-dds/react-icon';
+import { type Meta, type StoryObj } from '@storybook/react-vite';
 
 import { ExtraComponent, TextField, TextFieldProps } from './TextField';
 

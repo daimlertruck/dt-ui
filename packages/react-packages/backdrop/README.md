@@ -5,7 +5,7 @@ Backdrops can be used when an application is being loaded or when the user opens
 ## Backdrop Usage
 
 ```jsx
-import { Backdrop } from '@dt-ui/react';
+import { Backdrop } from '@dt-dds/react';
 
 export const App = () => {
   return (

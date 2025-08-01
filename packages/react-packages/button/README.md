@@ -5,7 +5,7 @@ This component allows the user to take action, by clicking on it.
 ## Button Usage
 
 ```jsx
-import { Button } from '@dt-ui/react-button';
+import { Button } from '@dt-dds/react-button';
 
 export const App = () => {
   const handleClick = () => null; //Some action here

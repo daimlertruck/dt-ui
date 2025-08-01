@@ -1,12 +1,12 @@
 # DatePicker Package
 
-Datepicker enables users to input or choose a particular date or a range of dates. 
+Datepicker enables users to input or choose a particular date or a range of dates.
 They typically appear in forms and modal windows.
 
 ## DatePicker Usage
 
 ```jsx
-import { DatePicker } from '@dt-ui/react';
+import { DatePicker } from '@dt-dds/react';
 
 export const App = () => {
   return <DatePicker label='Choose a date' min='2023-03-30' max='2025-03-30' />;

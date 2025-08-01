@@ -6,7 +6,7 @@ Toggle switch gives control over a feature or option that can be turned on or of
 
 ```jsx
 import { ChangeEvent, useState } from 'react';
-import { Toggle } from '@dt-ui/react';
+import { Toggle } from '@dt-dds/react';
 
 export const App = () => {
   const [checked, setChecked] = React.useState(true);

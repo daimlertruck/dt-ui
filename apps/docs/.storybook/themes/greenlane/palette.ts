@@ -1,4 +1,4 @@
-import { Theme, theme } from '@dt-ui/react';
+import { Theme, theme } from '@dt-dds/react';
 
 const { colors: defaultColors, palette: defaultPalette } = theme;
 

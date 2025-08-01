@@ -5,7 +5,7 @@ Textarea is an input that provides the same features as the text field, but acce
 ## TextArea Usage
 
 ```jsx
-import { TextArea } from '@dt-ui/react';
+import { TextArea } from '@dt-dds/react';
 
 export const App = () => {
   return <TextArea label='My text area' maxLength={200} />;

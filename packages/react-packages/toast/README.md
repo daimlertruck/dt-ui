@@ -5,7 +5,7 @@ Toast is a pop-up message used to display relevant information to our users.
 ## Usage
 
 ```jsx
-import { Toaster, ToastType, emitToast } from '@dt-ui/react';
+import { Toaster, ToastType, emitToast } from '@dt-dds/react';
 
 const notify = () =>
   emitToast({

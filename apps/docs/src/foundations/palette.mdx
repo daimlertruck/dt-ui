@@ -1,45 +1,48 @@
 import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
 
-import { ThemeProvider} from '@storybook/theming';
+import { ThemeProvider } from '@storybook/theming';
 
-import {
-  theme as defaultTheme,
-} from '@dt-ui/react-core';
+import { theme as defaultTheme } from '@dt-dds/react-core';
 
 import { greenlaneTheme, truckAPITheme } from '../../.storybook/themes';
 
 <Meta title='Foundations/Palette' />
 
 export const themes = [
-  {name: 'Daimler (default)', theme: defaultTheme}, 
-  {name: 'Greenlane', theme: greenlaneTheme},
-  {name: 'TruckAPI', theme: truckAPITheme}]
+  { name: 'Daimler (default)', theme: defaultTheme },
+  { name: 'Greenlane', theme: greenlaneTheme },
+  { name: 'TruckAPI', theme: truckAPITheme },
+];
 
-export const getColors = (theme) => Object.entries(theme.palette).reduce(
-  (acc, [key, value]) => {
+export const getColors = (theme) =>
+  Object.entries(theme.palette).reduce((acc, [key, value]) => {
     const group = acc[key] ?? [];
-  return {
-    ...acc,
-    [key]: [
-      ...group,
-      {
-        ...value,
-      },
-    ],
-  };
-}, {});
+    return {
+      ...acc,
+      [key]: [
+        ...group,
+        {
+          ...value,
+        },
+      ],
+    };
+  }, {});
 
-{themes.map(({name, theme}) => ( 
-  <>
-    <h1>{name}</h1>
-    <div style={{ background: '#eeeeee', padding: '20px' }}>
-      <ThemeProvider theme={theme}>
-        <ColorPalette>
-          {Object.entries(getColors(theme)).map(([k, v]) => {
-            return <ColorItem key={k} title={k} colors={Object.assign({}, ...v)} />;
-          })}
-        </ColorPalette>
-      </ThemeProvider>
+<div>
+  {themes.map(({ name, theme }) => (
+    <div key={name}>
+      <h1>{name}</h1>
+      <div style={{ background: '#eeeeee', padding: '20px' }}>
+        <ThemeProvider theme={theme}>
+          <ColorPalette>
+            {Object.entries(getColors(theme)).map(([k, v]) => {
+              return (
+                <ColorItem key={k} title={k} colors={Object.assign({}, ...v)} />
+              );
+            })}
+          </ColorPalette>
+        </ThemeProvider>
+      </div>
     </div>
-  </>
-))}
+  ))}
+</div>

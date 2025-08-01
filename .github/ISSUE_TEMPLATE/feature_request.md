@@ -12,7 +12,7 @@ assignees: ''
 
 ## Problem Statement
 
-<!-- Explain WHY this should be added to DT-UI -->
+<!-- Explain WHY this should be added to DT-DDS -->
 
 ## Proposed Solution
 
@@ -26,5 +26,5 @@ assignees: ''
 
 <!-- Provide your assessment of the impact and priority of this feature request. Consider factors like usefulness, potential adoption by users, complexity, etc. You can use labels such as "Low/Medium/High Priority" and "Low/Medium/High Impact" if you prefer. -->
 
-* Priority:
-* Impact:
+- Priority:
+- Impact:

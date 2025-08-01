@@ -5,7 +5,7 @@ Segmented Control is frequently used to let users toggle between different forma
 ## SegmentedControl Usage
 
 ```jsx
-import { SegmentedControl } from '@dt-ui/react-segmented-control';
+import { SegmentedControl } from '@dt-dds/react-segmented-control';
 
 export const App = () => {
   return (
@@ -37,12 +37,12 @@ export const App = () => {
 
 ## SegmentedControl.Option Properties
 
-| Property   | Type      | Default | Description                                                                  |
-| ---------- | --------- | ------- | ---------------------------------------------------------------------------- |
-| `label`    | `string`  | -       | sets the option label, visible when showLabel is true or the icon is missing |
-| `value`    | `string`  | false   | value to control the option                                                  |
-| `iconCode` | `Code`    | -       | sets the code for the icon to be used, check the package from `@dt-ui/icons` |
-| `disabled` | `boolean` | false   | disables the option                                                          |
+| Property   | Type      | Default | Description                                                                   |
+| ---------- | --------- | ------- | ----------------------------------------------------------------------------- |
+| `label`    | `string`  | -       | sets the option label, visible when showLabel is true or the icon is missing  |
+| `value`    | `string`  | false   | value to control the option                                                   |
+| `iconCode` | `Code`    | -       | sets the code for the icon to be used, check the package from `@dt-dds/icons` |
+| `disabled` | `boolean` | false   | disables the option                                                           |
 
 ## Stack
 

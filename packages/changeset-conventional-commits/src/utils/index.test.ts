@@ -167,8 +167,8 @@ describe('associate-commits-to-conventional-commit-messages', () => {
 
 describe('get-repo-root', () => {
   it('correctly gets the repo root', () => {
-    execSync.mockReturnValueOnce('/project-root-path/dt-ui');
-    expect(getRepoRoot().endsWith('dt-ui')).toBeTruthy();
+    execSync.mockReturnValueOnce('/project-root-path/dt-dds');
+    expect(getRepoRoot().endsWith('dt-dds')).toBeTruthy();
     expect(execSync).toBeCalledWith('git rev-parse --show-toplevel');
   });
 });

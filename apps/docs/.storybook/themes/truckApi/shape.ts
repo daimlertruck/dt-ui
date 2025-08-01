@@ -1,4 +1,4 @@
-import { Theme, theme as defaultTheme } from '@dt-ui/react';
+import { Theme, theme as defaultTheme } from '@dt-dds/react';
 
 const { shape: defaultShape, radius } = defaultTheme;
 

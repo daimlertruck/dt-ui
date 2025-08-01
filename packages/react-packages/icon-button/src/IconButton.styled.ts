@@ -1,4 +1,4 @@
-import { ComponentSize } from '@dt-ui/react-core';
+import { ComponentSize } from '@dt-dds/react-core';
 import styled from '@emotion/styled';
 
 import { IconButtonVariant } from './constants';

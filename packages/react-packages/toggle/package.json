@@ -1,5 +1,5 @@
 {
-  "name": "@dt-ui/react-toggle",
+  "name": "@dt-dds/react-toggle",
   "version": "0.1.0-beta.19",
   "license": "MIT",
   "exports": {
@@ -20,8 +20,8 @@
     "test:update:snapshot": "jest -u"
   },
   "dependencies": {
-    "@dt-ui/react-core": "0.1.0-beta.40",
-    "@dt-ui/react-typography": "0.1.0-beta.31"
+    "@dt-dds/react-core": "0.1.0-beta.40",
+    "@dt-dds/react-typography": "0.1.0-beta.31"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
@@ -37,7 +37,7 @@
     "@types/react-dom": "^18.0.4",
     "babel-loader": "^8.3.0",
     "eslint-config-custom": "*",
-    "eslint-plugin-storybook": "^0.6.12",
+    "eslint-plugin-storybook": "^9.1.0",
     "jest-config": "*",
     "react": "^18.1.0",
     "react-dom": "^18.2.0",

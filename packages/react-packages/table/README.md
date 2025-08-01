@@ -5,7 +5,7 @@ Table is used to organize and display data efficiently and can be fully customiz
 ## Table Usage
 
 ```jsx
-import { Table } from '@dt-ui/react';
+import { Table } from '@dt-dds/react';
 
 export const App = () => {
   const columns = ['Column 1', 'Column 2', 'Column 3', 'Column 4'];
@@ -68,14 +68,14 @@ export const App = () => {
 
 ### Table
 
-| Property     | Type                  | Default | Description                                                                     |
-| ------------ | --------------------- | ------- | ------------------------------------------------------------------------------- |
-| `children`   | `ReactNode`           | -       | Child components to be rendered                                                 |
-| `isFixed`    | `boolean`             | -       | Define the table layout value. If the value is true, the table-layout is fixed. |
-| `dataTestId` | `string`              | -       | Customizable test identifier                                                    |
-| `style`      | `React.CSSProperties` | -       | Gives the Table some specific css properties                                    |
-| `fixedColumnCount`      | `number` | 0       | Number that indicates how many columns should be fixed on the left                                    |
-| `fixedEndColumnCount`      | `number` | 0      | Number that indicates how many columns should be fixed on the right                                 |
+| Property              | Type                  | Default | Description                                                                     |
+| --------------------- | --------------------- | ------- | ------------------------------------------------------------------------------- |
+| `children`            | `ReactNode`           | -       | Child components to be rendered                                                 |
+| `isFixed`             | `boolean`             | -       | Define the table layout value. If the value is true, the table-layout is fixed. |
+| `dataTestId`          | `string`              | -       | Customizable test identifier                                                    |
+| `style`               | `React.CSSProperties` | -       | Gives the Table some specific css properties                                    |
+| `fixedColumnCount`    | `number`              | 0       | Number that indicates how many columns should be fixed on the left              |
+| `fixedEndColumnCount` | `number`              | 0       | Number that indicates how many columns should be fixed on the right             |
 
 ### Table.Head
 

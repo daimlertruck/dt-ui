@@ -1,5 +1,5 @@
-import { codes } from '@dt-ui/icons';
-import { Meta, StoryObj } from '@storybook/react';
+import { codes } from '@dt-dds/icons';
+import { Meta, StoryObj } from '@storybook/react-vite';
 
 import { fontSize } from './Icon.styled';
 

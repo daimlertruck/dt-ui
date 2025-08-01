@@ -1,5 +1,5 @@
-import { withProviders } from '@dt-ui/react-core';
-import { Icon } from '@dt-ui/react-icon';
+import { withProviders } from '@dt-dds/react-core';
+import { Icon } from '@dt-dds/react-icon';
 import { fireEvent, render, screen } from '@testing-library/react';
 
 import { IconButton, IconButtonProps } from './IconButton';

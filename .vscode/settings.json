@@ -7,7 +7,7 @@
     "source.fixAll.eslint": "explicit"
   },
   "eslint.workingDirectories": [
-    "./packages/dt-ui-react",
-    "./packages/react-packages",
+    "./packages/dt-dds-react",
+    "./packages/react-packages"
   ]
 }

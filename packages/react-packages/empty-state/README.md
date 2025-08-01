@@ -7,7 +7,7 @@ Furthermore, it can be used to show additional information like a button, a link
 ## Usage
 
 ```jsx
-import { EmptyState } from '@dt-ui/react';
+import { EmptyState } from '@dt-dds/react';
 
 export const App = () => {
   const title = 'Some Title';

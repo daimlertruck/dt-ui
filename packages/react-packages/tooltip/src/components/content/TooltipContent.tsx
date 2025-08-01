@@ -1,4 +1,4 @@
-import { BaseProps, Portal } from '@dt-ui/react-core';
+import { BaseProps, Portal } from '@dt-dds/react-core';
 import React, { useRef, useState, useLayoutEffect } from 'react';
 
 import {

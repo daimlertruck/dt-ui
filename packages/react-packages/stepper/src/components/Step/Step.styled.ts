@@ -1,4 +1,4 @@
-import { Colors } from '@dt-ui/react-core';
+import { Colors } from '@dt-dds/react-core';
 import styled from '@emotion/styled';
 
 export const StepStyled = styled.li`

@@ -5,7 +5,7 @@ The Radio package allows to select one option from a set.
 ## Usage
 
 ```jsx
-import { Radio, RadioGroup } from '@dt-ui/react';
+import { Radio, RadioGroup } from '@dt-dds/react';
 
 export const App = () => {
   return (
