@@ -1,5 +1,18 @@
 # @dt-ui/react-drawer
 
+## 1.0.0-beta.47
+
+### Major Changes
+
+- refactor!: rename pkg and publish to npmjs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-dds/react-core@1.0.0-beta.41
+  - @dt-dds/react-icon-button@1.0.0-beta.9
+  - @dt-dds/react-typography@1.0.0-beta.32
+
 ## 0.1.0-beta.46
 
 ### Patch Changes

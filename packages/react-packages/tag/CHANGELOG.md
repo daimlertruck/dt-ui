@@ -1,5 +1,17 @@
 # @dt-ui/react-tag
 
+## 1.0.0-beta.43
+
+### Major Changes
+
+- refactor!: rename pkg and publish to npmjs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-dds/react-core@1.0.0-beta.41
+  - @dt-dds/react-tooltip@1.0.0-beta.49
+
 ## 0.1.0-beta.42
 
 ### Patch Changes

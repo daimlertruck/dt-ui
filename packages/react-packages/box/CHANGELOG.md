@@ -1,5 +1,11 @@
 # @dt-ui/react-box
 
+## 1.0.0-beta.9
+
+### Major Changes
+
+- refactor!: rename pkg and publish to npmjs
+
 ## 0.1.0-beta.8
 
 ### Patch Changes

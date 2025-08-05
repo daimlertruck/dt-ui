@@ -1,5 +1,17 @@
 # @dt-ui/react-radio
 
+## 1.0.0-beta.25
+
+### Major Changes
+
+- refactor!: rename pkg and publish to npmjs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-dds/react-box@1.0.0-beta.9
+  - @dt-dds/react-core@1.0.0-beta.41
+
 ## 0.1.0-beta.24
 
 ### Patch Changes

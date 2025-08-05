@@ -1,5 +1,18 @@
 # @dt-ui/react-message
 
+## 1.0.0-beta.54
+
+### Major Changes
+
+- refactor!: rename pkg and publish to npmjs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-dds/react-core@1.0.0-beta.41
+  - @dt-dds/react-link@1.0.0-beta.15
+  - @dt-dds/react-typography@1.0.0-beta.32
+
 ## 0.1.0-beta.53
 
 ### Patch Changes

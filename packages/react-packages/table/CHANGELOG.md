@@ -1,5 +1,16 @@
 # @dt-ui/react-table
 
+## 1.0.0-beta.36
+
+### Major Changes
+
+- refactor!: rename pkg and publish to npmjs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-dds/react-core@1.0.0-beta.41
+
 ## 0.1.0-beta.35
 
 ### Patch Changes

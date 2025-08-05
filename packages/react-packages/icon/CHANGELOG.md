@@ -1,5 +1,17 @@
 # @dt-ui/react-icon
 
+## 1.0.0-beta.42
+
+### Major Changes
+
+- refactor!: rename pkg and publish to npmjs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-dds/icons@1.0.0-beta.4
+  - @dt-dds/react-core@1.0.0-beta.41
+
 ## 0.1.0-beta.41
 
 ### Patch Changes

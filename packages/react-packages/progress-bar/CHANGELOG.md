@@ -1,5 +1,17 @@
 # @dt-ui/react-progress-bar
 
+## 1.0.0-beta.35
+
+### Major Changes
+
+- refactor!: rename pkg and publish to npmjs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-dds/react-icon@1.0.0-beta.42
+  - @dt-dds/react-typography@1.0.0-beta.32
+
 ## 0.1.0-beta.34
 
 ### Patch Changes

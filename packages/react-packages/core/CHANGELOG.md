@@ -1,5 +1,11 @@
 # @dt-ui/react-core
 
+## 1.0.0-beta.41
+
+### Major Changes
+
+- refactor!: rename pkg and publish to npmjs
+
 ## 0.1.0-beta.40
 
 ### Patch Changes

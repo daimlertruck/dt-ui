@@ -1,5 +1,17 @@
 # @dt-ui/react-tooltip
 
+## 1.0.0-beta.49
+
+### Major Changes
+
+- refactor!: rename pkg and publish to npmjs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-dds/react-core@1.0.0-beta.41
+  - @dt-dds/react-icon-button@1.0.0-beta.9
+
 ## 0.1.0-beta.48
 
 ### Patch Changes

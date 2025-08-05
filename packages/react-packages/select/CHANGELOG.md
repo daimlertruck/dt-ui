@@ -1,5 +1,22 @@
 # @dt-ui/react-select
 
+## 1.0.0-beta.46
+
+### Major Changes
+
+- refactor!: rename pkg and publish to npmjs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-dds/react-checkbox@1.0.0-beta.40
+  - @dt-dds/react-core@1.0.0-beta.41
+  - @dt-dds/react-icon@1.0.0-beta.42
+  - @dt-dds/react-icon-button@1.0.0-beta.9
+  - @dt-dds/react-label-field@1.0.0-beta.37
+  - @dt-dds/react-tooltip@1.0.0-beta.49
+  - @dt-dds/react-typography@1.0.0-beta.32
+
 ## 0.1.0-beta.45
 
 ### Patch Changes

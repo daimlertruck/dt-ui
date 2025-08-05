@@ -1,5 +1,17 @@
 # @dt-ui/react-toast
 
+## 1.0.0-beta.55
+
+### Major Changes
+
+- refactor!: rename pkg and publish to npmjs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-dds/react-button@1.0.0-beta.38
+  - @dt-dds/react-core@1.0.0-beta.41
+
 ## 0.1.0-beta.54
 
 ### Patch Changes

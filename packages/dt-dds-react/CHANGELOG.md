@@ -1,5 +1,52 @@
 # @dt-ui/react
 
+## 1.0.0-beta.208
+
+### Major Changes
+
+- refactor!: rename pkg and publish to npmjs
+
+### Patch Changes
+
+- Updated dependencies
+  - @dt-dds/react-accordion@1.0.0-beta.41
+  - @dt-dds/react-avatar@1.0.0-beta.50
+  - @dt-dds/react-backdrop@1.0.0-beta.43
+  - @dt-dds/react-box@1.0.0-beta.9
+  - @dt-dds/react-breadcrumb@1.0.0-beta.51
+  - @dt-dds/react-button@1.0.0-beta.38
+  - @dt-dds/react-card@1.0.0-beta.24
+  - @dt-dds/react-checkbox@1.0.0-beta.40
+  - @dt-dds/react-core@1.0.0-beta.41
+  - @dt-dds/react-date-picker@1.0.0-beta.31
+  - @dt-dds/react-divider@1.0.0-beta.40
+  - @dt-dds/react-drawer@1.0.0-beta.47
+  - @dt-dds/react-dropdown@1.0.0-beta.30
+  - @dt-dds/react-empty-state@1.0.0-beta.58
+  - @dt-dds/react-form@1.0.0-beta.27
+  - @dt-dds/react-icon@1.0.0-beta.42
+  - @dt-dds/react-icon-button@1.0.0-beta.9
+  - @dt-dds/react-label-field@1.0.0-beta.37
+  - @dt-dds/react-link@1.0.0-beta.15
+  - @dt-dds/react-message@1.0.0-beta.54
+  - @dt-dds/react-modal@1.0.0-beta.38
+  - @dt-dds/react-pagination@1.0.0-beta.21
+  - @dt-dds/react-progress-bar@1.0.0-beta.35
+  - @dt-dds/react-radio@1.0.0-beta.25
+  - @dt-dds/react-segmented-control@1.0.0-beta.29
+  - @dt-dds/react-select@1.0.0-beta.46
+  - @dt-dds/react-spinner@1.0.0-beta.43
+  - @dt-dds/react-stepper@1.0.0-beta.31
+  - @dt-dds/react-table@1.0.0-beta.36
+  - @dt-dds/react-tabs@1.0.0-beta.38
+  - @dt-dds/react-tag@1.0.0-beta.43
+  - @dt-dds/react-text-area@1.0.0-beta.23
+  - @dt-dds/react-text-field@1.0.0-beta.48
+  - @dt-dds/react-toast@1.0.0-beta.55
+  - @dt-dds/react-toggle@1.0.0-beta.20
+  - @dt-dds/react-tooltip@1.0.0-beta.49
+  - @dt-dds/react-typography@1.0.0-beta.32
+
 ## 0.1.0-beta.207
 
 ### Patch Changes
