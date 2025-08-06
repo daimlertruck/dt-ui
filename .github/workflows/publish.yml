@@ -151,5 +151,7 @@ jobs:
           PACKAGE_FILE="${PACKAGE_FILE_NAME}-v${PACKAGE_VERSION}.tgz"
 
           # Publish from root directory
-          npm publish "${{ steps.package-detail.outputs.directory }}/$PACKAGE_FILE" --access public
+          # with force to handle deleted versions
+          # remove flag in ~48h
+          npm publish "${{ steps.package-detail.outputs.directory }}/$PACKAGE_FILE" --access public --force
           rm -f "${{ steps.package-detail.outputs.directory }}/$PACKAGE_FILE"
