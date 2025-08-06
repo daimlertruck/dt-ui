@@ -121,6 +121,7 @@ jobs:
         uses: './.github/actions/yarn-node-install'
         with:
           CACHE_FILE_NAME: ${{ matrix.packages }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Set package directory and version
         id: package-detail
@@ -140,9 +141,12 @@ jobs:
         working-directory: ${{ steps.package-detail.outputs.directory }}
 
       - name: Publish to npmjs.org
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          cd "${{ steps.package-detail.outputs.directory }}"
-          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
-          npm publish --access public
+          # Get the package file created by yarn pack
+          PACKAGE_NAME=$(jq -r '.name' "${{ steps.package-detail.outputs.directory }}/package.json")
+          PACKAGE_VERSION=$(jq -r '.version' "${{ steps.package-detail.outputs.directory }}/package.json")
+          PACKAGE_FILE="${PACKAGE_NAME}-v${PACKAGE_VERSION}.tgz"
+
+          # Publish from root directory
+          npm publish "${{ steps.package-detail.outputs.directory }}/$PACKAGE_FILE" --access public
+          rm -f "${{ steps.package-detail.outputs.directory }}/$PACKAGE_FILE"
