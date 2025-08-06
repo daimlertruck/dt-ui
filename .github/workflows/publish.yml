@@ -145,7 +145,10 @@ jobs:
           # Get the package file created by yarn pack
           PACKAGE_NAME=$(jq -r '.name' "${{ steps.package-detail.outputs.directory }}/package.json")
           PACKAGE_VERSION=$(jq -r '.version' "${{ steps.package-detail.outputs.directory }}/package.json")
-          PACKAGE_FILE="${PACKAGE_NAME}-v${PACKAGE_VERSION}.tgz"
+
+          # Convert @scope/package-name to scope-package-name for file naming
+          PACKAGE_FILE_NAME=$(echo "$PACKAGE_NAME" | sed 's/@//' | sed 's/\//-/')
+          PACKAGE_FILE="${PACKAGE_FILE_NAME}-v${PACKAGE_VERSION}.tgz"
 
           # Publish from root directory
           npm publish "${{ steps.package-detail.outputs.directory }}/$PACKAGE_FILE" --access public
