@@ -34,6 +34,12 @@ It contains UI components, brand themes, examples and documentation.</div>
 yarn add @dt-dds/react @emotion/css @emotion/react @emotion/styled
 ```
 
+### Package Release Status
+
+<!-- PACKAGES_TABLE_START -->
+
+<!-- PACKAGES_TABLE_END -->
+
 ## 🔨 Usage
 
 Import the DT-DDS global styles in the root component.
