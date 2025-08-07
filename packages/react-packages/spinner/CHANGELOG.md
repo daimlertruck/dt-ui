@@ -1,5 +1,14 @@
 # @dt-ui/react-spinner
 
+## 1.0.0-beta.44
+
+### Patch Changes
+
+- chore: fix publish after npmjs.org pkg unpublish
+- Updated dependencies
+- Updated dependencies [223664b]
+  - @dt-dds/react-box@1.0.0-beta.10
+
 ## 1.0.0-beta.43
 
 ### Major Changes

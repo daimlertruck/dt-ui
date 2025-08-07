@@ -1,5 +1,13 @@
 # @dt-ui/react-date-picker
 
+## 1.0.0-beta.32
+
+### Patch Changes
+
+- chore: fix publish after npmjs.org pkg unpublish
+- Updated dependencies
+  - @dt-dds/react-text-field@1.0.0-beta.49
+
 ## 1.0.0-beta.31
 
 ### Major Changes

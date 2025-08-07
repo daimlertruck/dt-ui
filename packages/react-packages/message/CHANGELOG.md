@@ -1,5 +1,13 @@
 # @dt-ui/react-message
 
+## 1.0.0-beta.55
+
+### Patch Changes
+
+- chore: fix publish after npmjs.org pkg unpublish
+- Updated dependencies
+  - @dt-dds/react-link@1.0.0-beta.16
+
 ## 1.0.0-beta.54
 
 ### Major Changes

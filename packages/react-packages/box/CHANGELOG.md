@@ -1,5 +1,12 @@
 # @dt-ui/react-box
 
+## 1.0.0-beta.10
+
+### Patch Changes
+
+- chore: fix publish after npmjs.org pkg unpublish
+- 223664b: fix pkg publish by bumping version after npmjs.org unpublish
+
 ## 1.0.0-beta.9
 
 ### Major Changes

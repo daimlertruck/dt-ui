@@ -1,5 +1,13 @@
 # @dt-ui/react-text-field
 
+## 1.0.0-beta.49
+
+### Patch Changes
+
+- chore: fix publish after npmjs.org pkg unpublish
+- Updated dependencies
+  - @dt-dds/react-spinner@1.0.0-beta.44
+
 ## 1.0.0-beta.48
 
 ### Major Changes

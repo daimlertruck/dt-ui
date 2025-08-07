@@ -1,5 +1,13 @@
 # @dt-ui/react-link
 
+## 1.0.0-beta.16
+
+### Patch Changes
+
+- chore: fix publish after npmjs.org pkg unpublish
+- Updated dependencies
+  - @dt-dds/react-button@1.0.0-beta.39
+
 ## 1.0.0-beta.15
 
 ### Major Changes
