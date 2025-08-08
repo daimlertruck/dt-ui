@@ -1,8 +1,8 @@
-# @dt-ui/themes
+# @dt-dds/themes
 
-DT-UI Design System Themes Package
+DT-DDS Themes Package
 
-This package contains the theme system for the DT-UI design system, including:
+This package contains the themes system for DT-DDS, including:
 
 - Theme definitions and types
 - Theme generation utilities
@@ -12,7 +12,7 @@ This package contains the theme system for the DT-UI design system, including:
 ## Installation
 
 ```bash
-yarn add @dt-ui/themes
+yarn add @dt-dds/themes
 ```
 
 ## Usage
@@ -20,7 +20,6 @@ yarn add @dt-ui/themes
 ```typescript
 import { daimlerTruckTheme } from '@dt-ui/themes';
 
-// Use the daimlerTruckTheme theme
 const theme: CustomTheme = daimlerTruckTheme;
 ```
 
