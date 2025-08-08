@@ -1,4 +1,4 @@
-import { defaultTheme } from '@dt-ui/themes';
+import { daimlertruckTheme } from '@dt-dds/themes';
 
 import { Provider } from '../components';
 
@@ -7,7 +7,7 @@ export const withProviders = <P extends object>(
 ) => {
   return ({ ...props }: P) => {
     return (
-      <Provider theme={defaultTheme}>
+      <Provider theme={daimlertruckTheme}>
         <Component {...(props as P)} />
       </Provider>
     );

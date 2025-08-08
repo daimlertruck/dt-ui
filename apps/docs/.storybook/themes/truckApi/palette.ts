@@ -1,7 +1,6 @@
-import { CustomTheme, defaultTheme } from '@dt-ui/themes';
-import { Theme, theme as defaultTheme } from '@dt-dds/react';
+import { CustomTheme, daimlertruckTheme } from '@dt-dds/themes';
 
-const { palette: defaultPalette, colors } = defaultTheme;
+const { palette: defaultPalette, colors } = daimlertruckTheme;
 
 export const palette: CustomTheme['palette'] = {
   ...defaultPalette,

@@ -1,8 +1,6 @@
-import { CustomTheme, defaultTheme } from '@dt-ui/themes';
-import { theme } from '@dt-dds/react-core';
-import { defaultTheme } from '@dt-ui/themes';
+import { CustomTheme, daimlertruckTheme } from '@dt-dds/themes';
 
-const { shape: defaultShape, radius } = defaultTheme;
+const { shape: defaultShape, radius } = daimlertruckTheme;
 
 export const shape = {
   ...defaultShape,

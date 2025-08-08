@@ -1,4 +1,8 @@
-import { defaultTheme, FontFace, CustomTheme as Theme } from '@dt-ui/themes';
+import {
+  daimlertruckTheme,
+  FontFace,
+  CustomTheme as Theme,
+} from '@dt-dds/themes';
 import { ThemeProvider, Global } from '@emotion/react';
 import React from 'react';
 
@@ -12,7 +16,7 @@ type ThemeProviderType = {
 
 // React ThemeProvider wrapper
 export const Provider = ({
-  theme = defaultTheme,
+  theme = daimlertruckTheme,
   webFonts = [],
   children,
 }: ThemeProviderType) => {
