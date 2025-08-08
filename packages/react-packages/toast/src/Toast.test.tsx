@@ -9,8 +9,8 @@ import Toast from './Toast';
 import { dismissToast } from './Toaster';
 
 // Mock useMedia hook
-jest.mock('@dt-ui/react-core', () => ({
-  ...jest.requireActual('@dt-ui/react-core'),
+jest.mock('@dt-dds/react-core', () => ({
+  ...jest.requireActual('@dt-dds/react-core'),
   useMedia: jest.fn(),
 }));
 
@@ -352,7 +352,7 @@ describe('emitToast', () => {
 
 describe('<Toaster /> component', () => {
   const ProvidedToaster = withProviders(Toaster);
-  const { useMedia } = jest.requireMock('@dt-ui/react-core');
+  const { useMedia } = jest.requireMock('@dt-dds/react-core');
 
   beforeEach(() => {
     act(() => {
