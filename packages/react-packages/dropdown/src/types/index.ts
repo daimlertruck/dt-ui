@@ -1,3 +1,4 @@
+import { CustomTheme } from '@dt-dds/themes';
 export type DropdownOptionValue = {
   text?: string;
   value: string;

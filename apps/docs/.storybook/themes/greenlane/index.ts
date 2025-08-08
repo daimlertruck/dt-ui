@@ -1,11 +1,11 @@
-import { Theme, theme as defaultTheme } from '@dt-dds/react';
+import { CustomTheme as Theme, daimlertruckTheme } from '@dt-dds/themes';
 
 import { colors, palette } from './palette';
 import { fontFamily, fontStyles } from './typography';
 import { shape } from './shape';
 
 export const theme: Theme = {
-  ...defaultTheme,
+  ...daimlertruckTheme,
   colors,
   fontFamily,
   fontStyles,

@@ -1,3 +1,4 @@
+import { CustomTheme } from '@dt-dds/themes';
 export { default as Dropdown } from './Dropdown';
 export * from './types';
 export * from './context';

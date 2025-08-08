@@ -1,4 +1,4 @@
-import { PaletteKeys, Theme } from '../..';
+import { PaletteKeys, CustomTheme as Theme } from '../types/theme';
 
 type PaletteKey = keyof Theme['palette'];
 type Shade = keyof Theme['palette'][PaletteKey];

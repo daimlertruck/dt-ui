@@ -1,3 +1,4 @@
+import { CustomTheme } from '@dt-dds/themes';
 export const OMessageType = {
   Default: 'default',
   Error: 'error',

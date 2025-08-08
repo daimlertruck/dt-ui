@@ -1,3 +1,4 @@
+import { CustomTheme } from '@dt-dds/themes';
 export { default as Toast } from './Toast';
 export type { ToastProps } from './Toast';
 

@@ -1,3 +1,4 @@
+import { CustomTheme } from '@dt-dds/themes';
 export * from './TableHead';
 export * from './TableColumnHeader';
 export * from './TableBody';

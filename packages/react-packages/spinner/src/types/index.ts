@@ -1,3 +1,4 @@
+import { CustomTheme } from '@dt-dds/themes';
 import { ComponentSize } from '@dt-dds/react-core';
 
 export type SpinnerSize = ComponentSize;
