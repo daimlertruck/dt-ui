@@ -5,7 +5,7 @@ import type { Preview } from '@storybook/react';
 import { themes } from '@storybook/theming';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 
-import { theme as defaultTheme, Provider } from '@dt-dds/react-core';
+import { daimlertruckTheme as defaultTheme, Provider } from '@dt-dds/react';
 import '@dt-dds/icons/index.css';
 
 import { greenlaneTheme, truckAPITheme } from './themes';
@@ -49,6 +49,7 @@ const preview: Preview = {
     },
     docs: {
       theme: themes.light,
+      fontBase: 'Daimler CS',
     },
   },
 
