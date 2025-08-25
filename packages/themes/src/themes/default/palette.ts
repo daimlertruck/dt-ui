@@ -1,5 +1,6 @@
-import { blue, grey, green, orange, red, petrol } from '../../constants';
-import { CustomTheme as Theme } from '../../types/theme';
+import { CustomTheme as Theme } from '../../types';
+
+import { blue, grey, green, orange, red, petrol } from './colors';
 
 export const colors: Theme['colors'] = {
   ...grey,

@@ -2,7 +2,9 @@ import { CustomTheme } from '../../types';
 
 import { animations } from './animations';
 import { breakpoints } from './breakpoints';
-import { palette, colors } from './palette';
+import { colors } from './colors';
+import { iconSizes } from './icons';
+import { palette } from './palette';
 import { radius } from './radius';
 import { shadows } from './shadows';
 import { shape } from './shape';
@@ -21,5 +23,8 @@ export const theme: CustomTheme = {
   fontStyles,
   responsiveFontStyles,
   shape,
+  iconSizes,
   icons: 'outlined',
 };
+
+export default theme;

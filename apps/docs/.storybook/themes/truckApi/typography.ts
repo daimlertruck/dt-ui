@@ -1,4 +1,5 @@
-import { getTextStyles, theme } from '@dt-dds/react';
+import { CustomTheme, defaultTheme } from '@dt-dds/themes';
+import { getTextStyles } from '@dt-dds/react';
 
 export const fontFamily = {
   default:
@@ -6,7 +7,7 @@ export const fontFamily = {
 };
 
 export const fontStyles = {
-  ...theme.fontStyles,
+  ...defaultTheme.fontStyles,
   h3: getTextStyles(500, '2rem', '2.25rem'),
   h4: getTextStyles(500, '1.5rem', '1.75rem'),
   h5: getTextStyles(500, '1.25rem', '1.5rem'),

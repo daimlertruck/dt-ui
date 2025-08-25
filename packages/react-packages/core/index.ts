@@ -1,4 +1,4 @@
-import { CustomTheme } from './src/types';
+import { CustomTheme } from '@dt-dds/themes';
 
 export * from './src';
 
